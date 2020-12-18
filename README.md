@@ -42,3 +42,7 @@ I've summarized them here:
 4. Run Jekyll `bundle exec jekyll serve --livereload`. 
 5. View the webpage at `http://127.0.0.1:4000/wai-aria-practices/link/to/page/`
 
+In order to pull in `aria-practices`, I added it as a submodule with `git
+submodule add git@github.com:w3c/aria-practices.git _external/aria-practices`. 
+This should not need to be repeated. But in order to update submodules you can
+run `git submodule update --init --recursive`.
