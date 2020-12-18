@@ -40,4 +40,5 @@ I've summarized them here:
 2. Initialize submodules `git submodule update --init --recursive`
 3. Install Jeykyll. `bundle install`. In order to do this, you need to have the [correct pre-reqs installed for Nokogiri](https://nokogiri.org/tutorials/installing_nokogiri.html). 
 4. Run Jekyll `bundle exec jekyll serve --livereload`. 
+5. View the webpage at `http://127.0.0.1:4000/wai-aria-practices/link/to/page/`
 
