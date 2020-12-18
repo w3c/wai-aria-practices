@@ -10,7 +10,7 @@ title: "Web Accessibility Initiative (WAI)"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: "/wai-resource-template" # the subpath of your site, e.g. /blog
+baseurl: "/wai-aria-practices" # the subpath of your site, e.g. /blog
 url: "https://w3c.github.io" # the base hostname & protocol for your site
 twitter:
   username: w3c_wai
@@ -29,7 +29,7 @@ kramwdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-repository: w3c/wai-resource-template
+repository: w3c/wai-aria-practices
 
 ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 

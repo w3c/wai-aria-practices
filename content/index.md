@@ -5,7 +5,7 @@ title: "Page Title"
 ref: /link/to/page/   # Translators, do not change this
 
 github:
-  repository: w3c/wai-resource-template
+  repository: w3c/wai-aria-practices
   path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
 permalink: /link/to/page/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
 
