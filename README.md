@@ -46,3 +46,19 @@ In order to pull in `aria-practices`, I added it as a submodule with `git
 submodule add git@github.com:w3c/aria-practices.git _external/aria-practices`. 
 This should not need to be repeated. But in order to update submodules you can
 run `git submodule update --init --recursive`.
+
+I wrote a small script that can be run with `./scripts/pre-build` that copies
+the `body` from the original `aria-at-practices` into a file in the `_includes`
+directory. This file would be the appropriate place to add of command that would
+parse the existing html file to create a table of contents file and fix the
+links in the existing includes file.
+
+The site is rendering but the links are all broken so we will need to figure out
+a process for making these links work.
+
+Additionally WAI provides a way to automatically generating a table of contents
+from the contents of the site if the contents of the site are written in
+markdown. However, the site contents are currently written in html to we will
+need to find a way of manaully extracted the table of contents ourself. On the
+current website this is done via ReSpec so it should be possible to use the name
+html annotation to extract it programatically in some way.

@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'nokogiri'
+
+index = File.open("./_external/aria-practices/aria-practices.html") { |f| Nokogiri::HTML(f) }
+index_body = index.xpath('//body')
+
+File.open('./_includes/aria-practices.html', 'w') { |file| file.write(index_body) }

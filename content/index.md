@@ -1,7 +1,7 @@
 ---
 # translation notes are after after "#" in this section
 
-title: "Page Title"
+title: "ARIA Practices Guide"
 ref: /link/to/page/   # Translators, do not change this
 
 github:
@@ -27,7 +27,8 @@ footer: > # Text in footer in HTML
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto excepturi incidunt, odit modi quidem deserunt doloremque molestias saepe. Iste dolor non repellendus laudantium. Nihil velit mollitia voluptatem ullam libero.
+This is the a version of the ARIA-practices guide that has been coverted to a
+WAI website resource.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -44,38 +45,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto except
 {% include toc.html type="end" %}
 {:/}
 
-## Heading Level 2
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. **Assumenda aut, praesentium (bold)** commodi _nesciunt natus (italic)_ ipsum fugiat with **link markdown**:
-* [[Exact Title of Page on WAI website - uses double brackets and permalink]](/permalink/to/page/)
-* [link to WAI website that's not exact title of page - uses single brackets and permalink](/permalink/to/page/)
-* [link to page off the WAI website - uses single brackets and full URI](https://example.com)
-
-### Heading Level 3
-
-1. This is 
-2. a nice
-3. ordered
-4. list.
-
-#### Heading Level 4
-
-
-* And this is a
-* bullet list
-
-- You can use asterisks
-- or dashes. Whatever floats
-- your boat :-)
-
-##### Heading Level 5
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
-## Heading Level 2
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
-### Heading Level 3
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
+{% include aria-practices.html %}
