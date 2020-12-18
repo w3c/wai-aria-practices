@@ -27,7 +27,9 @@ generate site previews for individual resources like this one. At the time of
 the spike, I was missing the [WAI netlify
 credential](https://wai-website-theme.netlify.app/technical/#netlify). So for
 now I just setup this repo with my own creditials for experimentation. Later is
-should be moved to the offical W3C WAI site.
+should be moved to the offical W3C WAI site. Currently the preview of this site
+updates on every push to master and a preview is generated for every PR. You can
+view the preview of "production" [here](https://wai-aria-practices.netlify.app/link/to/page/).
 
 To run this resource locally you can follow the instructions for [checking out
 an existing
