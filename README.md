@@ -29,7 +29,7 @@ credential](https://wai-website-theme.netlify.app/technical/#netlify). So for
 now I just setup this repo with my own creditials for experimentation. Later is
 should be moved to the offical W3C WAI netlify site and a w3c repo. Currently the preview of this site
 updates on every push to master and a preview is generated for every PR. You can
-view the preview of "production" [here](https://wai-aria-practices.netlify.app/link/to/page/).
+view the preview of "production" [here](https://wai-aria-practices.netlify.app/aria-practices/).
 
 To run this resource locally you can follow the instructions for [checking out
 an existing
@@ -40,7 +40,7 @@ I've summarized them here:
 2. Initialize submodules `git submodule update --init --recursive`
 3. Install Jeykyll. `bundle install`. In order to do this, you need to have the [correct pre-reqs installed for Nokogiri](https://nokogiri.org/tutorials/installing_nokogiri.html). 
 4. Run Jekyll `bundle exec jekyll serve --livereload`. 
-5. View the webpage at `http://127.0.0.1:4000/wai-aria-practices/link/to/page/`
+5. View the webpage at [http://127.0.0.1:4000/wai-aria-practices/aria-practices/](http://127.0.0.1:4000/wai-aria-practices/aria-practices/)
 
 In order to pull in `aria-practices`, I added it as a submodule with `git
 submodule add git@github.com:w3c/aria-practices.git _external/aria-practices`. 
