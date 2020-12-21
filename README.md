@@ -66,6 +66,11 @@ need to find a way of manaully extracted the table of contents ourself. On the
 current website this is done via ReSpec so it should be possible to use the name
 html annotation to extract it programatically in some way.
 
+#### Table of contents with ReSpec
+The `pre-build` script uses `respec2html` to generate the file with the original
+table of contents. The script assumes that `respec2html` has been installed. To do
+so, follow [the instructions](https://respec.org/docs/#using-cli).
+
 ## Local development
 
 1. Clone this repo. `git clone git@github.com:bocoup/wai-aria-practices.git`
