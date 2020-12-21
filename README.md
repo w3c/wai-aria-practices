@@ -53,6 +53,12 @@ directory. This file would be the appropriate place to add of command that would
 parse the existing html file to create a table of contents file and fix the
 links in the existing includes file.
 
+The script also adds a symlink for all the example files such that all links to
+the examples now work as well. They look exactly like they looked in the
+original practices, but if we want to add them into the `wai-website` template
+we could follow a very similar solution that we used for the aria-practices
+index page.
+
 The site is rendering but the links are all broken so we will need to figure out
 a process for making these links work.
 

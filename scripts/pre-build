@@ -1,8 +1,14 @@
 #!/usr/bin/env ruby
 
 require 'nokogiri'
+require 'fileutils'
 
 index = File.open("./_external/aria-practices/aria-practices.html") { |f| Nokogiri::HTML(f) }
 index_body = index.xpath('//body')
 
 File.open('./_includes/aria-practices.html', 'w') { |file| file.write(index_body) }
+
+target_path = './aria-practices/'
+FileUtils.mkdir_p(target_path)
+source_path = File.join(Dir.pwd, '/_external/aria-practices/examples')
+FileUtils.ln_s(source_path, target_path, force: true)
