@@ -53,6 +53,9 @@ original practices, but if we want to add them into the `wai-website` template
 we could follow a very similar solution that we used for the aria-practices
 index page.
 
+The site works locally but is not being successfully deployed to netlify. I'm
+pretty sure it is a problem with the github submodules and/or the symlinks. 
+
 The site is rendering but the links are all broken so we will need to figure out
 a process for making these links work.
 
@@ -73,6 +76,8 @@ html annotation to extract it programatically in some way.
 
 ## Next steps
 
+0. Fix netlify preview so the local website can be deployed successfully as a
+   preview
 1. Move repo to `w3c` organization
 2. Get `w3c` netlify credientials
 3. Setup [netlify](https://wai-website-theme.netlify.app/technical/#netlify) previews for this resource `netlify init`
