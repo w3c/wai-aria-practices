@@ -33,14 +33,8 @@ view the preview of "production" [here](https://wai-aria-practices.netlify.app/a
 
 To run this resource locally you can follow the instructions for [checking out
 an existing
-resource](https://wai-website-theme.netlify.app/technical/existing-resource/).
-I've summarized them here:
-
-1. Clone this repo. `git clone git@github.com:bocoup/wai-aria-practices.git`
-2. Initialize submodules `git submodule update --init --recursive`
-3. Install Jeykyll. `bundle install`. In order to do this, you need to have the [correct pre-reqs installed for Nokogiri](https://nokogiri.org/tutorials/installing_nokogiri.html). 
-4. Run Jekyll `bundle exec jekyll serve --livereload`. 
-5. View the webpage at [http://127.0.0.1:4000/wai-aria-practices/aria-practices/](http://127.0.0.1:4000/wai-aria-practices/aria-practices/)
+resource](https://wai-website-theme.netlify.app/technical/existing-resource/). 
+I've summarized them in the local development section below.
 
 In order to pull in `aria-practices`, I added it as a submodule with `git
 submodule add git@github.com:w3c/aria-practices.git _external/aria-practices`. 
@@ -68,3 +62,20 @@ markdown. However, the site contents are currently written in html to we will
 need to find a way of manaully extracted the table of contents ourself. On the
 current website this is done via ReSpec so it should be possible to use the name
 html annotation to extract it programatically in some way.
+
+## Local development
+
+1. Clone this repo. `git clone git@github.com:bocoup/wai-aria-practices.git`
+2. Initialize submodules `git submodule update --init --recursive`
+3. Install Jeykyll. `bundle install`. In order to do this, you need to have the [correct pre-reqs installed for Nokogiri](https://nokogiri.org/tutorials/installing_nokogiri.html). 
+4. Run Jekyll `bundle exec jekyll serve --livereload`. 
+5. View the webpage at [http://127.0.0.1:4000/wai-aria-practices/aria-practices/](http://127.0.0.1:4000/wai-aria-practices/aria-practices/)
+
+## Next steps
+
+1. Move repo to `w3c` organization
+2. Get `w3c` netlify credientials
+3. Setup [netlify](https://wai-website-theme.netlify.app/technical/#netlify) previews for this resource `netlify init`
+4. [Integrate this resource with the main WAI
+   website](https://wai-website-theme.netlify.app/technical/integrate/)
+5. Update the [Navigation](https://wai-website-theme.netlify.app/technical/integrate/) of the main WAI website to include this resource
