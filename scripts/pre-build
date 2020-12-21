@@ -3,12 +3,16 @@
 require 'nokogiri'
 require 'fileutils'
 
-index = File.open("./_external/aria-practices/aria-practices.html") { |f| Nokogiri::HTML(f) }
-index_body = index.xpath('//body')
+# Assumes that respec2html is installed
+`respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html`
 
-File.open('./_includes/aria-practices.html', 'w') { |file| file.write(index_body) }
-
+# Make links
 target_path = './aria-practices/'
 FileUtils.mkdir_p(target_path)
 source_path = File.join(Dir.pwd, '/_external/aria-practices/examples')
 FileUtils.ln_s(source_path, target_path, force: true)
+
+# Write HTML file
+index = File.open("./_includes/aria-practices.html") { |f| Nokogiri::HTML(f) }
+index_html = index.xpath('//html')
+File.open('./_includes/aria-practices.html', 'w') { |file| file.write(index_html) }
