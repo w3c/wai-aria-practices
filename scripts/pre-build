@@ -5,13 +5,14 @@ require 'fileutils'
 
 `respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html`
 
-# Make links
-target_path = './aria-practices/'
+# Fix examples
+target_path = 'aria-practices'
 FileUtils.mkdir_p(target_path)
-source_path = File.join(Dir.pwd, '/_external/aria-practices/examples')
-FileUtils.ln_s(source_path, target_path, force: true)
+Dir.chdir(target_path) do  
+  FileUtils.ln_s('../_external/aria-practices/examples', 'examples', force: true)
+end
 
-# Write HTML files
+# Write included HTML files
 index = File.open("./_includes/aria-practices.html") { |f| Nokogiri::HTML(f) }
 body_html = index.xpath('//body')
 nav_html = body_html.search('//nav').remove.first
