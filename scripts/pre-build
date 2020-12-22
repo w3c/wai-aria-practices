@@ -3,7 +3,6 @@
 require 'nokogiri'
 require 'fileutils'
 
-# Assumes that respec2html is installed
 `respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html`
 
 # Make links
@@ -12,7 +11,20 @@ FileUtils.mkdir_p(target_path)
 source_path = File.join(Dir.pwd, '/_external/aria-practices/examples')
 FileUtils.ln_s(source_path, target_path, force: true)
 
-# Write HTML file
+# Write HTML files
 index = File.open("./_includes/aria-practices.html") { |f| Nokogiri::HTML(f) }
-index_html = index.xpath('//html')
-File.open('./_includes/aria-practices.html', 'w') { |file| file.write(index_html) }
+body_html = index.xpath('//body')
+nav_html = body_html.search('//nav').remove.first
+nav_html.search('h2').remove
+nav_html.prepend_child('<header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>')
+nav_html['class'] = "box box-simple box-full"
+nav_html['aria-labelledby'] = "tocheading" 
+body_html.search("//div[@class='head']").remove
+body_html.search("//section[@id='sotd']").remove
+body_html.search("//section[@id='sotd']").remove
+abstract_html = body_html.search("//section[@id='abstract']").remove
+abstract_html.search('h2').remove
+
+File.open('./_includes/abstract.html', 'w') { |file| file.write(abstract_html) }
+File.open('./_includes/toc.html', 'w') { |file| file.write(nav_html) }
+File.open('./_includes/body.html', 'w') { |file| file.write(body_html) }

@@ -27,22 +27,14 @@ footer: > # Text in footer in HTML
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This is the a version of the ARIA-practices guide that has been coverted to a
-WAI website resource.
+{% include abstract.html %}
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
 {::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
+{% include toc.html %}
 {:/}
 
-- This will be replaced by an automatically generated TOC when using Markdown formatting.
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
-
-{% include aria-practices.html %}
+{% include body.html %}

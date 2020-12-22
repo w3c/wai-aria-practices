@@ -1,0 +1,200 @@
+<nav id="toc" class="box box-simple box-full" aria-labelledby="tocheading"><header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>
+<ol class="toc">
+<li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a></li>
+<li class="tocline">
+<a class="tocxref" href="#read_me_first"><bdi class="secno">2. </bdi>Read Me First</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#no_aria_better_bad_aria"><bdi class="secno">2.1 </bdi>No ARIA is better than Bad ARIA</a></li>
+<li class="tocline"><a class="tocxref" href="#browser_and_AT_support"><bdi class="secno">2.2 </bdi>Browser and Assistive Technology Support</a></li>
+<li class="tocline"><a class="tocxref" href="#mobile_and_touch_support"><bdi class="secno">2.3 </bdi>Mobile and Touch Support</a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#aria_ex"><bdi class="secno">3. </bdi>Design Patterns and Widgets</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#accordion"><bdi class="secno">3.1 </bdi>Accordion (Sections With Show/Hide Functionality)</a></li>
+<li class="tocline"><a class="tocxref" href="#alert"><bdi class="secno">3.2 </bdi>Alert</a></li>
+<li class="tocline"><a class="tocxref" href="#alertdialog"><bdi class="secno">3.3 </bdi>Alert and Message Dialogs</a></li>
+<li class="tocline"><a class="tocxref" href="#breadcrumb"><bdi class="secno">3.4 </bdi>Breadcrumb</a></li>
+<li class="tocline"><a class="tocxref" href="#button"><bdi class="secno">3.5 </bdi>Button</a></li>
+<li class="tocline"><a class="tocxref" href="#carousel"><bdi class="secno">3.6 </bdi>Carousel (Slide Show or Image Rotator)</a></li>
+<li class="tocline"><a class="tocxref" href="#checkbox"><bdi class="secno">3.7 </bdi>Checkbox</a></li>
+<li class="tocline"><a class="tocxref" href="#combobox"><bdi class="secno">3.8 </bdi>Combobox</a></li>
+<li class="tocline"><a class="tocxref" href="#dialog_modal"><bdi class="secno">3.9 </bdi>Dialog (Modal)</a></li>
+<li class="tocline"><a class="tocxref" href="#disclosure"><bdi class="secno">3.10 </bdi>Disclosure (Show/Hide)</a></li>
+<li class="tocline"><a class="tocxref" href="#feed"><bdi class="secno">3.11 </bdi>Feed</a></li>
+<li class="tocline"><a class="tocxref" href="#grid"><bdi class="secno">3.12 </bdi>Grids : Interactive Tabular Data and Layout Containers</a></li>
+<li class="tocline"><a class="tocxref" href="#link"><bdi class="secno">3.13 </bdi>Link</a></li>
+<li class="tocline"><a class="tocxref" href="#Listbox"><bdi class="secno">3.14 </bdi>Listbox</a></li>
+<li class="tocline"><a class="tocxref" href="#menu"><bdi class="secno">3.15 </bdi>Menu or Menu bar</a></li>
+<li class="tocline"><a class="tocxref" href="#menubutton"><bdi class="secno">3.16 </bdi>Menu Button</a></li>
+<li class="tocline"><a class="tocxref" href="#meter"><bdi class="secno">3.17 </bdi>Meter</a></li>
+<li class="tocline"><a class="tocxref" href="#radiobutton"><bdi class="secno">3.18 </bdi>Radio Group</a></li>
+<li class="tocline"><a class="tocxref" href="#slider"><bdi class="secno">3.19 </bdi>Slider</a></li>
+<li class="tocline"><a class="tocxref" href="#slidertwothumb"><bdi class="secno">3.20 </bdi>Slider (Multi-Thumb)</a></li>
+<li class="tocline"><a class="tocxref" href="#spinbutton"><bdi class="secno">3.21 </bdi>Spinbutton</a></li>
+<li class="tocline"><a class="tocxref" href="#table"><bdi class="secno">3.22 </bdi>Table</a></li>
+<li class="tocline"><a class="tocxref" href="#tabpanel"><bdi class="secno">3.23 </bdi>Tabs</a></li>
+<li class="tocline"><a class="tocxref" href="#toolbar"><bdi class="secno">3.24 </bdi>Toolbar</a></li>
+<li class="tocline"><a class="tocxref" href="#tooltip"><bdi class="secno">3.25 </bdi>Tooltip Widget</a></li>
+<li class="tocline"><a class="tocxref" href="#TreeView"><bdi class="secno">3.26 </bdi>Tree View</a></li>
+<li class="tocline"><a class="tocxref" href="#treegrid"><bdi class="secno">3.27 </bdi>Treegrid</a></li>
+<li class="tocline"><a class="tocxref" href="#windowsplitter"><bdi class="secno">3.28 </bdi>Window Splitter</a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#aria_landmark"><bdi class="secno">4. </bdi>Landmark Regions</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#html-sectioning-elements"><bdi class="secno">4.1 </bdi>HTML Sectioning Elements</a></li>
+<li class="tocline"><a class="tocxref" href="#general-principles-of-landmark-design"><bdi class="secno">4.2 </bdi>General Principles of Landmark Design</a></li>
+<li class="tocline">
+<a class="tocxref" href="#landmark-roles"><bdi class="secno">4.3 </bdi>Landmark Roles</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#aria_lh_banner"><bdi class="secno">4.3.1 </bdi>Banner</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_complementary"><bdi class="secno">4.3.2 </bdi>Complementary</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_contentinfo"><bdi class="secno">4.3.3 </bdi>Contentinfo</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_form"><bdi class="secno">4.3.4 </bdi>Form</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_main"><bdi class="secno">4.3.5 </bdi>Main</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_navigation"><bdi class="secno">4.3.6 </bdi>Navigation</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_region"><bdi class="secno">4.3.7 </bdi>Region</a></li>
+<li class="tocline"><a class="tocxref" href="#aria_lh_search"><bdi class="secno">4.3.8 </bdi>Search</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#names_and_descriptions"><bdi class="secno">5. </bdi>Providing Accessible Names and Descriptions</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#names_and_descriptions_definition"><bdi class="secno">5.1 </bdi>What ARE Accessible Names and Descriptions?</a></li>
+<li class="tocline"><a class="tocxref" href="#names_and_descriptions_derivation"><bdi class="secno">5.2 </bdi>How Are Name and Description Strings Derived?</a></li>
+<li class="tocline">
+<a class="tocxref" href="#accessible_names"><bdi class="secno">5.3 </bdi>Accessible Names</a><ol class="toc">
+<li class="tocline">
+<a class="tocxref" href="#naming_cardinal_rules"><bdi class="secno">5.3.1 </bdi>Cardinal Rules of Naming</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#naming_rule_heed_warnings"><bdi class="secno">5.3.1.1 </bdi>Rule 1: Heed Warnings and Test Thoroughly</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_rule_visible_text"><bdi class="secno">5.3.1.2 </bdi>Rule 2: Prefer Visible Text</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_rule_native_techniques"><bdi class="secno">5.3.1.3 </bdi>Rule 3: Prefer Native Techniques</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_rule_avoid_fallback"><bdi class="secno">5.3.1.4 </bdi>Rule 4: Avoid Browser Fallback</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_rule_brief_names"><bdi class="secno">5.3.1.5 </bdi>Rule 5: Compose Brief, Useful Names</a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#naming_techniques"><bdi class="secno">5.3.2 </bdi>Naming Techniques</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#naming_with_child_content"><bdi class="secno">5.3.2.1 </bdi>Naming with Child Content</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_with_aria-label"><bdi class="secno">5.3.2.2 </bdi>Naming with a String Attribute Via <code>aria-label</code></a></li>
+<li class="tocline"><a class="tocxref" href="#naming_with_aria-labelledby"><bdi class="secno">5.3.2.3 </bdi>Naming with Referenced Content Via <code>aria-labelledby</code></a></li>
+<li class="tocline"><a class="tocxref" href="#naming_with_labels"><bdi class="secno">5.3.2.4 </bdi>Naming Form Controls with the Label Element</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_with_legends"><bdi class="secno">5.3.2.5 </bdi>Naming Fieldsets with the Legend Element</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_with_captions"><bdi class="secno">5.3.2.6 </bdi>Naming Tables and Figures with Captions</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_with_fallback"><bdi class="secno">5.3.2.7 </bdi>Fallback Names Derived from Titles and Placeholders</a></li>
+</ol>
+</li>
+<li class="tocline"><a class="tocxref" href="#naming_effectively"><bdi class="secno">5.3.3 </bdi>Composing Effective and User-friendly Accessible Names</a></li>
+<li class="tocline"><a class="tocxref" href="#naming_role_guidance"><bdi class="secno">5.3.4 </bdi><span id="naming_role_guidance_heading">Accessible Name Guidance by Role</span></a></li>
+<li class="tocline">
+<a class="tocxref" href="#name_calculation"><bdi class="secno">5.3.5 </bdi>Accessible name calculation</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#name_calculation_non-recursive_ex"><bdi class="secno">5.3.5.1 </bdi>Examples of non-recursive accessible name calculation</a></li>
+<li class="tocline"><a class="tocxref" href="#name_calculation_recursive_ex"><bdi class="secno">5.3.5.2 </bdi>Examples of recursive accessible name calculation</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#accessible_descriptions"><bdi class="secno">5.4 </bdi>Accessible Descriptions</a><ol class="toc">
+<li class="tocline">
+<a class="tocxref" href="#describing_techniques"><bdi class="secno">5.4.1 </bdi>Describing Techniques</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#describing_with_aria-describedby"><bdi class="secno">5.4.1.1 </bdi>Describing by referencing content with <code>aria-describedby</code></a></li>
+<li class="tocline"><a class="tocxref" href="#describing_with_captions"><bdi class="secno">5.4.1.2 </bdi>Describing Tables and Figures with Captions</a></li>
+<li class="tocline"><a class="tocxref" href="#describing_with_title"><bdi class="secno">5.4.1.3 </bdi>Descriptions Derived from Titles</a></li>
+</ol>
+</li>
+<li class="tocline"><a class="tocxref" href="#description_calculation"><bdi class="secno">5.4.2 </bdi>Accessible description calculation</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#keyboard"><bdi class="secno">6. </bdi>Developing a Keyboard Interface</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#kbd_generalnav"><bdi class="secno">6.1 </bdi>Fundamental Keyboard Navigation Conventions</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_focus_discernable_predictable"><bdi class="secno">6.2 </bdi>Discernible and Predictable Keyboard Focus</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_focus_vs_selection"><bdi class="secno">6.3 </bdi>Focus VS Selection and the Perception of Dual Focus</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_selection_follows_focus"><bdi class="secno">6.4 </bdi>Deciding When to Make Selection Automatically Follow Focus</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_general_between"><bdi class="secno">6.5 </bdi>Keyboard Navigation Between Components (The Tab Sequence)</a></li>
+<li class="tocline">
+<a class="tocxref" href="#kbd_general_within"><bdi class="secno">6.6 </bdi> Keyboard Navigation Inside Components</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#kbd_roving_tabindex"><bdi class="secno">6.6.1 </bdi>Managing Focus Within Components Using a Roving tabindex</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_focus_activedescendant"><bdi class="secno">6.6.2 </bdi>Managing Focus in Composites Using aria-activedescendant</a></li>
+</ol>
+</li>
+<li class="tocline"><a class="tocxref" href="#kbd_disabled_controls"><bdi class="secno">6.7 </bdi>Focusability of disabled controls</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_common_conventions"><bdi class="secno">6.8 </bdi>Key Assignment Conventions for Common Functions</a></li>
+<li class="tocline">
+<a class="tocxref" href="#kbd_shortcuts"><bdi class="secno">6.9 </bdi>Keyboard Shortcuts</a><ol class="toc">
+<li class="tocline">
+<a class="tocxref" href="#kbd_shortcuts_behavior_design"><bdi class="secno">6.9.1 </bdi>Designing the Scope and Behavior of Keyboard Shortcuts</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_design_basic"><bdi class="secno">6.9.1.1 </bdi>Ensure Basic Access Via Navigation </a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_design_choose_behavior"><bdi class="secno">6.9.1.2 </bdi>Choose Appropriate Shortcut Behavior</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_design_where"><bdi class="secno">6.9.1.3 </bdi>Choose Where to Add Shortcuts </a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#kbd_shortcuts_assigning"><bdi class="secno">6.9.2 </bdi>Assigning Keyboard Shortcuts</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_assignments_opsys_conflicts"><bdi class="secno">6.9.2.1 </bdi>Operating System Key Conflicts</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_assignments_assistivetech_conflicts"><bdi class="secno">6.9.2.2 </bdi>Assistive Technology Key Conflicts</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_assignments_browser_conflicts"><bdi class="secno">6.9.2.3 </bdi>Browser Key Conflicts</a></li>
+<li class="tocline"><a class="tocxref" href="#kbd_shortcuts_assignments_intentional_conflicts"><bdi class="secno">6.9.2.4 </bdi>Intentional Key Conflicts</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#gridAndTableProperties"><bdi class="secno">7. </bdi>Grid and Table Properties</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#gridAndTableProperties_rows"><bdi class="secno">7.1 </bdi>Using <code>aria-rowcount</code> and <code>aria-rowindex</code></a></li>
+<li class="tocline">
+<a class="tocxref" href="#gridAndTableProperties_cols"><bdi class="secno">7.2 </bdi>Using <code>aria-colcount</code> and <code>aria-colindex</code></a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#gridAndTableProperties_cols_contiguous"><bdi class="secno">7.2.1 </bdi>Using <code>aria-colindex</code> When Column Indices Are Contiguous</a></li>
+<li class="tocline"><a class="tocxref" href="#gridAndTableProperties_cols_noncontiguous"><bdi class="secno">7.2.2 </bdi>Using <code>aria-colindex</code> When Column Indices Are Not Contiguous</a></li>
+</ol>
+</li>
+<li class="tocline"><a class="tocxref" href="#gridAndTableProperties_spans"><bdi class="secno">7.3 </bdi>Defining cell spans using <code>aria-colspan</code> and <code>aria-rowspan</code></a></li>
+<li class="tocline"><a class="tocxref" href="#gridAndTableProperties_sort"><bdi class="secno">7.4 </bdi>Indicating sort order with <code>aria-sort</code></a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#range_related_properties"><bdi class="secno">8. </bdi>Communicating Value and Limits for Range Widgets</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#range_related_properties_using_aria-valuemin_aria-valuemax_and_aria-valuenow"><bdi class="secno">8.1 </bdi>Using <code>aria-valuemin</code>, <code>aria-valuemax</code> and <code>aria-valuenow</code></a></li>
+<li class="tocline"><a class="tocxref" href="#range_related_properties_using_aria-valuetext"><bdi class="secno">8.2 </bdi>Using <code>aria-valuetext</code></a></li>
+<li class="tocline"><a class="tocxref" href="#range_related_properties_meter_role"><bdi class="secno">8.3 </bdi>Range properties with meter</a></li>
+<li class="tocline"><a class="tocxref" href="#range_related_properties_progressbar_role"><bdi class="secno">8.4 </bdi>Range properties with progress bars</a></li>
+<li class="tocline"><a class="tocxref" href="#range_related_properties_scrollbar_role"><bdi class="secno">8.5 </bdi>Range properties with scrollbars</a></li>
+<li class="tocline"><a class="tocxref" href="#range_related_properties_slider_role"><bdi class="secno">8.6 </bdi>Range properties with sliders</a></li>
+<li class="tocline"><a class="tocxref" href="#range_related_properties_spinbutton_role"><bdi class="secno">8.7 </bdi>Range properties with spin buttons</a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#presentation_role"><bdi class="secno">9. </bdi>Intentionally Hiding Semantics with the <code>presentation</code> Role</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#presentation_role_effects"><bdi class="secno">9.1 </bdi>
+        Effects of Role <code>presentation</code>
+      </a></li>
+<li class="tocline"><a class="tocxref" href="#presentation_role_ignored"><bdi class="secno">9.2 </bdi>
+        Conditions That Cause Role <code>presentation</code> to be Ignored
+      </a></li>
+<li class="tocline"><a class="tocxref" href="#presentation_role_examples"><bdi class="secno">9.3 </bdi>
+        Example Demonstrating Effects of the <code>presentation</code> Role
+      </a></li>
+</ol>
+</li>
+<li class="tocline"><a class="tocxref" href="#children_presentational"><bdi class="secno">10. </bdi>Roles That Automatically Hide Semantics by Making Their Descendants Presentational</a></li>
+<li class="tocline"><a class="tocxref" href="#structural_roles"><bdi class="secno">11. </bdi>Structural Roles</a></li>
+<li class="tocline"><a class="tocxref" href="#indexes"><bdi class="secno">A. </bdi>Indexes</a></li>
+<li class="tocline"><a class="tocxref" href="#change_log"><bdi class="secno">B. </bdi>Change History</a></li>
+<li class="tocline">
+<a class="tocxref" href="#acknowledgements"><bdi class="secno">C. </bdi>Acknowledgements</a><ol class="toc">
+<li class="tocline"><a class="tocxref" href="#major-contributors-to-version-1-1"><bdi class="secno">C.1 </bdi>Major Contributors to Version 1.1</a></li>
+<li class="tocline"><a class="tocxref" href="#participants-active-in-the-aria-authoring-practices-task-force"><bdi class="secno">C.2 </bdi>Participants active in the ARIA Authoring Practices Task Force</a></li>
+<li class="tocline"><a class="tocxref" href="#other-commenters-and-contributors-to-version-1-1"><bdi class="secno">C.3 </bdi>Other commenters and contributors to Version 1.1</a></li>
+</ol>
+</li>
+<li class="tocline">
+<a class="tocxref" href="#references"><bdi class="secno">D. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">D.1 </bdi>
+        Informative references
+      </a></li></ol>
+</li>
+</ol></nav>
