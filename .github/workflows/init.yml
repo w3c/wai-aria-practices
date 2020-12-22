@@ -29,5 +29,6 @@ jobs:
       with:
         commit_message: Apply automatic changes
         branch: master
+        skip_dirty_check: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
