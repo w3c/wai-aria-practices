@@ -28,7 +28,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Apply automatic changes
-        branch: master
-        skip_dirty_check: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
