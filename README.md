@@ -37,7 +37,7 @@ follow the page layout of a standard `wai-website` resource.
 1. Clone this repo. `git clone git@github.com:bocoup/wai-aria-practices.git`
 2. Initialize submodules `git submodule update --init --recursive`
 3. Install Jeykyll. `bundle install`. In order to do this, you need to have the [correct pre-reqs installed for Nokogiri](https://nokogiri.org/tutorials/installing_nokogiri.html). 
-4. Run `./script/pre-build` to update assert from aria-practices
+4. Run `./scripts/pre-build` to update assert from aria-practices
 5. Run Jekyll `bundle exec jekyll serve --livereload`. 
 6. View the webpage at [http://127.0.0.1:4000/wai-aria-practices/aria-practices/](http://127.0.0.1:4000/wai-aria-practices/aria-practices/)
 
