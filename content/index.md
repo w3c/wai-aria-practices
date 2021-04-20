@@ -33,8 +33,4 @@ footer: > # Text in footer in HTML
 {% include box.html type="end" %}
 {:/}
 
-{::nomarkdown}
-{% include toc.html %}
-{:/}
-
 {% include body.html %}

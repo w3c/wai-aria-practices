@@ -225,6 +225,39 @@
         url: "https://www.w3.org/WAI/tutorials/forms/"
       - name: Carousels
         url: "https://www.w3.org/WAI/tutorials/carousels/"
+  - name: ARIA Practices Guide
+    url: "/aria-practices/"
+    pages:
+      - name: Introduction
+        url: "/aria-practices/#intro"
+      - name: Read Me First
+        url: "/aria-practices/#read_me_first"
+      - name: Design Patterns and Widgets
+        url: "/aria-practices/#aria_ex"
+      - name: Landmark Regions
+        url: "/aria-practices/#aria_landmark"
+      - name: Providing Accessible Names and Descriptions
+        url: "/aria-practices/#names_and_descriptions"
+      - name: Developing a Keyboard Interface
+        url: "/aria-practices/#keyboard"
+      - name: Grid and Table Properties
+        url: "/aria-practices/#gridAndTableProperties"
+      - name: Communicating Value and Limits for Range Widgets
+        url: "/aria-practices/#range_related_properties"
+      - name: Intentionally Hiding Semantics with the presentation Role
+        url: "/aria-practices/#presentation_role"
+      - name: Roles That Automatically Hide Semantics by Making Their Descendants Presentational
+        url: "/aria-practices/#children_presentational"
+      - name: Structural Roles
+        url: "/aria-practices/#structural_roles"
+      - name: Indexes
+        url: "/aria-practices/#indexes"
+      - name: Change History
+        url: "/aria-practices/#change_log"
+      - name: Acknowledgements
+        url: "/aria-practices/#acknowledgements"
+      - name: References
+        url: "/aria-practices/#references"
 
 - name:
     en: 'Test & Evaluate'
