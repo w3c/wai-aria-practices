@@ -21,6 +21,7 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "w3c.json"
+  - "vendor"
 
 # Build settings
 markdown: kramdown
