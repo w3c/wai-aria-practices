@@ -52,7 +52,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: "standalone_resource"
 #  -
 #    scope:
 #      path: "_business-case"
