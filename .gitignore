@@ -4,6 +4,7 @@ _site
 .DS_Store
 Gemfile.lock
 vendor
+node_modules
 
 # Local Netlify folder
 .netlify
