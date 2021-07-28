@@ -5,6 +5,10 @@ const fuzzysearch = (needle, haystack) =>
   fuzzysearchOriginal(needle, haystack.toLowerCase());
 
 const sections = {
+  title: {
+    identify: (element) => element.tagName === "TITLE",
+    format: (element) => element.innerHTML,
+  },
   abstract: {
     identify: (element) => element.getAttribute("id") === "abstract",
     format: (element) => {

@@ -1,7 +1,7 @@
 ---
 # translation notes are after after "#" in this section
 
-title: "ARIA Practices Guide"
+title: "WAI-ARIA Authoring Practices Guide"
 ref: /aria-practices/   # Translators, do not change this
 
 github:
@@ -18,19 +18,25 @@ last_updated: 2020-02-20   # Put the date of this translation YYYY-MM-DD (with m
 # - name: Contributor 1's Name
 # - name: Contributor 2's Name
 
-footer: > # Text in footer in HTML
-  <p> This is the text in the footer </p>
+standalone_resource_doc_name: ARIA Authoring Practices
+
+standalone_resource_nav_links:
+  - name: Home
+    ref: /
+  - name: Patterns and Widgets
+    ref: /patterns
+  - name: Examples
+    ref: /examples
+  - name: Fundamentals
+    ref: /fundamentals
+  - name: About
+    ref: /about
+
+# footer: > # Text in footer in HTML
+#   <p> This is the text in the footer </p>
 
 ---
 
-{::nomarkdown}
-{% include box.html type="start" title="Summary" class="" %}
-{:/}
-
-{% include abstract.html %}
-
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-{% include body.html %}
+<body>
+  {% include home.html %}
+</body>

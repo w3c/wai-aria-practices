@@ -16,9 +16,7 @@ const parseHtmlFile = async () => {
 
   walkHtmlElements(root, handleElement);
 
-  const content = getContent();
-
-  console.log(content);
+  return getContent();
 };
 
 module.exports = parseHtmlFile;
