@@ -1,8 +1,8 @@
 const walkHtmlElements = (element, callback) => {
   element.childNodes?.forEach((element) => {
     if (element.tagName) {
-      const { findChildElements = true } = callback(element) || {};
-      if (findChildElements) {
+      const { ignoreChildElements = false } = callback(element) || {};
+      if (!ignoreChildElements) {
         walkHtmlElements(element, callback);
       }
     }

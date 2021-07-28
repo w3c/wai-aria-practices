@@ -2,6 +2,7 @@ const fs = require("fs/promises");
 const path = require("path");
 const { parse: parseHtml } = require("node-html-parser");
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
+const { handleElement, getContent } = require("./handleElement");
 
 const parseHtmlFile = async () => {
   const htmlFilePath = path.resolve(
@@ -13,11 +14,11 @@ const parseHtmlFile = async () => {
 
   const root = parseHtml(htmlString);
 
-  const handleElement = (element) => {
-    console.log(element.tagName, element.range);
-  };
-
   walkHtmlElements(root, handleElement);
+
+  const content = getContent();
+
+  console.log(content);
 };
 
 module.exports = parseHtmlFile;
