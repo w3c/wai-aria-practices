@@ -1,8 +1,8 @@
 const parseHtmlFile = require("./parseHtmlFile");
 
-const parseData = async () => {
+const abstractApgContent = async () => {
   const content = await parseHtmlFile();
   return content;
 };
 
-module.exports = parseData;
+module.exports = abstractApgContent;

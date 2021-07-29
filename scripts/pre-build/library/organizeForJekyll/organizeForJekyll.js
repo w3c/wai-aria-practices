@@ -1,5 +1,6 @@
 const fs = require("fs/promises");
 const path = require("path");
+const { omit } = require("lodash");
 
 const organizeForJekyll = async (content) => {
   const homeFilePath = path.resolve(
@@ -8,7 +9,8 @@ const organizeForJekyll = async (content) => {
   );
 
   const homeContent = `
-    <!-- Warning, this is a generated file -->
+    <!-- home.html -->
+    <!-- This is a generated file -->
     ${content.abstract}
     ${content.introduction}
     ${content.badAria}
@@ -17,6 +19,16 @@ const organizeForJekyll = async (content) => {
   `;
 
   await fs.writeFile(homeFilePath, homeContent);
+
+  console.log(
+    omit(content, [
+      "abstract",
+      "introduction",
+      "badAria",
+      "browserAndAtSupport",
+      "mobileAndTouchSupport",
+    ])
+  );
 };
 
 module.exports = organizeForJekyll;

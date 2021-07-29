@@ -9,7 +9,7 @@ const getContent = () => {
         `Failed to extract the "${label}" section from the aria-practices repo, ` +
           `which likely means the content has been renamed, replaced or removed. ` +
           `Check the formatContent.js file to see if it is possible to find the ` +
-          `missing content`
+          `missing content.`
       );
     }
   });
@@ -19,12 +19,14 @@ const getContent = () => {
 const handleElement = (element) => {
   let ignoreChildElements = false;
 
-  Object.entries(sections).forEach(([label, { identify, format }]) => {
-    if (identify(element)) {
-      ignoreChildElements = true;
-      content[label] = format(element);
+  Object.entries(sections).forEach(
+    ([label, { identify, format, ignoreChildElements: ignore }]) => {
+      if (identify(element)) {
+        ignoreChildElements = ignore ?? true;
+        content[label] = format(element);
+      }
     }
-  });
+  );
 
   return { ignoreChildElements };
 };

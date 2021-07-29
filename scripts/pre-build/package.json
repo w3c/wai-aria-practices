@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "fuzzysearch": "^1.0.3",
+    "lodash": "^4.17.21",
     "node-html-parser": "^4.1.2"
   }
 }

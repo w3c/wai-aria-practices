@@ -5,10 +5,10 @@ const fuzzysearch = (needle, haystack) =>
   fuzzysearchOriginal(needle, haystack.toLowerCase());
 
 const sections = {
-  title: {
+  /* title: {
     identify: (element) => element.tagName === "TITLE",
     format: (element) => element.innerHTML,
-  },
+  }, */
   abstract: {
     identify: (element) => element.getAttribute("id") === "abstract",
     format: (element) => {
@@ -73,6 +73,22 @@ const sections = {
         .replace(/<\/h3>/g, "</h2>")
         .replace(/<h4>/g, "<h3>")
         .replace(/<\/h4>/g, "</h3>");
+    },
+  },
+
+  accordionPattern: {
+    identify: (element) =>
+      element.classList.contains("widget") &&
+      element.getAttribute("id") === "accordion",
+    format: (element) => element.outerHTML,
+  },
+
+  accordionIntroduction: {
+    identify: (element) =>
+      element.classList.contains("widget") &&
+      element.getAttribute("id") === "accordion",
+    format: (element) => {
+      return element.querySelector("p").innerHTML;
     },
   },
 };

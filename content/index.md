@@ -7,7 +7,7 @@ ref: /aria-practices/   # Translators, do not change this
 github:
   repository: w3c/wai-aria-practices
   path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
-permalink: /aria-practices/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page
+permalink: /   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page
 
 lang: en   # Change "en" to the translated language shortcode
 last_updated: 2020-02-20   # Put the date of this translation YYYY-MM-DD (with month in the middle)
