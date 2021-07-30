@@ -1,4 +1,5 @@
 const fuzzysearchSensitive = require("fuzzysearch");
+const removeLinks = require("../../utilities/removeLinks");
 
 const patterns = [
   {
@@ -123,9 +124,11 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
       element.classList.contains("widget") &&
       element.getAttribute("id") === oldSlug,
 
+    formatName: (element) => element.querySelector("h3").innerHTML,
+
     formatPage: (element) => element.outerHTML,
 
-    formatIntroduction: (element) => {
+    formatIntroduction: removeLinks((element) => {
       // Some design patterns start with a NOTE.
       let firstParagraphElement;
       const firstP = element.querySelector("p");
@@ -164,7 +167,7 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
       const endOfSentence = periodMatch.index + 1;
       const firstSentence = firstParagraph.substr(0, endOfSentence);
       return firstSentence;
-    },
+    }),
   };
 });
 

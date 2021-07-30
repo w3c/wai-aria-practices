@@ -31,12 +31,13 @@ const handleElement = (element) => {
   });
 
   patternFormatters.forEach(
-    ({ slug, identify, formatIntroduction, formatPage }) => {
+    ({ slug, identify, formatName, formatIntroduction, formatPage }) => {
       if (identify(element)) {
         foundMatch = true;
         ignoreChildElements = true;
         patterns.push({
           slug,
+          name: formatName(element),
           introduction: formatIntroduction(element),
           page: formatPage(element),
         });

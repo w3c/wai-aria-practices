@@ -1,11 +1,15 @@
 const fs = require("fs/promises");
 const path = require("path");
-const { omit } = require("lodash");
+const createPatternsPage = require("./createPatternsPage");
 
 const organizeForJekyll = async ({ sections, patterns }) => {
   const homeFilePath = path.resolve(
     __dirname,
     "../../../../_includes/home.html"
+  );
+  const patternsFilePath = path.resolve(
+    __dirname,
+    "../../../../_includes/patterns.html"
   );
 
   const homeContent = `
@@ -18,14 +22,16 @@ const organizeForJekyll = async ({ sections, patterns }) => {
     ${sections.mobileAndTouchSupport}
   `;
 
-  await fs.writeFile(homeFilePath, homeContent);
+  const patternsContent = `
+    <!-- patterns.html -->
+    <!-- This is a generated file -->
+    ${createPatternsPage(patterns)}
+  `;
 
-  patterns.forEach((pattern) => {
-    console.log("_______");
-    console.log(pattern.slug);
-    console.log(pattern.introduction);
-    console.log("_______");
-  });
+  await Promise.all([
+    fs.writeFile(homeFilePath, homeContent),
+    fs.writeFile(patternsFilePath, patternsContent),
+  ]);
 };
 
 module.exports = organizeForJekyll;
