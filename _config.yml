@@ -37,15 +37,6 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 remote_theme: w3c/wai-website-theme
 
 collections:
-#  business-case:
-#    area: "Plan & Manage"
-#    name: "Business Case"
-#    shortname: "Business Case"
-#    icon: "book" # TODO
-#    repostitory: w3c/wai-bcase
-#    output: true
-#    acknowledgements: false
-#    permalink: /:collection/:path/
 
 defaults:
   -

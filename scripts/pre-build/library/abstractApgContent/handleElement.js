@@ -1,10 +1,12 @@
-const sections = require("./formatContent");
+const sectionFormatters = require("./formatContent");
+const patternFormatters = require("./formatPatterns");
 
-const content = {};
+const sections = {};
+const patterns = [];
 
 const getContent = () => {
-  Object.keys(sections).forEach((label) => {
-    if (content[label] === undefined) {
+  Object.keys(sectionFormatters).forEach((label) => {
+    if (sections[label] === undefined) {
       throw new Error(
         `Failed to extract the "${label}" section from the aria-practices repo, ` +
           `which likely means the content has been renamed, replaced or removed. ` +
@@ -13,20 +15,42 @@ const getContent = () => {
       );
     }
   });
-  return content;
+  return { sections, patterns };
 };
 
 const handleElement = (element) => {
+  let foundMatch = false;
   let ignoreChildElements = false;
 
-  Object.entries(sections).forEach(
-    ([label, { identify, format, ignoreChildElements: ignore }]) => {
+  Object.entries(sectionFormatters).forEach(([label, { identify, format }]) => {
+    if (identify(element)) {
+      foundMatch = true;
+      ignoreChildElements = true;
+      sections[label] = format(element);
+    }
+  });
+
+  patternFormatters.forEach(
+    ({ slug, identify, formatIntroduction, formatPage }) => {
       if (identify(element)) {
-        ignoreChildElements = ignore ?? true;
-        content[label] = format(element);
+        foundMatch = true;
+        ignoreChildElements = true;
+        patterns.push({
+          slug,
+          introduction: formatIntroduction(element),
+          page: formatPage(element),
+        });
       }
     }
   );
+
+  // if (!foundMatch && element.classList.contains("widget")) {
+  //   throw new Error(
+  //     `Encountered an unknown design pattern (or fundamental) with id ` +
+  //       `"${element.getAttribute("id")}". If it is a new pattern it may ` +
+  //       `be missing from formatPatterns.js.`
+  //   );
+  // }
 
   return { ignoreChildElements };
 };

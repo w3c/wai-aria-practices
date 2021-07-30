@@ -75,22 +75,6 @@ const sections = {
         .replace(/<\/h4>/g, "</h3>");
     },
   },
-
-  accordionPattern: {
-    identify: (element) =>
-      element.classList.contains("widget") &&
-      element.getAttribute("id") === "accordion",
-    format: (element) => element.outerHTML,
-  },
-
-  accordionIntroduction: {
-    identify: (element) =>
-      element.classList.contains("widget") &&
-      element.getAttribute("id") === "accordion",
-    format: (element) => {
-      return element.querySelector("p").innerHTML;
-    },
-  },
 };
 
 module.exports = sections;
