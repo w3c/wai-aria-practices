@@ -5,7 +5,5 @@ _site
 Gemfile.lock
 vendor
 node_modules
-
-# Local Netlify folder
 .netlify
 content-generated
