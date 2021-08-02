@@ -30,7 +30,7 @@ kramwdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-repository: w3c/wai-aria-practices
+repository: bocoup/wai-aria-practices
 
 ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 
@@ -44,6 +44,18 @@ defaults:
       path: ""
     values:
       layout: "standalone_resource"
+      standalone_resource_doc_name: ARIA Authoring Practices
+      standalone_resource_nav_links:
+        - name: Home
+          ref: /
+        - name: Patterns and Widgets
+          ref: /patterns
+        - name: Examples
+          ref: /examples
+        - name: Fundamentals
+          ref: /fundamentals
+        - name: About
+          ref: /about
 #  -
 #    scope:
 #      path: "_business-case"
