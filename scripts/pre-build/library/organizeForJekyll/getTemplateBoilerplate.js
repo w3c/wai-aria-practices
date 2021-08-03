@@ -21,6 +21,11 @@ permalink: ${permalink}
 lang: en
 last_updated: ${todayDate}
 ---
+<body>
+  ${content}
+</body>
+`;
+  /*
 ${prettier.format(
   `
     <body>
@@ -30,6 +35,7 @@ ${prettier.format(
   { parser: "html" }
 )}
   `;
+*/
 };
 
 module.exports = getTemplateBoilerplate;

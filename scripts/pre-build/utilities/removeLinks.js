@@ -1,9 +1,9 @@
-const removeLinks = (htmlGenerator) => {
-  return (...args) => {
-    return htmlGenerator(...args)
-      .replace(/<a ?[^>]*>/g, "") // opening a tags
-      .replace(/<\/a>/g, "");
-  };
-};
+const wrapHtmlFunction = require("./wrapHtmlFunction");
+
+const removeLinks = wrapHtmlFunction((html) => {
+  return html
+    .replace(/<a(?!\w)[^>]*>/g, "") // opening a tags
+    .replace(/<\/a>/g, "");
+});
 
 module.exports = removeLinks;

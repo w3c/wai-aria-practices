@@ -7,7 +7,8 @@ const { handleElement, getContent } = require("./handleElement");
 const parseHtmlFile = async () => {
   const htmlFilePath = path.resolve(
     __dirname,
-    "../../../../_external/aria-practices/aria-practices.html"
+    "../../../../_includes/aria-practices.html"
+    // "../../../../_external/aria-practices/aria-practices.html"
   );
 
   const htmlString = await fs.readFile(htmlFilePath, "utf8");

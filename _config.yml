@@ -49,13 +49,13 @@ defaults:
         - name: Home
           ref: /
         - name: Patterns and Widgets
-          ref: /patterns
+          ref: /patterns/
         - name: Examples
-          ref: /examples
+          ref: /examples/
         - name: Fundamentals
-          ref: /fundamentals
+          ref: /fundamentals/
         - name: About
-          ref: /about
+          ref: /about/
 #  -
 #    scope:
 #      path: "_business-case"
