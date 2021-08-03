@@ -4,14 +4,14 @@ const getHomePage = (sections) => {
   return {
     fileName: `index.md`,
     fileContent: getTemplateBoilerplate({
-      title: "WAI-ARIA Authoring Practices Guide",
+      title: sections.title.content,
       permalink: `/`,
       content: `
-        ${sections.abstract}
-        ${sections.introduction}
-        ${sections.badAria}
-        ${sections.browserAndAtSupport}
-        ${sections.mobileAndTouchSupport}
+        ${sections.abstract.content}
+        ${sections.introduction.content}
+        ${sections.badAria.content}
+        ${sections.browserAndAtSupport.content}
+        ${sections.mobileAndTouchSupport.content}
       `,
     }),
   };

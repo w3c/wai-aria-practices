@@ -22,13 +22,19 @@ const handleElement = (element) => {
   let foundMatch = false;
   let ignoreChildElements = false;
 
-  Object.entries(sectionFormatters).forEach(([label, { identify, format }]) => {
-    if (identify(element)) {
-      foundMatch = true;
-      ignoreChildElements = true;
-      sections[label] = format(element);
+  Object.entries(sectionFormatters).forEach(
+    ([label, { slug, identify, getName, format }]) => {
+      if (identify(element)) {
+        foundMatch = true;
+        ignoreChildElements = true;
+        sections[label] = {
+          content: format(element),
+        };
+        if (slug) sections[label].slug = slug;
+        if (getName) sections[label].name = getName(element);
+      }
     }
-  });
+  );
 
   patternFormatters.forEach(
     ({ slug, identify, formatName, formatIntroduction, formatPage }) => {
@@ -45,13 +51,13 @@ const handleElement = (element) => {
     }
   );
 
-  // if (!foundMatch && element.classList.contains("widget")) {
-  //   throw new Error(
-  //     `Encountered an unknown design pattern (or fundamental) with id ` +
-  //       `"${element.getAttribute("id")}". If it is a new pattern it may ` +
-  //       `be missing from formatPatterns.js.`
-  //   );
-  // }
+  if (!foundMatch && element.classList.contains("widget")) {
+    throw new Error(
+      `Encountered an unknown design pattern with id ` +
+        `"${element.getAttribute("id")}". If it is a new pattern it may ` +
+        `be missing from formatPatterns.js.`
+    );
+  }
 
   return { ignoreChildElements };
 };

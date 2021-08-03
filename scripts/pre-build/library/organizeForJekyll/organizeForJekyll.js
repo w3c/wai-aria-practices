@@ -2,6 +2,7 @@ const fs = require("fs/promises");
 const path = require("path");
 const emptyContentFolder = require("./emptyContentFolder");
 const getHomePage = require("./pages/getHomePage");
+const getFundamentalsPage = require("./pages/getFundamentalsPage");
 const getPatternsPage = require("./pages/getPatternsPage");
 const getPatternPage = require("./pages/getPatternPage");
 
@@ -10,6 +11,7 @@ const organizeForJekyll = async ({ sections, patterns }) => {
 
   const pages = [
     getHomePage(sections),
+    getFundamentalsPage(sections),
     getPatternsPage(patterns),
     ...patterns.map((pattern) => getPatternPage(pattern)),
   ];
