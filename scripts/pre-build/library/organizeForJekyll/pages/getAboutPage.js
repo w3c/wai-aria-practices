@@ -8,6 +8,10 @@ const getAboutPage = (sections) => {
       permalink: `/about/`,
       content: `
         ${sections.documentMeta.content}
+        ${sections.documentStatus.content}
+        ${sections.changelog.content}
+        ${sections.acknowledgements.content}
+        ${sections.references.content}
       `,
     }),
   };

@@ -17,7 +17,8 @@ const getFundamentalsPage = (allSections) => {
       content: `
         <div class="sidebar-container">
           <aside class="sidebar-left">
-            <ul>
+            <h2 class="sidebar-headline">Table of Contents</h2>
+            <ul class="sidebar-list">
               ${sections
                 .map(({ slug, name }) => {
                   return `

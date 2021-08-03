@@ -1,5 +1,6 @@
 const fuzzysearchSensitive = require("fuzzysearch");
 const removeLinks = require("../../utilities/removeLinks");
+const removeSectionNumbers = require("./removeSectionNumbers");
 
 const patterns = [
   {
@@ -124,9 +125,11 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
       element.classList.contains("widget") &&
       element.getAttribute("id") === oldSlug,
 
-    formatName: (element) => element.querySelector("h3").innerHTML,
+    formatName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h3").innerHTML)
+    ),
 
-    formatPage: (element) => element.outerHTML,
+    formatPage: removeSectionNumbers((element) => element.outerHTML),
 
     formatIntroduction: removeLinks((element) => {
       // Some design patterns start with a NOTE.

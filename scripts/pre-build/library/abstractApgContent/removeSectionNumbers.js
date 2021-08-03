@@ -1,7 +1,9 @@
 const wrapHtmlFunction = require("../../utilities/wrapHtmlFunction");
 
 const removeSectionNumbers = wrapHtmlFunction((html) => {
-  return html.replace(/<bdi class="secno">\d+\.\d* <\/bdi>/g, "");
+  // Removes numbers like 3. or 3.22
+  // Also removes letters like A. B.
+  return html.replace(/<bdi class="secno">[\w\.]* <\/bdi>/g, "");
 });
 
 module.exports = removeSectionNumbers;

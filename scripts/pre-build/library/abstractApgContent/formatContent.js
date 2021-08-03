@@ -1,5 +1,6 @@
 const fuzzysearchOriginal = require("fuzzysearch");
 const removeSectionNumbers = require("./removeSectionNumbers");
+const removeLinks = require("../../utilities/removeLinks");
 
 // Why is fuzzysearch case sensitive? Seems a bit strange!
 const fuzzysearch = (needle, haystack) =>
@@ -80,7 +81,11 @@ const sections = {
   landmarkRegions: {
     slug: "landmark-regions",
     identify: (element) => element.getAttribute("id") === "aria_landmark",
-    getName: (element) => element.querySelector("h1,h2,h3,h4").innerHTML,
+    getName: removeLinks(
+      removeSectionNumbers(
+        (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+      )
+    ),
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "landmark-regions");
       return element.outerHTML;
@@ -90,7 +95,9 @@ const sections = {
     slug: "names-and-descriptions",
     identify: (element) =>
       element.getAttribute("id") === "names_and_descriptions",
-    getName: (element) => element.querySelector("h1,h2,h3,h4").innerHTML,
+    getName: removeSectionNumbers(
+      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    ),
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "names-and-descriptions");
       return element.outerHTML;
@@ -99,7 +106,9 @@ const sections = {
   keyboardInterface: {
     slug: "keyboard-interface",
     identify: (element) => element.getAttribute("id") === "keyboard",
-    getName: (element) => element.querySelector("h1,h2,h3,h4").innerHTML,
+    getName: removeSectionNumbers(
+      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    ),
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "keyboard-interface");
       return element.outerHTML;
@@ -109,7 +118,9 @@ const sections = {
     slug: "grid-and-table-properties",
     identify: (element) =>
       element.getAttribute("id") === "gridAndTableProperties",
-    getName: (element) => element.querySelector("h1,h2,h3,h4").innerHTML,
+    getName: removeSectionNumbers(
+      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    ),
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "grid-and-table-properties");
       return element.outerHTML;
@@ -119,7 +130,9 @@ const sections = {
     slug: "range-related-properties",
     identify: (element) =>
       element.getAttribute("id") === "range_related_properties",
-    getName: (element) => element.querySelector("h1,h2,h3,h4").innerHTML,
+    getName: removeSectionNumbers(
+      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    ),
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "range-related-properties");
       return element.outerHTML;
@@ -128,7 +141,9 @@ const sections = {
   presentationRole: {
     slug: "presentation-role",
     identify: (element) => element.getAttribute("id") === "presentation_role",
-    getName: (element) => element.querySelector("h1,h2,h3,h4").innerHTML,
+    getName: removeSectionNumbers(
+      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    ),
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "presentation-role");
       return element.outerHTML;
@@ -140,6 +155,34 @@ const sections = {
     format: (element) => {
       return element.querySelector("dl").outerHTML;
     },
+  },
+
+  documentStatus: {
+    identify: (element) => element.getAttribute("id") === "sotd",
+    format: (element) => {
+      return element.outerHTML;
+    },
+  },
+
+  changelog: {
+    identify: (element) => element.getAttribute("id") === "change_log",
+    format: removeSectionNumbers((element) => {
+      return element.outerHTML;
+    }),
+  },
+
+  acknowledgements: {
+    identify: (element) => element.getAttribute("id") === "acknowledgements",
+    format: removeSectionNumbers((element) => {
+      return element.outerHTML;
+    }),
+  },
+
+  references: {
+    identify: (element) => element.getAttribute("id") === "references",
+    format: removeSectionNumbers((element) => {
+      return element.outerHTML;
+    }),
   },
 };
 
