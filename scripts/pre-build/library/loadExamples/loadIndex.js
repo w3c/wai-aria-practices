@@ -5,9 +5,8 @@ const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const getTemplateBoilerplate = require("../getTemplateBoilerplate");
 const { handleElement, getContent } = require("./handleElement");
 
-const loadExample = async (filePath, { exampleRelativeDirectory }) => {
+const loadIndex = async (filePath, { exampleRelativeDirectory }) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
-  const slug = path.basename(filePath).slice(0, -5);
 
   const root = parseHtml(html);
 
@@ -15,15 +14,12 @@ const loadExample = async (filePath, { exampleRelativeDirectory }) => {
 
   const { title, head, body } = getContent();
 
-  return {
-    fileName: `${slug}.md`,
-    fileContent: getTemplateBoilerplate({
-      title,
-      permalink: `/examples/${exampleRelativeDirectory}/${slug}`,
-      head: head.innerHTML,
-      content: body.innerHTML,
-    }),
-  };
+  return getTemplateBoilerplate({
+    title,
+    permalink: `/examples/`,
+    head: head.innerHTML,
+    content: body.innerHTML,
+  });
 };
 
-module.exports = loadExample;
+module.exports = loadIndex;
