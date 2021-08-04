@@ -27,9 +27,7 @@ const handleElement = (element) => {
       if (identify(element)) {
         foundMatch = true;
         ignoreChildElements = true;
-        sections[label] = {
-          content: format(element),
-        };
+        sections[label] = { content: format(element) };
         if (slug) sections[label].slug = slug;
         if (getName) sections[label].name = getName(element);
       }
