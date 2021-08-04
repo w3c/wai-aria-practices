@@ -1,7 +1,7 @@
 const getContent = () => {
-  return { head, body };
+  return { slug, name, head, bod };
 };
 
-const handleElement = () => {};
+const handleElement = (element) => {};
 
 module.exports = { handleElement, getContent };

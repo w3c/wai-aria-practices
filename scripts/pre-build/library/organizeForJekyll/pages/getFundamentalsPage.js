@@ -1,4 +1,4 @@
-const getTemplateBoilerplate = require("../getTemplateBoilerplate");
+const getTemplateBoilerplate = require("../../getTemplateBoilerplate");
 
 const getFundamentalsPage = (allSections) => {
   const sections = [

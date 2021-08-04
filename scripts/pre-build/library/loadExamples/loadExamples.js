@@ -1,6 +1,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 const loadExample = require("./loadExample");
+const { contentPath } = require("../emptyContentFolder");
 
 const loadExamples = async () => {
   const examplesPath = path.resolve(

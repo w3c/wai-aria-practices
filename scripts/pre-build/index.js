@@ -9,7 +9,7 @@ const preBuild = async () => {
   const content = await abstractApgContent();
   await organizeForJekyll(content);
 
-  await loadExamples();
+  // await loadExamples();
 };
 
 preBuild();
