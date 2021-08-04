@@ -69,7 +69,7 @@ li.design-pattern .design-pattern-introduction {
 ul.sidebar-list {
   list-style: none;
   padding-left: 5px;
-  background-color: var(--w3c-classic);
+  background-color: var(--wai-green);
 }
 
 ul.sidebar-list li {
@@ -82,7 +82,7 @@ ul.sidebar-list li a:first-child {
   padding: 8px 24px;
   color: var(--pure-white);
   text-decoration: none;
-  border-top: 1px solid #388cca;
+  border-top: 1px solid #00768b;
   font-size: .8125rem;
 }
 
@@ -98,4 +98,9 @@ ul.sidebar-list li a code {
   border-radius: 3px;
   line-height: 1em;
   display: inline-block;
+}
+
+/* Fundamentals */
+.page-fundamentals h1 {
+  margin-bottom: 0;
 }
