@@ -21,6 +21,7 @@ permalink: ${permalink}
 lang: en
 last_updated: ${todayDate}
 ---
+<link rel="stylesheet" href="/assets/styles.css">
 <body>
   ${content}
 </body>

@@ -1,0 +1,43 @@
+ul.design-patterns {
+  display: grid;
+  row-gap: 50px;
+  padding: 0;
+}
+
+@media screen and (min-width: 800px) {
+  ul.design-patterns {
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  ul.design-patterns {
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+  }
+}
+
+li.design-pattern {
+  align-self: stretch;
+  list-style: none;
+  margin: 0;
+}
+
+li.design-pattern a {
+  display: inline-block;
+  padding: 2em 2em 0;
+  background: #ededed;
+  height: 100%;
+}
+
+li.design-pattern a:hover {
+  background: #e9e9e9;
+  box-shadow: inset 0px 0px 1px #828282;
+}
+
+li.design-pattern h2.design-pattern-name {
+  margin-top: 0;
+  padding-bottom: 1em;
+}
+
