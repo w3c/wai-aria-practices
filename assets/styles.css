@@ -59,4 +59,43 @@ li.design-pattern .design-pattern-introduction {
   margin-top: 1.25em;
 }
 
+/* Sidebar Content */
+.sidebar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+}
 
+ul.sidebar-list {
+  list-style: none;
+  padding-left: 5px;
+  background-color: var(--w3c-classic);
+}
+
+ul.sidebar-list li {
+  margin-bottom: 0;
+}
+
+ul.sidebar-list li a:first-child {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 24px;
+  color: var(--pure-white);
+  text-decoration: none;
+  border-top: 1px solid #388cca;
+  font-size: .8125rem;
+}
+
+ul.sidebar-list li a:hover {
+  text-decoration: underline;
+  background-color: var(--off-white);
+  color: var(--wai-green);
+}
+
+ul.sidebar-list li a code {
+  background: #d7d7d7;
+  padding: 1px 5px 4px;
+  border-radius: 3px;
+  line-height: 1em;
+  display: inline-block;
+}
