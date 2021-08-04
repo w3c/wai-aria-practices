@@ -1,15 +1,15 @@
-const { emptyContentFolder } = require("./library/emptyContentFolder");
+const emptyContentFolders = require("./library/emptyContentFolders");
 const abstractApgContent = require("./library/abstractApgContent");
 const organizeForJekyll = require("./library/organizeForJekyll");
 const loadExamples = require("./library/loadExamples");
 
 const preBuild = async () => {
-  await emptyContentFolder();
+  await emptyContentFolders();
 
   const content = await abstractApgContent();
   await organizeForJekyll(content);
 
-  // await loadExamples();
+  await loadExamples();
 };
 
 preBuild();

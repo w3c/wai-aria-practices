@@ -1,6 +1,5 @@
 const fs = require("fs/promises");
 const path = require("path");
-const { contentPath } = require("../emptyContentFolder");
 const getHomePage = require("./pages/getHomePage");
 const getAboutPage = require("./pages/getAboutPage");
 const getFundamentalsPage = require("./pages/getFundamentalsPage");
@@ -18,7 +17,8 @@ const organizeForJekyll = async ({ sections, patterns }) => {
 
   await Promise.all(
     pages.map(({ fileName, fileContent }) => {
-      return fs.writeFile(path.join(contentPath, fileName), fileContent);
+      const filePath = path.resolve(__dirname, "../../../../content", fileName);
+      return fs.writeFile(filePath, fileContent);
     })
   );
 };

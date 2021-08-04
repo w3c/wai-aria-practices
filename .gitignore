@@ -6,4 +6,5 @@ Gemfile.lock
 vendor
 node_modules
 .netlify
-content-generated
+content
+examples

@@ -19,6 +19,7 @@ post-processed with [ReSpec](https://pages.github.com/), into a multi-page stati
 - Install Jekyll: `bundle install`.
 - Install ReSpec: `npm install --global respec`
 - Run ReSpec: `respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html`
+- Install npm dependencies: `npm install -C scripts/pre-build`
 - Run the pre-build script: `node ./scripts/pre-build`
 - Run Jekyll: `bundle exec jekyll serve --livereload`. 
 - View the webpage at [http://localhost:4000/](http://localhost:4000/)
