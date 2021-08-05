@@ -12,6 +12,7 @@ const getPatternsPage = (patterns) => {
             return `
               <li class="design-pattern design-pattern-${pattern.slug}">
                 <a href="${pattern.slug}">
+                  <img src="/assets/img/${pattern.slug}.svg" alt="">
                   <h2 class="design-pattern-name">${pattern.name}</h2>
                   <div class="design-pattern-introduction">${pattern.introduction}</div>
                 </a>

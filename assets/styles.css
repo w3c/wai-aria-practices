@@ -1,16 +1,21 @@
+/* Global Styles */
+.page-design-patterns-and-widgets .standalone-resource__main, 
+.page-fundamentals .standalone-resource__main  {
+  grid-column: 2/10;
+}
+
+/* Design Patterns and Widgets */
 ul.design-patterns {
   display: grid;
   row-gap: 50px;
   padding: 0;
 }
-
 @media screen and (min-width: 800px) {
   ul.design-patterns {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
   }
 }
-
 @media screen and (min-width: 1000px) {
   ul.design-patterns {
     grid-template-columns: 32% 32% 32%;
@@ -27,22 +32,80 @@ li.design-pattern {
 li.design-pattern a {
   display: inline-block;
   padding: 2em 2em 0;
-  background: #ededed;
+  background: #ffffff;
   height: 100%;
   text-decoration: none;
+  border: 1px solid var(--line-grey);
+  border-radius: 4px;
 }
 
 li.design-pattern a:hover {
-  background: #e9e9e9;
-  box-shadow: inset 0px 0px 1px #828282;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 15%);
+}
+
+li.design-pattern img {
+  float: left;
+  margin-right: 1em;
 }
 
 li.design-pattern h2.design-pattern-name {
-  margin-top: 0;
-  padding-bottom: 1em;
+  margin: 0;
+  border: none;
+}
+
+li.design-pattern .design-pattern-introduction {
+  float: left;
+  border-top: 1px solid var(--line-grey);
+  padding-top: 1em;
+  margin-top: 1.25em;
+}
+
+/* Sidebar Content */
+.sidebar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+}
+
+ul.sidebar-list {
+  list-style: none;
+  padding-left: 5px;
+  background-color: var(--wai-green);
+}
+
+ul.sidebar-list li {
+  margin-bottom: 0;
+}
+
+ul.sidebar-list li a:first-child {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 24px;
+  color: var(--pure-white);
+  text-decoration: none;
+  border-top: 1px solid #00768b;
+  font-size: .8125rem;
+}
+
+ul.sidebar-list li a:hover {
+  text-decoration: underline;
+  background-color: var(--off-white);
+  color: var(--wai-green);
+}
+
+ul.sidebar-list li a code {
+  background: #d7d7d7;
+  padding: 1px 5px 4px;
+  border-radius: 3px;
+  line-height: 1em;
+  display: inline-block;
 }
 
 li .design-pattern-introduction {
   color: rgb(29, 29, 29);
 }
 
+/* Fundamentals */
+.page-fundamentals h1 {
+  margin-bottom: 0;
+}
