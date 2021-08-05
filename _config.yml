@@ -22,6 +22,7 @@ exclude:
   - "README.md"
   - "w3c.json"
   - "vendor"
+  - "scripts"
 
 # Build settings
 markdown: kramdown
