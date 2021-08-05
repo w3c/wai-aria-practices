@@ -29,6 +29,7 @@ li.design-pattern a {
   padding: 2em 2em 0;
   background: #ededed;
   height: 100%;
+  text-decoration: none;
 }
 
 li.design-pattern a:hover {
@@ -39,5 +40,9 @@ li.design-pattern a:hover {
 li.design-pattern h2.design-pattern-name {
   margin-top: 0;
   padding-bottom: 1em;
+}
+
+li .design-pattern-introduction {
+  color: rgb(29, 29, 29);
 }
 
