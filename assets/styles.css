@@ -213,7 +213,6 @@ table.index tbody th:first-child {
 }
 
 /* Miscellaneous */
-
 .warning {
   border-color: #f11;
   border-width: .2em;
@@ -289,4 +288,8 @@ details.addition > summary > .marker {
   color: initial;
   font-weight: normal;
   text-align: center;
+}
+
+nav li:last-of-type {
+  display: none;
 }
