@@ -247,6 +247,10 @@ table.index tbody th:first-child {
   overflow: auto;
 }
 
+.note summary, [dir=ltr] summary {
+  margin-left: 0;
+}
+
 .note::before, .note > 
 .marker, details.note > summary {
   color: hsl(120, 70%, 30%);
