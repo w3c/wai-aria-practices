@@ -11,11 +11,13 @@ const getPatternsPage = (patterns) => {
           .map((pattern) => {
             return `
               <li class="design-pattern design-pattern-${pattern.slug}">
-                <a href="${pattern.slug}">
-                  <img src="/assets/img/${pattern.slug}.svg" alt="">
-                  <h2 class="design-pattern-name">${pattern.name}</h2>
-                  <div class="design-pattern-introduction">${pattern.introduction}</div>
-                </a>
+                <h2 class="design-pattern-name">
+                  <a href="${pattern.slug}">
+                    <img src="/assets/img/${pattern.slug}.svg" alt="">
+                    <span>${pattern.name}</span>
+                  </a>
+                </h2>
+                <div class="design-pattern-introduction">${pattern.introduction}</div>
               </li>
             `;
           })

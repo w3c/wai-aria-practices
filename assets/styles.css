@@ -27,20 +27,33 @@ li.design-pattern {
   align-self: stretch;
   list-style: none;
   margin: 0;
-}
-
-li.design-pattern a {
   display: inline-block;
   padding: 2em 2em 0;
   background: #ffffff;
   height: 100%;
-  text-decoration: none;
   border: 1px solid var(--line-grey);
   border-radius: 4px;
 }
 
+li.design-pattern a {
+  text-decoration: none;
+  color: var(--wai-green);
+}
+
 li.design-pattern a:hover {
-  box-shadow: 0px 1px 6px rgb(0 0 0 / 15%);
+  text-decoration: underline;
+}
+
+li.design-pattern a:focus {
+  display: flex;
+  align-items: flex-start;
+  outline-offset: 8px;
+  outline-color: #a8d2fa;
+  border-radius: 5px;
+}
+
+li.design-pattern a:visited {
+  color: var(--wai-green);
 }
 
 li.design-pattern img {
@@ -108,4 +121,175 @@ li .design-pattern-introduction {
 /* Fundamentals */
 .page-fundamentals h1 {
   margin-bottom: 0;
+}
+
+/* Example Page Tables */
+:not(th) > kbd {
+  display: inline-block;
+  padding: 0.1em 0.3em;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 0.2em;
+  box-shadow: inset 0 -1px 0 #bbb;
+  font-size: .9em;
+}
+
+table.def {
+  padding: .5em 1em;
+  background: #def;
+  margin: 1.2em 0;
+  border-left: 0.5em solid #8ccbf2;
+  color: black;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: initial;
+}
+
+table.def th {
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 1em;
+  width: 3em;
+}
+
+table.def td, 
+table.def th {
+  padding: 0.5em;
+  vertical-align: baseline;
+  border: 0;
+  border-bottom: 1px solid #bbd7e9;
+  color: black;
+  background: #def;
+}
+
+table.def > tbody > tr:last-child th, 
+table.def > tbody > tr:last-child td {
+  border-bottom: 0;
+}
+
+table.data, table.index {
+  margin: 1em auto;
+  border-collapse: collapse;
+  border: hidden;
+  width: 100%;
+}
+
+table.data thead, 
+table.index thead, 
+table.data tbody, 
+table.index tbody {
+  border-bottom: 2px solid;
+}
+
+table.data td, table.data th, 
+table.index td, table.index th {
+  padding: 0.5em 1em;
+  border-width: 1px;
+  border-color: silver;
+  border-color: var(--datacell-border);
+  border-top-style: solid;
+  background: initial;
+  color: initial;
+}
+
+table.data thead, table.index thead, 
+table.data tbody, table.index tbody {
+  border-bottom: 2px solid;
+}
+
+table.data.attributes tbody th, 
+table.data.attributes tbody td {
+  border: 1px solid silver;
+}
+
+table.data tbody th:first-child, 
+table.index tbody th:first-child {
+  border-top: 1px solid silver;
+  border-top: 1px solid var(--datacell-border);
+  padding-right: 1em;
+}
+
+/* Miscellaneous */
+.warning {
+  border-color: #f11;
+  border-width: .2em;
+  border-style: solid;
+  background: #fbe9e9;
+  padding: .5em;
+}
+
+.warning-title:before {
+  content: "⚠";
+  font-size: 3em;
+  float: left;
+  height: 100%;
+  padding-right: .3em;
+  vertical-align: top;
+  margin-top: -0.5em;
+}
+
+.issue, .note, .example, .advisement, blockquote, .amendment, .correction, .addition {
+  padding: .5em;
+  border: .5em;
+  border-left-style: solid;
+  page-break-inside: avoid;
+  margin: 1em auto;
+}
+
+.note {
+  border-color: #52e052;
+  background: #e9fbe9;
+  color: black;
+  overflow: auto;
+}
+
+.note summary, [dir=ltr] summary {
+  margin-left: 0;
+}
+
+.note::before, .note > 
+.marker, details.note > summary {
+  color: hsl(120, 70%, 30%);
+}
+
+.note > p:last-child, 
+.issue > p:last-child, 
+blockquote > :last-child, 
+.amendment > p:last-child, 
+.correction > p:last-child, 
+.addition > p:last-child {
+  margin-bottom: 0;
+}
+
+.issue::before, 
+.issue > .marker, 
+.example::before, 
+.example > .marker, 
+.note::before, 
+.note > .marker, 
+details.note > summary > .marker, 
+.amendment::before, .amendment > .marker, 
+details.amendment > summary > .marker, 
+.correction::before, 
+.correction > .marker, 
+details.correction > summary > .marker, 
+.addition::before, .addition > .marker, 
+details.addition > summary > .marker {
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+
+.caption, figcaption, caption {
+  font-style: italic;
+  font-size: 90%;
+  color: initial;
+  font-weight: normal;
+  text-align: center;
+}
+
+nav li:last-of-type {
+  display: none;
 }
