@@ -6,18 +6,18 @@ const getPatternsPage = (patterns) => {
     fileContent: getTemplateBoilerplate({
       title: "Design Patterns and Widgets",
       permalink: "/patterns/",
-      content: `<ul class="design-patterns">
+      content: `<ul class="tiles">
         ${patterns
           .map((pattern) => {
             return `
-              <li class="design-pattern design-pattern-${pattern.slug}">
-                <h2 class="design-pattern-name">
+              <li class="tile tile-${pattern.slug}">
+                <h2 class="tile-name">
                   <a href="${pattern.slug}">
                     <img src="/assets/img/${pattern.slug}.svg" alt="">
                     <span>${pattern.name}</span>
                   </a>
                 </h2>
-                <div class="design-pattern-introduction">${pattern.introduction}</div>
+                <div class="tile-introduction">${pattern.introduction}</div>
               </li>
             `;
           })

@@ -22,17 +22,22 @@ const handleElement = (element) => {
   let foundMatch = false;
   let ignoreChildElements = false;
 
-  Object.entries(sectionFormatters).forEach(
-    ([label, { slug, identify, getName, format }]) => {
-      if (identify(element)) {
-        foundMatch = true;
-        ignoreChildElements = true;
-        sections[label] = { content: format(element) };
-        if (slug) sections[label].slug = slug;
-        if (getName) sections[label].name = getName(element);
+  Object.entries(sectionFormatters).forEach(([label, formatter]) => {
+    const { slug, identify, getName, getOutline, formatIntroduction, format } =
+      formatter;
+    if (identify(element)) {
+      foundMatch = true;
+      ignoreChildElements = true;
+      sections[label] = {};
+      if (slug) sections[label].slug = slug;
+      if (getName) sections[label].name = getName(element);
+      if (getOutline) sections[label].outline = getOutline(element);
+      if (formatIntroduction) {
+        sections[label].introduction = formatIntroduction(element);
       }
+      sections[label].content = format(element);
     }
-  );
+  });
 
   patternFormatters.forEach(
     ({ slug, identify, formatName, formatIntroduction, formatPage }) => {

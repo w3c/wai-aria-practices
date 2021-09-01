@@ -1,29 +1,54 @@
 /* Global Styles */
-.page-design-patterns-and-widgets .standalone-resource__main, 
+.page-tiles-and-widgets .standalone-resource__main, 
 .page-fundamentals .standalone-resource__main  {
   grid-column: 2/10;
 }
-
+a.skip-main {
+  left:-999px;
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color:#000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow:auto;
+  margin: 10px 35%;
+  padding:5px;
+  border-radius: 15px;
+  border:4px solid yellow;
+  text-align:center;
+  font-size:1.2em;
+  z-index:999;
+}
+          
 /* Design Patterns and Widgets */
-ul.design-patterns {
+ul.tiles {
   display: grid;
   row-gap: 50px;
   padding: 0;
 }
 @media screen and (min-width: 800px) {
-  ul.design-patterns {
+  ul.tiles {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
   }
 }
 @media screen and (min-width: 1000px) {
-  ul.design-patterns {
+  ul.tiles {
     grid-template-columns: 32% 32% 32%;
     column-gap: 2%;
   }
 }
 
-li.design-pattern {
+li.tile {
   align-self: stretch;
   list-style: none;
   margin: 0;
@@ -35,16 +60,16 @@ li.design-pattern {
   border-radius: 4px;
 }
 
-li.design-pattern a {
+li.tile a {
   text-decoration: none;
   color: var(--wai-green);
 }
 
-li.design-pattern a:hover {
+li.tile a:hover {
   text-decoration: underline;
 }
 
-li.design-pattern a:focus {
+li.tile a:focus {
   display: flex;
   align-items: flex-start;
   outline-offset: 8px;
@@ -52,21 +77,21 @@ li.design-pattern a:focus {
   border-radius: 5px;
 }
 
-li.design-pattern a:visited {
+li.tile a:visited {
   color: var(--wai-green);
 }
 
-li.design-pattern img {
+li.tile img {
   float: left;
   margin-right: 1em;
 }
 
-li.design-pattern h2.design-pattern-name {
+li.tile h2.tile-name {
   margin: 0;
   border: none;
 }
 
-li.design-pattern .design-pattern-introduction {
+li.tile .tile-introduction {
   float: left;
   border-top: 1px solid var(--line-grey);
   padding-top: 1em;
@@ -114,7 +139,7 @@ ul.sidebar-list li a code {
   display: inline-block;
 }
 
-li .design-pattern-introduction {
+li .tile-introduction {
   color: rgb(29, 29, 29);
 }
 

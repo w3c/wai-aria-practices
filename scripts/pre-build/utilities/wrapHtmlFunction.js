@@ -1,8 +1,10 @@
 const wrapHtmlFunction = (htmlFormatter) => {
-  return (getHtmlFunction) => {
-    return (...args) => {
-      const html = getHtmlFunction(...args);
-      return htmlFormatter(html);
+  return (...apiArgs) => {
+    // Last argument
+    const getHtmlFunction = apiArgs.splice(apiArgs.length - 1)[0];
+    return (...htmlFunctionArgs) => {
+      const html = getHtmlFunction(...htmlFunctionArgs);
+      return htmlFormatter(...apiArgs, html);
     };
   };
 };

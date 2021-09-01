@@ -23,6 +23,7 @@ last_updated: ${todayDate}
 ${formattedHead}
 <body>
   ${content}
+  <script src="/assets/skipToMainContent.js">
 </body>
 `;
 };

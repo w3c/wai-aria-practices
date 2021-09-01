@@ -1,10 +1,20 @@
-const fuzzysearchOriginal = require("fuzzysearch");
+const fuzzysearchSensitive = require("fuzzysearch");
 const removeSectionNumbers = require("./removeSectionNumbers");
+const getIntroductionFormatter = require("./formatIntroduction");
 const removeLinks = require("../../utilities/removeLinks");
+const renumberHeadings = require("../../utilities/renumberHeadings");
 
 // Why is fuzzysearch case sensitive? Seems a bit strange!
 const fuzzysearch = (needle, haystack) =>
-  fuzzysearchOriginal(needle, haystack.toLowerCase());
+  fuzzysearchSensitive(needle, haystack.toLowerCase());
+
+const getFundamentalOutline = (element) => {
+  return element.querySelectorAll("h3").map((h3) => ({
+    slug: h3.getAttribute("id"),
+    // Sorry this is a bit awkward
+    name: removeSectionNumbers(() => h3.innerHTML)(),
+  }));
+};
 
 const sections = {
   title: {
@@ -37,13 +47,11 @@ const sections = {
         )
       );
     },
-    format: removeSectionNumbers((element) => {
-      return element.outerHTML;
-      // .replace(/<h3>/g, "<h2>")
-      // .replace(/<\/h3>/g, "</h2>")
-      // .replace(/<h4>/g, "<h3>")
-      // .replace(/<\/h4>/g, "</h3>");
-    }),
+    format: removeSectionNumbers(
+      renumberHeadings(-1, (element) => {
+        return element.outerHTML;
+      })
+    ),
   },
   browserAndAtSupport: {
     identify: (element) => {
@@ -53,13 +61,11 @@ const sections = {
         fuzzysearch("browser and at support", headlineElement.textContent)
       );
     },
-    format: removeSectionNumbers((element) => {
-      return element.outerHTML;
-      // .replace(/<h3>/g, "<h2>")
-      // .replace(/<\/h3>/g, "</h2>")
-      // .replace(/<h4>/g, "<h3>")
-      // .replace(/<\/h4>/g, "</h3>");
-    }),
+    format: removeSectionNumbers(
+      renumberHeadings(-1, (element) => {
+        return element.outerHTML;
+      })
+    ),
   },
   mobileAndTouchSupport: {
     identify: (element) => {
@@ -69,23 +75,21 @@ const sections = {
         fuzzysearch("mobile and touch support", headlineElement.textContent)
       );
     },
-    format: removeSectionNumbers((element) => {
-      return element.outerHTML;
-      // .replace(/<h3>/g, "<h2>")
-      // .replace(/<\/h3>/g, "</h2>")
-      // .replace(/<h4>/g, "<h3>")
-      // .replace(/<\/h4>/g, "</h3>");
-    }),
+    format: removeSectionNumbers(
+      renumberHeadings(-1, (element) => {
+        return element.outerHTML;
+      })
+    ),
   },
 
   landmarkRegions: {
     slug: "landmark-regions",
     identify: (element) => element.getAttribute("id") === "aria_landmark",
     getName: removeLinks(
-      removeSectionNumbers(
-        (element) => element.querySelector("h1,h2,h3,h4").innerHTML
-      )
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
+    formatIntroduction: getIntroductionFormatter("landmark-regions"),
+    getOutline: getFundamentalOutline,
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "landmark-regions");
       return element.outerHTML;
@@ -95,9 +99,11 @@ const sections = {
     slug: "names-and-descriptions",
     identify: (element) =>
       element.getAttribute("id") === "names_and_descriptions",
-    getName: removeSectionNumbers(
-      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
+    formatIntroduction: getIntroductionFormatter("names-and-descriptions"),
+    getOutline: getFundamentalOutline,
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "names-and-descriptions");
       return element.outerHTML;
@@ -106,9 +112,11 @@ const sections = {
   keyboardInterface: {
     slug: "keyboard-interface",
     identify: (element) => element.getAttribute("id") === "keyboard",
-    getName: removeSectionNumbers(
-      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
+    formatIntroduction: getIntroductionFormatter("keyboard-interface"),
+    getOutline: getFundamentalOutline,
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "keyboard-interface");
       return element.outerHTML;
@@ -118,9 +126,11 @@ const sections = {
     slug: "grid-and-table-properties",
     identify: (element) =>
       element.getAttribute("id") === "gridAndTableProperties",
-    getName: removeSectionNumbers(
-      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
+    formatIntroduction: getIntroductionFormatter("grid-and-table-properties"),
+    getOutline: getFundamentalOutline,
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "grid-and-table-properties");
       return element.outerHTML;
@@ -130,9 +140,11 @@ const sections = {
     slug: "range-related-properties",
     identify: (element) =>
       element.getAttribute("id") === "range_related_properties",
-    getName: removeSectionNumbers(
-      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
+    formatIntroduction: getIntroductionFormatter("range-related-properties"),
+    getOutline: getFundamentalOutline,
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "range-related-properties");
       return element.outerHTML;
@@ -141,11 +153,27 @@ const sections = {
   presentationRole: {
     slug: "presentation-role",
     identify: (element) => element.getAttribute("id") === "presentation_role",
-    getName: removeSectionNumbers(
-      (element) => element.querySelector("h1,h2,h3,h4").innerHTML
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
+    formatIntroduction: getIntroductionFormatter("presentation-role"),
+    getOutline: getFundamentalOutline,
     format: removeSectionNumbers((element) => {
       element.setAttribute("id", "presentation-role");
+      return element.outerHTML;
+    }),
+  },
+  childrenPresentational: {
+    slug: "children-presentational",
+    identify: (element) =>
+      element.getAttribute("id") === "children_presentational",
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
+    ),
+    formatIntroduction: getIntroductionFormatter("children-presentational"),
+    getOutline: getFundamentalOutline,
+    format: removeSectionNumbers((element) => {
+      element.setAttribute("id", "children-presentational");
       return element.outerHTML;
     }),
   },
