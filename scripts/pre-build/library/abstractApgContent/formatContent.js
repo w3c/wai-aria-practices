@@ -1,6 +1,6 @@
 const fuzzysearchSensitive = require("fuzzysearch");
 const removeSectionNumbers = require("./removeSectionNumbers");
-const getIntroductionFormatter = require("./formatIntroduction");
+const getIntroductionFormatter = require("./getIntroduction");
 const removeLinks = require("../../utilities/removeLinks");
 const renumberHeadings = require("../../utilities/renumberHeadings");
 
@@ -19,11 +19,12 @@ const getFundamentalOutline = (element) => {
 const sections = {
   title: {
     identify: (element) => element.tagName === "TITLE",
-    format: (element) => element.innerHTML,
+    getContent: (element) => element.innerHTML,
   },
   abstract: {
+    permalink: "/",
     identify: (element) => element.getAttribute("id") === "abstract",
-    format: (element) => {
+    getContent: (element) => {
       if (!element.querySelector("h2")) {
         element.insertAdjacentHTML("afterbegin", "<h2>Abstract</h2>");
       }
@@ -31,12 +32,14 @@ const sections = {
     },
   },
   introduction: {
+    permalink: "/",
     identify: (element) => element.getAttribute("id") === "intro",
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       return element.outerHTML;
     }),
   },
   badAria: {
+    permalink: "/",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (
@@ -47,13 +50,14 @@ const sections = {
         )
       );
     },
-    format: removeSectionNumbers(
+    getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         return element.outerHTML;
       })
     ),
   },
   browserAndAtSupport: {
+    permalink: "/",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (
@@ -61,13 +65,14 @@ const sections = {
         fuzzysearch("browser and at support", headlineElement.textContent)
       );
     },
-    format: removeSectionNumbers(
+    getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         return element.outerHTML;
       })
     ),
   },
   mobileAndTouchSupport: {
+    permalink: "/",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (
@@ -75,7 +80,7 @@ const sections = {
         fuzzysearch("mobile and touch support", headlineElement.textContent)
       );
     },
-    format: removeSectionNumbers(
+    getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         return element.outerHTML;
       })
@@ -83,132 +88,149 @@ const sections = {
   },
 
   landmarkRegions: {
+    permalink: "/fundamentals/landmark-regions/",
+    permalinkReplacesFormerAnchorId: "aria_landmark",
     slug: "landmark-regions",
     identify: (element) => element.getAttribute("id") === "aria_landmark",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("landmark-regions"),
+    getIntroduction: getIntroductionFormatter("landmark-regions"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "landmark-regions");
       return element.outerHTML;
     }),
   },
   namesAndDescriptions: {
+    permalink: "/fundamentals/names-and-descriptions/",
+    permalinkReplacesFormerAnchorId: "names_and_descriptions",
     slug: "names-and-descriptions",
     identify: (element) =>
       element.getAttribute("id") === "names_and_descriptions",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("names-and-descriptions"),
+    getIntroduction: getIntroductionFormatter("names-and-descriptions"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "names-and-descriptions");
       return element.outerHTML;
     }),
   },
   keyboardInterface: {
+    permalink: "/fundamentals/keyboard-interface/",
+    permalinkReplacesFormerAnchorId: "keyboard",
     slug: "keyboard-interface",
     identify: (element) => element.getAttribute("id") === "keyboard",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("keyboard-interface"),
+    getIntroduction: getIntroductionFormatter("keyboard-interface"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "keyboard-interface");
       return element.outerHTML;
     }),
   },
   gridAndTableProperties: {
+    permalink: "/fundamentals/grid-and-table-properties/",
+    permalinkReplacesFormerAnchorId: "gridAndTableProperties",
     slug: "grid-and-table-properties",
     identify: (element) =>
       element.getAttribute("id") === "gridAndTableProperties",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("grid-and-table-properties"),
+    getIntroduction: getIntroductionFormatter("grid-and-table-properties"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "grid-and-table-properties");
       return element.outerHTML;
     }),
   },
   rangeRelatedProperties: {
+    permalink: "/fundamentals/range-related-properties/",
+    permalinkReplacesFormerAnchorId: "range_related_properties",
     slug: "range-related-properties",
     identify: (element) =>
       element.getAttribute("id") === "range_related_properties",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("range-related-properties"),
+    getIntroduction: getIntroductionFormatter("range-related-properties"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "range-related-properties");
       return element.outerHTML;
     }),
   },
   presentationRole: {
+    permalink: "/fundamentals/hiding-semantics/",
     slug: "presentation-role",
     identify: (element) => element.getAttribute("id") === "presentation_role",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("presentation-role"),
+    getIntroduction: getIntroductionFormatter("presentation-role"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "presentation-role");
       return element.outerHTML;
     }),
   },
   childrenPresentational: {
+    permalink: "/fundamentals/hiding-semantics/",
     slug: "children-presentational",
     identify: (element) =>
       element.getAttribute("id") === "children_presentational",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-    formatIntroduction: getIntroductionFormatter("children-presentational"),
+    getIntroduction: getIntroductionFormatter("children-presentational"),
     getOutline: getFundamentalOutline,
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "children-presentational");
       return element.outerHTML;
     }),
   },
 
   documentMeta: {
+    permalink: "/about/",
     identify: (element) => element.classList.contains("head"),
-    format: (element) => {
+    getContent: (element) => {
       return element.querySelector("dl").outerHTML;
     },
   },
 
   documentStatus: {
+    permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "sotd",
-    format: (element) => {
+    getContent: (element) => {
       return element.outerHTML;
     },
   },
 
   changelog: {
+    permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "change_log",
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       return element.outerHTML;
     }),
   },
 
   acknowledgements: {
+    permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "acknowledgements",
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       return element.outerHTML;
     }),
   },
 
   references: {
+    permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "references",
-    format: removeSectionNumbers((element) => {
+    getContent: removeSectionNumbers((element) => {
       return element.outerHTML;
     }),
   },

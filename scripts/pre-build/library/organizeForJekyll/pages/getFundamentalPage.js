@@ -5,7 +5,7 @@ const getFundamentalPage = (section) => {
     fileName: `fundamental-${section.slug}.md`,
     fileContent: getTemplateBoilerplate({
       title: section.name,
-      permalink: `/fundamentals/${section.slug}/`,
+      permalink: section.permalink,
       content: `
         <div class="sidebar-container">
           <aside class="sidebar-left">

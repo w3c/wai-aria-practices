@@ -22,37 +22,31 @@ const handleElement = (element) => {
   let foundMatch = false;
   let ignoreChildElements = false;
 
+  const formatElement = (element, formatter) => ({
+    permalink: formatter.permalink,
+    permalinkReplacesFormerAnchorId: formatter.permalinkReplacesFormerAnchorId,
+    slug: formatter.slug,
+    name: formatter.getName?.(element),
+    outline: formatter.getOutline?.(element),
+    introduction: formatter.getIntroduction?.(element),
+    content: formatter.getContent?.(element),
+  });
+
   Object.entries(sectionFormatters).forEach(([label, formatter]) => {
-    const { slug, identify, getName, getOutline, formatIntroduction, format } =
-      formatter;
-    if (identify(element)) {
+    if (formatter.identify(element)) {
       foundMatch = true;
       ignoreChildElements = true;
-      sections[label] = {};
-      if (slug) sections[label].slug = slug;
-      if (getName) sections[label].name = getName(element);
-      if (getOutline) sections[label].outline = getOutline(element);
-      if (formatIntroduction) {
-        sections[label].introduction = formatIntroduction(element);
-      }
-      sections[label].content = format(element);
+      sections[label] = formatElement(element, formatter);
     }
   });
 
-  patternFormatters.forEach(
-    ({ slug, identify, formatName, formatIntroduction, formatPage }) => {
-      if (identify(element)) {
-        foundMatch = true;
-        ignoreChildElements = true;
-        patterns.push({
-          slug,
-          name: formatName(element),
-          introduction: formatIntroduction(element),
-          page: formatPage(element),
-        });
-      }
+  patternFormatters.forEach((formatter) => {
+    if (formatter.identify(element)) {
+      foundMatch = true;
+      ignoreChildElements = true;
+      patterns.push(formatElement(element, formatter));
     }
-  );
+  });
 
   if (!foundMatch && element.classList.contains("widget")) {
     throw new Error(

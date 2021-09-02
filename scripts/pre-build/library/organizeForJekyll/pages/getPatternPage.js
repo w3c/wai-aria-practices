@@ -5,8 +5,8 @@ const getPatternPage = (pattern) => {
     fileName: `pattern-${pattern.slug}.md`,
     fileContent: getTemplateBoilerplate({
       title: pattern.name,
-      permalink: `/patterns/${pattern.slug}/`,
-      content: pattern.page,
+      permalink: pattern.permalink,
+      content: pattern.content,
     }),
   };
 };

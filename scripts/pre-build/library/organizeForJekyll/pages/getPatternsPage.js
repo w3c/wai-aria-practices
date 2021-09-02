@@ -12,7 +12,7 @@ const getPatternsPage = (patterns) => {
             return `
               <li class="tile tile-${pattern.slug}">
                 <h2 class="tile-name">
-                  <a href="${pattern.slug}">
+                  <a href="${pattern.permalink}">
                     <img src="/assets/img/${pattern.slug}.svg" alt="">
                     <span>${pattern.name}</span>
                   </a>

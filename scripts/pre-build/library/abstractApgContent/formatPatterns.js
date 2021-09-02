@@ -1,7 +1,7 @@
 const removeLinks = require("../../utilities/removeLinks");
 const renumberHeadings = require("../../utilities/renumberHeadings");
 const removeSectionNumbers = require("./removeSectionNumbers");
-const getIntroductionFormatter = require("./formatIntroduction");
+const getIntroductionFormatter = require("./getIntroduction");
 
 const patterns = [
   {
@@ -120,25 +120,28 @@ const patterns = [
 
 const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
   return {
+    permalink: `/patterns/${newSlug}/`,
+    permalinkReplacesFormerAnchorId: oldSlug,
+
     slug: newSlug,
 
     identify: (element) =>
       element.classList.contains("widget") &&
       element.getAttribute("id") === oldSlug,
 
-    formatName: removeLinks(
+    getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h3").innerHTML)
     ),
 
-    formatPage: removeSectionNumbers(
+    getIntroduction: getIntroductionFormatter(newSlug),
+
+    getContent: removeSectionNumbers(
       renumberHeadings(-2, (element) => {
         const originalHeadline = element.querySelector("h3");
         originalHeadline.remove();
         return element.outerHTML;
       })
     ),
-
-    formatIntroduction: getIntroductionFormatter(newSlug),
   };
 });
 
