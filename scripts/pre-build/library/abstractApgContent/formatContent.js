@@ -98,7 +98,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("landmark-regions"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "landmark-regions");
       return element.outerHTML;
     }),
   },
@@ -114,7 +113,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("names-and-descriptions"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "names-and-descriptions");
       return element.outerHTML;
     }),
   },
@@ -129,7 +127,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("keyboard-interface"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "keyboard-interface");
       return element.outerHTML;
     }),
   },
@@ -145,7 +142,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("grid-and-table-properties"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "grid-and-table-properties");
       return element.outerHTML;
     }),
   },
@@ -161,7 +157,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("range-related-properties"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "range-related-properties");
       return element.outerHTML;
     }),
   },
@@ -175,7 +170,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("presentation-role"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "presentation-role");
       return element.outerHTML;
     }),
   },
@@ -190,7 +184,6 @@ const sections = {
     getIntroduction: getIntroductionFormatter("children-presentational"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
-      element.setAttribute("id", "children-presentational");
       return element.outerHTML;
     }),
   },

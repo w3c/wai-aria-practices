@@ -6,6 +6,7 @@ const getFundamentalPage = (section) => {
     fileContent: getTemplateBoilerplate({
       title: section.name,
       permalink: section.permalink,
+      addBodyClass: "fundamental-page",
       content: `
         <div class="sidebar-container">
           <aside class="sidebar-left">

@@ -1,10 +1,12 @@
 const prettier = require("prettier");
 
-const getTemplateBoilerplate = ({ title, permalink, content, head = "" }) => {
+const getTemplateBoilerplate = ({
+  title,
+  permalink,
+  addBodyClass,
+  content,
+}) => {
   const todayDate = new Date().toISOString().slice(0, 10);
-  // Must be formatted because html which is indented by 4 spaces
-  // will be interpreted as a code block by the markdown engine
-  const formattedHead = prettier.format(head, { parser: "html" });
 
   return `---
 # This is a generated file
@@ -20,7 +22,12 @@ lang: en
 last_updated: ${todayDate}
 ---
 <link rel="stylesheet" href="/assets/styles.css">
-${formattedHead}
+<script>
+  const addBodyClass = ${JSON.stringify(addBodyClass)};
+  if (addBodyClass) {
+    document.body.classList.add(addBodyClass)
+  }
+</script>
 <body>
   ${content}
   <script src="/assets/skipToMainContent.js">
