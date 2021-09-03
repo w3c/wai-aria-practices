@@ -5,8 +5,12 @@ const getTemplateBoilerplate = ({
   permalink,
   addBodyClass,
   content,
+  head = "",
 }) => {
   const todayDate = new Date().toISOString().slice(0, 10);
+  // Must be formatted because html which is indented by 4 spaces
+  // will be interpreted as a code block by the markdown engine
+  const formattedHead = prettier.format(head, { parser: "html" });
 
   return `---
 # This is a generated file
@@ -21,18 +25,26 @@ permalink: ${permalink}
 lang: en
 last_updated: ${todayDate}
 ---
+${formattedHead}
+${/* ${prettier.format(` */ ""}
 <link rel="stylesheet" href="/assets/styles.css">
+${
+  !addBodyClass
+    ? ""
+    : `
 <script>
-  const addBodyClass = ${JSON.stringify(addBodyClass)};
-  if (addBodyClass) {
-    document.body.classList.add(addBodyClass)
-  }
+const addBodyClass = ${JSON.stringify(addBodyClass)};
+if (addBodyClass) {
+  document.body.classList.add(addBodyClass);
+}
 </script>
-<body>
-  ${content}
-  <script src="/assets/skipToMainContent.js">
-</body>
-`;
+    `
+}
+<div>
+${content}
+</div>
+<script src="/assets/skipToMainContent.js"></script>
+${/* `, { parser: "html" })} */ ""}`;
 };
 
 module.exports = getTemplateBoilerplate;

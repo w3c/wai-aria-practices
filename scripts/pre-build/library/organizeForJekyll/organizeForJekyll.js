@@ -1,6 +1,5 @@
 const fs = require("fs/promises");
 const path = require("path");
-const fixLinks = require("./fixLinks");
 const getHomePage = require("./pages/getHomePage");
 const getAboutPage = require("./pages/getAboutPage");
 const getFundamentalsPage = require("./pages/getFundamentalsPage");
@@ -9,8 +8,6 @@ const getPatternsPage = require("./pages/getPatternsPage");
 const getPatternPage = require("./pages/getPatternPage");
 
 const organizeForJekyll = async ({ sections, patterns }) => {
-  ({ sections, patterns } = fixLinks(sections, patterns));
-
   const fundamentals = [
     sections.landmarkRegions,
     sections.namesAndDescriptions,
@@ -20,6 +17,7 @@ const organizeForJekyll = async ({ sections, patterns }) => {
     {
       slug: "hiding-semantics",
       name: "Hiding Semantics",
+      permalink: "/fundamentals/hiding-semantics",
       introduction: sections.presentationRole.introduction,
       outline: [
         {

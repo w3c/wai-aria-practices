@@ -1,4 +1,5 @@
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
+const { fixLink } = require("../abstractApgContent/fixLinks");
 
 let title;
 let head;
@@ -8,7 +9,7 @@ const getContent = () => {
   return { title, head, body };
 };
 
-const handleElement = (element) => {
+const getHandleElement = (permalink) => (element) => {
   if (element.tagName === "HEAD") {
     head = element;
     walkHtmlElements(head, handleHeadElement);
@@ -17,7 +18,7 @@ const handleElement = (element) => {
 
   if (element.tagName === "BODY") {
     body = element;
-    walkHtmlElements(body, handleBodyElement);
+    walkHtmlElements(body, getHandleBodyElement(permalink));
     return { ignoreChildElements: true };
   }
 };
@@ -35,11 +36,20 @@ const handleHeadElement = (element) => {
   }
 };
 
-const handleBodyElement = (element) => {
+const getHandleBodyElement = (permalink) => (element) => {
   if (element.tagName === "H1") {
     title = element.innerHTML;
     element.remove();
   }
+
+  const isLink = element.tagName === "A" && element.getAttribute("href");
+  if (isLink) {
+    const href = element.getAttribute("href");
+    const isPageLink = href.startsWith("#");
+    if (!isPageLink) {
+      fixLink(element, permalink, permalink);
+    }
+  }
 };
 
-module.exports = { handleElement, getContent };
+module.exports = { getHandleElement, getContent };

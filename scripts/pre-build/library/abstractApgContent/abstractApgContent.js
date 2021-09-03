@@ -3,6 +3,7 @@ const path = require("path");
 const { parse: parseHtml } = require("node-html-parser");
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const { handleElement, getContent } = require("./handleElement");
+const { fixLinks } = require("./fixLinks");
 
 const abstractApgContent = async () => {
   const htmlFilePath = path.resolve(
@@ -17,7 +18,7 @@ const abstractApgContent = async () => {
 
   walkHtmlElements(root, handleElement);
 
-  return getContent();
+  return fixLinks(getContent());
 };
 
 module.exports = abstractApgContent;

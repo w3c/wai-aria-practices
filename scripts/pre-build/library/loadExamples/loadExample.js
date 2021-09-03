@@ -3,15 +3,16 @@ const fs = require("fs/promises");
 const { parse: parseHtml } = require("node-html-parser");
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const getTemplateBoilerplate = require("../getTemplateBoilerplate");
-const { handleElement, getContent } = require("./handleElement");
+const { getHandleElement, getContent } = require("./handleElement");
 
 const loadExample = async (filePath, { exampleRelativeDirectory }) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
   const slug = path.basename(filePath).slice(0, -5);
+  const permalink = `/examples/${exampleRelativeDirectory}/${slug}`;
 
   const root = parseHtml(html);
 
-  walkHtmlElements(root, handleElement);
+  walkHtmlElements(root, getHandleElement(permalink));
 
   const { title, head, body } = getContent();
 
@@ -19,7 +20,7 @@ const loadExample = async (filePath, { exampleRelativeDirectory }) => {
     fileName: `${slug}.md`,
     fileContent: getTemplateBoilerplate({
       title,
-      permalink: `/examples/${exampleRelativeDirectory}/${slug}`,
+      permalink,
       head: head.innerHTML,
       content: body.innerHTML,
     }),
