@@ -5,6 +5,11 @@ const walkHtmlElements = require("../../../utilities/walkHtmlElements");
 const manualRemappings = {
   "/#aria_ex": "/patterns/",
 
+  // Special case since two sections are combined here
+  "/#presentation_role": "/fundamentals/hiding-semantics/#presentation-role",
+  "/#children_presentational":
+    "/fundamentals/hiding-semantics/#children-presentational",
+
   // Fixed misspellings or broken links in examples
   "/#dialog-modal": "/patterns/dialog-modal/",
   "/#combobox_kbd_interaction": "/patterns/combobox/#keyboard-interaction-6",

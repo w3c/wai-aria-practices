@@ -170,6 +170,7 @@ const sections = {
     getIntroduction: getIntroductionFormatter("presentation-role"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
+      element.setAttribute("id", "presentation-role");
       return element.outerHTML;
     }),
   },
@@ -184,6 +185,7 @@ const sections = {
     getIntroduction: getIntroductionFormatter("children-presentational"),
     getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers((element) => {
+      element.setAttribute("id", "children-presentational");
       return element.outerHTML;
     }),
   },
