@@ -31,6 +31,17 @@ a.skip-main:focus, a.skip-main:active {
   font-size: 1.2em;
   z-index: 999;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
           
 /* Design Patterns and Widgets and Fundamentals */
 ul.tiles {
@@ -63,16 +74,16 @@ li.tile {
   border-radius: 4px;
 }
 
-li.tile a {
+li.tile .tile-name a {
   text-decoration: none;
   color: var(--wai-green);
 }
 
-li.tile a:hover {
+li.tile .tile-name a:hover {
   text-decoration: underline;
 }
 
-li.tile a:focus {
+li.tile .tile-name a:focus {
   display: flex;
   align-items: flex-start;
   outline-offset: 8px;
@@ -100,6 +111,18 @@ li.tile .tile-introduction {
   padding-top: 1em;
   margin-top: 1.25em;
 }
+
+li.tile .tile-introduction p {
+  margin: 0;
+}
+
+/* li.tile .tile-introduction a {
+  text-decoration: underline;
+}
+
+li.tile .tile-introduction a:hover {
+  color: #036;
+} */
 
 /* Sidebar Content */
 .sidebar-container {
