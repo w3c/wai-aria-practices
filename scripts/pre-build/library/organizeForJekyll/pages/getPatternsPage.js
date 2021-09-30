@@ -17,7 +17,9 @@ const getPatternsPage = (patterns) => {
                     <span>${pattern.name}</span>
                   </a>
                 </h2>
-                <div class="tile-introduction">${pattern.introduction}</div>
+                <div class="tile-introduction">
+                  <p>${pattern.introduction} <a href="${pattern.permalink}">Read more<span class="sr-only"> about ${pattern.slug}</span></a></p>
+                </div>
               </li>
             `;
           })

@@ -16,7 +16,9 @@ const getFundamentalsPage = (fundamentals) => {
                     <span>${fundamental.name}</span>
                   </a>
                 </h2>
-                <div class="tile-introduction">${fundamental.introduction}</div>
+                <div class="tile-introduction">
+                  <p>${fundamental.introduction} <a href="${fundamental.slug}">Read more<span class="sr-only"> about ${fundamental.name}</span></a></p>
+                </div>
               </li>
             `;
           })

@@ -49,12 +49,12 @@ defaults:
       standalone_resource_nav_links:
         - name: Home
           ref: /
-        - name: Patterns and Widgets
-          ref: /patterns/
-        - name: Examples
-          ref: /examples/
         - name: Fundamentals
           ref: /fundamentals/
+        - name: Patterns and Widgets
+          ref: /patterns/
+        - name: Indexes
+          ref: /examples/
         - name: About
           ref: /about/
 #  -
