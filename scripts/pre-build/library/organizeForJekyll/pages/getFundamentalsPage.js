@@ -12,7 +12,7 @@ const getFundamentalsPage = (fundamentals) => {
             return `
               <li class="tile tile-${fundamental.slug}">
                 <h2 class="tile-name">
-                  <a href="${fundamental.slug}">
+                  <a href="/fundamentals/${fundamental.slug}/">
                     <span>${fundamental.name}</span>
                   </a>
                 </h2>

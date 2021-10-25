@@ -17,7 +17,7 @@ const organizeForJekyll = async ({ sections, patterns }) => {
     {
       slug: "hiding-semantics",
       name: "Hiding Semantics",
-      permalink: "/fundamentals/hiding-semantics",
+      permalink: "/fundamentals/hiding-semantics/",
       introduction: sections.presentationRole.introduction,
       outline: [
         {
