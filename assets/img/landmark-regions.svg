@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <g id="Landmark_Regions" data-name="Landmark Regions" transform="translate(-55 -788)">
+    <rect id="Rectangle_216" data-name="Rectangle 216" width="80" height="80" transform="translate(57 790)" fill="#eaeaea" stroke="#185a69" stroke-width="4"/>
+    <g id="Rectangle_220" data-name="Rectangle 220" transform="translate(67 800)" fill="#fff" stroke="#185a69" stroke-width="4">
+      <rect width="60" height="60" rx="1" stroke="none"/>
+      <rect x="-2" y="-2" width="64" height="64" rx="3" fill="none"/>
+    </g>
+    <rect id="Rectangle_221" data-name="Rectangle 221" width="45" height="2" transform="translate(79 853) rotate(-90)" fill="#185a69"/>
+    <rect id="Rectangle_225" data-name="Rectangle 225" width="28" height="2" transform="translate(113 852) rotate(-90)" fill="#185a69"/>
+    <rect id="Rectangle_224" data-name="Rectangle 224" width="47" height="2" transform="translate(127 824) rotate(-180)" fill="#185a69"/>
+    <rect id="Rectangle_226" data-name="Rectangle 226" width="60" height="2" transform="translate(127 808) rotate(-180)" fill="#185a69"/>
+    <rect id="Rectangle_227" data-name="Rectangle 227" width="60" height="2" transform="translate(127 853) rotate(-180)" fill="#185a69"/>
+  </g>
+</svg>
