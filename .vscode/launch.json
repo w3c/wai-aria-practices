@@ -7,7 +7,7 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Prebuild Script",
       "skipFiles": [
         "<node_internals>/**"
       ],
