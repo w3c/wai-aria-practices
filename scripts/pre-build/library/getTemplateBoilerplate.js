@@ -43,7 +43,18 @@ if (addBodyClass) {
 <div>
 ${content}
 </div>
-<script src="/assets/skipToMainContent.js"></script>
+<script>
+  var SkipToConfig = {
+    settings: {
+      skipTo: {
+        displayOption: 'popup',
+        attachElement: '#site-header',
+        colorTheme: 'aria'
+      }
+    }
+  };
+</script>
+<script src="/assets/skipto.min.js"></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };
 

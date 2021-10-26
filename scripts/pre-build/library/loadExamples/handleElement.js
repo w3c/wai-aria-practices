@@ -11,14 +11,14 @@ const getContent = () => {
 
 const getHandleElement = (permalink) => (element) => {
   if (element.tagName === "HEAD") {
-    head = element;
-    walkHtmlElements(head, handleHeadElement);
+    walkHtmlElements(element, handleHeadElement);
+    head = element.innerHTML;
     return { ignoreChildElements: true };
   }
 
   if (element.tagName === "BODY") {
-    body = element;
-    walkHtmlElements(body, getHandleBodyElement(permalink));
+    walkHtmlElements(element, getHandleBodyElement(permalink));
+    body = removeMainTag(element.innerHTML);
     return { ignoreChildElements: true };
   }
 };
@@ -50,6 +50,10 @@ const getHandleBodyElement = (permalink) => (element) => {
       fixLink(element, permalink, permalink);
     }
   }
+};
+
+const removeMainTag = (body) => {
+  return body.replace(/<main/, "<div").replace(/<\/main>/, "</div>");
 };
 
 module.exports = { getHandleElement, getContent };

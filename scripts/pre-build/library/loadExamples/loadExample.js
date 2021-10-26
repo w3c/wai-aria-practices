@@ -21,8 +21,8 @@ const loadExample = async (filePath, { exampleRelativeDirectory }) => {
     fileContent: getTemplateBoilerplate({
       title,
       permalink,
-      head: head.innerHTML,
-      content: body.innerHTML,
+      head: head,
+      content: body,
     }),
   };
 };
