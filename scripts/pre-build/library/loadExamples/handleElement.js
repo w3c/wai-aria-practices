@@ -17,6 +17,7 @@ const getHandleElement = (permalink) => (element) => {
   }
 
   if (element.tagName === "BODY") {
+    if (permalink === "/index/") editIndexPage(element);
     walkHtmlElements(element, getHandleBodyElement(permalink));
     body = removeMainTag(element.innerHTML);
     return { ignoreChildElements: true };
@@ -54,6 +55,26 @@ const getHandleBodyElement = (permalink) => (element) => {
 
 const removeMainTag = (body) => {
   return body.replace(/<main/, "<div").replace(/<\/main>/, "</div>");
+};
+
+const editIndexPage = (element) => {
+  if (
+    !element
+      .querySelector("p")
+      .textContent.includes("This page includes the following indexes") ||
+    !element
+      .querySelector("nav")
+      .textContent.includes("WAI-ARIA Authoring Practices") ||
+    !element.querySelector("ul").textContent.includes("Examples by Role")
+  ) {
+    throw new Error(
+      "Cannot edit content because it appears to have diverged from a " +
+        "known state."
+    );
+  }
+  element.querySelector("p").remove();
+  element.querySelector("nav").remove();
+  element.querySelector("ul").remove();
 };
 
 module.exports = { getHandleElement, getContent };

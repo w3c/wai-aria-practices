@@ -13,13 +13,37 @@ const loadIndex = async (filePath) => {
 
   walkHtmlElements(root, getHandleElement(permalink));
 
-  const { title, head, body } = getContent();
+  const { /* title, */ head, body } = getContent();
 
   return getTemplateBoilerplate({
-    title,
+    title: "Index",
     permalink,
-    head: head.innerHTML,
-    content: body.innerHTML,
+    head: head,
+    content: `
+      <div class="sidebar-container">
+        <aside class="sidebar-left">
+          <h2 class="sidebar-headline">Table of Contents</h2>
+          <ul class="sidebar-list">
+            <li>
+              <a href="#examples_by_role_label">Examples by Role</a>
+            </li>
+            <li>
+              <a href="#examples_by_props_label">
+                Examples by Properties and States
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <div class="sidebar-right">
+          <h2>About the Index</h2>
+          <p>
+            This page includes a list of all ARIA design pattern examples 
+            indexed either by role or by ARIA properties and states.
+          </p>
+          ${body}
+        </div>
+      </div>
+    `,
   });
 };
 
