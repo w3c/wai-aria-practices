@@ -51,8 +51,8 @@ defaults:
           ref: /
         - name: Patterns and Widgets
           ref: /patterns/
-        - name: Examples
-          ref: /examples/
+        - name: Index
+          ref: /index/
         - name: Fundamentals
           ref: /fundamentals/
         - name: About

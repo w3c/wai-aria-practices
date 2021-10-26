@@ -5,9 +5,9 @@ const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const getTemplateBoilerplate = require("../getTemplateBoilerplate");
 const { getHandleElement, getContent } = require("./handleElement");
 
-const loadIndex = async (filePath, { exampleRelativeDirectory }) => {
+const loadIndex = async (filePath) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
-  const permalink = `/examples/`;
+  const permalink = `/index/`;
 
   const root = parseHtml(html);
 

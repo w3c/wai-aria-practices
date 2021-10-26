@@ -17,6 +17,11 @@ const manualRemappings = {
     "/patterns/combobox/#wai-aria-roles-states-and-properties-6",
 };
 
+const urlRewrites = [
+  // Replaces `../../examples/` with `../../index/
+  [/^([\/.]*)\/examples\//g, "$1/index/"],
+];
+
 const oldToNewLink = { ...manualRemappings };
 
 const findNewLinksForOldLinks = (section) => {
@@ -53,7 +58,9 @@ const fixLink = (element, permalink, oldPermalink = "/") => {
 
   const href = element.getAttribute("href");
   const apgAnchorId = getApgAnchorId(href, oldPermalink);
-  const isSiteLink = apgAnchorId ? null : !href.match(/^(http|mailto)/);
+  const isSiteLink = apgAnchorId
+    ? null
+    : !href.match(/^(http|mailto|javascript)/);
   if (!!apgAnchorId) {
     const newLink = oldToNewLink[`/#${apgAnchorId}`];
     if (!newLink) {
@@ -70,7 +77,8 @@ const fixLink = (element, permalink, oldPermalink = "/") => {
   if (isSiteLink) {
     const fixedLinkBase = path.relative(permalink, oldPermalink);
     const fixedLink = path.join(fixedLinkBase, href);
-    element.setAttribute("href", fixedLink);
+    const rewrittenLink = rewriteUrls(fixedLink);
+    element.setAttribute("href", rewrittenLink);
   }
 };
 
@@ -105,6 +113,14 @@ const fixLinks = ({
   const patterns = previousPatterns.map((pattern) => getFixedLinks(pattern));
 
   return { sections, patterns };
+};
+
+const rewriteUrls = (url) => {
+  let rewrittenUrl = url;
+  urlRewrites.forEach(([regexFind, regexReplace]) => {
+    rewrittenUrl = rewrittenUrl.replace(regexFind, regexReplace);
+  });
+  return rewrittenUrl;
 };
 
 module.exports = { fixLinks, fixLink };

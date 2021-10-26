@@ -10,10 +10,7 @@ const loadExamples = async () => {
     "../../../../_external/aria-practices/examples"
   );
 
-  const destinationExamplesPath = path.resolve(
-    __dirname,
-    "../../../../examples"
-  );
+  const destinationExamplesPath = path.resolve(__dirname, "../../../../index");
 
   const exampleDirectories = (await fs.readdir(examplesPath)).filter((item) => {
     return ![
@@ -70,9 +67,7 @@ const loadExamples = async () => {
 
   const indexPath = path.join(examplesPath, "index.html");
   const indexDestinationPath = path.join(destinationExamplesPath, "index.md");
-  const indexContent = await loadIndex(indexPath, {
-    exampleRelativeDirectory: "./",
-  });
+  const indexContent = await loadIndex(indexPath);
   await fs.writeFile(indexDestinationPath, indexContent, { encoding: "utf8" });
 };
 

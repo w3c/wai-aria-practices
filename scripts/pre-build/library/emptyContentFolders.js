@@ -4,7 +4,7 @@ const rimraf = require("rimraf");
 
 const contentPaths = [
   path.resolve(__dirname, "../../../content"),
-  path.resolve(__dirname, "../../../examples"),
+  path.resolve(__dirname, "../../../index"),
 ];
 
 const emptyContentFolders = async () => {
