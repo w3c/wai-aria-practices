@@ -19,6 +19,7 @@ const loadExamples = async () => {
       "index.html",
       "js",
       "coding-template",
+      "landmarks", // this is a special case which is handled separately
     ].includes(item);
   });
 
@@ -28,14 +29,21 @@ const loadExamples = async () => {
     exampleDirectories.map(async (directory) => {
       const directoryPath = path.join(examplesPath, directory);
       const filePaths = await getPaths(directoryPath);
-      const examplePaths = filePaths.filter((item) => item.endsWith("html"));
-      const assetPaths = filePaths.filter((item) => !item.endsWith("html"));
+      const examplePaths = filePaths.filter(
+        (item) => item.endsWith("html") && !isHtmlAsset(item)
+      );
+      const assetPaths = filePaths.filter(
+        (item) => isHtmlAsset(item) || !item.endsWith("html")
+      );
       exampleFilePaths = [...exampleFilePaths, ...examplePaths];
       exampleAssetPaths = [...exampleAssetPaths, ...assetPaths];
     })
   );
 
-  const additionalAssets = await getPaths(path.join(examplesPath, "js"));
+  const additionalAssets = [
+    ...(await getPaths(path.join(examplesPath, "js"))),
+    ...(await getPaths(path.join(examplesPath, "css"))),
+  ];
   exampleAssetPaths = [...exampleAssetPaths, ...additionalAssets];
 
   await Promise.all(
@@ -46,6 +54,8 @@ const loadExamples = async () => {
       await fs.copyFile(currentPath, destinationPath);
     })
   );
+
+  await editAppJs({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {
     const exampleRelative = path.relative(examplesPath, currentPath);
@@ -69,6 +79,33 @@ const loadExamples = async () => {
   const indexDestinationPath = path.join(destinationExamplesPath, "index.md");
   const indexContent = await loadIndex(indexPath);
   await fs.writeFile(indexDestinationPath, indexContent, { encoding: "utf8" });
+};
+
+const editAppJs = async ({ destinationExamplesPath }) => {
+  const appJsPath = path.join(destinationExamplesPath, "js", "app.js");
+  const appJsContent = await fs.readFile(appJsPath, { encoding: "utf8" });
+  const lineToEdit = "var heading = document.querySelector('h1');";
+  const lineToEditStartIndex = appJsContent.indexOf(lineToEdit);
+  if (!lineToEditStartIndex) {
+    throw new Error(
+      "app.js has diverged from a known state and the pre-build script must " +
+        "be updated"
+    );
+  }
+  const lineToEditEndIndex = lineToEditStartIndex + lineToEdit.length;
+  const newContent =
+    appJsContent.substr(0, lineToEditStartIndex) +
+    "var heading = document.querySelector('.followed-by-support-notice'); " +
+    "// Line edited by pre-build script" +
+    appJsContent.substr(lineToEditEndIndex);
+  await fs.writeFile(appJsPath, newContent);
+};
+
+const isHtmlAsset = (filePath) => {
+  return (
+    filePath.endsWith("feed/feedDisplay.html") ||
+    filePath.endsWith("toolbar/help.html")
+  );
 };
 
 module.exports = loadExamples;

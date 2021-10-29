@@ -107,6 +107,9 @@ li.tile .tile-introduction {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2em;
 }
+.sidebar-headline, .sidebar-right h2:first-of-type {
+  margin-top: 20px;
+}
 
 ul.sidebar-list {
   list-style: none;
@@ -127,6 +130,9 @@ ul.sidebar-list li a:first-child {
   border-top: 1px solid #00768b;
   font-size: .8125rem;
 }
+ul.sidebar-list li:last-of-type a:first-child {
+  border-bottom: 1px solid #00768b;
+}
 
 ul.sidebar-list li a:hover {
   text-decoration: underline;
@@ -140,6 +146,17 @@ ul.sidebar-list li a code {
   border-radius: 3px;
   line-height: 1em;
   display: inline-block;
+}
+
+ul.sidebar-list.sidebar-list-yellow {
+  background-color: #FFF1C4;
+}
+ul.sidebar-list.sidebar-list-yellow li a:first-child {
+  color: black;
+  border-top-color: #D5C184;
+}
+ul.sidebar-list.sidebar-list-yellow li:last-of-type a:first-child {
+  border-bottom: 1px solid #D5C184;
 }
 
 li .tile-introduction {
@@ -282,6 +299,9 @@ table.widget-features {
   page-break-inside: avoid;
   margin: 1em auto;
 }
+.advisement {
+  clear: both;
+}
 
 .note {
   border-color: #52e052;
@@ -334,6 +354,14 @@ details.addition > summary > .marker {
   text-align: center;
 }
 
-nav li:last-of-type {
+nav.nav li:last-of-type {
   display: none;
+}
+
+.example-header button:first-of-type {
+  margin-bottom: 20px;
+}
+.example-page-example-icon {
+  float: left;
+  margin: 0 10px 4px 0;
 }

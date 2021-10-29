@@ -14,7 +14,7 @@ const loadExample = async (filePath, { exampleRelativeDirectory }) => {
 
   walkHtmlElements(root, getHandleElement(permalink));
 
-  const { title, head, body } = getContent();
+  const { title, head, body, outline, relatedLinks } = getContent();
 
   return {
     fileName: `${slug}.md`,
@@ -22,7 +22,26 @@ const loadExample = async (filePath, { exampleRelativeDirectory }) => {
       title,
       permalink,
       head: head,
-      content: body,
+      content: `
+        <div class="sidebar-container">
+          <aside class="sidebar-left" aria-describedby="sidebar-toc">
+            <h2 id="sidebar-toc" class="sidebar-headline">Table of Contents</h2>
+            <ul class="sidebar-list">
+              ${outline
+                .map(({ slug, name }) => {
+                  return `
+                    <li>
+                      <a href="#${slug}">${name}</a>
+                    </li>
+                  `;
+                })
+                .join(" ")}
+            </ul>
+            ${relatedLinks}
+          </aside>
+          <div class="sidebar-right">${body}</div>
+        </div>
+      `,
     }),
   };
 };

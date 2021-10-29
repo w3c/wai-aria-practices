@@ -119,6 +119,9 @@ const patterns = [
 ];
 
 const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
+  if (newSlug === "accordion") {
+    console.log();
+  }
   return {
     permalink: `/patterns/${newSlug}/`,
     permalinkReplacesFormerAnchorId: oldSlug,
