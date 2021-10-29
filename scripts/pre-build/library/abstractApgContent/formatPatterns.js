@@ -1,3 +1,4 @@
+const { kebabCase } = require("lodash");
 const removeLinks = require("../../utilities/removeLinks");
 const renumberHeadings = require("../../utilities/renumberHeadings");
 const removeSectionNumbers = require("./removeSectionNumbers");
@@ -118,10 +119,28 @@ const patterns = [
   },
 ];
 
-const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
-  if (newSlug === "accordion") {
-    console.log();
+const lastCharacterIsColon = (str) => {
+  const chars = str.split("");
+  return chars[chars.length - 1] === ":";
+};
+
+const removeLastCharacter = (str) => {
+  return str.substr(0, str.length - 1);
+};
+
+const findExamplesSection = (element, newSlug) => {
+  const sectionElements = element.querySelectorAll("section");
+  for (const sectionElement of sectionElements) {
+    const h4 = sectionElement.querySelector("h4");
+    if (!h4) continue;
+    if (h4.textContent === "Example" || h4.textContent === "Examples") {
+      return sectionElement;
+    }
   }
+  throw new Error(`Expected pattern ${newSlug} to have an Example(s) section`);
+};
+
+const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
   return {
     permalink: `/patterns/${newSlug}/`,
     permalinkReplacesFormerAnchorId: oldSlug,
@@ -138,10 +157,44 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
 
     getIntroduction: getIntroductionFormatter(newSlug),
 
+    getOutline: (element) => {
+      return [
+        { name: "About This Pattern", slug: "about-this-pattern" },
+        ...element.querySelectorAll("h4").map((h4) => {
+          // Sorry this is a bit awkward
+          let name = removeSectionNumbers(() => h4.textContent)();
+          if (lastCharacterIsColon(name)) name = removeLastCharacter(name);
+          const slug = h4.getAttribute("id") ?? kebabCase(name);
+          return { name, slug };
+        }),
+      ];
+    },
+
     getContent: removeSectionNumbers(
       renumberHeadings(-2, (element) => {
         const originalHeadline = element.querySelector("h3");
         originalHeadline.remove();
+        element.querySelectorAll("h4").forEach((h4) => {
+          h4.setAttribute("tabindex", "-1");
+          if (!h4.getAttribute("id")) {
+            const slug = kebabCase(
+              // Sorry this is a bit awkward
+              removeSectionNumbers(() => h4.textContent)()
+            );
+            h4.setAttribute("id", slug);
+          }
+        });
+        element.insertAdjacentHTML(
+          "afterbegin",
+          '<h4 id="about-this-pattern" tabindex="-1">About This Pattern</h4>'
+        );
+
+        examplesSection = findExamplesSection(element, newSlug);
+        examplesSection.classList.add("examples-section");
+        examplesSection.insertAdjacentHTML(
+          "afterbegin",
+          `<img alt="" src="/assets/img/${newSlug}.svg" />`
+        );
         return element.outerHTML;
       })
     ),

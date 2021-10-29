@@ -31,7 +31,47 @@ a.skip-main:focus, a.skip-main:active {
   font-size: 1.2em;
   z-index: 999;
 }
-          
+
+/* Patterns */
+.examples-section {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  grid-template-rows: 32px minmax(52px, auto);
+  column-gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--line-grey);
+}
+.examples-section > img {
+  grid-column: 1;
+  grid-row: 1 / 2;
+  width: 84px;
+  height: 84px;
+}
+.examples-section > :not(img) {
+  grid-column: 2;
+}
+.examples-section h2 {
+  margin: 0 !important;
+  border-bottom: none;
+}
+.examples-section p:first-of-type {
+  margin-top: 0;
+}
+.examples-section p:last-of-type {
+  margin-bottom: 0;
+}
+.examples-section ul {
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
 /* Design Patterns and Widgets and Fundamentals */
 ul.tiles {
   display: grid;
