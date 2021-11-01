@@ -8,7 +8,32 @@ const getPatternsPage = (patterns) => {
       permalink: "/patterns/",
       content: `<ul class="tiles">
         ${patterns
-          .map((pattern) => {
+          .map((pattern, index) => {
+            if (pattern.name.startsWith("Grids")) {
+              if (patterns[index + 1].name !== "Link") {
+                throw new Error(
+                  "Cannot insert the landmarks pattern link because the " +
+                    "correct alphabetical position has diverged from a known " +
+                    "state."
+                );
+              }
+              // This pattern is not like the others and needs separate handling
+              return `
+                <li class="tile tile-landmarks">
+                  <h2 class="tile-name">
+                    <a href="/index/landmarks/index.html" target="_blank">
+                      <img src="/assets/img/landmarks.svg" alt="">
+                      <span>Landmarks</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
+                    Landmarks provide a powerful way to identify the 
+                    organization and structure of a web page.
+                  </div>
+                </li>
+              `;
+            }
+
             return `
               <li class="tile tile-${pattern.slug}">
                 <h2 class="tile-name">

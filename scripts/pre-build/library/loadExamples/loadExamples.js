@@ -19,7 +19,6 @@ const loadExamples = async () => {
       "index.html",
       "js",
       "coding-template",
-      "landmarks", // this is a special case which is handled separately
     ].includes(item);
   });
 
@@ -103,6 +102,7 @@ const editAppJs = async ({ destinationExamplesPath }) => {
 
 const isHtmlAsset = (filePath) => {
   return (
+    filePath.includes("landmarks/") ||
     filePath.endsWith("feed/feedDisplay.html") ||
     filePath.endsWith("toolbar/help.html")
   );
