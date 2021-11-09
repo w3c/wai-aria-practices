@@ -1,6 +1,7 @@
 const { kebabCase } = require("lodash");
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const { fixLink } = require("../abstractApgContent/fixLinks");
+const wrapTablesWithResponsiveDiv = require("../abstractApgContent/wrapTablesWithResponsiveDiv");
 
 let title;
 let head;
@@ -23,12 +24,6 @@ const getContent = () => {
 const getHandleElement = (permalink) => (element) => {
   if (element.tagName === "HEAD") {
     walkHtmlElements(element, handleHeadElement);
-    // Must be manually re-added since it was originally imported by the
-    // core.css which has been removed.
-    element.insertAdjacentHTML(
-      "beforeend",
-      '<link rel="stylesheet" href="../css/github.css"></link>'
-    );
     head = element.innerHTML;
     return { ignoreChildElements: true };
   }
@@ -106,7 +101,9 @@ const getHandleElement = (permalink) => (element) => {
       );
     }
 
-    body = removeDuplicateMainTag(element.innerHTML);
+    body = wrapTablesWithResponsiveDiv(
+      removeDuplicateMainTag(element.innerHTML)
+    );
 
     return { ignoreChildElements: true };
   }

@@ -28,6 +28,8 @@ last_updated: ${todayDate}
 ${formattedHead}
 ${/* ${prettier.format(` */ ""}
 <link rel="stylesheet" href="/assets/styles.css">
+<!-- Code highlighting styles -->
+<link rel="stylesheet" href="/index/css/github.css">
 ${
   !addBodyClass
     ? ""

@@ -1,5 +1,6 @@
 const sectionFormatters = require("./formatContent");
 const patternFormatters = require("./formatPatterns");
+const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 
 const sections = {};
 const patterns = [];
@@ -29,7 +30,7 @@ const handleElement = (element) => {
     name: formatter.getName?.(element),
     outline: formatter.getOutline?.(element),
     introduction: formatter.getIntroduction?.(element),
-    content: formatter.getContent?.(element),
+    content: wrapTablesWithResponsiveDiv(formatter.getContent?.(element)),
   });
 
   Object.entries(sectionFormatters).forEach(([label, formatter]) => {

@@ -3,7 +3,8 @@
 .page-fundamentals .standalone-resource__main,
 .page-design-patterns-and-widgets .standalone-resource__main,
 .fundamental-page .standalone-resource__main,
-.default-grid.with-gap.leftcol .standalone-resource__prevnext { 
+.default-grid.with-gap.leftcol .standalone-resource__prevnext,
+.leftcol .standalone-resource__main { 
   grid-column: 2/10;
 }
 
@@ -144,16 +145,31 @@ li.tile .tile-introduction {
 /* Sidebar Content */
 .sidebar-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(250px, 30%) 1fr;
   grid-column-gap: 2em;
 }
 .sidebar-headline, .sidebar-right h2:first-of-type {
   margin-top: 20px;
 }
-
+.sidebar-left {
+  height: min-content;
+  position: sticky;
+  top: 0;
+}
+.sidebar-right {
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  .sidebar-container {
+    display: block;
+  }
+  .sidebar-left {
+    position: unset;
+  }
+}
 ul.sidebar-list {
   list-style: none;
-  padding-left: 5px;
+  padding: 0;
   background-color: var(--wai-green);
 }
 
@@ -170,8 +186,8 @@ ul.sidebar-list li a:first-child {
   border-top: 1px solid #00768b;
   font-size: .8125rem;
 }
-ul.sidebar-list li:last-of-type a:first-child {
-  border-bottom: 1px solid #00768b;
+ul.sidebar-list li:first-of-type a:first-child {
+  border-top: none;
 }
 
 ul.sidebar-list li a:hover {
@@ -195,8 +211,8 @@ ul.sidebar-list.sidebar-list-yellow li a:first-child {
   color: black;
   border-top-color: #D5C184;
 }
-ul.sidebar-list.sidebar-list-yellow li:last-of-type a:first-child {
-  border-bottom: 1px solid #D5C184;
+ul.sidebar-list.sidebar-list-yellow li a:hover {
+  background-color: #cec4a6;
 }
 
 li .tile-introduction {
@@ -212,11 +228,15 @@ li .tile-introduction {
   margin-top: 1em;
 }
 
-.fundamental-page .sidebar-container {
-  grid-template-columns: 25% 1fr;
+/* Tables */
+.table-wrap {
+  width: 100%;
+  overflow: auto;
+}
+table {
+  margin-bottom: 0;
 }
 
-/* Tables */
 :not(th) > kbd {
   display: inline-block;
   padding: 0.1em 0.3em;
@@ -313,6 +333,10 @@ table.widget-features {
   width: 100%;
 }
 
+table :not(.highlight) code {
+  color: inherit;
+}
+
 /* Miscellaneous */
 .warning {
   border-color: #f11;
@@ -404,4 +428,149 @@ nav.nav li:last-of-type {
 .example-page-example-icon {
   float: left;
   margin: 0 10px 4px 0;
+}
+
+/* Misc fixes */
+
+#range_related_properties_scrollbar_role code,
+#kbd_focus_activedescendant code {
+  word-break: break-all;
+}
+
+#examples_by_props td:first-of-type,
+#examples_by_roles td:first-of-type {
+  min-width: 150px;
+  max-width: 200px;
+}
+#examples_by_props td:nth-of-type(2),
+#examples_by_roles td:nth-of-type(2) {
+  min-width: 250px;
+}
+
+#ex_alertdialog .notes {
+  min-width: 280px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  #ex1 .page .body {
+    display: block;
+  }
+  #ex1 .page .body nav:first-child {
+    height: min-content;
+  }
+}
+
+[role="button"][aria-pressed="true"]:hover {
+  color: white;
+}
+
+.combobox input, #cb-textbox-1 {
+  font-size: 16px; /* Any smaller a font-size and iOS will zoom in on focus */
+}
+
+.datepicker .group {
+  width: 15em;
+}
+
+.dialog_form_item {
+  font-size: unset;
+}
+.dialog_form_item label {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  text-align: right;
+}
+.dialog_form_item input {
+  width: unset !important;
+  max-width: unset !important;
+  height: 1.7em;
+}
+.dialog_form_item:last-child label {
+  display: block;
+}
+.dialog_form_item:last-child {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.dialog_form_item .label_info {
+  grid-column: span 2;
+}
+.dialog_form .label_text {
+  width: unset;
+}
+
+.combobox-datepicker .dates th,
+#myDatepicker .dates th {
+  padding: 0;
+}
+
+.Accordion-trigger:focus, .Accordion-trigger:hover,
+#ex1 figure button,
+dl.faq button,
+.disclosure-nav button,
+#ex1 [role="toolbar"] > *,
+.tabs button {
+  color: black;
+}
+
+#myCarousel button svg,
+.spinbutton button svg {
+  width: unset;
+  height: unset;
+}
+
+.listbox-area {
+  grid-gap: 5px;
+  padding: 5px;
+}
+.listbox-area .left-area {
+  min-width: 0;
+}
+.listbox-area [role="option"] {
+  line-height: 1.2;
+}
+
+.menubar-editor {
+  width: 100%;
+}
+.menubar-editor textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+.menubar-editor [role="menubar"] {
+  height: unset;
+  line-height: 35px;
+}
+
+.menu-button-links [role="menuitem"] {
+  max-width: 85vw;
+}
+
+.tabs {
+  max-width: 100%;
+}
+
+.format {
+  max-width: 1050px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.75em;
+  height: auto;
+}
+.format [role="toolbar"] .group {
+  float: none;
+}
+[role="toolbar"] .group:not(:first-child) {
+  margin-left: 0;
+}
+#textarea1 {
+  max-width: 100%;
+}
+
+#treegrid th {
+  color: black;
 }
