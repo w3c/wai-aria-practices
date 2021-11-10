@@ -422,6 +422,9 @@ nav.nav li:last-of-type {
   display: none;
 }
 
+.example-header {
+  clear: both;
+}
 .example-header button:first-of-type {
   margin-bottom: 20px;
 }
@@ -461,7 +464,9 @@ nav.nav li:last-of-type {
   }
 }
 
-[role="button"][aria-pressed="true"]:hover {
+[role="button"][aria-pressed],
+[role="button"][aria-pressed]:focus,
+[role="button"][aria-pressed]:hover {
   color: white;
 }
 
@@ -478,7 +483,7 @@ nav.nav li:last-of-type {
 }
 .dialog_form_item label {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
   width: 100%;
   text-align: right;
 }
@@ -492,18 +497,26 @@ nav.nav li:last-of-type {
 }
 .dialog_form_item:last-child {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
 }
 .dialog_form_item .label_info {
   grid-column: span 2;
+  width: unset;
 }
 .dialog_form .label_text {
   width: unset;
+  word-break: break-word;
+}
+.dialog_form_actions {
+  padding: 0;
 }
 
 .combobox-datepicker .dates th,
 #myDatepicker .dates th {
   padding: 0;
+}
+#myDatepicker button {
+  border-radius: 0;
 }
 
 .Accordion-trigger:focus, .Accordion-trigger:hover,
@@ -515,8 +528,10 @@ dl.faq button,
   color: black;
 }
 
+#myDatepicker button svg,
 #myCarousel button svg,
-.spinbutton button svg {
+.spinbutton button svg,
+.combobox button svg {
   width: unset;
   height: unset;
 }
@@ -541,7 +556,7 @@ dl.faq button,
 }
 .menubar-editor [role="menubar"] {
   height: unset;
-  line-height: 35px;
+  line-height: 38px;
 }
 
 .menu-button-links [role="menuitem"] {
@@ -550,6 +565,12 @@ dl.faq button,
 
 .tabs {
   max-width: 100%;
+}
+.tabs button:hover,
+.tabs button:focus,
+.toolbar button:hover,
+.toolbar button:focus {
+  background-color: inherit;
 }
 
 .format {
@@ -567,10 +588,17 @@ dl.faq button,
 [role="toolbar"] .group:not(:first-child) {
   margin-left: 0;
 }
+.toolbar {
+  flex-wrap: wrap;
+  gap: 5px;
+}
 #textarea1 {
   max-width: 100%;
 }
 
+#treegrid {
+  width: unset;
+}
 #treegrid th {
   color: black;
 }
