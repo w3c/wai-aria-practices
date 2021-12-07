@@ -6,6 +6,5 @@ Gemfile.lock
 vendor
 node_modules
 .netlify
-content
 index
 landmarks
