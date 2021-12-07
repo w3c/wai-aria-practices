@@ -1,6 +1,6 @@
 [submodule "_external/aria-practices"]
 	path = _external/aria-practices
-	url = git@github.com:w3c/aria-practices.git
+	url = https://github.com/w3c/aria-practices.git
 [submodule "_external/data"]
 	path = _external/data
 	url = https://github.com/w3c/wai-website-data.git
