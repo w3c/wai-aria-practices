@@ -1,7 +1,12 @@
 Name: Deploy to Netlify
 
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - echo 'Worked'
+      - run: echo 'Worked'
