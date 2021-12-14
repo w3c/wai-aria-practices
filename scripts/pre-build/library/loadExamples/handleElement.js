@@ -31,7 +31,7 @@ const getHandleElement = (permalink) => (element) => {
   if (element.tagName === "BODY") {
     walkHtmlElements(element, getHandleBodyElement(permalink));
 
-    if (permalink === "/index/") {
+    if (permalink === "/example-index/") {
       editIndexPage(element);
     } else {
       if (!patternSlug) {

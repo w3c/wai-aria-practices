@@ -52,7 +52,7 @@ defaults:
         - name: Patterns and Widgets
           ref: /patterns/
         - name: Index
-          ref: /index/
+          ref: /example-index/
         - name: Fundamentals
           ref: /fundamentals/
         - name: About

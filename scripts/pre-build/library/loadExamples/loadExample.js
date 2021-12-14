@@ -8,7 +8,7 @@ const { getHandleElement, getContent } = require("./handleElement");
 const loadExample = async (filePath, { exampleRelativeDirectory }) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
   const slug = path.basename(filePath).slice(0, -5);
-  const permalink = `/index/${exampleRelativeDirectory}/${slug}`;
+  const permalink = `/example-index/${exampleRelativeDirectory}/${slug}`;
 
   const root = parseHtml(html);
 
