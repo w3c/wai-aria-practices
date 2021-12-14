@@ -52,7 +52,7 @@ defaults:
         - name: Patterns and Widgets
           ref: /patterns/
         - name: Index
-          ref: /index/
+          ref: /index/index.html # to prevent shadowing issues when deployed to Netlify
         - name: Fundamentals
           ref: /fundamentals/
         - name: About
