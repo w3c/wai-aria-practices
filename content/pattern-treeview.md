@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -83,15 +83,15 @@ last_updated: 2021-12-14
         <h2 id="examples-15" tabindex="-1">Examples</h2>
         <ul>
           <li>
-            <a href="../../index/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a>:
+            <a href="../../example-index/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a>:
             A file selector tree that demonstrates browser support for automatically computing <code>aria-level</code>, <code>aria-posinset</code> and <code>aria-setsize</code> based on DOM structure.
           </li>
           <li>
-            <a href="../../index/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties</a>:
+            <a href="../../example-index/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties</a>:
             A file selector tree that demonstrates how to explicitly define values for <code>aria-level</code>, <code>aria-posinset</code> and <code>aria-setsize</code>.
           </li>
           <li>
-            <a href="../../index/treeview/treeview-navigation.html">Navigation Treeview Example</a>:
+            <a href="../../example-index/treeview/treeview-navigation.html">Navigation Treeview Example</a>:
             A tree that provides navigation to a set of web pages and demonstrates browser support for automatically computing <code>aria-level</code>, <code>aria-posinset</code> and <code>aria-setsize</code> based on DOM structure.
           </li>
         </ul>

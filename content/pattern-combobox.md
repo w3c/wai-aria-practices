@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -124,12 +124,12 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/combobox.svg" >
         <h2 id="examples-2" tabindex="-1">Examples</h2>
         <ul>
-          <li><a href="../../index/combobox/combobox-select-only.html">Select-Only Combobox</a>: A single-select combobox with no text input that is functionally similar to an HTML <code>select</code> element.</li>
-          <li><a href="../../index/combobox/combobox-autocomplete-both.html">Editable Combobox with Both List and Inline Autocomplete</a>: An editable combobox that demonstrates the autocomplete behavior known as <q>list with inline autocomplete</q>.</li>
-          <li><a href="../../index/combobox/combobox-autocomplete-list.html">Editable Combobox with List Autocomplete</a>: An editable combobox that demonstrates the autocomplete behavior known as <q>list with manual selection</q>.</li>
-          <li><a href="../../index/combobox/combobox-autocomplete-none.html">Editable Combobox Without Autocomplete</a>: An editable combobox that demonstrates the behavior associated with <code>aria-autocomplete=none</code>.</li>
-          <li><a href="../../index/combobox/grid-combo.html">Editable Combobox with Grid Popup</a>: An editable combobox that presents suggestions in a grid, enabling users to navigate descriptive information about each suggestion.</li>
-          <li><a href="../../index/combobox/combobox-datepicker.html">Date Picker Combobox</a>: An editable date input combobox that opens a dialog containing a calendar grid and buttons for navigating by month and year.</li>
+          <li><a href="../../example-index/combobox/combobox-select-only.html">Select-Only Combobox</a>: A single-select combobox with no text input that is functionally similar to an HTML <code>select</code> element.</li>
+          <li><a href="../../example-index/combobox/combobox-autocomplete-both.html">Editable Combobox with Both List and Inline Autocomplete</a>: An editable combobox that demonstrates the autocomplete behavior known as <q>list with inline autocomplete</q>.</li>
+          <li><a href="../../example-index/combobox/combobox-autocomplete-list.html">Editable Combobox with List Autocomplete</a>: An editable combobox that demonstrates the autocomplete behavior known as <q>list with manual selection</q>.</li>
+          <li><a href="../../example-index/combobox/combobox-autocomplete-none.html">Editable Combobox Without Autocomplete</a>: An editable combobox that demonstrates the behavior associated with <code>aria-autocomplete=none</code>.</li>
+          <li><a href="../../example-index/combobox/grid-combo.html">Editable Combobox with Grid Popup</a>: An editable combobox that presents suggestions in a grid, enabling users to navigate descriptive information about each suggestion.</li>
+          <li><a href="../../example-index/combobox/combobox-datepicker.html">Date Picker Combobox</a>: An editable date input combobox that opens a dialog containing a calendar grid and buttons for navigating by month and year.</li>
         </ul>
       </section>
 

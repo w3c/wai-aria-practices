@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -70,7 +70,7 @@ last_updated: 2021-12-14
         <h2 id="examples-16" tabindex="-1">Examples</h2>
         <ul>
           <li>
-            <a href="../../index/treegrid/treegrid-1.html">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.
+            <a href="../../example-index/treegrid/treegrid-1.html">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.
           </li>
         </ul>
       </section>

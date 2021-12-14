@@ -1,0 +1,242 @@
+---
+# This is a generated file
+title: "Table Example"
+ref: /aria-practices/
+
+github:
+  repository: w3c/aria-practices
+  path: aria-practices.html
+permalink: /example-index/table/table
+
+lang: en
+last_updated: 2021-12-14
+---
+<script src="../js/examples.js"></script>
+<script src="../js/highlight.pack.js"></script>
+<script src="../js/app.js"></script>
+
+<link href="css/table.css" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="/assets/styles.css">
+<!-- Code highlighting styles -->
+<link rel="stylesheet" href="/example-index/css/github.css">
+
+<div>
+
+        <div class="sidebar-container">
+          <aside class="sidebar-left" aria-describedby="sidebar-toc">
+            <h2 id="sidebar-toc" class="sidebar-headline">Table of Contents</h2>
+            <ul class="sidebar-list">
+              
+                    <li>
+                      <a href="#ex_label">Example</a>
+                    </li>
+                   
+                    <li>
+                      <a href="#kbd_label">Keyboard Support</a>
+                    </li>
+                   
+                    <li>
+                      <a href="#rps_label">Role, Property, State, and Tabindex  Attributes</a>
+                    </li>
+                   
+                    <li>
+                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
+                    </li>
+                   
+                    <li>
+                      <a href="#sc1_label">HTML Source Code</a>
+                    </li>
+                  
+            </ul>
+            
+    <ul class="sidebar-list sidebar-list-yellow">
+      <li><a href="/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
+      <li><a href="https://github.com/w3c/aria-practices/issues/new">Report Issue</a></li>
+      <li><a href="https://github.com/w3c/aria-practices/projects/16">Related Issues</a></li>
+      <li><a href="/patterns/table/">Design Pattern</a></li>
+    </ul>
+  
+          </aside>
+          <div class="sidebar-right"><h2 class="followed-by-support-notice">About This Example</h2><img alt=""
+        src="/assets/img/table.svg"
+        class="example-page-example-icon"
+      >
+  
+  <div>
+  
+  <p>
+    The below example illustrates an implementation of the WAI-ARIA
+    <a href="/patterns/table/">table design pattern.</a>
+    Note that when possible, using a native HTML <code>table</code> element is recommended.
+  </p>
+  <p>Similar examples include: </p>
+  <ul>
+    <li><a href="sortable-table.html">Sortable Table Example</a>: Basic HTML table that illustrates implementation of <code>aria-sort</code> in the headers of sortable columns.</li>
+    <li><a href="../grid/dataGrids.html">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
+  </ul>
+
+  <section>
+    <div class="example-header">
+      <h2 id="ex_label" tabindex="-1">Example</h2>
+    </div>
+    <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
+    <div id="ex1">
+      <div role="table" aria-label="Students" aria-describedby="students_table_desc">
+        <div id="students_table_desc">Students currently enrolled in WAI-ARIA 101 for the coming semester</div>
+        <div role="rowgroup">
+          <div role="row">
+            <span role="columnheader">First Name</span>
+            <span role="columnheader">Last Name</span>
+            <span role="columnheader">Company</span>
+            <span role="columnheader">Address</span>
+          </div>
+        </div>
+        <div role="rowgroup">
+          <div role="row">
+            <span role="cell">Fred</span>
+            <span role="cell">Jackson</span>
+            <span role="cell">Acme, Inc.</span>
+            <span role="cell">123 Broad St.</span>
+          </div>
+          <div role="row">
+            <span role="cell">Sara</span>
+            <span role="cell">James</span>
+            <span role="cell">Acme, Inc.</span>
+            <span role="cell">123 Broad St.</span>
+          </div>
+          <div role="row">
+            <span role="cell">Ralph</span>
+            <span role="cell">Jefferson</span>
+            <span role="cell">XYZ, Inc.</span>
+            <span role="cell">456 Main St.</span>
+          </div>
+          <div role="row">
+            <span role="cell">Nancy</span>
+            <span role="cell">Jensen</span>
+            <span role="cell">XYZ, Inc.</span>
+            <span role="cell">456 Main St.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
+  </section>
+
+  <section>
+    <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+    <p>Not Applicable</p>
+  </section>
+
+  <section>
+    <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
+    <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
+      <thead>
+        <tr>
+          <th scope="col">Role</th>
+          <th scope="col">Attribute</th>
+          <th scope="col">Element</th>
+          <th scope="col">Usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-test-id="table-role">
+          <th scope="row"><code>table</code></th>
+          <td></td>
+          <td><code>div</code></td>
+          <td>Identifies the element containing the table structure.</td>
+        </tr>
+        <tr data-test-id="table-aria-label">
+          <td></td>
+          <th scope="row">
+            <code>aria-label=&quot;Students&quot;</code>
+          </th>
+          <td><code>div</code></td>
+          <td>Provides an accessible name for the table.</td>
+        </tr>
+        <tr data-test-id="table-aria-describedby">
+          <td></td>
+          <th scope="row">
+            <code>aria-describedby=&quot;IDREF&quot;</code>
+          </th>
+          <td><code>div</code></td>
+          <td>Refers to the element that serves as the caption for the table.</td>
+        </tr>
+        <tr data-test-id="rowgroup-role">
+          <th scope="row"><code>rowgroup</code></th>
+          <td></td>
+          <td><code>div</code></td>
+          <td>
+            <ul>
+              <li>Identifies the elements that serve as containers for the table header and table body rows.</li>
+              <li>Unlike HTML, WAI-ARIA does not include separate roles for the table header and table body row sets.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr data-test-id="row-role">
+          <th scope="row"><code>row</code></th>
+          <td></td>
+          <td><code>div</code></td>
+          <td>Identifies each element that contains the cells for a row.</td>
+        </tr>
+        <tr data-test-id="columnheader-role">
+          <th scope="row"><code>columnheader</code></th>
+          <td></td>
+          <td><code>span</code></td>
+          <td>Identifies elements that serve as a cell containing a column label.</td>
+        </tr>
+        <tr data-test-id="cell-role">
+          <th scope="row"><code>cell</code></th>
+          <td></td>
+          <td><code>span</code></td>
+          <td>Identifies elements containing content for a single cell.</td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+    
+    <ul id="css_js_files">
+      <li>
+        CSS:
+        <a href="css/table.css" type="tex/css">table.css</a>
+      </li>
+      <li>
+        Javascript: Not applicable.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="sc1_label" tabindex="-1">HTML Source Code</h2>
+    <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
+    <pre><code id="sc1"></code></pre>
+    <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
+    <script>
+      sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');
+      sourceCode.make();
+    </script>
+  </section>
+  </div>
+  <nav>
+    <a href="/patterns/table/">Table Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+  </nav>
+</div>
+        </div>
+      
+</div>
+<script>
+  var SkipToConfig = {
+    settings: {
+      skipTo: {
+        displayOption: 'popup',
+        attachElement: '#site-header',
+        colorTheme: 'aria'
+      }
+    }
+  };
+</script>
+<script src="/assets/skipto.min.js"></script>

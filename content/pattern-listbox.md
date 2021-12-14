@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -75,9 +75,9 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/listbox.svg" >
         <h2 id="examples-7" tabindex="-1">Examples</h2>
         <ul>
-          <li><a href="../../index/listbox/listbox-scrollable.html">Scrollable Listbox Example</a>: Single-select listbox that scrolls to reveal more options, similar to HTML <code>select</code> with <code>size</code> attribute greater than one.</li>
-          <li><a href="../../index/listbox/listbox-rearrangeable.html">Example Listboxes with Rearrangeable Options</a>: Examples of both single-select and multi-select listboxes with accompanying toolbars where options can be added, moved, and removed.</li>
-          <li><a href="../../index/listbox/listbox-grouped.html">Listbox Example with Grouped Options</a>: Single-select listbox with grouped options, similar to an HTML <code>select</code> with <code>optgroup</code> children.</li>
+          <li><a href="../../example-index/listbox/listbox-scrollable.html">Scrollable Listbox Example</a>: Single-select listbox that scrolls to reveal more options, similar to HTML <code>select</code> with <code>size</code> attribute greater than one.</li>
+          <li><a href="../../example-index/listbox/listbox-rearrangeable.html">Example Listboxes with Rearrangeable Options</a>: Examples of both single-select and multi-select listboxes with accompanying toolbars where options can be added, moved, and removed.</li>
+          <li><a href="../../example-index/listbox/listbox-grouped.html">Listbox Example with Grouped Options</a>: Single-select listbox with grouped options, similar to an HTML <code>select</code> with <code>optgroup</code> children.</li>
         </ul>
       </section>
 

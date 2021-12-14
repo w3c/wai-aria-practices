@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -66,8 +66,8 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/dialogmodal.svg" >
         <h2 id="examples-3" tabindex="-1">Examples</h2>
         <ul>
-          <li><a href="../../index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
-          <li><a href="../../index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
+          <li><a href="../../example-index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
+          <li><a href="../../example-index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
         </ul>
       </section>
 

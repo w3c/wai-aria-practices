@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -61,7 +61,7 @@ last_updated: 2021-12-14
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/spinbutton.svg" >
         <h2 id="example-6" tabindex="-1">Example</h2>
-        <p><a href="../../index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
+        <p><a href="../../example-index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
       </section>
 
       <section class="notoc">

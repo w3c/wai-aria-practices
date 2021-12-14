@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -64,7 +64,7 @@ last_updated: 2021-12-14
       </p>
       <section class="notoc examples-section"><img alt="" src="/assets/img/accordion.svg" >
         <h2 id="example" tabindex="-1">Example</h2>
-        <p><a href="../../index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
+        <p><a href="../../example-index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
       </section>
       <section class="notoc">
         <h2 id="keyboard-interaction" tabindex="-1">Keyboard Interaction</h2>

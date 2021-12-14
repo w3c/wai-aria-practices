@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -67,7 +67,7 @@ last_updated: 2021-12-14
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/alert.svg" >
         <h2 id="example-0" tabindex="-1">Example</h2>
-        <p><a href="../../index/alert/alert.html">Alert Example</a></p>
+        <p><a href="../../example-index/alert/alert.html">Alert Example</a></p>
       </section>
 
       <section class="notoc">

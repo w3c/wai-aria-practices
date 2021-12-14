@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -94,7 +94,7 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/feed.svg" >
         <h2 id="example-3" tabindex="-1">Example</h2>
         <p>
-        <a href="../../index/feed/feed.html">Example Implementation of Feed Pattern</a>
+        <a href="../../example-index/feed/feed.html">Example Implementation of Feed Pattern</a>
         </p>
       </section>
 

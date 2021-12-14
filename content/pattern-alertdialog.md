@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -55,7 +55,7 @@ last_updated: 2021-12-14
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/alertdialog.svg" >
         <h2 id="example-1" tabindex="-1">Example</h2>
-        <p><a href="../../index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
+        <p><a href="../../example-index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
       </section>
 
       <section class="notoc">

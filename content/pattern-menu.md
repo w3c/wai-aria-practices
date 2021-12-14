@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="/example-index/css/github.css">
 
 <div>
 
@@ -62,8 +62,8 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/menu.svg" >
         <h2 id="examples-8" tabindex="-1">Examples</h2>
         <ul>
-          <li><a href="../../index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
-          <li><a href="../../index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
+          <li><a href="../../example-index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
+          <li><a href="../../example-index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
         </ul>
       </section>
 
