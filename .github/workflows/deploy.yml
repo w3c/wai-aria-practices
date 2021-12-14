@@ -1,0 +1,7 @@
+Name: Deploy to Netlify
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - echo 'Worked'
