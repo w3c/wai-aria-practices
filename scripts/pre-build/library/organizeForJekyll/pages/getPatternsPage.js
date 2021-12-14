@@ -21,7 +21,7 @@ const getPatternsPage = (patterns) => {
               return `
                 <li class="tile tile-landmarks">
                   <h2 class="tile-name">
-                    <a href="/example-index/landmarks/index.html">
+                    <a href="/index/landmarks/index.html">
                       <img src="/assets/img/landmarks.svg" alt="">
                       <span>Landmarks</span>
                     </a>

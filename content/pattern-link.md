@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/example-index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -60,7 +60,7 @@ last_updated: 2021-12-14
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/link.svg" >
         <h2 id="examples-6" tabindex="-1">Examples</h2>
-        <p><a href="../../example-index/link/link.html">Link Examples</a>: Link widgets constructed from HTML <code>span</code> and <code>img</code> elements.</p>
+        <p><a href="../../index/link/link.html">Link Examples</a>: Link widgets constructed from HTML <code>span</code> and <code>img</code> elements.</p>
       </section>
 
       <section class="notoc">

@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/example-index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -53,7 +53,7 @@ last_updated: 2021-12-14
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/breadcrumb.svg" >
         <h2 id="example-2" tabindex="-1">Example</h2>
-        <p><a href="../../example-index/breadcrumb/index.html">Breadcrumb design pattern example</a></p>
+        <p><a href="../../index/breadcrumb/index.html">Breadcrumb design pattern example</a></p>
       </section>
 
       <section class="notoc">

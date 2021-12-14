@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/example-index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -55,10 +55,10 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/disclosure.svg" >
         <h2 id="examples-4" tabindex="-1">Examples</h2>
         <ul>
-          <li><a href="../../example-index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
-          <li><a href="../../example-index/disclosure/disclosure-faq.html">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
-          <li><a href="../../example-index/disclosure/disclosure-navigation.html">Disclosure (Show/Hide) Navigation Menu</a></li>
-          <li><a href="../../example-index/disclosure/disclosure-navigation-hybrid.html">Disclosure (Show/Hide) Navigation Menu with Top-Level Links</a></li>
+          <li><a href="../../index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
+          <li><a href="../../index/disclosure/disclosure-faq.html">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
+          <li><a href="../../index/disclosure/disclosure-navigation.html">Disclosure (Show/Hide) Navigation Menu</a></li>
+          <li><a href="../../index/disclosure/disclosure-navigation-hybrid.html">Disclosure (Show/Hide) Navigation Menu with Top-Level Links</a></li>
         </ul>
       </section>
 

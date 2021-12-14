@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/example-index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -66,7 +66,7 @@ last_updated: 2021-12-14
       <section class="notoc examples-section"><img alt="" src="/assets/img/toolbar.svg" >
         <h2 id="example-7" tabindex="-1">Example</h2>
         <p>
-          <a href="../../example-index/toolbar/toolbar.html">Toolbar Example</a>:
+          <a href="../../index/toolbar/toolbar.html">Toolbar Example</a>:
           A toolbar that uses roving tabindex to manage focus and contains several types of controls, including toggle buttons, radio buttons, a menu button, a spin button, a checkbox, and a link.
         </p>
       </section>

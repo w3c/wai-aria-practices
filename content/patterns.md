@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/example-index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 <ul class="tiles">
@@ -143,7 +143,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
              
                 <li class="tile tile-landmarks">
                   <h2 class="tile-name">
-                    <a href="/example-index/landmarks/index.html">
+                    <a href="/index/landmarks/index.html">
                       <img src="/assets/img/landmarks.svg" alt="">
                       <span>Landmarks</span>
                     </a>

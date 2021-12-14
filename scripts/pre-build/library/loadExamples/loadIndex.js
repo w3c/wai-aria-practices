@@ -7,7 +7,7 @@ const { getHandleElement, getContent } = require("./handleElement");
 
 const loadIndex = async (filePath) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
-  const permalink = `/example-index/`;
+  const permalink = `/index/`;
 
   const root = parseHtml(html);
 

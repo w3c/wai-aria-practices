@@ -15,7 +15,7 @@ last_updated: 2021-12-14
 
 <link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/example-index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "fundamental-page";
@@ -213,7 +213,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-17">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/banner.html">Banner Landmark Example</a></p>
+          <p><a href="../../index/landmarks/banner.html">Banner Landmark Example</a></p>
         </section>
 
       </section>
@@ -245,7 +245,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-18">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/complementary.html">Complementary Landmark Example</a></p>
+          <p><a href="../../index/landmarks/complementary.html">Complementary Landmark Example</a></p>
         </section>
       </section>
 
@@ -292,7 +292,7 @@ if (addBodyClass) {
 
         <section class="notoc">
           <h5 id="examples-19">Examples</h5>
-          <p><a href="../../example-index/landmarks/contentinfo.html">Contentinfo Landmark Example</a></p>
+          <p><a href="../../index/landmarks/contentinfo.html">Contentinfo Landmark Example</a></p>
         </section>
       </section>
 
@@ -338,7 +338,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-20">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/form.html">Form Landmark Example</a></p>
+          <p><a href="../../index/landmarks/form.html">Form Landmark Example</a></p>
         </section>
       </section>
 
@@ -371,7 +371,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-21">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/main.html">Main Landmark Example</a></p>
+          <p><a href="../../index/landmarks/main.html">Main Landmark Example</a></p>
         </section>
       </section>
 
@@ -400,7 +400,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-22">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/navigation.html">Navigation Landmark Example</a></p>
+          <p><a href="../../index/landmarks/navigation.html">Navigation Landmark Example</a></p>
         </section>
       </section>
 
@@ -430,7 +430,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-23">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/region.html">Region Landmark Example</a></p>
+          <p><a href="../../index/landmarks/region.html">Region Landmark Example</a></p>
         </section>
       </section>
 
@@ -457,7 +457,7 @@ if (addBodyClass) {
         <section class="notoc">
           <h5 id="examples-24">Examples</h5>
 
-          <p><a href="../../example-index/landmarks/search.html">Search Landmark Example</a></p>
+          <p><a href="../../index/landmarks/search.html">Search Landmark Example</a></p>
         </section>
       </section>
     </section>
