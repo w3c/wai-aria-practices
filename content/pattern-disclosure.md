@@ -9,7 +9,7 @@ github:
 permalink: /patterns/disclosure/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -46,15 +46,16 @@ last_updated: 2021-12-07
             <section class="widget" id="disclosure"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
       
       <p>
-        A disclosure is a <a href="/patterns/button/">button</a> that controls visibility of a section of content.
-        When the controlled content is hidden, it is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
+        A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
+        It has two elements: a disclosure <a href="/patterns/button/">button</a> and a section of content whose visibility is controlled by the button.
+        When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
         When the content is visible, the arrow or triangle typically points down.
       </p>
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/disclosure.svg" >
         <h2 id="examples-4" tabindex="-1">Examples</h2>
         <ul>
-          <li><a href="../../index/disclosure/disclosure-img-long-description.html">Disclosure (Show/Hide) of Image Description</a></li>
+          <li><a href="../../index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
           <li><a href="../../index/disclosure/disclosure-faq.html">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
           <li><a href="../../index/disclosure/disclosure-navigation.html">Disclosure (Show/Hide) Navigation Menu</a></li>
           <li><a href="../../index/disclosure/disclosure-navigation-hybrid.html">Disclosure (Show/Hide) Navigation Menu with Top-Level Links</a></li>

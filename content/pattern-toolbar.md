@@ -9,7 +9,7 @@ github:
 permalink: /patterns/toolbar/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -33,11 +33,11 @@ last_updated: 2021-12-07
                   </li>
                  
                   <li>
-                    <a href="#keyboard-interaction-21">Keyboard Interaction</a>
+                    <a href="#keyboard-interaction-22">Keyboard Interaction</a>
                   </li>
                  
                   <li>
-                    <a href="#wai-aria-roles-states-and-properties-22">WAI-ARIA Roles, States, and Properties</a>
+                    <a href="#wai-aria-roles-states-and-properties-23">WAI-ARIA Roles, States, and Properties</a>
                   </li>
                 
             </ul>
@@ -71,7 +71,7 @@ last_updated: 2021-12-07
         </p>
       </section>
       <section class="notoc">
-        <h2 id="keyboard-interaction-21" tabindex="-1">Keyboard Interaction</h2>
+        <h2 id="keyboard-interaction-22" tabindex="-1">Keyboard Interaction</h2>
         <ul>
           <li><kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>: Move focus into and out of the toolbar. When focus moves into a toolbar:
             <ul>
@@ -88,7 +88,7 @@ last_updated: 2021-12-07
           <li><kbd>Home</kbd> (Optional): Moves focus to first element.</li>
           <li><kbd>End</kbd> (Optional): Moves focus to last element.</li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-28"><div role="heading" class="note-title marker" id="h-note-26" aria-level="5"><span>Note</span></div><ol class="">
+        <div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-27" aria-level="5"><span>Note</span></div><ol class="">
           <li>If the items in a toolbar are arranged vertically:
             <ol>
               <li><kbd>Down Arrow</kbd> performs as <kbd>Right Arrow</kbd> is described above. </li>
@@ -104,7 +104,7 @@ last_updated: 2021-12-07
         </ol></div>
       </section>
       <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-22" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+        <h2 id="wai-aria-roles-states-and-properties-23" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
         <ul>
           <li>The element that serves as the toolbar container has role <a class="role-reference" href="https://w3c.github.io/aria/#toolbar">toolbar</a>.  </li>
           <li>

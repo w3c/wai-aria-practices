@@ -9,7 +9,7 @@ github:
 permalink: /patterns/slidertwothumb/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -54,16 +54,16 @@ last_updated: 2021-12-07
         Conversely, the minimum value of the upper end thumb is limited by the current value of the lower end thumb.
         However, in some multi-thumb sliders, each thumb sets a value that does not depend on the other thumb values.
       </p>
-      <div class="warning" id="issue-container-generatedID-23"><div role="heading" class="warning-title marker" id="h-warning-0" aria-level="4"><span>Warning</span></div><p class="">
+      <div class="warning" id="issue-container-generatedID-24"><div role="heading" class="warning-title marker" id="h-warning-0" aria-level="4"><span>Warning</span></div><p class="">
         Some users of touch-based assistive technologies may experience difficulty utilizing widgets that implement this slider pattern because the gestures their assistive technology provides for operating sliders may not yet generate the necessary output.
-        To change the slider value, touch-based assistive technologies need to respond to user gestures for incrementing and decrementing the value by synthesizing key events.
+        To change the slider value, touch-based assistive technologies need to respond to user gestures for increasing and decreasing the value by synthesizing key events.
         This is a new convention that may not be fully implemented by some assistive technologies.
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/slidertwothumb.svg" >
         <h2 id="example-5" tabindex="-1">Example</h2>
-        <p><a href="../../index/slider/multithumb-slider.html">Multi-Thumb Slider Examples</a>: Demonstrates two-thumb sliders for picking price ranges for an airline flight and hotel reservation.</p>
+        <p><a href="../../index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
       </section>
 
       <section id="slidertwothumb_kbd_interaction" class="notoc">

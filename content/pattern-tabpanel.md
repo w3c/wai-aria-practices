@@ -9,7 +9,7 @@ github:
 permalink: /patterns/tabpanel/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -29,15 +29,15 @@ last_updated: 2021-12-07
                   </li>
                  
                   <li>
-                    <a href="#examples-13">Examples</a>
+                    <a href="#examples-14">Examples</a>
                   </li>
                  
                   <li>
-                    <a href="#keyboard-interaction-20">Keyboard Interaction</a>
+                    <a href="#keyboard-interaction-21">Keyboard Interaction</a>
                   </li>
                  
                   <li>
-                    <a href="#wai-aria-roles-states-and-properties-21">WAI-ARIA Roles, States, and Properties</a>
+                    <a href="#wai-aria-roles-states-and-properties-22">WAI-ARIA Roles, States, and Properties</a>
                   </li>
                 
             </ul>
@@ -67,7 +67,7 @@ last_updated: 2021-12-07
       </p>
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/tabpanel.svg" >
-        <h2 id="examples-13" tabindex="-1">Examples</h2>
+        <h2 id="examples-14" tabindex="-1">Examples</h2>
         <ul>
           <li><a href="../../index/tabs/tabs-1/tabs.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
           <li><a href="../../index/tabs/tabs-2/tabs.html">Tabs With Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
@@ -75,7 +75,7 @@ last_updated: 2021-12-07
       </section>
 
       <section class="notoc">
-        <h2 id="keyboard-interaction-20" tabindex="-1">Keyboard Interaction</h2>
+        <h2 id="keyboard-interaction-21" tabindex="-1">Keyboard Interaction</h2>
         <p>For the tab list:</p>
         <ul>
           <li>
@@ -117,7 +117,7 @@ last_updated: 2021-12-07
             </ul>
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-27"><div role="heading" class="note-title marker" id="h-note-25" aria-level="5"><span>Note</span></div><ol class="">
+        <div class="note" role="note" id="issue-container-generatedID-28"><div role="heading" class="note-title marker" id="h-note-26" aria-level="5"><span>Note</span></div><ol class="">
           <li>
             It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency.
             This typically requires tab panel content to be preloaded.
@@ -135,7 +135,7 @@ last_updated: 2021-12-07
         </ol></div>
       </section>
       <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-21" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+        <h2 id="wai-aria-roles-states-and-properties-22" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
         <ul>
         <li>The element that serves as the container for the set of tabs has role  <a class="role-reference" href="https://w3c.github.io/aria/#tablist">tablist</a>. </li>
         <li>Each element that serves as a tab has role <a class="role-reference" href="https://w3c.github.io/aria/#tab">tab</a> and is contained within the element with role <code>tablist</code>.</li>

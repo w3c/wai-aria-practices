@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/names-and-descriptions/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -231,7 +231,7 @@ However, most authors do not need such detailed understanding of the algorithms 
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
-          <div class="warning" id="issue-container-generatedID-36"><div role="heading" class="warning-title marker" id="h-warning-1" aria-level="6"><span>Warning</span></div><p class="">
+          <div class="warning" id="issue-container-generatedID-37"><div role="heading" class="warning-title marker" id="h-warning-1" aria-level="6"><span>Warning</span></div><p class="">
             If an element with one of the above roles that supports naming from child content is named by using <code>aria-label</code> or <code>aria-labelledby</code>, content contained in the element and its descendants is hidden from assistive technology users unless the descendant content is referenced by <code>aria-labelledby</code>.
             It is strongly recommended to avoid using either of these attributes to override content of one of the above elements except in rare circumstances where hiding content from assistive technology users is beneficial.
             In addition, in situations where visible content is hidden from assistive technology users by use of one of these attributes, thorough testing with assistive technologies is particularly important.
@@ -260,7 +260,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>
             When encountering this navigation region, a screen reader user will hear the name and role of the element, e.g., "Product navigation region", and then be able to read through the links contained in the region.
           </p>
-          <div class="warning" id="issue-container-generatedID-37"><div role="heading" class="warning-title marker" id="h-warning-2" aria-level="6"><span>Warning</span></div><ol class="">
+          <div class="warning" id="issue-container-generatedID-38"><div role="heading" class="warning-title marker" id="h-warning-2" aria-level="6"><span>Warning</span></div><ol class="">
             <li>
           If <code>aria-label</code> is applied to an element with one of the roles that supports <a href="/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users.
           It is strongly recommended to avoid using <code>aria-label</code> to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
@@ -315,7 +315,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"download-button"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"download-button download-details"</span>&gt;</span>Download<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"download-details"</span>&gt;</span>PDF, 2.4 MB<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
           <p>In the above example, the accessible name of the button will be "Download PDF, 2.4 MB", with a space between "Download" and "PDF", and not "DownloadPDF, 2.4 MB".</p>
-          <div class="warning" id="issue-container-generatedID-38"><div role="heading" class="warning-title marker" id="h-warning-3" aria-level="6"><span>Warning</span></div><ol class="">
+          <div class="warning" id="issue-container-generatedID-39"><div role="heading" class="warning-title marker" id="h-warning-3" aria-level="6"><span>Warning</span></div><ol class="">
             <li>The <code>aria-labelledby</code> property cannot be chained, i.e., if an element with <code>aria-labelledby</code> references another element that also has <code>aria-labelledby</code>, the <code>aria-labelledby</code> attribute on the referenced element will be ignored.</li>
             <li>If an element is referenced by <code>aria-labelledby</code> more than one time during a name calculation, the second and any subsequent references will be ignored.</li>
             <li>There are certain types of elements, such as paragraphs and list items,  that should not be named with <code>aria-labelledby</code>. They are identified in the table in the <a href="/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section.</li>

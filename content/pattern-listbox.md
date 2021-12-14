@@ -9,7 +9,7 @@ github:
 permalink: /patterns/listbox/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -76,7 +76,6 @@ last_updated: 2021-12-07
         <h2 id="examples-7" tabindex="-1">Examples</h2>
         <ul>
           <li><a href="../../index/listbox/listbox-scrollable.html">Scrollable Listbox Example</a>: Single-select listbox that scrolls to reveal more options, similar to HTML <code>select</code> with <code>size</code> attribute greater than one.</li>
-          <li><a href="../../index/listbox/listbox-collapsible.html">Collapsible Dropdown Listbox Example</a>: Single-select collapsible listbox that expands when activated, similar to HTML <code>select</code> with the attribute <code>size="1"</code>.</li>
           <li><a href="../../index/listbox/listbox-rearrangeable.html">Example Listboxes with Rearrangeable Options</a>: Examples of both single-select and multi-select listboxes with accompanying toolbars where options can be added, moved, and removed.</li>
           <li><a href="../../index/listbox/listbox-grouped.html">Listbox Example with Grouped Options</a>: Single-select listbox with grouped options, similar to an HTML <code>select</code> with <code>optgroup</code> children.</li>
         </ul>
@@ -124,7 +123,7 @@ last_updated: 2021-12-07
                   <li><kbd>Control + A</kbd> (Optional): Selects all options in the list. Optionally, if all options are selected, it may also unselect all options.</li>
                 </ul>
               </li>
-              <li>Alternative selection model -- moving focus without holding a <kbd>Shift</kbd> or <kbd>Control</kbd> modifier unselects all selected nodes except the focused node:
+              <li>Alternative selection model -- moving focus without holding a <kbd>Shift</kbd> or <kbd>Control</kbd> modifier unselects all selected options except the focused option:
               <ul>
                   <li><kbd>Shift + Down Arrow</kbd>: Moves focus to and toggles the selection state of the next option.</li>
                   <li><kbd>Shift + Up Arrow</kbd>: Moves focus to and toggles the selection state of the previous option.</li>
@@ -168,14 +167,45 @@ last_updated: 2021-12-07
         <h2 id="wai-aria-roles-states-and-properties-12" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
         <ul>
           <li>An element that contains or owns all the listbox options has role <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a>.</li>
-          <li>Each option in the listbox has role <a href="https://w3c.github.io/aria/#option" class="role-reference">option</a> and is a DOM  descendant of the element with role <code>listbox</code> or is referenced by an <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> property on the listbox element.</li>
-          <li>If the listbox is not part of another widget, then it has a visible label referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the element with role <code>listbox</code>.</li>
-          <li>In a single-select listbox, the selected option has <a href="https://w3c.github.io/aria/#aria-selected" class="property-reference">aria-selected</a> set to <code>true</code>. </li>
-          <li>if the listbox supports multiple selection:
+          <li>
+            Each option in the listbox has role <a href="https://w3c.github.io/aria/#option" class="role-reference">option</a> and is contained in or owned by either:
             <ul>
-              <li> The element with role <code>listbox</code> has <a href="https://w3c.github.io/aria/#aria-multiselectable" class="property-reference">aria-multiselectable</a> set to <code>true</code>. </li>
-              <li>All selected options have <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code>. </li>
-              <li>All options that are not selected have <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>false</code>. </li>
+              <li>The element with role <code>listbox</code>.</li>
+              <li>An element with role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a> that is contained in or owned by the element with role <code>listbox</code>.</li>
+            </ul>
+          </li>
+          <li>
+            Options contained in a <code>group</code> are referred to as <q>grouped options</q> and form what is called an <q>option group.</q>
+            If a listbox contains grouped options, then:
+            <ul>
+                            <li>All option groups contain at least one option.</li>
+              <li>Each option group has an accessible name provided via <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> or <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a>.</li>
+            </ul>
+          </li>
+          <li>If the element with role <code>listbox</code> is not part of another widget, such as a combobox, then it has either a visible label referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> or a value specified for <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.</li>
+          <li>
+            If the listbox supports selection of more than one option, the element with role <code>listbox</code> has <a class="property-reference" href="https://w3c.github.io/aria/#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
+            Otherwise, <code>aria-multiselectable</code> is either set to <code>false</code> or the default value of <code>false</code> is implied.
+          </li>
+          <li>
+            The selection state of each selectable option is indicated with either <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> or <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a>:
+            <ul>
+              <li>
+                If the selection state is indicated with <code>aria-selected</code>, then <code>aria-checked</code> is not specified for any options.
+                Alternatively, if the selection state is indicated with <code>aria-checked</code>, then <code>aria-selected</code> is not specified for any options.
+                See notes below regarding considerations for which property to use and for details of the unusual conditions that might allow for both properties in the same listbox.
+              </li>
+              <li>
+                If any options are selected, each selected option has either <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> or <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.
+                No more than one option is selected at a time if the element with role <code>listbox</code> does <em>not</em> have <a class="property-reference" href="https://w3c.github.io/aria/#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
+              </li>
+              <li>
+                All options that are selectable but not selected have either <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> or <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.
+              </li>
+              <li>
+                Note that except in listboxes where selection follows focus, the selected state is distinct from focus.
+                For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a> and <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+              </li>
             </ul>
           </li>
           <li>If the complete set of available options is not present in the DOM due to dynamic loading as the user scrolls, their <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference">aria-setsize</a> and <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference">aria-posinset</a> attributes are set appropriately. </li>
@@ -184,6 +214,36 @@ last_updated: 2021-12-07
             The default value of <code>aria-orientation</code> for <code>listbox</code> is <code>vertical</code>.
           </li>
         </ul>
+        <div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>Note</span></div><ol class="">
+          <li>Some factors to consider when choosing whether to indicate selection with <code>aria-selected</code> or <code>aria-checked</code> are:
+            <ul>
+              <li>
+                Some design systems use <code>aria-selected</code> for single-select widgets and <code>aria-checked</code> for multi-select widgets.
+                In the absence of factors that would make an alternative convention more appropriate, this is a recommended convention.
+              </li>
+              <li>
+                The language of instructions and the appearance of the interface might suggest one attribute is more appropriate than the other.
+                For instance, do instructions say to <q>select</q> items? Or, is the visual indicator of selection a check mark?
+              </li>
+              <li>It is important to adopt a consistent convention for selection models across a site or app.</li>
+            </ul>
+          </li>
+          <li>
+            Conditions that would permit a listbox to include both <code>aria-selected</code> and <code>aria-checked</code> are extremely rare.
+            It is strongly recommended to avoid designing a listbox widget that would have the need for more than one type of state.
+            If both states were to be used within a listbox, all the following conditions need to be satisfied:
+            <ul>
+              <li>The meaning and purpose of <code>aria-selected</code> is different from the meaning and purpose of <code>aria-checked</code> in the user interface.</li>
+              <li>The user interface makes the meaning and purpose of each state apparent.</li>
+              <li>The user interface provides a separate method for controlling each state.</li>
+            </ul>
+          </li>
+          <li>
+            If <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> is set on the listbox element to include elements that are not DOM children of the container,
+            those elements will appear in the reading order in the sequence they are referenced and after any items that are DOM children.
+            Scripts that manage focus need to ensure the visual focus order matches this assistive technology reading order.
+          </li>
+        </ol></div>
       </section>
     </section>
           </div>

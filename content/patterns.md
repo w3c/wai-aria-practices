@@ -9,7 +9,7 @@ github:
 permalink: /patterns/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -127,7 +127,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                   </a>
                 </h2>
                 <div class="tile-introduction">
-        A disclosure is a button that controls visibility of a section of content.</div>
+        A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).</div>
               </li>
              
               <li class="tile tile-feed">
@@ -252,6 +252,17 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 </h2>
                 <div class="tile-introduction">
         A spinbutton is an input widget that restricts its value to a set or range of discrete values.</div>
+              </li>
+             
+              <li class="tile tile-switch">
+                <h2 class="tile-name">
+                  <a href="/patterns/switch/">
+                    <img src="/assets/img/switch.svg" alt="">
+                    <span>Switch</span>
+                  </a>
+                </h2>
+                <div class="tile-introduction">
+        A switch is an input widget that allows users to choose one of two values: <q>on</q> or <q>off</q>.</div>
               </li>
              
               <li class="tile tile-table">

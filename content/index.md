@@ -9,7 +9,7 @@ github:
 permalink: /
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -19,7 +19,7 @@ last_updated: 2021-12-07
 
 <div>
 
-        <section id="abstract" class="introductory"><h2>Abstract</h2>
+        <section id="abstract" class="introductory"><h2 id="abstract-0">Abstract<a class="self-link" href="/#abstract" aria-label="Permalink for Section"></a></h2>
     <p>
       This document provides readers with an understanding of how to use <cite><a href="https://www.w3.org/TR/wai-aria-1.2/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 1.2</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-wai-aria" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">WAI-ARIA</a></cite>] to create accessible rich internet applications.
       It describes considerations that might not be evident to most authors from the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> specification alone and recommends approaches to make widgets, navigation, and behaviors accessible using <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> roles, states, and properties.

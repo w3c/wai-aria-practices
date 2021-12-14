@@ -9,7 +9,7 @@ github:
 permalink: /patterns/treegrid/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -29,15 +29,15 @@ last_updated: 2021-12-07
                   </li>
                  
                   <li>
-                    <a href="#examples-15">Examples</a>
+                    <a href="#examples-16">Examples</a>
                   </li>
                  
                   <li>
-                    <a href="#keyboard-interaction-24">Keyboard Interaction</a>
+                    <a href="#keyboard-interaction-25">Keyboard Interaction</a>
                   </li>
                  
                   <li>
-                    <a href="#wai-aria-roles-states-and-properties-25">WAI-ARIA Roles, States, and Properties</a>
+                    <a href="#wai-aria-roles-states-and-properties-26">WAI-ARIA Roles, States, and Properties</a>
                   </li>
                 
             </ul>
@@ -67,7 +67,7 @@ last_updated: 2021-12-07
       </p>
 
       <section class="notoc examples-section"><img alt="" src="/assets/img/treegrid.svg" >
-        <h2 id="examples-15" tabindex="-1">Examples</h2>
+        <h2 id="examples-16" tabindex="-1">Examples</h2>
         <ul>
           <li>
             <a href="../../index/treegrid/treegrid-1.html">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.
@@ -76,7 +76,7 @@ last_updated: 2021-12-07
       </section>
 
       <section class="notoc">
-        <h2 id="keyboard-interaction-24" tabindex="-1">Keyboard Interaction</h2>
+        <h2 id="keyboard-interaction-25" tabindex="-1">Keyboard Interaction</h2>
         <p>
           The following keys provide <code>treegrid</code> navigation by moving focus among rows and cells of the grid.
           Implementations of <code>treegrid</code> make these key commands available when an element in the grid has received focus, e.g., after a user has moved focus to the grid with <kbd>Tab</kbd>.
@@ -161,7 +161,7 @@ last_updated: 2021-12-07
               </ul>
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-32"><div role="heading" class="note-title marker" id="h-note-30" aria-level="5"><span>Note</span></div><ul class="">
+        <div class="note" role="note" id="issue-container-generatedID-33"><div role="heading" class="note-title marker" id="h-note-31" aria-level="5"><span>Note</span></div><ul class="">
           <li>
             When the above <code>treegrid</code> navigation keys move focus, whether the focus is set on an element inside the cell or on the cell depends on cell content.
             See <a href="/patterns/grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
@@ -218,11 +218,11 @@ last_updated: 2021-12-07
             </ul>
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-33"><div role="heading" class="note-title marker" id="h-note-31" aria-level="5"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">§&nbsp;Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+        <div class="note" role="note" id="issue-container-generatedID-34"><div role="heading" class="note-title marker" id="h-note-32" aria-level="5"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">§&nbsp;Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
       </section>
 
       <section id="treegrid_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-25" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+        <h2 id="wai-aria-roles-states-and-properties-26" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
         <ul>
           <li>The treegrid container has role <a href="https://w3c.github.io/aria/#treegrid" class="role-reference">treegrid</a>. </li>
           <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>treegrid</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>. </li>
@@ -267,7 +267,7 @@ last_updated: 2021-12-07
           </li>
           <li>If the treegrid includes cells that span multiple rows or multiple columns, and if the <code>treegrid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="/fundamentals/grid-and-table-properties/">grid and table properties</a>.</li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-34"><div role="heading" class="note-title marker" id="h-note-32" aria-level="5"><span>Note</span></div><ul class="">
+        <div class="note" role="note" id="issue-container-generatedID-35"><div role="heading" class="note-title marker" id="h-note-33" aria-level="5"><span>Note</span></div><ul class="">
           <li>
             A <code>treegrid</code> built from an HTML <code>table</code> that includes cells that span multiple rows or columns must use HTML <code>rowspan</code> and <code>colspan</code> and must not use <code>aria-rowspan</code> or <code>aria-colspan</code>.
           </li>

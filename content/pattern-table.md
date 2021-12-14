@@ -9,7 +9,7 @@ github:
 permalink: /patterns/table/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -29,15 +29,15 @@ last_updated: 2021-12-07
                   </li>
                  
                   <li>
-                    <a href="#examples-12">Examples</a>
+                    <a href="#examples-13">Examples</a>
                   </li>
                  
                   <li>
-                    <a href="#keyboard-interaction-19">Keyboard Interaction</a>
+                    <a href="#keyboard-interaction-20">Keyboard Interaction</a>
                   </li>
                  
                   <li>
-                    <a href="#wai-aria-roles-states-and-properties-20">WAI-ARIA Roles, States, and Properties</a>
+                    <a href="#wai-aria-roles-states-and-properties-21">WAI-ARIA Roles, States, and Properties</a>
                   </li>
                 
             </ul>
@@ -55,22 +55,25 @@ last_updated: 2021-12-07
         Since a table is not a widget, each widget contained in a table is a separate stop in the page tab sequence.
         If the number of widgets is large, replacing the table with a grid can dramatically reduce the length of the page tab sequence because a grid is a composite widget that can contain other widgets.
       </p>
-      <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-23" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-26"><div role="heading" class="note-title marker" id="h-note-24" aria-level="4"><span>Note</span></div><p class="">
         As with other <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> roles that have a native host language equivalent,
         authors are strongly encouraged to use a native HTML <code>table</code> element whenever possible.
         This is especially important with role <code>table</code> because it is a new feature of <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 1.1.
         It is thus advisable to test implementations thoroughly with each browser and assistive technology combination that could be used by the target audience.
       </p></div>
       <section class="notoc examples-section"><img alt="" src="/assets/img/table.svg" >
-        <h2 id="examples-12" tabindex="-1">Examples</h2>
-        <p><a href="../../index/table/table.html">Table Example</a>: ARIA table made using HTML <code>div</code> and <code>span</code> elements.</p>
+        <h2 id="examples-13" tabindex="-1">Examples</h2>
+        <ul>
+          <li><a href="../../index/table/table.html">Table Example</a>: ARIA table made using HTML <code>div</code> and <code>span</code> elements.</li>
+          <li><a href="../../index/table/sortable-table.html">Sortable Table Example</a>: Basic HTML table that illustrates implementation of <code>aria-sort</code> in the headers of sortable columns.</li>
+        </ul>
       </section>
       <section class="notoc">
-        <h2 id="keyboard-interaction-19" tabindex="-1">Keyboard Interaction</h2>
+        <h2 id="keyboard-interaction-20" tabindex="-1">Keyboard Interaction</h2>
         <p>Not applicable.</p>
       </section>
       <section id="table_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-20" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+        <h2 id="wai-aria-roles-states-and-properties-21" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
         <ul>
           <li>The table container has role <a href="https://w3c.github.io/aria/#table" class="role-reference">table</a>. </li>
           <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>table</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>. </li>
@@ -96,7 +99,7 @@ last_updated: 2021-12-07
           </li>
           <li>If the table includes cells that span multiple rows or multiple columns, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="/fundamentals/grid-and-table-properties/">grid and table properties</a>.</li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-26"><div role="heading" class="note-title marker" id="h-note-24" aria-level="5"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-27"><div role="heading" class="note-title marker" id="h-note-25" aria-level="5"><span>Note</span></div><p class="">
           If rows or cells are included in a table via <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a>,
           they will be presented to assistive technologies after the DOM descendants of the <code>table</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.
         </p></div>

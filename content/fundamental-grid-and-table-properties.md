@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/grid-and-table-properties/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 

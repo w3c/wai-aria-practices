@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/keyboard-interface/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -577,7 +577,7 @@ if (addBodyClass) {
             </li>
 
             <li> Activate an element without moving focus when the target context of the function is the context that contains the focus. This behavior is most common for command buttons and for functions associated with elements that are not visible, such as a "Save" option that is accessible via a menu. For example, if the focus is on an option in a listbox and a toolbar contains buttons for moving and removing options, it is most beneficial to keep focus in the listbox when the user presses a key shortcut for one of the buttons in the toolbar. This behavior can be particularly important for screen reader users because it provides confirmation of the action performed and makes performing multiple commands more efficient. For instance, when a screen reader user presses the shortcut for the "Up" button, the user will be able to hear the new position of the option in the list since it still has the focus. Similarly, when the user presses the shortcut for deleting an option, the user can
-								hear the next option in the list and immediately decide whether to press the delete shortcut again. </li>
+                hear the next option in the list and immediately decide whether to press the delete shortcut again. </li>
 
             <li>
               Move focus and activate when the target of the shortcut has a single function and the context of that function is the same as the target.
@@ -618,7 +618,7 @@ if (addBodyClass) {
           And, given the vast array of operating system, browser, and assistive technology keys, it is almost impossible to be certain conflicts do not exist.
           So it is also important to employ strategies that mitigate the impact of conflicts whether they are intentional or unknown.
         </p>
-        <div class="note" role="note" id="issue-container-generatedID-39"><div role="heading" class="note-title marker" id="h-note-34" aria-level="5"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-40"><div role="heading" class="note-title marker" id="h-note-35" aria-level="5"><span>Note</span></div><p class="">
           In the following sections, <kbd>meta</kbd> key refers to the <kbd>Windows</kbd> key on Windows-compatible keyboards and the <kbd>Command</kbd> key on MacOS-compatible keyboards.
         </p></div>
         <section id="kbd_shortcuts_assignments_opsys_conflicts">

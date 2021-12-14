@@ -9,7 +9,7 @@ github:
 permalink: /patterns/meter/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -49,7 +49,7 @@ last_updated: 2021-12-07
         A <a class="role-reference" href="https://w3c.github.io/aria/#meter">meter</a> is a graphical display of a numeric value that varies within a defined range.
         For example, a meter could be used to depict a device's current battery percentage or a car's fuel level.
       </p>
-      <div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="4"><span>Note</span></div><ul class="">
+      <div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="4"><span>Note</span></div><ul class="">
         <li>A <code>meter</code> should not be used to represent a value like the current world population since it does not have a meaningful maximum limit.</li>
         <li>
           The <code>meter</code> should not be used to indicate progress, such as loading or percent completion of a task.

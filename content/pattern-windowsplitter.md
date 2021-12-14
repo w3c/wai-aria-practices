@@ -9,7 +9,7 @@ github:
 permalink: /patterns/windowsplitter/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -33,11 +33,11 @@ last_updated: 2021-12-07
                   </li>
                  
                   <li>
-                    <a href="#keyboard-interaction-25">Keyboard Interaction</a>
+                    <a href="#keyboard-interaction-26">Keyboard Interaction</a>
                   </li>
                  
                   <li>
-                    <a href="#wai-aria-roles-states-and-properties-26">WAI-ARIA Roles, States, and Properties</a>
+                    <a href="#wai-aria-roles-states-and-properties-27">WAI-ARIA Roles, States, and Properties</a>
                   </li>
                 
             </ul>
@@ -78,7 +78,7 @@ last_updated: 2021-12-07
         </p>
       </section>
       <section class="notoc">
-        <h2 id="keyboard-interaction-25" tabindex="-1">Keyboard Interaction</h2>
+        <h2 id="keyboard-interaction-26" tabindex="-1">Keyboard Interaction</h2>
         <ul>
           <li><kbd>Left Arrow</kbd>: Moves a vertical splitter to the left.</li>
           <li><kbd>Right Arrow</kbd>: Moves a vertical splitter to the right.</li>
@@ -89,10 +89,10 @@ last_updated: 2021-12-07
           <li><kbd>End</kbd> (Optional): Moves splitter to the position that gives the primary pane its largest allowed size. This may completely collapse the secondary pane.</li>
           <li><kbd>F6</kbd> (Optional): Cycle through window   panes.</li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-35"><div role="heading" class="note-title marker" id="h-note-33" aria-level="5"><span>Note</span></div><p class="">A fixed size splitter omits implementation of the arrow keys.</p></div>
+        <div class="note" role="note" id="issue-container-generatedID-36"><div role="heading" class="note-title marker" id="h-note-34" aria-level="5"><span>Note</span></div><p class="">A fixed size splitter omits implementation of the arrow keys.</p></div>
       </section>
       <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-26" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+        <h2 id="wai-aria-roles-states-and-properties-27" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
         <ul>
           <li>The element that serves as the focusable splitter has role <a href="https://w3c.github.io/aria/#separator" class="role-reference">separator</a>.</li>
           <li>The separator element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current position of the separator.</li>

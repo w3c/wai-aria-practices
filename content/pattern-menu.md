@@ -9,7 +9,7 @@ github:
 permalink: /patterns/menu/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -155,7 +155,7 @@ last_updated: 2021-12-07
           <li><kbd>Tab</kbd>: Moves focus to the next element in the tab sequence, and if the item that had focus is not in a <code>menubar</code>, closes its <code>menu</code> and all open parent <code>menu</code> containers.</li>
           <li><kbd>Shift + Tab</kbd>: Moves focus to the previous element in the tab sequence, and if the item that had focus is not in a <code>menubar</code>, closes its <code>menu</code> and all open parent <code>menu</code> containers.</li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>Note</span></div><ol class="">
+        <div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>Note</span></div><ol class="">
           <li>Disabled menu items are focusable but cannot be activated. </li>
           <li>A <a href="https://w3c.github.io/aria/#separator" class="role-reference">separator</a> in a menu is not focusable or interactive.</li>
           <li>
@@ -229,7 +229,7 @@ last_updated: 2021-12-07
             The default value of <code>aria-orientation</code> for a menu is <code>vertical</code>.
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>Note</span></div><p class="">
           If <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> is set on the menu container to include elements that are not DOM children of the container, those elements will appear in the reading order in the sequence they are referenced and after any items that are DOM children.
           Scripts that manage focus need to ensure the visual focus order matches this assistive technology reading order.
         </p></div>

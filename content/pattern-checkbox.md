@@ -9,7 +9,7 @@ github:
 permalink: /patterns/checkbox/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -73,11 +73,11 @@ last_updated: 2021-12-07
         <h2 id="examples-1" tabindex="-1">Examples</h2>
         <ul>
           <li>
-            <a href="../../index/checkbox/checkbox-1/checkbox-1.html">Simple Two-State Checkbox Example</a>: Demonstrates a simple 2-state checkbox.
+            <a href="../../index/checkbox/checkbox.html">Checkbox (Two-State) Example</a>: Demonstrates a simple 2-state checkbox.
           </li>
           <li>
-            <a href="../../index/checkbox/checkbox-2/checkbox-2.html">Tri-State Checkbox Example</a>:
-            Demonstrates how to make a widget that uses the <code>mixed</code> value for <code>aria-checked</code> and group collection of checkboxes with a field set.
+            <a href="../../index/checkbox/checkbox-mixed.html">Checkbox (Mixed-State) Example</a>:
+            Demonstrates  a checkbox that uses the mixed  value for aria-checked to reflect and control checked states within a group of two-state HTML checkboxes contained in  an HTML <code>fieldset</code>.
           </li>
         </ul>
       </section>

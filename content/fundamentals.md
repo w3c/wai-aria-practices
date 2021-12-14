@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 

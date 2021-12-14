@@ -9,7 +9,7 @@ github:
 permalink: /patterns/radiobutton/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -57,6 +57,7 @@ last_updated: 2021-12-07
         <ul>
           <li><a href="../../index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
           <li><a href="../../index/radio/radio-activedescendant.html">Radio Group Example Using aria-activedescendant</a></li>
+          <li><a href="../../index/radio/radio-rating.html">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
         </ul>
       </section>
 
@@ -91,7 +92,7 @@ last_updated: 2021-12-07
               If focus is on the first button, focus moves to the last button.
             </li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="6"><span>Note</span></div><p class="">
+          <div class="note" role="note" id="issue-container-generatedID-20"><div role="heading" class="note-title marker" id="h-note-20" aria-level="6"><span>Note</span></div><p class="">
             The initial focus behavior described above differs slightly from the behavior
             provided by some browsers for native HTML radio groups. In some browsers, if none of the
             radio buttons are selected, moving focus into the radio group with <kbd>Shift+Tab</kbd> will place focus on the last radio button
@@ -132,7 +133,7 @@ last_updated: 2021-12-07
               If focus is on the first radio button in the radio group, moves focus to the last radio button in the group.
             </li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-20"><div role="heading" class="note-title marker" id="h-note-20" aria-level="6"><span>Note</span></div><p class="">
+          <div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="6"><span>Note</span></div><p class="">
             Radio buttons in a toolbar are frequently styled in a manner that appears more like toggle buttons.
             For an example, See the <a href="../../index/toolbar/toolbar.html">Simple Editor Toolbar Example</a>
           </p></div>

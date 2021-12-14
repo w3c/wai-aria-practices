@@ -9,7 +9,7 @@ github:
 permalink: /patterns/spinbutton/
 
 lang: en
-last_updated: 2021-12-07
+last_updated: 2021-12-14
 ---
 
 
@@ -50,8 +50,8 @@ last_updated: 2021-12-07
         For example, in a widget that enables users to set an alarm, a spinbutton could allow users to select a number from 0 to 59 for the minute of an hour.
       </p>
       <p>
-        Spinbuttons often have three components, including a text field that displays the current value, an increment button, and a decrement button.
-        The text field is usually the only focusable component because the increment and decrement functions are keyboard accessible via arrow keys.
+        Spinbuttons often have three components, including a text field that displays the current value, an increase button, and a decrease button.
+        The text field is usually the only focusable component because the increase and decrease functions are keyboard accessible via arrow keys.
         Typically, the text field also allows users to directly edit the value.
       </p>
       <p>
@@ -84,7 +84,7 @@ last_updated: 2021-12-07
             </ul>
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-24"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>Note</span></div><ol class="">
+        <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-23" aria-level="5"><span>Note</span></div><ol class="">
           <li>Focus remains on the text field during operation.</li>
           <li>Standard single line text editing keys appropriate for the device platform:
             <ol>
