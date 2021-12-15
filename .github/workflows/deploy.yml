@@ -3,12 +3,42 @@ name: Deploy to Netlify
 on:
   workflow_dispatch:
 
-  push:
-    branches:
-      - master
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - run: echo 'Worked'
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        cache: npm
+
+    - name: Set up Ruby 2.6.2
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6.2
+        bundler-cache: true
+
+    - name: Update git submodules
+      run: |
+        git submodule update --recursive --remote
+
+    - name: Update site files
+      run: |
+        bundle install
+        npm install -g respec
+        respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
+        npm install -C scripts/pre-build
+        node ./scripts/pre-build
+
+    - name: Commit changed files
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Commit changes
+        branch: master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
