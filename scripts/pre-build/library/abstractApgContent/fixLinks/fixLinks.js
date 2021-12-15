@@ -9,12 +9,6 @@ const manualRemappings = {
   "/#presentation_role": "/fundamentals/hiding-semantics/#presentation-role",
   "/#children_presentational":
     "/fundamentals/hiding-semantics/#children-presentational",
-
-  // Fixed misspellings or broken links in examples
-  "/#dialog-modal": "/patterns/dialog-modal/",
-  "/#combobox_kbd_interaction": "/patterns/combobox/#keyboard-interaction-6",
-  "/#combobox_roles_states_props":
-    "/patterns/combobox/#wai-aria-roles-states-and-properties-6",
 };
 
 const urlRewrites = [
