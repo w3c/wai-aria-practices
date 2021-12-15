@@ -9,7 +9,7 @@ github:
 permalink: /patterns/tabpanel/
 
 lang: en
-last_updated: 2021-12-14
+last_updated: 2021-12-15
 ---
 
 

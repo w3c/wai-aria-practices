@@ -9,7 +9,7 @@ github:
 permalink: /index/combobox/combobox-datepicker
 
 lang: en
-last_updated: 2021-12-14
+last_updated: 2021-12-15
 ---
 <script type="text/javascript" src="../js/examples.js"></script>
 <script type="text/javascript" src="../js/highlight.pack.js"></script>
