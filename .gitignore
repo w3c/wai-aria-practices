@@ -3,6 +3,7 @@ _site
 .jekyll-*
 .DS_Store
 vendor
+.bundle
 node_modules
 .netlify
 content
