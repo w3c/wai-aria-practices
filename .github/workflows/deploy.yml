@@ -16,6 +16,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         cache: npm
+        cache-dependency-path: scripts/pre-build/package-lock.json
 
     - name: Set up Ruby 2.6.2
       uses: actions/setup-ruby@v1
