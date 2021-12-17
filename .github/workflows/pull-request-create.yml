@@ -1,0 +1,56 @@
+name: Automatically create branch and pull request
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Name of branch to be created'
+        required: true
+      sha:
+        description: 'Commit SHA to look for from source'
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "Branch: ${{ github.event.inputs.name }}"
+          echo "SHA: ${{ github.event.inputs.sha }}"
+
+#      - uses: actions/checkout@v2
+#        with:
+#          submodules: true
+#
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v2
+#        with:
+#          cache: npm
+#          cache-dependency-path: scripts/pre-build/package-lock.json
+#
+#      - name: Set up Ruby 2.6.2
+#        uses: ruby/setup-ruby@v1
+#        with:
+#          ruby-version: 2.6.2
+#          bundler-cache: true
+#
+#      - name: Update git submodules
+#        run: |
+#          git submodule update --recursive --remote
+#
+#      - name: Update site files
+#        run: |
+#          bundle install
+#          npm install -g respec
+#          respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
+#          npm install -C scripts/pre-build
+#          node ./scripts/pre-build
+#
+#      - name: Commit changed files
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Commit changes
+#          branch: master
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
