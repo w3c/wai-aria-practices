@@ -16,8 +16,8 @@ jobs:
 
     steps:
       - run: |
-          echo "APG Branch: ${{ github.event.inputs.branch }}"
-          echo "APG SHA: ${{ github.event.inputs.sha }}"
+          echo "APG Branch: ${{ github.event.inputs.apg_branch }}"
+          echo "APG SHA: ${{ github.event.inputs.apg_sha }}"
 
 #      - uses: actions/checkout@v2
 #        with:
