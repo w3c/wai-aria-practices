@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - run: |
-          echo "Branch: ${{ github.event.inputs.name }}"
+          echo "Branch: ${{ github.event.inputs.branch }}"
           echo "SHA: ${{ github.event.inputs.sha }}"
 
 #      - uses: actions/checkout@v2
