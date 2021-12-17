@@ -3,10 +3,10 @@ name: Automatically create branch and pull request
 on:
   workflow_dispatch:
     inputs:
-      branch:
+      apg_branch:
         description: 'Name of branch to be created'
         required: true
-      sha:
+      apg_sha:
         description: 'Commit SHA to look for from source'
         required: true
 
@@ -16,8 +16,8 @@ jobs:
 
     steps:
       - run: |
-          echo "Branch: ${{ github.event.inputs.branch }}"
-          echo "SHA: ${{ github.event.inputs.sha }}"
+          echo "APG Branch: ${{ github.event.inputs.branch }}"
+          echo "APG SHA: ${{ github.event.inputs.sha }}"
 
 #      - uses: actions/checkout@v2
 #        with:
