@@ -45,6 +45,7 @@ jobs:
         run: |
           # switch to branch if exists or create branch
           git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
+          git pull
 
       - name: Create Pull Request
         run: |
