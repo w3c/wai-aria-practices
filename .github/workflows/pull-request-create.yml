@@ -49,7 +49,7 @@ jobs:
 
       - name: Create Pull Request
         run: |
-          npm install @octokit/rest
+          npm install -C scripts/create-pull-request
           node ./scripts/create-pull-request
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
