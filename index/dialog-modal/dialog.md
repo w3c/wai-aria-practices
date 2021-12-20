@@ -9,7 +9,7 @@ github:
 permalink: /index/dialog-modal/dialog
 
 lang: en
-last_updated: 2021-12-15
+last_updated: 2021-12-20
 ---
 <script src="../js/examples.js" type="text/javascript"></script>
 <script src="../js/highlight.pack.js"></script>
