@@ -27,7 +27,7 @@ const octokit = new Octokit({
             owner: 'howard-e',
             repo: 'aria-practices',
             pull_number: process.env.APG_PR_NUMBER,
-            body: `${body}\n___[Preview Link](https://deploy-preview-${createPullRequestResult.data.number}--wai-aria-practices-howarde.netlify.app)`
+            body: `${body}\n___\n[Preview Link](https://deploy-preview-${createPullRequestResult.data.number}--wai-aria-practices-howarde.netlify.app)`
         })
         console.info('pull.update.success', updateAPGPracticesResult);
     } catch (e) {
