@@ -9,6 +9,9 @@ on:
       apg_sha:
         description: 'Commit SHA to look for from source'
         required: true
+      apg_pr_number:
+        description: 'PR number from aria-practices that triggered this workflow'
+        required: true
 
 jobs:
   create-pr:
@@ -55,6 +58,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           APG_BRANCH: ${{ github.event.inputs.apg_branch }}
+          APG_PR_NUMBER: ${{ github.event.inputs.apg_pr_number }}
 
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
