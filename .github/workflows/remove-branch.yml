@@ -1,0 +1,19 @@
+name: Remove branch cleanup
+
+on:
+  workflow_dispatch:
+    inputs:
+      apg_branch:
+        description: 'Name of branch to be removed'
+        required: true
+
+jobs:
+  remove-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean up generated branches
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{ github.token }}
+          branches: ${{ github.event.inputs.apg_branch }}
