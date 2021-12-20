@@ -35,12 +35,11 @@ jobs:
           ruby-version: 2.6.2
           bundler-cache: true
 
-      - name: Update git submodules
-        run: |
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
-          cd _external/aria-practices
-          git checkout ${{ github.event.inputs.apg_sha }}
+#      - name: Update git submodules
+#        run: |
+#          git submodule update --recursive --remote
+#          cd _external/aria-practices
+#          git checkout ${{ github.event.inputs.apg_sha }}
 
       - name: Switch to and update or create branch
         run: |
