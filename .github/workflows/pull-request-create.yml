@@ -49,6 +49,7 @@ jobs:
 
       - name: Create Pull Request
         run: |
+          pwd
           npm install -C scripts/create-pull-request
           node ./scripts/create-pull-request
         env:
