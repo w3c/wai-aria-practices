@@ -12,10 +12,6 @@ const octokit = new Octokit({
             repo: 'wai-aria-practices',
             head: process.env.APG_BRANCH,
             base: 'master',
-            inputs: {
-                branch: process.env.APG_BRANCH,
-                sha: process.env.APG_SHA,
-            },
         });
         console.info('pull.create.success', createPullRequestResult);
     } catch (e) {
