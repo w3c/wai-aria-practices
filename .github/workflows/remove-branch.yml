@@ -12,6 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check if branch exists
+        id: check_if_exists
+        run: |
+          OUTPUT=$(git ls-remote --heads https://github.com/howard-e/wai-aria-practices.git idk | wc -l)
+          echo "::set-output name=branch-exists::$(echo $OUTPUT)"
+      - name: See check result
+        run: "echo ${{ steps.check_if_exists.outputs.branch-exists }}"
       - name: Clean up generated branches
         uses: dawidd6/action-delete-branch@v3
         with:
