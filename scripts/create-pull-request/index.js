@@ -27,7 +27,7 @@ const octokit = new Octokit({
         console.info('pull.get.success', getApgPrRResult.data);
 
         let apgPrBody = getApgPrRResult.data.body || '';
-        if (!apgPrBody.contains('[Preview Link]')) apgPrBody = `${apgPrBody}\n___\n[Preview Link](https://deploy-preview-${createPullRequestResult.data.number}--wai-aria-practices-howarde.netlify.app)`;
+        if (!apgPrBody.includes('[Preview Link]')) apgPrBody = `${apgPrBody}\n___\n[Preview Link](https://deploy-preview-${createPullRequestResult.data.number}--wai-aria-practices-howarde.netlify.app)`;
 
         // creates preview link in aria-practices PR
         const updateApgPrResult = await octokit.rest.pulls.update({
