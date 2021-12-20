@@ -22,6 +22,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -35,18 +36,16 @@ jobs:
           ruby-version: 2.6.2
           bundler-cache: true
 
-#      - name: Update git submodules
-#        run: |
-#          git fetch --all
-#          git submodule update --recursive --remote
-#          cd _external/aria-practices
-#          git checkout ${{ github.event.inputs.apg_sha }}
+      - name: Update git submodules
+        run: |
+          git submodule update --recursive --remote
+          cd _external/aria-practices
+          git checkout ${{ github.event.inputs.apg_sha }}
 
       - name: Switch to and update or create branch
         run: |
           # switch to branch if exists or create branch
           git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
-          git pull origin ${{ github.event.inputs.apg_branch }}
 
       - name: Create Pull Request
         run: |
