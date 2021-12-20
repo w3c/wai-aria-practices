@@ -50,8 +50,6 @@ jobs:
       - name: Create Pull Request
         working-directory: ./
         run: |
-          ls
-          ls scripts
           npm install -C scripts/create-pull-request
           node ./scripts/create-pull-request
         env:
