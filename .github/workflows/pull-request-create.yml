@@ -19,38 +19,45 @@ jobs:
           echo "APG Branch: ${{ github.event.inputs.apg_branch }}"
           echo "APG SHA: ${{ github.event.inputs.apg_sha }}"
 
-#      - uses: actions/checkout@v2
-#        with:
-#          submodules: true
-#
-#      - name: Set up Node.js
-#        uses: actions/setup-node@v2
-#        with:
-#          cache: npm
-#          cache-dependency-path: scripts/pre-build/package-lock.json
-#
-#      - name: Set up Ruby 2.6.2
-#        uses: ruby/setup-ruby@v1
-#        with:
-#          ruby-version: 2.6.2
-#          bundler-cache: true
-#
-#      - name: Update git submodules
-#        run: |
-#          git submodule update --recursive --remote
-#
-#      - name: Update site files
-#        run: |
-#          bundle install
-#          npm install -g respec
-#          respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
-#          npm install -C scripts/pre-build
-#          node ./scripts/pre-build
-#
-#      - name: Commit changed files
-#        uses: stefanzweifel/git-auto-commit-action@v4
-#        with:
-#          commit_message: Commit changes
-#          branch: master
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          cache: npm
+          cache-dependency-path: scripts/create-pull-request/package-lock.json
+
+      - name: Set up Ruby 2.6.2
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.2
+          bundler-cache: true
+
+      - name: Update git submodules
+        run: |
+          git submodule update --recursive --remote
+          cd _external/aria-practices
+          git checkout ${{ github.event.inputs.apg_sha }}
+
+      - name: Switch to and update or create branch
+        run: |
+          # switch to branch if exists or create branch
+          git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
+
+      - name: Create Pull Request
+        run: |
+          npm install @octokit/rest
+          node scripts/create-pull-request.js
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          APG_BRANCH: ${{ github.event.inputs.apg_branch }}
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Commit changes
+          branch: ${{ github.event.inputs.apg_branch }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
