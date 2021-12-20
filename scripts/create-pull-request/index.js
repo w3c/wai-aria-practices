@@ -19,6 +19,7 @@ const octokit = new Octokit({
             maintainer_can_modify: true,
             body,
         });
+        // TODO: on 422 and error is not that PR already exists for branch, terminate
         console.info('pull.create.success', createPullRequestResult);
 
         // creates preview link in aria-practices PR
