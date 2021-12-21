@@ -46,10 +46,10 @@ jobs:
           # switch to branch if exists or create branch
           git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
 
-      - name: Commit changed files
+      - name: Commit changed files and submodule updates
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Commit changed files
+          commit_message: Commit changed files and submodule updates
           branch: ${{ github.event.inputs.apg_branch }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
