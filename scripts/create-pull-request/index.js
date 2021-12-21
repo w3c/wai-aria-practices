@@ -35,7 +35,7 @@ const octokit = new Octokit({
         } else { // replace existing preview link in PR body
             let stringRemainder = apgPrBody.substring(previewLinkIndex);
             let urlToChange = stringRemainder.match(/\(([^)]+)\)/)[1];
-            apgPrBody.replace(urlToChange, previewLinkUrl);
+            apgPrBody = apgPrBody.replace(urlToChange, previewLinkUrl);
         }
 
         // creates preview link in aria-practices PR
