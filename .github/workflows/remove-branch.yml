@@ -23,6 +23,6 @@ jobs:
         with:
           github_token: ${{ github.token }}
           branches: ${{ github.event.inputs.apg_branch }}
-      - name: Clean up generated branch
+      - name: Report branch already removed
         if: ${{ steps.check_if_exists.outputs.branch-exists == '0' }}
         run: echo "Branch already removed"
