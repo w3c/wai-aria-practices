@@ -46,7 +46,7 @@ const octokit = new Octokit({
         });
         console.info('pull.update.success', updateApgPrResult.data);
     } catch (e) {
-        console.error('pull.create.fail', e);
+        console.error('octokit.call.fail', e);
         process.exit(1);
     }
 })();
