@@ -65,5 +65,6 @@ jobs:
           node ./scripts/create-pull-request
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          APG_SHA: ${{ github.event.inputs.apg_sha }}
           APG_BRANCH: ${{ github.event.inputs.apg_branch }}
           APG_PR_NUMBER: ${{ github.event.inputs.apg_pr_number }}
