@@ -1,4 +1,4 @@
-name: Create branch and pull request from APG trigger
+name: Create or update branch and pull request from APG trigger
 
 on:
   workflow_dispatch:
