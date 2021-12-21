@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           cache: npm
-          cache-dependency-path: scripts/create-pr/package-lock.json
+          cache-dependency-path: scripts/pre-build/package-lock.json
 
       - name: Set up Ruby 2.6.2
         uses: ruby/setup-ruby@v1
@@ -45,6 +45,15 @@ jobs:
         run: |
           # switch to branch if exists or create branch
           git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
+
+      - name: Update site files
+        working-directory: ./
+        run: |
+          bundle install
+          npm install -g respec
+          respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
+          npm install -C scripts/pre-build
+          node ./scripts/pre-build
 
       - name: Commit changed files and submodule updates
         uses: stefanzweifel/git-auto-commit-action@v4
