@@ -26,11 +26,11 @@ const octokit = new Octokit({
         console.info('pull.get.success', getApgPrRResult.data);
 
         let apgPrBody = getApgPrRResult.data.body || '';
-        let previewLinkIndex = apgPrBody.indexOf('[Preview Link]');
+        let previewLinkIndex = apgPrBody.indexOf('[WAI Preview Link]');
         let previewLinkUrl = `https://deploy-preview-${createPullRequestResult.data.number}--wai-aria-practices-howarde.netlify.app`;
 
         if (previewLinkIndex < 0) { // no preview link in PR body; append
-            apgPrBody = `${apgPrBody}\n___\n[Preview Link](${previewLinkUrl})`;
+            apgPrBody = `${apgPrBody}\n___\n[WAI Preview Link](${previewLinkUrl})`;
         } else { // replace existing preview link in PR body
             let stringRemainder = apgPrBody.substring(previewLinkIndex);
             let urlToChange = stringRemainder.match(/\(([^)]+)\)/)[1];
