@@ -9,7 +9,7 @@ github:
 permalink: /index/radio/radio-rating
 
 lang: en
-last_updated: 2021-12-20
+last_updated: 2021-12-21
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
