@@ -1,4 +1,4 @@
-name: Automatically create branch and pull request
+name: Create branch and pull request from APG trigger
 
 on:
   workflow_dispatch:
@@ -18,10 +18,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: |
-          echo "APG Branch: ${{ github.event.inputs.apg_branch }}"
-          echo "APG SHA: ${{ github.event.inputs.apg_sha }}"
-
       - uses: actions/checkout@v2
         with:
           submodules: true
@@ -31,7 +27,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           cache: npm
-          cache-dependency-path: scripts/create-pull-request/package-lock.json
+          cache-dependency-path: scripts/create-pr/package-lock.json
 
       - name: Set up Ruby 2.6.2
         uses: ruby/setup-ruby@v1
@@ -45,7 +41,7 @@ jobs:
           cd _external/aria-practices
           git checkout ${{ github.event.inputs.apg_sha }}
 
-      - name: Switch to and update or create branch
+      - name: Switch to and create/update branch
         run: |
           # switch to branch if exists or create branch
           git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
@@ -53,16 +49,16 @@ jobs:
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Commit changes
+          commit_message: Commit changed files
           branch: ${{ github.event.inputs.apg_branch }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create Pull Request
+      - name: Create pull request
         working-directory: ./
         run: |
-          npm install -C scripts/create-pull-request
-          node ./scripts/create-pull-request
+          npm install -C scripts/create-pr
+          node ./scripts/create-pr
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           APG_SHA: ${{ github.event.inputs.apg_sha }}

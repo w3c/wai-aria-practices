@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: Deploy to netlify from APG trigger
 
 on:
   workflow_dispatch:

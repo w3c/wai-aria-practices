@@ -1,4 +1,4 @@
-name: Remove branch cleanup
+name: Perform branch cleanup from APG trigger
 
 on:
   workflow_dispatch:
