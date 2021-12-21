@@ -17,10 +17,12 @@ jobs:
         run: |
           OUTPUT=$(git ls-remote --heads https://github.com/howard-e/wai-aria-practices.git ${{ github.event.inputs.apg_branch }} | wc -l)
           echo "::set-output name=branch-exists::$(echo $OUTPUT)"
-      - name: See check result
-        run: "echo ${{ steps.check_if_exists.outputs.branch-exists }}"
-      - name: Clean up generated branches
+      - name: Clean up generated branch
+        if: ${{ steps.check_if_exists.outputs.branch-exists == '1' }}
         uses: dawidd6/action-delete-branch@v3
         with:
           github_token: ${{ github.token }}
           branches: ${{ github.event.inputs.apg_branch }}
+      - name: Clean up generated branch
+        if: ${{ steps.check_if_exists.outputs.branch-exists == '0' }}
+        run: echo "Branch already removed"
