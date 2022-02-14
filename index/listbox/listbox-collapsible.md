@@ -9,7 +9,7 @@ github:
 permalink: /index/listbox/listbox-collapsible
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
@@ -299,7 +299,7 @@ last_updated: 2021-12-21
               <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element.</li>
               <li>
                 For more information about this focus management technique, see
-                <a href="../../../#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
+                <a href="/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
               </li>
             </ul>
           </td>

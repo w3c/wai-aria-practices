@@ -9,7 +9,7 @@ github:
 permalink: /patterns/toolbar/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="toolbar"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="toolbar"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>A <a class="role-reference" href="https://w3c.github.io/aria/#toolbar">toolbar</a> is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</p>
       <p>
@@ -63,15 +63,15 @@ last_updated: 2021-12-21
         <li>Avoid including controls whose operation requires the pair of arrow keys used for toolbar navigation. If unavoidable, include only one such control and make it the last element in the toolbar. For example, in a horizontal toolbar, a textbox could be included as the last element.</li>
         <li>Use toolbar as a grouping element only if the group contains 3 or more controls.</li>
       </ul>
-      <section class="notoc examples-section"><img alt="" src="/assets/img/toolbar.svg" >
-        <h2 id="example-7" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/toolbar.svg" ><div class="header-wrapper"><h2 id="example-7" tabindex="-1">Example</h2></div>
+        
         <p>
           <a href="../../index/toolbar/toolbar.html">Toolbar Example</a>:
           A toolbar that uses roving tabindex to manage focus and contains several types of controls, including toggle buttons, radio buttons, a menu button, a spin button, a checkbox, and a link.
         </p>
       </section>
-      <section class="notoc">
-        <h2 id="keyboard-interaction-22" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-22" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li><kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>: Move focus into and out of the toolbar. When focus moves into a toolbar:
             <ul>
@@ -98,13 +98,13 @@ last_updated: 2021-12-21
           <li>
             Typically, disabled elements are not focusable when navigating with a keyboard.
             However, in circumstances where discoverability of a function is crucial, it may be helpful if disabled controls are focusable so screen reader users are more likely to be aware of their presence.
-            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_disabled_controls" class="sec-ref">§&nbsp;Focusability of disabled controls</a>.
+            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_disabled_controls" class="sec-ref">Focusability of disabled controls</a>.
           </li>
           <li>In applications where quick access to a toolbar is important, such as accessing an editor's toolbar from its text area, a documented shortcut key for moving focus from the relevant context to its corresponding toolbar is recommended.</li>
         </ol></div>
       </section>
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-23" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-23" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element that serves as the toolbar container has role <a class="role-reference" href="https://w3c.github.io/aria/#toolbar">toolbar</a>.  </li>
           <li>

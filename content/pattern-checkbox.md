@@ -9,7 +9,7 @@ github:
 permalink: /patterns/checkbox/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="checkbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="checkbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> supports two types of <a href="https://w3c.github.io/aria/#checkbox" class="role-reference">checkbox</a> widgets:</p>
       <ol>
@@ -69,8 +69,8 @@ last_updated: 2021-12-21
         </li>
       </ul>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/checkbox.svg" >
-        <h2 id="examples-1" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/checkbox.svg" ><div class="header-wrapper"><h2 id="examples-1" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li>
             <a href="../../index/checkbox/checkbox.html">Checkbox (Two-State) Example</a>: Demonstrates a simple 2-state checkbox.
@@ -82,13 +82,13 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-5" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-5" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>When the checkbox has focus, pressing the <kbd>Space</kbd> key changes the state of the checkbox.</p>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-5" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-5" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The checkbox has role <a href="https://w3c.github.io/aria/#checkbox" class="role-reference">checkbox</a>.</li>
           <li>

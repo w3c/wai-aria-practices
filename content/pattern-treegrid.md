@@ -9,7 +9,7 @@ github:
 permalink: /patterns/treegrid/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="treegrid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="treegrid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
         <p>
           A <a href="https://w3c.github.io/aria/#treegrid" class="role-reference">treegrid</a> widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.
@@ -66,8 +66,8 @@ last_updated: 2021-12-21
         For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection.</a>
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/treegrid.svg" >
-        <h2 id="examples-16" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/treegrid.svg" ><div class="header-wrapper"><h2 id="examples-16" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li>
             <a href="../../index/treegrid/treegrid-1.html">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.
@@ -75,8 +75,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-25" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-25" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>
           The following keys provide <code>treegrid</code> navigation by moving focus among rows and cells of the grid.
           Implementations of <code>treegrid</code> make these key commands available when an element in the grid has received focus, e.g., after a user has moved focus to the grid with <kbd>Tab</kbd>.
@@ -218,11 +218,11 @@ last_updated: 2021-12-21
             </ul>
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-34"><div role="heading" class="note-title marker" id="h-note-32" aria-level="5"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">§&nbsp;Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+        <div class="note" role="note" id="issue-container-generatedID-34"><div role="heading" class="note-title marker" id="h-note-32" aria-level="5"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
       </section>
 
-      <section id="treegrid_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-26" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="treegrid_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-26" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The treegrid container has role <a href="https://w3c.github.io/aria/#treegrid" class="role-reference">treegrid</a>. </li>
           <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>treegrid</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>. </li>

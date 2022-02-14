@@ -9,7 +9,7 @@ github:
 permalink: /patterns/grid/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -51,7 +51,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="grid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="grid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
 
       <p>
@@ -83,8 +83,8 @@ last_updated: 2021-12-21
         To address these factors, the following two sections describe separate keyboard interaction patterns for data and layout grids.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/grid.svg" >
-        <h2 id="examples-5" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/grid.svg" ><div class="header-wrapper"><h2 id="examples-5" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/grid/LayoutGrids.html">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
           <li><a href="../../index/grid/dataGrids.html">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
@@ -92,8 +92,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section id="dataGrid" class="notoc">
-        <h2 id="data-grids-for-presenting-tabular-information" tabindex="-1">Data Grids For Presenting Tabular Information</h2>
+      <section id="dataGrid" class="notoc"><div class="header-wrapper"><h2 id="data-grids-for-presenting-tabular-information" tabindex="-1">Data Grids For Presenting Tabular Information</h2></div>
+        
         <p>
           A <code>grid</code> can be used to present tabular information that has column titles, row titles, or both.
           The <code>grid</code> pattern is particularly useful if the tabular information is editable or interactive.
@@ -107,8 +107,8 @@ last_updated: 2021-12-21
           While in application mode, a screen reader user hears only focusable elements and content that labels focusable elements.
           So, screen reader users may unknowingly overlook elements contained in a grid that are either not focusable or not used to label a column or row.
         </p>
-        <section class="notoc">
-          <h3 id="keyboard-interaction-for-data-grids">Keyboard Interaction For Data Grids</h3>
+        <section class="notoc"><div class="header-wrapper"><h3 id="keyboard-interaction-for-data-grids">Keyboard Interaction For Data Grids</h3></div>
+          
           <p>
             The following keys provide grid navigation by moving focus among cells of the grid.
             Implementations of grid make these key commands available when an element in the grid has received focus, e.g., after a user has moved focus to the grid with <kbd>Tab</kbd>.
@@ -149,12 +149,12 @@ last_updated: 2021-12-21
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="6"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">§&nbsp;Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+          <div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="6"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
         </section>
       </section>
 
-      <section id="layoutGrid" class="notoc">
-        <h2 id="layout-grids-for-grouping-widgets" tabindex="-1">Layout Grids for Grouping Widgets</h2>
+      <section id="layoutGrid" class="notoc"><div class="header-wrapper"><h2 id="layout-grids-for-grouping-widgets" tabindex="-1">Layout Grids for Grouping Widgets</h2></div>
+        
 
         <p>
           The <code>grid</code> pattern  can be used to group a set of interactive elements, such as links, buttons,  or checkboxes.
@@ -175,8 +175,8 @@ last_updated: 2021-12-21
 
         <p> Because arrow keys are used to move focus inside of a <code>grid</code>, a <code>grid</code> is both easier to build and use if the components it contains do not require the arrow keys to operate. If a cell contains an element like a <a href="/patterns/listbox/">listbox</a>, then an extra key command to focus and activate the listbox is needed as well as a command for restoring the grid navigation functionality. Approaches to supporting this need are described in the section on <a href="/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>. </p>
 
-        <section class="notoc">
-          <h3 id="keyboard-interaction-for-layout-grids">Keyboard Interaction For Layout Grids</h3>
+        <section class="notoc"><div class="header-wrapper"><h3 id="keyboard-interaction-for-layout-grids">Keyboard Interaction For Layout Grids</h3></div>
+          
           <p>
             The following keys provide grid navigation by moving focus among cells of the grid.
             Implementations of grid make these key commands available when an element in the grid has received focus, e.g., after a user has moved focus to the grid with <kbd>Tab</kbd>.
@@ -247,12 +247,12 @@ last_updated: 2021-12-21
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="6"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">§&nbsp;Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+          <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="6"><span>Note</span></div><p class="">See <a href="/fundamentals/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
         </section>
       </section>
 
-      <section id="gridNav" class="notoc">
-        <h2 id="keyboard-interaction-setting-focus-and-navigating-inside-cells" tabindex="-1">Keyboard Interaction - Setting Focus and Navigating Inside Cells</h2>
+      <section id="gridNav" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-setting-focus-and-navigating-inside-cells" tabindex="-1">Keyboard Interaction - Setting Focus and Navigating Inside Cells</h2></div>
+        
         <p>This section describes two important aspects of keyboard interaction design shared by both data and layout grid patterns:</p>
 
         <ol>
@@ -260,8 +260,8 @@ last_updated: 2021-12-21
           <li>Enabling grid navigation keys to be used to interact with elements inside of a cell.</li>
         </ol>
 
-        <section id="gridNav_focus" class="notoc">
-          <h3 id="whether-to-focus-on-a-cell-or-an-element-inside-it">Whether to Focus on a Cell Or an Element Inside It</h3>
+        <section id="gridNav_focus" class="notoc"><div class="header-wrapper"><h3 id="whether-to-focus-on-a-cell-or-an-element-inside-it">Whether to Focus on a Cell Or an Element Inside It</h3></div>
+          
 
           <p>
             For assistive technology users, the quality of experience when navigating a grid heavily depends on both what a cell contains and on where keyboard focus is set.
@@ -284,8 +284,8 @@ last_updated: 2021-12-21
           </p>
         </section>
 
-        <section id="gridNav_inside" class="notoc">
-          <h3 id="editing-and-navigating-inside-a-cell">Editing and Navigating Inside a Cell</h3>
+        <section id="gridNav_inside" class="notoc"><div class="header-wrapper"><h3 id="editing-and-navigating-inside-a-cell">Editing and Navigating Inside a Cell</h3></div>
+          
 
           <p>
             While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to perform actions like operate a combobox or move an editing caret inside of a cell. The user may need keys that are used for grid navigation to operate
@@ -345,8 +345,8 @@ last_updated: 2021-12-21
         </section>
       </section>
 
-      <section id="grid_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-10" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="grid_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-10" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The grid container has role <a href="https://w3c.github.io/aria/#grid" class="role-reference">grid</a>. </li>
           <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>grid</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>. </li>

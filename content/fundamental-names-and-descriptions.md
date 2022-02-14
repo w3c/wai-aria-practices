@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/names-and-descriptions/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -50,8 +50,8 @@ if (addBodyClass) {
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section id="names_and_descriptions">
-    <h2 id="x5-providing-accessible-names-and-descriptions">Providing Accessible Names and Descriptions</h2>
+            <section id="names_and_descriptions"><div class="header-wrapper"><h2 id="x5-providing-accessible-names-and-descriptions">Providing Accessible Names and Descriptions</h2></div>
+    
     <p>
       Providing elements with accessible names, and where appropriate, accessible descriptions is one of the most important responsibilities authors have when developing accessible web experiences.
       While doing so is straightforward for most elements, technical mistakes that can completely block users of assistive technologies are easy to make and unfortunately common.
@@ -79,8 +79,8 @@ if (addBodyClass) {
       </li>
     </ul>
 
-    <section id="names_and_descriptions_definition">
-      <h3 id="x5-1-what-are-accessible-names-and-descriptions">What ARE Accessible Names and Descriptions?</h3>
+    <section id="names_and_descriptions_definition"><div class="header-wrapper"><h3 id="x5-1-what-are-accessible-names-and-descriptions">What ARE Accessible Names and Descriptions?</h3></div>
+      
       <p>
         An accessible name is a short string, typically 1 to 3 words,  that authors associate with an element to provide users of assistive technologies with a label for the element.
         For example, an input field might have an accessible name of "User ID" or a button might be named "Submit".
@@ -112,8 +112,8 @@ if (addBodyClass) {
       </p>
     </section>
 
-    <section id="names_and_descriptions_derivation">
-      <h3 id="x5-2-how-are-name-and-description-strings-derived">How Are Name and Description Strings Derived?</h3>
+    <section id="names_and_descriptions_derivation"><div class="header-wrapper"><h3 id="x5-2-how-are-name-and-description-strings-derived">How Are Name and Description Strings Derived?</h3></div>
+      
       <p>
         Because there are several elements and attributes for specifying text to include in an accessible name or description string, and because authors can combine them in a practically endless number of ways, browsers implement fairly complex algorithms for assembling the strings.
 The sections on <a href="/fundamentals/names-and-descriptions/#name_calculation">accessible name calculation</a> and <a href="/fundamentals/names-and-descriptions/#description_calculation">accessible description calculation</a> explain the algorithms and how they implement precedence.
@@ -121,13 +121,13 @@ However, most authors do not need such detailed understanding of the algorithms 
       </p>
     </section>
 
-    <section id="accessible_names">
-      <h3 id="x5-3-accessible-names">Accessible Names</h3>
-      <section id="naming_cardinal_rules">
-        <h4 id="x5-3-1-cardinal-rules-of-naming">Cardinal Rules of Naming</h4>
+    <section id="accessible_names"><div class="header-wrapper"><h3 id="x5-3-accessible-names">Accessible Names</h3></div>
+      
+      <section id="naming_cardinal_rules"><div class="header-wrapper"><h4 id="x5-3-1-cardinal-rules-of-naming">Cardinal Rules of Naming</h4></div>
+        
 
-        <section id="naming_rule_heed_warnings">
-          <h5 id="x5-3-1-1-rule-1-heed-warnings-and-test-thoroughly">Rule 1: Heed Warnings and Test Thoroughly</h5>
+        <section id="naming_rule_heed_warnings"><div class="header-wrapper"><h5 id="x5-3-1-1-rule-1-heed-warnings-and-test-thoroughly">Rule 1: Heed Warnings and Test Thoroughly</h5></div>
+          
           <p>
             Several of the <a href="/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> below include notes that warn against specific coding patterns that are either prohibited by the ARIA specification or fall into gray space that is not yet fully specified.
             Some of these prohibited or ambiguous patterns may appear logical and even yield desired names in some browsers.
@@ -138,8 +138,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
         </section>
 
-        <section id="naming_rule_visible_text">
-          <h5 id="x5-3-1-2-rule-2-prefer-visible-text">Rule 2: Prefer Visible Text</h5>
+        <section id="naming_rule_visible_text"><div class="header-wrapper"><h5 id="x5-3-1-2-rule-2-prefer-visible-text">Rule 2: Prefer Visible Text</h5></div>
+          
           <p>
             When a user interface includes visible text that could be used to provide an appropriate accessible name, using the visible text for the accessible name simplifies maintenance, prevents bugs, and reduces language translation requirements.
             When names are generated from text that exists only in markup and is never displayed visually, there is a greater likelihood that accessible names will not be updated when the user interface design or content are changed.
@@ -151,8 +151,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
         </section>
 
-        <section id="naming_rule_native_techniques">
-          <h5 id="x5-3-1-3-rule-3-prefer-native-techniques">Rule 3: Prefer Native Techniques</h5>
+        <section id="naming_rule_native_techniques"><div class="header-wrapper"><h5 id="x5-3-1-3-rule-3-prefer-native-techniques">Rule 3: Prefer Native Techniques</h5></div>
+          
           <p>
             In HTML documents, whenever possible, rely on HTML naming techniques, such as the HTML <code>label</code> element for form elements  and <code>caption</code> element for tables.
             While less flexible, their simplicity and reliance on visible text help ensure robust accessible experiences.
@@ -160,8 +160,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
         </section>
 
-        <section id="naming_rule_avoid_fallback">
-          <h5 id="x5-3-1-4-rule-4-avoid-browser-fallback">Rule 4: Avoid Browser Fallback</h5>
+        <section id="naming_rule_avoid_fallback"><div class="header-wrapper"><h5 id="x5-3-1-4-rule-4-avoid-browser-fallback">Rule 4: Avoid Browser Fallback</h5></div>
+          
           <p>
             When authors do not specify an accessible name using an element or attribute that is intended for naming, browsers attempt to help assistive technology users by resorting to fallback methods for generating a name.
             For example, the HTML <code>title</code> and <code>placeholder</code> attributes are used as last resort sources of content for accessible names.
@@ -169,8 +169,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
         </section>
 
-        <section id="naming_rule_brief_names">
-        <h5 id="x5-3-1-5-rule-5-compose-brief-useful-names">Rule 5: Compose Brief, Useful Names</h5>
+        <section id="naming_rule_brief_names"><div class="header-wrapper"><h5 id="x5-3-1-5-rule-5-compose-brief-useful-names">Rule 5: Compose Brief, Useful Names</h5></div>
+        
           <p>
             Similar to how visually crowded screens and ambiguous icons reduce usability, excessively long, insufficiently distinct, or unclear  accessible names can make a user interface very difficult, or even impossible, to use for someone who relies on a non-visual form of the user interface.
             In other words, for a web experience to be accessible, its accessible names must be effective.
@@ -179,11 +179,11 @@ However, most authors do not need such detailed understanding of the algorithms 
         </section>
       </section>
 
-      <section id="naming_techniques">
-        <h4 id="x5-3-2-naming-techniques">Naming Techniques</h4>
+      <section id="naming_techniques"><div class="header-wrapper"><h4 id="x5-3-2-naming-techniques">Naming Techniques</h4></div>
+        
 
-        <section id="naming_with_child_content">
-          <h5 id="x5-3-2-1-naming-with-child-content">Naming with Child Content</h5>
+        <section id="naming_with_child_content"><div class="header-wrapper"><h5 id="x5-3-2-1-naming-with-child-content">Naming with Child Content</h5></div>
+          
           <p>
             Certain elements get their name from the content they contain.
             For example, the following link is named "Home".
@@ -238,8 +238,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p></div>
         </section>
 
-        <section id="naming_with_aria-label">
-          <h5 id="x5-3-2-2-naming-with-a-string-attribute-via-aria-label">Naming with a String Attribute Via <code>aria-label</code></h5>
+        <section id="naming_with_aria-label"><div class="header-wrapper"><h5 id="x5-3-2-2-naming-with-a-string-attribute-via-aria-label">Naming with a String Attribute Via <code>aria-label</code></h5></div>
+          
           <p>
             The <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> property enables authors to name an element with a string that is not visually rendered.
             For example, the name of the following button is "Close".
@@ -271,8 +271,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </ol></div>
         </section>
 
-        <section id="naming_with_aria-labelledby">
-          <h5 id="x5-3-2-3-naming-with-referenced-content-via-aria-labelledby">Naming with Referenced Content Via <code>aria-labelledby</code></h5>
+        <section id="naming_with_aria-labelledby"><div class="header-wrapper"><h5 id="x5-3-2-3-naming-with-referenced-content-via-aria-labelledby">Naming with Referenced Content Via <code>aria-labelledby</code></h5></div>
+          
           <p>
             The <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby property</a> enables authors to reference other elements on the page to define an accessible name.
             For example, the following switch is named by the text content of a previous sibling element.
@@ -327,8 +327,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </ol></div>
         </section>
 
-        <section id="naming_with_labels">
-          <h5 id="x5-3-2-4-naming-form-controls-with-the-label-element">Naming Form Controls with the Label Element</h5>
+        <section id="naming_with_labels"><div class="header-wrapper"><h5 id="x5-3-2-4-naming-form-controls-with-the-label-element">Naming Form Controls with the Label Element</h5></div>
+          
           <p>
             The HTML <code>label</code> element enables authors to identify content that serves as a label and associate it with a form control.
             When a <code>label</code> element is associated with a form control, browsers calculate an accessible name for the form control from the <code>label</code> content.
@@ -357,8 +357,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
         </section>
 
-        <section id="naming_with_legends">
-          <h5 id="x5-3-2-5-naming-fieldsets-with-the-legend-element">Naming Fieldsets with the Legend Element</h5>
+        <section id="naming_with_legends"><div class="header-wrapper"><h5 id="x5-3-2-5-naming-fieldsets-with-the-legend-element">Naming Fieldsets with the Legend Element</h5></div>
+          
           <p>
             The HTML <code>fieldset</code> element can be used to group form controls, and the <code>legend</code> element can be used to give the group a name.
             For example, a group of radio buttons can be grouped together in a <code>fieldset</code>, where the <code>legend</code> element labels the group for the radio buttons.
@@ -391,8 +391,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>Using the <code>legend</code> element to name a <code>fieldset</code> element satisfies <a href="/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a> and <a href="/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.</p>
         </section>
 
-        <section id="naming_with_captions">
-          <h5 id="x5-3-2-6-naming-tables-and-figures-with-captions">Naming Tables and Figures with Captions</h5>
+        <section id="naming_with_captions"><div class="header-wrapper"><h5 id="x5-3-2-6-naming-tables-and-figures-with-captions">Naming Tables and Figures with Captions</h5></div>
+          
           <p>
             The accessible name for HTML <code>table</code> and <code>figure</code> elements can be derived from a child <code>caption</code> or <code>figcaption</code> element, respectively.
             Tables and figures often have a caption to explain what they are about, how to read them, and sometimes giving them numbers used to refer to them in surrounding prose.
@@ -447,8 +447,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>Using the <code>caption</code> element to name a <code>table</code> element, or a <code>figcaption</code> element to name a <code>figure</code> element, satisfies <a href="/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a> and <a href="/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.</p>
         </section>
 
-        <section id="naming_with_fallback">
-          <h5 id="x5-3-2-7-fallback-names-derived-from-titles-and-placeholders">Fallback Names Derived from Titles and Placeholders</h5>
+        <section id="naming_with_fallback"><div class="header-wrapper"><h5 id="x5-3-2-7-fallback-names-derived-from-titles-and-placeholders">Fallback Names Derived from Titles and Placeholders</h5></div>
+          
           <p>
             When an accessible name is not provided using one of the primary techniques (e.g., the <code>aria-label</code> or <code>aria-labelledby</code> attributes), or native markup techniques (e.g., the HTML <code>label</code> element, or the <code>alt</code> attribute of the HTML <code>img</code> element), browsers calculate an accessible name from other attributes as a fallback mechanism.
             Because the attributes used in fallback name calculation are not intended for naming, they typically yield low quality accessible names that are not effective.
@@ -482,8 +482,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
         </section>
       </section>
 
-      <section id="naming_effectively">
-        <h4 id="x5-3-3-composing-effective-and-user-friendly-accessible-names">Composing Effective and User-friendly Accessible Names</h4>
+      <section id="naming_effectively"><div class="header-wrapper"><h4 id="x5-3-3-composing-effective-and-user-friendly-accessible-names">Composing Effective and User-friendly Accessible Names</h4></div>
+        
         <p>
           For assistive technology users, especially screen reader users, the quality of accessible names is one of the most  significant contributors to usability.
           Names that do not provide enough information reduce users' effectiveness while names that are too long reduce efficiency.
@@ -524,8 +524,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
         </ul>
       </section>
 
-      <section id="naming_role_guidance">
-        <h4 id="x5-3-4-accessible-name-guidance-by-role"><span id="naming_role_guidance_heading">Accessible Name Guidance by Role</span></h4>
+      <section id="naming_role_guidance"><div class="header-wrapper"><h4 id="x5-3-4-accessible-name-guidance-by-role"><span id="naming_role_guidance_heading">Accessible Name Guidance by Role</span></h4></div>
+        
         <p>
           Certain elements always require a name, others may usually or sometimes require a name, and still others should never be named.
           The table below lists all ARIA roles and provides the following information for each :
@@ -1327,8 +1327,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
         </table></div>
       </section>
 
-      <section id="name_calculation">
-        <h4 id="x5-3-5-accessible-name-calculation">Accessible name calculation</h4>
+      <section id="name_calculation"><div class="header-wrapper"><h4 id="x5-3-5-accessible-name-calculation">Accessible name calculation</h4></div>
+        
         <p>
           User agents construct an accessible name string for an element by walking through a list of potential naming methods and using the first that generates a name.
           The algorithm they follow is defined in the <a href="https://w3c.github.io/accname/" class="accname">accessible name specification</a>.
@@ -1422,8 +1422,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
 
-        <section id="name_calculation_non-recursive_ex">
-          <h5 id="x5-3-5-1-examples-of-non-recursive-accessible-name-calculation">Examples of non-recursive accessible name calculation</h5>
+        <section id="name_calculation_non-recursive_ex"><div class="header-wrapper"><h5 id="x5-3-5-1-examples-of-non-recursive-accessible-name-calculation">Examples of non-recursive accessible name calculation</h5></div>
+          
           <p>Consider an <code>input</code> element that has no associated <code>label</code> element and only a <code>name</code> attribute and so does not have an accessible name (do not do this):</p>
           <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"code"</span>&gt;</span></code></pre>
           <p>If there is a <code>placeholder</code> attribute, then it serves as a naming fallback mechanism (avoid doing this):</p>
@@ -1468,8 +1468,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
           </section>
 
-          <section id="name_calculation_recursive_ex">
-            <h5 id="x5-3-5-2-examples-of-recursive-accessible-name-calculation">Examples of recursive accessible name calculation</h5>
+          <section id="name_calculation_recursive_ex"><div class="header-wrapper"><h5 id="x5-3-5-2-examples-of-recursive-accessible-name-calculation">Examples of recursive accessible name calculation</h5></div>
+            
             <p>The accessible name calculation algorithm will be invoked recursively when necessary. An <code>aria-labelledby</code> reference causes the algorithm to be invoked recursively, and when computing an accessible name from content the algorithm is invoked recursively for each child node.</p>
 
             <p>In this example, the label for the button is computed by recursing into each child node, resulting in <q>Move to trash</q>.</p>
@@ -1488,12 +1488,12 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
       </section>
     </section>
 
-    <section id="accessible_descriptions">
-      <h3 id="x5-4-accessible-descriptions">Accessible Descriptions</h3>
-      <section id="describing_techniques">
-        <h4 id="x5-4-1-describing-techniques">Describing Techniques</h4>
-        <section id="describing_with_aria-describedby">
-          <h5 id="x5-4-1-1-describing-by-referencing-content-with-aria-describedby">Describing by referencing content with <code>aria-describedby</code></h5>
+    <section id="accessible_descriptions"><div class="header-wrapper"><h3 id="x5-4-accessible-descriptions">Accessible Descriptions</h3></div>
+      
+      <section id="describing_techniques"><div class="header-wrapper"><h4 id="x5-4-1-describing-techniques">Describing Techniques</h4></div>
+        
+        <section id="describing_with_aria-describedby"><div class="header-wrapper"><h5 id="x5-4-1-1-describing-by-referencing-content-with-aria-describedby">Describing by referencing content with <code>aria-describedby</code></h5></div>
+          
           <p>
             The <code>aria-describedby</code> property works similarly to the <code>aria-labelledby</code> property.
             For example, a button could be described by a sibling paragraph.
@@ -1524,8 +1524,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
         </section>
 
-        <section id="describing_with_captions">
-          <h5 id="x5-4-1-2-describing-tables-and-figures-with-captions">Describing Tables and Figures with Captions</h5>
+        <section id="describing_with_captions"><div class="header-wrapper"><h5 id="x5-4-1-2-describing-tables-and-figures-with-captions">Describing Tables and Figures with Captions</h5></div>
+          
           <p>
             In HTML, if the <code>table</code> is named using <code>aria-label</code> or <code>aria-labelledby</code>, a child <code>caption</code> element becomes an accessible description.
             For example, a preceding heading might serve as an appropriate accessible name, and the <code>caption</code> element might contain a longer description.
@@ -1557,8 +1557,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></code></pre>
          </section>
 
-        <section id="describing_with_title">
-          <h5 id="x5-4-1-3-descriptions-derived-from-titles">Descriptions Derived from Titles</h5>
+        <section id="describing_with_title"><div class="header-wrapper"><h5 id="x5-4-1-3-descriptions-derived-from-titles">Descriptions Derived from Titles</h5></div>
+          
           <p>If an accessible description was not provided using the <code>aria-describedby</code> attribute or one of the primary host-language-specific attributes or elements (e.g., the <code>caption</code> element for <code>table</code>), then, for HTML, if the element has a <code>title</code> attribute, that is used as the accessible description.</p>
           <p>A visible description together with <code>aria-describedby</code> is generally recommended. If a description that is not visible is desired, then the <code>title</code> attribute can be used, for any HTML element that can have an accessible description.</p>
           <p>Note that the <code>title</code> attribute might not be accessible to some users, in particular sighted users not using a screen reader and not using a pointing device that supports hover (e.g., a mouse).</p>
@@ -1577,8 +1577,8 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
         </section>
       </section>
 
-      <section id="description_calculation">
-        <h4 id="x5-4-2-accessible-description-calculation">Accessible description calculation</h4>
+      <section id="description_calculation"><div class="header-wrapper"><h4 id="x5-4-2-accessible-description-calculation">Accessible description calculation</h4></div>
+        
         <p>
           Like the <a href="/fundamentals/names-and-descriptions/#name_calculation">accessible name calculation</a>, the accessible description calculation produces a text string.
         </p>

@@ -9,7 +9,7 @@ github:
 permalink: /patterns/tabpanel/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="tabpanel"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="tabpanel"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time.
@@ -66,16 +66,16 @@ last_updated: 2021-12-21
         When the user activates one of the other tab elements, the previously displayed tab panel is hidden, the tab panel associated with the activated tab becomes visible, and the tab is considered "active".
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/tabpanel.svg" >
-        <h2 id="examples-14" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/tabpanel.svg" ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/tabs/tabs-1/tabs.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
           <li><a href="../../index/tabs/tabs-2/tabs.html">Tabs With Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-21" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-21" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>For the tab list:</p>
         <ul>
           <li>
@@ -122,7 +122,7 @@ last_updated: 2021-12-21
             It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency.
             This typically requires tab panel content to be preloaded.
             Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list.
-            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus" class="sec-ref">§&nbsp;Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>
             When a tab list has its <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>:
@@ -134,8 +134,8 @@ last_updated: 2021-12-21
           <li>If the tab list is horizontal, it does not listen for <kbd>Down Arrow</kbd> or <kbd>Up Arrow</kbd> so those keys can provide their normal browser scrolling functions even when focus is inside the tab list.</li>
         </ol></div>
       </section>
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-22" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-22" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
         <li>The element that serves as the container for the set of tabs has role  <a class="role-reference" href="https://w3c.github.io/aria/#tablist">tablist</a>. </li>
         <li>Each element that serves as a tab has role <a class="role-reference" href="https://w3c.github.io/aria/#tab">tab</a> and is contained within the element with role <code>tablist</code>.</li>

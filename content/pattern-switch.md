@@ -9,7 +9,7 @@ github:
 permalink: /patterns/switch/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="switch"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="switch"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#switch" class="role-reference">switch</a> is an input widget that allows users to choose one of two values: <q>on</q> or <q>off</q>.
@@ -64,8 +64,8 @@ last_updated: 2021-12-21
         <strong>Important:</strong> it is critical the label on a switch does not change when its state changes.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/switch.svg" >
-        <h2 id="examples-12" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/switch.svg" ><div class="header-wrapper"><h2 id="examples-12" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/switch/switch.html">Switch Example</a>: A switch based on a <code>div</code> element that turns a notification preference on and off.</li>
           <li><a href="../../index/switch/switch-button.html">Switch Example Using HTML Button</a>: A group of 2 switches based on HTML <code>button</code> elements that turn lights on and off.</li>
@@ -73,16 +73,16 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-19" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-19" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li><kbd>Space</kbd>: When focus is on the switch, changes the state of the switch.</li>
           <li><kbd>Enter</kbd> (Optional): When focus is on the switch, changes the state of the switch.</li>
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-20" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-20" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The switch has role <a href="https://w3c.github.io/aria/#switch" class="role-reference">switch</a>.</li>
           <li>

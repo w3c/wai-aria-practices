@@ -9,7 +9,7 @@ github:
 permalink: /patterns/accordion/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="accordion"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="accordion"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         An accordion is a vertically stacked set of interactive headings that each contain a title, content snippet, or thumbnail representing a section of content.
@@ -62,12 +62,12 @@ last_updated: 2021-12-21
         For instance, a menubutton may accompany each accordion header to provide access to actions that apply to that section.
         And, in some cases, a snippet of the hidden content may also be visually persistent.
       </p>
-      <section class="notoc examples-section"><img alt="" src="/assets/img/accordion.svg" >
-        <h2 id="example" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/accordion.svg" ><div class="header-wrapper"><h2 id="example" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
       </section>
-      <section class="notoc">
-        <h2 id="keyboard-interaction" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li>
             <kbd>Enter</kbd> or <kbd>Space</kbd>:
@@ -100,8 +100,8 @@ last_updated: 2021-12-21
           </li>
         </ul>
       </section>
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties:</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties:</h2></div>
+        
         <ul>
           <li>
             The title of each accordion header is contained in an element with role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.

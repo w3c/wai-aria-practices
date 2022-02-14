@@ -9,7 +9,7 @@ github:
 permalink: /patterns/spinbutton/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="spinbutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="spinbutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A spinbutton is an input widget that restricts its value to a set or range of discrete values.
@@ -59,13 +59,13 @@ last_updated: 2021-12-21
         For instance, in the alarm example, the user may be able to move by 1 minute with <kbd>Up Arrow</kbd> and <kbd>Down Arrow</kbd> and by 10 minutes with <kbd>Page Up</kbd> and <kbd>Page Down</kbd>.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/spinbutton.svg" >
-        <h2 id="example-6" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/spinbutton.svg" ><div class="header-wrapper"><h2 id="example-6" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-18" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-18" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li><kbd>Up Arrow</kbd>: Increases the value.</li>
           <li><kbd>Down Arrow</kbd>: Decreases the value.</li>
@@ -97,8 +97,8 @@ last_updated: 2021-12-21
         </ol></div>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-19" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-19" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>
             The focusable element serving as the spinbutton has role <a class="role-reference" href="https://w3c.github.io/aria/#spinbutton">spinbutton</a>.

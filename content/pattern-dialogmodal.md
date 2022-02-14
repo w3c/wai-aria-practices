@@ -9,7 +9,7 @@ github:
 permalink: /patterns/dialogmodal/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="dialog_modal"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="dialog_modal"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#dialog" class="role-reference">dialog</a> is a window overlaid on either the primary window or another dialog window.
@@ -63,16 +63,16 @@ last_updated: 2021-12-21
         Its usage is described in the <a href="/patterns/alertdialog/">alert dialog design pattern.</a>
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/dialogmodal.svg" >
-        <h2 id="examples-3" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/dialogmodal.svg" ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
           <li><a href="../../index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-7" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-7" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>In the following description, the term <q>tabbable element</q> refers to any element with a <code>tabindex</code> value of zero or greater. Note that values greater than 0 are strongly discouraged.</p>
         <ul>
           <li>When a dialog opens, focus moves to an element inside the dialog. See notes below regarding initial focus placement.</li>
@@ -131,8 +131,8 @@ last_updated: 2021-12-21
         </ol></div>
       </section>
 
-      <section id="dialog_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-7" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="dialog_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-7" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element that serves as the dialog container has a role of <a href="https://w3c.github.io/aria/#dialog" class="role-reference">dialog</a>.</li>
           <li>All elements required to operate the dialog are descendants of the element that has role <code>dialog</code>.</li>

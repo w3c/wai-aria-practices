@@ -9,7 +9,7 @@ github:
 permalink: /patterns/combobox/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="combobox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="combobox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#combobox" class="role-reference">combobox</a> is an input widget with an associated popup that enables users to select a value for the combobox from a collection of possible values.
@@ -121,8 +121,8 @@ last_updated: 2021-12-21
         However, a menu button cannot be marked required, and while it has an accessible name, it does not have a value so is not suitable for conveying the user's choice in its collapsed state.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/combobox.svg" >
-        <h2 id="examples-2" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/combobox.svg" ><div class="header-wrapper"><h2 id="examples-2" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/combobox/combobox-select-only.html">Select-Only Combobox</a>: A single-select combobox with no text input that is functionally similar to an HTML <code>select</code> element.</li>
           <li><a href="../../index/combobox/combobox-autocomplete-both.html">Editable Combobox with Both List and Inline Autocomplete</a>: An editable combobox that demonstrates the autocomplete behavior known as <q>list with inline autocomplete</q>.</li>
@@ -133,13 +133,13 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-6" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-6" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li><kbd>Tab</kbd>: The combobox is in the page <kbd>Tab</kbd> sequence.</li>
           <li>Note: The popup indicator icon or button (if present), the popup, and the popup descendants are excluded from the page <kbd>Tab</kbd> sequence. </li>
         </ul>
-        <h3 id="combobox-keyboard-interaction">Combobox Keyboard Interaction</h3>
+        <section><div class="header-wrapper"><h3 id="combobox-keyboard-interaction">Combobox Keyboard Interaction</h3></div>
         <p>When focus is in the combobox:</p>
         <ul>
           <li><kbd>Down Arrow</kbd>: If the popup is available, moves focus into the popup:
@@ -178,7 +178,7 @@ last_updated: 2021-12-21
             <li><strong>IMPORTANT:</strong> Ensure JavaScript does not interfere with browser-provided text editing functions by capturing key events for the keys used to perform them.</li>
           </ol>
         </div></div>
-        <h3 id="listbox-popup-keyboard-interaction">Listbox Popup Keyboard Interaction</h3>
+        </section><section><div class="header-wrapper"><h3 id="listbox-popup-keyboard-interaction">Listbox Popup Keyboard Interaction</h3></div>
         <p>When focus is in a listbox popup:</p>
         <ul>
           <li><kbd>Enter</kbd>: Accepts the focused option in the listbox  by closing the popup, placing the accepted value in the combobox, and if the combobox is editable,  placing the input cursor at the end of the value.</li>
@@ -208,7 +208,7 @@ last_updated: 2021-12-21
           <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
           <li>Selection follows focus in the listbox; the listbox allows only one suggested value to be selected at a time for the combobox value.</li>
         </ol></div>
-        <h3 id="grid-popup-keyboard-interaction">Grid Popup Keyboard Interaction</h3>
+        </section><section><div class="header-wrapper"><h3 id="grid-popup-keyboard-interaction">Grid Popup Keyboard Interaction</h3></div>
         <p>
           In a grid popup, each suggested value may be represented by either a single cell or an entire row.
           See notes below for how this aspect of grid design effects the keyboard interaction design and the way that selection moves in response to focus movements.
@@ -282,7 +282,7 @@ last_updated: 2021-12-21
             </ol>
           </li>
         </ol></div>
-        <h3 id="tree-popup-keyboard-interaction">Tree Popup Keyboard Interaction</h3>
+        </section><section><div class="header-wrapper"><h3 id="tree-popup-keyboard-interaction">Tree Popup Keyboard Interaction</h3></div>
         <p>
           In some implementations of tree popups, some or all parent nodes may serve as suggestion category labels so may not be selectable values.
           See notes below for how this aspect of the design effects the way selection moves in response to focus movements.
@@ -335,7 +335,7 @@ last_updated: 2021-12-21
             </ol>
           </li>
         </ol></div>
-        <h3 id="dialog-popup-keyboard-interaction">Dialog Popup Keyboard Interaction</h3>
+        </section><section><div class="header-wrapper"><h3 id="dialog-popup-keyboard-interaction">Dialog Popup Keyboard Interaction</h3></div>
         <p>When focus is in a dialog popup:</p>
         <ul>
           <li>There are two ways to close the popup and return focus to the combobox:
@@ -352,10 +352,10 @@ last_updated: 2021-12-21
         <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Note</span></div><p class="">
           Unlike other combobox popups, dialogs do not support <code>aria-activedescendant</code> so DOM focus moves into the dialog from the combobox.
         </p></div>
-      </section>
+      </section></section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-6" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-6" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element that serves as an input and displays the combobox value has role <a href="https://w3c.github.io/aria/#combobox" class="role-reference">combobox</a>.</li>
           <li>

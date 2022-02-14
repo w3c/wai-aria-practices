@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/landmark-regions/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -46,8 +46,8 @@ if (addBodyClass) {
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="aria_landmark">
-    <h2 id="x4-landmark-regions">Landmark Regions</h2>
+            <section class="widget" id="aria_landmark"><div class="header-wrapper"><h2 id="x4-landmark-regions">Landmark Regions</h2></div>
+    
     <p>
       ARIA landmark roles provide a powerful way to identify the organization and structure of a web page.
       By classifying and labelling sections of a page, they enable structural information that is conveyed visually through layout to be represented programmatically.
@@ -58,8 +58,8 @@ if (addBodyClass) {
       This section explains how HTML sectioning elements and ARIA landmark roles
       are used to make it easy for assistive technology users to understand the meaning of the layout of a page.
     </p>
-    <section id="html-sectioning-elements">
-      <h3 id="x4-1-html-sectioning-elements">HTML Sectioning Elements</h3>
+    <section id="html-sectioning-elements"><div class="header-wrapper"><h3 id="x4-1-html-sectioning-elements">HTML Sectioning Elements</h3></div>
+      
       <p>
         Several HTML sectioning elements automatically create ARIA landmark regions.
         So, in order to provide assistive technology users with a logical view of a page,
@@ -115,8 +115,8 @@ if (addBodyClass) {
         </tbody>
       </table></div>
     </section>
-    <section id="general-principles-of-landmark-design">
-      <h3 id="x4-2-general-principles-of-landmark-design">General Principles of Landmark Design</h3>
+    <section id="general-principles-of-landmark-design"><div class="header-wrapper"><h3 id="x4-2-general-principles-of-landmark-design">General Principles of Landmark Design</h3></div>
+      
       <p>
         Including <strong>all perceivable content</strong> on a page in one of its landmark regions
         and giving each landmark region a semantically meaningful role
@@ -166,11 +166,11 @@ if (addBodyClass) {
       </ul>
     </section>
 
-    <section id="landmark-roles">
-      <h3 id="x4-3-landmark-roles">Landmark Roles</h3>
+    <section id="landmark-roles"><div class="header-wrapper"><h3 id="x4-3-landmark-roles">Landmark Roles</h3></div>
+      
 
-      <section class="widget" id="aria_lh_banner">
-        <h4 class="widget-name" id="x4-3-1-banner">Banner</h4>
+      <section class="widget" id="aria_lh_banner"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-1-banner">Banner</h4></div>
+        
 
         <p>
           A <a class="role-reference" href="https://w3c.github.io/aria/#banner"><code>banner</code></a> landmark identifies site-oriented content at the beginning of each page within a website. Site-oriented content typically includes things such as the logo or identity
@@ -188,8 +188,8 @@ if (addBodyClass) {
           <li>If a page includes more than one <code>banner</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-techniques">HTML Techniques</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-techniques">HTML Techniques</h5></div>
+          
           <ul>
             <li>The HTML <code>header</code> element defines a <code>banner</code> landmark when its context is the <code>body</code> element.</li>
 
@@ -205,21 +205,21 @@ if (addBodyClass) {
             </li>
           </ul>
 
-          <h5 id="aria-techniques">ARIA Techniques</h5>
+          <section><div class="header-wrapper"><h6 id="aria-techniques">ARIA Techniques</h6></div>
 
           <p>If the HTML <code>header</code> element technique is not being used, a <code>role="banner"</code> attribute should be used to define a <code>banner</code> landmark.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-17">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-17">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/banner.html">Banner Landmark Example</a></p>
         </section>
 
       </section>
 
-      <section id="aria_lh_complementary">
-        <h4 class="widget-name" id="x4-3-2-complementary">Complementary</h4>
+      <section id="aria_lh_complementary"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-2-complementary">Complementary</h4></div>
+        
 
         <p>A <a class="role-reference" href="https://w3c.github.io/aria/#complementary"><code>complementary</code></a> landmark is a supporting section of the document, designed to be complementary to the main content at a similar level in the DOM hierarchy, but remains meaningful
           when separated from the main content.</p>
@@ -232,25 +232,25 @@ if (addBodyClass) {
           <li>If a page includes more than one <code>complementary</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-technique">HTML Technique</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-technique">HTML Technique</h5></div>
+          
 
           <p>Use the HTML <code>aside</code> element to define a <code>complementary</code> landmark.</p>
 
-          <h5 id="aria-technique">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique">ARIA Technique</h6></div>
 
           <p>If the HTML <code>aside</code> element technique is not being used, use a <code>role="complementary"</code> attribute to define a <code>complementary</code> landmark.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-18">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-18">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/complementary.html">Complementary Landmark Example</a></p>
         </section>
       </section>
 
-      <section id="aria_lh_contentinfo">
-        <h4 class="widget-name" id="x4-3-3-contentinfo">Contentinfo</h4>
+      <section id="aria_lh_contentinfo"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-3-contentinfo">Contentinfo</h4></div>
+        
 
         <p>A <a class="role-reference" href="https://w3c.github.io/aria/#contentinfo"><code>contentinfo</code></a> landmark is a way to identify common information at the bottom of each page within a website, typically called the "footer" of the page, including information
           such as copyrights and links to privacy and accessibility statements.</p>
@@ -266,9 +266,9 @@ if (addBodyClass) {
           <li>If a page includes more than one <code>contentinfo</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
-        <section class="notoc">
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-techniques-0">HTML Techniques</h5></div>
 
-          <h5 id="html-techniques-0">HTML Techniques</h5>
+          
 
           <ul>
             <li>The HTML <code>footer</code> element defines a <code>contentinfo</code> landmark when its context is the <code>body</code> element.</li>
@@ -285,19 +285,19 @@ if (addBodyClass) {
             </li>
           </ul>
 
-          <h5 id="aria-technique-0">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique-0">ARIA Technique</h6></div>
 
           <p>If the HTML <code>footer</code> element technique is not being used, a <code>role="contentinfo"</code> attribute should be used to define a <code>contentinfo</code> landmark.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-19">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-19">Examples</h5></div>
+          
           <p><a href="../../index/landmarks/contentinfo.html">Contentinfo Landmark Example</a></p>
         </section>
       </section>
 
-      <section id="aria_lh_form">
-        <h4 class="widget-name" id="x4-3-4-form">Form</h4>
+      <section id="aria_lh_form"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-4-form">Form</h4></div>
+        
 
         <p>A <a class="role-reference" href="https://w3c.github.io/aria/#form"><code>form</code></a> landmark identifies a region that contains a collection of items and objects that, as a whole, combine to create a form when no other named landmark is appropriate (e.g. main
           or search).</p>
@@ -325,25 +325,25 @@ if (addBodyClass) {
           </li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-techniques-1">HTML Techniques</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-techniques-1">HTML Techniques</h5></div>
+          
 
           <p>The HTML <code>form</code> element defines a <code>form</code> landmark when it has an accessible name (e.g. <code>aria-labelledby</code>, <code>aria-label</code> or <code>title</code>).</p>
 
-          <h5 id="aria-technique-1">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique-1">ARIA Technique</h6></div>
 
           <p>Use the <code>role="form"</code> to identify a region of the page; do not use it to identify every form field.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-20">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-20">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/form.html">Form Landmark Example</a></p>
         </section>
       </section>
 
-      <section id="aria_lh_main">
-        <h4 class="widget-name" id="x4-3-5-main">Main</h4>
+      <section id="aria_lh_main"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-5-main">Main</h4></div>
+        
 
         <p>A <a class="role-reference" href="https://w3c.github.io/aria/#main"><code>main</code></a> landmark identifies the primary content of the page.</p>
 
@@ -358,25 +358,25 @@ if (addBodyClass) {
           <li>If a page includes more than one <code>main</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-technique-0">HTML Technique</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-technique-0">HTML Technique</h5></div>
+          
 
           <p>Use the HTML <code>main</code> element to define a <code>main</code> landmark.</p>
 
-          <h5 id="aria-technique-2">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique-2">ARIA Technique</h6></div>
 
           <p>If the HTML <code>main</code> element technique is not being used, use a <code>role="main"</code> attribute to define a <code>main</code> landmark.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-21">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-21">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/main.html">Main Landmark Example</a></p>
         </section>
       </section>
 
-      <section id="aria_lh_navigation">
-        <h4 class="widget-name" id="x4-3-6-navigation">Navigation</h4>
+      <section id="aria_lh_navigation"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-6-navigation">Navigation</h4></div>
+        
 
         <p><a class="role-reference" href="https://w3c.github.io/aria/#navigation"><code>Navigation</code></a> landmarks provide a way to identify groups (e.g. lists) of links that are intended to be used for website or page content navigation.</p>
 
@@ -386,26 +386,26 @@ if (addBodyClass) {
           <li>If a <code>navigation</code> landmark has an identical set of links as another <code>navigation</code> landmark on the page, use the same label for each <code>navigation</code> landmark.</li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-technique-1">HTML Technique</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-technique-1">HTML Technique</h5></div>
+          
 
           <p>Use the HTML <code>nav</code> element to define a <code>navigation</code> landmark.</p>
 
-          <h5 id="aria-technique-3">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique-3">ARIA Technique</h6></div>
 
           <p>If the HTML <code>nav</code> element technique is not being used, use a <code>role="navigation"</code> attribute to define a <code>navigation</code> landmark.</p>
 
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-22">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-22">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/navigation.html">Navigation Landmark Example</a></p>
         </section>
       </section>
 
-      <section id="aria_lh_region">
-        <h4 class="widget-name" id="x4-3-7-region">Region</h4>
+      <section id="aria_lh_region"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-7-region">Region</h4></div>
+        
 
         <p>A <a class="role-reference" href="https://w3c.github.io/aria/#region"><code>region</code></a> landmark is a perceivable section of the page containing content that is sufficiently important for users to be able to navigate to the section.</p>
 
@@ -417,25 +417,25 @@ if (addBodyClass) {
           <li>The <code>region</code> landmark can be used identify content that named landmarks do not appropriately describe.</li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-technique-2">HTML Technique</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-technique-2">HTML Technique</h5></div>
+          
 
           <p>The HTML <code>section</code> element defines a <code>region</code> landmark when it has an accessible name (e.g. <code>aria-labelledby</code>, <code>aria-label</code> or <code>title</code>).</p>
 
-          <h5 id="aria-technique-4">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique-4">ARIA Technique</h6></div>
 
           <p>If the HTML <code>section</code> element technique is not being used, use a <code>role="region"</code> attribute to define a <code>region</code> landmark.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-23">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-23">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/region.html">Region Landmark Example</a></p>
         </section>
       </section>
 
-      <section id="aria_lh_search">
-        <h4 class="widget-name" id="x4-3-8-search">Search</h4>
+      <section id="aria_lh_search"><div class="header-wrapper"><h4 class="widget-name" id="x4-3-8-search">Search</h4></div>
+        
 
         <p>A <a class="role-reference" href="https://w3c.github.io/aria/#search"><code>search</code></a> landmark contains a collection of items and objects that, as a whole, combine to create search functionality.</p>
 
@@ -445,17 +445,17 @@ if (addBodyClass) {
           <li>If a page includes more than one <code>search</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
-        <section class="notoc">
-          <h5 id="html-technique-3">HTML Technique</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="html-technique-3">HTML Technique</h5></div>
+          
           <p>There is no HTML element that defines a <code>search</code> landmark.</p>
 
-          <h5 id="aria-technique-5">ARIA Technique</h5>
+          <section><div class="header-wrapper"><h6 id="aria-technique-5">ARIA Technique</h6></div>
 
           <p>The <code>role="search"</code> attribute defines a <code>search</code> landmark.</p>
-        </section>
+        </section></section>
 
-        <section class="notoc">
-          <h5 id="examples-24">Examples</h5>
+        <section class="notoc"><div class="header-wrapper"><h5 id="examples-24">Examples</h5></div>
+          
 
           <p><a href="../../index/landmarks/search.html">Search Landmark Example</a></p>
         </section>

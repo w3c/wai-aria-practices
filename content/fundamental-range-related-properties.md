@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/range-related-properties/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -62,8 +62,8 @@ if (addBodyClass) {
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section id="range_related_properties">
-    <h2 id="x8-communicating-value-and-limits-for-range-widgets">Communicating Value and Limits for Range Widgets</h2>
+            <section id="range_related_properties"><div class="header-wrapper"><h2 id="x8-communicating-value-and-limits-for-range-widgets">Communicating Value and Limits for Range Widgets</h2></div>
+    
     <p>
       ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.
     </p>
@@ -110,8 +110,8 @@ if (addBodyClass) {
       </tbody>
     </table></div>
 
-    <section id="range_related_properties_using_aria-valuemin_aria-valuemax_and_aria-valuenow">
-      <h3 id="x8-1-using-aria-valuemin-aria-valuemax-and-aria-valuenow">Using <code>aria-valuemin</code>, <code>aria-valuemax</code> and <code>aria-valuenow</code></h3>
+    <section id="range_related_properties_using_aria-valuemin_aria-valuemax_and_aria-valuenow"><div class="header-wrapper"><h3 id="x8-1-using-aria-valuemin-aria-valuemax-and-aria-valuenow">Using <code>aria-valuemin</code>, <code>aria-valuemax</code> and <code>aria-valuenow</code></h3></div>
+      
       <p>
         When the value of a range widget is constrained to known limits, the <code>aria-valuemin</code> and <code>aria-valuemax</code> properties are used to inform assistive technologies of the minimum and maximum values of the range.
         For some widgets, assistive technologies use this information to present the current value as a percentage.
@@ -192,8 +192,8 @@ if (addBodyClass) {
       </table></div>
     </section>
 
-    <section id="range_related_properties_using_aria-valuetext">
-      <h3 id="x8-2-using-aria-valuetext">Using <code>aria-valuetext</code></h3>
+    <section id="range_related_properties_using_aria-valuetext"><div class="header-wrapper"><h3 id="x8-2-using-aria-valuetext">Using <code>aria-valuetext</code></h3></div>
+      
 
       <p>
         When the element's values are contained within a range but those values are not numeric (such as "small", "medium" and "large"),
@@ -217,8 +217,8 @@ if (addBodyClass) {
       </div>
     </section>
 
-    <section id="range_related_properties_meter_role">
-      <h3 id="x8-3-range-properties-with-meter">Range properties with meter</h3>
+    <section id="range_related_properties_meter_role"><div class="header-wrapper"><h3 id="x8-3-range-properties-with-meter">Range properties with meter</h3></div>
+      
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for elements with role <code>meter</code> if the meter's minimum value is not 0 or its maximum value is not 100.
         It is necessary, however, to always specify a value for <code>aria-valuenow</code> and to ensure the value is greater than or equal to the minimum allowed value and less than or equal to the maximum allowed value.
@@ -246,8 +246,8 @@ if (addBodyClass) {
         <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"ph_alkaline_meter_label"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
     </section>
-    <section id="range_related_properties_progressbar_role">
-      <h3 id="x8-4-range-properties-with-progress-bars">Range properties with progress bars</h3>
+    <section id="range_related_properties_progressbar_role"><div class="header-wrapper"><h3 id="x8-4-range-properties-with-progress-bars">Range properties with progress bars</h3></div>
+      
 
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for the <code>progressbar</code> role when the progress bar's minimum is not 0 or the maximum value is not 100.
@@ -278,8 +278,8 @@ if (addBodyClass) {
       <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"progressbar"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"spinner.gif"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Loading..."</span>&gt;</span></code></pre>
     </section>
 
-    <section id="range_related_properties_scrollbar_role">
-      <h3 id="x8-5-range-properties-with-scrollbars">Range properties with scrollbars</h3>
+    <section id="range_related_properties_scrollbar_role"><div class="header-wrapper"><h3 id="x8-5-range-properties-with-scrollbars">Range properties with scrollbars</h3></div>
+      
 
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for the <code>scrollbar</code> role when it's minimum value is not 0 or the maximum value is not 100.   The <code>aria-valuenow</code> property is required for <code>scrollbar</code> and the author needs to make sure it is within the minimum and maximum values.
@@ -307,8 +307,8 @@ if (addBodyClass) {
 
     </section>
 
-    <section id="range_related_properties_slider_role">
-      <h3 id="x8-6-range-properties-with-sliders">Range properties with sliders</h3>
+    <section id="range_related_properties_slider_role"><div class="header-wrapper"><h3 id="x8-6-range-properties-with-sliders">Range properties with sliders</h3></div>
+      
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for the <code>slider</code> role when the slider's minimum is not 0 or the maximum value is not 100.
         The <code>aria-valuenow</code> property is required for <code>slider</code> role and the author needs to make sure it is within the minimum and maximum values.
@@ -337,8 +337,8 @@ if (addBodyClass) {
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
     </section>
 
-    <section id="range_related_properties_spinbutton_role">
-      <h3 id="x8-7-range-properties-with-spin-buttons">Range properties with spin buttons</h3>
+    <section id="range_related_properties_spinbutton_role"><div class="header-wrapper"><h3 id="x8-7-range-properties-with-spin-buttons">Range properties with spin buttons</h3></div>
+      
 
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties are used only when a <code>spinbutton</code> has a defined range.

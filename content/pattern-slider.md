@@ -9,7 +9,7 @@ github:
 permalink: /patterns/slider/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="slider"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="slider"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A slider is an input where the user selects a value from within a given range.
@@ -55,8 +55,8 @@ last_updated: 2021-12-21
         This is a new convention that may not be fully implemented by some assistive technologies.
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
-      <section class="notoc examples-section"><img alt="" src="/assets/img/slider.svg" >
-        <h2 id="examples-11" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/slider.svg" ><div class="header-wrapper"><h2 id="examples-11" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/slider/slider-color-viewer.html">Color Viewer Slider Example</a>: Basic  horizontal sliders that illustrate setting numeric values for a color picker.</li>
           <li><a href="../../index/slider/slider-temperature.html">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
@@ -65,8 +65,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section id="slider_kbd_interaction" class="notoc">
-        <h2 id="keyboard-interaction-16" tabindex="-1">Keyboard Interaction</h2>
+      <section id="slider_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-16" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li><kbd>Right Arrow</kbd>: Increase the value of the slider by one step.</li>
           <li><kbd>Up Arrow</kbd>: Increase the value of the slider by one step.</li>
@@ -82,8 +82,8 @@ last_updated: 2021-12-21
           <li>In some circumstances, reversing the direction of the value change for the keys specified above, e.g., having <kbd>Up Arrow</kbd> decrease the value, could create a more intuitive experience.</li>
         </ol></div>
       </section>
-      <section id="slider_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-17" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="slider_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-17" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element serving as the focusable slider control has role <a class="role-reference" href="https://w3c.github.io/aria/#slider">slider</a>.</li>
           <li>The slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current value of the slider.</li>

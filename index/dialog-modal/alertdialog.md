@@ -9,7 +9,7 @@ github:
 permalink: /index/dialog-modal/alertdialog
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>

@@ -9,7 +9,7 @@ github:
 permalink: /patterns/menu/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="menu"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="menu"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> is a widget that offers a list of choices to the user, such as a set of actions or functions.
@@ -59,16 +59,16 @@ last_updated: 2021-12-21
 
       <p>A common convention for indicating that a menu item launches a dialog box is to append "…" (ellipsis) to the menu item label, e.g., "Save as …".</p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/menu.svg" >
-        <h2 id="examples-8" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/menu.svg" ><div class="header-wrapper"><h2 id="examples-8" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
           <li><a href="../../index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-12" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-12" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>
           The following description of keyboard behaviors assumes:</p>
           <ol>
@@ -87,7 +87,7 @@ last_updated: 2021-12-21
           <li>
             When a <code>menu</code> opens, or when a <code>menubar</code> receives focus,
             keyboard focus is placed on the first item.
-            All items are focusable as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref">§&nbsp; Keyboard Navigation Inside Components</a>.
+            All items are focusable as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>.
           </li>
           <li><kbd>Enter</kbd>:
             <ul>
@@ -178,8 +178,8 @@ last_updated: 2021-12-21
         </ol></div>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-13" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-13" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>A menu is a container of items that represent choices. The element serving as the menu has a role of either <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> or   <a href="https://w3c.github.io/aria/#menubar" class="role-reference">menubar</a>. </li>
           <li>The items contained in a menu are child elements of the containing menu or menubar and have any of the following roles:
@@ -199,7 +199,7 @@ last_updated: 2021-12-21
           </li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-expanded" class="property-reference">aria-expanded</a> set to <code>false</code> when its child menu is not visible and set to <code>true</code> when the child menu is visible.</li>
-          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref">§&nbsp; Keyboard Navigation Inside Components</a>:
+          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>:
             <ul>
               <li>The menu container has <code>tabindex</code> set to <code>-1</code> or <code>0</code> and <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to the ID of the focused item. </li>
               <li>Each item in the menu has <code>tabindex</code> set to <code>-1</code>, except in a menubar, where the first item has <code>tabindex</code> set to <code>0</code>. </li>

@@ -9,7 +9,7 @@ github:
 permalink: /patterns/disclosure/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="disclosure"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="disclosure"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
@@ -52,8 +52,8 @@ last_updated: 2021-12-21
         When the content is visible, the arrow or triangle typically points down.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/disclosure.svg" >
-        <h2 id="examples-4" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/disclosure.svg" ><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
           <li><a href="../../index/disclosure/disclosure-faq.html">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
@@ -62,8 +62,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-8" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-8" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>When the disclosure control has focus:</p>
         <ul>
           <li><kbd>Enter</kbd>: activates the disclosure control and toggles the visibility of the disclosure content.</li>
@@ -71,8 +71,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-8" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-8" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element that shows and hides the content has role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.</li>
           <li>

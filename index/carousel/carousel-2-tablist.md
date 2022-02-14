@@ -9,7 +9,7 @@ github:
 permalink: /index/carousel/carousel-2-tablist
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 <link rel="stylesheet" href="css/carousel-tablist.css" />
 <script src="../js/examples.js"></script>

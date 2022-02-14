@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/keyboard-interface/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -70,8 +70,8 @@ if (addBodyClass) {
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section id="keyboard">
-    <h2 id="x6-developing-a-keyboard-interface">Developing a Keyboard Interface</h2>
+            <section id="keyboard"><div class="header-wrapper"><h2 id="x6-developing-a-keyboard-interface">Developing a Keyboard Interface</h2></div>
+    
     <p>
       Unlike native HTML form elements, browsers do not provide keyboard support for graphical user interface (GUI) components that are made accessible with ARIA; authors have to provide the keyboard support in their code.
       This section describes the principles and methods for making the functionality of a web page that includes ARIA widgets, such as menus and grids, as well as interactive components, such as toolbars and dialogs, operable with a keyboard.
@@ -86,8 +86,8 @@ if (addBodyClass) {
       <li>Determining when to make disabled interactive elements focusable.</li>
       <li>Assigning and revealing keyboard shortcuts, including guidance on how to avoid problematic conflicts with keyboard commands of assistive technologies, browsers, and operating systems.</li>
     </ol>
-    <section id="kbd_generalnav">
-      <h3 id="x6-1-fundamental-keyboard-navigation-conventions">Fundamental Keyboard Navigation Conventions</h3>
+    <section id="kbd_generalnav"><div class="header-wrapper"><h3 id="x6-1-fundamental-keyboard-navigation-conventions">Fundamental Keyboard Navigation Conventions</h3></div>
+      
 
       <p>
         ARIA roles, states, and properties model accessibility behaviors and features shared among GUI components of popular desktop GUIs, including Microsoft Windows, macOS, and GNOME.
@@ -138,8 +138,8 @@ if (addBodyClass) {
       </ul>
     </section>
 
-    <section id="kbd_focus_discernable_predictable">
-      <h3 id="x6-2-discernible-and-predictable-keyboard-focus">Discernible and Predictable Keyboard Focus</h3>
+    <section id="kbd_focus_discernable_predictable"><div class="header-wrapper"><h3 id="x6-2-discernible-and-predictable-keyboard-focus">Discernible and Predictable Keyboard Focus</h3></div>
+      
       <p>Work to complete this section is tracked by <a href="https://github.com/w3c/aria-practices/issues/217">issue 217.</a></p>
       <p>
         When operating with a keyboard, two essentials of a good experience are the abilities to easily discern the location of the keyboard focus and to discover where focus landed after a navigation key has been pressed.
@@ -150,7 +150,7 @@ if (addBodyClass) {
         <li>Visibility of the focus indicator: Users need to be able to easily distinguish the keyboard focus indicator from other features of the visual design. Just as a mouse user may move the mouse to help find the mouse pointer, a keyboard user may press a navigation key to watch for movement. If visual changes in response to focus movement are subtle, many users will lose track of focus and be unable to operate. Authors are advised to rely on the default focus indicators provided by browsers. If overriding the default, consider:
           <ul>
             <li>something about ... Colors and gradients can disappear in high contrast modes.</li>
-            <li>Users need to be able to easily distinguish between focus and selection as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection" class="sec-ref">§&nbsp;Focus VS Selection and the Perception of Dual Focus</a>, especially when a component that contains selected elements does not contain the focus.</li>
+            <li>Users need to be able to easily distinguish between focus and selection as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection" class="sec-ref">Focus VS Selection and the Perception of Dual Focus</a>, especially when a component that contains selected elements does not contain the focus.</li>
             <li>... other considerations to be added ...</li>
           </ul>
         </li>
@@ -192,8 +192,8 @@ if (addBodyClass) {
       </ol>
     </section>
 
-    <section id="kbd_focus_vs_selection">
-      <h3 id="x6-3-focus-vs-selection-and-the-perception-of-dual-focus">Focus VS Selection and the Perception of Dual Focus</h3>
+    <section id="kbd_focus_vs_selection"><div class="header-wrapper"><h3 id="x6-3-focus-vs-selection-and-the-perception-of-dual-focus">Focus VS Selection and the Perception of Dual Focus</h3></div>
+      
 
       <p>
         Occasionally, it may appear as if two elements on the page have focus at the same time.
@@ -228,8 +228,8 @@ if (addBodyClass) {
       </ul>
     </section>
 
-    <section id="kbd_selection_follows_focus">
-      <h3 id="x6-4-deciding-when-to-make-selection-automatically-follow-focus">Deciding When to Make Selection Automatically Follow Focus</h3>
+    <section id="kbd_selection_follows_focus"><div class="header-wrapper"><h3 id="x6-4-deciding-when-to-make-selection-automatically-follow-focus">Deciding When to Make Selection Automatically Follow Focus</h3></div>
+      
       <p> in composite widgets where only one element may be selected, such as a tablist or single-select listbox, moving the focus may also cause the focused element to become the selected element. This is called having selection follow focus. Having selection follow focus is often beneficial to users, but in some circumstances, it is extremely detrimental to accessibility. </p>
       <p>
         For example, in a tablist, the selected state is used to indicate which panel is displayed.
@@ -244,10 +244,10 @@ if (addBodyClass) {
       </p>
     </section>
 
-    <section id="kbd_general_between">
-      <h3 id="x6-5-keyboard-navigation-between-components-the-tab-sequence">Keyboard Navigation Between Components (The Tab Sequence)</h3>
+    <section id="kbd_general_between"><div class="header-wrapper"><h3 id="x6-5-keyboard-navigation-between-components-the-tab-sequence">Keyboard Navigation Between Components (The Tab Sequence)</h3></div>
+      
 
-      <p> As explained in section <a href="/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">§&nbsp;Fundamental Keyboard Navigation Conventions</a>, all interactive UI components need to be reachable via the keyboard. This is best achieved by either including them in the tab sequence or by making them accessible from a component that is in the tab sequence, e.g., as part of a composite component. This section addresses building and managing the tab sequence, and subsequent sections cover making focusable elements that are contained within components keyboard accessible. </p>
+      <p> As explained in section <a href="/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, all interactive UI components need to be reachable via the keyboard. This is best achieved by either including them in the tab sequence or by making them accessible from a component that is in the tab sequence, e.g., as part of a composite component. This section addresses building and managing the tab sequence, and subsequent sections cover making focusable elements that are contained within components keyboard accessible. </p>
 
       <p>
         The [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-html" title="HTML Standard">HTML</a></cite>] <a href="https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute">tabindex</a> and [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>] <a href="https://www.w3.org/TR/SVG2/struct.html#tabindexattribute">tabindex</a> attributes can be used to add and remove elements from the tab sequence.
@@ -262,7 +262,7 @@ if (addBodyClass) {
       <p>
         The default order of elements in the tab sequence is the order of elements in the DOM.
         The DOM order also determines screen reader reading order.
-        It is important to keep the keyboard tab sequence and the screen reader reading order aligned, logical, and predictable as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_discernable_predictable" class="sec-ref">§&nbsp;Discernible and Predictable Keyboard Focus</a>.
+        It is important to keep the keyboard tab sequence and the screen reader reading order aligned, logical, and predictable as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_discernable_predictable" class="sec-ref">Discernible and Predictable Keyboard Focus</a>.
         The most robust method of manipulating the order of the tab sequence while also maintaining alignment with the reading order that is currently available in all browsers is rearranging elements in the DOM.
       </p>
 
@@ -287,13 +287,13 @@ if (addBodyClass) {
       </dl>
     </section>
 
-    <section id="kbd_general_within">
-      <h3 id="x6-6-keyboard-navigation-inside-components"> Keyboard Navigation Inside Components</h3>
+    <section id="kbd_general_within"><div class="header-wrapper"><h3 id="x6-6-keyboard-navigation-inside-components"> Keyboard Navigation Inside Components</h3></div>
+      
 
       <p>
-        As described in section <a href="/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">§&nbsp;Fundamental Keyboard Navigation Conventions</a>, the tab sequence should include only one focusable element of a composite UI component.
+        As described in section <a href="/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, the tab sequence should include only one focusable element of a composite UI component.
         Once a composite contains focus, keys other than <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> enable the user to move focus among its focusable elements.
-        Authors are free to choose which keys move focus inside of a composite, but they are strongly advised to use the same key bindings as similar components in common GUI operating systems as demonstrated in <a href="/patterns/" class="sec-ref">§&nbsp;Design Patterns and Widgets</a>.
+        Authors are free to choose which keys move focus inside of a composite, but they are strongly advised to use the same key bindings as similar components in common GUI operating systems as demonstrated in <a href="/patterns/" class="sec-ref">Design Patterns and Widgets</a>.
       </p>
 
       <p> The convention for where focus lands in a composite when it receives focus as a result of a <kbd>Tab</kbd> key event depends on the type of composite. It is typically one of the following. </p>
@@ -321,8 +321,8 @@ if (addBodyClass) {
         The following sections explain two strategies for managing focus inside composite elements: creating a roving tabindex and using the aria-activedescendant property.
       </p>
 
-      <section id="kbd_roving_tabindex">
-        <h4 id="x6-6-1-managing-focus-within-components-using-a-roving-tabindex">Managing Focus Within Components Using a Roving tabindex</h4>
+      <section id="kbd_roving_tabindex"><div class="header-wrapper"><h4 id="x6-6-1-managing-focus-within-components-using-a-roving-tabindex">Managing Focus Within Components Using a Roving tabindex</h4></div>
+        
 
         <p>
           When using roving tabindex to manage focus in a composite UI component, the element that is to be included in the tab sequence has tabindex of "0" and all other focusable elements contained in the composite have tabindex of "-1".
@@ -352,8 +352,8 @@ if (addBodyClass) {
         </p>
       </section>
 
-      <section id="kbd_focus_activedescendant">
-        <h4 id="x6-6-2-managing-focus-in-composites-using-aria-activedescendant">Managing Focus in Composites Using aria-activedescendant</h4>
+      <section id="kbd_focus_activedescendant"><div class="header-wrapper"><h4 id="x6-6-2-managing-focus-in-composites-using-aria-activedescendant">Managing Focus in Composites Using aria-activedescendant</h4></div>
+        
 
         <p>
           If a component container has an ARIA role that supports the <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant">aria-activedescendant</a> property, it is not necessary to manipulate the tabindex attribute and move DOM focus among focusable elements within the container.
@@ -367,7 +367,7 @@ if (addBodyClass) {
         <ul>
           <li>When the container element that has a role that supports aria-activedescendant is loaded or created, ensure that:
             <ul>
-              <li>The container element is included in the tab sequence as described in <a href="/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">§&nbsp;Keyboard Navigation Between Components (The Tab Sequence)</a> or is a focusable element of a composite that implements <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">a roving tabindex</a>.</li>
+              <li>The container element is included in the tab sequence as described in <a href="/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> or is a focusable element of a composite that implements <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">a roving tabindex</a>.</li>
               <li>
                 It has <code>aria-activedescendant="IDREF"</code> where IDREF is the ID of the element within the container that should be identified as active when the widget receives focus.
                 The referenced element needs to meet the DOM relationship requirements described below.
@@ -403,13 +403,13 @@ if (addBodyClass) {
         </ol>
       </section>
     </section>
-    <section id="kbd_disabled_controls">
-      <h3 id="x6-7-focusability-of-disabled-controls">Focusability of disabled controls</h3>
+    <section id="kbd_disabled_controls"><div class="header-wrapper"><h3 id="x6-7-focusability-of-disabled-controls">Focusability of disabled controls</h3></div>
+      
       <p>
         By default, disabled HTML input elements are removed from the tab sequence.
         In most contexts, the normal expectation is that disabled interactive elements are not focusable.
         However, there are some contexts where it is common for disabled elements to be focusable, especially inside of composite widgets.
-        For example, as demonstrated in the <a href="/patterns/menu/" class="sec-ref">§&nbsp;Menu or Menu bar</a> pattern, disabled items are focusable when navigating through a menu with the arrow keys.
+        For example, as demonstrated in the <a href="/patterns/menu/" class="sec-ref">Menu or Menu bar</a> pattern, disabled items are focusable when navigating through a menu with the arrow keys.
       </p>
 
       <p>
@@ -455,10 +455,10 @@ if (addBodyClass) {
         </li>
       </ol>
 
-      <p>One design technique for mitigating the impact of including disabled elements in the path of keyboard focus is employing appropriate keyboard shortcuts as described in <a href="/fundamentals/keyboard-interface/#kbd_shortcuts" class="sec-ref">§&nbsp;Keyboard Shortcuts</a>.</p>
+      <p>One design technique for mitigating the impact of including disabled elements in the path of keyboard focus is employing appropriate keyboard shortcuts as described in <a href="/fundamentals/keyboard-interface/#kbd_shortcuts" class="sec-ref">Keyboard Shortcuts</a>.</p>
     </section>
-    <section id="kbd_common_conventions">
-      <h3 id="x6-8-key-assignment-conventions-for-common-functions">Key Assignment Conventions for Common Functions</h3>
+    <section id="kbd_common_conventions"><div class="header-wrapper"><h3 id="x6-8-key-assignment-conventions-for-common-functions">Key Assignment Conventions for Common Functions</h3></div>
+      
       <p>
         The following key assignments can be used in any context where their conventionally associated functions are appropriate.
         While the assignments associated with Windows and Linux platforms can be implemented and used in browsers running in macOS,
@@ -507,8 +507,8 @@ if (addBodyClass) {
         </tbody>
       </table></div>
     </section>
-    <section id="kbd_shortcuts">
-      <h3 id="x6-9-keyboard-shortcuts">Keyboard Shortcuts</h3>
+    <section id="kbd_shortcuts"><div class="header-wrapper"><h3 id="x6-9-keyboard-shortcuts">Keyboard Shortcuts</h3></div>
+      
       <p>
         When effectively designed, keyboard shortcuts that focus an element, activate a widget, or both can dramatically enhance usability of frequently used features of a page or site.
         This section addresses some of the keyboard shortcut design and implementation factors that most impact their effectiveness, including:
@@ -518,8 +518,8 @@ if (addBodyClass) {
         <li>Making key assignments and avoiding assignment conflicts with assistive technologies, browsers, and operating systems. </li>
         <li>Exposing and documenting key assignments. </li>
       </ol>
-      <section id="kbd_shortcuts_behavior_design">
-        <h4 id="x6-9-1-designing-the-scope-and-behavior-of-keyboard-shortcuts">Designing the Scope and Behavior of Keyboard Shortcuts</h4>
+      <section id="kbd_shortcuts_behavior_design"><div class="header-wrapper"><h4 id="x6-9-1-designing-the-scope-and-behavior-of-keyboard-shortcuts">Designing the Scope and Behavior of Keyboard Shortcuts</h4></div>
+        
 
         <p>This section explains the following factors when determining which elements and features to assign keyboard shortcuts and what behavior to give each shortcut:</p>
 
@@ -539,8 +539,8 @@ if (addBodyClass) {
           <li>Balancing efficiency and cognitive load: lack of a shortcut can reduce efficiency while too many shortcuts can increase cognitive load and clutter the experience.</li>
         </ol>
 
-        <section id="kbd_shortcuts_design_basic">
-          <h5 id="x6-9-1-1-ensure-basic-access-via-navigation">Ensure Basic Access Via Navigation </h5>
+        <section id="kbd_shortcuts_design_basic"><div class="header-wrapper"><h5 id="x6-9-1-1-ensure-basic-access-via-navigation">Ensure Basic Access Via Navigation </h5></div>
+          
 
           <p>
             Before assigning keyboard shortcuts, it is essential to ensure the features and functions to which shortcuts may be assigned are keyboard accessible without a keyboard shortcut.
@@ -548,8 +548,8 @@ if (addBodyClass) {
           </p>
 
           <ul>
-            <li><a href="/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">§&nbsp;Keyboard Navigation Between Components (The Tab Sequence)</a> </li>
-            <li><a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref">§&nbsp; Keyboard Navigation Inside Components</a> </li>
+            <li><a href="/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> </li>
+            <li><a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a> </li>
           </ul>
 
           <p>
@@ -564,8 +564,8 @@ if (addBodyClass) {
           </ol>
         </section>
 
-        <section id="kbd_shortcuts_design_choose_behavior">
-          <h5 id="x6-9-1-2-choose-appropriate-shortcut-behavior">Choose Appropriate Shortcut Behavior</h5>
+        <section id="kbd_shortcuts_design_choose_behavior"><div class="header-wrapper"><h5 id="x6-9-1-2-choose-appropriate-shortcut-behavior">Choose Appropriate Shortcut Behavior</h5></div>
+          
 
           <p>The following conventions may help identify the most advantageous behavior for a keyboard shortcut.</p>
 
@@ -586,8 +586,8 @@ if (addBodyClass) {
           </ul>
         </section>
 
-        <section id="kbd_shortcuts_design_where">
-          <h5 id="x6-9-1-3-choose-where-to-add-shortcuts">Choose Where to Add Shortcuts </h5>
+        <section id="kbd_shortcuts_design_where"><div class="header-wrapper"><h5 id="x6-9-1-3-choose-where-to-add-shortcuts">Choose Where to Add Shortcuts </h5></div>
+          
           <p>Work to draft content for this section is tracked in <a href="https://github.com/w3c/aria-practices/issues/219">issue 219.</a></p>
           <p>The first goal when designing a keyboard interface is simple, efficient, and intuitive operation with only basic keyboard navigation support. If basic operation of a keyboard interface is inefficient, attempting to compensate for fundamental design issues, such as suboptimal layout or command structure, by implementing keyboard shortcuts will not likely reduce user frustration. The practical implication of this is that, in most well-designed user interfaces, the percentage of functionality that needs to be accessible via a keyboard shortcut in order to create optimal usability is not very high. In many simple user interfaces, keyboard shortcuts can be entirely superfluous. And, in user interfaces with too many keyboard shortcuts, the excess shortcuts create cognitive load that make the most useful ones more difficult to remember. </p>
           <p>Consider the following when deciding where to assign keyboard shortcuts: </p>
@@ -597,8 +597,8 @@ if (addBodyClass) {
           </ol>
         </section>
       </section>
-      <section id="kbd_shortcuts_assigning">
-        <h4 id="x6-9-2-assigning-keyboard-shortcuts">Assigning Keyboard Shortcuts</h4>
+      <section id="kbd_shortcuts_assigning"><div class="header-wrapper"><h4 id="x6-9-2-assigning-keyboard-shortcuts">Assigning Keyboard Shortcuts</h4></div>
+        
         <p>When choosing the keys to assign to a shortcut, there are many factors to consider.</p>
         <ul>
           <li>Making the shortcut easy to learn and remember by using a mnemonic (e.g., <kbd>Control + S</kbd> for "Save") or following a logical or spacial pattern.</li>
@@ -621,8 +621,8 @@ if (addBodyClass) {
         <div class="note" role="note" id="issue-container-generatedID-40"><div role="heading" class="note-title marker" id="h-note-35" aria-level="5"><span>Note</span></div><p class="">
           In the following sections, <kbd>meta</kbd> key refers to the <kbd>Windows</kbd> key on Windows-compatible keyboards and the <kbd>Command</kbd> key on MacOS-compatible keyboards.
         </p></div>
-        <section id="kbd_shortcuts_assignments_opsys_conflicts">
-          <h5 id="x6-9-2-1-operating-system-key-conflicts">Operating System Key Conflicts</h5>
+        <section id="kbd_shortcuts_assignments_opsys_conflicts"><div class="header-wrapper"><h5 id="x6-9-2-1-operating-system-key-conflicts">Operating System Key Conflicts</h5></div>
+          
 
           <p> It is essential to avoid conflicts with keys that perform system level functions, such as application and window management and display and sound control. In general, this can be achieved by refraining from the following types of assignments. </p>
 
@@ -646,8 +646,8 @@ if (addBodyClass) {
           </ol>
         </section>
 
-        <section id="kbd_shortcuts_assignments_assistivetech_conflicts">
-          <h5 id="x6-9-2-2-assistive-technology-key-conflicts">Assistive Technology Key Conflicts</h5>
+        <section id="kbd_shortcuts_assignments_assistivetech_conflicts"><div class="header-wrapper"><h5 id="x6-9-2-2-assistive-technology-key-conflicts">Assistive Technology Key Conflicts</h5></div>
+          
 
           <p>
             Even though assistive technologies have collectively taken thousands of key assignments, avoiding conflicts is relatively easy.
@@ -666,8 +666,8 @@ if (addBodyClass) {
           </ol>
         </section>
 
-        <section id="kbd_shortcuts_assignments_browser_conflicts">
-          <h5 id="x6-9-2-3-browser-key-conflicts">Browser Key Conflicts</h5>
+        <section id="kbd_shortcuts_assignments_browser_conflicts"><div class="header-wrapper"><h5 id="x6-9-2-3-browser-key-conflicts">Browser Key Conflicts</h5></div>
+          
 
           <p> While there is considerable similarity among browser keyboard schemes, the patterns within the schemes are less homogenous. Consequently, it is more difficult to avoid conflicts with browser key assignments. While the impact of conflicts is sometimes mitigated by the availability of two paths to nearly every function -- keyboard accessible menus and keyboard shortcuts, avoiding conflicts with shortcuts to heavily used functions is nonetheless important. Pay special attention to avoiding conflicts with shortcuts to: </p>
 
@@ -679,8 +679,8 @@ if (addBodyClass) {
             <li>Find functions</li>
           </ol>
         </section>
-        <section id="kbd_shortcuts_assignments_intentional_conflicts">
-          <h5 id="x6-9-2-4-intentional-key-conflicts">Intentional Key Conflicts</h5>
+        <section id="kbd_shortcuts_assignments_intentional_conflicts"><div class="header-wrapper"><h5 id="x6-9-2-4-intentional-key-conflicts">Intentional Key Conflicts</h5></div>
+          
 
           <p>
             While avoiding key conflicts is usually desirable, there are circumstances where intentionally conflicting with a browser function is acceptable or even desirable.

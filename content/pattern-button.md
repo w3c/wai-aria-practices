@@ -9,7 +9,7 @@ github:
 permalink: /patterns/button/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="button"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="button"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a class="role-reference" href="https://w3c.github.io/aria/#button">button</a> is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
@@ -69,16 +69,16 @@ last_updated: 2021-12-21
         However, a better solution is to adjust the visual design so it matches the function and ARIA role.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/button.svg" >
-        <h2 id="examples" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/button.svg" ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
           <li><a href="../../index/button/button_idl.html">Button Examples (IDL)</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons. This example uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface</a>.</li>
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-3" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-3" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>When the button has focus:</p>
         <ul>
           <li>
@@ -119,8 +119,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-3" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-3" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The button has role of <a class="role-reference" href="https://w3c.github.io/aria/#button">button</a>.</li>
           <li>

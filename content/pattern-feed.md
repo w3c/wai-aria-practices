@@ -9,7 +9,7 @@ github:
 permalink: /patterns/feed/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="feed"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="feed"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#feed" class="role-reference">feed</a> is a section of a page that automatically loads new sections of content as the user scrolls.
@@ -91,15 +91,15 @@ last_updated: 2021-12-21
         By identifying the elements inside of an article that provide the title and the primary content, assistive technologies can provide functions that enable users to jump from article to article and efficiently discern which articles may be worthy of more attention.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/feed.svg" >
-        <h2 id="example-3" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/feed.svg" ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
+        
         <p>
         <a href="../../index/feed/feed.html">Example Implementation of Feed Pattern</a>
         </p>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-9" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-9" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>
           The feed pattern is not based on a desktop GUI widget so the <code>feed</code> role is not associated with any well-established keyboard conventions.
           Supporting the following, or a similar,  interface is recommended.
@@ -131,8 +131,8 @@ last_updated: 2021-12-21
         </ol></div>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-9" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-9" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element that contains the set of feed articles has role <a href="https://w3c.github.io/aria/#feed" class="role-reference">feed</a>.</li>
           <li>

@@ -9,7 +9,7 @@ github:
 permalink: /patterns/breadcrumb/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="breadcrumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="breadcrumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A breadcrumb trail consists of a list of links to the parent pages of the current page in hierarchical order.
@@ -51,18 +51,18 @@ last_updated: 2021-12-21
         Breadcrumbs are often placed horizontally before a page's main content.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/breadcrumb.svg" >
-        <h2 id="example-2" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/breadcrumb.svg" ><div class="header-wrapper"><h2 id="example-2" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/breadcrumb/index.html">Breadcrumb design pattern example</a></p>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-2" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-2" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>Not applicable.</p>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-2" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-2" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>Breadcrumb trail is contained within a navigation landmark region.</li>
           <li>The landmark region is labelled via <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> or <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a>.</li>

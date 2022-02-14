@@ -9,7 +9,7 @@ github:
 permalink: /patterns/alertdialog/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="alertdialog"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="alertdialog"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         An alert dialog  is a <a href="/patterns/dialogmodal/">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
@@ -53,17 +53,17 @@ last_updated: 2021-12-21
         so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/alertdialog.svg" >
-        <h2 id="example-1" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/alertdialog.svg" ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-1" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-1" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>See the keyboard interaction section for the <a href="/patterns/dialogmodal/">modal dialog pattern</a>.</p>
       </section>
-      <section class="notoc">
-          <h2 id="wai-aria-roles-states-and-properties-1" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-1" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+          
           <ul>
               <li>
                   The element that contains all elements of the dialog, including the alert

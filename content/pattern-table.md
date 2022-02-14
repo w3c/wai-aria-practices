@@ -9,7 +9,7 @@ github:
 permalink: /patterns/table/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="table"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="table"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         Like an HTML <code>table</code> element, a <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a href="https://w3c.github.io/aria/#table" class="role-reference">table</a> is a static tabular structure containing one or more rows that each contain one or more cells; it is not an interactive widget.
@@ -61,19 +61,19 @@ last_updated: 2021-12-21
         This is especially important with role <code>table</code> because it is a new feature of <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 1.1.
         It is thus advisable to test implementations thoroughly with each browser and assistive technology combination that could be used by the target audience.
       </p></div>
-      <section class="notoc examples-section"><img alt="" src="/assets/img/table.svg" >
-        <h2 id="examples-13" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/table.svg" ><div class="header-wrapper"><h2 id="examples-13" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/table/table.html">Table Example</a>: ARIA table made using HTML <code>div</code> and <code>span</code> elements.</li>
           <li><a href="../../index/table/sortable-table.html">Sortable Table Example</a>: Basic HTML table that illustrates implementation of <code>aria-sort</code> in the headers of sortable columns.</li>
         </ul>
       </section>
-      <section class="notoc">
-        <h2 id="keyboard-interaction-20" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-20" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>Not applicable.</p>
       </section>
-      <section id="table_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-21" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="table_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-21" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The table container has role <a href="https://w3c.github.io/aria/#table" class="role-reference">table</a>. </li>
           <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>table</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>. </li>

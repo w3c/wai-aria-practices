@@ -9,7 +9,7 @@ github:
 permalink: /patterns/treeview/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="TreeView"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="TreeView"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A tree view widget presents a hierarchical list.
@@ -79,8 +79,8 @@ last_updated: 2021-12-21
         and <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/treeview.svg" >
-        <h2 id="examples-15" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/treeview.svg" ><div class="header-wrapper"><h2 id="examples-15" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li>
             <a href="../../index/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a>:
@@ -97,8 +97,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-24" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-24" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>For a vertically oriented tree:</p>
         <ul>
           <li> When a single-select tree receives focus:
@@ -194,8 +194,8 @@ last_updated: 2021-12-21
         </ol></div>
       </section>
 
-      <section id="tree_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-25" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="tree_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-25" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>All tree nodes are contained in or owned by an element with role <a class="role-reference" href="https://w3c.github.io/aria/#tree">tree</a>.</li>
           <li>Each element serving as a tree node has role <a class="role-reference" href="https://w3c.github.io/aria/#treeitem">treeitem</a>.</li>

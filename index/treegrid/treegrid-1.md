@@ -9,7 +9,7 @@ github:
 permalink: /index/treegrid/treegrid-1
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
@@ -413,7 +413,7 @@ last_updated: 2021-12-21
               <li>In this implementation, the first <code>row</code> in the <code>treegrid</code> is included in the tab sequence when the page loads.</li>
               <li>
                 When the user moves focus in the <code>treegrid</code>, the element included in the tab sequence changes to the element with focus as described in the section on
-                <a href="../../../#kbd_roving_tabindex">roving tabindex.</a>
+                <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a>
               </li>
              </ul>
           </td>

@@ -9,7 +9,7 @@ github:
 permalink: /patterns/listbox/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="Listbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="Listbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a> widget presents a list of options and allows a user to select one or more of them.
@@ -72,8 +72,8 @@ last_updated: 2021-12-21
         In such a scenario, it would be better to have 2 list boxes, one for country and one for city.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/listbox.svg" >
-        <h2 id="examples-7" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/listbox.svg" ><div class="header-wrapper"><h2 id="examples-7" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/listbox/listbox-scrollable.html">Scrollable Listbox Example</a>: Single-select listbox that scrolls to reveal more options, similar to HTML <code>select</code> with <code>size</code> attribute greater than one.</li>
           <li><a href="../../index/listbox/listbox-rearrangeable.html">Example Listboxes with Rearrangeable Options</a>: Examples of both single-select and multi-select listboxes with accompanying toolbars where options can be added, moved, and removed.</li>
@@ -81,8 +81,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section id="listbox_kbd_interaction" class="notoc">
-        <h2 id="keyboard-interaction-11" tabindex="-1">Keyboard Interaction</h2>
+      <section id="listbox_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-11" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>For a vertically oriented listbox:</p>
         <ul>
           <li> When a single-select listbox receives focus:
@@ -163,8 +163,8 @@ last_updated: 2021-12-21
         </ol></div>
       </section>
 
-      <section id="listbox_roles_states_props" class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-12" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section id="listbox_roles_states_props" class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-12" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>An element that contains or owns all the listbox options has role <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a>.</li>
           <li>

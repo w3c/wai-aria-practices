@@ -9,7 +9,7 @@ github:
 permalink: /patterns/carousel/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -47,7 +47,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="carousel"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="carousel"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A carousel presents a set of items, referred to as slides, by sequentially displaying a subset of one or more slides.
@@ -73,16 +73,16 @@ last_updated: 2021-12-21
         </li>
       </ul>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/carousel.svg" >
-        <h2 id="examples-0" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/carousel.svg" ><div class="header-wrapper"><h2 id="examples-0" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel with Buttons for Slide Control:</a> A basic image carousel that demonstrates the accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with buttons for previous and next slide.</li>
           <li><a href="../../index/carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control:</a> An image carousel that demonstrates accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with a set of tabs.</li>
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="terms" tabindex="-1">Terms</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="terms" tabindex="-1">Terms</h2></div>
+        
         <p>The following terms are used to describe components of a carousel.</p>
         <dl>
           <dt>Slide</dt>
@@ -98,8 +98,8 @@ last_updated: 2021-12-21
         </dl>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-4" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-4" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li>
             If the carousel has an auto-rotate feature, automatic slide rotation stops when any element in the carousel receives keyboard focus.
@@ -115,15 +115,15 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-4" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-4" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <p>This section describes the element composition for three styles of carousels:</p>
         <ul>
           <li>Basic: Has rotation, previous slide, and next slide controls but no slide picker controls.</li>
           <li>Tabbed: Has basic controls plus a single tab stop for slide picker controls implemented using the <a href="/patterns/tabpanel/">tabs pattern.</a></li>
           <li>Grouped: Has basic controls plus a series of tab stops in a group of slide picker controls where each control implements the <a href="/patterns/button/">button pattern.</a> Because each slide selector button adds an element to the page tab sequence, this style is the least friendly for keyboard users.</li>
         </ul>
-        <h3 id="basic-carousel-elements">Basic carousel elements</h3>
+        <section><div class="header-wrapper"><h3 id="basic-carousel-elements">Basic carousel elements</h3></div>
         <ul>
           <li>
             A carousel container element that encompasses all components of the carousel,  including both carousel controls and slides,
@@ -177,7 +177,7 @@ last_updated: 2021-12-21
             </ul>
           </li>
         </ul>
-        <h3 id="tabbed-carousel-elements">Tabbed Carousel Elements</h3>
+        </section><section><div class="header-wrapper"><h3 id="tabbed-carousel-elements">Tabbed Carousel Elements</h3></div>
         <p>The structure of a tabbed carousel is the same as a basic carousel except that:</p>
         <ul>
           <li>
@@ -193,7 +193,7 @@ last_updated: 2021-12-21
             </ul>
           </li>
         </ul>
-        <h3 id="grouped-carousel-elements">Grouped Carousel Elements</h3>
+        </section><section><div class="header-wrapper"><h3 id="grouped-carousel-elements">Grouped Carousel Elements</h3></div>
         <p>A grouped carousel has the same structure as a basic carousel, but it also includes slide picker controls where:</p>
         <ul>
           <li>The set of slide picker controls is contained in an element with role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a>.</li>
@@ -208,7 +208,7 @@ last_updated: 2021-12-21
             Note: <code>aria-disabled</code> is preferable to the HTML <code>disabled</code> attribute because this is a circumstance where screen reader users benefit from the disabled button being included in the page <kbd>Tab</kbd> sequence.
           </li>
         </ul>
-      </section>
+      </section></section>
     </section>
           </div>
         </div>

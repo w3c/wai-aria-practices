@@ -9,7 +9,7 @@ github:
 permalink: /patterns/slidertwothumb/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="slidertwothumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="slidertwothumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A multi-thumb slider is a <a href="/patterns/slider/">slider</a>
@@ -61,13 +61,13 @@ last_updated: 2021-12-21
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/slidertwothumb.svg" >
-        <h2 id="example-5" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/slidertwothumb.svg" ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
       </section>
 
-      <section id="slidertwothumb_kbd_interaction" class="notoc">
-        <h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2>
+      <section id="slidertwothumb_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <ul>
           <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="/patterns/slider/#slider_kbd_interaction">single-thumb slider</a>.</li>
           <li>
@@ -77,8 +77,8 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-18" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-18" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>Each element serving as a focusable slider thumb has role <a class="role-reference" href="https://w3c.github.io/aria/#slider">slider</a>.</li>
           <li>Each slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current value of the slider.</li>

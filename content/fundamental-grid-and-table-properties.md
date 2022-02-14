@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/grid-and-table-properties/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -50,8 +50,8 @@ if (addBodyClass) {
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section id="gridAndTableProperties">
-    <h2 id="x7-grid-and-table-properties">Grid and Table Properties</h2>
+            <section id="gridAndTableProperties"><div class="header-wrapper"><h2 id="x7-grid-and-table-properties">Grid and Table Properties</h2></div>
+    
     <p>
       To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the
       <a href="/patterns/grid/">grid pattern</a> or <a href="/patterns/table/">table pattern</a>,
@@ -118,8 +118,8 @@ if (addBodyClass) {
         </tr>
       </tbody>
     </table></div>
-    <section id="gridAndTableProperties_rows">
-      <h3 id="x7-1-using-aria-rowcount-and-aria-rowindex">Using <code>aria-rowcount</code> and <code>aria-rowindex</code></h3>
+    <section id="gridAndTableProperties_rows"><div class="header-wrapper"><h3 id="x7-1-using-aria-rowcount-and-aria-rowindex">Using <code>aria-rowcount</code> and <code>aria-rowindex</code></h3></div>
+      
       <p>
         When the number of rows represented by the DOM structure is not the total number of rows available for a table, grid, or treegrid,
         the  <code>aria-rowcount</code>  property is used to communicate the total number of rows available,
@@ -207,8 +207,8 @@ if (addBodyClass) {
   <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
 </code></pre>
     </section>
-    <section id="gridAndTableProperties_cols">
-      <h3 id="x7-2-using-aria-colcount-and-aria-colindex">Using <code>aria-colcount</code> and <code>aria-colindex</code></h3>
+    <section id="gridAndTableProperties_cols"><div class="header-wrapper"><h3 id="x7-2-using-aria-colcount-and-aria-colindex">Using <code>aria-colcount</code> and <code>aria-colindex</code></h3></div>
+      
       <p>
         When the number of columns represented by the DOM structure is not the total number of columns available for a table, grid, or treegrid,
         the  <code>aria-colcount</code>  property is used to communicate the total number of columns available,
@@ -235,8 +235,8 @@ if (addBodyClass) {
         <strong>WARNING!</strong> Missing or inconsistent values of <code>aria-colindex</code> could have devastating effects on assistive technology behavior.
         For example, specifying an invalid value for <code>aria-colindex</code> or setting it on some but not all cells in a row, could cause screen reader table reading functions to skip cells or simply stop functioning.
       </p>
-      <section id="gridAndTableProperties_cols_contiguous">
-        <h4 id="x7-2-1-using-aria-colindex-when-column-indices-are-contiguous">Using <code>aria-colindex</code> When Column Indices Are Contiguous</h4>
+      <section id="gridAndTableProperties_cols_contiguous"><div class="header-wrapper"><h4 id="x7-2-1-using-aria-colindex-when-column-indices-are-contiguous">Using <code>aria-colindex</code> When Column Indices Are Contiguous</h4></div>
+        
         <p>
           When all the cells in a row have column index numbers that are consecutive integers,
           <code>aria-colindex</code> can be set on the row element with a value equal to the index number of the first column in the set.
@@ -274,8 +274,8 @@ if (addBodyClass) {
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
       </section>
-      <section id="gridAndTableProperties_cols_noncontiguous">
-        <h4 id="x7-2-2-using-aria-colindex-when-column-indices-are-not-contiguous">Using <code>aria-colindex</code> When Column Indices Are Not Contiguous</h4>
+      <section id="gridAndTableProperties_cols_noncontiguous"><div class="header-wrapper"><h4 id="x7-2-2-using-aria-colindex-when-column-indices-are-not-contiguous">Using <code>aria-colindex</code> When Column Indices Are Not Contiguous</h4></div>
+        
         <p>
           When the cells in a row have column index numbers that are not consecutive integers, <code>aria-colindex</code> needs to be set on each cell in the row.
           The following example shows a grid for an online grade book where the first two columns contain a student name and subsequent columns contain scores.
@@ -342,8 +342,8 @@ if (addBodyClass) {
 </code></pre>
       </section>
     </section>
-    <section id="gridAndTableProperties_spans">
-      <h3 id="x7-3-defining-cell-spans-using-aria-colspan-and-aria-rowspan">Defining cell spans using <code>aria-colspan</code> and <code>aria-rowspan</code></h3>
+    <section id="gridAndTableProperties_spans"><div class="header-wrapper"><h3 id="x7-3-defining-cell-spans-using-aria-colspan-and-aria-rowspan">Defining cell spans using <code>aria-colspan</code> and <code>aria-rowspan</code></h3></div>
+      
       <p>
         For tables, grids, and treegrids  created using elements other than HTML <code>table</code> elements,
         row and column spans are defined with the <code>aria-rowspan</code> and <code>aria-colspan</code> properties.
@@ -429,8 +429,8 @@ if (addBodyClass) {
         by using the <code>rowspan</code> and <code>colspan</code> attributes.
       </p>
     </section>
-    <section id="gridAndTableProperties_sort">
-      <h3 id="x7-4-indicating-sort-order-with-aria-sort">Indicating sort order with <code>aria-sort</code></h3>
+    <section id="gridAndTableProperties_sort"><div class="header-wrapper"><h3 id="x7-4-indicating-sort-order-with-aria-sort">Indicating sort order with <code>aria-sort</code></h3></div>
+      
       <p>
         When rows or columns are sorted, the <code>aria-sort</code> property can be applied to a column or row header to indicate the sorting method.
         The following table describes allowed values for <code>aria-sort</code>.

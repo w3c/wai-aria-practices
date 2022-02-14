@@ -9,7 +9,7 @@ github:
 permalink: /patterns/alert/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="alert"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="alert"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         An <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a> is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task.
@@ -65,18 +65,18 @@ last_updated: 2021-12-21
         more difficult.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/alert.svg" >
-        <h2 id="example-0" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/alert.svg" ><div class="header-wrapper"><h2 id="example-0" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/alert/alert.html">Alert Example</a></p>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-0" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-0" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>Not applicable.</p>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-0" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-0" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <p>The widget has a role of <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a>.</p>
       </section>
     </section>

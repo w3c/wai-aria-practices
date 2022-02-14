@@ -9,7 +9,7 @@ github:
 permalink: /patterns/radiobutton/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="radiobutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="radiobutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A radio group is a set of checkable buttons, known as radio buttons, where no more than one of
@@ -52,8 +52,8 @@ last_updated: 2021-12-21
         force the user to check one of the buttons before moving past a certain point in the workflow.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/radiobutton.svg" >
-        <h2 id="examples-10" tabindex="-1">Examples</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/radiobutton.svg" ><div class="header-wrapper"><h2 id="examples-10" tabindex="-1">Examples</h2></div>
+        
         <ul>
           <li><a href="../../index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
           <li><a href="../../index/radio/radio-activedescendant.html">Radio Group Example Using aria-activedescendant</a></li>
@@ -61,10 +61,10 @@ last_updated: 2021-12-21
         </ul>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-15" tabindex="-1">Keyboard Interaction</h2>
-        <section class="notoc">
-          <h3 id="for-radio-groups-not-contained-in-a-toolbar">For Radio Groups Not Contained in a Toolbar</h3>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-15" tabindex="-1">Keyboard Interaction</h2></div>
+        
+        <section class="notoc"><div class="header-wrapper"><h3 id="for-radio-groups-not-contained-in-a-toolbar">For Radio Groups Not Contained in a Toolbar</h3></div>
+          
           <p>
             This section describes the keyboard interaction implemented for most radio groups.
             For the special case of a radio group nested inside a <a href="/patterns/toolbar/">toolbar</a>, use the keyboard interaction described in the following section.
@@ -99,8 +99,8 @@ last_updated: 2021-12-21
             instead of the first radio button.
           </p></div>
         </section>
-        <section class="notoc">
-          <h3 id="for-radio-group-contained-in-a-toolbar">For Radio Group Contained in a Toolbar</h3>
+        <section class="notoc"><div class="header-wrapper"><h3 id="for-radio-group-contained-in-a-toolbar">For Radio Group Contained in a Toolbar</h3></div>
+          
           <p>
             Because arrow keys are used to navigate among elements of a toolbar and the <kbd>Tab</kbd> key moves focus in and out of a toolbar, when a radio group is nested inside a toolbar, the keyboard interaction of the radio group is slightly different from that of a radio group that is not inside of a toolbar.
             For instance, users need to be able to navigate among all toolbar elements, including the radio buttons, without changing which radio button is checked.
@@ -140,8 +140,8 @@ last_updated: 2021-12-21
         </section>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-16" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-16" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>
             The radio buttons are contained in or owned by an element with role

@@ -9,7 +9,7 @@ github:
 permalink: /patterns/meter/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,7 +43,7 @@ last_updated: 2021-12-21
             </ul>
           </aside>
           <div class="sidebar-right">
-            <section class="widget" id="meter"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2>
+            <section class="widget" id="meter"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a class="role-reference" href="https://w3c.github.io/aria/#meter">meter</a> is a graphical display of a numeric value that varies within a defined range.
@@ -57,18 +57,18 @@ last_updated: 2021-12-21
         </li>
       </ul></div>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/meter.svg" >
-        <h2 id="example-4" tabindex="-1">Example</h2>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/meter.svg" ><div class="header-wrapper"><h2 id="example-4" tabindex="-1">Example</h2></div>
+        
         <p><a href="../../index/meter/meter.html">Meter Example</a></p>
       </section>
 
-      <section class="notoc">
-        <h2 id="keyboard-interaction-14" tabindex="-1">Keyboard Interaction</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-14" tabindex="-1">Keyboard Interaction</h2></div>
+        
         <p>Not applicable.</p>
       </section>
 
-      <section class="notoc">
-        <h2 id="wai-aria-roles-states-and-properties-15" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2>
+      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-15" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
+        
         <ul>
           <li>The element serving as the meter has a role of <a class="role-reference" href="https://w3c.github.io/aria/#meter">meter</a>.</li>
           <li>The meter has <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> set to a decimal value between <code>aria-valuemin</code> and <code>aria-valuemax</code> representing the current value of the meter.</li>

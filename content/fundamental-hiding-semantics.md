@@ -9,7 +9,7 @@ github:
 permalink: /fundamentals/hiding-semantics/
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 
 
@@ -43,8 +43,8 @@ if (addBodyClass) {
           </aside>
           <div class="sidebar-right">
             
-        <section id="presentation-role">
-    <h2 id="x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</h2>
+        <section id="presentation-role"><div class="header-wrapper"><h2 id="x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</h2></div>
+    
     <p>
       While ARIA is primarily used to express semantics, there are some situations where hiding an
       element’s semantics from assistive technologies is helpful. This is done with the
@@ -84,10 +84,10 @@ if (addBodyClass) {
       <li>Eliminating semantics of intervening orphan elements in the structure of a composite
         widget, such as a tablist, menu, or tree as demonstrated in the example above.</li>
     </ol>
-    <section id="presentation_role_effects">
-      <h3 id="x9-1-effects-of-role-presentation">
+    <section id="presentation_role_effects"><div class="header-wrapper"><h3 id="x9-1-effects-of-role-presentation">
         Effects of Role <code>presentation</code>
-      </h3>
+      </h3></div>
+      
       <p>
         When <code>role="presentation"</code> is specified on an element, if a
         <a href="/fundamentals/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
@@ -118,10 +118,10 @@ if (addBodyClass) {
         </li>
       </ol>
     </section>
-    <section id="presentation_role_ignored">
-      <h3 id="x9-2-conditions-that-cause-role-presentation-to-be-ignored">
+    <section id="presentation_role_ignored"><div class="header-wrapper"><h3 id="x9-2-conditions-that-cause-role-presentation-to-be-ignored">
         Conditions That Cause Role <code>presentation</code> to be Ignored
-      </h3>
+      </h3></div>
+      
       <p>
          Browsers ignore <code>role="presentation"</code>, and it therefore has no effect, if either of the following are true about the element to which it is applied:</p>
           <ul>
@@ -133,10 +133,10 @@ if (addBodyClass) {
             </li>
           </ul>
     </section>
-    <section id="presentation_role_examples">
-      <h3 id="x9-3-example-demonstrating-effects-of-the-presentation-role">
+    <section id="presentation_role_examples"><div class="header-wrapper"><h3 id="x9-3-example-demonstrating-effects-of-the-presentation-role">
         Example Demonstrating Effects of the <code>presentation</code> Role
-      </h3>
+      </h3></div>
+      
       <p>This code:</p>
       <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Date of birth:<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -148,8 +148,8 @@ if (addBodyClass) {
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>January 1, 3456<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
     </section>
   </section>
-        <section id="children-presentational">
-    <h2 id="x10-roles-that-automatically-hide-semantics-by-making-their-descendants-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational</h2>
+        <section id="children-presentational"><div class="header-wrapper"><h2 id="x10-roles-that-automatically-hide-semantics-by-making-their-descendants-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational</h2></div>
+    
     <p>
       There are some types of user interface components that, when represented in a platform
       accessibility API, can only contain text. For example, accessibility APIs do not have a way of

@@ -9,7 +9,7 @@ github:
 permalink: /index/checkbox/checkbox
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
@@ -255,7 +255,7 @@ last_updated: 2021-12-21
     </section>
   </div>
   <nav>
-    <a href="../../../#checkbox">Checkbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/patterns/checkbox/">Checkbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 </div>
         </div>

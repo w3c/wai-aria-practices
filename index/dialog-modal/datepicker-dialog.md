@@ -9,7 +9,7 @@ github:
 permalink: /index/dialog-modal/datepicker-dialog
 
 lang: en
-last_updated: 2021-12-21
+last_updated: 2022-02-14
 ---
 <link
   rel="stylesheet"
@@ -66,19 +66,19 @@ last_updated: 2021-12-21
       <li><a href="/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
       <li><a href="https://github.com/w3c/aria-practices/issues/new">Report Issue</a></li>
       <li><a href="https://github.com/w3c/aria-practices/projects/27">Related Issues</a></li>
-      <li><a href="/patterns/dialog-modal/">Design Pattern</a></li>
+      <li><a href="/patterns/dialogmodal/">Design Pattern</a></li>
     </ul>
   
           </aside>
           <div class="sidebar-right"><h2 class="followed-by-support-notice">About This Example</h2><img alt=""
-        src="/assets/img/dialog-modal.svg"
+        src="/assets/img/dialogmodal.svg"
         class="example-page-example-icon"
       >
   
   <div>
     
     <p>
-      The example below includes a date input field and a button that opens a date picker that implements the <a href="/patterns/dialog-modal/">dialog design pattern</a>.
+      The example below includes a date input field and a button that opens a date picker that implements the <a href="/patterns/dialogmodal/">dialog design pattern</a>.
       The dialog contains a calendar that uses the <a href="/patterns/grid/">grid pattern</a> to present buttons that enable the user to choose a day from the calendar.
       Choosing a date from the calendar closes the dialog and populates the date input field.
       When the dialog is opened, if the input field is empty, or does not contain a valid date, then the current date is focused in the calendar.
@@ -716,7 +716,7 @@ last_updated: 2021-12-21
   </section>
   </div>
   <nav>
-    <a href="/patterns/dialog-modal/">Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/patterns/dialogmodal/">Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 </div>
         </div>
