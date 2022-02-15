@@ -9,7 +9,7 @@ github:
 permalink: /patterns/spinbutton/
 
 lang: en
-last_updated: 2022-02-14
+last_updated: 2022-02-15
 ---
 
 

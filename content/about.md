@@ -9,7 +9,7 @@ github:
 permalink: /about/
 
 lang: en
-last_updated: 2022-02-14
+last_updated: 2022-02-15
 ---
 
 
@@ -22,22 +22,22 @@ last_updated: 2022-02-14
         <dl>
         <dt>This version:</dt><dd>
                 <a class="u-url" href="https://w3c.github.io/aria-practices/">https://w3c.github.io/aria-practices/</a>
-              </dd><dt>Latest published version:</dt><dd>
+              </dd>
+        <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/wai-aria-practices-1.2/">https://www.w3.org/TR/wai-aria-practices-1.2/</a>
               </dd>
         <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/aria-practices/">https://w3c.github.io/aria-practices/</a></dd>
         <dt>History:</dt><dd>
-      <a href="https://www.w3.org/standards/history/wai-aria-practices-1.2">https://www.w3.org/standards/history/wai-aria-practices-1.2</a>
-    </dd><dd>
-        <a href="https://github.com/w3c/aria-practices/commits/">Commit history</a>
-      </dd>
+                    <a href="https://www.w3.org/standards/history/wai-aria-practices-1.2">https://www.w3.org/standards/history/wai-aria-practices-1.2</a>
+                  </dd><dd>
+                    <a href="https://github.com/w3c/aria-practices/commits/">Commit history</a>
+                  </dd>
         
         
         
         
         
-        <dt>Editors:</dt>
-        <dd class="editor p-author h-card vcard" data-editor-id="44582">
+        <dt>Editors:</dt><dd class="editor p-author h-card vcard" data-editor-id="44582">
     <a class="ed_mailto u-email email p-name" href="mailto:mck@fb.com">Matt King</a> (<span class="p-org org h-org">Facebook</span>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="74097">
     <a class="ed_mailto u-email email p-name" href="mailto:jku@illinois.edu">JaEun Jemma Ku</a> (<span class="p-org org h-org">University of Illinois</span>)
@@ -209,7 +209,7 @@ last_updated: 2022-02-14
       </ul>
     </section>
 
-    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-9659534515065684" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-1216890520514049" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
 
   </section>
         <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>

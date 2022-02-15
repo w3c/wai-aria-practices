@@ -9,7 +9,7 @@ github:
 permalink: /index/carousel/carousel-1-prev-next
 
 lang: en
-last_updated: 2022-02-14
+last_updated: 2022-02-15
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
