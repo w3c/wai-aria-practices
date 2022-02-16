@@ -9,7 +9,7 @@ github:
 permalink: /index/combobox/combobox-autocomplete-both
 
 lang: en
-last_updated: 2022-02-15
+last_updated: 2022-02-16
 ---
 <script type="text/javascript" src="../js/examples.js"></script>
 <script type="text/javascript" src="../js/highlight.pack.js"></script>

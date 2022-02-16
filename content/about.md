@@ -9,7 +9,7 @@ github:
 permalink: /about/
 
 lang: en
-last_updated: 2022-02-15
+last_updated: 2022-02-16
 ---
 
 
@@ -40,7 +40,7 @@ last_updated: 2022-02-15
         <dt>Editors:</dt><dd class="editor p-author h-card vcard" data-editor-id="44582">
     <a class="ed_mailto u-email email p-name" href="mailto:mck@fb.com">Matt King</a> (<span class="p-org org h-org">Facebook</span>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="74097">
-    <a class="ed_mailto u-email email p-name" href="mailto:jku@illinois.edu">JaEun Jemma Ku</a> (<span class="p-org org h-org">University of Illinois</span>)
+    <a class="ed_mailto u-email email p-name" href="mailto:jku@uic.edu">JaEun Jemma Ku</a> (<span class="p-org org h-org">University of Illinois</span>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="37155">
     <a class="ed_mailto u-email email p-name" href="mailto:nurthen@adobe.com">James Nurthen</a> (<span class="p-org org h-org">Adobe</span>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="74040">
@@ -209,7 +209,7 @@ last_updated: 2022-02-15
       </ul>
     </section>
 
-    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-1216890520514049" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-23942919727561462" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
 
   </section>
         <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>

@@ -9,7 +9,7 @@ github:
 permalink: /index/accordion/accordion
 
 lang: en
-last_updated: 2022-02-15
+last_updated: 2022-02-16
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>

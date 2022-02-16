@@ -9,7 +9,7 @@ github:
 permalink: /index/dialog-modal/datepicker-dialog
 
 lang: en
-last_updated: 2022-02-15
+last_updated: 2022-02-16
 ---
 <link
   rel="stylesheet"

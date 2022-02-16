@@ -9,7 +9,7 @@ github:
 permalink: /patterns/carousel/
 
 lang: en
-last_updated: 2022-02-15
+last_updated: 2022-02-16
 ---
 
 
@@ -56,7 +56,7 @@ last_updated: 2022-02-15
         While a slide may contain any type of content, image carousels where each slide contains nothing more than a single image are common.
       </p>
       <p>
-        Ensuring all users can easily control and are not adversely effected by slide rotation is an essential aspect of making carousels accessible.
+        Ensuring all users can easily control and are not adversely affected by slide rotation is an essential aspect of making carousels accessible.
         For instance, the screen reader experience can be confusing and disorienting if slides that are not visible on screen are incorrectly hidden, e.g., displayed off-screen.
         Similarly, if slides rotate automatically and a screen reader user is not aware of the rotation, the user may read an element on slide one, execute the screen reader command for next element, and, instead of hearing the next element on slide one,  hear an element from slide 2 without any knowledge that the element just announced is from an entirely new context.
       </p>
