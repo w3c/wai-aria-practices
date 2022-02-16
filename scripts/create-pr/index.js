@@ -47,6 +47,5 @@ const octokit = new Octokit({
         console.info('pull.update.success');
     } catch (e) {
         console.error('octokit.call.fail', e);
-        process.exit(1);
     }
 })();
