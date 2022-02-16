@@ -44,7 +44,7 @@ jobs:
       - name: Switch to and create/update branch
         run: |
           # switch to branch if exists or create branch
-          git switch ${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c ${{ github.event.inputs.apg_branch }}
+          git switch apg/${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c apg/${{ github.event.inputs.apg_branch }}
 
       - name: Update site files
         working-directory: ./
@@ -59,7 +59,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Commit changed files and submodule updates
-          branch: ${{ github.event.inputs.apg_branch }}
+          branch: apg/${{ github.event.inputs.apg_branch }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
