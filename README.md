@@ -15,18 +15,18 @@ post-processed with [ReSpec](https://pages.github.com/), into a multi-page stati
 
 - Ensure Ruby and Node (v14 or greater) are installed.
 - Clone this repo: `git clone git@github.com:bocoup/wai-aria-practices.git`
-- Initialize submodules: `git submodule update --init --recursive`
+- Initialize or update submodules: `git submodule update --init --recursive`
 - Install Jekyll: `bundle install`.
 - Install ReSpec: `npm install --global respec`
 - Run ReSpec: `respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html`
 - Install npm dependencies: `npm install -C scripts/pre-build`
 - Run the pre-build script: `node ./scripts/pre-build`
-- Run Jekyll: `bundle exec jekyll serve --livereload`. 
+- Run Jekyll: `bundle exec jekyll serve -w --livereload`. (-w --livereload doesn't work on native Windows, OK in WSL)
 - View the webpage at [http://localhost:4000/](http://localhost:4000/)
 
 ## Next steps
 
-- Move repo to W3C organization.
-- Get W3C netlify credientials.
+- [x] Move repo to W3C organization.
+- [x] Integreate with Netlify CI/CD.
 - [Integrate this resource with the main WAI website](https://wai-website-theme.netlify.app/technical/integrate/).
 
