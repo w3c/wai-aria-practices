@@ -30,3 +30,8 @@ post-processed with [ReSpec](https://pages.github.com/), into a multi-page stati
 - [ ] Integreate with Netlify CI/CD.
 - [Integrate this resource with the main WAI website](https://wai-website-theme.netlify.app/technical/integrate/).
 
+## Netlify CD status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2f0b3cea-856a-491f-9e98-0ff59fe6d599/deploy-status)](https://app.netlify.com/sites/wai-aria-practices2/deploys)
+
+Click to explore
