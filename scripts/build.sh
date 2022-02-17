@@ -5,5 +5,4 @@
 #respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
 #npm install -C scripts/pre-build
 #node ./scripts/pre-build
-printenv
 bundle exec jekyll build --config '_config.yml,_config_staging.yml'
