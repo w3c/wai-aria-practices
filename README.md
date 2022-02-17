@@ -27,7 +27,7 @@ post-processed with [ReSpec](https://pages.github.com/), into a multi-page stati
 ## Next steps
 
 - [x] Move repo to W3C organization.
-- [ ] Integreate with Netlify CI/CD.
+- [ ] Integrate with Netlify CI/CD.
 - [Integrate this resource with the main WAI website](https://wai-website-theme.netlify.app/technical/integrate/).
 
 ## Netlify CD status
