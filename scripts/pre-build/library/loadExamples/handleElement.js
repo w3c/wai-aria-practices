@@ -36,7 +36,8 @@ const getHandleElement = (permalink) => (element) => {
     } else {
       if (!patternSlug) {
         throw new Error(
-          "Expected to find at least one link to a pattern but none were found"
+          `Expected to find at least one link to a pattern in the example ` +
+            `with permalink ${permalink} but none were found`
         );
       }
 

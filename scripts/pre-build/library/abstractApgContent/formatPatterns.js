@@ -90,6 +90,10 @@ const patterns = [
     newSlug: "spinbutton",
   },
   {
+    oldSlug: "switch",
+    newSlug: "switch",
+  },
+  {
     oldSlug: "table",
     newSlug: "table",
   },
