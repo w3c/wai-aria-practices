@@ -1,8 +1,7 @@
 _site
 .sass-cache
-.jekyll-metadata
+.jekyll-*
 .DS_Store
-Gemfile.lock
 vendor
 node_modules
 .netlify
