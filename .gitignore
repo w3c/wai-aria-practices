@@ -5,4 +5,5 @@ _site
 vendor
 node_modules
 .netlify
+.bundle
 landmarks
