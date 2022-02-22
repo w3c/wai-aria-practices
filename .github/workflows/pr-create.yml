@@ -60,6 +60,7 @@ jobs:
         with:
           commit_message: Commit changed files and submodule updates
           branch: apg/${{ github.event.inputs.apg_branch }}
+          file_pattern: _external/* _includes/* content/* index/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
