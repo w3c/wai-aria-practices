@@ -39,14 +39,14 @@ const octokit = new Octokit({
             console.info('pull.create.success');
         }
 
-        const getApgPrRResult = await octokit.rest.pulls.get({
+        const getApgPrResult = await octokit.rest.pulls.get({
             owner: 'w3c',
             repo: 'aria-practices',
             pull_number: process.env.APG_PR_NUMBER
         });
         console.info('pull.get.success');
 
-        let apgPrBody = getApgPrRResult.data.body || '';
+        let apgPrBody = getApgPrResult.data.body || '';
         let previewLinkIndex = apgPrBody.indexOf('[WAI Preview Link]');
         let previewLinkUrl = `https://deploy-preview-${waiPrNumber || createPullRequestResult.data.number}--wai-aria-practices2.netlify.app`;
 
