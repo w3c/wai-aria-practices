@@ -1,0 +1,76 @@
+name: Create or update branch and pull request from APG trigger
+
+on:
+  workflow_dispatch:
+    inputs:
+      apg_branch:
+        description: 'Name of branch to be created'
+        required: true
+      apg_sha:
+        description: 'Commit SHA to look for from source'
+        required: true
+      apg_pr_number:
+        description: 'PR number from aria-practices that triggered this workflow'
+        required: true
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          cache: npm
+          cache-dependency-path: scripts/pre-build/package-lock.json
+
+      - name: Set up Ruby 2.6.2
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.2
+          bundler-cache: true
+
+      - name: Update git submodules
+        run: |
+          git submodule update --recursive --remote
+          cd _external/aria-practices
+          git checkout ${{ github.event.inputs.apg_sha }}
+
+      - name: Switch to and create/update branch
+        run: |
+          # switch to branch if exists or create branch
+          git switch apg/${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c apg/${{ github.event.inputs.apg_branch }}
+
+      - name: Update site files
+        working-directory: ./
+        run: |
+          bundle install
+          npm install -g respec
+          respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
+          npm install -C scripts/pre-build
+          node ./scripts/pre-build
+
+      - name: Commit changed files and submodule updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Commit changed files and submodule updates
+          branch: apg/${{ github.event.inputs.apg_branch }}
+          push_options: '--force'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create pull request
+        working-directory: ./
+        run: |
+          npm install -C scripts/create-pr
+          node ./scripts/create-pr
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          APG_SHA: ${{ github.event.inputs.apg_sha }}
+          APG_BRANCH: ${{ github.event.inputs.apg_branch }}
+          APG_PR_NUMBER: ${{ github.event.inputs.apg_pr_number }}
