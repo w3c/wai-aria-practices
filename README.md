@@ -1,6 +1,6 @@
 # WAI-ARIA Authoring Practices
 
-This repo prepares the [ARIA Authoring Practices Guide](https://w3c.github.io/aria-practices/) for integration into the [Web Accessibility Initiative](https://www.w3.org/WAI/) website.
+This repository prepares the [ARIA Authoring Practices Guide](https://w3c.github.io/aria-practices/) for integration into the [Web Accessibility Initiative](https://www.w3.org/WAI/) website.
 
 The WAI website is built in Jekyll and [brings together several git submodules
 into one website](https://wai-website-theme.netlify.app/technical/).
@@ -27,8 +27,8 @@ post-processed with [ReSpec](https://pages.github.com/), into a multi-page stati
 ## Next steps
 
 - [x] Move repo to W3C organization.
-- [ ] Integrate with Netlify CI/CD.
-- [Integrate this resource with the main WAI website](https://wai-website-theme.netlify.app/technical/integrate/).
+- [x] Integrate with Netlify CI/CD.
+- [ ] [Integrate this resource with the main WAI website](https://wai-website-theme.netlify.app/technical/new-resource/).
 
 ## Netlify CD status
 
