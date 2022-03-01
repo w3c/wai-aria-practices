@@ -9,7 +9,7 @@ github:
 permalink: /index/menu-button/menu-button-actions
 
 lang: en
-last_updated: 2022-02-16
+last_updated: 2022-03-01
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
