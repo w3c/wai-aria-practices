@@ -9,7 +9,6 @@ github:
 permalink: /patterns/table/
 
 lang: en
-last_updated: 2022-02-16
 ---
 
 

@@ -9,7 +9,6 @@ github:
 permalink: /index/combobox/combobox-datepicker
 
 lang: en
-last_updated: 2022-02-16
 ---
 <script type="text/javascript" src="../js/examples.js"></script>
 <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -63,7 +62,7 @@ last_updated: 2022-02-16
             </ul>
             
     <ul class="sidebar-list sidebar-list-yellow">
-      <li><a href="/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
+      <li><a href="/about/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
       <li><a href="https://github.com/w3c/aria-practices/issues/new">Report Issue</a></li>
       <li><a href="https://github.com/w3c/aria-practices/projects/7">Related Issues</a></li>
       <li><a href="/patterns/combobox/">Design Pattern</a></li>

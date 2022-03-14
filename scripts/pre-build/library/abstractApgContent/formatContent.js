@@ -22,7 +22,7 @@ const sections = {
     getContent: (element) => element.innerHTML,
   },
   abstract: {
-    permalink: "/",
+    permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "abstract",
     getContent: (element) => {
       if (!element.querySelector("h2")) {
@@ -32,14 +32,14 @@ const sections = {
     },
   },
   introduction: {
-    permalink: "/",
+    permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "intro",
     getContent: removeSectionNumbers((element) => {
       return element.outerHTML;
     }),
   },
   badAria: {
-    permalink: "/",
+    permalink: "/about/",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (
@@ -57,7 +57,7 @@ const sections = {
     ),
   },
   browserAndAtSupport: {
-    permalink: "/",
+    permalink: "/about/",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (
@@ -72,7 +72,7 @@ const sections = {
     ),
   },
   mobileAndTouchSupport: {
-    permalink: "/",
+    permalink: "/about/",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (

@@ -7,7 +7,6 @@ const getTemplateBoilerplate = ({
   content,
   head = "",
 }) => {
-  const todayDate = new Date().toISOString().slice(0, 10);
   // Must be formatted because html which is indented by 4 spaces
   // will be interpreted as a code block by the markdown engine
   const formattedHead = prettier.format(head, { parser: "html" });
@@ -23,7 +22,6 @@ github:
 permalink: ${permalink}
 
 lang: en
-last_updated: ${todayDate}
 ---
 ${formattedHead}
 ${/* ${prettier.format(` */ ""}

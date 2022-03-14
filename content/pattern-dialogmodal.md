@@ -9,7 +9,6 @@ github:
 permalink: /patterns/dialogmodal/
 
 lang: en
-last_updated: 2022-02-16
 ---
 
 

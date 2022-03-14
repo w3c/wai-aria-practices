@@ -7,7 +7,7 @@ const getFundamentalPage = require("./pages/getFundamentalPage");
 const getPatternsPage = require("./pages/getPatternsPage");
 const getPatternPage = require("./pages/getPatternPage");
 
-const organizeForJekyll = async ({ sections, patterns }) => {
+const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
   const fundamentals = [
     sections.landmarkRegions,
     sections.namesAndDescriptions,
@@ -37,7 +37,7 @@ const organizeForJekyll = async ({ sections, patterns }) => {
   ];
 
   const pages = [
-    getHomePage(sections),
+    getHomePage(homepageContent),
     getAboutPage(sections),
     getPatternsPage(patterns),
     ...patterns.map((pattern) => getPatternPage(pattern)),
