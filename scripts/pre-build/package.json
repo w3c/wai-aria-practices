@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^0.24.0",
     "fuzzysearch": "^1.0.3",
     "lodash": "^4.17.21",
     "node-dir": "^0.1.17",

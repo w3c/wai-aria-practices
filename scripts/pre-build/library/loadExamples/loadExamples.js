@@ -1,3 +1,4 @@
+const axios = require("axios");
 const fs = require("fs/promises");
 const path = require("path");
 const { promiseFiles: getPaths } = require("node-dir");
@@ -56,12 +57,45 @@ const loadExamples = async () => {
 
   await editAppJs({ destinationExamplesPath });
 
+  const query = `
+    query {
+      testPlanReports {
+        testPlanVersion {
+          id
+          testPlan {
+            id
+          }
+          gitSha
+          updatedAt
+        }
+        status
+      }
+    }
+  `
+
+  const response = await axios.post(
+   'https://aria-at.w3.org/api/graphql',
+   { query }
+  )
+
+  const finalizedTestReports = response.data.data.testPlanReports.filter(testPlanVersion => testPlanVersion.status === 'FINALIZED')
+
   for (const currentPath of exampleFilePaths) {
     const exampleRelative = path.relative(examplesPath, currentPath);
     const exampleRelativeDirectory = path.dirname(exampleRelative);
+    
+    const exampleName = currentPath.replace('.html','').split('/').pop();
+    const reportUrls = finalizedTestReports.filter(report => report.testPlanVersion.testPlan.id === exampleName);
+    let url = reportUrls[0]
+    if (reportUrls.length > 1) {
+      // Get the latest SHA for an example
+      url = reportUrls.reduce((a, b) => Date.parse(a.testPlanVersion.updatedAt) > Date.parse(b.testPlanVersion.updatedAt) ? a : b
+      )
+    }
 
     const { fileName, fileContent } = await loadExample(currentPath, {
       exampleRelativeDirectory,
+      reportId: url && url.testPlanVersion.id
     });
 
     const destinationPath = path.join(
