@@ -61,7 +61,7 @@ lang: en
             properties, and implementing keyboard support.
           
                   </p>
-                  <a href="/patterns/" class="button-link">Learn More</a>
+                  <a href="/patterns/" aria-label="View list of patterns" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A menagerie of widgets." src="content/assets/index-2.svg">
@@ -76,7 +76,7 @@ lang: en
             meaning of the layout of a page.
           
                   </p>
-                  <a href="/fundamentals/landmark-regions/" class="button-link">Learn More</a>
+                  <a href="/fundamentals/landmark-regions/" aria-label="View landmarks guide" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A document flies apart into chunks." src="content/assets/index-3.svg">
@@ -92,7 +92,7 @@ lang: en
             experiences.
           
                   </p>
-                  <a href="/fundamentals/names-and-descriptions/" class="button-link">Learn More</a>
+                  <a href="/fundamentals/names-and-descriptions/" aria-label="View names and descriptions guide" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="Indicators delve inside a document." src="content/assets/index-4.svg">
@@ -108,7 +108,7 @@ lang: en
             more.
           
                   </p>
-                  <a class="button-link" href="/fundamentals/">Learn More</a>
+                  <a class="button-link" href="/fundamentals/" aria-label="View fundamentals">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A box with an accessibility label is chock full of widgets and document bits." src="content/assets/index-5.svg">
@@ -142,6 +142,7 @@ lang: en
                   <a rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/w3c/aria-practices/wiki/Release-Plans"
+            aria-label="View release plans wiki"
           >
             Learn More
           </a>
@@ -157,6 +158,7 @@ lang: en
                   <a rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/w3c/aria-practices/wiki/Design-Patterns-Development-Status"
+            aria-label="View pattern status wiki"
           >
             Learn More
           </a>
@@ -171,6 +173,7 @@ lang: en
                   <a rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/w3c/aria-practices/wiki/Regression-Tests-for-APG-Example-Pages"
+            aria-label="View regression test documentation"
           >
             Learn More
           </a>
@@ -185,6 +188,7 @@ lang: en
                   <a rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/w3c/aria-practices/wiki/Meetings"
+            aria-label="View meetings wiki"
           >
             Learn More
           </a>

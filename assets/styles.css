@@ -433,6 +433,10 @@ nav.nav li:last-of-type {
   margin: 0 10px 4px 0;
 }
 
+footer + .info {
+  display: none;
+}
+
 /* Misc fixes */
 
 #range_related_properties_scrollbar_role code,
