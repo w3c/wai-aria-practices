@@ -1,18 +1,12 @@
 const getTemplateBoilerplate = require("../../getTemplateBoilerplate");
 
-const getHomePage = (sections) => {
+const getHomePage = (homepageContent) => {
   return {
     fileName: `index.md`,
     fileContent: getTemplateBoilerplate({
-      title: sections.title.content,
+      title: "ARIA Authoring Practices Guide",
       permalink: `/`,
-      content: `
-        ${sections.abstract.content}
-        ${sections.introduction.content}
-        ${sections.badAria.content}
-        ${sections.browserAndAtSupport.content}
-        ${sections.mobileAndTouchSupport.content}
-      `,
+      content: homepageContent,
     }),
   };
 };

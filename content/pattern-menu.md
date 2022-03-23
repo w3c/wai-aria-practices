@@ -9,7 +9,6 @@ github:
 permalink: /patterns/menu/
 
 lang: en
-last_updated: 2022-02-16
 ---
 
 

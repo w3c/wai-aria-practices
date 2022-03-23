@@ -9,7 +9,6 @@ github:
 permalink: /fundamentals/range-related-properties/
 
 lang: en
-last_updated: 2022-02-16
 ---
 
 

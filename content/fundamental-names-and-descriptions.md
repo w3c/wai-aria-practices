@@ -9,7 +9,6 @@ github:
 permalink: /fundamentals/names-and-descriptions/
 
 lang: en
-last_updated: 2022-02-16
 ---
 
 

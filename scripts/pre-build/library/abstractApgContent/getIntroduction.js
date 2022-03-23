@@ -51,7 +51,7 @@ const getIntroductionFormatter = (slug) =>
           throw new Error(
             `Failed to build introductory text for the pattern ` +
               `"${slug}". This may be due to the fact the first ` +
-              `paragraph not a complete sentence.`
+              `paragraph is not a complete sentence.`
           );
       }
     }

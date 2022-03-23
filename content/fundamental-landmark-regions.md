@@ -9,7 +9,6 @@ github:
 permalink: /fundamentals/landmark-regions/
 
 lang: en
-last_updated: 2022-02-16
 ---
 
 

@@ -9,7 +9,6 @@ github:
 permalink: /index/carousel/carousel-1-prev-next
 
 lang: en
-last_updated: 2022-02-16
 ---
 <script src="../js/examples.js"></script>
 <script src="../js/highlight.pack.js"></script>
@@ -61,7 +60,7 @@ last_updated: 2022-02-16
             </ul>
             
       <ul class="sidebar-list sidebar-list-yellow">
-        <li><a href="/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
+        <li><a href="/about/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
         <li><a href="https://github.com/w3c/aria-practices/issues/new">Report Issue</a></li>
         <li><a href="https://github.com/w3c/aria-practices/projects/10">Related Issues</a></li>
         <li><a href="/patterns/carousel/">Design Pattern</a></li>

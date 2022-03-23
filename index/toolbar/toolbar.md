@@ -9,7 +9,6 @@ github:
 permalink: /index/toolbar/toolbar
 
 lang: en
-last_updated: 2022-02-16
 ---
 <link
   rel="stylesheet"
@@ -70,7 +69,7 @@ last_updated: 2022-02-16
             </ul>
             
     <ul class="sidebar-list sidebar-list-yellow">
-      <li><a href="/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
+      <li><a href="/about/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
       <li><a href="https://github.com/w3c/aria-practices/issues/new">Report Issue</a></li>
       <li><a href="https://github.com/w3c/aria-practices/projects/18">Related Issues</a></li>
       <li><a href="/patterns/toolbar/">Design Pattern</a></li>
