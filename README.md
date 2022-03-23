@@ -5,16 +5,16 @@ This repository prepares the [ARIA Authoring Practices Guide](https://w3c.github
 The WAI website is built in Jekyll and [brings together several git submodules
 into one website](https://wai-website-theme.netlify.app/technical/).
 
-This project implements a pipeline to convert the [aria-practices repo](https://github.com/w3c/aria-practices/), which
-is currently a single static HTML file served by
-[gh-pages](https://pages.github.com/) and formatted and
-post-processed with [ReSpec](https://pages.github.com/), into a multi-page static website to be served as a standalone resource on the
+This project implements a pipeline to convert the [aria-practices repository](https://github.com/w3c/aria-practices/) (which
+is currently a [single static HTML file](https://w3c.github.io/aria-practices/) served by
+[gh-pages](https://pages.github.com/) which has been formatted and
+post-processed with [ReSpec](https://pages.github.com/)) into a multi-page static website to be served as a standalone resource on the
 [wai-website](https://github.com/w3c/wai-website/).
 
 ## Local development
 
 - Ensure Ruby and Node (v14 or greater) are installed.
-- Clone this repo: `git clone git@github.com:bocoup/wai-aria-practices.git`
+- Clone this repo: `git clone git@github.com:w3c/wai-aria-practices.git`
 - Initialize or update submodules: `git submodule update --init --recursive`
 - Install Jekyll: `bundle install`.
 - Install ReSpec: `npm install --global respec`
