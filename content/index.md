@@ -182,8 +182,8 @@ lang: en
                 <div class="work-item">
                   <h3>Meetings</h3>
                   <p>
-            The APG Task Force meets on Tuesdays at 14:00 until 15:00 Boston
-            time. Minutes from previous meetings are available.
+            The APG Task Force meets on Tuesdays at 14:00 until 15:00 Eastern
+            Time. Minutes from previous meetings are available.
           </p>
                   <a rel="noopener noreferrer"
             target="_blank"

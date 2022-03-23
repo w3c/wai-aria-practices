@@ -68,8 +68,8 @@ lang: en
       <section class="notoc examples-section"><img alt="" src="/assets/img/tabpanel.svg" ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/tabs/tabs-1/tabs.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
-          <li><a href="../../index/tabs/tabs-2/tabs.html">Tabs With Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
+          <li><a href="../../index/tabs/tabs-automatic.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
+          <li><a href="../../index/tabs/tabs-manual.html">Tabs With Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
         </ul>
       </section>
 
@@ -131,6 +131,7 @@ lang: en
             </ol>
           </li>
           <li>If the tab list is horizontal, it does not listen for <kbd>Down Arrow</kbd> or <kbd>Up Arrow</kbd> so those keys can provide their normal browser scrolling functions even when focus is inside the tab list.</li>
+          <li>When the tabpanel does not contain any focusable elements or the first element with content is not focusable, the tabpanel should set <code>tabindex="0"</code> to include it in the tab sequence of the page.</li>
         </ol></div>
       </section>
       <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-22" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
@@ -145,7 +146,7 @@ lang: en
           </li>
           <li>Each element with role <code>tab</code> has the property <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> referring to its associated <code>tabpanel</code> element.</li>
           <li>The active <code>tab</code> element has the state <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code> and all other <code>tab</code> elements have it set to <code>false</code>.</li>
-          <li>Each element with role <code>tabpanel</code> has the property <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> referring to its associated <code>tab</code> element. </li>
+          <li>Each element with role <code>tabpanel</code> has the property <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> referring to its associated <code>tab</code> element.</li>
           <li>If a <code>tab</code> element has a popup menu, it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>. </li>
           <li>
             If the <code>tablist</code> element is vertically oriented, it has the property <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>.

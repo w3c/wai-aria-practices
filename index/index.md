@@ -402,8 +402,8 @@ lang: en
             <td>
               <ul>
                 <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
+                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -416,8 +416,8 @@ lang: en
             <td>
               <ul>
                 <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
+                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -426,8 +426,8 @@ lang: en
             <td>
               <ul>
                 <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
+                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -555,8 +555,8 @@ lang: en
                 <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
+                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="toolbar/toolbar.html">Toolbar</a></li>
               </ul>
             </td>
@@ -678,8 +678,6 @@ lang: en
                 <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
                 <li><a href="table/table.html">Table</a></li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
                 <li><a href="toolbar/toolbar.html">Toolbar</a></li>
                 <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
                 <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -718,8 +716,8 @@ lang: en
                 <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
                 <li><a href="switch/switch-button.html">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
+                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
                 <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -839,8 +837,8 @@ lang: en
                 <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
                 <li><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></li>
                 <li><a href="listbox/listbox-scrollable.html">Scrollable Listbox</a></li>
-                <li><a href="tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></li>
-                <li><a href="tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></li>
+                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
