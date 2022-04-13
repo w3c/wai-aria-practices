@@ -318,7 +318,7 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
       </ul>
     </section>
 
-    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-16514075192348932" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-9848185844495758" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
 
   </section>
         <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>
@@ -326,7 +326,7 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
     <dl class="bibliography"><dt id="bib-html">[HTML]</dt><dd>
       <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
     </dd><dt id="bib-html-aam">[HTML-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Scott O'Hara.  W3C. 7 March 2022. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
+      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Scott O'Hara.  W3C. 4 April 2022. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
     </dd><dt id="bib-html-aria">[HTML-ARIA]</dt><dd>
       <a href="https://www.w3.org/TR/html-aria/"><cite>ARIA in HTML</cite></a>. Steve Faulkner; Scott O'Hara; Patrick Lauke.  W3C. 9 December 2021. W3C Recommendation. URL: <a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>
     </dd><dt id="bib-svg2">[SVG2]</dt><dd>
