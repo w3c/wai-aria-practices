@@ -85,7 +85,7 @@ lang: en
           When a <code>menu</code> opens, or when a <code>menubar</code> receives focus, keyboard focus is placed on the first item.
           Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>,
           <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus among the items in the menu.
-          Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or menu.
+          Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or <code>menu</code>.
         </p>
         <ul>
           <li><kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>: 
@@ -99,8 +99,8 @@ lang: en
               <li>When focus is on a <code>menuitem</code> in a <code>menu</code> or <code>menubar</code>, move focus out of the <code>menu</code> or <code>menubar</code>, and close all menus and submenus.</li>
               <li>
                 Note that <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus into a <code>menu</code>.
-                Unlike a <code>menubar</code>, a <code>menu</code> is not visually persistent, and authors are responsible for ensuring focus moves to an item inside of a <code>menu</code> when the <code>menu</code> opens.</li>
-              
+                Unlike a <code>menubar</code>, a <code>menu</code> is not visually persistent, and authors are responsible for ensuring focus moves to an item inside of a <code>menu</code> when the <code>menu</code> opens.
+              </li>
             </ul>
           </li>
           <li><kbd>Enter</kbd>:
