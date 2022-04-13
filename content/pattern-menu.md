@@ -68,26 +68,26 @@ lang: en
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-12" tabindex="-1">Keyboard Interaction</h2></div>
         
+        <p>The following description of keyboard behaviors assumes:</p>
+        <ol>
+          <li>A horizontal <code>menubar</code> containing several <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code> elements.</li>
+          <li>Some <code>menuitem</code> elements in the <code>menubar</code> have child submenus that contain vertically arranged items.</li>
+          <li>Some of the <code>menuitem</code> elements in the submenus have child submenus with items that are also vertically arranged.</li>
+        </ol>
+        <p>When reading the following descriptions, also keep in mind that:</p>
+        <ol>
+          <li>Focusable elements, which may have role <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code>, are referred to as items.</li>
+          <li>If a behavior applies to only certain types of items, e.g., <code>menuitem</code> elements, the specific role name is used.</li>
+          <li>Submenus, also known as popup menus,  are elements with role <code>menu</code>.</li>
+          <li>Except where noted, menus opened from a menubutton behave the same as menus opened from a menubar.</li>
+        </ol>
         <p>
-          The following description of keyboard behaviors assumes:</p>
-          <ol>
-            <li>A horizontal <code>menubar</code> containing several <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code> elements.</li>
-            <li>Some <code>menuitem</code> elements in the <code>menubar</code> have child submenus that contain vertically arranged items.</li>
-            <li>Some of the <code>menuitem</code> elements in the submenus have child submenus with items that are also vertically arranged.</li>
-          </ol>
-          <p>When reading the following descriptions, also keep in mind that:</p>
-          <ol>
-            <li>Focusable elements, which may have role <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code>, are referred to as items.</li>
-            <li>If a behavior applies to only certain types of items, e.g., <code>menuitem</code> elements, the specific role name is used.</li>
-            <li>Submenus, also known as popup menus,  are elements with role <code>menu</code>.</li>
-            <li>Except where noted, menus opened from a menubutton behave the same as menus opened from a menubar.</li>
-          </ol>
+          When a <code>menu</code> opens, or when a <code>menubar</code> receives focus, keyboard focus is placed on the first item.
+          Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>,
+          <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus among the items in the menu.
+          Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or menu.
+        </p>
         <ul>
-          <li>
-            When a <code>menu</code> opens, or when a <code>menubar</code> receives focus,
-            keyboard focus is placed on the first item.
-            All items are focusable as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>.
-          </li>
           <li><kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>: 
             <ul>
               <li>Move  focus into a <code>menubar</code>:
@@ -99,8 +99,8 @@ lang: en
               <li>When focus is on a <code>menuitem</code> in a <code>menu</code> or <code>menubar</code>, move focus out of the <code>menu</code> or <code>menubar</code>, and close all menus and submenus.</li>
               <li>
                 Note that <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus into a <code>menu</code>.
-                A <code>menu</code> is not visually persistent and is not part of the page <kbd>Tab</kbd> sequence.
-              </li>
+                Unlike a <code>menubar</code>, a <code>menu</code> is not visually persistent, and authors are responsible for ensuring focus moves to an item inside of a <code>menu</code> when the <code>menu</code> opens.</li>
+              
             </ul>
           </li>
           <li><kbd>Enter</kbd>:
