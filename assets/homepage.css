@@ -32,8 +32,12 @@ body > .default-grid.nav-container {
   background: white;
   position: relative;
 }
+.white-section .contained {
+  max-width: 1260px;
+}
+
 .contained {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--gutter);
 }
@@ -82,7 +86,7 @@ h3 {
   left: -100px;
   z-index: 5;
   width: calc(100% + 100px);
-  max-width: initial;
+  max-width: 484px;
 }
 h1 {
   color: white;
@@ -223,8 +227,8 @@ h2 + h3 + p {
   padding: 20px 10px;
   gap: 40px;
 }
-.resource-item-img {
-  height: 300px;
+.resource-item .resource-item-img {
+  text-align: center;
 }
 .resource-item:nth-child(2n) .resource-item-img {
   order: -1;
@@ -234,6 +238,7 @@ h2 + h3 + p {
   height: 100%;
   object-fit: contain;
   object-position: center center;
+  max-width: 440px;
 }
 .resource-item:last-child {
   margin-bottom: 60px;
