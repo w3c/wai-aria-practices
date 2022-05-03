@@ -9,8 +9,8 @@ const getFundamentalPage = (section) => {
       addBodyClass: "fundamental-page",
       content: `
         <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
+          <nav class="sidebar-right">
+            <h2 class="sidebar-headline">Page Contents</h2>
             <ul class="sidebar-list">
               ${section.outline
                 .map(({ slug, name }) => {
@@ -22,8 +22,8 @@ const getFundamentalPage = (section) => {
                 })
                 .join(" ")}
             </ul>
-          </aside>
-          <div class="sidebar-right">
+          </nav>
+          <div class="sidebar-left">
             ${section.content}
           </div>
         </div>

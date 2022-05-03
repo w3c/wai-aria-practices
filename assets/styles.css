@@ -33,6 +33,10 @@ a.skip-main:focus, a.skip-main:active {
   z-index: 999;
 }
 
+.button--skip-link {
+  display: none;
+}
+
 /* Patterns */
 .examples-section {
   display: grid;
@@ -145,25 +149,26 @@ li.tile .tile-introduction {
 /* Sidebar Content */
 .sidebar-container {
   display: grid;
-  grid-template-columns: minmax(250px, 30%) 1fr;
+  grid-template-columns: 1fr minmax(250px, 30%);
   grid-column-gap: 2em;
 }
-.sidebar-headline, .sidebar-right h2:first-of-type {
+.sidebar-headline, .sidebar-left h2:first-of-type {
   margin-top: 20px;
 }
-.sidebar-left {
+.sidebar-right {
   height: min-content;
   position: sticky;
   top: 0;
+  order: 1;
 }
-.sidebar-right {
+.sidebar-left {
   min-width: 0;
 }
 @media (max-width: 767px) {
   .sidebar-container {
     display: block;
   }
-  .sidebar-left {
+  .sidebar-right {
     position: unset;
   }
 }
@@ -202,17 +207,6 @@ ul.sidebar-list li a code {
   border-radius: 3px;
   line-height: 1em;
   display: inline-block;
-}
-
-ul.sidebar-list.sidebar-list-yellow {
-  background-color: #FFF1C4;
-}
-ul.sidebar-list.sidebar-list-yellow li a:first-child {
-  color: black;
-  border-top-color: #D5C184;
-}
-ul.sidebar-list.sidebar-list-yellow li a:hover {
-  background-color: #cec4a6;
 }
 
 li .tile-introduction {

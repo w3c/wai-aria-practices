@@ -26,8 +26,8 @@ if (addBodyClass) {
 <div>
 
         <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
+          <nav class="sidebar-right">
+            <h2 class="sidebar-headline">Page Contents</h2>
             <ul class="sidebar-list">
               
                   <li>
@@ -39,8 +39,8 @@ if (addBodyClass) {
                   </li>
                 
             </ul>
-          </aside>
-          <div class="sidebar-right">
+          </nav>
+          <div class="sidebar-left">
             
         <section id="presentation-role"><div class="header-wrapper"><h2 id="x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</h2></div>
     

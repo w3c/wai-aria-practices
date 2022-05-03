@@ -8,8 +8,8 @@ const getPatternPage = (pattern) => {
       permalink: pattern.permalink,
       content: `
         <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
+          <nav class="sidebar-right">
+            <h2 class="sidebar-headline">Page Contents</h2>
             <ul class="sidebar-list">
               ${pattern.outline
                 .map(({ slug, name }) => {
@@ -21,8 +21,8 @@ const getPatternPage = (pattern) => {
                 })
                 .join(" ")}
             </ul>
-          </aside>
-          <div class="sidebar-right">
+          </nav>
+          <div class="sidebar-left">
             ${pattern.content}
           </div>
         </div>

@@ -21,8 +21,8 @@ const loadIndex = async (filePath) => {
     head: head,
     content: `
       <div class="sidebar-container">
-        <aside class="sidebar-left">
-          <h2 class="sidebar-headline">Table of Contents</h2>
+        <nav class="sidebar-right">
+          <h2 class="sidebar-headline">Page Contents</h2>
           <ul class="sidebar-list">
             <li>
               <a href="#examples_by_role_label">Examples by Role</a>
@@ -33,8 +33,8 @@ const loadIndex = async (filePath) => {
               </a>
             </li>
           </ul>
-        </aside>
-        <div class="sidebar-right">
+        </nav>
+        <div class="sidebar-left">
           <h2>About the Index</h2>
           <p>
             This page includes a list of all ARIA design pattern examples 

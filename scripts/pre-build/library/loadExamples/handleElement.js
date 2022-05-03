@@ -8,16 +8,14 @@ let head;
 let body;
 let patternSlug;
 let outline;
-let relatedLinks;
 
 const getContent = () => {
-  const response = { title, head, body, patternSlug, outline, relatedLinks };
+  const response = { title, head, body, patternSlug, outline };
   title = undefined;
   head = undefined;
   body = undefined;
   patternSlug = undefined;
   outline = undefined;
-  relatedLinks = undefined;
   return response;
 };
 
@@ -62,17 +60,6 @@ const getHandleElement = (permalink) => (element) => {
       const relatedLinksElement = element.querySelector(
         '[aria-label="Related Links"]'
       );
-      if (!relatedLinksElement) {
-        throw new Error(
-          "Found example that does not follow the expected formatting. The " +
-            "pre-build script must be updated."
-        );
-      }
-      relatedLinksElement.querySelector("ul").classList.add("sidebar-list");
-      relatedLinksElement
-        .querySelector("ul")
-        .classList.add("sidebar-list-yellow");
-      relatedLinks = relatedLinksElement.innerHTML;
       relatedLinksElement.remove();
     }
 

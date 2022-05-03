@@ -19,8 +19,8 @@ lang: en
 <div>
 
         <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
+          <nav class="sidebar-right">
+            <h2 class="sidebar-headline">Page Contents</h2>
             <ul class="sidebar-list">
               
                   <li>
@@ -40,8 +40,8 @@ lang: en
                   </li>
                 
             </ul>
-          </aside>
-          <div class="sidebar-right">
+          </nav>
+          <div class="sidebar-left">
             <section class="widget" id="checkbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> supports two types of <a href="https://w3c.github.io/aria/#checkbox" class="role-reference">checkbox</a> widgets:</p>

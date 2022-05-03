@@ -25,8 +25,8 @@ lang: en
 <div>
 
         <div class="sidebar-container">
-          <aside class="sidebar-left" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Table of Contents</h2>
+          <nav class="sidebar-right" aria-describedby="sidebar-toc">
+            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
             <ul class="sidebar-list">
               
                     <li>
@@ -54,16 +54,8 @@ lang: en
                     </li>
                   
             </ul>
-            
-    <ul class="sidebar-list sidebar-list-yellow">
-      <li><a href="/about/#browser_and_AT_support">Browser and Assistive Technology Support</a></li>
-      <li><a href="https://github.com/w3c/aria-practices/issues/new">Report Issue</a></li>
-      <li><a href="https://github.com/w3c/aria-practices/projects/14">Related Issues</a></li>
-      <li><a href="/patterns/disclosure/">Design Pattern</a></li>
-    </ul>
-  
-          </aside>
-          <div class="sidebar-right"><h2 class="followed-by-support-notice">About This Example</h2><img alt=""
+          </nav>
+          <div class="sidebar-left"><h2 class="followed-by-support-notice">About This Example</h2><img alt=""
         src="/assets/img/disclosure.svg"
         class="example-page-example-icon"
       >
