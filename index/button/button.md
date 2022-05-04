@@ -51,7 +51,8 @@ lang: en
                   
             </ul>
           </nav>
-          <div class="sidebar-left"><h2 class="followed-by-support-notice">About This Example</h2><img alt=""
+          <div class="sidebar-left">
+            <h2 class="followed-by-support-notice">About This Example</h2><img alt=""
         src="/assets/img/button.svg"
         class="example-page-example-icon"
       >
@@ -246,7 +247,9 @@ lang: en
   <nav>
     <a href="/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
-</div>
+
+            <p>Page last updated: December 13, 2020</p>
+          </div>
         </div>
       
 </div>

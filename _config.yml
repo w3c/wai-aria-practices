@@ -45,7 +45,9 @@ defaults:
       path: ""
     values:
       layout: "standalone_resource"
-      standalone_resource_doc_name: ARIA Authoring Practices
+      standalone_resource_header: 
+        title: "ARIA Authoring Practices Guide (APG)"
+        subtitle: "How to build accessibility semantics into web patterns and widgets"
       standalone_resource_nav_links:
         - name: Home
           ref: /

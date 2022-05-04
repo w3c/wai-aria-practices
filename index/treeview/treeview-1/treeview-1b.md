@@ -68,7 +68,8 @@ lang: en
                   
             </ul>
           </nav>
-          <div class="sidebar-left"><h2 class="followed-by-support-notice">About This Example</h2><img alt=""
+          <div class="sidebar-left">
+            <h2 class="followed-by-support-notice">About This Example</h2><img alt=""
         src="/assets/img/treeview.svg"
         class="example-page-example-icon"
       >
@@ -815,7 +816,9 @@ lang: en
     <nav>
       <a href="/patterns/treeview/">Tree View Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
     </nav>
-  </div>
+  
+            <p>Page last updated: November 23, 2021</p>
+          </div>
         </div>
       
 </div>

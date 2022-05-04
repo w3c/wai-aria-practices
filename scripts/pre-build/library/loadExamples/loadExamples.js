@@ -1,6 +1,8 @@
+const { exec } = require("child_process");
 const fs = require("fs/promises");
 const path = require("path");
 const { promiseFiles: getPaths } = require("node-dir");
+const { format } = require("date-fns");
 const loadExample = require("./loadExample");
 const loadIndex = require("./loadIndex");
 
@@ -60,8 +62,11 @@ const loadExamples = async () => {
     const exampleRelative = path.relative(examplesPath, currentPath);
     const exampleRelativeDirectory = path.dirname(exampleRelative);
 
+    const lastModifiedDateFormatted = await getLastModifiedDate(currentPath);
+
     const { fileName, fileContent } = await loadExample(currentPath, {
       exampleRelativeDirectory,
+      lastModifiedDateFormatted,
     });
 
     const destinationPath = path.join(
@@ -98,6 +103,28 @@ const editAppJs = async ({ destinationExamplesPath }) => {
     "// Line edited by pre-build script" +
     appJsContent.substr(lineToEditEndIndex);
   await fs.writeFile(appJsPath, newContent);
+};
+
+const getLastModifiedDate = async (exampleFilePath) => {
+  const output = await new Promise((resolve) => {
+    exec(
+      `git log -1 --pretty="format:%cI" ${path.basename(exampleFilePath)}`,
+      { cwd: path.dirname(exampleFilePath) },
+      (error, stdout, stderr) => {
+        resolve(stdout);
+      }
+    );
+  });
+  let dateFormatted;
+  try {
+    dateFormatted = format(new Date(output), "MMMM d, y");
+  } catch (error) {
+    console.error(
+      `Failed to extract a last-modified date for the file "${exampleFilePath}"`
+    );
+    throw error;
+  }
+  return dateFormatted;
 };
 
 const isHtmlAsset = (filePath) => {

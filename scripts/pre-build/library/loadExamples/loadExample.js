@@ -5,7 +5,10 @@ const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const getTemplateBoilerplate = require("../getTemplateBoilerplate");
 const { getHandleElement, getContent } = require("./handleElement");
 
-const loadExample = async (filePath, { exampleRelativeDirectory }) => {
+const loadExample = async (
+  filePath,
+  { exampleRelativeDirectory, lastModifiedDateFormatted }
+) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
   const slug = path.basename(filePath).slice(0, -5);
   const permalink = `/index/${exampleRelativeDirectory}/${slug}`;
@@ -38,7 +41,10 @@ const loadExample = async (filePath, { exampleRelativeDirectory }) => {
                 .join(" ")}
             </ul>
           </nav>
-          <div class="sidebar-left">${body}</div>
+          <div class="sidebar-left">
+            ${body}
+            <p>Page last updated: ${lastModifiedDateFormatted}</p>
+          </div>
         </div>
       `,
     }),

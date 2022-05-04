@@ -41,8 +41,7 @@ if (addBodyClass) {
             </ul>
           </nav>
           <div class="sidebar-left">
-            
-        <section id="presentation-role"><div class="header-wrapper"><h2 id="x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</h2></div>
+            <section id="presentation-role"><div class="header-wrapper"><h2 id="x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</h2></div>
     
     <p>
       While ARIA is primarily used to express semantics, there are some situations where hiding an
@@ -146,8 +145,7 @@ if (addBodyClass) {
       <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Date of birth:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>January 1, 3456<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
     </section>
-  </section>
-        <section id="children-presentational"><div class="header-wrapper"><h2 id="x10-roles-that-automatically-hide-semantics-by-making-their-descendants-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational</h2></div>
+  </section> <section id="children-presentational"><div class="header-wrapper"><h2 id="x10-roles-that-automatically-hide-semantics-by-making-their-descendants-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational</h2></div>
     
     <p>
       There are some types of user interface components that, when represented in a platform
@@ -193,7 +191,6 @@ if (addBodyClass) {
       for a detailed explanation of what it does.
     </p>
   </section>
-      
           </div>
         </div>
       

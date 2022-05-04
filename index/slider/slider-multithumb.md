@@ -55,7 +55,8 @@ lang: en
                   
             </ul>
           </nav>
-          <div class="sidebar-left"><h2 class="followed-by-support-notice">About This Example</h2>
+          <div class="sidebar-left">
+            <h2 class="followed-by-support-notice">About This Example</h2>
     
     <div>
       
@@ -313,7 +314,9 @@ lang: en
     <nav>
       <a href="/patterns/slidertwothumb/">Slider (Multi-Thumb) design pattern in WAI-ARIA Authoring Practices 1.2</a>
     </nav>
-  </div>
+  
+            <p>Page last updated: November 23, 2021</p>
+          </div>
         </div>
       
 </div>

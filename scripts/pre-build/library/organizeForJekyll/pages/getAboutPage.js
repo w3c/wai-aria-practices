@@ -10,9 +10,6 @@ const getAboutPage = (sections) => {
         ${sections.documentMeta.content}
         ${sections.abstract.content}
         ${sections.introduction.content}
-        ${sections.badAria.content}
-        ${sections.browserAndAtSupport.content}
-        ${sections.mobileAndTouchSupport.content}
         ${sections.documentStatus.content}
         ${sections.changelog.content}
         ${sections.acknowledgements.content}

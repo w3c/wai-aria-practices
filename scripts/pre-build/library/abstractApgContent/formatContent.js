@@ -38,50 +38,25 @@ const sections = {
       return element.outerHTML;
     }),
   },
-  badAria: {
-    permalink: "/about/",
+  readMeFirst: {
+    permalink: "/fundamentals/read-me-first/",
+    permalinkReplacesFormerAnchorId: "read_me_first",
+    slug: "read-me-first",
     identify: (element) => {
       const headlineElement = element.querySelector("h1,h2,h3,h4");
       return (
         headlineElement &&
-        fuzzysearch(
-          "no aria is better than bad aria",
-          headlineElement.textContent
-        )
+        fuzzysearch("read me first", headlineElement.textContent)
       );
     },
-    getContent: removeSectionNumbers(
-      renumberHeadings(-1, (element) => {
-        return element.outerHTML;
-      })
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
-  },
-  browserAndAtSupport: {
-    permalink: "/about/",
-    identify: (element) => {
-      const headlineElement = element.querySelector("h1,h2,h3,h4");
-      return (
-        headlineElement &&
-        fuzzysearch("browser and at support", headlineElement.textContent)
-      );
-    },
+    getIntroduction: getIntroductionFormatter("read-me-first"),
+    getOutline: getFundamentalOutline,
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
-        return element.outerHTML;
-      })
-    ),
-  },
-  mobileAndTouchSupport: {
-    permalink: "/about/",
-    identify: (element) => {
-      const headlineElement = element.querySelector("h1,h2,h3,h4");
-      return (
-        headlineElement &&
-        fuzzysearch("mobile and touch support", headlineElement.textContent)
-      );
-    },
-    getContent: removeSectionNumbers(
-      renumberHeadings(-1, (element) => {
+        element.querySelector("h2").remove();
         return element.outerHTML;
       })
     ),
