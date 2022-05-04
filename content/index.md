@@ -25,7 +25,7 @@ lang: en
           <div class="top-box">
             <div class="top-detail-1 detail-1"></div>
             <div class="detail-2"></div>
-            <h1>ARIA Authoring Practices Guide</h1>
+            <h1>ARIA Authoring Practices Guide Home</h1>
             <p>
         Learn to use the accessibility semantics defined by ARIA 
         to create accessible rich internet applications.
