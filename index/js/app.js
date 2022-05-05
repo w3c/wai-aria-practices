@@ -7,7 +7,7 @@
   hljs.initHighlightingOnLoad();
 
   // Add support notice to all examples
-  window.addEventListener('DOMContentLoaded', addSupportNotice, false);
+  // window.addEventListener('DOMContentLoaded', addSupportNotice, false);// Line edited by pre-build script
 
   function addSupportNotice() {
     // The "Example" heading
@@ -61,7 +61,7 @@
           links[i].pathname = urlPrefix;
         }
         // Insert the support notice before the page's h1
-        var heading = document.querySelector('.followed-by-support-notice'); // Line edited by pre-build script
+        var heading = document.querySelector('h1');
         heading.parentNode.insertBefore(noticeElement, heading.nextSibling);
       });
   }

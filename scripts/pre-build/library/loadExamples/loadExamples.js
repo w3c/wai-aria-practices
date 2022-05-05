@@ -5,6 +5,7 @@ const { promiseFiles: getPaths } = require("node-dir");
 const { format } = require("date-fns");
 const loadExample = require("./loadExample");
 const loadIndex = require("./loadIndex");
+const loadGetNotice = require("./loadNotice");
 
 const loadExamples = async () => {
   const examplesPath = path.resolve(
@@ -57,6 +58,7 @@ const loadExamples = async () => {
   );
 
   await editAppJs({ destinationExamplesPath });
+  // const getNotice = await loadGetNotice({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {
     const exampleRelative = path.relative(examplesPath, currentPath);
@@ -67,6 +69,7 @@ const loadExamples = async () => {
     const { fileName, fileContent } = await loadExample(currentPath, {
       exampleRelativeDirectory,
       lastModifiedDateFormatted,
+      // getNotice,
     });
 
     const destinationPath = path.join(
@@ -88,7 +91,8 @@ const loadExamples = async () => {
 const editAppJs = async ({ destinationExamplesPath }) => {
   const appJsPath = path.join(destinationExamplesPath, "js", "app.js");
   const appJsContent = await fs.readFile(appJsPath, { encoding: "utf8" });
-  const lineToEdit = "var heading = document.querySelector('h1');";
+  const lineToEdit =
+    "window.addEventListener('DOMContentLoaded', addSupportNotice, false);";
   const lineToEditStartIndex = appJsContent.indexOf(lineToEdit);
   if (!lineToEditStartIndex) {
     throw new Error(
@@ -99,7 +103,7 @@ const editAppJs = async ({ destinationExamplesPath }) => {
   const lineToEditEndIndex = lineToEditStartIndex + lineToEdit.length;
   const newContent =
     appJsContent.substr(0, lineToEditStartIndex) +
-    "var heading = document.querySelector('.followed-by-support-notice'); " +
+    "// window.addEventListener('DOMContentLoaded', addSupportNotice, false);" +
     "// Line edited by pre-build script" +
     appJsContent.substr(lineToEditEndIndex);
   await fs.writeFile(appJsPath, newContent);

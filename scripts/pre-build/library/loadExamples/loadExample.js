@@ -7,7 +7,7 @@ const { getHandleElement, getContent } = require("./handleElement");
 
 const loadExample = async (
   filePath,
-  { exampleRelativeDirectory, lastModifiedDateFormatted }
+  { exampleRelativeDirectory, lastModifiedDateFormatted /* getNotice */ }
 ) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
   const slug = path.basename(filePath).slice(0, -5);
@@ -18,6 +18,8 @@ const loadExample = async (
   walkHtmlElements(root, getHandleElement(permalink));
 
   const { title, head, body, outline } = getContent();
+
+  // const notice = getNotice({ permalink });
 
   return {
     fileName: `${slug}.md`,
