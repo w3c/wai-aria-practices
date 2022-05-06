@@ -16,13 +16,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
-<div class="read-this-first">
-  <div class="text">
-    <h2><a href="../about/#x2-1-no-aria-is-better-than-bad-aria">Read This First</a></h2>
-    <p>No ARIA is better than Bad ARIA. Before using any ARIA, it is essential to understand why.</p>
-  </div>
-  <img src="/assets/img/read-this-first.svg" width="178" alt="">
-</div>
+{% include read-this-first.html %}
 <div>
 <ul class="tiles">
         
