@@ -45,12 +45,8 @@ lang: en
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
         <h2>APG Resources</h2>
-        <h3>Building blocks that help you make the web accessible</h3>
-        <p>
-            Learn how to make common rich internet application patterns and
-            widgets accessible by applying WAI-ARIA roles, states and
-            properties, and implementing keyboard support.
-          </p>
+        <h3>Design Patterns and Widgets</h3>
+        <p>Building blocks that help you make the web accessible</p>
       </div>
       <div class="contained margin-fix">
         <div class="resource-item">
@@ -63,17 +59,17 @@ lang: en
             properties, and implementing keyboard support.
           
                   </p>
-                  <a href="/patterns/" aria-label="View list of patterns" class="button-link">Learn More</a>
+                  <a href="/patterns/" aria-label="View patterns" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A menagerie of widgets." src="content/assets/index-2.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
-                  <h3>Use of ARIA Landmarks</h3>
+                  <h3>Use ARIA Landmarks</h3>
                   <p>
                     
-            Learn how HTML sectioning elements and ARIA landmark roles are used
+            Learn how to use HTML sectioning elements and ARIA landmark roles
             to make it easy for assistive technology users to understand the
             meaning of the layout of a page.
           
@@ -108,7 +104,7 @@ lang: en
             developing keyboard interfaces, and more.
           
                   </p>
-                  <a class="button-link" href="/fundamentals/" aria-label="View fundamentals">Learn More</a>
+                  <a class="button-link" href="/fundamentals/" aria-label="View practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A box with an accessibility label is chock full of widgets and document bits." src="content/assets/index-5.svg">
@@ -121,11 +117,8 @@ lang: en
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>Current Work</h2>
-        <h3>Check out our most recent work</h3>
-        <p>
-            Take a look at the plan overview for WAI-ARIA Authoring Practices,
-            priorities and work in progress.
-          </p>
+        <h3>Release Plans</h3>
+        <p>Check out  recent work of the APG Task Force</p>
       </div>
       <div class="contained margin-fix">
         <div class="work-items">
