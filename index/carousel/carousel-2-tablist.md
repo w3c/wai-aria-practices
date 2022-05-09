@@ -9,6 +9,9 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/carousel/carousel-2-tablist
 
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
+
 lang: en
 ---
 <link rel="stylesheet" href="css/carousel-tablist.css" />

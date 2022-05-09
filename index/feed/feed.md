@@ -9,6 +9,9 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/feed/feed
 
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
+
 lang: en
 ---
 <script src="../js/examples.js"></script>
