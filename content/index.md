@@ -26,12 +26,13 @@ lang: en
           <div class="top-box">
             <div class="top-detail-1 detail-1"></div>
             <div class="detail-2"></div>
-            <h1>Get empowered to create accessible rich internet applications</h1>
+            <h1>ARIA Authoring Practices Guide Home</h1>
             <p>
-        Learn how to use ARIA to create an accessible rich internet application.
-        The ARIA Authoring practices project provides guidance on the
-        appropriate application of ARIA, describes recommended usage patterns
-        and explains concepts behind them.
+        Learn to use the accessibility semantics defined by ARIA 
+        to create accessible rich internet applications.
+        This guide describes how to apply accessibility semantics to common design patterns and widgets.
+        It provides design patterns and functional examples
+        complemented by in-depth guidance for fundamental practices.
       </p>
             <a href="/patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
@@ -44,12 +45,13 @@ lang: en
     <div class="white-section">
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
-        <h2>Our Resources</h2>
-        <h3>Everything you need to make the web accessible</h3>
+        <h2>APG Resources</h2>
+        <h3>Building blocks that help you make the web accessible</h3>
         <p>
-        Recommended approaches to make widgets, navigation and behaviors
-        accessible using WAI-ARIA roles, states and properties.
-      </p>
+            Learn how to make common rich internet application patterns and
+            widgets accessible by applying WAI-ARIA roles, states and
+            properties, and implementing keyboard support.
+          </p>
       </div>
       <div class="contained margin-fix">
         <div class="resource-item">
@@ -103,10 +105,8 @@ lang: en
                   <h3>And So Much More...</h3>
                   <p>
                     
-            Learn about other fundamental accessibility resources and understand
-            how to Provide Accessible Names and Descriptions, implement
-            accessible Grid and Table properties, use Hiding Semantics, and
-            more.
+            Learn about other fundamental practices related to correctly using accessibility semantics,
+            developing keyboard interfaces, and more.
           
                   </p>
                   <a class="button-link" href="/fundamentals/" aria-label="View fundamentals">Learn More</a>
@@ -124,9 +124,9 @@ lang: en
         <h2>Current Work</h2>
         <h3>Check out our most recent work</h3>
         <p>
-        Review the overall scope of work planned for the APG and supporting
-        deliverables and the timelines for completing our work.
-      </p>
+            Take a look at the plan overview for WAI-ARIA Authoring Practices,
+            priorities and work in progress.
+          </p>
       </div>
       <div class="contained margin-fix">
         <div class="work-items">

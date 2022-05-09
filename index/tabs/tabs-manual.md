@@ -7,15 +7,16 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/tabs/tabs-2/tabs
+permalink: /index/tabs/tabs-manual
 
 lang: en
 ---
-<script src="../../js/examples.js"></script>
-<script src="../../js/highlight.pack.js"></script>
-<script src="../../js/app.js"></script>
+<script src="../js/examples.js"></script>
+<script src="../js/highlight.pack.js"></script>
+<script src="../js/app.js"></script>
 
-<link href="../css/tabs.css" rel="stylesheet" />
+<link href="css/tabs.css" rel="stylesheet" />
+<script src="js/tabs-manual.js"></script>
 
 
 <link rel="stylesheet" href="/assets/styles.css">
@@ -65,13 +66,15 @@ lang: en
       
       <p>
           The below example section demonstrates a tabs widget that implements the  <a href="/patterns/tabpanel/">tabs design pattern</a>.
-          In this example,  a new panel is displayed only after the user activates a tab with either <kbd>Space</kbd>, <kbd>Enter</kbd>, or a mouse click.
-          Typically, manual activation of tabs is only necessary when panels cannot be displayed instantly, i.e., not all the panel content is present in the DOM.
+          In this example,  a panel is displayed when users activate its tab with either <kbd>Space</kbd>, <kbd>Enter</kbd>, or a mouse click.
+          So, for keyboard users, activating a tab requires two steps: 1) focus the tab, and 2) activate the tab.
+          This two-step process is referred to as manual activation.
+          Manual activation of tabs is recommended unless panels can be displayed instantly, i.e., all the panel content is present in the DOM.
           For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
       </p>
       <p>Similar examples include: </p>
       <ul>
-        <li><a href="../tabs-1/tabs.html">Example of Tabs with Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
+        <li><a href="tabs-automatic.html">Example of Tabs with Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
       </ul>
 
       <section>
@@ -81,23 +84,65 @@ lang: en
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="tabs">
-            <div role="tablist" aria-label="Entertainment">
-              <button type="button" role="tab" aria-selected="true" aria-controls="nils-tab" id="nils">Nils Frahm</button>
-              <button type="button" role="tab" aria-selected="false" aria-controls="agnes-tab" id="agnes" tabindex="-1">Agnes Obel</button>
-              <button type="button" role="tab" aria-selected="false" aria-controls="complex-complex" id="complex" tabindex="-1" data-deletable>Joke</button>
+            <h3 id="tablist-1">Danish Composers</h3>
+            <div role="tablist"
+              aria-labelledby="tablist-1"
+              class="manual">
+              <button id="tab-1"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="tabpanel-1">
+                <span class="focus">Maria Ahlefeldt</span>
+              </button>
+              <button id="tab-2"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel-2"
+                tabindex="-1">
+                <span class="focus">Carl Andersen</span>
+              </button>
+              <button id="tab-3"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel-3"
+                tabindex="-1">
+                <span class="focus">Ida da Fonseca</span>
+              </button>
+              <button id="tab-4"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel-4"
+                tabindex="-1">
+                <span class="focus">Peter Lange-Müller</span>
+              </button>
             </div>
 
-            <div tabindex="0" role="tabpanel" id="nils-tab" aria-labelledby="nils">
-              <p>Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.</p>
+            <div id="tabpanel-1"
+              role="tabpanel"
+              aria-labelledby="tab-1">
+              <p><a href="https://en.wikipedia.org/wiki/Maria_Theresia_Ahlefeldt">Maria Theresia Ahlefeldt</a> (16 January 1755 – 20 December 1810) was a Danish, (originally German), composer. She is known as the first female composer in Denmark. Maria Theresia composed music for several ballets, operas, and plays of the royal theatre. She was given good critic as a composer and described as a “<span lang="da">virkelig Tonekunstnerinde</span>” ('a True Artist of Music').</p>
             </div>
-
-            <div tabindex="0" role="tabpanel" id="agnes-tab" aria-labelledby="agnes" class="is-hidden">
-              <p>Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.</p>
+            <div id="tabpanel-2"
+              role="tabpanel"
+              aria-labelledby="tab-2"
+              class="is-hidden">
+              <p><a href="https://en.wikipedia.org/wiki/Joachim_Andersen_(composer)">Carl Joachim Andersen</a> (29 April 1847 – 7 May 1909) was a Danish flutist, conductor and composer born in Copenhagen, son of the flutist Christian Joachim Andersen. Both as a virtuoso and as composer of flute music, he is considered one of the best of his time. He was considered to be a tough leader and teacher and demanded as such a lot from his orchestras but through that style he reached a high level.</p>
             </div>
-
-            <div tabindex="0" role="tabpanel" id="complex-complex" aria-labelledby="complex" class="is-hidden">
-              <p>Fear of complicated buildings:</p>
-              <p>A complex complex complex.</p>
+            <div id="tabpanel-3"
+              role="tabpanel"
+              aria-labelledby="tab-3"
+              class="is-hidden">
+              <p><a href="https://en.wikipedia.org/wiki/Ida_Henriette_da_Fonseca">Ida Henriette da Fonseca</a> (July 27, 1802 – July 6, 1858) was a Danish opera singer and composer.  Ida Henriette da Fonseca was the daughter of Abraham da Fonseca (1776–1849) and Marie Sofie Kiærskou (1784–1863). She and her sister Emilie da Fonseca were students of Giuseppe Siboni, choir master of the Opera in Copenhagen. She was given a place at the royal Opera alongside her sister the same year she debuted in 1827.</p>
+            </div>
+            <div id="tabpanel-4"
+              role="tabpanel"
+              aria-labelledby="tab-4"
+              class="is-hidden">
+              <p><a href="https://en.wikipedia.org/wiki/Peter_Lange-M%C3%BCller">Peter Erasmus Lange-Müller</a> (1 December 1850 – 26 February 1926) was a Danish composer and pianist. His compositional style was influenced by Danish folk music and by the work of Robert Schumann; Johannes Brahms; and his Danish countrymen, including J.P.E. Hartmann.</p>
             </div>
           </div>
         </div>
@@ -106,10 +151,29 @@ lang: en
 
       <section>
         <h2 tabindex="-1" id="accessibility-features">Accessibility Features</h2>
-        <p>
-          To demonstrate the effects of deleting a tab, the third tab, labeled <q>Joke</q>,
-          can be deleted when it has focus by pressing <kbd>Delete</kbd>.
-        </p>
+        <ul>
+          <li>To ensure people who rely on browser or operating system high contrast settings can both distinguish the active (selected) tab from other tabs and perceive keyboard focus:
+            <ul>
+              <li>
+                The active tab has a 2 pixel border on its left and right sides and a 4 pixel border on top, while the names of inactive tabs have 1 pixel borders.
+                The active tab is also 4 pixels higher than the inactive tabs.
+              </li>
+              <li>
+                The focus ring is drawn with a CSS border on a child <code>span</code> element of the tab element.
+                This focus span is separated from the tab border by 2 pixels of space to ensure focus and selection are separately perceivable.
+                Note that when a tab element is focused, the outline of the tab element itself is set to 0 so that only one focus ring is displayed.
+              </li>
+              <li>
+                Because transparent borders are visible on some systems when high contrast settings are enabled, only the focused <code>span</code> element has a visible border.
+                When <code>span</code> elements are not indicating focus, they have a 0-width border and additional padding equal in width to the border that is used to indicate focus.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Note that since the first element in every <code>tabpanel</code> is a focusable element (i.e., a link), the <code>tabpanel</code> is <strong>not</strong> included in the page <kbd>Tab</kbd> sequence.
+            To make it easy for screen reader users to navigate from a tab to the beginning of content in the active <code>tabpanel</code>, it is recommended that all <code>tabpanel</code> elements in a tab set are focusable if there are any panels in the set that contain content where the first element in the panel is not focusable.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -127,7 +191,7 @@ lang: en
               <td>
                 <ul>
                   <li>When focus moves into the tab list, places focus on the active <code>tab</code> element .</li>
-                  <li>When the tab list contains the focus, moves focus to the next element in the tab sequence, which is the <code>tabpanel</code> element.</li>
+                  <li>When the tab list contains the focus, moves focus to the next element in the tab sequence, which is the <code>a</code> element in <code>tabpanel</code>.</li>
                 </ul>
               </td>
             </tr>
@@ -165,10 +229,6 @@ lang: en
               <th><kbd>End</kbd></th>
               <td>When a tab has focus, moves focus to the last tab.</td>
             </tr>
-            <tr data-test-id="key-delete">
-              <th><kbd>Delete</kbd></th>
-              <td>When focus is on the <q>Joke</q> tab, removes the tab from the tab list and places focus on the previous tab.</td>
-            </tr>
           </tbody>
         </table></div>
       </section>
@@ -195,10 +255,10 @@ lang: en
               </td>
               <td>Indicates that the element serves as a container for a set of tabs.</td>
             </tr>
-            <tr data-test-id="tablist-aria-label">
+            <tr data-test-id="tablist-aria-labelledby">
               <td></td>
               <th scope="row">
-                <code>aria-label=<q>Entertainment</q></code>
+                <code>aria-labelledby="ID_REFERENCE"</code>
               </th>
               <td>
                 <code>div</code>
@@ -225,7 +285,7 @@ lang: en
             <tr data-test-id="tab-aria-selected">
               <td></td>
               <th scope="row">
-                <code>aria-selected=<q>true</q></code>
+                <code>aria-selected="true"</code>
               </th>
               <td>
                 <code>button</code>
@@ -241,7 +301,7 @@ lang: en
             <tr data-test-id="tab-aria-selected">
               <td></td>
               <th scope="row">
-                <code>aria-selected=<q>false</q></code>
+                <code>aria-selected="false"</code>
               </th>
               <td>
                 <code>button</code>
@@ -259,7 +319,7 @@ lang: en
             <tr data-test-id="tab-tabindex">
               <td></td>
               <th scope="row">
-                <code>tabindex=<q>-1</q></code>
+                <code>tabindex="-1"</code>
               </th>
               <td>
                 <code>button</code>
@@ -268,7 +328,7 @@ lang: en
                 <ul>
                   <li>Removes the element from the page <kbd>Tab</kbd> sequence.</li>
                   <li>Set when a tab is not selected so that only the selected (active) tab is in the page <kbd>Tab</kbd> sequence.</li>
-                  <li>Since an HTML <code>button</code> element is used for the tab, it is not necessary to set <code>tabindex=<q>0</q></code> on the selected (active) tab element.</li>
+                  <li>Since an HTML <code>button</code> element is used for the tab, it is not necessary to set <code>tabindex="0"</code> on the selected (active) tab element.</li>
                   <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
                 </ul>
               </td>
@@ -276,7 +336,7 @@ lang: en
             <tr data-test-id="tab-aria-controls">
               <td></td>
               <th scope="row">
-                <code>aria-controls=<q>IDREF</q></code>
+                <code>aria-controls="ID_REFERENCE"</code>
               </th>
               <td>
                 <code>button</code>
@@ -305,7 +365,7 @@ lang: en
             <tr data-test-id="tabpanel-aria-labelledby">
               <td></td>
               <th scope="row">
-                <code>aria-labelledby=<q>IDREF</q></code>
+                <code>aria-labelledby="ID_REFERENCE"</code>
               </th>
               <td>
                 <code>div</code>
@@ -319,22 +379,6 @@ lang: en
                 </ul>
               </td>
             </tr>
-            <tr data-test-id="tabpanel-tabindex">
-              <td></td>
-              <th scope="row">
-                <code>tabindex=<q>0</q></code>
-              </th>
-              <td>
-                <code>div</code>
-              </td>
-              <td>
-                <ul>
-                  <li>Puts the tabpanel in the page <kbd>Tab</kbd> sequence.</li>
-                  <li>Facilitates movement to panel content for assistive technology users.</li>
-                  <li>Especially helpful if there are panels that do not contain a focusable element.</li>
-                </ul>
-              </td>
-            </tr>
           </tbody>
         </table></div>
       </section>
@@ -342,8 +386,8 @@ lang: en
       <section>
         <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/tabs.css" type="tex/css">tabs.css</a></li>
-          <li>Javascript: <a href="js/tabs.js" type="text/javascript">tabs.js</a></li>
+          <li>CSS: <a href="css/tabs.css" type="tex/css">tabs.css</a></li>
+          <li>Javascript: <a href="js/tabs-manual.js" type="text/javascript">tabs-manual.js</a></li>
         </ul>
       </section>
 
@@ -363,11 +407,8 @@ lang: en
     <nav>
       <a href="/patterns/tabpanel/">Tabs Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
     </nav>
-
-    <script src="js/tabs.js" type="text/javascript"></script>
-
   
-            <p>Page last updated: November 23, 2021</p>
+            <p>Page last updated: March 22, 2022</p>
           </div>
         </div>
       
