@@ -1,1 +1,31 @@
-<svg height="84" viewBox="0 0 84 84" width="84" xmlns="http://www.w3.org/2000/svg"><path d="m2 2h80v80h-80z" fill="#eaeaea" stroke="#185a69" stroke-width="4"/><path d="m14.992 18.992h-13.992a3 3 0 0 1 -3-3v-14.992a3 3 0 0 1 3-3h41a3 3 0 0 1 3 3v14.992a3 3 0 0 1 -3 3h-13.991l-6.509 7.758z" fill="#fff" stroke="#185a69" stroke-width="4" transform="translate(22.5 16.25)"/><path d="m25.5 21h26v2h-26z" fill="#6a6a6a"/><path d="m25.5 27h18v2h-18z" fill="#6a6a6a"/><circle cx="43.5" cy="59.5" fill="#185a69" r="10.5"/><g fill="#fff"><path d="m0 0h2v8h-2z" transform="matrix(-1 0 0 -1 44.5 65.32)"/><path d="m0 0h2v2h-2z" transform="matrix(-1 0 0 -1 44.5 55.32)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Rectangle_623" x="-1.5" y="-1.5" width="87" height="87" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#aac7e5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-tooltip">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="tooltip" clip-path="url(#clip-tooltip)">
+    <rect width="84" height="84" fill="#fff"/>
+    <g id="Group_290" data-name="Group 290" transform="translate(-554 -682)">
+      <path id="Union_35" data-name="Union 35" d="M3,14.333H81a3,3,0,0,1,3,3v78a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3v-78A3,3,0,0,1,3,14.333Z" transform="translate(554 667.667)" fill="#d0e0f0"/>
+      <g transform="matrix(1, 0, 0, 1, 554, 682)" filter="url(#Rectangle_623)">
+        <rect id="Rectangle_623-2" data-name="Rectangle 623" width="72" height="72" rx="3" transform="translate(6 6)" fill="#fff"/>
+      </g>
+      <path id="Union_1" data-name="Union 1" d="M14.992,18.992H1a3,3,0,0,1-3-3V1A3,3,0,0,1,1-2H42a3,3,0,0,1,3,3V15.992a3,3,0,0,1-3,3H28.009L21.5,26.75Z" transform="translate(574.5 700.25)" fill="#d0e0f0"/>
+      <rect id="Rectangle_183" data-name="Rectangle 183" width="26" height="2" transform="translate(579 705)" fill="#215a9c"/>
+      <rect id="Rectangle_184" data-name="Rectangle 184" width="18" height="2" transform="translate(579 711)" fill="#215a9c"/>
+      <g id="Group_271" data-name="Group 271" transform="translate(-3)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="10.5" cy="10.5" r="10.5" transform="translate(589 733)" fill="#215a9c"/>
+        <rect id="Rectangle_185" data-name="Rectangle 185" width="2" height="8" transform="translate(600.5 749.32) rotate(180)" fill="#fff"/>
+        <rect id="Rectangle_186" data-name="Rectangle 186" width="2" height="2" transform="translate(600.5 739.32) rotate(180)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,44 @@
-<svg height="84" viewBox="0 0 84 84" width="84" xmlns="http://www.w3.org/2000/svg"><g stroke="#185a69"><path d="m2 2h80v80h-80z" fill="#eaeaea" stroke-width="4"/><rect fill="#fff" height="16" rx="1" stroke-width="4" width="64" x="10" y="10"/><path d="m565.115 90 7.286 7.859-7.286 7.859" fill="none" stroke-width="2" transform="translate(-536.615 -79.572)"/><path d="m565.115 90 7.286 7.859-7.286 7.859" fill="none" stroke-width="2" transform="translate(-517.615 -79.572)"/></g><path d="m16 17h9v2h-9z" fill="#6a6a6a"/><path d="m40 17h9v2h-9z" fill="#6a6a6a"/><path d="m59 17h9v2h-9z" fill="#6a6a6a"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Rectangle_481" x="-0.5" y="1.5" width="85" height="31" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#aac7e5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_477" x="-0.5" y="1.5" width="85" height="31" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-color="#aac7e5"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_481)">
+        <rect id="Rectangle_481-2" data-name="Rectangle 481" width="70" height="16" rx="3" transform="translate(1053 445)" fill="#fff"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-breadcrumb">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="breadcrumb" clip-path="url(#clip-breadcrumb)">
+    <rect width="84" height="84" fill="#fff"/>
+    <g id="Group_278" data-name="Group 278" transform="translate(-892 -49)">
+      <path id="Union_11" data-name="Union 11" d="M3,14.333H81a3,3,0,0,1,3,3v78a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3v-78A3,3,0,0,1,3,14.333Z" transform="translate(892 34.667)" fill="#d0e0f0"/>
+      <g transform="matrix(1, 0, 0, 1, 892, 49)" filter="url(#Rectangle_477)">
+        <rect id="Rectangle_477-2" data-name="Rectangle 477" width="70" height="16" rx="3" transform="translate(7 9)" fill="#fff"/>
+      </g>
+      <rect id="Rectangle_478" data-name="Rectangle 478" width="9" height="2" transform="translate(906 65)" fill="#215a9c"/>
+      <rect id="Rectangle_479" data-name="Rectangle 479" width="9" height="2" transform="translate(933 65)" fill="#215a9c"/>
+      <rect id="Rectangle_480" data-name="Rectangle 480" width="9" height="2" transform="translate(955 65)" fill="#215a9c"/>
+      <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-154 -387)" clip-path="url(#clip-path)">
+        <g id="Group_257" data-name="Group 257" transform="translate(1076.857 443.666)">
+          <path id="Path_10" data-name="Path 10" d="M565.848,109.921l-1.467-1.64,6.656-8.66-6.656-8.66,1.467-1.64,7.916,10.3Z" transform="translate(-567.115 -90)" fill="#d0e0f0"/>
+          <path id="Path_11" data-name="Path 11" d="M565.848,109.921l-1.467-1.64,6.656-8.66-6.656-8.66,1.467-1.64,7.916,10.3Z" transform="translate(-546.115 -90)" fill="#d0e0f0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

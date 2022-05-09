@@ -1,1 +1,28 @@
-<svg height="84" viewBox="0 0 84 84" width="84" xmlns="http://www.w3.org/2000/svg"><path d="m2 2h80v80h-80z" fill="#eaeaea" stroke="#185a69" stroke-width="4"/><rect fill="#fff" height="16" rx="1" stroke="#185a69" stroke-width="4" width="64" x="10" y="10"/><path d="m17 17h26v2h-26z" fill="#6a6a6a"/><g fill="none" stroke="#185a69" stroke-width="2" transform="translate(-313.546 -33.278)"><path d="m381.845 48.254-6.045 6.046"/><path d="m375.8 48.254 6.048 6.048"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Rectangle_474" x="-0.5" y="1.5" width="85" height="33" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#aac7e5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-alert">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="alert" clip-path="url(#clip-alert)">
+    <rect width="84" height="84" fill="#fff"/>
+    <g id="Group_276" data-name="Group 276" transform="translate(-668 -48)">
+      <path id="Union_10" data-name="Union 10" d="M3,14.333H81a3,3,0,0,1,3,3v78a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3v-78A3,3,0,0,1,3,14.333Z" transform="translate(668 33.667)" fill="#d0e0f0"/>
+      <g transform="matrix(1, 0, 0, 1, 668, 48)" filter="url(#Rectangle_474)">
+        <rect id="Rectangle_474-2" data-name="Rectangle 474" width="70" height="18" rx="3" transform="translate(7 9)" fill="#fff"/>
+      </g>
+      <rect id="Rectangle_475" data-name="Rectangle 475" width="28" height="2" transform="translate(682 65)" fill="#6a6a6a"/>
+      <g id="Group_256" data-name="Group 256" transform="translate(-400.985 -542)">
+        <path id="Path_18" data-name="Path 18" d="M381.845,48.254,375.8,54.3" transform="translate(758.454 556.722)" fill="none" stroke="#6a6a6a" stroke-width="2"/>
+        <path id="Path_19" data-name="Path 19" d="M375.8,48.254l6.048,6.048" transform="translate(758.454 556.722)" fill="none" stroke="#6a6a6a" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

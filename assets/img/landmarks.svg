@@ -1,14 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
-  <g id="Landmark_Regions" data-name="Landmark Regions" transform="translate(-55 -788)">
-    <rect id="Rectangle_216" data-name="Rectangle 216" width="80" height="80" transform="translate(57 790)" fill="#eaeaea" stroke="#185a69" stroke-width="4"/>
-    <g id="Rectangle_220" data-name="Rectangle 220" transform="translate(67 800)" fill="#fff" stroke="#185a69" stroke-width="4">
-      <rect width="60" height="60" rx="1" stroke="none"/>
-      <rect x="-2" y="-2" width="64" height="64" rx="3" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Rectangle_645" x="-1.5" y="-1.5" width="87" height="87" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#aac7e5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-landmarks">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="landmarks" clip-path="url(#clip-landmarks)">
+    <rect width="84" height="84" fill="#fff"/>
+    <g id="Group_291" data-name="Group 291" transform="translate(-554 -787)">
+      <path id="Union_38" data-name="Union 38" d="M3,14.333H81a3,3,0,0,1,3,3v78a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3v-78A3,3,0,0,1,3,14.333Z" transform="translate(554 772.667)" fill="#d0e0f0"/>
+      <g transform="matrix(1, 0, 0, 1, 554, 787)" filter="url(#Rectangle_645)">
+        <rect id="Rectangle_645-2" data-name="Rectangle 645" width="72" height="72" rx="3" transform="translate(6 6)" fill="#fff"/>
+      </g>
+      <rect id="Rectangle_221" data-name="Rectangle 221" width="48" height="2" transform="translate(574 854) rotate(-90)" fill="#215a9c"/>
+      <rect id="Rectangle_225" data-name="Rectangle 225" width="28" height="2" transform="translate(616 853) rotate(-90)" fill="#215a9c"/>
+      <rect id="Rectangle_224" data-name="Rectangle 224" width="56" height="2" transform="translate(632 825) rotate(180)" fill="#215a9c"/>
+      <rect id="Rectangle_226" data-name="Rectangle 226" width="72" height="2" transform="translate(632 806) rotate(180)" fill="#215a9c"/>
+      <rect id="Rectangle_227" data-name="Rectangle 227" width="72" height="2" transform="translate(632 854) rotate(180)" fill="#215a9c"/>
     </g>
-    <rect id="Rectangle_221" data-name="Rectangle 221" width="45" height="2" transform="translate(79 853) rotate(-90)" fill="#185a69"/>
-    <rect id="Rectangle_225" data-name="Rectangle 225" width="28" height="2" transform="translate(113 852) rotate(-90)" fill="#185a69"/>
-    <rect id="Rectangle_224" data-name="Rectangle 224" width="47" height="2" transform="translate(127 824) rotate(-180)" fill="#185a69"/>
-    <rect id="Rectangle_226" data-name="Rectangle 226" width="60" height="2" transform="translate(127 808) rotate(-180)" fill="#185a69"/>
-    <rect id="Rectangle_227" data-name="Rectangle 227" width="60" height="2" transform="translate(127 853) rotate(-180)" fill="#185a69"/>
   </g>
 </svg>

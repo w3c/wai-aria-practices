@@ -1,1 +1,30 @@
-<svg height="84" viewBox="0 0 84 84" width="84" xmlns="http://www.w3.org/2000/svg"><g stroke="#185a69" stroke-width="4"><path d="m2 2h80v80h-80z" fill="#eaeaea"/><rect fill="#fff" height="16" rx="1" width="64" x="10" y="10"/><rect fill="#fff" height="47" rx="1" width="64" x="10" y="26"/></g><path d="m16 17h18v2h-18z" fill="#6a6a6a"/><path d="m16 34h18v2h-18z" fill="#6a6a6a"/><path d="m12 40h60v10h-60z" fill="#eaeaea"/><path d="m16 54h24v2h-24z" fill="#6a6a6a"/><path d="m16 44h26v2h-26z" fill="#6a6a6a"/><path d="m16 64h23v2h-23z" fill="#6a6a6a"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Rectangle_515" x="5.5" y="-1.5" width="72" height="86" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#aac7e5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-combobox">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="combobox" clip-path="url(#clip-combobox)">
+    <rect width="84" height="84" fill="#fff"/>
+    <g id="Group_282" data-name="Group 282" transform="translate(-892 -152)">
+      <path id="Union_18" data-name="Union 18" d="M3,14.333H81a3,3,0,0,1,3,3v78a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3v-78A3,3,0,0,1,3,14.333Z" transform="translate(892 137.667)" fill="#d0e0f0"/>
+      <g transform="matrix(1, 0, 0, 1, 892, 152)" filter="url(#Rectangle_515)">
+        <rect id="Rectangle_515-2" data-name="Rectangle 515" width="57" height="71" rx="3" transform="translate(13 6)" fill="#fff"/>
+      </g>
+      <path id="Rectangle_516" data-name="Rectangle 516" d="M3,0H54a3,3,0,0,1,3,3V18a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V3A3,3,0,0,1,3,0Z" transform="translate(905 158)" fill="#215a9c"/>
+      <rect id="Rectangle_517" data-name="Rectangle 517" width="18" height="2" transform="translate(913 167)" fill="#fff"/>
+      <rect id="Rectangle_518" data-name="Rectangle 518" width="18" height="2" transform="translate(913 184)" fill="#6a6a6a"/>
+      <rect id="Rectangle_522" data-name="Rectangle 522" width="57" height="12" transform="translate(905 190)" fill="#e1ecf7"/>
+      <rect id="Rectangle_520" data-name="Rectangle 520" width="24" height="2" transform="translate(913 206)" fill="#6a6a6a"/>
+      <rect id="Rectangle_519" data-name="Rectangle 519" width="26" height="2" transform="translate(913 195)" fill="#215a9c"/>
+      <rect id="Rectangle_521" data-name="Rectangle 521" width="23" height="2" transform="translate(913 217)" fill="#6a6a6a"/>
+    </g>
+  </g>
+</svg>

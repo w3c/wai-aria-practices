@@ -1,1 +1,34 @@
-<svg height="84" viewBox="0 0 84 84" width="84" xmlns="http://www.w3.org/2000/svg"><path d="m2 2h80v80h-80z" fill="#eaeaea" stroke="#185a69" stroke-width="4"/><path d="m0 0 7.64 7.64 7.64-7.64z" fill="#185a69" transform="matrix(0 1 -1 0 17.64 58)"/><path d="m0 7.64 7.64-7.64 7.64 7.64z" fill="#185a69" transform="matrix(0 1 -1 0 74 58)"/><g fill="#fff"><rect height="39" rx="1" width="64" x="10" y="10"/><path d="m896.909 95.253-13.926-13.926-27.907 27.907" stroke="#707070" stroke-width="2" transform="translate(-822.909 -59.927)"/><path d="m882.714 90.528-9.2-9.2-18.438 18.437" stroke="#707070" stroke-width="2" transform="translate(-840.316 -50.457)"/></g><path d="m18.6 14.551a4.051 4.051 0 1 1 -4.049-4.051 4.051 4.051 0 0 1 4.049 4.051z" fill="none" stroke="#696969" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(8.08 7.948)"/><rect fill="none" height="39" rx="1" stroke="#185a69" stroke-width="4" width="64" x="10" y="10"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Rectangle_40" x="5.701" y="3.414" width="73" height="52" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#aac7e5" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="57.113" height="36.515" rx="3" fill="none" stroke="#fff" stroke-width="2"/>
+    </clipPath>
+    <clipPath id="clip-carousel">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="carousel" clip-path="url(#clip-carousel)">
+    <rect width="84" height="84" fill="#fff"/>
+    <g id="Group_280" data-name="Group 280" transform="translate(-669 -152)">
+      <path id="Union_8" data-name="Union 8" d="M3,14.333H81a3,3,0,0,1,3,3v78a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3v-78A3,3,0,0,1,3,14.333Z" transform="translate(669 137.667)" fill="#d0e0f0"/>
+      <g id="Group_263" data-name="Group 263" transform="translate(7 1.636)">
+        <path id="Icon_ionic-md-arrow-dropup" data-name="Icon ionic-md-arrow-dropup" d="M0,0,6.322,7.64,12.644,0Z" transform="translate(687.64 210.191) rotate(90)" fill="#185a69"/>
+        <path id="Icon_ionic-md-arrow-dropup-2" data-name="Icon ionic-md-arrow-dropup" d="M0,7.64,6.322,0l6.322,7.64Z" transform="translate(728.899 210.191) rotate(90)" fill="#185a69"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 669, 152)" filter="url(#Rectangle_40)">
+        <rect id="Rectangle_40-2" data-name="Rectangle 40" width="58" height="37" rx="3" transform="translate(13.2 10.91)" fill="#fff"/>
+      </g>
+      <path id="Path_13" data-name="Path 13" d="M18.681,14.591A4.091,4.091,0,1,1,14.591,10.5,4.091,4.091,0,0,1,18.681,14.591Z" transform="translate(683.236 158.425)" fill="#e9d047"/>
+      <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(683.089 163.399)" clip-path="url(#clip-path)">
+        <path id="Union_17" data-name="Union 17" d="M15.908,24.813H0L17.872,7.55l8.059,7.784L42.146,0,54.528,12.382l-.716,11.612-35.9.775-.045.043Z" transform="translate(3.738 12.856)" fill="#185a69"/>
+      </g>
+    </g>
+  </g>
+</svg>
