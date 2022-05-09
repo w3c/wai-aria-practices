@@ -49,7 +49,6 @@ lang: en
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
         <h2>APG Resources</h2>
-        <h3>Building blocks that help you make the web accessible</h3>
         <p>
             Learn how to make common rich internet application patterns and
             widgets accessible by applying WAI-ARIA roles, states and
@@ -125,7 +124,6 @@ lang: en
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>Current Work</h2>
-        <h3>Check out our most recent work</h3>
         <p>
             Take a look at the plan overview for WAI-ARIA Authoring Practices,
             priorities and work in progress.
@@ -207,7 +205,6 @@ lang: en
         <h2 class="collaboration-h2">
           Collaboration
         </h2>
-        <h3>Get involved with our community and our work</h3>
         <p class="collaboration-p">
           
         The APG Task Force conducts its work using a variety of synchronous and
