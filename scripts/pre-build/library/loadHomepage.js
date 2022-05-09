@@ -55,7 +55,6 @@ const loadHomepage = async () => {
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
         <h2>${body.querySelector("#resources h2").innerHTML}</h2>
-        <h3>${body.querySelector("#resources h3").innerHTML}</h3>
         <p>${body.querySelector("#resources p").innerHTML}</p>
       </div>
       <div class="contained margin-fix">
@@ -90,7 +89,6 @@ const loadHomepage = async () => {
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>${body.querySelector("#work h2").innerHTML}</h2>
-        <h3>${body.querySelector("#work h3").innerHTML}</h3>
         <p>${body.querySelector("#work p").innerHTML}</p>
       </div>
       <div class="contained margin-fix">
@@ -119,7 +117,6 @@ const loadHomepage = async () => {
         <h2 class="collaboration-h2">
           ${body.querySelector("#collaboration h2").innerHTML}
         </h2>
-        <h3>${body.querySelector("#collaboration h3").innerHTML}</h3>
         <p class="collaboration-p">
           ${body.querySelector("#collaboration p").innerHTML}
         </p>
