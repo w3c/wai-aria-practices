@@ -11,7 +11,7 @@ const loadIndex = async (filePath) => {
 
   const root = parseHtml(html);
 
-  walkHtmlElements(root, getHandleElement(permalink));
+  walkHtmlElements(root, getHandleElement({ permalink }));
 
   const { /* title, */ head, body } = getContent();
 

@@ -58,7 +58,7 @@ const loadExamples = async () => {
   );
 
   await editAppJs({ destinationExamplesPath });
-  // const getNotice = await loadGetNotice({ destinationExamplesPath });
+  const getNotice = await loadGetNotice({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {
     const exampleRelative = path.relative(examplesPath, currentPath);
@@ -69,7 +69,7 @@ const loadExamples = async () => {
     const { fileName, fileContent } = await loadExample(currentPath, {
       exampleRelativeDirectory,
       lastModifiedDateFormatted,
-      // getNotice,
+      getNotice,
     });
 
     const destinationPath = path.join(

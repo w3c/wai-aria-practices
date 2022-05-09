@@ -53,7 +53,33 @@ lang: en
             </ul>
           </nav>
           <div class="sidebar-left">
-            <h2 class="followed-by-support-notice">About This Example</h2>
+            
+            <h2>About This Example</h2>
+            <details id="support-notice" class="note">
+    <summary>Important Note About Use of This Example</summary>
+    <p>
+        Note: This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.
+    </p>
+    <ul>
+    <li>
+        There may be support gaps in some
+        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        Testing code based on this example with assistive technologies is essential before considering use in production systems.
+    </li>
+    <li>
+        The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a>
+        is developing measurements of assistive technology support for APG examples.
+    </li>
+    <li>
+        Robust accessibility can be further optimized by choosing implementation patterns that
+        <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
+        and heeding the warning that
+        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+    </li>
+    </ul>
+</details>
+          
   
 
   <div>

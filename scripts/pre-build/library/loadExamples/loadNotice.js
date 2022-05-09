@@ -2,6 +2,7 @@ const path = require("path");
 const fs = require("fs/promises");
 const { parse: parseHtml } = require("node-html-parser");
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
+const { fixLink } = require("../abstractApgContent/fixLinks");
 
 const loadGetNotice = async ({ destinationExamplesPath }) => {
   const noticePath = path.join(destinationExamplesPath, "js", "notice.html");
