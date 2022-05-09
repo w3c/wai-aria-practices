@@ -6,6 +6,7 @@ ref: /aria-practices/
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
+feedbackmail: public-aria-practices@w3.org
 permalink: /index/carousel/carousel-1-prev-next
 
 lang: en

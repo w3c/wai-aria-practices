@@ -6,6 +6,7 @@ ref: /aria-practices/
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
+feedbackmail: public-aria-practices@w3.org
 permalink: /index/treeview/treeview-1/treeview-1b
 
 lang: en
