@@ -15,6 +15,7 @@ const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
     sections.keyboardInterface,
     sections.gridAndTableProperties,
     sections.rangeRelatedProperties,
+    sections.structuralRoles,
     combineFundamentals(
       [sections.presentationRole, sections.childrenPresentational],
       { slug: "hiding-semantics", name: "Hiding Semantics" }

@@ -83,6 +83,16 @@ To fully present and describe a grid or table, in addition to parsing the header
       ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
               </li>
              
+              <li class="tile tile-structural-roles">
+                <h2 class="tile-name">
+                  <a href="/fundamentals/structural-roles/">
+                    <span>Structural Roles</span>
+                  </a>
+                </h2>
+                <div class="tile-introduction">
+      ARIA provides a set of roles that convey the accessibility semantics of structures on a page.</div>
+              </li>
+             
               <li class="tile tile-hiding-semantics">
                 <h2 class="tile-name">
                   <a href="/fundamentals/hiding-semantics/">

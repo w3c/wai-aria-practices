@@ -170,6 +170,34 @@ const sections = {
       return element.outerHTML;
     }),
   },
+  structuralRoles: {
+    permalink: "/fundamentals/structural-roles/",
+    slug: "structural-roles",
+    identify: (element) => element.getAttribute("id") === "structural_roles",
+    getName: removeLinks(
+      removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
+    ),
+    getIntroduction: getIntroductionFormatter("structural-roles"),
+    getOutline: () => [
+      { slug: "introduction", name: "Introduction" },
+      { slug: "all-structural-roles", name: "All Structural Roles" },
+    ],
+    getContent: removeSectionNumbers(
+      renumberHeadings(-1, (element) => {
+        element.querySelector("h2").remove();
+        element
+          .querySelector(".widget-features")
+          .insertAdjacentHTML(
+            "beforebegin",
+            `<h3 id="all-structural-roles">All Structural Roles</h3>`
+          );
+        return `
+          <h3 id="introduction">Introduction</h3>
+          ${element.outerHTML}
+        `;
+      })
+    ),
+  },
   childrenPresentational: {
     permalink: "/fundamentals/hiding-semantics/",
     slug: "children-presentational",
