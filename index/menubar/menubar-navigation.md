@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,7 +82,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -652,7 +652,7 @@ lang: en
           <td>
             <ul>
               <li>Identifies the element as a <code>menubar</code> container for a set of <code>menuitem</code> elements.</li>
-              <li>Is not focusable because focus is managed using <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a></li>
+              <li>Is not focusable because focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a></li>
             </ul>
           </td>
         </tr>
@@ -714,7 +714,7 @@ lang: en
               <li>Includes the element in the <kbd>Tab</kbd> sequence.</li>
               <li>Only one menubar item has <code>tabindex="0"</code>.</li>
               <li>On page load, the first menubar item has <code>tabindex="0"</code>.</li>
-              <li>Focus is managed using <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>Focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>

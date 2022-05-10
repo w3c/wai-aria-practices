@@ -563,7 +563,7 @@ lang: en
         <p>
           Note that in this example, selection and focus are distinct; moving focus does not change which node is selected.
           Because selection does not follow focus, keyboard and screen reader users can navigate and explore the tree without changing the content of the file viewer.
-          To learn more about this aspect of the design, read the guidance section about <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus.</a>
+          To learn more about this aspect of the design, read the guidance section about <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus.</a>
         </p>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
@@ -673,7 +673,7 @@ lang: en
                   <li>Identifies the <code>ul</code> element as a <code>tree</code> widget.</li>
                   <li>
                     Because focus movement in the tree is managed with a
-                    <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>,
+                    <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>,
                     the <code>tree</code> container does not need a <code>tabindex</code> attribute.
                   </li>
                 </ul>
@@ -713,7 +713,7 @@ lang: en
                   <li>In this implementation, the first <code>treeitem</code> in the <code>tree</code> is included in the tab sequence when the page loads.</li>
                   <li>
                     When the user moves focus in the <code>tree</code>, the element included in the tab sequence changes to the element with focus as described in the section on
-                    <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a>
+                    <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a>
                   </li>
                  </ul>
               </td>

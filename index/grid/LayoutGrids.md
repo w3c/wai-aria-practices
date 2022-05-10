@@ -72,8 +72,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -84,7 +84,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -635,7 +635,7 @@ lang: en
           <td><code>div</code></td>
           <td>
             Identifies the element containing the grid widget.
-            Because focus is managed using <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>, the grid element is not focusable.
+            Because focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>, the grid element is not focusable.
           </td>
         </tr>
         <tr data-test-id="aria-labelledby">
@@ -703,7 +703,7 @@ lang: en
               <li>Applied to all cells that do not contain an interactive widget that consumes arrow keys, such as a link or button.</li>
               <li>Changed dynamically to <code>0</code> by the JavaScript when the cell is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -717,7 +717,7 @@ lang: en
               <li>Clicks and keyboard commands that move focus inside the grid can focus widgets if the containing cell is not focusable.</li>
               <li>Changed dynamically to <code>0</code> by the JavaScript when the widget is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -730,7 +730,7 @@ lang: en
               <li>Makes the element focusable and includes it in the page <kbd>Tab</kbd> sequence.</li>
               <li>Set dynamically by the JavaScript when the element is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one element within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>

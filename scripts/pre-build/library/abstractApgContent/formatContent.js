@@ -8,7 +8,7 @@ const renumberHeadings = require("../../utilities/renumberHeadings");
 const fuzzysearch = (needle, haystack) =>
   fuzzysearchSensitive(needle, haystack.toLowerCase());
 
-const getFundamentalOutline =
+const getPracticeOutline =
   ({ startsWithIntroduction }) =>
   (element) => {
     const outline = startsWithIntroduction
@@ -30,7 +30,7 @@ const sections = {
     getContent: (element) => element.innerHTML,
   },
   readMeFirst: {
-    permalink: "/fundamentals/read-me-first/",
+    permalink: "/practices/read-me-first/",
     permalinkReplacesFormerAnchorId: "read_me_first",
     slug: "read-me-first",
     identify: (element) => {
@@ -44,7 +44,7 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("read-me-first"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: false }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: false }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -54,7 +54,7 @@ const sections = {
   },
 
   landmarkRegions: {
-    permalink: "/fundamentals/landmark-regions/",
+    permalink: "/practices/landmark-regions/",
     permalinkReplacesFormerAnchorId: "aria_landmark",
     slug: "landmark-regions",
     identify: (element) => element.getAttribute("id") === "aria_landmark",
@@ -62,19 +62,19 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("landmark-regions"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: true }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
         return `
           <h3 id="introduction">Introduction</h3>
-          ${element.outerHTML};
+          ${element.outerHTML}
         `;
       })
     ),
   },
   namesAndDescriptions: {
-    permalink: "/fundamentals/names-and-descriptions/",
+    permalink: "/practices/names-and-descriptions/",
     permalinkReplacesFormerAnchorId: "names_and_descriptions",
     slug: "names-and-descriptions",
     identify: (element) =>
@@ -83,19 +83,19 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("names-and-descriptions"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: true }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
         return `
           <h3 id="introduction">Introduction</h3>
-          ${element.outerHTML};
+          ${element.outerHTML}
         `;
       })
     ),
   },
   keyboardInterface: {
-    permalink: "/fundamentals/keyboard-interface/",
+    permalink: "/practices/keyboard-interface/",
     permalinkReplacesFormerAnchorId: "keyboard",
     slug: "keyboard-interface",
     identify: (element) => element.getAttribute("id") === "keyboard",
@@ -103,19 +103,19 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("keyboard-interface"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: true }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
         return `
           <h3 id="introduction">Introduction</h3>
-          ${element.outerHTML};
+          ${element.outerHTML}
         `;
       })
     ),
   },
   gridAndTableProperties: {
-    permalink: "/fundamentals/grid-and-table-properties/",
+    permalink: "/practices/grid-and-table-properties/",
     permalinkReplacesFormerAnchorId: "gridAndTableProperties",
     slug: "grid-and-table-properties",
     identify: (element) =>
@@ -124,19 +124,19 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("grid-and-table-properties"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: true }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
         return `
           <h3 id="introduction">Introduction</h3>
-          ${element.outerHTML};
+          ${element.outerHTML}
         `;
       })
     ),
   },
   rangeRelatedProperties: {
-    permalink: "/fundamentals/range-related-properties/",
+    permalink: "/practices/range-related-properties/",
     permalinkReplacesFormerAnchorId: "range_related_properties",
     slug: "range-related-properties",
     identify: (element) =>
@@ -145,33 +145,33 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("range-related-properties"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: true }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
         return `
           <h3 id="introduction">Introduction</h3>
-          ${element.outerHTML};
+          ${element.outerHTML}
         `;
       })
     ),
   },
   presentationRole: {
-    permalink: "/fundamentals/hiding-semantics/",
+    permalink: "/practices/hiding-semantics/",
     slug: "presentation-role",
     identify: (element) => element.getAttribute("id") === "presentation_role",
     getName: removeLinks(
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("presentation-role"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: false }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: false }),
     getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "presentation-role");
       return element.outerHTML;
     }),
   },
   structuralRoles: {
-    permalink: "/fundamentals/structural-roles/",
+    permalink: "/practices/structural-roles/",
     slug: "structural-roles",
     identify: (element) => element.getAttribute("id") === "structural_roles",
     getName: removeLinks(
@@ -199,7 +199,7 @@ const sections = {
     ),
   },
   childrenPresentational: {
-    permalink: "/fundamentals/hiding-semantics/",
+    permalink: "/practices/hiding-semantics/",
     slug: "children-presentational",
     identify: (element) =>
       element.getAttribute("id") === "children_presentational",
@@ -207,7 +207,7 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("children-presentational"),
-    getOutline: getFundamentalOutline({ startsWithIntroduction: false }),
+    getOutline: getPracticeOutline({ startsWithIntroduction: false }),
     getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "children-presentational");
       return element.outerHTML;

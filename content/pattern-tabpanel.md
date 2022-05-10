@@ -125,7 +125,7 @@ lang: en
             It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency.
             This typically requires tab panel content to be preloaded.
             Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list.
-            For additional guidance, see <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_selection_follows_focus" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>
             When a tab list has its <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>:

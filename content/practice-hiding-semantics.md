@@ -7,7 +7,7 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /fundamentals/hiding-semantics/
+permalink: /practices/hiding-semantics/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -21,7 +21,7 @@ lang: en
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
-const addBodyClass = "fundamental-page";
+const addBodyClass = "practice-page";
 if (addBodyClass) {
   document.body.classList.add(addBodyClass);
 }
@@ -92,7 +92,7 @@ if (addBodyClass) {
       
       <p>
         When <code>role="presentation"</code> is specified on an element, if a
-        <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
+        <a href="{{ site.baseurl }}/practices/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
         does not exist, it has the following three effects.
       </p>
       <ol>
@@ -189,7 +189,7 @@ if (addBodyClass) {
     <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Title of My Tab<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
     <p>
       See the
-      <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/#presentation-role">
+      <a href="{{ site.baseurl }}/practices/hiding-semantics/#presentation-role">
         section about role <code>presentation</code>
       </a>
       for a detailed explanation of what it does.

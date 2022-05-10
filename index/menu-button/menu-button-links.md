@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,7 +82,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -106,7 +106,7 @@ lang: en
         Another reason for applying the <code>menuitem</code> role to the <code>a</code> element instead of the <code>li</code> element is that the semantics of descendants of <code>menuitem</code> elements are not exposed in the accessibility tree.
         That is, an item in a menu can only be a <code>menuitem</code> because accessibility APIs do not enable assistive technologies to render elements contained inside of an item in a menu.
         For a more detailed description of this constraint, see
-        <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/#children-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational.</a>
+        <a href="{{ site.baseurl }}/practices/hiding-semantics/#children-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational.</a>
       </p>
       <p>Similar examples include: </p>
       <ul>
@@ -380,7 +380,7 @@ lang: en
               <td>
                 <ul>
                   <li>Hides the implied <code>listitem</code> role of the <code>li</code> element from assistive technologies.</li>
-                  <li>For more details, see <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/#presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</a>.</li>
+                  <li>For more details, see <a href="{{ site.baseurl }}/practices/hiding-semantics/#presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</a>.</li>
                 </ul>
               </td>
             </tr>

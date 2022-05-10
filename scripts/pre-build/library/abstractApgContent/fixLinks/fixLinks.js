@@ -6,9 +6,9 @@ const manualRemappings = {
   "/#aria_ex": "/patterns/",
 
   // Special case since two sections are combined here
-  "/#presentation_role": "/fundamentals/hiding-semantics/#presentation-role",
+  "/#presentation_role": "/practices/hiding-semantics/#presentation-role",
   "/#children_presentational":
-    "/fundamentals/hiding-semantics/#children-presentational",
+    "/practices/hiding-semantics/#children-presentational",
 };
 
 const urlRewrites = [

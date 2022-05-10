@@ -90,7 +90,7 @@ lang: en
           <li>
             When a <code>menu</code> opens, or when a <code>menubar</code> receives focus,
             keyboard focus is placed on the first item.
-            All items are focusable as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>.
+            All items are focusable as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>.
           </li>
           <li><kbd>Enter</kbd>:
             <ul>
@@ -202,7 +202,7 @@ lang: en
           </li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-expanded" class="property-reference">aria-expanded</a> set to <code>false</code> when its child menu is not visible and set to <code>true</code> when the child menu is visible.</li>
-          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>:
+          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>:
             <ul>
               <li>The menu container has <code>tabindex</code> set to <code>-1</code> or <code>0</code> and <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to the ID of the focused item. </li>
               <li>Each item in the menu has <code>tabindex</code> set to <code>-1</code>, except in a menubar, where the first item has <code>tabindex</code> set to <code>0</code>. </li>

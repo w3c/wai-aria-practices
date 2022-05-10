@@ -101,7 +101,7 @@ lang: en
           <li>
             Typically, disabled elements are not focusable when navigating with a keyboard.
             However, in circumstances where discoverability of a function is crucial, it may be helpful if disabled controls are focusable so screen reader users are more likely to be aware of their presence.
-            For additional guidance, see <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_disabled_controls" class="sec-ref">Focusability of disabled controls</a>.
+            For additional guidance, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_disabled_controls" class="sec-ref">Focusability of disabled controls</a>.
           </li>
           <li>In applications where quick access to a toolbar is important, such as accessing an editor's toolbar from its text area, a documented shortcut key for moving focus from the relevant context to its corresponding toolbar is recommended.</li>
         </ol></div>

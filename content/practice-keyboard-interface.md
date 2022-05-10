@@ -7,7 +7,7 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /fundamentals/keyboard-interface/
+permalink: /practices/keyboard-interface/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -21,7 +21,7 @@ lang: en
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
-const addBodyClass = "fundamental-page";
+const addBodyClass = "practice-page";
 if (addBodyClass) {
   document.body.classList.add(addBodyClass);
 }
@@ -159,7 +159,7 @@ if (addBodyClass) {
         <li>Visibility of the focus indicator: Users need to be able to easily distinguish the keyboard focus indicator from other features of the visual design. Just as a mouse user may move the mouse to help find the mouse pointer, a keyboard user may press a navigation key to watch for movement. If visual changes in response to focus movement are subtle, many users will lose track of focus and be unable to operate. Authors are advised to rely on the default focus indicators provided by browsers. If overriding the default, consider:
           <ul>
             <li>something about ... Colors and gradients can disappear in high contrast modes.</li>
-            <li>Users need to be able to easily distinguish between focus and selection as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_vs_selection" class="sec-ref">Focus VS Selection and the Perception of Dual Focus</a>, especially when a component that contains selected elements does not contain the focus.</li>
+            <li>Users need to be able to easily distinguish between focus and selection as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_vs_selection" class="sec-ref">Focus VS Selection and the Perception of Dual Focus</a>, especially when a component that contains selected elements does not contain the focus.</li>
             <li>... other considerations to be added ...</li>
           </ul>
         </li>
@@ -256,7 +256,7 @@ if (addBodyClass) {
     <section id="kbd_general_between"><div class="header-wrapper"><h2 id="x6-5-keyboard-navigation-between-components-the-tab-sequence">Keyboard Navigation Between Components (The Tab Sequence)</h2></div>
       
 
-      <p> As explained in section <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, all interactive UI components need to be reachable via the keyboard. This is best achieved by either including them in the tab sequence or by making them accessible from a component that is in the tab sequence, e.g., as part of a composite component. This section addresses building and managing the tab sequence, and subsequent sections cover making focusable elements that are contained within components keyboard accessible. </p>
+      <p> As explained in section <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, all interactive UI components need to be reachable via the keyboard. This is best achieved by either including them in the tab sequence or by making them accessible from a component that is in the tab sequence, e.g., as part of a composite component. This section addresses building and managing the tab sequence, and subsequent sections cover making focusable elements that are contained within components keyboard accessible. </p>
 
       <p>
         The [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-html" title="HTML Standard">HTML</a></cite>] <a href="https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute">tabindex</a> and [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>] <a href="https://www.w3.org/TR/SVG2/struct.html#tabindexattribute">tabindex</a> attributes can be used to add and remove elements from the tab sequence.
@@ -271,7 +271,7 @@ if (addBodyClass) {
       <p>
         The default order of elements in the tab sequence is the order of elements in the DOM.
         The DOM order also determines screen reader reading order.
-        It is important to keep the keyboard tab sequence and the screen reader reading order aligned, logical, and predictable as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_discernable_predictable" class="sec-ref">Discernible and Predictable Keyboard Focus</a>.
+        It is important to keep the keyboard tab sequence and the screen reader reading order aligned, logical, and predictable as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_discernable_predictable" class="sec-ref">Discernible and Predictable Keyboard Focus</a>.
         The most robust method of manipulating the order of the tab sequence while also maintaining alignment with the reading order that is currently available in all browsers is rearranging elements in the DOM.
       </p>
 
@@ -300,7 +300,7 @@ if (addBodyClass) {
       
 
       <p>
-        As described in section <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, the tab sequence should include only one focusable element of a composite UI component.
+        As described in section <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, the tab sequence should include only one focusable element of a composite UI component.
         Once a composite contains focus, keys other than <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> enable the user to move focus among its focusable elements.
         Authors are free to choose which keys move focus inside of a composite, but they are strongly advised to use the same key bindings as similar components in common GUI operating systems as demonstrated in <a href="{{ site.baseurl }}/patterns/" class="sec-ref">Design Patterns and Widgets</a>.
       </p>
@@ -376,7 +376,7 @@ if (addBodyClass) {
         <ul>
           <li>When the container element that has a role that supports aria-activedescendant is loaded or created, ensure that:
             <ul>
-              <li>The container element is included in the tab sequence as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> or is a focusable element of a composite that implements <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">a roving tabindex</a>.</li>
+              <li>The container element is included in the tab sequence as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> or is a focusable element of a composite that implements <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">a roving tabindex</a>.</li>
               <li>
                 It has <code>aria-activedescendant="IDREF"</code> where IDREF is the ID of the element within the container that should be identified as active when the widget receives focus.
                 The referenced element needs to meet the DOM relationship requirements described below.
@@ -464,7 +464,7 @@ if (addBodyClass) {
         </li>
       </ol>
 
-      <p>One design technique for mitigating the impact of including disabled elements in the path of keyboard focus is employing appropriate keyboard shortcuts as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_shortcuts" class="sec-ref">Keyboard Shortcuts</a>.</p>
+      <p>One design technique for mitigating the impact of including disabled elements in the path of keyboard focus is employing appropriate keyboard shortcuts as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_shortcuts" class="sec-ref">Keyboard Shortcuts</a>.</p>
     </section>
     <section id="kbd_common_conventions"><div class="header-wrapper"><h2 id="x6-8-key-assignment-conventions-for-common-functions">Key Assignment Conventions for Common Functions</h2></div>
       
@@ -557,8 +557,8 @@ if (addBodyClass) {
           </p>
 
           <ul>
-            <li><a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> </li>
-            <li><a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a> </li>
+            <li><a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> </li>
+            <li><a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a> </li>
           </ul>
 
           <p>
@@ -707,7 +707,7 @@ if (addBodyClass) {
         </section>
       </section>
     </section>
-  </section>;
+  </section>
         
           </div>
         </div>

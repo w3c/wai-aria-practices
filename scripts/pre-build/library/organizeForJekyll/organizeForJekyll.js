@@ -2,13 +2,13 @@ const fs = require("fs/promises");
 const path = require("path");
 const getHomePage = require("./pages/getHomePage");
 const getAboutPage = require("./pages/getAboutPage");
-const getFundamentalsPage = require("./pages/getFundamentalsPage");
-const getFundamentalPage = require("./pages/getFundamentalPage");
+const getPracticesPage = require("./pages/getPracticesPage");
+const getPracticePage = require("./pages/getPracticePage");
 const getPatternsPage = require("./pages/getPatternsPage");
 const getPatternPage = require("./pages/getPatternPage");
 
 const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
-  const fundamentals = [
+  const practices = [
     sections.readMeFirst,
     sections.landmarkRegions,
     sections.namesAndDescriptions,
@@ -16,7 +16,7 @@ const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
     sections.gridAndTableProperties,
     sections.rangeRelatedProperties,
     sections.structuralRoles,
-    combineFundamentals(
+    combinePractices(
       [sections.presentationRole, sections.childrenPresentational],
       { slug: "hiding-semantics", name: "Hiding Semantics" }
     ),
@@ -27,8 +27,8 @@ const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
     getAboutPage(sections),
     getPatternsPage(patterns),
     ...patterns.map((pattern) => getPatternPage(pattern)),
-    getFundamentalsPage(fundamentals),
-    ...fundamentals.map((fundamental) => getFundamentalPage(fundamental)),
+    getPracticesPage(practices),
+    ...practices.map((practice) => getPracticePage(practice)),
   ];
 
   await Promise.all(
@@ -39,21 +39,21 @@ const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
   );
 };
 
-const combineFundamentals = (fundamentals, overrides = {}) => {
+const combinePractices = (practices, overrides = {}) => {
   return {
-    slug: overrides.slug ?? fundamentals[0].slug,
-    name: overrides.name ?? fundamentals[0].name,
-    permalink: overrides.permalink ?? fundamentals[0].permalink,
-    introduction: overrides.introduction ?? fundamentals[0].introduction,
+    slug: overrides.slug ?? practices[0].slug,
+    name: overrides.name ?? practices[0].name,
+    permalink: overrides.permalink ?? practices[0].permalink,
+    introduction: overrides.introduction ?? practices[0].introduction,
     outline:
       overrides.outline ??
-      fundamentals.map((fundamental) => ({
-        slug: fundamental.slug,
-        name: fundamental.name,
+      practices.map((practice) => ({
+        slug: practice.slug,
+        name: practice.name,
       })),
     content:
       overrides.content ??
-      fundamentals.map((fundamental) => fundamental.content).join(" "),
+      practices.map((practice) => practice.content).join(" "),
   };
 };
 

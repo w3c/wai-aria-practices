@@ -7,7 +7,7 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /fundamentals/range-related-properties/
+permalink: /practices/range-related-properties/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -21,7 +21,7 @@ lang: en
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
-const addBodyClass = "fundamental-page";
+const addBodyClass = "practice-page";
 if (addBodyClass) {
   document.body.classList.add(addBodyClass);
 }
@@ -379,7 +379,7 @@ if (addBodyClass) {
 
       <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Price per paperclip: $<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"0.01"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0.5"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">step</span>=<span class="hljs-string">"0.01"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></code></pre>
     </section>
-  </section>;
+  </section>
         
           </div>
         </div>

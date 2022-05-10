@@ -133,7 +133,7 @@ lang: en
             has either role <a href="https://w3c.github.io/aria/#region" class="role-reference">region</a>
             or role <a href="https://w3c.github.io/aria/#group" class="role-reference">group.</a>
             The most appropriate role for the carousel container depends on the information architecture of the page.
-            See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/">landmark regions guidance</a> to determine whether the carousel warrants being designated as a landmark region.
+            See the <a href="{{ site.baseurl }}/practices/landmark-regions/">landmark regions guidance</a> to determine whether the carousel warrants being designated as a landmark region.
           </li>
           <li>The carousel container has the <a href="https://w3c.github.io/aria/#aria-roledescription" class="property-reference">aria-roledescription</a> property set to <code>carousel</code>.</li>
           <li>

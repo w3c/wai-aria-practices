@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,7 +82,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -296,7 +296,7 @@ lang: en
         <strong>NOTE:</strong> When visual focus is in the listbox, DOM focus remains on the textbox and the value of <code>aria-activedescendant</code> on the textbox is set to a value that refers to the listbox option that is visually indicated as focused.
         Where the following descriptions of keyboard commands mention focus, they are referring to the visual focus indicator.
         For more information about this focus management technique, see
-        <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
+        <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
       </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_listbox kbd_label" class="def">
         <thead>
@@ -463,7 +463,7 @@ lang: en
                 <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>input</code> element.</li>
                 <li>
                   For more information about this focus management technique, see
-                  <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
+                  <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
                 </li>
               </ul>
             </td>

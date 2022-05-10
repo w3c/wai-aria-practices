@@ -83,8 +83,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -95,7 +95,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -113,7 +113,7 @@ lang: en
     For illustrative and interoperability assessment purposes, this implementation includes a diverse set of widgets, some of which may not be ordinarily grouped in the same toolbar.
     For instance, it includes both a checkbox and toggle buttons. In a typical implementation, the design would use either one or the other but not both.
     Similarly, the edit field is included to help simulate actual implementation and is not intended to represent an actual rich text editor.
-    This example also illustrates the <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex method</a> for managing focus within a component.
+    This example also illustrates the <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex method</a> for managing focus within a component.
   </p>
   <section>
     <div class="example-header">
@@ -265,11 +265,11 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <ul>
       <li>
         When tabbing into the toolbar, focus returns to the control that last had focus.
-        Focus movement inside the toolbar is managed using <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.
+        Focus movement inside the toolbar is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.
     </li>
       <li>
         When any of the cut, copy and paste buttons are disabled they remain focusable to ensure screen reader users are aware of their presence.
-        For additional guidance, see <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_disabled_controls">Focusability of disabled controls.</a>
+        For additional guidance, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_disabled_controls">Focusability of disabled controls.</a>
       </li>
       <li><kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> navigate among elements in the toolbar so <kbd>Up Arrow</kbd> and <kbd>Down Arrow</kbd> are available to:
         <ul>
@@ -615,7 +615,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
             <td>
               <ul>
                 <li>Indicates the container is a <code>toolbar</code>.</li>
-                <li>The toolbar div is not focusable because focus is managed with a <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>The toolbar div is not focusable because focus is managed with a <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -647,7 +647,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
               <ul>
                 <li>Makes the toolbar item focusable but not part of the page <kbd>Tab</kbd> sequence.</li>
                 <li>Applied to all toolbar items contained in the toolbar except for one that is included in the page <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -665,7 +665,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
                 <li>Set on only one item contained in the toolbar.</li>
                 <li>On page load, set on the first item in the toolbar.</li>
                 <li>Moves with focus inside the toolbar so the most recently focused item is included in the page <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>

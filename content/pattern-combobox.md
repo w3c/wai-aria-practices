@@ -208,7 +208,7 @@ lang: en
           <li><kbd>Delete</kbd> (Optional): If the combobox is editable, returns focus to the combobox, removes the selected state if a suggestion was selected, and removes the inline autocomplete string if present.</li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
+          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
           <li>Selection follows focus in the listbox; the listbox allows only one suggested value to be selected at a time for the combobox value.</li>
         </ol></div>
         </section><section><div class="header-wrapper"><h3 id="grid-popup-keyboard-interaction">Grid Popup Keyboard Interaction</h3></div>
@@ -264,7 +264,7 @@ lang: en
           <li><kbd>Delete</kbd> (Optional): If the combobox is editable, returns focus to the combobox, removes the selected state if a suggestion was selected, and removes the inline autocomplete string if present.</li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
+          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
           <li>The grid allows only one suggested value to be selected at a time for the combobox value.</li>
           <li>In a grid popup, each suggested value may be represented by either a single cell or an entire row. This aspect of design effects focus and selection movement:
             <ol>
@@ -320,7 +320,7 @@ lang: en
           </li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Note</span></div><ol class="">
-        <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
+        <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant.</a></li>
         <li>The tree allows only one suggested value to be selected at a time for the combobox value.</li>
           <li>
             In a tree popup, some or all parent nodes may not be selectable values; they may serve as category labels for suggested values.
