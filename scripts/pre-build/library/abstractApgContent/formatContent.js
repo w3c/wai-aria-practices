@@ -29,23 +29,6 @@ const sections = {
     identify: (element) => element.tagName === "TITLE",
     getContent: (element) => element.innerHTML,
   },
-  abstract: {
-    permalink: "/about/",
-    identify: (element) => element.getAttribute("id") === "abstract",
-    getContent: (element) => {
-      if (!element.querySelector("h2")) {
-        element.insertAdjacentHTML("afterbegin", "<h2>Abstract</h2>");
-      }
-      return element.outerHTML;
-    },
-  },
-  introduction: {
-    permalink: "/about/",
-    identify: (element) => element.getAttribute("id") === "intro",
-    getContent: removeSectionNumbers((element) => {
-      return element.outerHTML;
-    }),
-  },
   readMeFirst: {
     permalink: "/fundamentals/read-me-first/",
     permalinkReplacesFormerAnchorId: "read_me_first",
@@ -203,20 +186,16 @@ const sections = {
     }),
   },
 
-  documentMeta: {
+  introduction: {
     permalink: "/about/",
-    identify: (element) => element.classList.contains("head"),
-    getContent: (element) => {
-      return element.querySelector("dl").outerHTML;
-    },
-  },
-
-  documentStatus: {
-    permalink: "/about/",
-    identify: (element) => element.getAttribute("id") === "sotd",
-    getContent: (element) => {
+    identify: (element) => element.getAttribute("id") === "intro",
+    getContent: removeSectionNumbers((element) => {
+      const firstP = element.querySelector("p");
+      if (fuzzysearch("this section is informative", firstP.textContent)) {
+        firstP.remove();
+      }
       return element.outerHTML;
-    },
+    }),
   },
 
   changelog: {
@@ -227,10 +206,46 @@ const sections = {
     }),
   },
 
+  editors: {
+    permalink: "/about/",
+    identify: (element) => element.classList.contains("head"),
+    getContent: (element) => {
+      const dl = element.querySelector("dl");
+      const children = dl.querySelectorAll("dt,dd");
+
+      let editors = "";
+      let formerEditors = "";
+      let mostRecentDt;
+      children.forEach((child) => {
+        if (child.tagName === "DT") {
+          mostRecentDt = child.textContent.trim();
+        }
+        if (mostRecentDt === "Editors:") {
+          if (child.tagName === "DT") {
+            child.textContent = "Current editors:";
+          }
+          editors += child.outerHTML;
+        }
+        if (mostRecentDt === "Former editors:") {
+          formerEditors += child.outerHTML;
+        }
+      });
+
+      if (!editors.length || !formerEditors.length) {
+        throw new Error("Failed to find list of editors");
+      }
+
+      return `<h3>Editors</h3><dl>${editors}${formerEditors}</dl>`;
+    },
+  },
+
   acknowledgements: {
     permalink: "/about/",
     identify: (element) => element.getAttribute("id") === "acknowledgements",
     getContent: removeSectionNumbers((element) => {
+      element
+        .querySelector(".header-wrapper")
+        .insertAdjacentHTML("afterend", `<div id="insert-editors-here"></div>`);
       return element.outerHTML;
     }),
   },
