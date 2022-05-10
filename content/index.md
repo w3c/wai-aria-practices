@@ -16,13 +16,13 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
-    <link rel="stylesheet" href="/assets/homepage.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/homepage.css">
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">
         <div class="top-section">
@@ -286,4 +286,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

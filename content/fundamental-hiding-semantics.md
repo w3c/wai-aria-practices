@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
 const addBodyClass = "fundamental-page";
@@ -92,7 +92,7 @@ if (addBodyClass) {
       
       <p>
         When <code>role="presentation"</code> is specified on an element, if a
-        <a href="/fundamentals/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
+        <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
         does not exist, it has the following three effects.
       </p>
       <ol>
@@ -189,7 +189,7 @@ if (addBodyClass) {
     <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Title of My Tab<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
     <p>
       See the
-      <a href="/fundamentals/hiding-semantics/#presentation-role">
+      <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/#presentation-role">
         section about role <code>presentation</code>
       </a>
       for a detailed explanation of what it does.
@@ -210,4 +210,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

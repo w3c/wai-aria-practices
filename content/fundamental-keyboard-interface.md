@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
 const addBodyClass = "fundamental-page";
@@ -105,13 +105,13 @@ if (addBodyClass) {
 
       <p>
         For a web page to be accessible, all interactive elements must be operable via the keyboard.
-        In addition, consistent application of the common GUI keyboard interface conventions described in the <a href="/patterns/">ARIA design patterns</a> is important, especially for assistive technology users.
+        In addition, consistent application of the common GUI keyboard interface conventions described in the <a href="{{ site.baseurl }}/patterns/">ARIA design patterns</a> is important, especially for assistive technology users.
         Consider, for example, a screen reader user operating a tree.
         Just as familiar visual styling helps users discover how to expand a tree branch with a mouse, ARIA attributes give the tree the sound and feel of a tree in a desktop application.
         So, screen reader users will commonly expect that pressing the right arrow key will expand a collapsed node.
         Because the screen reader knows the element is a tree, it also has the ability to instruct a novice user how to operate it.
         Similarly, voice recognition software can implement commands for expanding and collapsing branches because it recognizes the element as a tree and can execute appropriate keyboard commands.
-        All this is only possible if the tree implements the GUI keyboard conventions as described in the <a href="/patterns/treeview/">ARIA tree pattern</a>.
+        All this is only possible if the tree implements the GUI keyboard conventions as described in the <a href="{{ site.baseurl }}/patterns/treeview/">ARIA tree pattern</a>.
       </p>
 
       <p>
@@ -135,15 +135,15 @@ if (addBodyClass) {
       </p>
 
       <ul>
-        <li><a href="/patterns/combobox/">Combobox</a></li>
-        <li><a href="/patterns/grid/">Grid</a></li>
-        <li><a href="/patterns/listbox/">Listbox</a></li>
-        <li><a href="/patterns/menu/">Menu or menu bar</a></li>
-        <li><a href="/patterns/radiobutton/">Radiogroup</a></li>
-        <li><a href="/patterns/tabpanel/">Tabs</a></li>
-        <li><a href="/patterns/toolbar/">Toolbar</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/combobox/">Combobox</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/grid/">Grid</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/listbox/">Listbox</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/menu/">Menu or menu bar</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/radiobutton/">Radiogroup</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/toolbar/">Toolbar</a></li>
         <li>Tree Grid</li>
-        <li><a href="/patterns/treeview/">Tree View</a></li>
+        <li><a href="{{ site.baseurl }}/patterns/treeview/">Tree View</a></li>
       </ul>
     </section>
 
@@ -159,7 +159,7 @@ if (addBodyClass) {
         <li>Visibility of the focus indicator: Users need to be able to easily distinguish the keyboard focus indicator from other features of the visual design. Just as a mouse user may move the mouse to help find the mouse pointer, a keyboard user may press a navigation key to watch for movement. If visual changes in response to focus movement are subtle, many users will lose track of focus and be unable to operate. Authors are advised to rely on the default focus indicators provided by browsers. If overriding the default, consider:
           <ul>
             <li>something about ... Colors and gradients can disappear in high contrast modes.</li>
-            <li>Users need to be able to easily distinguish between focus and selection as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection" class="sec-ref">Focus VS Selection and the Perception of Dual Focus</a>, especially when a component that contains selected elements does not contain the focus.</li>
+            <li>Users need to be able to easily distinguish between focus and selection as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_vs_selection" class="sec-ref">Focus VS Selection and the Perception of Dual Focus</a>, especially when a component that contains selected elements does not contain the focus.</li>
             <li>... other considerations to be added ...</li>
           </ul>
         </li>
@@ -256,10 +256,10 @@ if (addBodyClass) {
     <section id="kbd_general_between"><div class="header-wrapper"><h2 id="x6-5-keyboard-navigation-between-components-the-tab-sequence">Keyboard Navigation Between Components (The Tab Sequence)</h2></div>
       
 
-      <p> As explained in section <a href="/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, all interactive UI components need to be reachable via the keyboard. This is best achieved by either including them in the tab sequence or by making them accessible from a component that is in the tab sequence, e.g., as part of a composite component. This section addresses building and managing the tab sequence, and subsequent sections cover making focusable elements that are contained within components keyboard accessible. </p>
+      <p> As explained in section <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, all interactive UI components need to be reachable via the keyboard. This is best achieved by either including them in the tab sequence or by making them accessible from a component that is in the tab sequence, e.g., as part of a composite component. This section addresses building and managing the tab sequence, and subsequent sections cover making focusable elements that are contained within components keyboard accessible. </p>
 
       <p>
-        The [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-html" title="HTML Standard">HTML</a></cite>] <a href="https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute">tabindex</a> and [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>] <a href="https://www.w3.org/TR/SVG2/struct.html#tabindexattribute">tabindex</a> attributes can be used to add and remove elements from the tab sequence.
+        The [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-html" title="HTML Standard">HTML</a></cite>] <a href="https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute">tabindex</a> and [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-svg2" title="Scalable Vector Graphics (SVG) 2">SVG2</a></cite>] <a href="https://www.w3.org/TR/SVG2/struct.html#tabindexattribute">tabindex</a> attributes can be used to add and remove elements from the tab sequence.
         The value of tabindex can also influence the order of the tab sequence, although authors are strongly advised not to use tabindex for that purpose.
       </p>
 
@@ -271,7 +271,7 @@ if (addBodyClass) {
       <p>
         The default order of elements in the tab sequence is the order of elements in the DOM.
         The DOM order also determines screen reader reading order.
-        It is important to keep the keyboard tab sequence and the screen reader reading order aligned, logical, and predictable as described in <a href="/fundamentals/keyboard-interface/#kbd_focus_discernable_predictable" class="sec-ref">Discernible and Predictable Keyboard Focus</a>.
+        It is important to keep the keyboard tab sequence and the screen reader reading order aligned, logical, and predictable as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_discernable_predictable" class="sec-ref">Discernible and Predictable Keyboard Focus</a>.
         The most robust method of manipulating the order of the tab sequence while also maintaining alignment with the reading order that is currently available in all browsers is rearranging elements in the DOM.
       </p>
 
@@ -300,9 +300,9 @@ if (addBodyClass) {
       
 
       <p>
-        As described in section <a href="/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, the tab sequence should include only one focusable element of a composite UI component.
+        As described in section <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_generalnav" class="sec-ref">Fundamental Keyboard Navigation Conventions</a>, the tab sequence should include only one focusable element of a composite UI component.
         Once a composite contains focus, keys other than <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> enable the user to move focus among its focusable elements.
-        Authors are free to choose which keys move focus inside of a composite, but they are strongly advised to use the same key bindings as similar components in common GUI operating systems as demonstrated in <a href="/patterns/" class="sec-ref">Design Patterns and Widgets</a>.
+        Authors are free to choose which keys move focus inside of a composite, but they are strongly advised to use the same key bindings as similar components in common GUI operating systems as demonstrated in <a href="{{ site.baseurl }}/patterns/" class="sec-ref">Design Patterns and Widgets</a>.
       </p>
 
       <p> The convention for where focus lands in a composite when it receives focus as a result of a <kbd>Tab</kbd> key event depends on the type of composite. It is typically one of the following. </p>
@@ -376,7 +376,7 @@ if (addBodyClass) {
         <ul>
           <li>When the container element that has a role that supports aria-activedescendant is loaded or created, ensure that:
             <ul>
-              <li>The container element is included in the tab sequence as described in <a href="/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> or is a focusable element of a composite that implements <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">a roving tabindex</a>.</li>
+              <li>The container element is included in the tab sequence as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> or is a focusable element of a composite that implements <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">a roving tabindex</a>.</li>
               <li>
                 It has <code>aria-activedescendant="IDREF"</code> where IDREF is the ID of the element within the container that should be identified as active when the widget receives focus.
                 The referenced element needs to meet the DOM relationship requirements described below.
@@ -418,7 +418,7 @@ if (addBodyClass) {
         By default, disabled HTML input elements are removed from the tab sequence.
         In most contexts, the normal expectation is that disabled interactive elements are not focusable.
         However, there are some contexts where it is common for disabled elements to be focusable, especially inside of composite widgets.
-        For example, as demonstrated in the <a href="/patterns/menu/" class="sec-ref">Menu or Menu bar</a> pattern, disabled items are focusable when navigating through a menu with the arrow keys.
+        For example, as demonstrated in the <a href="{{ site.baseurl }}/patterns/menu/" class="sec-ref">Menu or Menu bar</a> pattern, disabled items are focusable when navigating through a menu with the arrow keys.
       </p>
 
       <p>
@@ -439,10 +439,10 @@ if (addBodyClass) {
           For the following composite widget elements, keep them focusable when disabled:
 
           <ul>
-            <li>Options in a <a href="/patterns/listbox/">Listbox</a></li>
-            <li>Menu items in a <a href="/patterns/menu/">Menu or menu bar</a></li>
-            <li>Tab elements in a set of <a href="/patterns/tabpanel/">Tabs</a></li>
-            <li>Tree items in a <a href="/patterns/treeview/">Tree View</a></li>
+            <li>Options in a <a href="{{ site.baseurl }}/patterns/listbox/">Listbox</a></li>
+            <li>Menu items in a <a href="{{ site.baseurl }}/patterns/menu/">Menu or menu bar</a></li>
+            <li>Tab elements in a set of <a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs</a></li>
+            <li>Tree items in a <a href="{{ site.baseurl }}/patterns/treeview/">Tree View</a></li>
           </ul>
         </li>
 
@@ -464,7 +464,7 @@ if (addBodyClass) {
         </li>
       </ol>
 
-      <p>One design technique for mitigating the impact of including disabled elements in the path of keyboard focus is employing appropriate keyboard shortcuts as described in <a href="/fundamentals/keyboard-interface/#kbd_shortcuts" class="sec-ref">Keyboard Shortcuts</a>.</p>
+      <p>One design technique for mitigating the impact of including disabled elements in the path of keyboard focus is employing appropriate keyboard shortcuts as described in <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_shortcuts" class="sec-ref">Keyboard Shortcuts</a>.</p>
     </section>
     <section id="kbd_common_conventions"><div class="header-wrapper"><h2 id="x6-8-key-assignment-conventions-for-common-functions">Key Assignment Conventions for Common Functions</h2></div>
       
@@ -557,8 +557,8 @@ if (addBodyClass) {
           </p>
 
           <ul>
-            <li><a href="/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> </li>
-            <li><a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a> </li>
+            <li><a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_between" class="sec-ref">Keyboard Navigation Between Components (The Tab Sequence)</a> </li>
+            <li><a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a> </li>
           </ul>
 
           <p>
@@ -724,4 +724,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

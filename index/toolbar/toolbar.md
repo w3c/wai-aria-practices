@@ -35,9 +35,9 @@ lang: en
 <script src="js/SpinButton.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -83,8 +83,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -95,12 +95,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/toolbar.svg"
+        src="{{ site.baseurl }}/assets/img/toolbar.svg"
         class="example-page-example-icon"
       >
   
@@ -108,12 +108,12 @@ lang: en
   
   <p>
     The following example of an editor toolbar implements the
-    <a href="/patterns/toolbar/">design pattern for toolbar</a>
+    <a href="{{ site.baseurl }}/patterns/toolbar/">design pattern for toolbar</a>
     and demonstrates how a toolbar can group a set of interactive widgets into a single tab stop.
     For illustrative and interoperability assessment purposes, this implementation includes a diverse set of widgets, some of which may not be ordinarily grouped in the same toolbar.
     For instance, it includes both a checkbox and toggle buttons. In a typical implementation, the design would use either one or the other but not both.
     Similarly, the edit field is included to help simulate actual implementation and is not intended to represent an actual rich text editor.
-    This example also illustrates the <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex method</a> for managing focus within a component.
+    This example also illustrates the <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex method</a> for managing focus within a component.
   </p>
   <section>
     <div class="example-header">
@@ -265,11 +265,11 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <ul>
       <li>
         When tabbing into the toolbar, focus returns to the control that last had focus.
-        Focus movement inside the toolbar is managed using <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.
+        Focus movement inside the toolbar is managed using <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.
     </li>
       <li>
         When any of the cut, copy and paste buttons are disabled they remain focusable to ensure screen reader users are aware of their presence.
-        For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_disabled_controls">Focusability of disabled controls.</a>
+        For additional guidance, see <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_disabled_controls">Focusability of disabled controls.</a>
       </li>
       <li><kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> navigate among elements in the toolbar so <kbd>Up Arrow</kbd> and <kbd>Down Arrow</kbd> are available to:
         <ul>
@@ -302,7 +302,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
     <section>
       <h3 id="kbd_label_1">Toolbar</h3>
-      <p>The toolbar provides the following keyboard support described in the <a href="/patterns/toolbar/">toolbar pattern.</a></p>
+      <p>The toolbar provides the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/toolbar/">toolbar pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_1 kbd_label" class="def">
         <thead>
           <tr>
@@ -359,7 +359,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="kbd_label_2">Toggle Buttons (Bold, Italic, Underline)</h3>
-      <p>The toggle buttons for choosing to apply <b>Bold</b>, <i>Italic</i>, and <u>Underline</u> styling provide the following keyboard support described in the <a href="/patterns/button/">button design pattern</a>.</p>
+      <p>The toggle buttons for choosing to apply <b>Bold</b>, <i>Italic</i>, and <u>Underline</u> styling provide the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/button/">button design pattern</a>.</p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_2 kbd_label" class="def">
         <thead>
           <tr>
@@ -382,7 +382,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
         The buttons for choosing left, center, or right text alignment are styled like toggle buttons.
         However, since pressing one toggles off another so that only one button in the group is in the pressed state, the toggles behave like radio buttons.
         Because ARIA is designed to inform assistive technologies about UI semantics and behaviors, not styling,
-        the alignment toggles provide the following keyboard support described in the <a href="/patterns/radiobutton/">radio group design pattern.</a>
+        the alignment toggles provide the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/radiobutton/">radio group design pattern.</a>
         As described in the pattern, nesting a radio group in a toolbar calls for an important behavioral difference compared to radios outside a toolbar: moving focus inside the group does not automatically change which button is checked.
         In addition, because <kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> are needed by the parent toolbar, they are not captured by the radio group.
         The toolbar thus provides navigation into, inside, and out of the nested radio group.
@@ -429,7 +429,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <section>
       <h3 id="kbd_label_4">Button (Cut, Copy, Paste)</h3>
       <p>
-        The buttons for cut, copy, and paste provide the following keyboard support described in the <a href="/patterns/button/">button design pattern.</a>
+        The buttons for cut, copy, and paste provide the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/button/">button design pattern.</a>
         While they are HTML button elements, as described in the accessibility features section above, in order to remain focusable when disabled, they have <code>aria-disabled</code> instead of the HTML <code>disabled</code> attribute.
       </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_4 kbd_label" class="def">
@@ -450,7 +450,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="kbd_label_5">Menu Button (Font Family)</h3>
-      <p>The menu button for opening the font family menu provides the following keyboard support described in the <a href="/patterns/menubutton/">menu button design pattern.</a></p>
+      <p>The menu button for opening the font family menu provides the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/menubutton/">menu button design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_5 kbd_label" class="def">
         <thead>
           <tr>
@@ -477,7 +477,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="kbd_label_6">Menu (Font Family)</h3>
-      <p>The menu for choosing a font family provides the following keyboard support described in the <a href="/patterns/menu/">Menu design pattern.</a></p>
+      <p>The menu for choosing a font family provides the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/menu/">Menu design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_6 kbd_label" class="def">
         <thead>
           <tr>
@@ -518,7 +518,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="kbd_label_7">Spin Button (Font Size)</h3>
-      <p>The spin button for changing font size provides the following keyboard support described in the <a href="/patterns/spinbutton/">spin button design pattern.</a></p>
+      <p>The spin button for changing font size provides the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/spinbutton/">spin button design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_7 kbd_label" class="def">
         <thead>
           <tr>
@@ -550,7 +550,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <section>
       <h3 id="kbd_label_8">Checkbox (Night Mode)</h3>
       <p>
-        The checkbox for toggling night mode provides the following keyboard support defined in the <a href="/patterns/checkbox/">checkbox design pattern.</a>
+        The checkbox for toggling night mode provides the following keyboard support defined in the <a href="{{ site.baseurl }}/patterns/checkbox/">checkbox design pattern.</a>
         As an HTML input element, the browser provides the keyboard support.
         </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_8 kbd_label" class="def">
@@ -572,7 +572,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <section>
       <h3 id="kbd_label_9">Link (Help)</h3>
       <p>
-        The link for opening a help page provides the following keyboard support described in the <a href="/patterns/link/">link design pattern.</a>
+        The link for opening a help page provides the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/link/">link design pattern.</a>
         As an HTML link, the keyboard support is provided by the browser.
       </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_9 kbd_label" class="def">
@@ -597,7 +597,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
     <section>
       <h3 id="rps_label_1">Toolbar</h3>
-      <p>The toolbar implements the following ARIA attributes described in the <a href="/patterns/toolbar/">toolbar pattern.</a></p>
+      <p>The toolbar implements the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/toolbar/">toolbar pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="rps_label_1 rps_label" class="data attributes">
         <thead>
           <tr>
@@ -615,7 +615,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
             <td>
               <ul>
                 <li>Indicates the container is a <code>toolbar</code>.</li>
-                <li>The toolbar div is not focusable because focus is managed with a <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>The toolbar div is not focusable because focus is managed with a <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -647,7 +647,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
               <ul>
                 <li>Makes the toolbar item focusable but not part of the page <kbd>Tab</kbd> sequence.</li>
                 <li>Applied to all toolbar items contained in the toolbar except for one that is included in the page <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -665,7 +665,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
                 <li>Set on only one item contained in the toolbar.</li>
                 <li>On page load, set on the first item in the toolbar.</li>
                 <li>Moves with focus inside the toolbar so the most recently focused item is included in the page <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -675,7 +675,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="rps_label_2">Toggle Buttons (Bold, Italic, Underline)</h3>
-      <p>The toggle buttons for choosing to apply <b>Bold</b>, <i>Italic</i>, and <u>Underline</u> styling implement the following ARIA attributes described in the <a href="/patterns/button/">button design pattern</a>.</p>
+      <p>The toggle buttons for choosing to apply <b>Bold</b>, <i>Italic</i>, and <u>Underline</u> styling implement the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/button/">button design pattern</a>.</p>
       <div class="table-wrap"><table aria-labelledby="rps_label_2 rps_label" class="data attributes">
         <thead>
           <tr>
@@ -714,7 +714,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
         The buttons for choosing left, center, or right text alignment are styled like toggle buttons.
         However, since pressing one toggles off another so that only one button in the group is in the pressed state, the toggles behave like radio buttons.
         Because ARIA is designed to inform assistive technologies about UI semantics and behavior, not styling,
-        the alignment toggles implement the following ARIA attributes described in the <a href="/patterns/radiobutton/">radio group design pattern.</a>
+        the alignment toggles implement the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/radiobutton/">radio group design pattern.</a>
       </p>
       <div class="table-wrap"><table aria-labelledby="rps_label_3 rps_label" class="data attributes">
         <thead>
@@ -784,7 +784,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     <section>
       <h3 id="rps_label_4">Button (Cut, Copy, Paste)</h3>
       <p>
-        The buttons for cut, copy, and paste implement the following ARIA attributes         described in the <a href="/patterns/button/">button design pattern.</a>
+        The buttons for cut, copy, and paste implement the following ARIA attributes         described in the <a href="{{ site.baseurl }}/patterns/button/">button design pattern.</a>
         While they are HTML button elements, as described in the accessibility features section above, in order to remain focusable when disabled, they have <code>aria-disabled</code> instead of the HTML <code>disabled</code> attribute.
       </p>
       <div class="table-wrap"><table aria-labelledby="rps_label_4 rps_label" class="data attributes">
@@ -815,7 +815,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="rps_label_5">Menu Button (Font Family)</h3>
-      <p>The menu button for opening the font family menu implements the following ARIA attributes described in the <a href="/patterns/menubutton/">menu button design pattern.</a></p>
+      <p>The menu button for opening the font family menu implements the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/menubutton/">menu button design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="rps_label_5 rps_label" class="data attributes">
         <thead>
           <tr>
@@ -881,7 +881,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="rps_label_6">Menu (Font Family)</h3>
-      <p>The menu for choosing a font family implements the following ARIA attributes described in the <a href="/patterns/menu/">Menu design pattern.</a></p>
+      <p>The menu for choosing a font family implements the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/menu/">Menu design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="rps_label_6 rps_label" class="data attributes">
         <thead>
           <tr>
@@ -960,7 +960,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
     <section>
       <h3 id="rps_label_7">Spin Button (Font Size)</h3>
-      <p>The spin button for changing font size implements the following ARIA attributes described in the <a href="/patterns/spinbutton/">spin button design pattern.</a></p>
+      <p>The spin button for changing font size implements the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/spinbutton/">spin button design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="rps_label_7 rps_label" class="data attributes">
         <thead>
           <tr>
@@ -1051,7 +1051,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
   </div>
   <nav>
-    <a href="/patterns/toolbar/">Toolbar Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/toolbar/">Toolbar Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: November 23, 2021</p>
@@ -1070,4 +1070,4 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

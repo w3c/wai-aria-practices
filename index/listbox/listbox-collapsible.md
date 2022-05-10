@@ -24,9 +24,9 @@ lang: en
 <script src="js/listbox-collapsible.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -68,8 +68,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -80,7 +80,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -91,12 +91,12 @@ lang: en
   <div class="advisement">
     <p><strong>DEPRECATION WARNING:</strong> This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices. The <a href="../combobox/combobox-select-only.html">select-only combobox</a> should be used as an alternative to this pattern.</p>
   </div><img alt=""
-        src="/assets/img/listbox.svg"
+        src="{{ site.baseurl }}/assets/img/listbox.svg"
         class="example-page-example-icon"
       >
   <p>
     The following example implementation of the
-    <a href="/patterns/listbox/">design pattern for listbox</a>
+    <a href="{{ site.baseurl }}/patterns/listbox/">design pattern for listbox</a>
     demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size=&quot;1&quot;</code>.
     The widget consists of a button that triggers the display of a listbox.
     In its default state, the widget is collapsed (the listbox is not visible)  and the button label shows the currently selected option from the listbox.
@@ -178,7 +178,7 @@ lang: en
     <p>
       The example listbox on this page implements the following keyboard interface.
       Other variations and options for the keyboard interface are described in the
-      <a href="/patterns/listbox/#listbox_kbd_interaction">Keyboard Interaction section of the Listbox Design Pattern.</a>
+      <a href="{{ site.baseurl }}/patterns/listbox/#listbox_kbd_interaction">Keyboard Interaction section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
       <thead>
@@ -245,7 +245,7 @@ lang: en
     <p>
       The example listbox on this page implements the following ARIA roles, states, and properties.
       Information about other ways of applying ARIA roles, states, and properties is available in the
-      <a href="/patterns/listbox/#listbox_roles_states_props">Roles, States, and Properties section of the Listbox Design Pattern.</a>
+      <a href="{{ site.baseurl }}/patterns/listbox/#listbox_roles_states_props">Roles, States, and Properties section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
     <thead>
@@ -321,7 +321,7 @@ lang: en
               <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element.</li>
               <li>
                 For more information about this focus management technique, see
-                <a href="/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
+                <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
               </li>
             </ul>
           </td>
@@ -376,7 +376,7 @@ lang: en
   </section>
   </div>
   <nav>
-    <a href="/patterns/listbox/">Listbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/listbox/">Listbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: February 10, 2022</p>
@@ -395,4 +395,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

@@ -43,7 +43,7 @@ const getHandleElement =
 
         const img = `<img 
         alt=""
-        src="/assets/img/${patternSlug}.svg"
+        src="{{ site.baseurl }}/assets/img/${patternSlug}.svg"
         class="example-page-example-icon"
       />`;
         if (element.querySelector(".advisement")) {
@@ -130,7 +130,7 @@ const getHandleBodyElement = (permalink) => (element) => {
 
       const patternMatch = element
         .getAttribute("href")
-        .match(/\/patterns\/([^/]+)\/?/);
+        .match(/patterns\/([^/]+)\/?/);
       const isPatternLink = !!patternMatch;
       if (!patternSlug && isPatternLink) patternSlug = patternMatch[1];
     }

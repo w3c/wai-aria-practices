@@ -56,7 +56,8 @@ const fixLink = (element, permalink, oldPermalink = "/") => {
     ? null
     : !href.match(/^(http|mailto|javascript)/);
   if (!!apgAnchorId) {
-    const newLink = oldToNewLink[`/#${apgAnchorId}`];
+    const rootRelativePath = oldToNewLink[`/#${apgAnchorId}`];
+    let newLink = `{{ site.baseurl }}${rootRelativePath}`;
     if (!newLink) {
       throw new Error(
         `Unable to remap anchor link "${href}" in "${permalink}". This will ` +

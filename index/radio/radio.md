@@ -22,9 +22,9 @@ lang: en
 <script src="js/radio.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,19 +82,19 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/radiobutton.svg"
+        src="{{ site.baseurl }}/assets/img/radiobutton.svg"
         class="example-page-example-icon"
       >
     
     <div>
       
       <p>
-        This example implements the features of the <a href="/patterns/radiobutton/">Radio Group Design Pattern</a>
+        This example implements the features of the <a href="{{ site.baseurl }}/patterns/radiobutton/">Radio Group Design Pattern</a>
         for two radio groups -- one for choosing a pizza crust and another for choosing a delivery method.
         This implementation uses a roving tabindex for managing focus within the radio group.
       </p>
@@ -269,7 +269,7 @@ lang: en
                 <ul>
                   <li>Makes the element focusable but not part of the page <kbd>Tab</kbd> sequence.</li>
                   <li>Applied to all radio buttons contained in the radio group except for one that is included in the page <kbd>Tab</kbd> sequence.</li>
-                  <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                  <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -283,7 +283,7 @@ lang: en
                   <li>Set on only one radio in the radio group.</li>
                   <li>On page load, is set on the first radio button in the radio group.</li>
                   <li>Moves with focus inside the radio group so the most recently focused radio button is included in the page <kbd>Tab</kbd> sequence.</li>
-                  <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                  <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -335,7 +335,7 @@ lang: en
       </section>
     </div>
     <nav>
-      <a href="/patterns/radiobutton/">Radio Group Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+      <a href="{{ site.baseurl }}/patterns/radiobutton/">Radio Group Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
     </nav>
   
             <p>Page last updated: November 23, 2021</p>
@@ -354,4 +354,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

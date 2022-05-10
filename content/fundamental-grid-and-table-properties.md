@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
 const addBodyClass = "fundamental-page";
@@ -63,7 +63,7 @@ if (addBodyClass) {
     
     <p>
       To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the
-      <a href="/patterns/grid/">grid pattern</a> or <a href="/patterns/table/">table pattern</a>,
+      <a href="{{ site.baseurl }}/patterns/grid/">grid pattern</a> or <a href="{{ site.baseurl }}/patterns/table/">table pattern</a>,
       assistive technologies need to be able to determine:
     </p>
     <ul>
@@ -548,4 +548,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

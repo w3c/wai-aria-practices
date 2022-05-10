@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -61,7 +61,7 @@ lang: en
         When using the <code>link</code> role, providing these features of the element is the author's responsibility.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/link.svg" ><div class="header-wrapper"><h2 id="examples-6" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/link.svg" ><div class="header-wrapper"><h2 id="examples-6" tabindex="-1">Examples</h2></div>
         
         <p><a href="../../index/link/link.html">Link Examples</a>: Link widgets constructed from HTML <code>span</code> and <code>img</code> elements.</p>
       </section>
@@ -96,4 +96,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

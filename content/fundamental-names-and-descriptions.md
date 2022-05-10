@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
 const addBodyClass = "fundamental-page";
@@ -104,7 +104,7 @@ if (addBodyClass) {
         In addition dialogs and some structural containers, such as <a href="https://w3c.github.io/aria/#table" class="role-reference">tables</a> and <a href="https://w3c.github.io/aria/#region" class="role-reference">regions</a>, are required to have a name.
         Many other elements can be named, but whether a name will enhance the accessible experience is determined by various characteristics of the surrounding context.
         Finally, there are some elements where providing an accessible name is technically possible but not advisable.
-        The <a href="/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section lists naming requirements and guidelines for every ARIA role.
+        The <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section lists naming requirements and guidelines for every ARIA role.
       </p>
       <p>
         An accessible description is also an author-provided string that is rendered by assistive technologies.
@@ -125,8 +125,8 @@ if (addBodyClass) {
       
       <p>
         Because there are several elements and attributes for specifying text to include in an accessible name or description string, and because authors can combine them in a practically endless number of ways, browsers implement fairly complex algorithms for assembling the strings.
-The sections on <a href="/fundamentals/names-and-descriptions/#name_calculation">accessible name calculation</a> and <a href="/fundamentals/names-and-descriptions/#description_calculation">accessible description calculation</a> explain the algorithms and how they implement precedence.
-However, most authors do not need such detailed understanding of the algorithms since nearly all circumstances where a name or description is useful are supported by the coding patterns described in the <a href="/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> and <a href="/fundamentals/names-and-descriptions/#describing_techniques">describing techniques</a> sections.
+The sections on <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#name_calculation">accessible name calculation</a> and <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#description_calculation">accessible description calculation</a> explain the algorithms and how they implement precedence.
+However, most authors do not need such detailed understanding of the algorithms since nearly all circumstances where a name or description is useful are supported by the coding patterns described in the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> and <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#describing_techniques">describing techniques</a> sections.
       </p>
     </section>
 
@@ -138,7 +138,7 @@ However, most authors do not need such detailed understanding of the algorithms 
         <section id="naming_rule_heed_warnings"><div class="header-wrapper"><h4 id="x5-3-1-1-rule-1-heed-warnings-and-test-thoroughly">Rule 1: Heed Warnings and Test Thoroughly</h4></div>
           
           <p>
-            Several of the <a href="/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> below include notes that warn against specific coding patterns that are either prohibited by the ARIA specification or fall into gray space that is not yet fully specified.
+            Several of the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> below include notes that warn against specific coding patterns that are either prohibited by the ARIA specification or fall into gray space that is not yet fully specified.
             Some of these prohibited or ambiguous patterns may appear logical and even yield desired names in some browsers.
             However, it is unlikely they will provide consistent results across browsers, especially over time as work to improve the consistency of name calculation across browsers progresses.
           </p>
@@ -165,7 +165,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>
             In HTML documents, whenever possible, rely on HTML naming techniques, such as the HTML <code>label</code> element for form elements  and <code>caption</code> element for tables.
             While less flexible, their simplicity and reliance on visible text help ensure robust accessible experiences.
-            Several of the <a href="/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> highlight specific accessibility advantages of using HTML features instead of ARIA attributes.
+            Several of the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_techniques">naming techniques</a> highlight specific accessibility advantages of using HTML features instead of ARIA attributes.
           </p>
         </section>
 
@@ -183,7 +183,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>
             Similar to how visually crowded screens and ambiguous icons reduce usability, excessively long, insufficiently distinct, or unclear  accessible names can make a user interface very difficult, or even impossible, to use for someone who relies on a non-visual form of the user interface.
             In other words, for a web experience to be accessible, its accessible names must be effective.
-            The section on <a href="/fundamentals/names-and-descriptions/#naming_effectively">Composing Effective and User-friendly Accessible Names</a> provides guidance for balancing brevity and clarity.
+            The section on <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_effectively">Composing Effective and User-friendly Accessible Names</a> provides guidance for balancing brevity and clarity.
           </p>
         </section>
       </section>
@@ -259,7 +259,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
           <p>
             The <code>aria-label</code> property affects assistive technology users in one of two different ways, depending on the role of the element to which it is applied.
-            When applied to an element with one of the roles that supports <a href="/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, <code>aria-label</code> hides descendant content from assistive technology users and replaces it with the value of <code>aria-label</code>.
+            When applied to an element with one of the roles that supports <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, <code>aria-label</code> hides descendant content from assistive technology users and replaces it with the value of <code>aria-label</code>.
             However, when applied to nearly any other type of element, assistive technologies will render both the value of <code>aria-label</code> and the content of the element.
             For example, the name of the following navigation region is "Product".
           </p>
@@ -271,10 +271,10 @@ However, most authors do not need such detailed understanding of the algorithms 
           </p>
           <div class="warning" id="issue-container-generatedID-38"><div role="heading" class="warning-title marker" id="h-warning-2" aria-level="6"><span>Warning</span></div><ol class="">
             <li>
-          If <code>aria-label</code> is applied to an element with one of the roles that supports <a href="/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users.
+          If <code>aria-label</code> is applied to an element with one of the roles that supports <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users.
           It is strongly recommended to avoid using <code>aria-label</code> to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
         </li>
-        <li>There are certain types of elements, such as paragraphs and list items, that should not be named with <code>aria-label</code>. They are identified in the table in the <a href="/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section.</li>
+        <li>There are certain types of elements, such as paragraphs and list items, that should not be named with <code>aria-label</code>. They are identified in the table in the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section.</li>
             <li>Because the value of <code>aria-label</code> is not rendered visually, testing with assistive technologies to ensure the expected name is presented to users is particularly important.</li>
             <li>When a user interface is translated into multiple languages, ensure that <code>aria-label</code> values are translated.</li>
           </ol></div>
@@ -327,9 +327,9 @@ However, most authors do not need such detailed understanding of the algorithms 
           <div class="warning" id="issue-container-generatedID-39"><div role="heading" class="warning-title marker" id="h-warning-3" aria-level="6"><span>Warning</span></div><ol class="">
             <li>The <code>aria-labelledby</code> property cannot be chained, i.e., if an element with <code>aria-labelledby</code> references another element that also has <code>aria-labelledby</code>, the <code>aria-labelledby</code> attribute on the referenced element will be ignored.</li>
             <li>If an element is referenced by <code>aria-labelledby</code> more than one time during a name calculation, the second and any subsequent references will be ignored.</li>
-            <li>There are certain types of elements, such as paragraphs and list items,  that should not be named with <code>aria-labelledby</code>. They are identified in the table in the <a href="/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section.</li>
+            <li>There are certain types of elements, such as paragraphs and list items,  that should not be named with <code>aria-labelledby</code>. They are identified in the table in the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_role_guidance">Accessible Name Guidance by Role</a> section.</li>
             <li>
-          If <code>aria-labelledby</code> is applied to an element with one of the roles that supports <a href="/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users unless it is also referenced by <code>aria-labelledby</code>.
+          If <code>aria-labelledby</code> is applied to an element with one of the roles that supports <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users unless it is also referenced by <code>aria-labelledby</code>.
           It is strongly recommended to avoid using this attribute to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
         </li>
             <li>Because calculating the name of an element with <code>aria-labelledby</code> can be complex and reference hidden content, testing with assistive technologies to ensure the expected name is presented to users is particularly important.</li>
@@ -359,8 +359,8 @@ However, most authors do not need such detailed understanding of the algorithms 
           <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"subscribe"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"subscribe_checkbox"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"subscribe_checkbox"</span>&gt;</span>subscribe to our newsletter<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></code></pre>
           <p>
-            Using the <code>label</code> element is an effective technique for satisfying <a href="/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a>.
-            It also satisfies <a href="/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.
+            Using the <code>label</code> element is an effective technique for satisfying <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a>.
+            It also satisfies <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.
             Native HTML labels offer an important usability and accessibility advantage over ARIA labeling techniques: browsers automatically make clicking the label equivalent to clicking the form control.
             This increases the hit area of the form control.
           </p>
@@ -397,7 +397,7 @@ However, most authors do not need such detailed understanding of the algorithms 
   <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Billing address<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
   ...
 <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></code></pre>
-          <p>Using the <code>legend</code> element to name a <code>fieldset</code> element satisfies <a href="/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a> and <a href="/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.</p>
+          <p>Using the <code>legend</code> element to name a <code>fieldset</code> element satisfies <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a> and <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.</p>
         </section>
 
         <section id="naming_with_captions"><div class="header-wrapper"><h4 id="x5-3-2-6-naming-tables-and-figures-with-captions">Naming Tables and Figures with Captions</h4></div>
@@ -438,7 +438,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>Note: Above table content is from <a href="https://www.ncbi.nlm.nih.gov/pubmed/17986602">Caloric restriction, the traditional Okinawan diet, and healthy aging: the diet of the world's longest-lived people and its potential impact on morbidity and life span</a>.</p>
           <p>
             If a <code>table</code> is named using <code>aria-label</code> or <code>aria-labelledby</code>, then a <code>caption</code> element, if present, will become an accessible description.
-            For an example, see <a href="/fundamentals/names-and-descriptions/#describing_with_captions">Describing Tables and Figures with Captions</a>.
+            For an example, see <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#describing_with_captions">Describing Tables and Figures with Captions</a>.
           </p>
           <p>
             Similarly, an HTML <code>figure</code> element can be given a caption using the <code>figcaption</code> element.
@@ -453,7 +453,7 @@ However, most authors do not need such detailed understanding of the algorithms 
             However unlike <code>table</code> elements, if the <code>figcaption</code> element is not used for the name, it does not become an accessible description unless it is referenced by <code>aria-describedby</code>.
             Nevertheless, assistive technologies will render the content of a <code>figcaption</code> regardless of whether it is used as a name, description, or neither.
           </p>
-          <p>Using the <code>caption</code> element to name a <code>table</code> element, or a <code>figcaption</code> element to name a <code>figure</code> element, satisfies <a href="/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a> and <a href="/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.</p>
+          <p>Using the <code>caption</code> element to name a <code>table</code> element, or a <code>figcaption</code> element to name a <code>figure</code> element, satisfies <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_visible_text">Rule 2: Prefer Visible Text</a> and <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_native_techniques">Rule 3: Prefer Native Techniques</a>.</p>
         </section>
 
         <section id="naming_with_fallback"><div class="header-wrapper"><h4 id="x5-3-2-7-fallback-names-derived-from-titles-and-placeholders">Fallback Names Derived from Titles and Placeholders</h4></div>
@@ -461,7 +461,7 @@ However, most authors do not need such detailed understanding of the algorithms 
           <p>
             When an accessible name is not provided using one of the primary techniques (e.g., the <code>aria-label</code> or <code>aria-labelledby</code> attributes), or native markup techniques (e.g., the HTML <code>label</code> element, or the <code>alt</code> attribute of the HTML <code>img</code> element), browsers calculate an accessible name from other attributes as a fallback mechanism.
             Because the attributes used in fallback name calculation are not intended for naming, they typically yield low quality accessible names that are not effective.
-So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avoid_fallback">Rule 4: Avoid Browser Fallback</a>, prefer the explicit labeling techniques described above over fallback techniques described in this section.
+So, As advised by <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_rule_avoid_fallback">Rule 4: Avoid Browser Fallback</a>, prefer the explicit labeling techniques described above over fallback techniques described in this section.
           </p>
 
           <p>
@@ -607,7 +607,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Necessary in the uncommon circumstance where two banner landmark regions are present on the same page. It is otherwise optional.</li>
                   <li>Named using <code>aria-labelledby</code> if a visible label is present, otherwise with <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_banner">Banner Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_banner">Banner Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -691,7 +691,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>Naming is necessary when two complementary landmark regions are present on the same page.</li>
                   <li>Naming is recommended even when one complementary region is present to help users understand the purpose of the region's content when navigating among landmark regions.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_complementary">Complementary Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_complementary">Complementary Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -751,7 +751,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the feed.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/feed/">Feed Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/feed/">Feed Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -760,7 +760,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
               <td>Recommended</td>
               <td>
                 <ul>
-                  <li>For HTML, use the <code>figure</code> and <code>figcaption</code> elements. The <code>figcaption</code> will serve as the accessible name for the <code>figure</code>. See the <a href="/fundamentals/names-and-descriptions/#naming_with_captions">Naming Tables and Figures with Captions</a> section.</li>
+                  <li>For HTML, use the <code>figure</code> and <code>figcaption</code> elements. The <code>figcaption</code> will serve as the accessible name for the <code>figure</code>. See the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#naming_with_captions">Naming Tables and Figures with Captions</a> section.</li>
                   <li>When not using HTML, or when retrofitting legacy HTML, use the <code>aria-labelledby</code> on the figure, pointing to the figure's caption.</li>
                   <li>If there is no visible caption, <code>aria-label</code> can be used.</li>
                 </ul>
@@ -773,7 +773,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the form landmark.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_form">Form Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_form">Form Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -865,7 +865,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>If the <code>listbox</code> role is applied to an HTML <code>select</code> element (with the <code>multiple</code> attribute or a <code>size</code> attribute having a value greater than 1), can be named with an HTML <code>label</code> element.</li>
                   <li>Otherwise use <code>aria-labelledby</code> if a visible label is present.</li>
                   <li>Use <code>aria-label</code> if a visible label is not present.</li>
-                  <li>See the <a href="/patterns/listbox/">Listbox Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/listbox/">Listbox Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -890,7 +890,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Potentially helpful for orienting assistive technology users, especially in single-page applications where main content changes happen without generating a page load event.</li>
                   <li>Can be named using <code>aria-labelledby</code> if a visible label is present, otherwise with <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_main">Main Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_main">Main Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -917,7 +917,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Use <code>aria-labelledby</code> to refer to the menuitem or button that controls this element's display.</li>
                   <li>Otherwise, use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -933,7 +933,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                     Since a <code>menubar</code> element is displayed persistently, a name on the <code>menubar</code> can serve that same purpose.
                   </li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -945,7 +945,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>Warning! Using <code>aria-label</code> or <code>aria-labelledby</code> will hide any descendant content from assistive technologies.</li>
                   <li>Ideally named by visible, descendant content.</li>
                   <li>Note: content contained within a child <code>menu</code> is automatically excluded from the accessible name calculation.</li>
-                  <li>See the <a href="/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -956,7 +956,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Warning! Using <code>aria-label</code> or <code>aria-labelledby</code> will hide any descendant content from assistive technologies.</li>
                   <li>Ideally named by visible, descendant content.</li>
-                  <li>See the <a href="/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -967,7 +967,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Warning! Using <code>aria-label</code> or <code>aria-labelledby</code> will hide any descendant content from assistive technologies.</li>
                   <li>Ideally named by visible, descendant content.</li>
-                  <li>See the <a href="/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/menu/">Menu or Menu bar Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -989,7 +989,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the navigation landmark.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_navigation">Navigation Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_navigation">Navigation Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -1015,7 +1015,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Warning! Using <code>aria-label</code> or <code>aria-labelledby</code> will hide any descendant content from assistive technologies.</li>
                   <li>Ideally named by visible, descendant content.</li>
-                  <li>See the <a href="/patterns/combobox/">Combobox Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/combobox/">Combobox Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1058,7 +1058,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Recommended to help assistive technology users understand the purpose of the group of <code>radio</code> buttons.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/radiobutton/">Radio Group Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/radiobutton/">Radio Group Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1069,7 +1069,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the landmark.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_region">Region Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_region">Region Landmark</a> section.</li>
                 </ul>
             </td>
             </tr>
@@ -1081,7 +1081,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <strong>AND</strong> the row is focusable
               </td>
               <td>
-                When <code>row</code> elements are focusable in a <a href="/patterns/treegrid/">treegrid</a>, screen readers announce the entire contents of a row when navigating by row.
+                When <code>row</code> elements are focusable in a <a href="{{ site.baseurl }}/patterns/treegrid/">treegrid</a>, screen readers announce the entire contents of a row when navigating by row.
                 This is typically the most appropriate behavior.
                 However, in some circumstances, it could be beneficial to change the order in which cells are announced or exclude announcement of certain cells by using <code>aria-labelledby</code> to specify which cells to announce.
               </td>
@@ -1119,7 +1119,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the search landmark.</li>
                   <li>Named using <code>aria-labelledby</code> if a visible label is present, otherwise with <code>aria-label</code>.</li>
-                  <li>See the <a href="/fundamentals/landmark-regions/#aria_lh_search">Search Landmark</a> section.</li>
+                  <li>See the <a href="{{ site.baseurl }}/fundamentals/landmark-regions/#aria_lh_search">Search Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -1153,7 +1153,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>If the <code>slider</code> role is applied to an HTML <code>input</code> element, can be named with an HTML <code>label</code> element.</li>
                   <li>Otherwise use <code>aria-labelledby</code> if a visible label is present.</li>
                   <li>Use <code>aria-label</code> if a visible label is not present.</li>
-                  <li>See the <a href="/patterns/slider/">Slider Design Pattern</a> and the <a href="/patterns/slidertwothumb/">Slider (Multi-Thumb) Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/slider/">Slider Design Pattern</a> and the <a href="{{ site.baseurl }}/patterns/slidertwothumb/">Slider (Multi-Thumb) Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1165,7 +1165,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>If the <code>textbox</code> role is applied to an HTML <code>input</code> element, can be named with an HTML <code>label</code> element.</li>
                   <li>Otherwise use <code>aria-labelledby</code> if a visible label is present.</li>
                   <li>Use <code>aria-label</code> if a visible label is not present.</li>
-                  <li>See the <a href="/patterns/spinbutton/">Spinbutton Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/spinbutton/">Spinbutton Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1222,7 +1222,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>If using HTML <code>table</code> element, use the <code>caption</code> element.</li>
                   <li>Otherwise use <code>aria-labelledby</code> if a visible label is present.</li>
                   <li>Use <code>aria-label</code> if a visible label is not present.</li>
-                  <li>See the <a href="/patterns/table/">Table Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/table/">Table Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1233,7 +1233,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the tablist.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/carousel/">Carousel Design Pattern</a> and <a href="/patterns/tabpanel/">Tabs Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/carousel/">Carousel Design Pattern</a> and <a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1243,7 +1243,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
               <td>
                 <ul>
                   <li>Use <code>aria-labelledby</code> pointing to the <code>tab</code> element that controls the <code>tabpanel</code>.</li>
-                  <li>See the <a href="/patterns/carousel/">Carousel Design Pattern</a> and <a href="/patterns/tabpanel/">Tabs Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/carousel/">Carousel Design Pattern</a> and <a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1285,7 +1285,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>If there is more than one <code>toolbar</code> element on the page, naming is required.</li>
                   <li>Helps assistive technology users to understand the purpose of the toolbar, even when there is only one toolbar on the page.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/toolbar/">Toolbar Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/toolbar/">Toolbar Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1305,7 +1305,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
               <td>
                 <ul>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/treeview/">Tree View Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/treeview/">Tree View Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1316,7 +1316,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                 <ul>
                   <li>If the <code>treegrid</code> is applied to an HTML <code>table</code> element, then the accessible name can be derived from the table's <code>caption</code> element.</li>
                   <li>Otherwise, use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="/patterns/treegrid/">Treegrid Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/treegrid/">Treegrid Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1328,7 +1328,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
                   <li>Warning! Using <code>aria-label</code> or <code>aria-labelledby</code> will hide any descendant content from assistive technologies.</li>
                   <li>Ideally named by visible, descendant content.</li>
                   <li>Note: content contained within a child <code>group</code> is automatically excluded from the accessible name calculation.</li>
-                  <li>See the <a href="/patterns/treeview/">Tree View Design Pattern</a>.</li>
+                  <li>See the <a href="{{ site.baseurl }}/patterns/treeview/">Tree View Design Pattern</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -1589,7 +1589,7 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
       <section id="description_calculation"><div class="header-wrapper"><h3 id="x5-4-2-accessible-description-calculation">Accessible description calculation</h3></div>
         
         <p>
-          Like the <a href="/fundamentals/names-and-descriptions/#name_calculation">accessible name calculation</a>, the accessible description calculation produces a text string.
+          Like the <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/#name_calculation">accessible name calculation</a>, the accessible description calculation produces a text string.
         </p>
         <p>
           The accessible description calculation algorithm is the same as the accessible name calculation algorithm except for a few branch points that depend on whether a name or description is being calculated.
@@ -1638,4 +1638,4 @@ So, As advised by <a href="/fundamentals/names-and-descriptions/#naming_rule_avo
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

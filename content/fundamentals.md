@@ -16,16 +16,16 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 <ul class="tiles">
         
               <li class="tile tile-read-me-first">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/read-me-first/">
+                  <a href="{{ site.baseurl }}/fundamentals/read-me-first/">
                     <span>Read Me First</span>
                   </a>
                 </h2>
@@ -35,7 +35,7 @@ lang: en
              
               <li class="tile tile-landmark-regions">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/landmark-regions/">
+                  <a href="{{ site.baseurl }}/fundamentals/landmark-regions/">
                     <span>Landmark Regions</span>
                   </a>
                 </h2>
@@ -45,7 +45,7 @@ lang: en
              
               <li class="tile tile-names-and-descriptions">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/names-and-descriptions/">
+                  <a href="{{ site.baseurl }}/fundamentals/names-and-descriptions/">
                     <span>Providing Accessible Names and Descriptions</span>
                   </a>
                 </h2>
@@ -55,7 +55,7 @@ lang: en
              
               <li class="tile tile-keyboard-interface">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/keyboard-interface/">
+                  <a href="{{ site.baseurl }}/fundamentals/keyboard-interface/">
                     <span>Developing a Keyboard Interface</span>
                   </a>
                 </h2>
@@ -65,7 +65,7 @@ lang: en
              
               <li class="tile tile-grid-and-table-properties">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/grid-and-table-properties/">
+                  <a href="{{ site.baseurl }}/fundamentals/grid-and-table-properties/">
                     <span>Grid and Table Properties</span>
                   </a>
                 </h2>
@@ -75,7 +75,7 @@ To fully present and describe a grid or table, in addition to parsing the header
              
               <li class="tile tile-range-related-properties">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/range-related-properties/">
+                  <a href="{{ site.baseurl }}/fundamentals/range-related-properties/">
                     <span>Communicating Value and Limits for Range Widgets</span>
                   </a>
                 </h2>
@@ -85,7 +85,7 @@ To fully present and describe a grid or table, in addition to parsing the header
              
               <li class="tile tile-structural-roles">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/structural-roles/">
+                  <a href="{{ site.baseurl }}/fundamentals/structural-roles/">
                     <span>Structural Roles</span>
                   </a>
                 </h2>
@@ -95,7 +95,7 @@ To fully present and describe a grid or table, in addition to parsing the header
              
               <li class="tile tile-hiding-semantics">
                 <h2 class="tile-name">
-                  <a href="/fundamentals/hiding-semantics/">
+                  <a href="{{ site.baseurl }}/fundamentals/hiding-semantics/">
                     <span>Hiding Semantics</span>
                   </a>
                 </h2>
@@ -117,4 +117,4 @@ To fully present and describe a grid or table, in addition to parsing the header
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

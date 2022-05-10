@@ -23,9 +23,9 @@ lang: en
 <script src="js/dialog.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -71,8 +71,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -83,12 +83,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/dialogmodal.svg"
+        src="{{ site.baseurl }}/assets/img/dialogmodal.svg"
         class="example-page-example-icon"
       >
   
@@ -96,7 +96,7 @@ lang: en
     
     <p>
       Following is an example implementation of the
-      <a href="/patterns/dialogmodal/">design pattern for modal dialogs.</a>
+      <a href="{{ site.baseurl }}/patterns/dialogmodal/">design pattern for modal dialogs.</a>
       The below <q>Add Delivery Address</q> button opens a modal dialog that contains two buttons that open other dialogs.
       The accessibility features section explains the rationale for initial focus placement and use of <code>aria-describedby</code> in each dialog.
     </p>
@@ -432,7 +432,7 @@ lang: en
     </section>
   </div>
   <nav>
-    <a href="/patterns/dialogmodal/">Modal Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/dialogmodal/">Modal Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
   <script>
@@ -457,4 +457,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
