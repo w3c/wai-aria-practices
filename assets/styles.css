@@ -598,3 +598,68 @@ dl.faq button,
 #treegrid th {
   color: black;
 }
+
+/* Read This First Banner */
+
+.read-this-first {
+  background: #FFEFCE;
+  border: 1px solid #FFE8BA;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5em;
+  border-radius: 3px;
+}
+
+.read-this-first .text {
+  margin-left: 20%;
+  margin-bottom: 18%;
+}
+
+.read-this-first h2 {
+  margin-top: 0.5em;
+  border-bottom: none;
+}
+
+.read-this-first img {
+  position: absolute;
+  bottom: -1.5em;
+  left: -3.5em;
+  width: 50%;
+}
+
+@media screen and (min-width: 400px) {
+  .read-this-first img {
+    width: 178px;
+  }
+}
+
+@media screen and (min-width: 550px) { 
+  .read-this-first {
+    overflow: visible;
+  }
+  .read-this-first img {
+    bottom: -1px;
+    left: 2em;
+  }
+  .read-this-first .text {
+    margin-left: 14em;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 610px) { 
+  .read-this-first {
+    margin-top: 3em;
+  }
+
+}
+
+@media screen and (min-width: 945px) { 
+  .read-this-first {
+    margin-top: 4em;
+    padding: 1em;
+  }
+  .read-this-first .text {
+    margin-right: 2em;
+  }
+}

@@ -20,6 +20,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
+{% include read-this-first.html %}
 <div>
 <ul class="tiles">
         
