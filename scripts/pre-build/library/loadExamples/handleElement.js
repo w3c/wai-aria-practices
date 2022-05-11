@@ -135,6 +135,16 @@ const getHandleBodyElement = (permalink) => (element) => {
       if (!patternSlug && isPatternLink) patternSlug = patternMatch[1];
     }
   }
+
+  // This element is hard to identify since it has no attributes and only
+  // contains a single anchor tag
+  const isTrailingNavElement =
+    element.tagName === "NAV" &&
+    Object.keys(element.rawAttributes).length === 0 &&
+    element.querySelectorAll("> *").length === 1;
+  if (isTrailingNavElement) {
+    element.remove();
+  }
 };
 
 const removeDuplicateMainTag = (body) => {

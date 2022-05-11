@@ -284,9 +284,7 @@ lang: en
     </section>
   </div>
 
-  <nav>
-    <a href="{{ site.baseurl }}/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.1</a>
-  </nav>
+  
 
             <p>Page last updated: January 19, 2021</p>
           </div>

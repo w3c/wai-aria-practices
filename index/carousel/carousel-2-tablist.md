@@ -862,9 +862,7 @@ lang: en
 
     </div>
 
-    <nav>
-      <a href="{{ site.baseurl }}/patterns/carousel/">Carousel Pattern in WAI-ARIA Authoring Practices 1.2</a>
-    </nav>
+    
 
   
             <p>Page last updated: November 23, 2021</p>

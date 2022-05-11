@@ -269,9 +269,7 @@ lang: en
     <p>Please open <a href="feedDisplay.html">feedDisplay.html</a> and view source.</p>
   </section>
   </div>
-  <nav>
-    <a href="{{ site.baseurl }}/patterns/feed/">Feed Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
             <p>Page last updated: November 23, 2021</p>
           </div>

@@ -337,9 +337,7 @@ lang: en
   </section>
 
   </div>
-  <nav>
-    <a href="{{ site.baseurl }}/patterns/accordion/">Accordion Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
   <script src="js/accordion.js"></script>
 
             <p>Page last updated: November 23, 2021</p>

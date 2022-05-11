@@ -433,9 +433,7 @@ lang: en
 
     </div>
 
-    <nav>
-      <a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-    </nav>
+    
   
             <p>Page last updated: March 22, 2022</p>
           </div>

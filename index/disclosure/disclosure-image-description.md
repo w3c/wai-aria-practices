@@ -471,9 +471,7 @@ lang: en
     </script>
   </section>
   </div>
-  <nav>
-  <a href="{{ site.baseurl }}/patterns/disclosure/">Disclosure (Show/Hide) Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
             <p>Page last updated: November 23, 2021</p>
           </div>

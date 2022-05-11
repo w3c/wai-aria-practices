@@ -431,9 +431,7 @@ lang: en
 
     </section>
   </div>
-  <nav>
-    <a href="{{ site.baseurl }}/patterns/dialogmodal/">Modal Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
   <script>
     sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');

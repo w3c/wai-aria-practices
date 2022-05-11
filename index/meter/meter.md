@@ -206,9 +206,7 @@ lang: en
   </section>
 </div>
 
-  <nav>
-      <a href="{{ site.baseurl }}/patterns/meter/">Meter Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
             <p>Page last updated: February 10, 2022</p>
           </div>
