@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Date Picker Dialog Example"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/dialog-modal/datepicker-dialog
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/dialog-modal/datepicker-dialog
+permalink: /WAI/ARIA/APG/index/dialog-modal/datepicker-dialog
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,9 +28,9 @@ lang: en
 <script src="js/datepicker-dialog.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -76,8 +76,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -88,20 +88,20 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/dialogmodal.svg"
+        src="/assets/img/dialogmodal.svg"
         class="example-page-example-icon"
       >
   
   <div>
     
     <p>
-      The example below includes a date input field and a button that opens a date picker that implements the <a href="{{ site.baseurl }}/patterns/dialogmodal/">dialog design pattern</a>.
-      The dialog contains a calendar that uses the <a href="{{ site.baseurl }}/patterns/grid/">grid pattern</a> to present buttons that enable the user to choose a day from the calendar.
+      The example below includes a date input field and a button that opens a date picker that implements the <a href="/WAI/ARIA/APG/patterns/dialogmodal/">dialog design pattern</a>.
+      The dialog contains a calendar that uses the <a href="/WAI/ARIA/APG/patterns/grid/">grid pattern</a> to present buttons that enable the user to choose a day from the calendar.
       Choosing a date from the calendar closes the dialog and populates the date input field.
       When the dialog is opened, if the input field is empty, or does not contain a valid date, then the current date is focused in the calendar.
       Otherwise, the focus is placed on the day in the calendar that matches the value of the date input field.
@@ -340,7 +340,7 @@ lang: en
             <td>
               <ul>
                 <li>Moves focus to next element in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>Note that, as specified in the <a href="{{ site.baseurl }}/patterns/grid/">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
+                <li>Note that, as specified in the <a href="/WAI/ARIA/APG/patterns/grid/">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
                 <li>If focus is on the last button (i.e., &quot;OK&quot;), moves focus to the first button (i.e. &quot;Previous Year&quot;).</li>
               </ul>
             </td>
@@ -350,7 +350,7 @@ lang: en
             <td>
               <ul>
                 <li>Moves focus to previous element in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>Note that, as specified in the <a href="{{ site.baseurl }}/patterns/grid/">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
+                <li>Note that, as specified in the <a href="/WAI/ARIA/APG/patterns/grid/">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
                 <li>If focus is on the first button (i.e., &quot;Previous Year&quot;), moves focus to the last button (i.e. &quot;OK&quot;).</li>
               </ul>
             </td>
@@ -670,7 +670,7 @@ lang: en
                 <li>Makes the cell focusable and includes it in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>Set dynamically by the JavaScript when the element is to be included in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>At any given time, only one <code>gridcell</code> within the grid is in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -687,7 +687,7 @@ lang: en
                 <li>Makes the cell focusable and excludes it from the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>Changed dynamically to <code>0</code> by the JavaScript when the cell is to be included in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>At any given time, only one <code>gridcell</code> within the grid is in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -738,7 +738,7 @@ lang: en
   </section>
   </div>
   <nav>
-    <a href="{{ site.baseurl }}/patterns/dialogmodal/">Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/WAI/ARIA/APG/patterns/dialogmodal/">Dialog Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: February 10, 2022</p>
@@ -757,4 +757,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

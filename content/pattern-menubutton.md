@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Menu Button"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/menubutton/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/menubutton/
+permalink: /WAI/ARIA/APG/patterns/menubutton/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -47,9 +47,9 @@ lang: en
           </nav>
           <div class="sidebar-left">
             <section class="widget" id="menubutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
-      <p>A menu button is a <a href="{{ site.baseurl }}/patterns/button/">button</a> that opens a <a href="{{ site.baseurl }}/patterns/menu/">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
+      <p>A menu button is a <a href="/WAI/ARIA/APG/patterns/button/">button</a> that opens a <a href="/WAI/ARIA/APG/patterns/menu/">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/menubutton.svg" ><div class="header-wrapper"><h2 id="examples-9" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/menubutton.svg" ><div class="header-wrapper"><h2 id="examples-9" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/menu-button/menu-button-links.html">Navigation Menu Button</a>: A menu button made from an HTML <code>a</code> element that opens a menu of items that behave as links.</li>
@@ -69,7 +69,7 @@ lang: en
               <li>(Optional) <kbd>Up Arrow</kbd>: opens the menu and moves focus to the last menu item.</li>
             </ul>
           </li>
-          <li>The keyboard behaviors needed after the menu is open are described in <a href="{{ site.baseurl }}/patterns/menu/" class="sec-ref">Menu or Menu bar</a>.</li>
+          <li>The keyboard behaviors needed after the menu is open are described in <a href="/WAI/ARIA/APG/patterns/menu/" class="sec-ref">Menu or Menu bar</a>.</li>
         </ul>
       </section>
 
@@ -94,7 +94,7 @@ lang: en
             <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>
             that refers to the element with role <code>menu</code>.
             </li>
-            <li>Additional roles, states, and properties needed for the menu element are described in <a href="{{ site.baseurl }}/patterns/menu/" class="sec-ref">Menu or Menu bar</a>.</li>
+            <li>Additional roles, states, and properties needed for the menu element are described in <a href="/WAI/ARIA/APG/patterns/menu/" class="sec-ref">Menu or Menu bar</a>.</li>
         </ul>
       </section>
     </section>
@@ -113,4 +113,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

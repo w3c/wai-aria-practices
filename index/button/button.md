@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Button Examples"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/button/button
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/button/button
+permalink: /WAI/ARIA/APG/index/button/button
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,9 +22,9 @@ lang: en
 <script src="js/button.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -66,8 +66,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -78,12 +78,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/button.svg"
+        src="/assets/img/button.svg"
         class="example-page-example-icon"
       >
   
@@ -92,7 +92,7 @@ lang: en
     
 
     <p>
-      The following command and toggle button examples demonstrate the <a href="{{ site.baseurl }}/patterns/button/">button design pattern.</a>
+      The following command and toggle button examples demonstrate the <a href="/WAI/ARIA/APG/patterns/button/">button design pattern.</a>
     </p>
 
     <p>Similar examples include:</p>
@@ -275,7 +275,7 @@ lang: en
   </div>
 
   <nav>
-    <a href="{{ site.baseurl }}/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/WAI/ARIA/APG/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: December 13, 2020</p>
@@ -294,4 +294,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

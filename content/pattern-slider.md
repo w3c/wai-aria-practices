@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Slider"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/slider/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/slider/
+permalink: /WAI/ARIA/APG/patterns/slider/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -58,7 +58,7 @@ lang: en
         This is a new convention that may not be fully implemented by some assistive technologies.
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/slider.svg" ><div class="header-wrapper"><h2 id="examples-11" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/slider.svg" ><div class="header-wrapper"><h2 id="examples-11" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/slider/slider-color-viewer.html">Color Viewer Slider Example</a>: Basic  horizontal sliders that illustrate setting numeric values for a color picker.</li>
@@ -125,4 +125,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

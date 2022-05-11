@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Feed"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/feed/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/feed/
+permalink: /WAI/ARIA/APG/patterns/feed/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -54,7 +54,7 @@ lang: en
         So, a feed can be thought of as a dynamic list of articles that often appears to scroll infinitely.
       </p>
       <p>
-        The feature that most distinguishes feed from other ARIA patterns that support loading data as users scroll, e.g., a <a href="{{ site.baseurl }}/patterns/grid/">grid</a>, is that a feed is a structure, not a widget.
+        The feature that most distinguishes feed from other ARIA patterns that support loading data as users scroll, e.g., a <a href="/WAI/ARIA/APG/patterns/grid/">grid</a>, is that a feed is a structure, not a widget.
         Consequently, assistive technologies with a reading mode, such as screen readers, default to reading mode when interacting with feed content.
         However, unlike most other <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> structures, a feed establishes an interoperability contract between the web page and assistive technologies.
         The contract governs scroll interactions so that assistive technology users can read articles, jump forward and backward by article, and reliably trigger new articles to load while in reading mode.
@@ -94,7 +94,7 @@ lang: en
         By identifying the elements inside of an article that provide the title and the primary content, assistive technologies can provide functions that enable users to jump from article to article and efficiently discern which articles may be worthy of more attention.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/feed.svg" ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/feed.svg" ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
         
         <p>
         <a href="../../index/feed/feed.html">Example Implementation of Feed Pattern</a>
@@ -194,4 +194,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

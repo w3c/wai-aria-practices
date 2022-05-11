@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Disclosure (Show/Hide)"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/disclosure/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/disclosure/
+permalink: /WAI/ARIA/APG/patterns/disclosure/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -50,12 +50,12 @@ lang: en
       
       <p>
         A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
-        It has two elements: a disclosure <a href="{{ site.baseurl }}/patterns/button/">button</a> and a section of content whose visibility is controlled by the button.
+        It has two elements: a disclosure <a href="/WAI/ARIA/APG/patterns/button/">button</a> and a section of content whose visibility is controlled by the button.
         When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
         When the content is visible, the arrow or triangle typically points down.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/disclosure.svg" ><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/disclosure.svg" ><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
@@ -108,4 +108,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

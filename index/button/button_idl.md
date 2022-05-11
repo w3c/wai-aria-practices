@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Button Examples (IDL Version)"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/button/button_idl
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/button/button_idl
+permalink: /WAI/ARIA/APG/index/button/button_idl
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,9 +22,9 @@ lang: en
 <script src="js/button_idl.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -66,8 +66,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -78,7 +78,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -88,7 +88,7 @@ lang: en
   <div>
     
     <p>
-      The following examples of the <a href="{{ site.baseurl }}/patterns/button/">button design pattern</a> demonstrate a new JavaScript syntax for coding ARIA attributes.
+      The following examples of the <a href="/WAI/ARIA/APG/patterns/button/">button design pattern</a> demonstrate a new JavaScript syntax for coding ARIA attributes.
     </p>
     <p>
       The JavaScript for the example buttons on this page uses the <a href="https://www.w3.org/TR/wai-aria-1.2/#idl-interface">IDL Interface defined in ARIA 1.2</a>.
@@ -109,7 +109,7 @@ lang: en
           <strong>IMPORTANT:</strong> This example is coded using syntax that was not introduced until version 1.2 of the ARIA specification.
           When using a <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>, the buttons will not be styled correctly.
         </p><img alt=""
-        src="{{ site.baseurl }}/assets/img/button.svg"
+        src="/assets/img/button.svg"
         class="example-page-example-icon"
       >
 
@@ -285,7 +285,7 @@ lang: en
   </div>
 
   <nav>
-    <a href="{{ site.baseurl }}/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.1</a>
+    <a href="/WAI/ARIA/APG/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.1</a>
   </nav>
 
             <p>Page last updated: January 19, 2021</p>
@@ -304,4 +304,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

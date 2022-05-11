@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Communicating Value and Limits for Range Widgets"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/practices/range-related-properties/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /practices/range-related-properties/
+permalink: /WAI/ARIA/APG/practices/range-related-properties/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
@@ -231,7 +231,7 @@ if (addBodyClass) {
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for elements with role <code>meter</code> if the meter's minimum value is not 0 or its maximum value is not 100.
         It is necessary, however, to always specify a value for <code>aria-valuenow</code> and to ensure the value is greater than or equal to the minimum allowed value and less than or equal to the maximum allowed value.
-        A detailed description of the <code>meter</code> role is in the <a href="{{ site.baseurl }}/patterns/meter/">meter design pattern</a>.</p>
+        A detailed description of the <code>meter</code> role is in the <a href="/WAI/ARIA/APG/patterns/meter/">meter design pattern</a>.</p>
 
       <p>This example of a meter shows the current Central Processing Unit (CPU) usage. </p>
 
@@ -321,7 +321,7 @@ if (addBodyClass) {
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for the <code>slider</code> role when the slider's minimum is not 0 or the maximum value is not 100.
         The <code>aria-valuenow</code> property is required for <code>slider</code> role and the author needs to make sure it is within the minimum and maximum values.
-        A detailed description of the <code>slider</code> role can be found in the <a href="{{ site.baseurl }}/patterns/slider/">slider design pattern</a> and <a href="{{ site.baseurl }}/patterns/slidertwothumb/">slider (multi-thumb) design pattern</a>.
+        A detailed description of the <code>slider</code> role can be found in the <a href="/WAI/ARIA/APG/patterns/slider/">slider design pattern</a> and <a href="/WAI/ARIA/APG/patterns/slidertwothumb/">slider (multi-thumb) design pattern</a>.
       </p>
       <p>
         The following example shows a temperature controller.
@@ -355,7 +355,7 @@ if (addBodyClass) {
         Similarly, the <code>aria-valuenow</code> property is set only when a <code>spinbutton</code> has a value.
         If it is not set, a value is not exposed to assistive technologies for the <code>spinbutton</code>.
         <code>aria-valuetext</code> can be used when appropriate.
-        A detailed description of the <code>spinbutton</code> role can be found in the <a href="{{ site.baseurl }}/patterns/spinbutton/">spinbutton design pattern</a>.
+        A detailed description of the <code>spinbutton</code> role can be found in the <a href="/WAI/ARIA/APG/patterns/spinbutton/">spinbutton design pattern</a>.
       </p>
 
       <p>The following example sets the price of paperclips in cents.</p>
@@ -396,4 +396,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

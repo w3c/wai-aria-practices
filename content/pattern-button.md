@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Button"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/button/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/button/
+permalink: /WAI/ARIA/APG/patterns/button/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -62,17 +62,17 @@ lang: en
           In this example, when the pressed state is true, the label remains "Mute" so a screen reader would say something like "Mute toggle button pressed".
           Alternatively, if the design were to call for the button label to change from "Mute" to "Unmute," the aria-pressed attribute would not be needed.
         </li>
-        <li>Menu button: as described in the <a href="{{ site.baseurl }}/patterns/menubutton/">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+        <li>Menu button: as described in the <a href="/WAI/ARIA/APG/patterns/menubutton/">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
       </ul>
       <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Note</span></div><p class="">
-        The types of actions performed by buttons are distinctly different from the function of a link (see <a href="{{ site.baseurl }}/patterns/link/">link pattern</a>).
+        The types of actions performed by buttons are distinctly different from the function of a link (see <a href="/WAI/ARIA/APG/patterns/link/">link pattern</a>).
         It is important that both the appearance and role of a widget match the function it provides.
         Nevertheless, elements occasionally have the visual style of a link but perform the action of a button.
         In such cases, giving the element role <code>button</code> helps assistive technology users understand the function of the element.
         However, a better solution is to adjust the visual design so it matches the function and ARIA role.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/button.svg" ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/button.svg" ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
@@ -96,7 +96,7 @@ lang: en
             <ul>
               <li>
                 If activating the button opens a dialog, the focus moves inside the dialog. (see
-                <a href="{{ site.baseurl }}/patterns/dialogmodal/">dialog pattern</a>)
+                <a href="/WAI/ARIA/APG/patterns/dialogmodal/">dialog pattern</a>)
               </li>
               <li>If activating the button closes a dialog, focus typically returns to the
                 button that opened the dialog unless the function performed in the dialog context
@@ -155,4 +155,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

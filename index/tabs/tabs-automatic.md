@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Example of Tabs with Automatic Activation"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/tabs/tabs-automatic
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/tabs/tabs-automatic
+permalink: /WAI/ARIA/APG/index/tabs/tabs-automatic
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,9 +22,9 @@ lang: en
 <script src="js/tabs-automatic.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,22 +82,22 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/tabpanel.svg"
+        src="/assets/img/tabpanel.svg"
         class="example-page-example-icon"
       >
     
     <div>
       
       <p>
-          This example section demonstrates a tabs widget that implements the  <a href="{{ site.baseurl }}/patterns/tabpanel/">design pattern for tabs</a>.
+          This example section demonstrates a tabs widget that implements the  <a href="/WAI/ARIA/APG/patterns/tabpanel/">design pattern for tabs</a>.
           In this example,  a tab is automatically activated and its associated panel is displayed when the tab receives focus.
           It is recommended that authors consider implementing automatic activation of tabs <strong>only in</strong> circumstances where panels can be displayed instantly, i.e., all panel content is present in the DOM.
-          For additional guidance, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+          For additional guidance, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
       </p>
       <p>Similar examples include: </p>
       <ul>
@@ -352,7 +352,7 @@ lang: en
                   <li>Removes the element from the page <kbd>Tab</kbd> sequence.</li>
                   <li>Set when a tab is not selected so that only the selected tab is in the page <kbd>Tab</kbd> sequence.</li>
                   <li>Since an HTML <code>button</code> element is used for the tab, it is not necessary to set <code>tabindex="0"</code> on the selected (active) tab element.</li>
-                  <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                  <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -443,7 +443,7 @@ lang: en
 
     <nav>
       
-      <a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+      <a href="/WAI/ARIA/APG/patterns/tabpanel/">Tabs Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
     </nav>
   
             <p>Page last updated: March 22, 2022</p>
@@ -462,4 +462,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

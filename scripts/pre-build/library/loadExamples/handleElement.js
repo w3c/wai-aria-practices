@@ -31,7 +31,7 @@ const getHandleElement =
     if (element.tagName === "BODY") {
       walkHtmlElements(element, getHandleBodyElement(permalink));
 
-      if (permalink === "/index/") {
+      if (permalink === "/WAI/ARIA/APG/index/") {
         editIndexPage(element);
       } else {
         if (!patternSlug) {
@@ -43,7 +43,7 @@ const getHandleElement =
 
         const img = `<img 
         alt=""
-        src="{{ site.baseurl }}/assets/img/${patternSlug}.svg"
+        src="/assets/img/${patternSlug}.svg"
         class="example-page-example-icon"
       />`;
         if (element.querySelector(".advisement")) {

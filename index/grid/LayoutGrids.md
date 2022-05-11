@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Layout Grid Examples"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/grid/LayoutGrids
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/grid/LayoutGrids
+permalink: /WAI/ARIA/APG/index/grid/LayoutGrids
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -24,9 +24,9 @@ lang: en
 <script src="js/layoutGrids.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -72,8 +72,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -84,12 +84,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/grid.svg"
+        src="/assets/img/grid.svg"
         class="example-page-example-icon"
       >
   
@@ -97,7 +97,7 @@ lang: en
   
   <p>
     The following examples demonstrate how the
-    <a href="{{ site.baseurl }}/patterns/grid/">grid design pattern</a>
+    <a href="/WAI/ARIA/APG/patterns/grid/">grid design pattern</a>
     can be used to group a collection of interactive widgets into a single tab stop.
     In these examples, each widget, such as a link or button, is in a separate cell of the grid, and the user can navigate between them with the arrow keys.
     While navigating with the arrow keys, widgets receive keyboard focus and can be activated with <kbd>Space</kbd> or <kbd>Enter</kbd>.
@@ -455,7 +455,7 @@ lang: en
       <dt>Whether to focus a cell or an element inside it when the cell is clicked or a navigation key is pressed:</dt>
       <dd>
         The section of the grid pattern on
-        <a href="{{ site.baseurl }}/patterns/grid/#gridNav">Setting Focus and Navigating Inside Cells</a>
+        <a href="/WAI/ARIA/APG/patterns/grid/#gridNav">Setting Focus and Navigating Inside Cells</a>
         describes how to design the focus placement strategy.
       </dd>
       <dt>Whether focus can wrap from the last column to the first column in the next row or from the first column to the last column in the previous row when <kbd>Right Arrow</kbd> and <kbd>Left Arrow</kbd> are pressed:</dt>
@@ -635,7 +635,7 @@ lang: en
           <td><code>div</code></td>
           <td>
             Identifies the element containing the grid widget.
-            Because focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>, the grid element is not focusable.
+            Because focus is managed using <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>, the grid element is not focusable.
           </td>
         </tr>
         <tr data-test-id="aria-labelledby">
@@ -703,7 +703,7 @@ lang: en
               <li>Applied to all cells that do not contain an interactive widget that consumes arrow keys, such as a link or button.</li>
               <li>Changed dynamically to <code>0</code> by the JavaScript when the cell is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -717,7 +717,7 @@ lang: en
               <li>Clicks and keyboard commands that move focus inside the grid can focus widgets if the containing cell is not focusable.</li>
               <li>Changed dynamically to <code>0</code> by the JavaScript when the widget is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -730,7 +730,7 @@ lang: en
               <li>Makes the element focusable and includes it in the page <kbd>Tab</kbd> sequence.</li>
               <li>Set dynamically by the JavaScript when the element is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one element within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -789,7 +789,7 @@ lang: en
   </div>
   <nav>
     
-    <a href="{{ site.baseurl }}/patterns/grid/">Grid Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/WAI/ARIA/APG/patterns/grid/">Grid Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: November 23, 2021</p>
@@ -808,4 +808,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

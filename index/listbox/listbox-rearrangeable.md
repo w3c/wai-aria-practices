@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Example Listboxes with Rearrangeable Options"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/listbox/listbox-rearrangeable
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/listbox/listbox-rearrangeable
+permalink: /WAI/ARIA/APG/index/listbox/listbox-rearrangeable
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -25,9 +25,9 @@ lang: en
 <script src="js/listbox-rearrangeable.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -73,8 +73,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -85,12 +85,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/listbox.svg"
+        src="/assets/img/listbox.svg"
         class="example-page-example-icon"
       >
   
@@ -98,7 +98,7 @@ lang: en
   
   <p>
     The following two example implementations of the
-    <a href="{{ site.baseurl }}/patterns/listbox/">design pattern for listbox</a>
+    <a href="/WAI/ARIA/APG/patterns/listbox/">design pattern for listbox</a>
     demonstrate differences between single-select and multi-select functionality.
     In both examples, users can use action buttons to move options from one list to another.
     In the first implementation, users can choose a single option and then activate an action button
@@ -281,7 +281,7 @@ while in the second example, they may select multiple options before activating 
     <p>
       The example listboxes on this page implement the following keyboard interface.
       Other variations and options for the keyboard interface are described in the
-      <a href="{{ site.baseurl }}/patterns/listbox/#listbox_kbd_interaction">Keyboard Interaction section of the Listbox Design Pattern.</a>
+      <a href="/WAI/ARIA/APG/patterns/listbox/#listbox_kbd_interaction">Keyboard Interaction section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
       <thead>
@@ -374,7 +374,7 @@ while in the second example, they may select multiple options before activating 
     <p>
       The example listboxes on this page implement the following ARIA roles, states, and properties.
       Information about other ways of applying ARIA roles, states, and properties is available in the
-      <a href="{{ site.baseurl }}/patterns/listbox/#listbox_roles_states_props">Roles, States, and Properties section of the Listbox Design Pattern.</a>
+      <a href="/WAI/ARIA/APG/patterns/listbox/#listbox_roles_states_props">Roles, States, and Properties section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
     <thead>
@@ -501,7 +501,7 @@ while in the second example, they may select multiple options before activating 
   </section>
   </div>
   <nav>
-    <a href="{{ site.baseurl }}/patterns/listbox/">Listbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/WAI/ARIA/APG/patterns/listbox/">Listbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: November 23, 2021</p>
@@ -520,4 +520,4 @@ while in the second example, they may select multiple options before activating 
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

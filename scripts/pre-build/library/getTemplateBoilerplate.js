@@ -14,7 +14,7 @@ const getTemplateBoilerplate = ({
   return `---
 # This is a generated file
 title: "${title}"
-ref: /aria-practices/
+ref: ${permalink}
 
 github:
   repository: w3c/aria-practices
@@ -29,9 +29,9 @@ lang: en
 ---
 ${formattedHead}
 ${/* ${prettier.format(` */ ""}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 ${
   !addBodyClass
     ? ""
@@ -58,7 +58,7 @@ ${content}
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };
 

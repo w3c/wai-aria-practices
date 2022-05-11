@@ -27,22 +27,22 @@ const findNewLinksForOldLinks = (section) => {
     const anchorId = element.getAttribute("id");
     if (anchorId) {
       const noHash = section.permalinkReplacesFormerAnchorId === anchorId;
-      oldToNewLink[`/#${anchorId}`] = noHash
+      oldToNewLink[`/WAI/ARIA/APG/#${anchorId}`] = noHash
         ? section.permalink
         : `${section.permalink}#${anchorId}`;
     }
   });
 };
 
-const fixLink = (element, permalink, oldPermalink = "/") => {
+const fixLink = (element, permalink, oldPermalink = "/WAI/ARIA/APG/") => {
   const getApgAnchorId = (href, oldPermalink) => {
     if (!href.includes("#")) return null;
-    if (oldPermalink === "/" && href.startsWith("#")) return href.substr(1);
-    if (oldPermalink === "/" && href.startsWith("/#")) return href.substr(2);
+    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("#")) return href.substr(1);
+    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("/WAI/ARIA/APG/#")) return href.substr(15);
 
     let apgPath = (() => {
       const directory = oldPermalink.substr(0, oldPermalink.lastIndexOf("/"));
-      return path.relative(directory, "/") + "/";
+      return path.relative(directory, "/WAI/ARIA/APG/") + "/";
     })();
 
     const [hrefPath, hrefHash] = href.split("#");
@@ -56,8 +56,8 @@ const fixLink = (element, permalink, oldPermalink = "/") => {
     ? null
     : !href.match(/^(http|mailto|javascript)/);
   if (!!apgAnchorId) {
-    const rootRelativePath = oldToNewLink[`/#${apgAnchorId}`];
-    let newLink = `{{ site.baseurl }}${rootRelativePath}`;
+    const rootRelativePath = oldToNewLink[`/WAI/ARIA/APG/#${apgAnchorId}`];
+    let newLink = `${rootRelativePath}`;
     if (!newLink) {
       throw new Error(
         `Unable to remap anchor link "${href}" in "${permalink}". This will ` +

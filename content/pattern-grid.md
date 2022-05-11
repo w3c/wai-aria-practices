@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Grids : Interactive Tabular Data and Layout Containers"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/grid/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/grid/
+permalink: /WAI/ARIA/APG/patterns/grid/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -64,7 +64,7 @@ lang: en
         While the words "row" and "column" are used in the names of <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> attributes and by assistive technologies when describing and presenting the logical structure of elements with the <code>grid</code> role, using the <code>grid</code> role on an element does not necessarily imply that its visual presentation is tabular.
       </p>
 
-      <p>When presenting content that is tabular, consider the following factors when choosing between implementing this <code>grid</code> pattern or the <a href="{{ site.baseurl }}/patterns/table/">table</a> pattern.</p>
+      <p>When presenting content that is tabular, consider the following factors when choosing between implementing this <code>grid</code> pattern or the <a href="/WAI/ARIA/APG/patterns/table/">table</a> pattern.</p>
 
       <ul>
         <li>
@@ -73,7 +73,7 @@ lang: en
           <ul>
             <li>Always contains multiple focusable elements. </li>
             <li>Only one of the focusable elements contained by the grid is included in the page tab sequence.</li>
-            <li>Requires the author to provide code that <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_within">manages focus movement inside it</a>.</li>
+            <li>Requires the author to provide code that <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_general_within">manages focus movement inside it</a>.</li>
           </ul>
         </li>
 
@@ -86,7 +86,7 @@ lang: en
         To address these factors, the following two sections describe separate keyboard interaction patterns for data and layout grids.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/grid.svg" ><div class="header-wrapper"><h2 id="examples-5" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/grid.svg" ><div class="header-wrapper"><h2 id="examples-5" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/grid/LayoutGrids.html">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
@@ -134,11 +134,11 @@ lang: en
           <div class="note" role="note" id="issue-container-generatedID-9"><div role="heading" class="note-title marker" id="h-note-9" aria-level="6"><span>Note</span></div><ul class="">
             <li>
               When the above grid navigation keys move focus, whether the focus is set on an element inside the cell or the grid cell depends on cell content.
-              See <a href="{{ site.baseurl }}/patterns/grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
+              See <a href="/WAI/ARIA/APG/patterns/grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
             </li>
             <li>
               While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
-              If this functionality is needed, see <a href="{{ site.baseurl }}/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
+              If this functionality is needed, see <a href="/WAI/ARIA/APG/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
             </li>
             <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
           </ul></div>
@@ -152,7 +152,7 @@ lang: en
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="6"><span>Note</span></div><p class="">See <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+          <div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="6"><span>Note</span></div><p class="">See <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
         </section>
       </section>
 
@@ -176,7 +176,7 @@ lang: en
           While This type of focus movement wrapping can be very helpful in a layout grid, it would be disorienting if used in a data grid, especially for users of assistive technologies.
         </p>
 
-        <p> Because arrow keys are used to move focus inside of a <code>grid</code>, a <code>grid</code> is both easier to build and use if the components it contains do not require the arrow keys to operate. If a cell contains an element like a <a href="{{ site.baseurl }}/patterns/listbox/">listbox</a>, then an extra key command to focus and activate the listbox is needed as well as a command for restoring the grid navigation functionality. Approaches to supporting this need are described in the section on <a href="{{ site.baseurl }}/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>. </p>
+        <p> Because arrow keys are used to move focus inside of a <code>grid</code>, a <code>grid</code> is both easier to build and use if the components it contains do not require the arrow keys to operate. If a cell contains an element like a <a href="/WAI/ARIA/APG/patterns/listbox/">listbox</a>, then an extra key command to focus and activate the listbox is needed as well as a command for restoring the grid navigation functionality. Approaches to supporting this need are described in the section on <a href="/WAI/ARIA/APG/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>. </p>
 
         <section class="notoc"><div class="header-wrapper"><h3 id="keyboard-interaction-for-layout-grids">Keyboard Interaction For Layout Grids</h3></div>
           
@@ -227,11 +227,11 @@ lang: en
           <div class="note" role="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-11" aria-level="6"><span>Note</span></div><ul class="">
             <li>
               When the above grid navigation keys move focus, whether the focus is set on an element inside the cell or the grid cell depends on cell content.
-              See <a href="{{ site.baseurl }}/patterns/grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
+              See <a href="/WAI/ARIA/APG/patterns/grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
             </li>
             <li>
               While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
-              If this functionality is needed, see <a href="{{ site.baseurl }}/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
+              If this functionality is needed, see <a href="/WAI/ARIA/APG/patterns/grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
             </li>
             <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
           </ul></div>
@@ -250,7 +250,7 @@ lang: en
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="6"><span>Note</span></div><p class="">See <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+          <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="6"><span>Note</span></div><p class="">See <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_common_conventions" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
         </section>
       </section>
 
@@ -365,7 +365,7 @@ lang: en
             Otherwise, a label is specified for the grid element using <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>If the grid has a caption or description, <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> is set on the grid element with a value referring to the element containing the description.</li>
-          <li>If the grid provides sort functions, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the section on <a href="{{ site.baseurl }}/practices/grid-and-table-properties/">grid and table properties</a>. </li>
+          <li>If the grid provides sort functions, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the section on <a href="/WAI/ARIA/APG/practices/grid-and-table-properties/">grid and table properties</a>. </li>
           <li>
             If the grid supports selection, when a cell or row is selected, the selected element has <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set <code>true</code>.
             If the grid supports column selection and a column is selected, all cells in the column have <code>aria-selected</code> set to <code>true</code>.
@@ -376,13 +376,13 @@ lang: en
             Grids that do not provide editing functions do not include the <code>aria-readonly</code> attribute on any of their elements.
           </li>
           <li>
-            If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., data is dynamically loaded when scrolling or the grid provides functions for hiding rows or columns, the following properties are applied as described in the section on <a href="{{ site.baseurl }}/practices/grid-and-table-properties/">grid and table properties</a>.
+            If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., data is dynamically loaded when scrolling or the grid provides functions for hiding rows or columns, the following properties are applied as described in the section on <a href="/WAI/ARIA/APG/practices/grid-and-table-properties/">grid and table properties</a>.
             <ul>
               <li><a href="https://w3c.github.io/aria/#aria-colcount" class="property-reference">aria-colcount</a> or <a href="https://w3c.github.io/aria/#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively. </li>
               <li><a href="https://w3c.github.io/aria/#aria-colindex" class="property-reference">aria-colindex</a> or <a href="https://w3c.github.io/aria/#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively. </li>
             </ul>
           </li>
-          <li>If the grid includes cells that span multiple rows or multiple columns, and if the <code>grid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="{{ site.baseurl }}/practices/grid-and-table-properties/">grid and table properties</a>.</li>
+          <li>If the grid includes cells that span multiple rows or multiple columns, and if the <code>grid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="/WAI/ARIA/APG/practices/grid-and-table-properties/">grid and table properties</a>.</li>
         </ul>
 
         <div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>Note</span></div><ul class="">
@@ -413,4 +413,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

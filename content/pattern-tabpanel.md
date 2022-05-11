@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Tabs"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/tabpanel/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/tabpanel/
+permalink: /WAI/ARIA/APG/patterns/tabpanel/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -69,7 +69,7 @@ lang: en
         When the user activates one of the other tab elements, the previously displayed tab panel is hidden, the tab panel associated with the activated tab becomes visible, and the tab is considered "active".
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/tabpanel.svg" ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/tabpanel.svg" ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/tabs/tabs-automatic.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
@@ -125,7 +125,7 @@ lang: en
             It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency.
             This typically requires tab panel content to be preloaded.
             Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list.
-            For additional guidance, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>
             When a tab list has its <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>:
@@ -174,4 +174,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

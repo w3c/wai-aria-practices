@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Editable Combobox With List Autocomplete Example"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/combobox/combobox-autocomplete-list
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/combobox/combobox-autocomplete-list
+permalink: /WAI/ARIA/APG/index/combobox/combobox-autocomplete-list
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,9 +22,9 @@ lang: en
 <script src="js/combobox-autocomplete.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,12 +82,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/combobox.svg"
+        src="/assets/img/combobox.svg"
         class="example-page-example-icon"
       >
   
@@ -95,7 +95,7 @@ lang: en
     
     <p>
       The below combobox for choosing the name of a US state or territory demonstrates the
-      <a href="{{ site.baseurl }}/patterns/combobox/">ARIA design pattern for combobox.</a>
+      <a href="/WAI/ARIA/APG/patterns/combobox/">ARIA design pattern for combobox.</a>
       The design pattern describes four types of autocomplete behavior.
       This example illustrates the autocomplete behavior known as list autocomplete with manual selection.
       If the user types one or more characters in the edit box and the typed characters match the beginning of the name of one or more states or territories, a listbox popup appears containing the matching names.
@@ -230,7 +230,7 @@ lang: en
       <p>
       The example combobox on this page implements the following keyboard interface.
         Other variations and options for the keyboard interface are described in the
-        <a href="{{ site.baseurl }}/patterns/combobox/#keyboard-interaction-6">Keyboard Interaction section of the combobox design pattern.</a>
+        <a href="/WAI/ARIA/APG/patterns/combobox/#keyboard-interaction-6">Keyboard Interaction section of the combobox design pattern.</a>
       </p>
       <h3 id="kbd_label_textbox">Textbox</h3>
       <div class="table-wrap"><table aria-labelledby="kbd_label_textbox kbd_label" class="def">
@@ -296,7 +296,7 @@ lang: en
         <strong>NOTE:</strong> When visual focus is in the listbox, DOM focus remains on the textbox and the value of <code>aria-activedescendant</code> on the textbox is set to a value that refers to the listbox option that is visually indicated as focused.
         Where the following descriptions of keyboard commands mention focus, they are referring to the visual focus indicator.
         For more information about this focus management technique, see
-        <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
+        <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
       </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_listbox kbd_label" class="def">
         <thead>
@@ -384,7 +384,7 @@ lang: en
       <p>
         The example combobox on this page implements the following ARIA roles, states, and properties.
         Information about other ways of applying ARIA roles, states, and properties is available in the
-        <a href="{{ site.baseurl }}/patterns/combobox/#wai-aria-roles-states-and-properties-6">Roles, States, and Properties section of the combobox design pattern.</a>
+        <a href="/WAI/ARIA/APG/patterns/combobox/#wai-aria-roles-states-and-properties-6">Roles, States, and Properties section of the combobox design pattern.</a>
       </p>
       <h3 id="rps_label_textbox">Textbox</h3>
       <div class="table-wrap"><table aria-labelledby="rps_label_textbox rps_label" class="data attributes">
@@ -463,7 +463,7 @@ lang: en
                 <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>input</code> element.</li>
                 <li>
                   For more information about this focus management technique, see
-                  <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
+                  <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant">Using aria-activedescendant to Manage Focus.</a>
                 </li>
               </ul>
             </td>
@@ -611,7 +611,7 @@ lang: en
     </section>
   </div>
   <nav>
-    <a href="{{ site.baseurl }}/patterns/combobox/">Combobox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/WAI/ARIA/APG/patterns/combobox/">Combobox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: February 10, 2022</p>
@@ -630,4 +630,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

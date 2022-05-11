@@ -9,7 +9,7 @@ const getAboutPage = (sections) => {
     fileName: `about.md`,
     fileContent: getTemplateBoilerplate({
       title: "About",
-      permalink: `/about/`,
+      permalink: `/WAI/ARIA/APG/about/`,
       content: `
         ${sections.introduction.content}
         ${sections.changelog.content}

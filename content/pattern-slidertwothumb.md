@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Slider (Multi-Thumb)"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/slidertwothumb/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/slidertwothumb/
+permalink: /WAI/ARIA/APG/patterns/slidertwothumb/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -49,7 +49,7 @@ lang: en
             <section class="widget" id="slidertwothumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
-        A multi-thumb slider is a <a href="{{ site.baseurl }}/patterns/slider/">slider</a>
+        A multi-thumb slider is a <a href="/WAI/ARIA/APG/patterns/slider/">slider</a>
         with two or more thumbs that each set a value in a group of related values.
         For example, in a product search, a two-thumb slider could be used to enable users to set the minimum and maximum price limits for the search.
         In many two-thumb sliders, the thumbs are not allowed to pass one another, such as when the slider sets the minimum and maximum values for a range.
@@ -64,7 +64,7 @@ lang: en
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/slidertwothumb.svg" ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/slidertwothumb.svg" ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
         
         <p><a href="../../index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
       </section>
@@ -72,7 +72,7 @@ lang: en
       <section id="slidertwothumb_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2></div>
         
         <ul>
-          <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="{{ site.baseurl }}/patterns/slider/#slider_kbd_interaction">single-thumb slider</a>.</li>
+          <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="/WAI/ARIA/APG/patterns/slider/#slider_kbd_interaction">single-thumb slider</a>.</li>
           <li>
             The tab order remains constant regardless of thumb value and visual position within the slider.
             For example, if the value of a thumb changes such that it moves past one of the other thumbs, the tab order does not change.
@@ -121,4 +121,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

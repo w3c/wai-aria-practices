@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Meter"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/meter/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/meter/
+permalink: /WAI/ARIA/APG/patterns/meter/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -60,7 +60,7 @@ lang: en
         </li>
       </ul></div>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/meter.svg" ><div class="header-wrapper"><h2 id="example-4" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/meter.svg" ><div class="header-wrapper"><h2 id="example-4" tabindex="-1">Example</h2></div>
         
         <p><a href="../../index/meter/meter.html">Meter Example</a></p>
       </section>
@@ -101,4 +101,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

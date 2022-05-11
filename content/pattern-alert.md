@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Alert"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/alert/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/alert/
+permalink: /WAI/ARIA/APG/patterns/alert/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -56,7 +56,7 @@ lang: en
       <p>
         Because alerts are intended to provide important and potentially time-sensitive information without interfering with the user's ability to continue working,
         it is crucial they do not affect keyboard focus.
-        The <a href="{{ site.baseurl }}/patterns/alertdialog/">alert dialog</a> is designed for situations where interrupting work flow is necessary.
+        The <a href="/WAI/ARIA/APG/patterns/alertdialog/">alert dialog</a> is designed for situations where interrupting work flow is necessary.
       </p>
       <p>
         It is also important to avoid designing alerts that disappear automatically.
@@ -68,7 +68,7 @@ lang: en
         more difficult.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/alert.svg" ><div class="header-wrapper"><h2 id="example-0" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/alert.svg" ><div class="header-wrapper"><h2 id="example-0" tabindex="-1">Example</h2></div>
         
         <p><a href="../../index/alert/alert.html">Alert Example</a></p>
       </section>
@@ -98,4 +98,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

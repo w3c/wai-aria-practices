@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Accordion (Sections With Show/Hide Functionality)"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/patterns/accordion/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /patterns/accordion/
+permalink: /WAI/ARIA/APG/patterns/accordion/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -65,7 +65,7 @@ lang: en
         For instance, a menubutton may accompany each accordion header to provide access to actions that apply to that section.
         And, in some cases, a snippet of the hidden content may also be visually persistent.
       </p>
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/accordion.svg" ><div class="header-wrapper"><h2 id="example" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" src="/assets/img/accordion.svg" ><div class="header-wrapper"><h2 id="example" tabindex="-1">Example</h2></div>
         
         <p><a href="../../index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
       </section>
@@ -162,4 +162,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

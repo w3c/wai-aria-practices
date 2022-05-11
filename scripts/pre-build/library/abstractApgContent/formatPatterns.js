@@ -146,7 +146,7 @@ const findExamplesSection = (element, newSlug) => {
 
 const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
   return {
-    permalink: `/patterns/${newSlug}/`,
+    permalink: `/WAI/ARIA/APG/patterns/${newSlug}/`,
     permalinkReplacesFormerAnchorId: oldSlug,
 
     slug: newSlug,
@@ -197,7 +197,7 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
         examplesSection.classList.add("examples-section");
         examplesSection.insertAdjacentHTML(
           "afterbegin",
-          `<img alt="" src="{{ site.baseurl }}/assets/img/${newSlug}.svg" />`
+          `<img alt="" src="/assets/img/${newSlug}.svg" />`
         );
         return element.outerHTML;
       })

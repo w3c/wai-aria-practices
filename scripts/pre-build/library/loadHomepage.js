@@ -18,14 +18,14 @@ const loadHomepage = async () => {
     const fileName = path.basename(imgPath);
     const apgImgPath = path.join(apgPath, imgPath);
     const updatedPath = path.join(assetsPath, fileName);
-    img.setAttribute("src", `content/assets/${fileName}`);
+    img.setAttribute("src", `/content/assets/${fileName}`);
     await fs.copyFile(apgImgPath, updatedPath);
   };
 
   const mailing = body.querySelector("#collaboration li:last-of-type");
 
   const homepageContent = `
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/homepage.css">
+    <link rel="stylesheet" href="/assets/homepage.css">
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">
         <div class="top-section">

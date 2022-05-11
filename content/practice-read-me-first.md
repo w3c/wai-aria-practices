@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Read Me First"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/practices/read-me-first/
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /practices/read-me-first/
+permalink: /WAI/ARIA/APG/practices/read-me-first/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
@@ -149,4 +149,4 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

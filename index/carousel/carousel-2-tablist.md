@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Auto-Rotating Image Carousel with Tabs for Slide Control Example"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/carousel/carousel-2-tablist
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/carousel/carousel-2-tablist
+permalink: /WAI/ARIA/APG/index/carousel/carousel-2-tablist
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,9 +22,9 @@ lang: en
 <script src="js/carousel-tablist.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -74,8 +74,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -86,12 +86,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/carousel.svg"
+        src="/assets/img/carousel.svg"
         class="example-page-example-icon"
       >
     
@@ -99,10 +99,10 @@ lang: en
       
       <p>
         The following example implementation of the
-        <a href="{{ site.baseurl }}/patterns/carousel/">carousel design pattern</a>
+        <a href="/WAI/ARIA/APG/patterns/carousel/">carousel design pattern</a>
         demonstrates features of the pattern that are essential to accessibility for carousels that automatically start rotating when the page loads.
         This example also illustrates how to use the
-        <a href="{{ site.baseurl }}/patterns/tabpanel/">tabs pattern</a>
+        <a href="/WAI/ARIA/APG/patterns/tabpanel/">tabs pattern</a>
         to provide users with a way to skip slides in the sequence by directly choosing which one to view.
          Navigation among slides is provided by a series of circular buttons that function as tabs and are rendered over the rotating slides.
         Automatic rotation stops when users move focus to any control or link in the carousel or hover the mouse over carousel content.
@@ -775,7 +775,7 @@ lang: en
                     <li>Removes the element from the page <kbd>Tab</kbd> sequence.</li>
                     <li>Set when a tab is not selected so that only the selected tab is in the page <kbd>Tab</kbd> sequence.</li>
                     <li>Since the tab element is an HTML <code>button</code>, the tabindex attribute is removed when a tab is selected (activated) rather than setting <code>tabindex="0"</code>.</li>
-                    <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                    <li>This approach to managing focus is described in the section on <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
                   </ul>
                 </td>
               </tr>
@@ -863,7 +863,7 @@ lang: en
     </div>
 
     <nav>
-      <a href="{{ site.baseurl }}/patterns/carousel/">Carousel Pattern in WAI-ARIA Authoring Practices 1.2</a>
+      <a href="/WAI/ARIA/APG/patterns/carousel/">Carousel Pattern in WAI-ARIA Authoring Practices 1.2</a>
     </nav>
 
   
@@ -883,4 +883,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>

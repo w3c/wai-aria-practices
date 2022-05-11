@@ -1,13 +1,13 @@
 ---
 # This is a generated file
 title: "Example Disclosure Navigation Menu"
-ref: /aria-practices/
+ref: /WAI/ARIA/APG/index/disclosure/disclosure-navigation
 
 github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /index/disclosure/disclosure-navigation
+permalink: /WAI/ARIA/APG/index/disclosure/disclosure-navigation
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,9 +22,9 @@ lang: en
 <script src="js/disclosureMenu.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
+<link rel="stylesheet" href="/index/css/github.css">
 
 <div>
 
@@ -74,8 +74,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="/WAI/ARIA/APG/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -86,7 +86,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="/WAI/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -97,15 +97,15 @@ lang: en
     <div class="advisement">
       <p>
         Although this example uses the word "menu" in the colloquial sense to refer to a set of navigation links, it does not use the WAI-ARIA menu role.
-        That is because the menu and menubar roles require complex functionality, such as <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_general_within">composite widget focus management</a> and first-character navigation, that is unnecessary for typical site navigation.
+        That is because the menu and menubar roles require complex functionality, such as <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_general_within">composite widget focus management</a> and first-character navigation, that is unnecessary for typical site navigation.
       </p>
     </div><img alt=""
-        src="{{ site.baseurl }}/assets/img/disclosure.svg"
+        src="/assets/img/disclosure.svg"
         class="example-page-example-icon"
       >
     <p>
       The following example demonstrates using the
-      <a href="{{ site.baseurl }}/patterns/disclosure/">disclosure design pattern</a>
+      <a href="/WAI/ARIA/APG/patterns/disclosure/">disclosure design pattern</a>
       to show and hide dropdown lists of links in a navigation bar for a mythical university web site.
       Each disclosure button represents a section of the web site, and expanding it shows a list of links to pages within that section.
     </p>
@@ -445,7 +445,7 @@ lang: en
   </section>
   </div>
   <nav>
-    <a href="{{ site.baseurl }}/patterns/disclosure/">Disclosure (Show/Hide) Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="/WAI/ARIA/APG/patterns/disclosure/">Disclosure (Show/Hide) Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: November 23, 2021</p>
@@ -464,4 +464,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="/assets/skipto.min.js"></script>
