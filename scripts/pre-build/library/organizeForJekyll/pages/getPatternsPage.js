@@ -4,7 +4,7 @@ const getPatternsPage = (patterns) => {
   return {
     fileName: "patterns.md",
     fileContent: getTemplateBoilerplate({
-      title: "Design Patterns and Widgets",
+      title: "Patterns",
       permalink: "/patterns/",
       content: `<ul class="tiles">
         ${patterns
