@@ -1,6 +1,6 @@
 ---
 # This is a generated file
-title: "Design Patterns and Widgets"
+title: "Patterns"
 ref: /aria-practices/
 
 github:

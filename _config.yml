@@ -53,10 +53,10 @@ defaults:
           ref: /
         - name: Patterns
           ref: /patterns/
-        - name: Index
-          ref: /index/index.html # to prevent shadowing issues when deployed to Netlify
         - name: Practices
           ref: /practices/
+        - name: Index
+          ref: /index/index.html # to prevent shadowing issues when deployed to Netlify
         - name: About
           ref: /about/
 #  -
