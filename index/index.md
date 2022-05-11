@@ -19,9 +19,9 @@ lang: en
 <script src="js/app.js"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -948,4 +948,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

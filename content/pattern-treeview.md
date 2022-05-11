@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -78,11 +78,11 @@ lang: en
         However, in multi-select trees, which enable the user to select more than one item for an action, the selected state is always independent of the focus.
         For example, in a typical file system navigator, the user can move focus to select any number of files for an action, such as copy or move.
         It is important that the visual design distinguish between items that are selected and the item that has focus.
-        For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a>
-        and <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+        For more details, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a>
+        and <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/treeview.svg" ><div class="header-wrapper"><h2 id="examples-15" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/treeview.svg" ><div class="header-wrapper"><h2 id="examples-15" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li>
@@ -174,17 +174,17 @@ lang: en
           </li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-29" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM focus (the active element) is functionally distinct from the selected state. For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection.</a></li>
+          <li>DOM focus (the active element) is functionally distinct from the selected state. For more details, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection.</a></li>
           <li>
             The <code>tree</code> role supports the <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant">aria-activedescendant</a> property,
             which provides an alternative to moving DOM focus among <code>treeitem</code> elements when implementing keyboard navigation.
-            For details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            For details, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>
             In a single-select tree, moving focus may optionally unselect the previously selected node and select the newly focused node.
             This model of selection is known as "selection follows focus".
             Having selection follow focus can be very helpful in some circumstances and can severely degrade accessibility in others.
-            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>If selecting or unselecting all nodes is an important function, implementing separate controls for these actions, such as buttons for "Select All" and "Unselect All", significantly improves accessibility.</li>
         <li>
@@ -234,7 +234,7 @@ lang: en
               </li>
               <li>
                 Note that except in trees where selection follows focus, the selected state is distinct from focus.
-                For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a> and <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+                For more details, see <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a> and <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
               </li>
             </ul>
           </li>
@@ -293,4 +293,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

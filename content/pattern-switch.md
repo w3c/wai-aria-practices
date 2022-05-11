@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -50,7 +50,7 @@ lang: en
       
       <p>
         A <a href="https://w3c.github.io/aria/#switch" class="role-reference">switch</a> is an input widget that allows users to choose one of two values: <q>on</q> or <q>off</q>.
-        Switches are similar to <a href="/patterns/checkbox/">checkboxes</a> and <a href="/patterns/button/">toggle buttons</a>, which can also serve as binary inputs.
+        Switches are similar to <a href="{{ site.baseurl }}/patterns/checkbox/">checkboxes</a> and <a href="{{ site.baseurl }}/patterns/button/">toggle buttons</a>, which can also serve as binary inputs.
         One difference, however, is that switches can only be used for binary input while checkboxes and toggle buttons allow implementations the option of supporting a third middle state.
         Checkboxes can be <q>checked</q> or <q>not checked</q> and can optionally also allow for a <q>partially checked</q> state.
         Toggle buttons can be <q>pressed</q> or <q>not pressed</q> and can optionally allow for a <q>partially pressed</q> state.
@@ -67,7 +67,7 @@ lang: en
         <strong>Important:</strong> it is critical the label on a switch does not change when its state changes.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/switch.svg" ><div class="header-wrapper"><h2 id="examples-12" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/switch.svg" ><div class="header-wrapper"><h2 id="examples-12" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/switch/switch.html">Switch Example</a>: A switch based on a <code>div</code> element that turns a notification preference on and off.</li>
@@ -124,4 +124,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

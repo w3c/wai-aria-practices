@@ -1,12 +1,12 @@
 const getTemplateBoilerplate = require("../../getTemplateBoilerplate");
 
-const getFundamentalPage = (section) => {
+const getPracticePage = (section) => {
   return {
-    fileName: `fundamental-${section.slug}.md`,
+    fileName: `practice-${section.slug}.md`,
     fileContent: getTemplateBoilerplate({
       title: section.name,
       permalink: section.permalink,
-      addBodyClass: "fundamental-page",
+      addBodyClass: "practice-page",
       content: `
         <div class="sidebar-container">
           <nav class="sidebar-right">
@@ -32,4 +32,4 @@ const getFundamentalPage = (section) => {
   };
 };
 
-module.exports = getFundamentalPage;
+module.exports = getPracticePage;

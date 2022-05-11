@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -63,10 +63,10 @@ lang: en
       <p>
         The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role is a special-case dialog role
         designed specifically for dialogs that divert users' attention to a brief, important message.
-        Its usage is described in the <a href="/patterns/alertdialog/">alert dialog design pattern.</a>
+        Its usage is described in the <a href="{{ site.baseurl }}/patterns/alertdialog/">alert dialog design pattern.</a>
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/dialogmodal.svg" ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/dialogmodal.svg" ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
@@ -107,7 +107,7 @@ lang: en
               <li>
                 If a dialog contains the final step in a process that is not easily reversible, such as deleting data or completing a financial transaction,
                 it may be advisable to set focus on the least destructive action, especially if undoing the action is difficult or impossible.
-                The <a href="/patterns/alertdialog/">Alert Dialog Pattern</a> is often employed in such circumstances.
+                The <a href="{{ site.baseurl }}/patterns/alertdialog/">Alert Dialog Pattern</a> is often employed in such circumstances.
               </li>
               <li>
                 If a dialog is limited to interactions that either provide additional information or continue processing,
@@ -195,4 +195,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

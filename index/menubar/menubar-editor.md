@@ -23,9 +23,9 @@ lang: en
 <script src="js/style-manager.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -71,8 +71,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -83,12 +83,12 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/menu.svg"
+        src="{{ site.baseurl }}/assets/img/menu.svg"
         class="example-page-example-icon"
       >
   
@@ -96,7 +96,7 @@ lang: en
     
     <p>
       The following example demonstrates using the
-      <a href="/patterns/menu/">menubar design pattern</a>
+      <a href="{{ site.baseurl }}/patterns/menu/">menubar design pattern</a>
       to provide access to editing actions for a text area.
       Each item in the menubar identifies a category of text formatting actions that can be executed from its submenu.
       The submenus demonstrate <code>menuitemradio</code> and <code>menuitemcheckbox</code> elements.
@@ -438,7 +438,7 @@ lang: en
             <td>
               <ul>
                 <li>Identifies the element as a <code>menubar</code> container for a set of <code>menuitem</code> elements.</li>
-                <li>Is not focusable because focus is managed using <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a></li>
+                <li>Is not focusable because focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a></li>
               </ul>
             </td>
           </tr>
@@ -510,7 +510,7 @@ lang: en
                   When the page loads, the first item in the menubar has <code>tabindex="0"</code>.
                 </li>
                 <li>
-                  Focus is managed using <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.
+                  Focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.
                 </li>
               </ul>
             </td>
@@ -597,7 +597,7 @@ lang: en
             <td>
               <ul>
                 <li>Identifies the element as a menu container for a set of menu items.</li>
-                <li>Is not focusable because focus is managed using <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a></li>
+                <li>Is not focusable because focus is managed using <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex.</a></li>
               </ul>
             </td>
           </tr>
@@ -929,7 +929,7 @@ lang: en
   </section>
   </div>
   <nav>
-    <a href="/patterns/menu/">Menu or Menubar Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/menu/">Menu or Menubar Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
 
@@ -949,4 +949,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

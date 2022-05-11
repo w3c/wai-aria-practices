@@ -22,9 +22,9 @@ lang: en
 <script type="text/javascript" src="js/treeview-navigation.js"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -74,8 +74,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -86,7 +86,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -95,18 +95,18 @@ lang: en
     <div>
       
       <div class="advisement">
-        <p><strong>CAUTION!</strong> Before considering use of the <a href="/patterns/treeview/">ARIA tree pattern</a> for site navigation, it is important to understand:</p>
+        <p><strong>CAUTION!</strong> Before considering use of the <a href="{{ site.baseurl }}/patterns/treeview/">ARIA tree pattern</a> for site navigation, it is important to understand:</p>
         <ul>
           <li>Correct implementation of the <code>tree</code> role requires implementation of complex functionality that is not needed for typical site navigation that is styled to look like a tree with expandable sections.</li>
-          <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="/patterns/disclosure/">disclosure pattern.</a></li>
+          <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="{{ site.baseurl }}/patterns/disclosure/">disclosure pattern.</a></li>
         </ul>
       </div><img alt=""
-        src="/assets/img/treeview.svg"
+        src="{{ site.baseurl }}/assets/img/treeview.svg"
         class="example-page-example-icon"
       >
       <p>
         The below example demonstrates how the
-        <a href="/patterns/treeview/">Treeview Design Pattern</a>
+        <a href="{{ site.baseurl }}/patterns/treeview/">Treeview Design Pattern</a>
         can be used to build a navigation tree for a set of hierarchically organized web pages.
         It illustrates navigation of a mythical university web site that is comparable to the navigation illustrated in the <a href="../disclosure/disclosure-navigation.html">Example Disclosure Navigation Menu</a>.
         As noted above, the disclosure pattern is better suited for most web sites because few sites need the additional keyboard functionality required to support the ARIA <code>tree</code> role.
@@ -471,7 +471,7 @@ lang: en
           It is a closed node when the children are hidden and an open node when it is expanded.
           An end node does not have any children.
           For a complete list of terms and definitions, see the
-          <a href="/patterns/treeview/">Treeview Design Pattern.</a>
+          <a href="{{ site.baseurl }}/patterns/treeview/">Treeview Design Pattern.</a>
         </p>
       </section>
 
@@ -662,7 +662,7 @@ lang: en
                   <li>Identifies the <code>ul</code> element as a <code>tree</code> widget.</li>
                   <li>
                     Because focus movement in the tree is managed with a
-                    <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>,
+                    <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>,
                     the <code>tree</code> container does not need a <code>tabindex</code> attribute.
                   </li>
                 </ul>
@@ -804,7 +804,7 @@ lang: en
       </section>
   </div>
   <nav>
-    <a href="/patterns/treeview/">Tree View Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/treeview/">Tree View Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
   
             <p>Page last updated: November 23, 2021</p>
@@ -823,4 +823,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

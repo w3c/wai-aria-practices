@@ -18,13 +18,13 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
-    <link rel="stylesheet" href="/assets/homepage.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/homepage.css">
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">
         <div class="top-section">
@@ -51,7 +51,11 @@ lang: en
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
         <h2>APG Resources</h2>
-        <p>Building blocks that help you make the web accessible</p>
+        <p>
+            Learn how to make common rich internet application patterns and
+            widgets accessible by applying WAI-ARIA roles, states and
+            properties, and implementing keyboard support.
+          </p>
       </div>
       <div class="contained margin-fix">
         <div class="resource-item">
@@ -122,7 +126,10 @@ lang: en
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>Current Work</h2>
-        <p>Check out our most recent work</p>
+        <p>
+            Take a look at the plan overview for WAI-ARIA Authoring Practices,
+            priorities and work in progress.
+          </p>
       </div>
       <div class="contained margin-fix">
         <div class="work-items">
@@ -278,4 +285,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

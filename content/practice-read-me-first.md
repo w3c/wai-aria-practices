@@ -7,7 +7,7 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /fundamentals/read-me-first/
+permalink: /practices/read-me-first/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,12 +16,12 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
-const addBodyClass = "fundamental-page";
+const addBodyClass = "practice-page";
 if (addBodyClass) {
   document.body.classList.add(addBodyClass);
 }
@@ -149,4 +149,4 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

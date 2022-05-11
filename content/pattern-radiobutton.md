@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -55,7 +55,7 @@ lang: en
         force the user to check one of the buttons before moving past a certain point in the workflow.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/radiobutton.svg" ><div class="header-wrapper"><h2 id="examples-10" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/radiobutton.svg" ><div class="header-wrapper"><h2 id="examples-10" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
@@ -70,7 +70,7 @@ lang: en
           
           <p>
             This section describes the keyboard interaction implemented for most radio groups.
-            For the special case of a radio group nested inside a <a href="/patterns/toolbar/">toolbar</a>, use the keyboard interaction described in the following section.
+            For the special case of a radio group nested inside a <a href="{{ site.baseurl }}/patterns/toolbar/">toolbar</a>, use the keyboard interaction described in the following section.
           </p>
           <ul>
             <li>
@@ -199,4 +199,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

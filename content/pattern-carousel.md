@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -76,7 +76,7 @@ lang: en
         </li>
       </ul>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/carousel.svg" ><div class="header-wrapper"><h2 id="examples-0" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/carousel.svg" ><div class="header-wrapper"><h2 id="examples-0" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel with Buttons for Slide Control:</a> A basic image carousel that demonstrates the accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with buttons for previous and next slide.</li>
@@ -110,11 +110,11 @@ lang: en
           </li>
           <li><kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>: Move focus through the interactive elements of the carousel as specified by the page tab sequence -- scripting for <kbd>Tab</kbd> is not necessary.</li>
           <li>
-            Button elements implement the keyboard interaction defined in the <a href="/patterns/button/">button pattern</a>.
+            Button elements implement the keyboard interaction defined in the <a href="{{ site.baseurl }}/patterns/button/">button pattern</a>.
             Note: Activating the rotation control, next slide, and previous slide do not move focus, so users may easily repetitively activate them as many times as desired.
           </li>
           <li>If present, the rotation control is the first element in the <kbd>Tab</kbd> sequence inside the carousel. It is essential that it precede the rotating content so it can be easily located.</li>
-          <li>If tab elements are used for slide picker controls, they implement the keyboard interaction defined in the <a href="/patterns/tabpanel/">Tabs Pattern.</a></li>
+          <li>If tab elements are used for slide picker controls, they implement the keyboard interaction defined in the <a href="{{ site.baseurl }}/patterns/tabpanel/">Tabs Pattern.</a></li>
         </ul>
       </section>
 
@@ -123,8 +123,8 @@ lang: en
         <p>This section describes the element composition for three styles of carousels:</p>
         <ul>
           <li>Basic: Has rotation, previous slide, and next slide controls but no slide picker controls.</li>
-          <li>Tabbed: Has basic controls plus a single tab stop for slide picker controls implemented using the <a href="/patterns/tabpanel/">tabs pattern.</a></li>
-          <li>Grouped: Has basic controls plus a series of tab stops in a group of slide picker controls where each control implements the <a href="/patterns/button/">button pattern.</a> Because each slide selector button adds an element to the page tab sequence, this style is the least friendly for keyboard users.</li>
+          <li>Tabbed: Has basic controls plus a single tab stop for slide picker controls implemented using the <a href="{{ site.baseurl }}/patterns/tabpanel/">tabs pattern.</a></li>
+          <li>Grouped: Has basic controls plus a series of tab stops in a group of slide picker controls where each control implements the <a href="{{ site.baseurl }}/patterns/button/">button pattern.</a> Because each slide selector button adds an element to the page tab sequence, this style is the least friendly for keyboard users.</li>
         </ul>
         <section><div class="header-wrapper"><h3 id="basic-carousel-elements">Basic carousel elements</h3></div>
         <ul>
@@ -133,7 +133,7 @@ lang: en
             has either role <a href="https://w3c.github.io/aria/#region" class="role-reference">region</a>
             or role <a href="https://w3c.github.io/aria/#group" class="role-reference">group.</a>
             The most appropriate role for the carousel container depends on the information architecture of the page.
-            See the <a href="/fundamentals/landmark-regions/">landmark regions guidance</a> to determine whether the carousel warrants being designated as a landmark region.
+            See the <a href="{{ site.baseurl }}/practices/landmark-regions/">landmark regions guidance</a> to determine whether the carousel warrants being designated as a landmark region.
           </li>
           <li>The carousel container has the <a href="https://w3c.github.io/aria/#aria-roledescription" class="property-reference">aria-roledescription</a> property set to <code>carousel</code>.</li>
           <li>
@@ -142,7 +142,7 @@ lang: en
             Otherwise, an accessible label is provided by the property <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> set on the carousel container.
             Note that since the <code>aria-roledescription</code> is set to "carousel", the label does not contain the word "carousel".
           </li>
-          <li>The rotation control, next slide control, and previous slide control are either native button elements (recommended) or implement the <a href="/patterns/button/">button pattern</a>.</li>
+          <li>The rotation control, next slide control, and previous slide control are either native button elements (recommended) or implement the <a href="{{ site.baseurl }}/patterns/button/">button pattern</a>.</li>
           <li>
             The rotation control has an accessible label provided by either its inner text or <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
             The label changes to match the action the button will perform, e.g., "Stop slide rotation" or "Start slide rotation".
@@ -187,12 +187,12 @@ lang: en
             Each slide container has role <a href="https://w3c.github.io/aria/#tabpanel" class="role-reference">tabpanel</a> in lieu of <code>group</code>,
             and it does not have the <code>aria-roledescription</code> property.
           </li>
-          <li>It has slide picker controls implemented using the <a href="/patterns/tabpanel/">tabs pattern</a> where:
+          <li>It has slide picker controls implemented using the <a href="{{ site.baseurl }}/patterns/tabpanel/">tabs pattern</a> where:
             <ul>
               <li>Each control is a <code>tab</code> element, so activating a tab displays the slide associated with that tab.</li>
               <li>The accessible name of each <code>tab</code> indicates which slide it will display by including the name or number of the slide, e.g., "Slide 3". Slide names are preferable if each slide has a unique name.</li>
               <li>The set of controls is grouped in a <code>tablist</code> element with an accessible name provided by the value of <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> that identifies the purpose of the tabs, e.g., "Choose slide to display."</li>
-              <li>The <code>tab</code>, <code>tablist</code>, and <code>tabpanel</code> implement the properties specified in the <a href="/patterns/tabpanel/">tabs pattern</a>.</li>
+              <li>The <code>tab</code>, <code>tablist</code>, and <code>tabpanel</code> implement the properties specified in the <a href="{{ site.baseurl }}/patterns/tabpanel/">tabs pattern</a>.</li>
             </ul>
           </li>
         </ul>
@@ -201,7 +201,7 @@ lang: en
         <ul>
           <li>The set of slide picker controls is contained in an element with role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a>.</li>
           <li>The group containing the picker controls has an accessible label provided by the value of <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> that identifies the purpose of the controls, e.g., "Choose slide to display."</li>
-          <li>Each picker control is a native button element (recommended) or implements the <a href="/patterns/button/">button pattern.</a></li>
+          <li>Each picker control is a native button element (recommended) or implements the <a href="{{ site.baseurl }}/patterns/button/">button pattern.</a></li>
           <li>
             The accessible name of each picker button matches the name of the slide it displays.
             One technique for accomplishing this is to set <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> to a value that references the slide <code>group</code> element.
@@ -228,4 +228,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

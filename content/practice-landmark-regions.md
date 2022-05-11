@@ -7,7 +7,7 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /fundamentals/landmark-regions/
+permalink: /practices/landmark-regions/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,12 +16,12 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
-const addBodyClass = "fundamental-page";
+const addBodyClass = "practice-page";
 if (addBodyClass) {
   document.body.classList.add(addBodyClass);
 }
@@ -73,7 +73,7 @@ if (addBodyClass) {
         Several HTML sectioning elements automatically create ARIA landmark regions.
         So, in order to provide assistive technology users with a logical view of a page,
         it is important to understand the effects of using HTML sectioning elements.
-        [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-html-aria" title="ARIA in HTML">HTML-ARIA</a></cite>] contains more information on HTML element role mapping.
+        [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-html-aria" title="ARIA in HTML">HTML-ARIA</a></cite>] contains more information on HTML element role mapping.
       </p>
       <div class="table-wrap"><table class="widget-features">
         <caption>Default landmark roles for HTML sectioning elements</caption>
@@ -194,7 +194,7 @@ if (addBodyClass) {
           <li>When a page contains nested <code>document</code> and/or <code>application</code> roles (e.g. typically through the use of <code>iframe</code> and <code>frame</code> elements), each <code>document</code> or <code>application</code> role may have
             one <code>banner</code> landmark.</li>
 
-          <li>If a page includes more than one <code>banner</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>banner</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
         <section class="notoc"><div class="header-wrapper"><h4 id="html-techniques">HTML Techniques</h4></div>
@@ -203,7 +203,7 @@ if (addBodyClass) {
             <li>The HTML <code>header</code> element defines a <code>banner</code> landmark when its context is the <code>body</code> element.</li>
 
             <li>
-              The HTML <code>header</code> element is not considered a <code>banner</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/" class="html-mapping">HTML Accessibility Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-html-aam" title="HTML Accessibility API Mappings 1.0">HTML-AAM</a></cite>]):
+              The HTML <code>header</code> element is not considered a <code>banner</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/" class="html-mapping">HTML Accessibility Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-html-aam" title="HTML Accessibility API Mappings 1.0">HTML-AAM</a></cite>]):
               <ul>
                 <li><code>article</code></li>
                 <li><code>aside</code></li>
@@ -238,7 +238,7 @@ if (addBodyClass) {
 
           <li>If the complementary content is not related to the main content, a more general role should be assigned (e.g. <code>region</code>).</li>
 
-          <li>If a page includes more than one <code>complementary</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>complementary</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
         <section class="notoc"><div class="header-wrapper"><h4 id="html-technique">HTML Technique</h4></div>
@@ -272,7 +272,7 @@ if (addBodyClass) {
           <li>When a page contains nested <code>document</code> and/or <code>application</code> roles (e.g. typically through the use of <code>iframe</code> and <code>frame</code> elements), each <code>document</code> or <code>application</code> role may have
             one <code>contentinfo</code> landmark.</li>
 
-          <li>If a page includes more than one <code>contentinfo</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>contentinfo</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
         <section class="notoc"><div class="header-wrapper"><h4 id="html-techniques-0">HTML Techniques</h4></div>
@@ -283,7 +283,7 @@ if (addBodyClass) {
             <li>The HTML <code>footer</code> element defines a <code>contentinfo</code> landmark when its context is the <code>body</code> element.</li>
 
             <li>
-              The HTML <code>footer</code> element is not considered a <code>contentinfo</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/" class="html-mapping">HTML Accessibility Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="/about/#bib-html-aam" title="HTML Accessibility API Mappings 1.0">HTML-AAM</a></cite>]):
+              The HTML <code>footer</code> element is not considered a <code>contentinfo</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/" class="html-mapping">HTML Accessibility Mappings</a> [<cite><a class="bibref" data-link-type="biblio" href="{{ site.baseurl }}/about/#bib-html-aam" title="HTML Accessibility API Mappings 1.0">HTML-AAM</a></cite>]):
               <ul>
                 <li><code>article</code></li>
                 <li><code>aside</code></li>
@@ -318,7 +318,7 @@ if (addBodyClass) {
 
           <li>A label for the <code>form</code> landmark should be visible to all users (e.g. an <code>h1-h6</code> element).</li>
 
-          <li>If a page includes more than one <code>form</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>form</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
 
           <li>
             Whenever possible, controls contained in a <code>form</code> landmark in an HTML document should use native host semantics:
@@ -364,7 +364,7 @@ if (addBodyClass) {
           <li>When a page contains nested <code>document</code> and/or <code>application</code> roles (e.g. typically through the use of <code>iframe</code> and <code>frame</code> elements), each <code>document</code> or <code>application</code> role may have
             one <code>main</code> landmark.</li>
 
-          <li>If a page includes more than one <code>main</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>main</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
         <section class="notoc"><div class="header-wrapper"><h4 id="html-technique-0">HTML Technique</h4></div>
@@ -390,7 +390,7 @@ if (addBodyClass) {
         <p><a class="role-reference" href="https://w3c.github.io/aria/#navigation"><code>Navigation</code></a> landmarks provide a way to identify groups (e.g. lists) of links that are intended to be used for website or page content navigation.</p>
 
         <ul>
-          <li>If a page includes more than one <code>navigation</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>navigation</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
 
           <li>If a <code>navigation</code> landmark has an identical set of links as another <code>navigation</code> landmark on the page, use the same label for each <code>navigation</code> landmark.</li>
         </ul>
@@ -421,7 +421,7 @@ if (addBodyClass) {
         <ul>
           <li>A <code>region</code> landmark must have a label.</li>
 
-          <li>If a page includes more than one <code>region</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>region</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
 
           <li>The <code>region</code> landmark can be used identify content that named landmarks do not appropriately describe.</li>
         </ul>
@@ -451,7 +451,7 @@ if (addBodyClass) {
         <ul>
           <li>Use the <code>search</code> landmark instead of the <code>form</code> landmark when the form is used for search functionality.</li>
 
-          <li>If a page includes more than one <code>search</code> landmark, each should have a unique label (see <a href="/fundamentals/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
+          <li>If a page includes more than one <code>search</code> landmark, each should have a unique label (see <a href="{{ site.baseurl }}/practices/landmark-regions/#aria_lh_step3">Step 3</a> above).</li>
         </ul>
 
         <section class="notoc"><div class="header-wrapper"><h4 id="html-technique-3">HTML Technique</h4></div>
@@ -470,7 +470,7 @@ if (addBodyClass) {
         </section>
       </section>
     </section>
-  </section>;
+  </section>
         
           </div>
         </div>
@@ -487,4 +487,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

@@ -7,7 +7,7 @@ github:
   repository: w3c/aria-practices
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /fundamentals/grid-and-table-properties/
+permalink: /practices/grid-and-table-properties/
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,12 +16,12 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <script>
-const addBodyClass = "fundamental-page";
+const addBodyClass = "practice-page";
 if (addBodyClass) {
   document.body.classList.add(addBodyClass);
 }
@@ -63,7 +63,7 @@ if (addBodyClass) {
     
     <p>
       To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the
-      <a href="/patterns/grid/">grid pattern</a> or <a href="/patterns/table/">table pattern</a>,
+      <a href="{{ site.baseurl }}/patterns/grid/">grid pattern</a> or <a href="{{ site.baseurl }}/patterns/table/">table pattern</a>,
       assistive technologies need to be able to determine:
     </p>
     <ul>
@@ -531,7 +531,7 @@ if (addBodyClass) {
 
     </section>
 
-  </section>;
+  </section>
         
           </div>
         </div>
@@ -548,4 +548,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

@@ -22,7 +22,7 @@ const getPatternsPage = (patterns) => {
                 <li class="tile tile-landmarks">
                   <h2 class="tile-name">
                     <a href="/index/landmarks/index.html">
-                      <img src="/assets/img/landmarks.svg" alt="">
+                      <img src="{{ site.baseurl }}/assets/img/landmarks.svg" alt="">
                       <span>Landmarks</span>
                     </a>
                   </h2>
@@ -37,8 +37,8 @@ const getPatternsPage = (patterns) => {
             return `
               <li class="tile tile-${pattern.slug}">
                 <h2 class="tile-name">
-                  <a href="${pattern.permalink}">
-                    <img src="/assets/img/${pattern.slug}.svg" alt="">
+                  <a href="{{ site.baseurl }}${pattern.permalink}">
+                    <img src="{{ site.baseurl }}/assets/img/${pattern.slug}.svg" alt="">
                     <span>${pattern.name}</span>
                   </a>
                 </h2>

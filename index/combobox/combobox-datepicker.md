@@ -28,9 +28,9 @@ lang: en
 <script src="js/combobox-datepicker.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -76,8 +76,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -88,21 +88,21 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/combobox.svg"
+        src="{{ site.baseurl }}/assets/img/combobox.svg"
         class="example-page-example-icon"
       >
   
   <div>
     
     <p>
-      The below date picker demonstrates an implementation of the <a href="/patterns/combobox/">combobox design pattern</a> that opens a dialog.
+      The below date picker demonstrates an implementation of the <a href="{{ site.baseurl }}/patterns/combobox/">combobox design pattern</a> that opens a dialog.
       The date picker dialog is opened by activating the choose date button or by moving keyboard focus to the combobox and pressing <kbd>Down Arrow</kbd> or <kbd>Alt + Down Arrow</kbd>.
-      The  dialog contains an implementation of the <a href="/patterns/grid/">grid pattern</a> for displaying a calendar and enabling selection of a date.
+      The  dialog contains an implementation of the <a href="{{ site.baseurl }}/patterns/grid/">grid pattern</a> for displaying a calendar and enabling selection of a date.
       Additional buttons in the dialog are available for changing the month and year shown in the grid.
     </p>
     <p>Similar examples include:</p>
@@ -354,7 +354,7 @@ lang: en
               <td>
                 <ul>
                   <li>Moves focus to next element in the dialog <kbd>Tab</kbd> sequence.</li>
-                  <li>Note that, as specified in the <a href="/patterns/grid/">grid design pattern</a>, only one element in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
+                  <li>Note that, as specified in the <a href="{{ site.baseurl }}/patterns/grid/">grid design pattern</a>, only one element in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
                   <li>If focus is on the last button (i.e., &quot;OK&quot;), moves focus to the first button (i.e. &quot;Previous Year&quot;).</li>
                 </ul>
               </td>
@@ -364,7 +364,7 @@ lang: en
               <td>
                 <ul>
                   <li>Moves focus to previous element in the dialog <kbd>Tab</kbd> sequence.</li>
-                  <li>Note that, as specified in the <a href="/patterns/grid/">grid design pattern</a>, only one element in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
+                  <li>Note that, as specified in the <a href="{{ site.baseurl }}/patterns/grid/">grid design pattern</a>, only one element in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
                   <li>If focus is on the first button (i.e., &quot;Previous Year&quot;), moves focus to the last button (i.e. &quot;OK&quot;).</li>
                 </ul>
               </td>
@@ -745,7 +745,7 @@ lang: en
                 <li>Makes the gridcell focusable and includes it in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>Set dynamically by the JavaScript when the element is to be included in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>At any given time, only one gridcell within the grid is in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -763,7 +763,7 @@ lang: en
                 <li>Makes the gridcell focusable and excludes it from the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>Changed dynamically to <code>0</code> by the JavaScript when the gridcell is to be included in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>At any given time, only one gridcell within the grid is in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="/fundamentals/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ site.baseurl }}/practices/keyboard-interface/#kbd_roving_tabindex">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -814,7 +814,7 @@ lang: en
   </section>
   </div>
   <nav>
-    <a href="/patterns/combobox/"><code>combobox</code> Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/combobox/"><code>combobox</code> Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: November 23, 2021</p>
@@ -833,4 +833,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

@@ -16,9 +16,9 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -72,7 +72,7 @@ lang: en
         </li>
       </ul>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/checkbox.svg" ><div class="header-wrapper"><h2 id="examples-1" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/checkbox.svg" ><div class="header-wrapper"><h2 id="examples-1" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li>
@@ -125,4 +125,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

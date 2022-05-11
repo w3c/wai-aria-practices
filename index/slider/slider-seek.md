@@ -22,9 +22,9 @@ lang: en
 <script src="js/slider-seek.js"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
 <div>
 
@@ -70,8 +70,8 @@ lang: en
     <ul>
     <li>
         There may be support gaps in some
-        <a href="/fundamentals/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
-        especially for <a href="/fundamentals/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
+        especially for <a href="{{ site.baseurl }}/practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -82,7 +82,7 @@ lang: en
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="/fundamentals/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ site.baseurl }}/practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -98,12 +98,12 @@ lang: en
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p>
     </div><img alt=""
-        src="/assets/img/slider.svg"
+        src="{{ site.baseurl }}/assets/img/slider.svg"
         class="example-page-example-icon"
       >
     <p>
       The following example of the
-      <a href="/patterns/slider/">slider design pattern</a>
+      <a href="{{ site.baseurl }}/patterns/slider/">slider design pattern</a>
       illustrates a seek control that could be used to move the current play position in an audio or video media player.
       The example demonstrates how to use <code>aria-valuetext</code> to provide assistive technology users with meaningful names for numeric values.
       In this case, the value of the control is the position in seconds.
@@ -395,7 +395,7 @@ lang: en
     </section>
   </div>
   <nav>
-    <a href="/patterns/slider/">Slider Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
+    <a href="{{ site.baseurl }}/patterns/slider/">Slider Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
   </nav>
 
             <p>Page last updated: November 23, 2021</p>
@@ -414,4 +414,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>

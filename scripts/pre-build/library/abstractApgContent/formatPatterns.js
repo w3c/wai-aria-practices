@@ -197,7 +197,7 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
         examplesSection.classList.add("examples-section");
         examplesSection.insertAdjacentHTML(
           "afterbegin",
-          `<img alt="" src="/assets/img/${newSlug}.svg" />`
+          `<img alt="" src="{{ site.baseurl }}/assets/img/${newSlug}.svg" />`
         );
         return element.outerHTML;
       })
