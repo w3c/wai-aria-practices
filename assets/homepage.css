@@ -187,13 +187,14 @@ h3 {
   font-size: 26px;
   line-height: 1.1;
 }
-h2 + h3 {
-  color: #215a9c;
-  font-weight: normal;
-  font-size: 38px;
-}
 h2 + h3 + p {
   margin-bottom: 100px;
+}
+.white-section h2, 
+.off-white-section h2 {
+  font-size: 38px;
+  color: #215a9c;
+
 }
 @media (max-width: 767px) {
   .detail-3 {
@@ -204,10 +205,8 @@ h2 + h3 + p {
     bottom: -70px;
     min-width: initial;
   }
-  h2 {
-    font-size: 14px;
-  }
-  h2 + h3 {
+  .white-section h2, 
+  .off-white-section h2 {
     font-size: 26px;
   }
 }
