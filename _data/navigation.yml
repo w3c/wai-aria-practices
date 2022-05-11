@@ -232,7 +232,7 @@
         url: "/aria-practices/#intro"
       - name: Read Me First
         url: "/aria-practices/#read_me_first"
-      - name: Patterns
+      - name: Design Patterns and Widgets
         url: "/aria-practices/#aria_ex"
       - name: Landmark Regions
         url: "/aria-practices/#aria_landmark"
