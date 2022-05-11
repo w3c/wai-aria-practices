@@ -9,6 +9,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/meter/meter
 
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/30'>View issues related to this example</a></p>            <p>Page last updated: February 10, 2022</p>          </div>        "
+
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
@@ -63,7 +65,6 @@ lang: en
             </ul>
           </nav>
           <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -90,9 +91,9 @@ lang: en
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/meter.svg"
-        class="example-page-example-icon"
-      >
+          src="{{ site.baseurl }}/assets/img/meter.svg"
+          class="example-page-example-icon"
+        >
 
 <div>
   
@@ -207,9 +208,7 @@ lang: en
 </div>
 
   
-
-            <p>Page last updated: February 10, 2022</p>
-          </div>
+</div>
         </div>
       
 </div>

@@ -9,6 +9,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/button/button_idl
 
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: January 19, 2021</p>          </div>        "
+
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
@@ -56,7 +58,6 @@ lang: en
             </ul>
           </nav>
           <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -109,9 +110,9 @@ lang: en
           <strong>IMPORTANT:</strong> This example is coded using syntax that was not introduced until version 1.2 of the ARIA specification.
           When using a <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>, the buttons will not be styled correctly.
         </p><img alt=""
-        src="{{ site.baseurl }}/assets/img/button.svg"
-        class="example-page-example-icon"
-      >
+          src="{{ site.baseurl }}/assets/img/button.svg"
+          class="example-page-example-icon"
+        >
 
         <p>This <q>Print</q> action button uses a <code>div</code> element.</p>
         <div tabindex="0" id="action">Print Page</div>
@@ -285,9 +286,7 @@ lang: en
   </div>
 
   
-
-            <p>Page last updated: January 19, 2021</p>
-          </div>
+</div>
         </div>
       
 </div>

@@ -5,14 +5,16 @@ const wrapTablesWithResponsiveDiv = require("../abstractApgContent/wrapTablesWit
 
 let title;
 let head;
+let footer;
 let body;
 let patternSlug;
 let outline;
 
 const getContent = () => {
-  const response = { title, head, body, patternSlug, outline };
+  const response = { title, head, footer, body, patternSlug, outline };
   title = undefined;
   head = undefined;
+  footer = undefined;
   body = undefined;
   patternSlug = undefined;
   outline = undefined;
@@ -20,7 +22,7 @@ const getContent = () => {
 };
 
 const getHandleElement =
-  ({ permalink, notice }) =>
+  ({ permalink, notice, lastModifiedDateFormatted }) =>
   (element) => {
     if (element.tagName === "HEAD") {
       walkHtmlElements(element, handleHeadElement);
@@ -42,10 +44,10 @@ const getHandleElement =
         }
 
         const img = `<img 
-        alt=""
-        src="{{ site.baseurl }}/assets/img/${patternSlug}.svg"
-        class="example-page-example-icon"
-      />`;
+          alt=""
+          src="{{ site.baseurl }}/assets/img/${patternSlug}.svg"
+          class="example-page-example-icon"
+        />`;
         if (element.querySelector(".advisement")) {
           element
             .querySelector(".advisement")
@@ -65,7 +67,23 @@ const getHandleElement =
         const relatedLinksElement = element.querySelector(
           '[aria-label="Related Links"]'
         );
+        const allRelatedLinks =
+          relatedLinksElement.querySelectorAll("> ul > li > a");
+        const relatedIssuesLinkElement = allRelatedLinks.find(
+          (link) => link.textContent.trim().toLowerCase() === "related issues"
+        );
+        relatedIssuesLinkElement.textContent =
+          "View issues related to this example";
+        const relatedIssuesLink = relatedIssuesLinkElement.outerHTML;
+
         relatedLinksElement.remove();
+
+        footer = `
+          <div class="example-page-footer">
+            <p>${relatedIssuesLink}</p>
+            <p>Page last updated: ${lastModifiedDateFormatted}</p>
+          </div>
+        `;
       }
 
       outline = [];

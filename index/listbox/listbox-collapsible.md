@@ -9,6 +9,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/listbox/listbox-collapsible
 
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>            <p>Page last updated: February 10, 2022</p>          </div>        "
+
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
@@ -58,7 +60,6 @@ lang: en
             </ul>
           </nav>
           <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -91,9 +92,9 @@ lang: en
   <div class="advisement">
     <p><strong>DEPRECATION WARNING:</strong> This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices. The <a href="../combobox/combobox-select-only.html">select-only combobox</a> should be used as an alternative to this pattern.</p>
   </div><img alt=""
-        src="{{ site.baseurl }}/assets/img/listbox.svg"
-        class="example-page-example-icon"
-      >
+          src="{{ site.baseurl }}/assets/img/listbox.svg"
+          class="example-page-example-icon"
+        >
   <p>
     The following example implementation of the
     <a href="{{ site.baseurl }}/patterns/listbox/">design pattern for listbox</a>
@@ -376,9 +377,7 @@ lang: en
   </section>
   </div>
   
-
-            <p>Page last updated: February 10, 2022</p>
-          </div>
+</div>
         </div>
       
 </div>

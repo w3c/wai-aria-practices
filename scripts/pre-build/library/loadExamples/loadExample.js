@@ -16,16 +16,20 @@ const loadExample = async (
 
   const root = parseHtml(html);
 
-  walkHtmlElements(root, getHandleElement({ permalink, notice }));
+  walkHtmlElements(
+    root,
+    getHandleElement({ permalink, notice, lastModifiedDateFormatted })
+  );
 
-  const { title, head, body, outline } = getContent();
+  const { title, head, footer, body, outline } = getContent();
 
   return {
     fileName: `${slug}.md`,
     fileContent: getTemplateBoilerplate({
       title,
       permalink,
-      head: head,
+      head,
+      footer,
       content: `
         <div class="sidebar-container">
           <nav class="sidebar-right" aria-describedby="sidebar-toc">
@@ -42,10 +46,7 @@ const loadExample = async (
                 .join(" ")}
             </ul>
           </nav>
-          <div class="sidebar-left">
-            ${body}
-            <p>Page last updated: ${lastModifiedDateFormatted}</p>
-          </div>
+          <div class="sidebar-left">${body}</div>
         </div>
       `,
     }),

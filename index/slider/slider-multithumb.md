@@ -9,6 +9,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/slider/slider-multithumb
 
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
+
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
@@ -60,7 +62,6 @@ lang: en
             </ul>
           </nav>
           <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -98,9 +99,9 @@ lang: en
           Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
         </p>
       </div><img alt=""
-        src="{{ site.baseurl }}/assets/img/slidertwothumb.svg"
-        class="example-page-example-icon"
-      >
+          src="{{ site.baseurl }}/assets/img/slidertwothumb.svg"
+          class="example-page-example-icon"
+        >
       <p>
         The following example of the
         <a href="{{ site.baseurl }}/patterns/slidertwothumb/">multi-thumb slider design pattern</a>
@@ -342,9 +343,7 @@ lang: en
     </section>
     </div>
     
-  
-            <p>Page last updated: November 23, 2021</p>
-          </div>
+  </div>
         </div>
       
 </div>

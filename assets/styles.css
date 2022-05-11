@@ -424,6 +424,9 @@ nav.nav li:last-of-type {
   float: left;
   margin: 0 10px 4px 0;
 }
+.example-page-footer {
+  padding: 1em 0;
+}
 
 footer + .info {
   display: none;

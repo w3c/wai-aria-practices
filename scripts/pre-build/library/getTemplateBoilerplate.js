@@ -6,6 +6,7 @@ const getTemplateBoilerplate = ({
   addBodyClass,
   content,
   head = "",
+  footer = "",
 }) => {
   // Must be formatted because html which is indented by 4 spaces
   // will be interpreted as a code block by the markdown engine
@@ -21,6 +22,8 @@ github:
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: ${permalink}
+
+footer: "${footer.replace(/\n/g, "").replace(/"/g, "'")}"
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG

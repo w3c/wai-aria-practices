@@ -9,6 +9,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/treeview/treeview-1/treeview-1a
 
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
+
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
@@ -73,7 +75,6 @@ lang: en
             </ul>
           </nav>
           <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -100,9 +101,9 @@ lang: en
     </ul>
 </details>
           <img alt=""
-        src="{{ site.baseurl }}/assets/img/treeview.svg"
-        class="example-page-example-icon"
-      >
+          src="{{ site.baseurl }}/assets/img/treeview.svg"
+          class="example-page-example-icon"
+        >
     
     <div>
       
@@ -620,9 +621,7 @@ lang: en
       </section>
     </div>
     
-  
-            <p>Page last updated: November 23, 2021</p>
-          </div>
+  </div>
         </div>
       
 </div>
