@@ -20,92 +20,94 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
-{% include read-this-first.html %}
 <div>
-<ul class="tiles">
-        
-              <li class="tile tile-read-me-first">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/read-me-first/">
-                    <span>Read Me First</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+
+        {% include read-this-first.html %}
+        <ul class="tiles">
+          
+                <li class="tile tile-read-me-first">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/read-me-first/">
+                      <span>Read Me First</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
         Functionally, ARIA roles, states, and properties are analogous to a CSS for assistive technologies.</div>
-              </li>
-             
-              <li class="tile tile-landmark-regions">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/landmark-regions/">
-                    <span>Landmark Regions</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+                </li>
+               
+                <li class="tile tile-landmark-regions">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/landmark-regions/">
+                      <span>Landmark Regions</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
       ARIA landmark roles provide a powerful way to identify the organization and structure of a web page.</div>
-              </li>
-             
-              <li class="tile tile-names-and-descriptions">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/names-and-descriptions/">
-                    <span>Providing Accessible Names and Descriptions</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+                </li>
+               
+                <li class="tile tile-names-and-descriptions">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/names-and-descriptions/">
+                      <span>Providing Accessible Names and Descriptions</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
       Providing elements with accessible names, and where appropriate, accessible descriptions is one of the most important responsibilities authors have when developing accessible web experiences.</div>
-              </li>
-             
-              <li class="tile tile-keyboard-interface">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/keyboard-interface/">
-                    <span>Developing a Keyboard Interface</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+                </li>
+               
+                <li class="tile tile-keyboard-interface">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/keyboard-interface/">
+                      <span>Developing a Keyboard Interface</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
       Unlike native HTML form elements, browsers do not provide keyboard support for graphical user interface (GUI) components that are made accessible with ARIA; authors have to provide the keyboard support in their code.</div>
-              </li>
-             
-              <li class="tile tile-grid-and-table-properties">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/grid-and-table-properties/">
-                    <span>Grid and Table Properties</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction"><!-- The following is manually overridden by the pre-build script -->
+                </li>
+               
+                <li class="tile tile-grid-and-table-properties">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/grid-and-table-properties/">
+                      <span>Grid and Table Properties</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction"><!-- The following is manually overridden by the pre-build script -->
 To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the grid pattern or table pattern, assistive technologies need to be able to determine the number of rows and columns and other factors.</div>
-              </li>
-             
-              <li class="tile tile-range-related-properties">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/range-related-properties/">
-                    <span>Communicating Value and Limits for Range Widgets</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+                </li>
+               
+                <li class="tile tile-range-related-properties">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/range-related-properties/">
+                      <span>Communicating Value and Limits for Range Widgets</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
       ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
-              </li>
-             
-              <li class="tile tile-structural-roles">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/structural-roles/">
-                    <span>Structural Roles</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+                </li>
+               
+                <li class="tile tile-structural-roles">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/structural-roles/">
+                      <span>Structural Roles</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
       ARIA provides a set of roles that convey the accessibility semantics of structures on a page.</div>
-              </li>
-             
-              <li class="tile tile-hiding-semantics">
-                <h2 class="tile-name">
-                  <a href="{{ site.baseurl }}/practices/hiding-semantics/">
-                    <span>Hiding Semantics</span>
-                  </a>
-                </h2>
-                <div class="tile-introduction">
+                </li>
+               
+                <li class="tile tile-hiding-semantics">
+                  <h2 class="tile-name">
+                    <a href="{{ site.baseurl }}/practices/hiding-semantics/">
+                      <span>Hiding Semantics</span>
+                    </a>
+                  </h2>
+                  <div class="tile-introduction">
       While ARIA is primarily used to express semantics, there are some situations where hiding an
       element’s semantics from assistive technologies is helpful.</div>
-              </li>
-            
-      </ul>
+                </li>
+              
+        </ul>
+      
 </div>
 <script>
   var SkipToConfig = {

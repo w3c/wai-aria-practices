@@ -69,6 +69,7 @@
 
 // Add jumpto.js to examples
 (function () {
+  return; // Line added by pre-build script
   let ref = window.location.href.split('examples')[0];
   if (ref) {
     let head = document.getElementsByTagName('head')[0];
