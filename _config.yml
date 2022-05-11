@@ -50,15 +50,15 @@ defaults:
         subtitle: "How to build accessibility semantics into web patterns and widgets"
       standalone_resource_nav_links:
         - name: APG Home
-          ref: /
+          ref: /WAI/ARIA/APG/
         - name: Patterns
-          ref: /patterns/
+          ref: /WAI/ARIA/APG/patterns/
         - name: Practices
-          ref: /practices/
+          ref: /WAI/ARIA/APG/practices/
         - name: Index
-          ref: /index/index.html # to prevent shadowing issues when deployed to Netlify
+          ref: /WAI/ARIA/APG/index/index.html # to prevent shadowing issues when deployed to Netlify
         - name: About
-          ref: /about/
+          ref: /WAI/ARIA/APG/about/
 #  -
 #    scope:
 #      path: "_business-case"
