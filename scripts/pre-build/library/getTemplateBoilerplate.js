@@ -5,6 +5,7 @@ const getTemplateBoilerplate = ({
   permalink,
   addBodyClass,
   content,
+  enableSidebar = false,
   // Defaults to aria-practices.html since this is the file where almost all the
   // content originates, with the notable exception of the examples
   footerForkAndEditOnGithubPath = "aria-practices.html",
@@ -14,6 +15,8 @@ const getTemplateBoilerplate = ({
   // Must be formatted because html which is indented by 4 spaces
   // will be interpreted as a code block by the markdown engine
   const formattedHead = prettier.format(head, { parser: "html" });
+
+  const bodyClass = `${addBodyClass} ${enableSidebar ? "has-sidebar" : ""}`;
 
   return `---
 # This is a generated file
@@ -26,6 +29,8 @@ github:
   path: ${footerForkAndEditOnGithubPath}
 feedbackmail: public-aria-practices@w3.org
 permalink: ${permalink}
+
+sidebar: ${enableSidebar}
 
 footer: "${footer.replace(/\n/g, "").replace(/"/g, "'")}"
 
@@ -40,14 +45,14 @@ ${/* ${prettier.format(` */ ""}
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 ${
-  !addBodyClass
+  !(addBodyClass || enableSidebar)
     ? ""
     : `
 <script>
 const addBodyClass = ${JSON.stringify(addBodyClass)};
-if (addBodyClass) {
-  document.body.classList.add(addBodyClass);
-}
+const enableSidebar = ${JSON.stringify(enableSidebar)};
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     `
 }

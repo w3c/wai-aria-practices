@@ -26,35 +26,18 @@ const loadExample = async (
     getHandleElement({ permalink, notice, lastModifiedDateFormatted })
   );
 
-  const { title, head, footer, body, outline } = getContent();
+  const { title, head, footer, body } = getContent();
 
   return {
     fileName: `${slug}.md`,
     fileContent: getTemplateBoilerplate({
       title,
       permalink,
+      enableSidebar: true,
       head,
       footer,
       footerForkAndEditOnGithubPath: `examples/${exampleRelativePath}`,
-      content: `
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              ${outline
-                .map(({ slug, name }) => {
-                  return `
-                    <li>
-                      <a href="#${slug}">${name}</a>
-                    </li>
-                  `;
-                })
-                .join(" ")}
-            </ul>
-          </nav>
-          <div class="sidebar-left">${body}</div>
-        </div>
-      `,
+      content: body,
     }),
   };
 };

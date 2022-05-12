@@ -10,6 +10,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/toolbar/toolbar
 
+sidebar: true
+
 footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
@@ -42,40 +44,15 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#ex_label">Example</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#accessibility-features">Accessibility Features</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex  Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#sc1_label">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -119,7 +96,7 @@ lang: en
   </p>
   <section>
     <div class="example-header">
-      <h2 id="ex_label" tabindex="-1">Example</h2>
+      <h2 id="ex_label">Example</h2>
     </div>
     <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
     <div id="ex1">
@@ -262,7 +239,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
 
   <section>
-    <h2 tabindex="-1" id="accessibility-features">Accessibility Features</h2>
+    <h2>Accessibility Features</h2>
     <h3>Keyboard Features</h3>
     <ul>
       <li>
@@ -301,7 +278,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
 
   <section>
-    <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+    <h2 id="kbd_label">Keyboard Support</h2>
     <section>
       <h3 id="kbd_label_1">Toolbar</h3>
       <p>The toolbar provides the following keyboard support described in the <a href="{{ site.baseurl }}/patterns/toolbar/">toolbar pattern.</a></p>
@@ -596,7 +573,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
 
   <section>
-    <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
+    <h2 id="rps_label">Role, Property, State, and Tabindex  Attributes</h2>
     <section>
       <h3 id="rps_label_1">Toolbar</h3>
       <p>The toolbar implements the following ARIA attributes described in the <a href="{{ site.baseurl }}/patterns/toolbar/">toolbar pattern.</a></p>
@@ -1027,7 +1004,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
 
   <section>
-    <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+    <h2>Javascript and CSS Source Code</h2>
     <ul id="css_js_files">
       <li>CSS: <a href="css/toolbar.css" type="text/css">toolbar.css</a></li>
       <li>CSS: <a href="css/menuButton.css" type="text/css">menuButton.css</a></li>
@@ -1041,7 +1018,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
 
   <section>
-    <h2 id="sc1_label" tabindex="-1">HTML Source Code</h2>
+    <h2 id="sc1_label">HTML Source Code</h2>
     <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for "></div>
     <pre><code id="sc1"></code></pre>
     <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of HTML for "></div>
@@ -1053,9 +1030,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   </section>
   </div>
   
-</div>
-        </div>
-      
+
 </div>
 <script>
   var SkipToConfig = {

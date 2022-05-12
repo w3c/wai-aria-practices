@@ -10,6 +10,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /patterns/tabpanel/
 
+sidebar: true
+
 footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
@@ -23,33 +25,15 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-14">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-21">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-22">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section class="widget" id="tabpanel"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="tabpanel"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time.
@@ -164,9 +148,6 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {

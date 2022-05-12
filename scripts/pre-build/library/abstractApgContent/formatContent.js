@@ -8,22 +8,6 @@ const renumberHeadings = require("../../utilities/renumberHeadings");
 const fuzzysearch = (needle, haystack) =>
   fuzzysearchSensitive(needle, haystack.toLowerCase());
 
-const getPracticeOutline =
-  ({ startsWithIntroduction }) =>
-  (element) => {
-    const outline = startsWithIntroduction
-      ? [{ slug: "introduction", name: "Introduction " }]
-      : [];
-
-    return outline.concat(
-      element.querySelectorAll("h3").map((h3) => ({
-        slug: h3.getAttribute("id"),
-        // Sorry this is a bit awkward
-        name: removeSectionNumbers(() => h3.innerHTML)(),
-      }))
-    );
-  };
-
 const sections = {
   title: {
     identify: (element) => element.tagName === "TITLE",
@@ -44,7 +28,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("read-me-first"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: false }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -62,7 +45,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("landmark-regions"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -83,7 +65,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("names-and-descriptions"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -103,7 +84,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("keyboard-interface"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -124,7 +104,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("grid-and-table-properties"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -145,7 +124,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("range-related-properties"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: true }),
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -164,7 +142,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("presentation-role"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: false }),
     getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "presentation-role");
       return element.outerHTML;
@@ -178,10 +155,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("structural-roles"),
-    getOutline: () => [
-      { slug: "introduction", name: "Introduction" },
-      { slug: "all-structural-roles", name: "All Structural Roles" },
-    ],
     getContent: removeSectionNumbers(
       renumberHeadings(-1, (element) => {
         element.querySelector("h2").remove();
@@ -207,7 +180,6 @@ const sections = {
       removeSectionNumbers((element) => element.querySelector("h2").innerHTML)
     ),
     getIntroduction: getIntroductionFormatter("children-presentational"),
-    getOutline: getPracticeOutline({ startsWithIntroduction: false }),
     getContent: removeSectionNumbers((element) => {
       element.setAttribute("id", "children-presentational");
       return element.outerHTML;

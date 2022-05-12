@@ -10,6 +10,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /patterns/grid/
 
+sidebar: true
+
 footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
@@ -23,41 +25,15 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-5">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#data-grids-for-presenting-tabular-information">Data Grids For Presenting Tabular Information</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#layout-grids-for-grouping-widgets">Layout Grids for Grouping Widgets</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-setting-focus-and-navigating-inside-cells">Keyboard Interaction - Setting Focus and Navigating Inside Cells</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-10">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section class="widget" id="grid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="grid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
 
       <p>
@@ -403,9 +379,6 @@ lang: en
         </ul></div>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {

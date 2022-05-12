@@ -10,6 +10,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/dialog-modal/alertdialog
 
+sidebar: true
+
 footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/20'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
@@ -32,40 +34,15 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#ex_label">Example</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#accessibility-features">Accessibility Features</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex  Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#src_label">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#sc1_label">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -131,7 +108,7 @@ lang: en
       </ul>
       <section>
         <div class="example-header">
-          <h2 id="ex_label" tabindex="-1">Example</h2>
+          <h2 id="ex_label">Example</h2>
         </div>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex_alertdialog">
@@ -164,7 +141,7 @@ lang: en
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
       <section>
-        <h2 tabindex="-1" id="accessibility-features">Accessibility Features</h2>
+        <h2>Accessibility Features</h2>
         <ul>
           <li>The accessible name of the alert dialog is set to its heading ("Confirmation").</li>
           <li>The dialog's prompt ("Are you sure...?") is referenced via <code>aria-describedby</code> to ensure that the user is immediately aware of the prompt.</li>
@@ -179,7 +156,7 @@ lang: en
         </ul>
       </section>
       <section>
-        <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+        <h2 id="kbd_label">Keyboard Support</h2>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
             <tr>
@@ -222,7 +199,7 @@ lang: en
         </table></div>
       </section>
       <section>
-        <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
+        <h2 id="rps_label">Role, Property, State, and Tabindex  Attributes</h2>
         <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
           <thead>
             <tr>
@@ -300,14 +277,14 @@ lang: en
         </ul>
       </section>
       <section>
-        <h2 id="src_label" tabindex="-1">Javascript and CSS Source Code</h2>
+        <h2 id="src_label">Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li> CSS: <a href="css/dialog.css" type="text/css">dialog.css</a></li>
           <li> Javascript: <a href="js/alertdialog.js" type="text/javascript">alertdialog.js</a>, <a href="js/dialog.js" type="text/javascript">dialog.js</a>, <a href="../js/utils.js">utils.js</a></li>
         </ul>
       </section>
       <section>
-        <h2 id="sc1_label" tabindex="-1">HTML Source Code</h2>
+        <h2 id="sc1_label">HTML Source Code</h2>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
@@ -318,9 +295,7 @@ lang: en
       </section>
     </div>
     
-  </div>
-        </div>
-      
+  
 </div>
 <script>
   var SkipToConfig = {

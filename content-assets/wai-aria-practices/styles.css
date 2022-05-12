@@ -1,10 +1,10 @@
 /* Global Styles */
 .page-practices .standalone-resource__main,
-.practice-page .standalone-resource__main,
 .default-grid.with-gap.leftcol .standalone-resource__prevnext,
-.leftcol .standalone-resource__main { 
+body:not(.has-sidebar) .leftcol .standalone-resource__main { 
   grid-column: 2/10;
 }
+
 
 a.skip-main {
   left:-999px;
@@ -216,7 +216,8 @@ li .tile-introduction {
   margin-bottom: 0;
 }
 
-.practice-page h2 {
+.practice-page main h2,
+.pattern-page main h2 {
   margin-top: 1em;
 }
 

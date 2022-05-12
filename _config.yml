@@ -44,7 +44,6 @@ defaults:
     scope:
       path: ""
     values:
-      sidebar: true
       layout: "standalone_resource"
       standalone_resource_header: 
         title: "ARIA Authoring Practices Guide (APG)"

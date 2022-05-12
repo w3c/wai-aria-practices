@@ -10,6 +10,8 @@ github:
 feedbackmail: public-aria-practices@w3.org
 permalink: /patterns/table/
 
+sidebar: true
+
 footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
@@ -23,33 +25,15 @@ lang: en
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-13">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-20">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-21">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section class="widget" id="table"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="table"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         Like an HTML <code>table</code> element, a <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a href="https://w3c.github.io/aria/#table" class="role-reference">table</a> is a static tabular structure containing one or more rows that each contain one or more cells; it is not an interactive widget.
@@ -113,9 +97,6 @@ lang: en
         </p></div>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
