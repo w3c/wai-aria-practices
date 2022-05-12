@@ -44,6 +44,7 @@ defaults:
     scope:
       path: ""
     values:
+      sidebar: true
       layout: "standalone_resource"
       standalone_resource_header: 
         title: "ARIA Authoring Practices Guide (APG)"
@@ -59,6 +60,7 @@ defaults:
           ref: /index/index.html # to prevent shadowing issues when deployed to Netlify
         - name: About
           ref: /about/
+
 #  -
 #    scope:
 #      path: "_business-case"

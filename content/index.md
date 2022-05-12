@@ -15,6 +15,8 @@ footer: ""
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
+sidebar: false
+
 lang: en
 ---
 
@@ -37,7 +39,7 @@ lang: en
             <div class="detail-2"></div>
             <h1>ARIA Authoring Practices Guide Home</h1>
             <p>
-        Learn to use the accessibility semantics defined by ARIA 
+        Learn to use the accessibility semantics defined by ARIA
         to create accessible rich internet applications.
         This guide describes how to apply accessibility semantics to common design patterns and widgets.
         It provides design patterns and functional examples
@@ -212,10 +214,7 @@ lang: en
           Collaboration
         </h2>
         <p class="collaboration-p">
-          
-        The APG Task Force conducts its work using a variety of synchronous and
-        asynchronous tools. And there are several ways to get involved.
-      
+          Get involved with our community and our work
         </p>
       </div>
       <div class="collaboration-items">
