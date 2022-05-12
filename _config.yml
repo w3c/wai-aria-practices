@@ -23,6 +23,9 @@ exclude:
   - "w3c.json"
   - "vendor"
   - "scripts"
+  - WAI/ARIA/APG
+
+
 
 # Build settings
 markdown: kramdown
@@ -50,15 +53,15 @@ defaults:
         subtitle: "How to build accessibility semantics into web patterns and widgets"
       standalone_resource_nav_links:
         - name: APG Home
-          ref: /WAI/ARIA/APG/
+          ref: /ARIA/apg/
         - name: Patterns
-          ref: /WAI/ARIA/APG/patterns/
+          ref: /ARIA/apg/patterns/
         - name: Practices
-          ref: /WAI/ARIA/APG/practices/
+          ref: /ARIA/apg/practices/
         - name: Index
-          ref: /WAI/ARIA/APG/example-index/
+          ref: /ARIA/apg/example-index/
         - name: About
-          ref: /WAI/ARIA/APG/about/
+          ref: /ARIA/apg/about/
 #  -
 #    scope:
 #      path: "_business-case"
