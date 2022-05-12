@@ -73,7 +73,6 @@ const getHandleElement =
         relatedIssuesLinkElement.textContent =
           "View issues related to this example";
         const relatedIssuesLink = relatedIssuesLinkElement.outerHTML;
-
         relatedLinksElement.remove();
 
         footer = `
@@ -159,6 +158,7 @@ const editIndexPage = (element) => {
   element.querySelector("p").remove();
   element.querySelector("nav").remove();
   element.querySelector("ul").remove();
+  element.querySelector('[aria-label="ARIA Practices"]').remove();
 };
 
 module.exports = { getHandleElement, getContent };

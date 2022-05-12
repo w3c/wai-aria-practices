@@ -924,9 +924,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </table></div>
     </section>
   </div>
-  <nav aria-label="ARIA Practices">
-    <a href="../">WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
 
 
