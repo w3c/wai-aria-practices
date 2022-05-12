@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Grid and Table Properties"
-ref: /WAI/ARIA/APG/practices/grid-and-table-properties/
+ref: /ARIA/APG/practices/grid-and-table-properties/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/practices/grid-and-table-properties/
+permalink: /ARIA/APG/practices/grid-and-table-properties/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "practice-page";
@@ -39,7 +45,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
     <p>
       To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the
-      <a href="/WAI/ARIA/APG/patterns/grid/">grid pattern</a> or <a href="/WAI/ARIA/APG/patterns/table/">table pattern</a>,
+      <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid pattern</a> or <a href="{{ '/ARIA/APG/patterns/table/' | relative_url }}">table pattern</a>,
       assistive technologies need to be able to determine:
     </p>
     <ul>
@@ -521,4 +527,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

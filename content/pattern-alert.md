@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Alert"
-ref: /WAI/ARIA/APG/patterns/alert/
+ref: /ARIA/APG/patterns/alert/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/alert/
+permalink: /ARIA/APG/patterns/alert/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -43,7 +49,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         Because alerts are intended to provide important and potentially time-sensitive information without interfering with the user's ability to continue working,
         it is crucial they do not affect keyboard focus.
-        The <a href="/WAI/ARIA/APG/patterns/alertdialog/">alert dialog</a> is designed for situations where interrupting work flow is necessary.
+        The <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">alert dialog</a> is designed for situations where interrupting work flow is necessary.
       </p>
       <p>
         It is also important to avoid designing alerts that disappear automatically.
@@ -56,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/alert.svg"
+            src="{{ '/content-images/wai-aria-practices/img/alert.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-0" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/alert/alert.html">Alert Example</a></p>
@@ -84,4 +90,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

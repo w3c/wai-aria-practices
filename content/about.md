@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "About"
-ref: /WAI/ARIA/APG/about/
+ref: /ARIA/APG/about/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/about/
+permalink: /ARIA/APG/about/
 
 sidebar: false
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <div>
 
@@ -237,4 +243,6 @@ lang: en
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

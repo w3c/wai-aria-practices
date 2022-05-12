@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Read Me First"
-ref: /WAI/ARIA/APG/practices/read-me-first/
+ref: /ARIA/APG/practices/read-me-first/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/practices/read-me-first/
+permalink: /ARIA/APG/practices/read-me-first/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "practice-page";
@@ -130,4 +136,6 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

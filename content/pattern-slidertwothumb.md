@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Slider (Multi-Thumb)"
-ref: /WAI/ARIA/APG/patterns/slidertwothumb/
+ref: /ARIA/APG/patterns/slidertwothumb/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/slidertwothumb/
+permalink: /ARIA/APG/patterns/slidertwothumb/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -36,7 +42,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <section class="widget" id="slidertwothumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
-        A multi-thumb slider is a <a href="/WAI/ARIA/APG/patterns/slider/">slider</a>
+        A multi-thumb slider is a <a href="{{ '/ARIA/APG/patterns/slider/' | relative_url }}">slider</a>
         with two or more thumbs that each set a value in a group of related values.
         For example, in a product search, a two-thumb slider could be used to enable users to set the minimum and maximum price limits for the search.
         In many two-thumb sliders, the thumbs are not allowed to pass one another, such as when the slider sets the minimum and maximum values for a range.
@@ -52,7 +58,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p></div>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/slidertwothumb.svg"
+            src="{{ '/content-images/wai-aria-practices/img/slidertwothumb.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
@@ -61,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="slidertwothumb_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2></div>
         
         <ul>
-          <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="/WAI/ARIA/APG/patterns/slider/#slider_kbd_interaction">single-thumb slider</a>.</li>
+          <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="{{ '/ARIA/APG/patterns/slider/#slider_kbd_interaction' | relative_url }}">single-thumb slider</a>.</li>
           <li>
             The tab order remains constant regardless of thumb value and visual position within the slider.
             For example, if the value of a thumb changes such that it moves past one of the other thumbs, the tab order does not change.
@@ -107,4 +113,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

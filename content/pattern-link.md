@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Link"
-ref: /WAI/ARIA/APG/patterns/link/
+ref: /ARIA/APG/patterns/link/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/link/
+permalink: /ARIA/APG/patterns/link/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -49,7 +55,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p></div>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/link.svg"
+            src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="examples-6" tabindex="-1">Examples</h2></div>
         
         <p><a href="../../example-index/link/link.html">Link Examples</a>: Link widgets constructed from HTML <code>span</code> and <code>img</code> elements.</p>
@@ -82,4 +88,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

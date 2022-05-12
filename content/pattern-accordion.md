@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Accordion (Sections With Show/Hide Functionality)"
-ref: /WAI/ARIA/APG/patterns/accordion/
+ref: /ARIA/APG/patterns/accordion/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/accordion/
+permalink: /ARIA/APG/patterns/accordion/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -53,7 +59,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         And, in some cases, a snippet of the hidden content may also be visually persistent.
       </p>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/accordion.svg"
+            src="{{ '/content-images/wai-aria-practices/img/accordion.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
@@ -148,4 +154,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Practices"
-ref: /WAI/ARIA/APG/practices/
+ref: /ARIA/APG/practices/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/practices/
+permalink: /ARIA/APG/practices/
 
 sidebar: false
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <div>
 
@@ -32,7 +38,9 @@ lang: en
           
                 <li class="tile tile-landmark-regions">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/landmark-regions/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/landmark-regions/' | relative_url }}"
+                    >
                       <span>Landmark Regions</span>
                     </a>
                   </h2>
@@ -42,7 +50,9 @@ lang: en
                
                 <li class="tile tile-names-and-descriptions">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/names-and-descriptions/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/names-and-descriptions/' | relative_url }}"
+                    >
                       <span>Providing Accessible Names and Descriptions</span>
                     </a>
                   </h2>
@@ -52,7 +62,9 @@ lang: en
                
                 <li class="tile tile-keyboard-interface">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/keyboard-interface/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/keyboard-interface/' | relative_url }}"
+                    >
                       <span>Developing a Keyboard Interface</span>
                     </a>
                   </h2>
@@ -62,7 +74,9 @@ lang: en
                
                 <li class="tile tile-grid-and-table-properties">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/grid-and-table-properties/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/grid-and-table-properties/' | relative_url }}"
+                    >
                       <span>Grid and Table Properties</span>
                     </a>
                   </h2>
@@ -72,7 +86,9 @@ To fully present and describe a grid or table, in addition to parsing the header
                
                 <li class="tile tile-range-related-properties">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/range-related-properties/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/range-related-properties/' | relative_url }}"
+                    >
                       <span>Communicating Value and Limits for Range Widgets</span>
                     </a>
                   </h2>
@@ -82,7 +98,9 @@ To fully present and describe a grid or table, in addition to parsing the header
                
                 <li class="tile tile-structural-roles">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/structural-roles/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/structural-roles/' | relative_url }}"
+                    >
                       <span>Structural Roles</span>
                     </a>
                   </h2>
@@ -92,7 +110,9 @@ To fully present and describe a grid or table, in addition to parsing the header
                
                 <li class="tile tile-hiding-semantics">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/hiding-semantics/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/hiding-semantics/' | relative_url }}"
+                    >
                       <span>Hiding Semantics</span>
                     </a>
                   </h2>
@@ -115,4 +135,6 @@ To fully present and describe a grid or table, in addition to parsing the header
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

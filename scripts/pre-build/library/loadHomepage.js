@@ -21,7 +21,7 @@ const loadHomepage = async () => {
     const updatedPath = path.join(assetsPath, fileName);
     img.setAttribute(
       "src",
-      `/content-images/wai-aria-practices/generated/${fileName}`
+      `{{ '/content-images/wai-aria-practices/generated/${fileName}' | relative_url }}`
     );
     await fs.copyFile(apgImgPath, updatedPath);
   };
@@ -31,7 +31,7 @@ const loadHomepage = async () => {
   const homepageContent = `
     <link 
       rel="stylesheet"
-      href="/content-assets/wai-aria-practices/homepage.css"
+      href="{{ '/content-assets/wai-aria-practices/homepage.css' | relative_url }}"
     >
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">

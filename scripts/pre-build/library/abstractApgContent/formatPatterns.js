@@ -146,7 +146,7 @@ const findExamplesSection = (element, newSlug) => {
 
 const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
   return {
-    permalink: `/WAI/ARIA/APG/patterns/${newSlug}/`,
+    permalink: `/ARIA/APG/patterns/${newSlug}/`,
     permalinkReplacesFormerAnchorId: oldSlug,
 
     slug: newSlug,
@@ -186,7 +186,7 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
           "afterbegin",
           `<img 
             alt="" 
-            src="/content-images/wai-aria-practices/img/${newSlug}.svg"
+            src="{{ '/content-images/wai-aria-practices/img/${newSlug}.svg' | relative_url }}"
           />`
         );
         return element.outerHTML;

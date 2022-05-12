@@ -14,7 +14,7 @@ const sections = {
     getContent: (element) => element.innerHTML,
   },
   readMeFirst: {
-    permalink: "/WAI/ARIA/APG/practices/read-me-first/",
+    permalink: "/ARIA/APG/practices/read-me-first/",
     permalinkReplacesFormerAnchorId: "read_me_first",
     slug: "read-me-first",
     identify: (element) => {
@@ -37,7 +37,7 @@ const sections = {
   },
 
   landmarkRegions: {
-    permalink: "/WAI/ARIA/APG/practices/landmark-regions/",
+    permalink: "/ARIA/APG/practices/landmark-regions/",
     permalinkReplacesFormerAnchorId: "aria_landmark",
     slug: "landmark-regions",
     identify: (element) => element.getAttribute("id") === "aria_landmark",
@@ -56,7 +56,7 @@ const sections = {
     ),
   },
   namesAndDescriptions: {
-    permalink: "/WAI/ARIA/APG/practices/names-and-descriptions/",
+    permalink: "/ARIA/APG/practices/names-and-descriptions/",
     permalinkReplacesFormerAnchorId: "names_and_descriptions",
     slug: "names-and-descriptions",
     identify: (element) =>
@@ -76,7 +76,7 @@ const sections = {
     ),
   },
   keyboardInterface: {
-    permalink: "/WAI/ARIA/APG/practices/keyboard-interface/",
+    permalink: "/ARIA/APG/practices/keyboard-interface/",
     permalinkReplacesFormerAnchorId: "keyboard",
     slug: "keyboard-interface",
     identify: (element) => element.getAttribute("id") === "keyboard",
@@ -95,7 +95,7 @@ const sections = {
     ),
   },
   gridAndTableProperties: {
-    permalink: "/WAI/ARIA/APG/practices/grid-and-table-properties/",
+    permalink: "/ARIA/APG/practices/grid-and-table-properties/",
     permalinkReplacesFormerAnchorId: "gridAndTableProperties",
     slug: "grid-and-table-properties",
     identify: (element) =>
@@ -115,7 +115,7 @@ const sections = {
     ),
   },
   rangeRelatedProperties: {
-    permalink: "/WAI/ARIA/APG/practices/range-related-properties/",
+    permalink: "/ARIA/APG/practices/range-related-properties/",
     permalinkReplacesFormerAnchorId: "range_related_properties",
     slug: "range-related-properties",
     identify: (element) =>
@@ -135,7 +135,7 @@ const sections = {
     ),
   },
   presentationRole: {
-    permalink: "/WAI/ARIA/APG/practices/hiding-semantics/",
+    permalink: "/ARIA/APG/practices/hiding-semantics/",
     slug: "presentation-role",
     identify: (element) => element.getAttribute("id") === "presentation_role",
     getName: removeLinks(
@@ -148,7 +148,7 @@ const sections = {
     }),
   },
   structuralRoles: {
-    permalink: "/WAI/ARIA/APG/practices/structural-roles/",
+    permalink: "/ARIA/APG/practices/structural-roles/",
     slug: "structural-roles",
     identify: (element) => element.getAttribute("id") === "structural_roles",
     getName: removeLinks(
@@ -172,7 +172,7 @@ const sections = {
     ),
   },
   childrenPresentational: {
-    permalink: "/WAI/ARIA/APG/practices/hiding-semantics/",
+    permalink: "/ARIA/APG/practices/hiding-semantics/",
     slug: "children-presentational",
     identify: (element) =>
       element.getAttribute("id") === "children_presentational",
@@ -187,7 +187,7 @@ const sections = {
   },
 
   introduction: {
-    permalink: "/WAI/ARIA/APG/about/",
+    permalink: "/ARIA/APG/about/",
     identify: (element) => element.getAttribute("id") === "intro",
     getContent: removeSectionNumbers((element) => {
       const firstP = element.querySelector("p");
@@ -199,7 +199,7 @@ const sections = {
   },
 
   changelog: {
-    permalink: "/WAI/ARIA/APG/about/",
+    permalink: "/ARIA/APG/about/",
     identify: (element) => element.getAttribute("id") === "change_log",
     getContent: removeSectionNumbers((element) => {
       return element.outerHTML;
@@ -207,7 +207,7 @@ const sections = {
   },
 
   editors: {
-    permalink: "/WAI/ARIA/APG/about/",
+    permalink: "/ARIA/APG/about/",
     identify: (element) => element.classList.contains("head"),
     getContent: (element) => {
       const dl = element.querySelector("dl");
@@ -240,7 +240,7 @@ const sections = {
   },
 
   acknowledgements: {
-    permalink: "/WAI/ARIA/APG/about/",
+    permalink: "/ARIA/APG/about/",
     identify: (element) => element.getAttribute("id") === "acknowledgements",
     getContent: removeSectionNumbers((element) => {
       element
@@ -251,7 +251,7 @@ const sections = {
   },
 
   references: {
-    permalink: "/WAI/ARIA/APG/about/",
+    permalink: "/ARIA/APG/about/",
     identify: (element) => element.getAttribute("id") === "references",
     getContent: removeSectionNumbers((element) => {
       return element.outerHTML;

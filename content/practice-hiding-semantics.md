@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Hiding Semantics"
-ref: /WAI/ARIA/APG/practices/hiding-semantics/
+ref: /ARIA/APG/practices/hiding-semantics/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/practices/hiding-semantics/
+permalink: /ARIA/APG/practices/hiding-semantics/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "practice-page";
@@ -80,7 +86,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         When <code>role="presentation"</code> is specified on an element, if a
-        <a href="/WAI/ARIA/APG/practices/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
+        <a href="{{ '/ARIA/APG/practices/hiding-semantics/#presentation_role_ignored' | relative_url }}">condition that requires a browser to ignore the <code>presentation</code> role</a>
         does not exist, it has the following three effects.
       </p>
       <ol>
@@ -177,7 +183,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Title of My Tab<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
     <p>
       See the
-      <a href="undefined">
+      <a href="{{ '/ARIA/APG/practices/hiding-semantics/#presentation-role' | relative_url }}">
         section about role <code>presentation</code>
       </a>
       for a detailed explanation of what it does.
@@ -195,4 +201,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

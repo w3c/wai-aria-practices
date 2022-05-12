@@ -41,9 +41,15 @@ lang: en
 ---
 ${formattedHead}
 ${/* ${prettier.format(` */ ""}
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 ${
   !(addBodyClass || enableSidebar)
     ? ""
@@ -70,7 +76,9 @@ ${content}
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };
 

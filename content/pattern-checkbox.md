@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Checkbox"
-ref: /WAI/ARIA/APG/patterns/checkbox/
+ref: /ARIA/APG/patterns/checkbox/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/checkbox/
+permalink: /ARIA/APG/patterns/checkbox/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -60,7 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </ul>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/checkbox.svg"
+            src="{{ '/content-images/wai-aria-practices/img/checkbox.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="examples-1" tabindex="-1">Examples</h2></div>
         
         <ul>
@@ -111,4 +117,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

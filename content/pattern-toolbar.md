@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Toolbar"
-ref: /WAI/ARIA/APG/patterns/toolbar/
+ref: /ARIA/APG/patterns/toolbar/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/toolbar/
+permalink: /ARIA/APG/patterns/toolbar/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -54,7 +60,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <li>Use toolbar as a grouping element only if the group contains 3 or more controls.</li>
       </ul>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/toolbar.svg"
+            src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-7" tabindex="-1">Example</h2></div>
         
         <p>
@@ -90,7 +96,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>
             Typically, disabled elements are not focusable when navigating with a keyboard.
             However, in circumstances where discoverability of a function is crucial, it may be helpful if disabled controls are focusable so screen reader users are more likely to be aware of their presence.
-            For additional guidance, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_disabled_controls" class="sec-ref">Focusability of disabled controls</a>.
+            For additional guidance, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_disabled_controls' | relative_url }}" class="sec-ref">Focusability of disabled controls</a>.
           </li>
           <li>In applications where quick access to a toolbar is important, such as accessing an editor's toolbar from its text area, a documented shortcut key for moving focus from the relevant context to its corresponding toolbar is recommended.</li>
         </ol></div>
@@ -121,4 +127,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

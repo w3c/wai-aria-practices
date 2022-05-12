@@ -3,12 +3,13 @@ const { parse: parseHtml } = require("node-html-parser");
 const walkHtmlElements = require("../../../utilities/walkHtmlElements");
 
 const manualRemappings = {
-  "/#aria_ex": "/patterns/",
+  "/ARIA/APG/#aria_ex": "/ARIA/APG/patterns/",
 
   // Special case since two sections are combined here
-  "/#presentation_role": "/practices/hiding-semantics/#presentation-role",
-  "/#children_presentational":
-    "/practices/hiding-semantics/#children-presentational",
+  "/ARIA/APG/#presentation_role":
+    "/ARIA/APG/practices/hiding-semantics/#presentation-role",
+  "/ARIA/APG/#children_presentational":
+    "/ARIA/APG/practices/hiding-semantics/#children-presentational",
 };
 
 const urlRewrites = [
@@ -27,24 +28,23 @@ const findNewLinksForOldLinks = (section) => {
     const anchorId = element.getAttribute("id");
     if (anchorId) {
       const noHash = section.permalinkReplacesFormerAnchorId === anchorId;
-      oldToNewLink[`/WAI/ARIA/APG/#${anchorId}`] = noHash
+      oldToNewLink[`/ARIA/APG/#${anchorId}`] = noHash
         ? section.permalink
         : `${section.permalink}#${anchorId}`;
     }
   });
 };
 
-const fixLink = (element, permalink, oldPermalink = "/WAI/ARIA/APG/") => {
+const fixLink = (element, permalink, oldPermalink = "/ARIA/APG/") => {
   const getApgAnchorId = (href, oldPermalink) => {
     if (!href.includes("#")) return null;
-    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("#"))
+    if (oldPermalink === "/ARIA/APG/" && href.startsWith("#")) {
       return href.substr(1);
-    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("/WAI/ARIA/APG/#"))
-      return href.substr(15);
+    }
 
     let apgPath = (() => {
       const directory = oldPermalink.substr(0, oldPermalink.lastIndexOf("/"));
-      return path.relative(directory, "/WAI/ARIA/APG/") + "/";
+      return path.relative(directory, "/ARIA/APG/") + "/";
     })();
 
     const [hrefPath, hrefHash] = href.split("#");
@@ -58,8 +58,8 @@ const fixLink = (element, permalink, oldPermalink = "/WAI/ARIA/APG/") => {
     ? null
     : !href.match(/^(http|mailto|javascript)/);
   if (!!apgAnchorId) {
-    const rootRelativePath = oldToNewLink[`/WAI/ARIA/APG/#${apgAnchorId}`];
-    let newLink = `${rootRelativePath}`;
+    const rootRelativePath = oldToNewLink[`/ARIA/APG/#${apgAnchorId}`];
+    let newLink = `{{ '${rootRelativePath}' | relative_url }}`;
     if (!newLink) {
       throw new Error(
         `Unable to remap anchor link "${href}" in "${permalink}". This will ` +

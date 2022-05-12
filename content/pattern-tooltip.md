@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Tooltip Widget"
-ref: /WAI/ARIA/APG/patterns/tooltip/
+ref: /ARIA/APG/patterns/tooltip/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/tooltip/
+permalink: /ARIA/APG/patterns/tooltip/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -49,7 +55,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         A hover that contains focusable elements can be made using a non-modal dialog.
       </p>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/tooltip.svg"
+            src="{{ '/content-images/wai-aria-practices/img/tooltip.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-8" tabindex="-1">Example</h2></div>
         
         <p>
@@ -88,4 +94,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

@@ -10,7 +10,7 @@ title: "Web Accessibility Initiative (WAI)"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/WAI" # the subpath of your site, e.g. /blog
 url: "https://w3c.github.io" # the base hostname & protocol for your site
 twitter:
   username: w3c_wai
@@ -50,15 +50,15 @@ defaults:
         subtitle: "How to build accessibility semantics into web patterns and widgets"
       standalone_resource_nav_links:
         - name: APG Home
-          ref: /WAI/ARIA/APG/
+          ref: /ARIA/APG/
         - name: Patterns
-          ref: /WAI/ARIA/APG/patterns/
+          ref: /ARIA/APG/patterns/
         - name: Practices
-          ref: /WAI/ARIA/APG/practices/
+          ref: /ARIA/APG/practices/
         - name: Index
-          ref: /WAI/ARIA/APG/example-index/
+          ref: /ARIA/APG/example-index/
         - name: About
-          ref: /WAI/ARIA/APG/about/
+          ref: /ARIA/APG/about/
 #  -
 #    scope:
 #      path: "_business-case"

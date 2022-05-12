@@ -3,7 +3,7 @@ const path = require("path");
 const rimraf = require("rimraf");
 
 const contentPaths = [
-  path.resolve(__dirname, "../../../WAI/ARIA/APG/example-index"),
+  path.resolve(__dirname, "../../../ARIA/APG/example-index"),
   path.resolve(__dirname, "../../../content"),
   path.resolve(
     __dirname,

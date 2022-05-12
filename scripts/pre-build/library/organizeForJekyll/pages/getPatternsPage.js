@@ -5,7 +5,7 @@ const getPatternsPage = (patterns) => {
     fileName: "patterns.md",
     fileContent: getTemplateBoilerplate({
       title: "Patterns",
-      permalink: "/WAI/ARIA/APG/patterns/",
+      permalink: "/ARIA/APG/patterns/",
       content: `
         {% include read-this-first.html %}
         <ul class="tiles">
@@ -23,9 +23,11 @@ const getPatternsPage = (patterns) => {
                 return `
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
-                      <a href="/WAI/ARIA/APG/example-index/landmarks/index.html">
+                      <a 
+                        href="{{ '/ARIA/APG/example-index/landmarks/index.html' | relative_url }}"
+                      >
                         <img 
-                          src="/content-images/wai-aria-practices/img/landmarks.svg" 
+                          src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
                           alt=""
                         >
                         <span>Landmarks</span>
@@ -42,9 +44,9 @@ const getPatternsPage = (patterns) => {
               return `
                 <li class="tile tile-${pattern.slug}">
                   <h2 class="tile-name">
-                    <a href="${pattern.permalink}">
+                    <a href="{{ '${pattern.permalink}' | relative_url }}">
                       <img 
-                        src="/content-images/wai-aria-practices/img/${pattern.slug}.svg" 
+                        src="{{ '/content-images/wai-aria-practices/img/${pattern.slug}.svg' | relative_url }}" 
                         alt=""
                       >
                       <span>${pattern.name}</span>

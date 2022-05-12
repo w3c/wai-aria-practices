@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Tree View"
-ref: /WAI/ARIA/APG/patterns/treeview/
+ref: /ARIA/APG/patterns/treeview/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/treeview/
+permalink: /ARIA/APG/patterns/treeview/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -65,12 +71,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         However, in multi-select trees, which enable the user to select more than one item for an action, the selected state is always independent of the focus.
         For example, in a typical file system navigator, the user can move focus to select any number of files for an action, such as copy or move.
         It is important that the visual design distinguish between items that are selected and the item that has focus.
-        For more details, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a>
-        and <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+        For more details, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection' | relative_url }}">this description of differences between focus and selection</a>
+        and <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/treeview.svg"
+            src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="examples-15" tabindex="-1">Examples</h2></div>
         
         <ul>
@@ -163,17 +169,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-29" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM focus (the active element) is functionally distinct from the selected state. For more details, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection.</a></li>
+          <li>DOM focus (the active element) is functionally distinct from the selected state. For more details, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection' | relative_url }}">this description of differences between focus and selection.</a></li>
           <li>
             The <code>tree</code> role supports the <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant">aria-activedescendant</a> property,
             which provides an alternative to moving DOM focus among <code>treeitem</code> elements when implementing keyboard navigation.
-            For details, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            For details, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>
             In a single-select tree, moving focus may optionally unselect the previously selected node and select the newly focused node.
             This model of selection is known as "selection follows focus".
             Having selection follow focus can be very helpful in some circumstances and can severely degrade accessibility in others.
-            For additional guidance, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>If selecting or unselecting all nodes is an important function, implementing separate controls for these actions, such as buttons for "Select All" and "Unselect All", significantly improves accessibility.</li>
         <li>
@@ -223,7 +229,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </li>
               <li>
                 Note that except in trees where selection follows focus, the selected state is distinct from focus.
-                For more details, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a> and <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+                For more details, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection' | relative_url }}">this description of differences between focus and selection</a> and <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
               </li>
             </ul>
           </li>
@@ -279,4 +285,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

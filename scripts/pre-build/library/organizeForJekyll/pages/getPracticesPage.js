@@ -5,7 +5,7 @@ const getPracticesPage = (practices) => {
     fileName: "practices.md",
     fileContent: getTemplateBoilerplate({
       title: "Practices",
-      permalink: "/WAI/ARIA/APG/practices/",
+      permalink: "/ARIA/APG/practices/",
       content: `
         {% include read-this-first.html %}
         <ul class="tiles">
@@ -16,7 +16,9 @@ const getPracticesPage = (practices) => {
               return `
                 <li class="tile tile-${practice.slug}">
                   <h2 class="tile-name">
-                    <a href="/WAI/ARIA/APG/practices/${practice.slug}/">
+                    <a 
+                      href="{{ '/ARIA/APG/practices/${practice.slug}/' | relative_url }}"
+                    >
                       <span>${practice.name}</span>
                     </a>
                   </h2>

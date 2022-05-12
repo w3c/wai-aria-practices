@@ -5,7 +5,7 @@ const getHomePage = (homepageContent) => {
     fileName: `index.md`,
     fileContent: getTemplateBoilerplate({
       title: "ARIA Authoring Practices Guide",
-      permalink: `/WAI/ARIA/APG/`,
+      permalink: `/ARIA/APG/`,
       footerForkAndEditOnGithubPath: "index.html",
       content: homepageContent,
     }),

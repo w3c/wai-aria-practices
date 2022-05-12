@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Breadcrumb"
-ref: /WAI/ARIA/APG/patterns/breadcrumb/
+ref: /ARIA/APG/patterns/breadcrumb/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/breadcrumb/
+permalink: /ARIA/APG/patterns/breadcrumb/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -42,7 +48,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/breadcrumb.svg"
+            src="{{ '/content-images/wai-aria-practices/img/breadcrumb.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-2" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/breadcrumb/index.html">Breadcrumb design pattern example</a></p>
@@ -77,4 +83,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

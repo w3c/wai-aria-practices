@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Meter"
-ref: /WAI/ARIA/APG/patterns/meter/
+ref: /ARIA/APG/patterns/meter/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/meter/
+permalink: /ARIA/APG/patterns/meter/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -48,7 +54,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </ul></div>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/meter.svg"
+            src="{{ '/content-images/wai-aria-practices/img/meter.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-4" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/meter/meter.html">Meter Example</a></p>
@@ -87,4 +93,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

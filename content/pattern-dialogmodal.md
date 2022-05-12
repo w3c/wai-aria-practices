@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Dialog (Modal)"
-ref: /WAI/ARIA/APG/patterns/dialogmodal/
+ref: /ARIA/APG/patterns/dialogmodal/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/dialogmodal/
+permalink: /ARIA/APG/patterns/dialogmodal/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -50,11 +56,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role is a special-case dialog role
         designed specifically for dialogs that divert users' attention to a brief, important message.
-        Its usage is described in the <a href="/WAI/ARIA/APG/patterns/alertdialog/">alert dialog design pattern.</a>
+        Its usage is described in the <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">alert dialog design pattern.</a>
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/dialogmodal.svg"
+            src="{{ '/content-images/wai-aria-practices/img/dialogmodal.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
         
         <ul>
@@ -96,7 +102,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>
                 If a dialog contains the final step in a process that is not easily reversible, such as deleting data or completing a financial transaction,
                 it may be advisable to set focus on the least destructive action, especially if undoing the action is difficult or impossible.
-                The <a href="/WAI/ARIA/APG/patterns/alertdialog/">Alert Dialog Pattern</a> is often employed in such circumstances.
+                The <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">Alert Dialog Pattern</a> is often employed in such circumstances.
               </li>
               <li>
                 If a dialog is limited to interactions that either provide additional information or continue processing,
@@ -181,4 +187,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Disclosure (Show/Hide)"
-ref: /WAI/ARIA/APG/patterns/disclosure/
+ref: /ARIA/APG/patterns/disclosure/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/disclosure/
+permalink: /ARIA/APG/patterns/disclosure/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -37,13 +43,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
-        It has two elements: a disclosure <a href="/WAI/ARIA/APG/patterns/button/">button</a> and a section of content whose visibility is controlled by the button.
+        It has two elements: a disclosure <a href="{{ '/ARIA/APG/patterns/button/' | relative_url }}">button</a> and a section of content whose visibility is controlled by the button.
         When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
         When the content is visible, the arrow or triangle typically points down.
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/disclosure.svg"
+            src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
         
         <ul>
@@ -94,4 +100,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

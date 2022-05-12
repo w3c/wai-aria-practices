@@ -1,4 +1,3 @@
-const { kebabCase } = require("lodash");
 const walkHtmlElements = require("../../utilities/walkHtmlElements");
 const { fixLink } = require("../abstractApgContent/fixLinks");
 const wrapTablesWithResponsiveDiv = require("../abstractApgContent/wrapTablesWithResponsiveDiv");
@@ -31,7 +30,7 @@ const getHandleElement =
     if (element.tagName === "BODY") {
       walkHtmlElements(element, getHandleBodyElement(permalink));
 
-      if (permalink === "/WAI/ARIA/APG/example-index/") {
+      if (permalink === "/ARIA/APG/example-index/") {
         editIndexPage(element);
       } else {
         if (!patternSlug) {
@@ -43,7 +42,7 @@ const getHandleElement =
 
         const img = `<img 
           alt=""
-          src="/content-images/wai-aria-practices/img/${patternSlug}.svg"
+          src="{{ '/content-images/wai-aria-practices/img/${patternSlug}.svg' | relative_url }}"
           class="example-page-example-icon"
         />`;
         if (element.querySelector(".advisement")) {

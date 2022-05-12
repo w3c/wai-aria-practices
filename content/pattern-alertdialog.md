@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Alert and Message Dialogs"
-ref: /WAI/ARIA/APG/patterns/alertdialog/
+ref: /ARIA/APG/patterns/alertdialog/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /WAI/ARIA/APG/patterns/alertdialog/
+permalink: /ARIA/APG/patterns/alertdialog/
 
 sidebar: true
 
@@ -21,9 +21,15 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+>
 
 <script>
 const addBodyClass = "pattern-page";
@@ -36,7 +42,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <section class="widget" id="alertdialog"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
-        An alert dialog  is a <a href="/WAI/ARIA/APG/patterns/dialogmodal/">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
+        An alert dialog  is a <a href="{{ '/ARIA/APG/patterns/dialogmodal/' | relative_url }}">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
         Examples include action confirmation prompts and error message confirmations.
         The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role
         enables assistive technologies and browsers to distinguish alert dialogs from other dialogs
@@ -44,7 +50,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-images/wai-aria-practices/img/alertdialog.svg"
+            src="{{ '/content-images/wai-aria-practices/img/alertdialog.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
@@ -52,7 +58,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-1" tabindex="-1">Keyboard Interaction</h2></div>
         
-        <p>See the keyboard interaction section for the <a href="/WAI/ARIA/APG/patterns/dialogmodal/">modal dialog pattern</a>.</p>
+        <p>See the keyboard interaction section for the <a href="{{ '/ARIA/APG/patterns/dialogmodal/' | relative_url }}">modal dialog pattern</a>.</p>
       </section>
       <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-1" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
           
@@ -98,4 +104,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     }
   };
 </script>
-<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>
