@@ -52,7 +52,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         It is thus advisable to test implementations thoroughly with each browser and assistive technology combination that could be used by the target audience.
       </p></div>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/table.svg"
+            src="/content-images/wai-aria-practices/img/table.svg"
           ><div class="header-wrapper"><h2 id="examples-13" tabindex="-1">Examples</h2></div>
         
         <ul>

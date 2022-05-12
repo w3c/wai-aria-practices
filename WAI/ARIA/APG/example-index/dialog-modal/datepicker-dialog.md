@@ -72,7 +72,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
 </details>
           <img alt=""
-          src="/content-assets/wai-aria-practices/img/dialogmodal.svg"
+          src="/content-images/wai-aria-practices/img/dialogmodal.svg"
           class="example-page-example-icon"
         >
   

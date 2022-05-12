@@ -37,7 +37,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>A menu button is a <a href="/WAI/ARIA/APG/patterns/button/">button</a> that opens a <a href="/WAI/ARIA/APG/patterns/menu/">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/menubutton.svg"
+            src="/content-images/wai-aria-practices/img/menubutton.svg"
           ><div class="header-wrapper"><h2 id="examples-9" tabindex="-1">Examples</h2></div>
         
         <ul>

@@ -7,7 +7,7 @@ const loadHomepage = async () => {
   const homepagePath = path.join(apgPath, "/index.html");
   const assetsPath = path.resolve(
     __dirname,
-    "../../../content-assets/wai-aria-practices/generated"
+    "../../../content-images/wai-aria-practices/generated"
   );
 
   const homepageString = await fs.readFile(homepagePath, "utf8");
@@ -21,7 +21,7 @@ const loadHomepage = async () => {
     const updatedPath = path.join(assetsPath, fileName);
     img.setAttribute(
       "src",
-      `/content-assets/wai-aria-practices/generated/${fileName}`
+      `/content-images/wai-aria-practices/generated/${fileName}`
     );
     await fs.copyFile(apgImgPath, updatedPath);
   };

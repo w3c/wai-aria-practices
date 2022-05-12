@@ -47,7 +47,7 @@ lang: en
       </p>
             <a href="/patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
-          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="/content-assets/wai-aria-practices/generated/index-1.svg">
+          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="/content-images/wai-aria-practices/generated/index-1.svg">
         </div>
       </div>
       <div class="detail-3"></div>
@@ -77,7 +77,7 @@ lang: en
                   <a href="/patterns/" aria-label="View list of patterns" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A menagerie of widgets." src="/content-assets/wai-aria-practices/generated/index-2.svg">
+                  <img alt="A menagerie of widgets." src="/content-images/wai-aria-practices/generated/index-2.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -92,7 +92,7 @@ lang: en
                   <a href="/fundamentals/landmark-regions/" aria-label="View landmarks guide" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A document flies apart into chunks." src="/content-assets/wai-aria-practices/generated/index-3.svg">
+                  <img alt="A document flies apart into chunks." src="/content-images/wai-aria-practices/generated/index-3.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -108,7 +108,7 @@ lang: en
                   <a href="/fundamentals/names-and-descriptions/" aria-label="View names and descriptions guide" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="Indicators delve inside a document." src="/content-assets/wai-aria-practices/generated/index-4.svg">
+                  <img alt="Indicators delve inside a document." src="/content-images/wai-aria-practices/generated/index-4.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -122,7 +122,7 @@ lang: en
                   <a class="button-link" href="/fundamentals/" aria-label="View fundamentals">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="/content-assets/wai-aria-practices/generated/index-5.svg">
+                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="/content-images/wai-aria-practices/generated/index-5.svg">
                 </div>
               </div>
       </div>
@@ -223,7 +223,7 @@ lang: en
       <div class="collaboration-items">
         
                   <div class="collaboration-item">
-                    <img alt="An icon showing three nodes connecting." src="/content-assets/wai-aria-practices/generated/index-6.svg">
+                    <img alt="An icon showing three nodes connecting." src="/content-images/wai-aria-practices/generated/index-6.svg">
                     <h3>Join Our Community</h3>
                     <p>
             To join the APG Task Force, individuals must be participants of the
@@ -239,7 +239,7 @@ lang: en
                   </div>
                 
                   <div class="collaboration-item">
-                    <img alt="An icon showing two human shapes carrying a burden." src="/content-assets/wai-aria-practices/generated/index-7.svg">
+                    <img alt="An icon showing two human shapes carrying a burden." src="/content-images/wai-aria-practices/generated/index-7.svg">
                     <h3>Contribute to Our Project</h3>
                     <p>
             To contribute without joining the task force, see the ARIA Working
@@ -258,7 +258,7 @@ lang: en
 
         <div class="collaboration-item mailing-list-item">
           <div class="collaboration-detail-4 detail-4"></div>
-          <img alt="A notification bell icon appears over an email icon." src="/content-assets/wai-aria-practices/generated/index-8.svg">
+          <img alt="A notification bell icon appears over an email icon." src="/content-images/wai-aria-practices/generated/index-8.svg">
           <div>
             <h3>Mailing Lists</h3>
             <p>

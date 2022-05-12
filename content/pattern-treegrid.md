@@ -57,7 +57,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/treegrid.svg"
+            src="/content-images/wai-aria-practices/img/treegrid.svg"
           ><div class="header-wrapper"><h2 id="examples-16" tabindex="-1">Examples</h2></div>
         
         <ul>

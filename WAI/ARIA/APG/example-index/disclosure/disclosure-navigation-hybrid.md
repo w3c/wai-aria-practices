@@ -75,7 +75,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         That is because the menu and menubar roles require complex functionality, such as <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_general_within">composite widget focus management</a> and first-character navigation, that is unnecessary for typical site navigation.
       </p>
     </div><img alt=""
-          src="/content-assets/wai-aria-practices/img/disclosure.svg"
+          src="/content-images/wai-aria-practices/img/disclosure.svg"
           class="example-page-example-icon"
         >
 

@@ -50,7 +50,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>A common convention for indicating that a menu item launches a dialog box is to append "…" (ellipsis) to the menu item label, e.g., "Save as …".</p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/menu.svg"
+            src="/content-images/wai-aria-practices/img/menu.svg"
           ><div class="header-wrapper"><h2 id="examples-8" tabindex="-1">Examples</h2></div>
         
         <ul>

@@ -77,7 +77,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p>
     </div><img alt=""
-          src="/content-assets/wai-aria-practices/img/slider.svg"
+          src="/content-images/wai-aria-practices/img/slider.svg"
           class="example-page-example-icon"
         >
     <p>

@@ -186,7 +186,7 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
           "afterbegin",
           `<img 
             alt="" 
-            src="/content-assets/wai-aria-practices/img/${newSlug}.svg"
+            src="/content-images/wai-aria-practices/img/${newSlug}.svg"
           />`
         );
         return element.outerHTML;

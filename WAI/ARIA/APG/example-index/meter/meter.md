@@ -73,7 +73,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
 </details>
           <img alt=""
-          src="/content-assets/wai-aria-practices/img/meter.svg"
+          src="/content-images/wai-aria-practices/img/meter.svg"
           class="example-page-example-icon"
         >
 

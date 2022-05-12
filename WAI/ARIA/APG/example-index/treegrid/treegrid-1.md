@@ -87,7 +87,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
 </details>
           <img alt=""
-          src="/content-assets/wai-aria-practices/img/treegrid.svg"
+          src="/content-images/wai-aria-practices/img/treegrid.svg"
           class="example-page-example-icon"
         >
   

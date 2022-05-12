@@ -82,7 +82,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/feed.svg"
+            src="/content-images/wai-aria-practices/img/feed.svg"
           ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
         
         <p>
