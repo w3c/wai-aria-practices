@@ -5,7 +5,8 @@ ref: /aria-practices/
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/menu-button/menu-button-actions.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/menu-button/menu-button-actions
 

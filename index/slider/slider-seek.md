@@ -5,7 +5,8 @@ ref: /aria-practices/
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/slider/slider-seek.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/slider/slider-seek
 

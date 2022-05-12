@@ -5,6 +5,7 @@ ref: /aria-practices/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /patterns/radiobutton/

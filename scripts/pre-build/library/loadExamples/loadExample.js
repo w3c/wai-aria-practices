@@ -7,7 +7,12 @@ const { getHandleElement, getContent } = require("./handleElement");
 
 const loadExample = async (
   filePath,
-  { exampleRelativeDirectory, lastModifiedDateFormatted, getNotice }
+  {
+    exampleRelativePath,
+    exampleRelativeDirectory,
+    lastModifiedDateFormatted,
+    getNotice,
+  }
 ) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
   const slug = path.basename(filePath).slice(0, -5);
@@ -30,6 +35,7 @@ const loadExample = async (
       permalink,
       head,
       footer,
+      footerForkAndEditOnGithubPath: `examples/${exampleRelativePath}`,
       content: `
         <div class="sidebar-container">
           <nav class="sidebar-right" aria-describedby="sidebar-toc">

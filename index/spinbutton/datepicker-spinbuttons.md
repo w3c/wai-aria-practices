@@ -5,7 +5,8 @@ ref: /aria-practices/
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/spinbutton/datepicker-spinbuttons.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /index/spinbutton/datepicker-spinbuttons
 

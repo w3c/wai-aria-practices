@@ -5,6 +5,9 @@ const getTemplateBoilerplate = ({
   permalink,
   addBodyClass,
   content,
+  // Defaults to aria-practices.html since this is the file where almost all the
+  // content originates, with the notable exception of the examples
+  footerForkAndEditOnGithubPath = "aria-practices.html",
   head = "",
   footer = "",
 }) => {
@@ -19,7 +22,8 @@ ref: /aria-practices/
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: ${footerForkAndEditOnGithubPath}
 feedbackmail: public-aria-practices@w3.org
 permalink: ${permalink}
 
