@@ -10,6 +10,8 @@ const getPracticesPage = (practices) => {
         {% include read-this-first.html %}
         <ul class="tiles">
           ${practices
+            // Handled above with a special banner
+            .filter((practice) => practice.slug !== "read-me-first")
             .map((practice) => {
               return `
                 <li class="tile tile-${practice.slug}">

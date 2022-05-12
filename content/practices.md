@@ -27,16 +27,6 @@ lang: en
         {% include read-this-first.html %}
         <ul class="tiles">
           
-                <li class="tile tile-read-me-first">
-                  <h2 class="tile-name">
-                    <a href="{{ site.baseurl }}/practices/read-me-first/">
-                      <span>Read Me First</span>
-                    </a>
-                  </h2>
-                  <div class="tile-introduction">
-        Functionally, ARIA roles, states, and properties are analogous to a CSS for assistive technologies.</div>
-                </li>
-               
                 <li class="tile tile-landmark-regions">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/practices/landmark-regions/">
