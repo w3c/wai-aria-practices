@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/practices/read-me-first/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/practices/read-me-first/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,40 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
-if (addBodyClass) {
-  document.body.classList.add(addBodyClass);
-}
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#x2-1-no-aria-is-better-than-bad-aria">No ARIA is better than Bad ARIA</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x2-2-browser-and-assistive-technology-support">Browser and Assistive Technology Support</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x2-3-mobile-and-touch-support">Mobile and Touch Support</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section id="read_me_first"><div class="header-wrapper"></div>
+<section id="read_me_first"><div class="header-wrapper"></div>
     
     <section id="no_aria_better_bad_aria"><div class="header-wrapper"><h2 id="x2-1-no-aria-is-better-than-bad-aria">No ARIA is better than Bad ARIA</h2></div>
       
@@ -134,9 +118,6 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
       <p>More guidance about touch and mobile support is planned for future releases of the guide.</p>
     </section>
   </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -149,4 +130,4 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

@@ -19,30 +19,14 @@ const loadIndex = async (filePath) => {
     title: "Index",
     permalink,
     head: head,
+    enableSidebar: true,
     content: `
-      <div class="sidebar-container">
-        <nav class="sidebar-right">
-          <h2 class="sidebar-headline">Page Contents</h2>
-          <ul class="sidebar-list">
-            <li>
-              <a href="#examples_by_role_label">Examples by Role</a>
-            </li>
-            <li>
-              <a href="#examples_by_props_label">
-                Examples by Properties and States
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="sidebar-left">
-          <h2>About the Index</h2>
-          <p>
-            This page includes a list of all ARIA design pattern examples 
-            indexed either by role or by ARIA properties and states.
-          </p>
-          ${body}
-        </div>
-      </div>
+      <h2>About the Index</h2>
+      <p>
+        This page includes a list of all ARIA design pattern examples 
+        indexed either by role or by ARIA properties and states.
+      </p>
+      ${body}
     `,
   });
 };

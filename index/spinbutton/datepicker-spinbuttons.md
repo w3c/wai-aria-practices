@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/index/spinbutton/datepicker-spinbuttons
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/spinbutton/datepicker-spinbuttons.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/index/spinbutton/datepicker-spinbuttons
+
+sidebar: true
+
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -30,45 +35,19 @@ lang: en
 <script src="js/datepicker-spinbuttons.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#ex_label">Example</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#accessibility-features">Accessibility Features</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex  Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#sc1_label">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -95,9 +74,9 @@ lang: en
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/spinbutton.svg"
-        class="example-page-example-icon"
-      >
+          src="/content-assets/wai-aria-practices/img/spinbutton.svg"
+          class="example-page-example-icon"
+        >
   
   <div>
     
@@ -112,7 +91,7 @@ lang: en
     </ul>
     <section>
       <div class="example-header">
-        <h2 id="ex_label" tabindex="-1">Example</h2>
+        <h2 id="ex_label">Example</h2>
       </div>
       <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
       <div id="example">
@@ -207,7 +186,7 @@ lang: en
     </section>
 
     <section>
-      <h2 tabindex="-1" id="accessibility-features">Accessibility Features</h2>
+      <h2>Accessibility Features</h2>
       <ul>
         <li>
           The three spin buttons are wrapped in a group to help assistive technology users understand that all three elements together represent a date.
@@ -226,7 +205,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+      <h2 id="kbd_label">Keyboard Support</h2>
       <p>The spin buttons provide the following keyboard support described in the <a href="/WAI/ARIA/APG/patterns/spinbutton/">spin button design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
         <thead>
@@ -289,7 +268,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
+      <h2 id="rps_label">Role, Property, State, and Tabindex  Attributes</h2>
       <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
         <thead>
           <tr>
@@ -405,7 +384,7 @@ lang: en
     </section>
 
     <section>
-      <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+      <h2>Javascript and CSS Source Code</h2>
       <ul id="css_js_files">
         <li>
           CSS:
@@ -422,7 +401,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="sc1_label" tabindex="-1">HTML Source Code</h2>
+      <h2 id="sc1_label">HTML Source Code</h2>
       <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
       <pre><code id="source1"></code></pre>
       <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
@@ -432,14 +411,8 @@ lang: en
       </script>
     </section>
   </div>
-  <nav>
-    <a href="/WAI/ARIA/APG/patterns/spinbutton/">Spin Button Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
-            <p>Page last updated: November 23, 2021</p>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -452,4 +425,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

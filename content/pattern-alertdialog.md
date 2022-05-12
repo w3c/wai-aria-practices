@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/patterns/alertdialog/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/patterns/alertdialog/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,37 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#example-1">Example</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-1">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-1">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section class="widget" id="alertdialog"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="alertdialog"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         An alert dialog  is a <a href="/WAI/ARIA/APG/patterns/dialogmodal/">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
@@ -56,7 +43,9 @@ lang: en
         so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/alertdialog.svg" ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="/content-assets/wai-aria-practices/img/alertdialog.svg"
+          ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
         
         <p><a href="../../index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
       </section>
@@ -97,9 +86,6 @@ lang: en
           </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -112,4 +98,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

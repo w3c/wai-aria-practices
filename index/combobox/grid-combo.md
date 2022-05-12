@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/index/combobox/grid-combo
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/combobox/grid-combo.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/index/combobox/grid-combo
+
+sidebar: true
+
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>            <p>Page last updated: February 10, 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -24,45 +29,19 @@ lang: en
 <script src="js/grid-combo-example.js"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#ex_label">Example</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#accessibility-features">Accessibility Features</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#sc1_label">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -89,9 +68,9 @@ lang: en
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/combobox.svg"
-        class="example-page-example-icon"
-      >
+          src="/content-assets/wai-aria-practices/img/combobox.svg"
+          class="example-page-example-icon"
+        >
   
   <div>
     
@@ -120,7 +99,7 @@ lang: en
 
     <section>
       <div class="example-header">
-        <h2 id="ex_label" tabindex="-1">Example</h2>
+        <h2 id="ex_label">Example</h2>
       </div>
       <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
       <div id="ex1">
@@ -148,13 +127,13 @@ lang: en
     </section>
 
     <section>
-      <h2 tabindex="-1" id="accessibility-features">Accessibility Features</h2>
+      <h2>Accessibility Features</h2>
       <p>Browsers do not manage visibility of elements referenced by <code>aria-activedescendant</code> like they do for elements with focus. When a keyboard event changes the active option in the listbox, the JavaScript scrolls the option referenced by <code>aria-activedescendant</code> into view. Managing <code>aria-activedescendant</code> visibility is essential to accessibility for people who use a browser's zoom feature to increase the size of content.
       </p>
     </section>
 
     <section>
-      <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+      <h2 id="kbd_label">Keyboard Support</h2>
       <p>
       The example combobox on this page implements the following keyboard interface.
         Other variations and options for the keyboard interface are described in the
@@ -293,7 +272,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex Attributes</h2>
+      <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
       <p>
         The example comboboxes on this page implement the following ARIA roles, states, and properties.
         Information about other ways of applying ARIA roles, states, and properties is available in the
@@ -452,7 +431,7 @@ lang: en
     </section>
 
     <section>
-      <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+      <h2>Javascript and CSS Source Code</h2>
       <ul id="css_js_files">
         <li> CSS: <a href="css/grid-combo.css" type="tex/css">grid-combo.css</a></li>
         <li>Javascript: <a href="js/grid-combo.js">grid-combo.js</a>, <a href="js/grid-combo-example.js">grid-combo-example.js</a>, <a href="../js/utils.js">utils.js</a></li>
@@ -460,7 +439,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="sc1_label" tabindex="-1">HTML Source Code</h2>
+      <h2 id="sc1_label">HTML Source Code</h2>
       <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
       <pre><code id="sc1"></code></pre>
       <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
@@ -470,14 +449,8 @@ lang: en
       </script>
     </section>
   </div>
-  <nav>
-    <a href="/WAI/ARIA/APG/patterns/combobox/">Combobox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
-            <p>Page last updated: February 10, 2022</p>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -490,4 +463,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

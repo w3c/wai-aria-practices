@@ -10,11 +10,13 @@ const getPracticesPage = (practices) => {
         {% include read-this-first.html %}
         <ul class="tiles">
           ${practices
+            // Handled above with a special banner
+            .filter((practice) => practice.slug !== "read-me-first")
             .map((practice) => {
               return `
                 <li class="tile tile-${practice.slug}">
                   <h2 class="tile-name">
-                    <a href="{{ site.baseurl }}/practices/${practice.slug}/">
+                    <a href="/WAI/ARIA/APG/practices/${practice.slug}/">
                       <span>${practice.name}</span>
                     </a>
                   </h2>

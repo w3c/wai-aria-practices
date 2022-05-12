@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/index/button/button_idl
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/button/button_idl.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/index/button/button_idl
+
+sidebar: true
+
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: January 19, 2021</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -22,41 +27,19 @@ lang: en
 <script src="js/button_idl.js"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#ex_label">Example</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#sc1_label">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -99,7 +82,7 @@ lang: en
 
     <section>
       <div class="example-header">
-        <h2 id="ex_label" tabindex="-1">Example</h2>
+        <h2 id="ex_label">Example</h2>
       </div>
 
       <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
@@ -109,9 +92,9 @@ lang: en
           <strong>IMPORTANT:</strong> This example is coded using syntax that was not introduced until version 1.2 of the ARIA specification.
           When using a <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>, the buttons will not be styled correctly.
         </p><img alt=""
-        src="/assets/img/button.svg"
-        class="example-page-example-icon"
-      >
+          src="/content-assets/wai-aria-practices/img/button.svg"
+          class="example-page-example-icon"
+        >
 
         <p>This <q>Print</q> action button uses a <code>div</code> element.</p>
         <div tabindex="0" id="action">Print Page</div>
@@ -155,7 +138,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+      <h2 id="kbd_label">Keyboard Support</h2>
 
       <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
         <thead>
@@ -178,7 +161,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex Attributes</h2>
+      <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
 
       <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
         <thead>
@@ -254,7 +237,7 @@ lang: en
     </section>
 
     <section>
-      <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+      <h2>Javascript and CSS Source Code</h2>
 
       <ul id="css_js_files">
         <li>
@@ -269,7 +252,7 @@ lang: en
     </section>
 
     <section>
-      <h2 id="sc1_label" tabindex="-1">HTML Source Code</h2>
+      <h2 id="sc1_label">HTML Source Code</h2>
 
       <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
 
@@ -284,14 +267,8 @@ lang: en
     </section>
   </div>
 
-  <nav>
-    <a href="/WAI/ARIA/APG/patterns/button/">Button Design Pattern in WAI-ARIA Authoring Practices 1.1</a>
-  </nav>
+  
 
-            <p>Page last updated: January 19, 2021</p>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -304,4 +281,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

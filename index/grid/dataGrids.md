@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/index/grid/dataGrids
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/grid/dataGrids.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/index/grid/dataGrids
+
+sidebar: true
+
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,41 +31,19 @@ lang: en
 <script src="js/dataGrids.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#examples">Examples</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex  Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#html-source-code">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -87,9 +70,9 @@ lang: en
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/grid.svg"
-        class="example-page-example-icon"
-      >
+          src="/content-assets/wai-aria-practices/img/grid.svg"
+          class="example-page-example-icon"
+        >
   
   <div>
   
@@ -108,7 +91,7 @@ lang: en
     <li><a href="advancedDataGrid.html">Advanced Data Grid Example</a>: Example of a grid with behaviors and features similar to a typical spreadsheet, including cell and row selection.</li>
   </ul>
   <section>
-    <h2 tabindex="-1" id="examples">Examples</h2>
+    <h2>Examples</h2>
     <section>
       <div class="example-header">
         <h3 id="ex1_label">Example 1: Minimal Data Grid</h3>
@@ -594,7 +577,7 @@ lang: en
   </section>
 
   <section>
-    <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+    <h2 id="kbd_label">Keyboard Support</h2>
     <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
       <tr>
         <th>key</th>
@@ -696,7 +679,7 @@ lang: en
   </section>
 
 <section>
-    <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
+    <h2 id="rps_label">Role, Property, State, and Tabindex  Attributes</h2>
     <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
       <thead>
         <tr>
@@ -857,7 +840,7 @@ lang: en
   <div id="arrow-keys-indicator" class="hidden"></div>
 
   <section>
-    <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+    <h2>Javascript and CSS Source Code</h2>
     <ul id="css_js_files">
       <li>CSS:
         <ul>
@@ -877,7 +860,7 @@ lang: en
   </section>
 
   <section>
-    <h2 tabindex="-1" id="html-source-code">HTML Source Code</h2>
+    <h2>HTML Source Code</h2>
     <h3 id="sc1_label">Example 1: Minimal Data Grid</h3>
     <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for"></div>
     <pre><code id="sc1"></code></pre>
@@ -907,15 +890,8 @@ lang: en
     </script>
   </section>
   </div>
-  <nav>
-    
-    <a href="/WAI/ARIA/APG/patterns/grid/">Grid Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
-            <p>Page last updated: November 23, 2021</p>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -928,4 +904,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/patterns/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/patterns/
+
+sidebar: false
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,7 +21,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
@@ -28,7 +33,10 @@ lang: en
                 <li class="tile tile-accordion">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/accordion/">
-                      <img src="/assets/img/accordion.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/accordion.svg" 
+                        alt=""
+                      >
                       <span>Accordion (Sections With Show/Hide Functionality)</span>
                     </a>
                   </h2>
@@ -39,7 +47,10 @@ lang: en
                 <li class="tile tile-alert">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/alert/">
-                      <img src="/assets/img/alert.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/alert.svg" 
+                        alt=""
+                      >
                       <span>Alert</span>
                     </a>
                   </h2>
@@ -50,7 +61,10 @@ lang: en
                 <li class="tile tile-alertdialog">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/alertdialog/">
-                      <img src="/assets/img/alertdialog.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/alertdialog.svg" 
+                        alt=""
+                      >
                       <span>Alert and Message Dialogs</span>
                     </a>
                   </h2>
@@ -61,7 +75,10 @@ lang: en
                 <li class="tile tile-breadcrumb">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/breadcrumb/">
-                      <img src="/assets/img/breadcrumb.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/breadcrumb.svg" 
+                        alt=""
+                      >
                       <span>Breadcrumb</span>
                     </a>
                   </h2>
@@ -72,7 +89,10 @@ lang: en
                 <li class="tile tile-button">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/button/">
-                      <img src="/assets/img/button.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/button.svg" 
+                        alt=""
+                      >
                       <span>Button</span>
                     </a>
                   </h2>
@@ -83,7 +103,10 @@ lang: en
                 <li class="tile tile-carousel">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/carousel/">
-                      <img src="/assets/img/carousel.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/carousel.svg" 
+                        alt=""
+                      >
                       <span>Carousel (Slide Show or Image Rotator)</span>
                     </a>
                   </h2>
@@ -94,7 +117,10 @@ lang: en
                 <li class="tile tile-checkbox">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/checkbox/">
-                      <img src="/assets/img/checkbox.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/checkbox.svg" 
+                        alt=""
+                      >
                       <span>Checkbox</span>
                     </a>
                   </h2>
@@ -105,7 +131,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-combobox">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/combobox/">
-                      <img src="/assets/img/combobox.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/combobox.svg" 
+                        alt=""
+                      >
                       <span>Combobox</span>
                     </a>
                   </h2>
@@ -116,7 +145,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-dialogmodal">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/dialogmodal/">
-                      <img src="/assets/img/dialogmodal.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/dialogmodal.svg" 
+                        alt=""
+                      >
                       <span>Dialog (Modal)</span>
                     </a>
                   </h2>
@@ -127,7 +159,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-disclosure">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/disclosure/">
-                      <img src="/assets/img/disclosure.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/disclosure.svg" 
+                        alt=""
+                      >
                       <span>Disclosure (Show/Hide)</span>
                     </a>
                   </h2>
@@ -138,7 +173,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-feed">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/feed/">
-                      <img src="/assets/img/feed.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/feed.svg" 
+                        alt=""
+                      >
                       <span>Feed</span>
                     </a>
                   </h2>
@@ -149,7 +187,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
                       <a href="/index/landmarks/index.html">
-                        <img src="/assets/img/landmarks.svg" alt="">
+                        <img 
+                          src="/content-assets/wai-aria-practices/img/landmarks.svg" 
+                          alt=""
+                        >
                         <span>Landmarks</span>
                       </a>
                     </h2>
@@ -162,7 +203,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-link">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/link/">
-                      <img src="/assets/img/link.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/link.svg" 
+                        alt=""
+                      >
                       <span>Link</span>
                     </a>
                   </h2>
@@ -173,7 +217,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-listbox">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/listbox/">
-                      <img src="/assets/img/listbox.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/listbox.svg" 
+                        alt=""
+                      >
                       <span>Listbox</span>
                     </a>
                   </h2>
@@ -184,7 +231,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-menu">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/menu/">
-                      <img src="/assets/img/menu.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/menu.svg" 
+                        alt=""
+                      >
                       <span>Menu or Menu bar</span>
                     </a>
                   </h2>
@@ -195,7 +245,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-menubutton">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/menubutton/">
-                      <img src="/assets/img/menubutton.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/menubutton.svg" 
+                        alt=""
+                      >
                       <span>Menu Button</span>
                     </a>
                   </h2>
@@ -205,7 +258,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-meter">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/meter/">
-                      <img src="/assets/img/meter.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/meter.svg" 
+                        alt=""
+                      >
                       <span>Meter</span>
                     </a>
                   </h2>
@@ -216,7 +272,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-radiobutton">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/radiobutton/">
-                      <img src="/assets/img/radiobutton.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/radiobutton.svg" 
+                        alt=""
+                      >
                       <span>Radio Group</span>
                     </a>
                   </h2>
@@ -228,7 +287,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-slider">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/slider/">
-                      <img src="/assets/img/slider.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/slider.svg" 
+                        alt=""
+                      >
                       <span>Slider</span>
                     </a>
                   </h2>
@@ -239,7 +301,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-slidertwothumb">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/slidertwothumb/">
-                      <img src="/assets/img/slidertwothumb.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/slidertwothumb.svg" 
+                        alt=""
+                      >
                       <span>Slider (Multi-Thumb)</span>
                     </a>
                   </h2>
@@ -251,7 +316,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-spinbutton">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/spinbutton/">
-                      <img src="/assets/img/spinbutton.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/spinbutton.svg" 
+                        alt=""
+                      >
                       <span>Spinbutton</span>
                     </a>
                   </h2>
@@ -262,7 +330,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-switch">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/switch/">
-                      <img src="/assets/img/switch.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/switch.svg" 
+                        alt=""
+                      >
                       <span>Switch</span>
                     </a>
                   </h2>
@@ -273,7 +344,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-table">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/table/">
-                      <img src="/assets/img/table.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/table.svg" 
+                        alt=""
+                      >
                       <span>Table</span>
                     </a>
                   </h2>
@@ -284,7 +358,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-tabpanel">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/tabpanel/">
-                      <img src="/assets/img/tabpanel.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/tabpanel.svg" 
+                        alt=""
+                      >
                       <span>Tabs</span>
                     </a>
                   </h2>
@@ -295,7 +372,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-toolbar">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/toolbar/">
-                      <img src="/assets/img/toolbar.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/toolbar.svg" 
+                        alt=""
+                      >
                       <span>Toolbar</span>
                     </a>
                   </h2>
@@ -305,7 +385,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-tooltip">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/tooltip/">
-                      <img src="/assets/img/tooltip.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/tooltip.svg" 
+                        alt=""
+                      >
                       <span>Tooltip Widget</span>
                     </a>
                   </h2>
@@ -316,7 +399,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-treeview">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/treeview/">
-                      <img src="/assets/img/treeview.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/treeview.svg" 
+                        alt=""
+                      >
                       <span>Tree View</span>
                     </a>
                   </h2>
@@ -327,7 +413,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-treegrid">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/treegrid/">
-                      <img src="/assets/img/treegrid.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/treegrid.svg" 
+                        alt=""
+                      >
                       <span>Treegrid</span>
                     </a>
                   </h2>
@@ -338,7 +427,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-windowsplitter">
                   <h2 class="tile-name">
                     <a href="/WAI/ARIA/APG/patterns/windowsplitter/">
-                      <img src="/assets/img/windowsplitter.svg" alt="">
+                      <img 
+                        src="/content-assets/wai-aria-practices/img/windowsplitter.svg" 
+                        alt=""
+                      >
                       <span>Window Splitter</span>
                     </a>
                   </h2>
@@ -360,4 +452,4 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

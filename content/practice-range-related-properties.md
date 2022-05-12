@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/practices/range-related-properties/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/practices/range-related-properties/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,60 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
-if (addBodyClass) {
-  document.body.classList.add(addBodyClass);
-}
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#introduction">Introduction </a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-1-using-aria-valuemin-aria-valuemax-and-aria-valuenow">Using <code>aria-valuemin</code>, <code>aria-valuemax</code> and <code>aria-valuenow</code></a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-2-using-aria-valuetext">Using <code>aria-valuetext</code></a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-3-range-properties-with-meter">Range properties with meter</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-4-range-properties-with-progress-bars">Range properties with progress bars</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-5-range-properties-with-scrollbars">Range properties with scrollbars</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-6-range-properties-with-sliders">Range properties with sliders</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x8-7-range-properties-with-spin-buttons">Range properties with spin buttons</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
           <h2 id="introduction">Introduction</h2>
           <section id="range_related_properties"><div class="header-wrapper"></div>
     
@@ -381,9 +345,6 @@ if (addBodyClass) {
     </section>
   </section>
         
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -396,4 +357,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

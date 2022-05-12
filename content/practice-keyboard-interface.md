@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/practices/keyboard-interface/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/practices/keyboard-interface/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,68 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
-if (addBodyClass) {
-  document.body.classList.add(addBodyClass);
-}
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#introduction">Introduction </a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-1-fundamental-keyboard-navigation-conventions">Fundamental Keyboard Navigation Conventions</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-2-discernible-and-predictable-keyboard-focus">Discernible and Predictable Keyboard Focus</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-3-focus-vs-selection-and-the-perception-of-dual-focus">Focus VS Selection and the Perception of Dual Focus</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-4-deciding-when-to-make-selection-automatically-follow-focus">Deciding When to Make Selection Automatically Follow Focus</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-5-keyboard-navigation-between-components-the-tab-sequence">Keyboard Navigation Between Components (The Tab Sequence)</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-6-keyboard-navigation-inside-components"> Keyboard Navigation Inside Components</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-7-focusability-of-disabled-controls">Focusability of disabled controls</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-8-key-assignment-conventions-for-common-functions">Key Assignment Conventions for Common Functions</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x6-9-keyboard-shortcuts">Keyboard Shortcuts</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
           <h2 id="introduction">Introduction</h2>
           <section id="keyboard"><div class="header-wrapper"></div>
     
@@ -709,9 +665,6 @@ if (addBodyClass) {
     </section>
   </section>
         
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -724,4 +677,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

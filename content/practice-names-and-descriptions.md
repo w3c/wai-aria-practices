@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/practices/names-and-descriptions/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/practices/names-and-descriptions/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,48 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
-if (addBodyClass) {
-  document.body.classList.add(addBodyClass);
-}
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#introduction">Introduction </a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x5-1-what-are-accessible-names-and-descriptions">What ARE Accessible Names and Descriptions?</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x5-2-how-are-name-and-description-strings-derived">How Are Name and Description Strings Derived?</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x5-3-accessible-names">Accessible Names</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x5-4-accessible-descriptions">Accessible Descriptions</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
           <h2 id="introduction">Introduction</h2>
           <section id="names_and_descriptions"><div class="header-wrapper"></div>
     
@@ -1623,9 +1599,6 @@ So, As advised by <a href="/WAI/ARIA/APG/practices/names-and-descriptions/#namin
     </section>
   </section>
         
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -1638,4 +1611,4 @@ So, As advised by <a href="/WAI/ARIA/APG/practices/names-and-descriptions/#namin
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

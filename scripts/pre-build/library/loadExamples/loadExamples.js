@@ -61,12 +61,13 @@ const loadExamples = async () => {
   const getNotice = await loadGetNotice({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {
-    const exampleRelative = path.relative(examplesPath, currentPath);
-    const exampleRelativeDirectory = path.dirname(exampleRelative);
+    const exampleRelativePath = path.relative(examplesPath, currentPath);
+    const exampleRelativeDirectory = path.dirname(exampleRelativePath);
 
     const lastModifiedDateFormatted = await getLastModifiedDate(currentPath);
 
     const { fileName, fileContent } = await loadExample(currentPath, {
+      exampleRelativePath,
       exampleRelativeDirectory,
       lastModifiedDateFormatted,
       getNotice,

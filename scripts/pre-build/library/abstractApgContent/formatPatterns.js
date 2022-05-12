@@ -161,19 +161,6 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
 
     getIntroduction: getIntroductionFormatter(newSlug),
 
-    getOutline: (element) => {
-      return [
-        { name: "About This Pattern", slug: "about-this-pattern" },
-        ...element.querySelectorAll("h4").map((h4) => {
-          // Sorry this is a bit awkward
-          let name = removeSectionNumbers(() => h4.textContent)();
-          if (lastCharacterIsColon(name)) name = removeLastCharacter(name);
-          const slug = h4.getAttribute("id") ?? kebabCase(name);
-          return { name, slug };
-        }),
-      ];
-    },
-
     getContent: removeSectionNumbers(
       renumberHeadings(-2, (element) => {
         const originalHeadline = element.querySelector("h3");
@@ -197,7 +184,10 @@ const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
         examplesSection.classList.add("examples-section");
         examplesSection.insertAdjacentHTML(
           "afterbegin",
-          `<img alt="" src="/assets/img/${newSlug}.svg" />`
+          `<img 
+            alt="" 
+            src="/content-assets/wai-aria-practices/img/${newSlug}.svg"
+          />`
         );
         return element.outerHTML;
       })

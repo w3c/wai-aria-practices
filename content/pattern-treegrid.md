@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/patterns/treegrid/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/patterns/treegrid/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,37 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-16">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-25">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-26">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section class="widget" id="treegrid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="treegrid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
         <p>
           A <a href="https://w3c.github.io/aria/#treegrid" class="role-reference">treegrid</a> widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.
@@ -69,7 +56,9 @@ lang: en
         For more details, see <a href="/WAI/ARIA/APG/practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection.</a>
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/treegrid.svg" ><div class="header-wrapper"><h2 id="examples-16" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="/content-assets/wai-aria-practices/img/treegrid.svg"
+          ><div class="header-wrapper"><h2 id="examples-16" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li>
@@ -281,9 +270,6 @@ lang: en
         </ul></div>
       </section>
    </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -296,4 +282,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

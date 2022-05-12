@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/index/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/index/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -19,40 +24,32 @@ lang: en
 <script src="js/app.js"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-      <div class="sidebar-container">
-        <nav class="sidebar-right">
-          <h2 class="sidebar-headline">Page Contents</h2>
-          <ul class="sidebar-list">
-            <li>
-              <a href="#examples_by_role_label">Examples by Role</a>
-            </li>
-            <li>
-              <a href="#examples_by_props_label">
-                Examples by Properties and States
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="sidebar-left">
-          <h2>About the Index</h2>
-          <p>
-            This page includes a list of all ARIA design pattern examples 
-            indexed either by role or by ARIA properties and states.
-          </p>
-          
+      <h2>About the Index</h2>
+      <p>
+        This page includes a list of all ARIA design pattern examples 
+        indexed either by role or by ARIA properties and states.
+      </p>
+      
   
   <div>
     
     
     
     <section id="examples_by_roles">
-      <h2 id="examples_by_role_label" tabindex="-1">Examples by Role</h2>
+      <h2 id="examples_by_role_label">Examples by Role</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="examples_by_role_label" class="data attributes">
         <thead>
@@ -466,7 +463,7 @@ lang: en
       </table></div>
     </section>
     <section id="examples_by_props">
-      <h2 id="examples_by_props_label" tabindex="-1">Examples By Properties and States</h2>
+      <h2 id="examples_by_props_label">Examples By Properties and States</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="examples_by_props_label" class="data attributes">
         <thead>
@@ -927,14 +924,10 @@ lang: en
       </table></div>
     </section>
   </div>
-  <nav aria-label="ARIA Practices">
-    <a href="../">WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
 
 
-        </div>
-      </div>
     
 </div>
 <script>
@@ -948,4 +941,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

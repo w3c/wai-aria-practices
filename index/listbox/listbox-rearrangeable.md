@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/index/listbox/listbox-rearrangeable
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
+  branch: main
+  path: examples/listbox/listbox-rearrangeable.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/index/listbox/listbox-rearrangeable
+
+sidebar: true
+
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>            <p>Page last updated: November 23, 2021</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -25,45 +30,19 @@ lang: en
 <script src="js/listbox-rearrangeable.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right" aria-describedby="sidebar-toc">
-            <h2 id="sidebar-toc" class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                    <li>
-                      <a href="#examples">Examples</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#accessibility-features">Accessibility Features</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#kbd_label">Keyboard Support</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#rps_label">Role, Property, State, and Tabindex  Attributes</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#javascript-and-css-source-code">Javascript and CSS Source Code</a>
-                    </li>
-                   
-                    <li>
-                      <a href="#html-source-code">HTML Source Code</a>
-                    </li>
-                  
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
             <h2>About This Example</h2>
             <details id="support-notice" class="note">
     <summary>Important Note About Use of This Example</summary>
@@ -90,9 +69,9 @@ lang: en
     </ul>
 </details>
           <img alt=""
-        src="/assets/img/listbox.svg"
-        class="example-page-example-icon"
-      >
+          src="/content-assets/wai-aria-practices/img/listbox.svg"
+          class="example-page-example-icon"
+        >
   
   <div>
   
@@ -110,7 +89,7 @@ while in the second example, they may select multiple options before activating 
     <li><a href="listbox-grouped.html">Listbox Example with Grouped Options</a>: Single-select listbox with grouped options, similar to an HTML <code>select</code> with <code>optgroup</code> children.</li>
   </ul>
   <section>
-    <h2 tabindex="-1" id="examples">Examples</h2>
+    <h2>Examples</h2>
     <section>
       <div class="example-header">
         <h3 id="ex1_label">Example 1: Single-Select Listbox</h3>
@@ -244,7 +223,7 @@ while in the second example, they may select multiple options before activating 
   </section>
 
   <section>
-    <h2 tabindex="-1" id="accessibility-features">Accessibility Features</h2>
+    <h2>Accessibility Features</h2>
     <ol>
       <li>Keyboard shortcuts for action buttons:
         <ol>
@@ -277,7 +256,7 @@ while in the second example, they may select multiple options before activating 
   </section>
 
   <section>
-    <h2 id="kbd_label" tabindex="-1">Keyboard Support</h2>
+    <h2 id="kbd_label">Keyboard Support</h2>
     <p>
       The example listboxes on this page implement the following keyboard interface.
       Other variations and options for the keyboard interface are described in the
@@ -370,7 +349,7 @@ while in the second example, they may select multiple options before activating 
   </section>
 
   <section>
-    <h2 id="rps_label" tabindex="-1">Role, Property, State, and Tabindex  Attributes</h2>
+    <h2 id="rps_label">Role, Property, State, and Tabindex  Attributes</h2>
     <p>
       The example listboxes on this page implement the following ARIA roles, states, and properties.
       Information about other ways of applying ARIA roles, states, and properties is available in the
@@ -465,7 +444,7 @@ while in the second example, they may select multiple options before activating 
   </section>
 
   <section>
-    <h2 tabindex="-1" id="javascript-and-css-source-code">Javascript and CSS Source Code</h2>
+    <h2>Javascript and CSS Source Code</h2>
     <ul id="css_js_files">
       <li>
         CSS:
@@ -479,7 +458,7 @@ while in the second example, they may select multiple options before activating 
   </section>
 
   <section>
-    <h2 tabindex="-1" id="html-source-code">HTML Source Code</h2>
+    <h2>HTML Source Code</h2>
     <h3 id="sc1_label">Example 1: Single-Select Listbox</h3>
     <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for"></div>
     <pre><code id="sc1"></code></pre>
@@ -500,14 +479,8 @@ while in the second example, they may select multiple options before activating 
     </script>
   </section>
   </div>
-  <nav>
-    <a href="/WAI/ARIA/APG/patterns/listbox/">Listbox Design Pattern in WAI-ARIA Authoring Practices 1.2</a>
-  </nav>
+  
 
-            <p>Page last updated: November 23, 2021</p>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -520,4 +493,4 @@ while in the second example, they may select multiple options before activating 
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

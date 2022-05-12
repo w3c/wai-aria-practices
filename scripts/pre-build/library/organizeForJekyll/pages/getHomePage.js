@@ -6,6 +6,7 @@ const getHomePage = (homepageContent) => {
     fileContent: getTemplateBoilerplate({
       title: "ARIA Authoring Practices Guide",
       permalink: `/WAI/ARIA/APG/`,
+      footerForkAndEditOnGithubPath: "index.html",
       content: homepageContent,
     }),
   };

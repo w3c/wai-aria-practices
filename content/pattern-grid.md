@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/patterns/grid/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/patterns/grid/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,45 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-5">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#data-grids-for-presenting-tabular-information">Data Grids For Presenting Tabular Information</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#layout-grids-for-grouping-widgets">Layout Grids for Grouping Widgets</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-setting-focus-and-navigating-inside-cells">Keyboard Interaction - Setting Focus and Navigating Inside Cells</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-10">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            <section class="widget" id="grid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="grid"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
 
       <p>
@@ -86,7 +65,9 @@ lang: en
         To address these factors, the following two sections describe separate keyboard interaction patterns for data and layout grids.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/grid.svg" ><div class="header-wrapper"><h2 id="examples-5" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="/content-assets/wai-aria-practices/img/grid.svg"
+          ><div class="header-wrapper"><h2 id="examples-5" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/grid/LayoutGrids.html">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
@@ -398,9 +379,6 @@ lang: en
         </ul></div>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -413,4 +391,4 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

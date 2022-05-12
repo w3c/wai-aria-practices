@@ -5,9 +5,14 @@ ref: /WAI/ARIA/APG/practices/grid-and-table-properties/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /WAI/ARIA/APG/practices/grid-and-table-properties/
+
+sidebar: true
+
+footer: ""
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -16,48 +21,19 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="/index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
-if (addBodyClass) {
-  document.body.classList.add(addBodyClass);
-}
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
 <div>
 
-        <div class="sidebar-container">
-          <nav class="sidebar-right">
-            <h2 class="sidebar-headline">Page Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#introduction">Introduction </a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x7-1-using-aria-rowcount-and-aria-rowindex">Using <code>aria-rowcount</code> and <code>aria-rowindex</code></a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x7-2-using-aria-colcount-and-aria-colindex">Using <code>aria-colcount</code> and <code>aria-colindex</code></a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x7-3-defining-cell-spans-using-aria-colspan-and-aria-rowspan">Defining cell spans using <code>aria-colspan</code> and <code>aria-rowspan</code></a>
-                  </li>
-                 
-                  <li>
-                    <a href="#x7-4-indicating-sort-order-with-aria-sort">Indicating sort order with <code>aria-sort</code></a>
-                  </li>
-                
-            </ul>
-          </nav>
-          <div class="sidebar-left">
-            
           <h2 id="introduction">Introduction</h2>
           <section id="gridAndTableProperties"><div class="header-wrapper"></div>
     
@@ -533,9 +509,6 @@ if (addBodyClass) {
 
   </section>
         
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -548,4 +521,4 @@ if (addBodyClass) {
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script src="/content-assets/wai-aria-practices/skipto.min.js"></script>

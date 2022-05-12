@@ -5,27 +5,34 @@ const { parse: parseHtml } = require("node-html-parser");
 const loadHomepage = async () => {
   const apgPath = path.resolve(__dirname, "../../../_external/aria-practices");
   const homepagePath = path.join(apgPath, "/index.html");
-  const assetsPath = path.resolve(__dirname, "../../../content/assets");
+  const assetsPath = path.resolve(
+    __dirname,
+    "../../../content-assets/wai-aria-practices/generated"
+  );
 
   const homepageString = await fs.readFile(homepagePath, "utf8");
   const root = parseHtml(homepageString);
   const body = root.querySelector("body");
-
-  await fs.mkdir(assetsPath);
 
   const copyImg = async (img) => {
     const imgPath = img.getAttribute("src");
     const fileName = path.basename(imgPath);
     const apgImgPath = path.join(apgPath, imgPath);
     const updatedPath = path.join(assetsPath, fileName);
-    img.setAttribute("src", `/content/assets/${fileName}`);
+    img.setAttribute(
+      "src",
+      `/content-assets/wai-aria-practices/generated/${fileName}`
+    );
     await fs.copyFile(apgImgPath, updatedPath);
   };
 
   const mailing = body.querySelector("#collaboration li:last-of-type");
 
   const homepageContent = `
-    <link rel="stylesheet" href="/assets/homepage.css">
+    <link 
+      rel="stylesheet"
+      href="/content-assets/wai-aria-practices/homepage.css"
+    >
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">
         <div class="top-section">

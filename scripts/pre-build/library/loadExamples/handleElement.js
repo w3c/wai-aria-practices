@@ -5,22 +5,22 @@ const wrapTablesWithResponsiveDiv = require("../abstractApgContent/wrapTablesWit
 
 let title;
 let head;
+let footer;
 let body;
 let patternSlug;
-let outline;
 
 const getContent = () => {
-  const response = { title, head, body, patternSlug, outline };
+  const response = { title, head, footer, body, patternSlug };
   title = undefined;
   head = undefined;
+  footer = undefined;
   body = undefined;
   patternSlug = undefined;
-  outline = undefined;
   return response;
 };
 
 const getHandleElement =
-  ({ permalink, notice }) =>
+  ({ permalink, notice, lastModifiedDateFormatted }) =>
   (element) => {
     if (element.tagName === "HEAD") {
       walkHtmlElements(element, handleHeadElement);
@@ -42,10 +42,10 @@ const getHandleElement =
         }
 
         const img = `<img 
-        alt=""
-        src="/assets/img/${patternSlug}.svg"
-        class="example-page-example-icon"
-      />`;
+          alt=""
+          src="/content-assets/wai-aria-practices/img/${patternSlug}.svg"
+          class="example-page-example-icon"
+        />`;
         if (element.querySelector(".advisement")) {
           element
             .querySelector(".advisement")
@@ -65,33 +65,22 @@ const getHandleElement =
         const relatedLinksElement = element.querySelector(
           '[aria-label="Related Links"]'
         );
-        relatedLinksElement.remove();
-      }
-
-      outline = [];
-      element.querySelectorAll("h2").forEach((h2) => {
-        const isHeadlinePartOfExample = (() => {
-          const previousHeadline = outline[outline.length - 1]?.name;
-          return (
-            previousHeadline === "Example" &&
-            !(
-              h2.textContent === "Accessibility Features" ||
-              h2.textContent === "Keyboard Support"
-            )
-          );
-        })();
-        if (isHeadlinePartOfExample) return;
-        const name = h2.textContent;
-        const slug = h2.getAttribute("id") ?? kebabCase(h2.textContent);
-        h2.setAttribute("tabindex", "-1");
-        if (!h2.getAttribute("id")) h2.setAttribute("id", slug);
-        outline.push({ name, slug });
-      });
-      if (outline[outline.length - 1].name === "Example") {
-        throw new Error(
-          "Found example that does not follow the expected formatting. The " +
-            "pre-build script must be updated."
+        const allRelatedLinks =
+          relatedLinksElement.querySelectorAll("> ul > li > a");
+        const relatedIssuesLinkElement = allRelatedLinks.find(
+          (link) => link.textContent.trim().toLowerCase() === "related issues"
         );
+        relatedIssuesLinkElement.textContent =
+          "View issues related to this example";
+        const relatedIssuesLink = relatedIssuesLinkElement.outerHTML;
+        relatedLinksElement.remove();
+
+        footer = `
+          <div class="example-page-footer">
+            <p>${relatedIssuesLink}</p>
+            <p>Page last updated: ${lastModifiedDateFormatted}</p>
+          </div>
+        `;
       }
 
       body = wrapTablesWithResponsiveDiv(
@@ -135,6 +124,16 @@ const getHandleBodyElement = (permalink) => (element) => {
       if (!patternSlug && isPatternLink) patternSlug = patternMatch[1];
     }
   }
+
+  // This element is hard to identify since it has no attributes and only
+  // contains a single anchor tag
+  const isTrailingNavElement =
+    element.tagName === "NAV" &&
+    Object.keys(element.rawAttributes).length === 0 &&
+    element.querySelectorAll("> *").length === 1;
+  if (isTrailingNavElement) {
+    element.remove();
+  }
 };
 
 const removeDuplicateMainTag = (body) => {
@@ -159,6 +158,7 @@ const editIndexPage = (element) => {
   element.querySelector("p").remove();
   element.querySelector("nav").remove();
   element.querySelector("ul").remove();
+  element.querySelector('[aria-label="ARIA Practices"]').remove();
 };
 
 module.exports = { getHandleElement, getContent };

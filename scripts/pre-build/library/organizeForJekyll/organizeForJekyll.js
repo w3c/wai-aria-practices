@@ -45,12 +45,6 @@ const combinePractices = (practices, overrides = {}) => {
     name: overrides.name ?? practices[0].name,
     permalink: overrides.permalink ?? practices[0].permalink,
     introduction: overrides.introduction ?? practices[0].introduction,
-    outline:
-      overrides.outline ??
-      practices.map((practice) => ({
-        slug: practice.slug,
-        name: practice.name,
-      })),
     content:
       overrides.content ??
       practices.map((practice) => practice.content).join(" "),
