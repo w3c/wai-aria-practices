@@ -45,7 +45,7 @@ lang: en
         It provides design patterns and functional examples
         complemented by in-depth guidance for fundamental practices.
       </p>
-            <a href="/patterns/" class="button-link button-link-white">View Patterns</a>
+            <a href="patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
           <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="/content-images/wai-aria-practices/generated/index-1.svg">
         </div>
@@ -74,7 +74,7 @@ lang: en
             properties, and implementing keyboard support.
           
                   </p>
-                  <a href="/patterns/" aria-label="View list of patterns" class="button-link">Learn More</a>
+                  <a href="patterns/" aria-label="View list of patterns" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A menagerie of widgets." src="/content-images/wai-aria-practices/generated/index-2.svg">
@@ -89,7 +89,7 @@ lang: en
             meaning of the layout of a page.
           
                   </p>
-                  <a href="/fundamentals/landmark-regions/" aria-label="View landmarks guide" class="button-link">Learn More</a>
+                  <a href="practices/landmark-regions/" aria-label="View landmarks guide" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A document flies apart into chunks." src="/content-images/wai-aria-practices/generated/index-3.svg">
@@ -105,7 +105,7 @@ lang: en
             experiences.
           
                   </p>
-                  <a href="/fundamentals/names-and-descriptions/" aria-label="View names and descriptions guide" class="button-link">Learn More</a>
+                  <a href="practices/names-and-descriptions/" aria-label="View names and descriptions guide" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="Indicators delve inside a document." src="/content-images/wai-aria-practices/generated/index-4.svg">
@@ -119,7 +119,7 @@ lang: en
             developing keyboard interfaces, and more.
           
                   </p>
-                  <a class="button-link" href="/fundamentals/" aria-label="View fundamentals">Learn More</a>
+                  <a class="button-link" href="practices/" aria-label="View Practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A box with an accessibility label is chock full of widgets and document bits." src="/content-images/wai-aria-practices/generated/index-5.svg">
