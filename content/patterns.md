@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -30,7 +30,10 @@ lang: en
                 <li class="tile tile-accordion">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/accordion/">
-                      <img src="{{ site.baseurl }}/assets/img/accordion.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/accordion.svg" 
+                        alt=""
+                      >
                       <span>Accordion (Sections With Show/Hide Functionality)</span>
                     </a>
                   </h2>
@@ -41,7 +44,10 @@ lang: en
                 <li class="tile tile-alert">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/alert/">
-                      <img src="{{ site.baseurl }}/assets/img/alert.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/alert.svg" 
+                        alt=""
+                      >
                       <span>Alert</span>
                     </a>
                   </h2>
@@ -52,7 +58,10 @@ lang: en
                 <li class="tile tile-alertdialog">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/alertdialog/">
-                      <img src="{{ site.baseurl }}/assets/img/alertdialog.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/alertdialog.svg" 
+                        alt=""
+                      >
                       <span>Alert and Message Dialogs</span>
                     </a>
                   </h2>
@@ -63,7 +72,10 @@ lang: en
                 <li class="tile tile-breadcrumb">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/breadcrumb/">
-                      <img src="{{ site.baseurl }}/assets/img/breadcrumb.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/breadcrumb.svg" 
+                        alt=""
+                      >
                       <span>Breadcrumb</span>
                     </a>
                   </h2>
@@ -74,7 +86,10 @@ lang: en
                 <li class="tile tile-button">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/button/">
-                      <img src="{{ site.baseurl }}/assets/img/button.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/button.svg" 
+                        alt=""
+                      >
                       <span>Button</span>
                     </a>
                   </h2>
@@ -85,7 +100,10 @@ lang: en
                 <li class="tile tile-carousel">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/carousel/">
-                      <img src="{{ site.baseurl }}/assets/img/carousel.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/carousel.svg" 
+                        alt=""
+                      >
                       <span>Carousel (Slide Show or Image Rotator)</span>
                     </a>
                   </h2>
@@ -96,7 +114,10 @@ lang: en
                 <li class="tile tile-checkbox">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/checkbox/">
-                      <img src="{{ site.baseurl }}/assets/img/checkbox.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/checkbox.svg" 
+                        alt=""
+                      >
                       <span>Checkbox</span>
                     </a>
                   </h2>
@@ -107,7 +128,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-combobox">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/combobox/">
-                      <img src="{{ site.baseurl }}/assets/img/combobox.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/combobox.svg" 
+                        alt=""
+                      >
                       <span>Combobox</span>
                     </a>
                   </h2>
@@ -118,7 +142,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-dialogmodal">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/dialogmodal/">
-                      <img src="{{ site.baseurl }}/assets/img/dialogmodal.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/dialogmodal.svg" 
+                        alt=""
+                      >
                       <span>Dialog (Modal)</span>
                     </a>
                   </h2>
@@ -129,7 +156,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-disclosure">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/disclosure/">
-                      <img src="{{ site.baseurl }}/assets/img/disclosure.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/disclosure.svg" 
+                        alt=""
+                      >
                       <span>Disclosure (Show/Hide)</span>
                     </a>
                   </h2>
@@ -140,7 +170,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-feed">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/feed/">
-                      <img src="{{ site.baseurl }}/assets/img/feed.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/feed.svg" 
+                        alt=""
+                      >
                       <span>Feed</span>
                     </a>
                   </h2>
@@ -151,7 +184,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
                       <a href="/index/landmarks/index.html">
-                        <img src="{{ site.baseurl }}/assets/img/landmarks.svg" alt="">
+                        <img 
+                          src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/landmarks.svg" 
+                          alt=""
+                        >
                         <span>Landmarks</span>
                       </a>
                     </h2>
@@ -164,7 +200,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-link">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/link/">
-                      <img src="{{ site.baseurl }}/assets/img/link.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/link.svg" 
+                        alt=""
+                      >
                       <span>Link</span>
                     </a>
                   </h2>
@@ -175,7 +214,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-listbox">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/listbox/">
-                      <img src="{{ site.baseurl }}/assets/img/listbox.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/listbox.svg" 
+                        alt=""
+                      >
                       <span>Listbox</span>
                     </a>
                   </h2>
@@ -186,7 +228,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-menu">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/menu/">
-                      <img src="{{ site.baseurl }}/assets/img/menu.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/menu.svg" 
+                        alt=""
+                      >
                       <span>Menu or Menu bar</span>
                     </a>
                   </h2>
@@ -197,7 +242,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-menubutton">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/menubutton/">
-                      <img src="{{ site.baseurl }}/assets/img/menubutton.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/menubutton.svg" 
+                        alt=""
+                      >
                       <span>Menu Button</span>
                     </a>
                   </h2>
@@ -207,7 +255,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-meter">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/meter/">
-                      <img src="{{ site.baseurl }}/assets/img/meter.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/meter.svg" 
+                        alt=""
+                      >
                       <span>Meter</span>
                     </a>
                   </h2>
@@ -218,7 +269,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-radiobutton">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/radiobutton/">
-                      <img src="{{ site.baseurl }}/assets/img/radiobutton.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/radiobutton.svg" 
+                        alt=""
+                      >
                       <span>Radio Group</span>
                     </a>
                   </h2>
@@ -230,7 +284,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-slider">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/slider/">
-                      <img src="{{ site.baseurl }}/assets/img/slider.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/slider.svg" 
+                        alt=""
+                      >
                       <span>Slider</span>
                     </a>
                   </h2>
@@ -241,7 +298,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-slidertwothumb">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/slidertwothumb/">
-                      <img src="{{ site.baseurl }}/assets/img/slidertwothumb.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/slidertwothumb.svg" 
+                        alt=""
+                      >
                       <span>Slider (Multi-Thumb)</span>
                     </a>
                   </h2>
@@ -253,7 +313,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-spinbutton">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/spinbutton/">
-                      <img src="{{ site.baseurl }}/assets/img/spinbutton.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/spinbutton.svg" 
+                        alt=""
+                      >
                       <span>Spinbutton</span>
                     </a>
                   </h2>
@@ -264,7 +327,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-switch">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/switch/">
-                      <img src="{{ site.baseurl }}/assets/img/switch.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/switch.svg" 
+                        alt=""
+                      >
                       <span>Switch</span>
                     </a>
                   </h2>
@@ -275,7 +341,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-table">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/table/">
-                      <img src="{{ site.baseurl }}/assets/img/table.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/table.svg" 
+                        alt=""
+                      >
                       <span>Table</span>
                     </a>
                   </h2>
@@ -286,7 +355,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-tabpanel">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/tabpanel/">
-                      <img src="{{ site.baseurl }}/assets/img/tabpanel.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/tabpanel.svg" 
+                        alt=""
+                      >
                       <span>Tabs</span>
                     </a>
                   </h2>
@@ -297,7 +369,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-toolbar">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/toolbar/">
-                      <img src="{{ site.baseurl }}/assets/img/toolbar.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/toolbar.svg" 
+                        alt=""
+                      >
                       <span>Toolbar</span>
                     </a>
                   </h2>
@@ -307,7 +382,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-tooltip">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/tooltip/">
-                      <img src="{{ site.baseurl }}/assets/img/tooltip.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/tooltip.svg" 
+                        alt=""
+                      >
                       <span>Tooltip Widget</span>
                     </a>
                   </h2>
@@ -318,7 +396,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-treeview">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/treeview/">
-                      <img src="{{ site.baseurl }}/assets/img/treeview.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/treeview.svg" 
+                        alt=""
+                      >
                       <span>Tree View</span>
                     </a>
                   </h2>
@@ -329,7 +410,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-treegrid">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/treegrid/">
-                      <img src="{{ site.baseurl }}/assets/img/treegrid.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/treegrid.svg" 
+                        alt=""
+                      >
                       <span>Treegrid</span>
                     </a>
                   </h2>
@@ -340,7 +424,10 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                 <li class="tile tile-windowsplitter">
                   <h2 class="tile-name">
                     <a href="{{ site.baseurl }}/patterns/windowsplitter/">
-                      <img src="{{ site.baseurl }}/assets/img/windowsplitter.svg" alt="">
+                      <img 
+                        src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/windowsplitter.svg" 
+                        alt=""
+                      >
                       <span>Window Splitter</span>
                     </a>
                   </h2>
@@ -362,4 +449,4 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

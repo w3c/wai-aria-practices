@@ -25,7 +25,7 @@ lang: en
 <script src="js/sortable-table.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -93,7 +93,7 @@ lang: en
     </ul>
 </details>
           <img alt=""
-          src="{{ site.baseurl }}/assets/img/table.svg"
+          src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/table.svg"
           class="example-page-example-icon"
         >
   
@@ -300,4 +300,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

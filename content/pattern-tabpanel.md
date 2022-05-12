@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -71,7 +71,9 @@ lang: en
         When the user activates one of the other tab elements, the previously displayed tab panel is hidden, the tab panel associated with the activated tab becomes visible, and the tab is considered "active".
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/tabpanel.svg" ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/tabpanel.svg"
+          ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/tabs/tabs-automatic.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
@@ -176,4 +178,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

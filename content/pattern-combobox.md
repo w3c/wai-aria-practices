@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -126,7 +126,9 @@ lang: en
         However, a menu button cannot be marked required, and while it has an accessible name, it does not have a value so is not suitable for conveying the user's choice in its collapsed state.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/combobox.svg" ><div class="header-wrapper"><h2 id="examples-2" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/combobox.svg"
+          ><div class="header-wrapper"><h2 id="examples-2" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/combobox/combobox-select-only.html">Select-Only Combobox</a>: A single-select combobox with no text input that is functionally similar to an HTML <code>select</code> element.</li>
@@ -432,4 +434,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

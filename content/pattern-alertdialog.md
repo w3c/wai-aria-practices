@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -58,7 +58,9 @@ lang: en
         so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/alertdialog.svg" ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/alertdialog.svg"
+          ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
         
         <p><a href="../../index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
       </section>
@@ -114,4 +116,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

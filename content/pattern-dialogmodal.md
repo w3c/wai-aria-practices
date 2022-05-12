@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -68,7 +68,9 @@ lang: en
         Its usage is described in the <a href="{{ site.baseurl }}/patterns/alertdialog/">alert dialog design pattern.</a>
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/dialogmodal.svg" ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/dialogmodal.svg"
+          ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
@@ -197,4 +199,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

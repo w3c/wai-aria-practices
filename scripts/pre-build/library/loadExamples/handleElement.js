@@ -45,7 +45,7 @@ const getHandleElement =
 
         const img = `<img 
           alt=""
-          src="{{ site.baseurl }}/assets/img/${patternSlug}.svg"
+          src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/${patternSlug}.svg"
           class="example-page-example-icon"
         />`;
         if (element.querySelector(".advisement")) {

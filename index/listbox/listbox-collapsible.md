@@ -26,7 +26,7 @@ lang: en
 <script src="js/listbox-collapsible.js" type="text/javascript"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -92,7 +92,7 @@ lang: en
   <div class="advisement">
     <p><strong>DEPRECATION WARNING:</strong> This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices. The <a href="../combobox/combobox-select-only.html">select-only combobox</a> should be used as an alternative to this pattern.</p>
   </div><img alt=""
-          src="{{ site.baseurl }}/assets/img/listbox.svg"
+          src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/listbox.svg"
           class="example-page-example-icon"
         >
   <p>
@@ -392,4 +392,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -57,7 +57,9 @@ lang: en
         When the content is visible, the arrow or triangle typically points down.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/disclosure.svg" ><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/disclosure.svg"
+          ><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
@@ -110,4 +112,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

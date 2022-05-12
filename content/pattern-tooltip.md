@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -63,7 +63,9 @@ lang: en
         Tooltip widgets do not receive focus.
         A hover that contains focusable elements can be made using a non-modal dialog.
       </p>
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/tooltip.svg" ><div class="header-wrapper"><h2 id="example-8" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/tooltip.svg"
+          ><div class="header-wrapper"><h2 id="example-8" tabindex="-1">Example</h2></div>
         
         <p>
           Work to develop a tooltip example is tracked by
@@ -104,4 +106,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

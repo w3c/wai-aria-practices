@@ -24,7 +24,7 @@ lang: en
 <script src="js/button_idl.js"></script>
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -110,7 +110,7 @@ lang: en
           <strong>IMPORTANT:</strong> This example is coded using syntax that was not introduced until version 1.2 of the ARIA specification.
           When using a <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>, the buttons will not be styled correctly.
         </p><img alt=""
-          src="{{ site.baseurl }}/assets/img/button.svg"
+          src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/button.svg"
           class="example-page-example-icon"
         >
 
@@ -301,4 +301,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>

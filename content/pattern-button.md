@@ -18,7 +18,7 @@ lang: en
 ---
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/index/css/github.css">
 
@@ -74,7 +74,9 @@ lang: en
         However, a better solution is to adjust the visual design so it matches the function and ARIA role.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="{{ site.baseurl }}/assets/img/button.svg" ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ site.baseurl }}/content-assets/wai-aria-practices/img/button.svg"
+          ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li><a href="../../index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
@@ -157,4 +159,4 @@ lang: en
     }
   };
 </script>
-<script src="{{ site.baseurl }}/assets/skipto.min.js"></script>
+<script src="{{ site.baseurl }}/content-assets/wai-aria-practices/skipto.min.js"></script>
