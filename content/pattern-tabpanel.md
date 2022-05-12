@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -61,8 +61,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-14" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/tabs/tabs-automatic.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
-          <li><a href="../../index/tabs/tabs-manual.html">Tabs With Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
+          <li><a href="../../example-index/tabs/tabs-automatic.html">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
+          <li><a href="../../example-index/tabs/tabs-manual.html">Tabs With Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
         </ul>
       </section>
 

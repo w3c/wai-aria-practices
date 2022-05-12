@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -56,7 +56,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             src="/content-assets/wai-aria-practices/img/accordion.svg"
           ><div class="header-wrapper"><h2 id="example" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
+        <p><a href="../../example-index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>
       </section>
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction" tabindex="-1">Keyboard Interaction</h2></div>
         

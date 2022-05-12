@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -53,7 +53,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             src="/content-assets/wai-aria-practices/img/spinbutton.svg"
           ><div class="header-wrapper"><h2 id="example-6" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
+        <p><a href="../../example-index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
       </section>
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-18" tabindex="-1">Keyboard Interaction</h2></div>

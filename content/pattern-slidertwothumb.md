@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -55,7 +55,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             src="/content-assets/wai-aria-practices/img/slidertwothumb.svg"
           ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
+        <p><a href="../../example-index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
       </section>
 
       <section id="slidertwothumb_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2></div>

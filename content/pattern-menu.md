@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -54,8 +54,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-8" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
-          <li><a href="../../index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
+          <li><a href="../../example-index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
+          <li><a href="../../example-index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
         </ul>
       </section>
 

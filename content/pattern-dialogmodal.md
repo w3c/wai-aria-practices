@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -58,8 +58,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
-          <li><a href="../../index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
+          <li><a href="../../example-index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
+          <li><a href="../../example-index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
         </ul>
       </section>
 

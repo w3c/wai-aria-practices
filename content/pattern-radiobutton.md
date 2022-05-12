@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -47,9 +47,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-10" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
-          <li><a href="../../index/radio/radio-activedescendant.html">Radio Group Example Using aria-activedescendant</a></li>
-          <li><a href="../../index/radio/radio-rating.html">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
+          <li><a href="../../example-index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
+          <li><a href="../../example-index/radio/radio-activedescendant.html">Radio Group Example Using aria-activedescendant</a></li>
+          <li><a href="../../example-index/radio/radio-rating.html">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
         </ul>
       </section>
 
@@ -127,7 +127,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </ul>
           <div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="6"><span>Note</span></div><p class="">
             Radio buttons in a toolbar are frequently styled in a manner that appears more like toggle buttons.
-            For an example, See the <a href="../../index/toolbar/toolbar.html">Simple Editor Toolbar Example</a>
+            For an example, See the <a href="../../example-index/toolbar/toolbar.html">Simple Editor Toolbar Example</a>
           </p></div>
         </section>
       </section>

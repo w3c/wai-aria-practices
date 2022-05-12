@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -64,8 +64,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-0" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel with Buttons for Slide Control:</a> A basic image carousel that demonstrates the accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with buttons for previous and next slide.</li>
-          <li><a href="../../index/carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control:</a> An image carousel that demonstrates accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with a set of tabs.</li>
+          <li><a href="../../example-index/carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel with Buttons for Slide Control:</a> A basic image carousel that demonstrates the accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with buttons for previous and next slide.</li>
+          <li><a href="../../example-index/carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control:</a> An image carousel that demonstrates accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with a set of tabs.</li>
         </ul>
       </section>
 

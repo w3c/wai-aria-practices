@@ -31,7 +31,7 @@ const getHandleElement =
     if (element.tagName === "BODY") {
       walkHtmlElements(element, getHandleBodyElement(permalink));
 
-      if (permalink === "/WAI/ARIA/APG/index/") {
+      if (permalink === "/WAI/ARIA/APG/example-index/") {
         editIndexPage(element);
       } else {
         if (!patternSlug) {

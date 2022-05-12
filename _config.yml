@@ -56,7 +56,7 @@ defaults:
         - name: Practices
           ref: /WAI/ARIA/APG/practices/
         - name: Index
-          ref: /WAI/ARIA/APG/index/index.html # to prevent shadowing issues when deployed to Netlify
+          ref: /WAI/ARIA/APG/example-index/
         - name: About
           ref: /WAI/ARIA/APG/about/
 #  -

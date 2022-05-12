@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -64,8 +64,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
-          <li><a href="../../index/button/button_idl.html">Button Examples (IDL)</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons. This example uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface</a>.</li>
+          <li><a href="../../example-index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
+          <li><a href="../../example-index/button/button_idl.html">Button Examples (IDL)</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons. This example uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface</a>.</li>
         </ul>
       </section>
 

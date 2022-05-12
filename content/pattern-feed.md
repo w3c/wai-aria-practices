@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -86,7 +86,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
         
         <p>
-        <a href="../../index/feed/feed.html">Example Implementation of Feed Pattern</a>
+        <a href="../../example-index/feed/feed.html">Example Implementation of Feed Pattern</a>
         </p>
       </section>
 

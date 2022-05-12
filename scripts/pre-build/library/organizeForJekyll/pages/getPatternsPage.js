@@ -23,7 +23,7 @@ const getPatternsPage = (patterns) => {
                 return `
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
-                      <a href="/index/landmarks/index.html">
+                      <a href="/WAI/ARIA/APG/example-index/landmarks/index.html">
                         <img 
                           src="/content-assets/wai-aria-practices/img/landmarks.svg" 
                           alt=""

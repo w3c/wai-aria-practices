@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -56,8 +56,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-13" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/table/table.html">Table Example</a>: ARIA table made using HTML <code>div</code> and <code>span</code> elements.</li>
-          <li><a href="../../index/table/sortable-table.html">Sortable Table Example</a>: Basic HTML table that illustrates implementation of <code>aria-sort</code> in the headers of sortable columns.</li>
+          <li><a href="../../example-index/table/table.html">Table Example</a>: ARIA table made using HTML <code>div</code> and <code>span</code> elements.</li>
+          <li><a href="../../example-index/table/sortable-table.html">Sortable Table Example</a>: Basic HTML table that illustrates implementation of <code>aria-sort</code> in the headers of sortable columns.</li>
         </ul>
       </section>
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-20" tabindex="-1">Keyboard Interaction</h2></div>

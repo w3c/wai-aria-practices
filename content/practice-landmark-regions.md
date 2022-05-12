@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "practice-page";
@@ -202,7 +202,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-17">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/banner.html">Banner Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/banner.html">Banner Landmark Example</a></p>
         </section>
 
       </section>
@@ -234,7 +234,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-18">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/complementary.html">Complementary Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/complementary.html">Complementary Landmark Example</a></p>
         </section>
       </section>
 
@@ -281,7 +281,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-19">Examples</h4></div>
           
-          <p><a href="../../index/landmarks/contentinfo.html">Contentinfo Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/contentinfo.html">Contentinfo Landmark Example</a></p>
         </section>
       </section>
 
@@ -327,7 +327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-20">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/form.html">Form Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/form.html">Form Landmark Example</a></p>
         </section>
       </section>
 
@@ -360,7 +360,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-21">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/main.html">Main Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/main.html">Main Landmark Example</a></p>
         </section>
       </section>
 
@@ -389,7 +389,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-22">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/navigation.html">Navigation Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/navigation.html">Navigation Landmark Example</a></p>
         </section>
       </section>
 
@@ -419,7 +419,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-23">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/region.html">Region Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/region.html">Region Landmark Example</a></p>
         </section>
       </section>
 
@@ -446,7 +446,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section class="notoc"><div class="header-wrapper"><h4 id="examples-24">Examples</h4></div>
           
 
-          <p><a href="../../index/landmarks/search.html">Search Landmark Example</a></p>
+          <p><a href="../../example-index/landmarks/search.html">Search Landmark Example</a></p>
         </section>
       </section>
     </section>

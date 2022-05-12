@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -41,9 +41,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-9" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/menu-button/menu-button-links.html">Navigation Menu Button</a>: A menu button made from an HTML <code>a</code> element that opens a menu of items that behave as links.</li>
-          <li><a href="../../index/menu-button/menu-button-actions.html">Action Menu Button Example Using element.focus()</a>: A menu button made from an HTML <code>button</code> element that opens a menu of actions or commands where focus in the menu is managed using <code>element.focus()</code>.</li>
-          <li><a href="../../index/menu-button/menu-button-actions-active-descendant.html">Action Menu Button Example Using aria-activedescendant</a>: A button that opens a menu of actions or commands where focus in the menu is managed using aria-activedescendant.</li>
+          <li><a href="../../example-index/menu-button/menu-button-links.html">Navigation Menu Button</a>: A menu button made from an HTML <code>a</code> element that opens a menu of items that behave as links.</li>
+          <li><a href="../../example-index/menu-button/menu-button-actions.html">Action Menu Button Example Using element.focus()</a>: A menu button made from an HTML <code>button</code> element that opens a menu of actions or commands where focus in the menu is managed using <code>element.focus()</code>.</li>
+          <li><a href="../../example-index/menu-button/menu-button-actions-active-descendant.html">Action Menu Button Example Using aria-activedescendant</a>: A button that opens a menu of actions or commands where focus in the menu is managed using aria-activedescendant.</li>
         </ul>
       </section>
 

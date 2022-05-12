@@ -12,8 +12,8 @@ const manualRemappings = {
 };
 
 const urlRewrites = [
-  // Replaces `../../examples/` with `../../index/
-  [/^([\/.]*)\/examples\//g, "$1/index/"],
+  // Replaces `../../examples/` with `../../example-index/
+  [/^([\/.]*)\/examples\//g, "$1/example-index/"],
 ];
 
 const oldToNewLink = { ...manualRemappings };
@@ -37,8 +37,10 @@ const findNewLinksForOldLinks = (section) => {
 const fixLink = (element, permalink, oldPermalink = "/WAI/ARIA/APG/") => {
   const getApgAnchorId = (href, oldPermalink) => {
     if (!href.includes("#")) return null;
-    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("#")) return href.substr(1);
-    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("/WAI/ARIA/APG/#")) return href.substr(15);
+    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("#"))
+      return href.substr(1);
+    if (oldPermalink === "/WAI/ARIA/APG/" && href.startsWith("/WAI/ARIA/APG/#"))
+      return href.substr(15);
 
     let apgPath = (() => {
       const directory = oldPermalink.substr(0, oldPermalink.lastIndexOf("/"));

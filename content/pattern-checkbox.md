@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -65,10 +65,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         
         <ul>
           <li>
-            <a href="../../index/checkbox/checkbox.html">Checkbox (Two-State) Example</a>: Demonstrates a simple 2-state checkbox.
+            <a href="../../example-index/checkbox/checkbox.html">Checkbox (Two-State) Example</a>: Demonstrates a simple 2-state checkbox.
           </li>
           <li>
-            <a href="../../index/checkbox/checkbox-mixed.html">Checkbox (Mixed-State) Example</a>:
+            <a href="../../example-index/checkbox/checkbox-mixed.html">Checkbox (Mixed-State) Example</a>:
             Demonstrates  a checkbox that uses the mixed  value for aria-checked to reflect and control checked states within a group of two-state HTML checkboxes contained in  an HTML <code>fieldset</code>.
           </li>
         </ul>

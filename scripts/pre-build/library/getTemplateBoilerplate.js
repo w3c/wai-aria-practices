@@ -43,7 +43,7 @@ ${formattedHead}
 ${/* ${prettier.format(` */ ""}
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 ${
   !(addBodyClass || enableSidebar)
     ? ""

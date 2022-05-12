@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -59,9 +59,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           ><div class="header-wrapper"><h2 id="examples-12" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/switch/switch.html">Switch Example</a>: A switch based on a <code>div</code> element that turns a notification preference on and off.</li>
-          <li><a href="../../index/switch/switch-button.html">Switch Example Using HTML Button</a>: A group of 2 switches based on HTML <code>button</code> elements that turn lights on and off.</li>
-          <li><a href="../../index/switch/switch-checkbox.html">Switch Example Using HTML Checkbox Input</a>: A group of 2 switches based on HTML <code>input[type="checkbox"]</code> elements that turn accessibility preferences on and off.</li>
+          <li><a href="../../example-index/switch/switch.html">Switch Example</a>: A switch based on a <code>div</code> element that turns a notification preference on and off.</li>
+          <li><a href="../../example-index/switch/switch-button.html">Switch Example Using HTML Button</a>: A group of 2 switches based on HTML <code>button</code> elements that turn lights on and off.</li>
+          <li><a href="../../example-index/switch/switch-checkbox.html">Switch Example Using HTML Checkbox Input</a>: A group of 2 switches based on HTML <code>input[type="checkbox"]</code> elements that turn accessibility preferences on and off.</li>
         </ul>
       </section>
 

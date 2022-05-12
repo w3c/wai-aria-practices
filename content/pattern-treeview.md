@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -75,15 +75,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         
         <ul>
           <li>
-            <a href="../../index/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a>:
+            <a href="../../example-index/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a>:
             A file selector tree that demonstrates browser support for automatically computing <code>aria-level</code>, <code>aria-posinset</code> and <code>aria-setsize</code> based on DOM structure.
           </li>
           <li>
-            <a href="../../index/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties</a>:
+            <a href="../../example-index/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties</a>:
             A file selector tree that demonstrates how to explicitly define values for <code>aria-level</code>, <code>aria-posinset</code> and <code>aria-setsize</code>.
           </li>
           <li>
-            <a href="../../index/treeview/treeview-navigation.html">Navigation Treeview Example</a>:
+            <a href="../../example-index/treeview/treeview-navigation.html">Navigation Treeview Example</a>:
             A tree that provides navigation to a set of web pages and demonstrates browser support for automatically computing <code>aria-level</code>, <code>aria-posinset</code> and <code>aria-setsize</code> based on DOM structure.
           </li>
         </ul>

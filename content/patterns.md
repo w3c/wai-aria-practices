@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <div>
 
@@ -186,7 +186,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
-                      <a href="/index/landmarks/index.html">
+                      <a href="/WAI/ARIA/APG/example-index/landmarks/index.html">
                         <img 
                           src="/content-assets/wai-aria-practices/img/landmarks.svg" 
                           alt=""

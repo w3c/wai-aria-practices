@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -47,7 +47,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             src="/content-assets/wai-aria-practices/img/alertdialog.svg"
           ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
+        <p><a href="../../example-index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>
       </section>
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-1" tabindex="-1">Keyboard Interaction</h2></div>

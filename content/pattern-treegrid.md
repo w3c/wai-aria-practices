@@ -23,7 +23,7 @@ lang: en
 
 <link rel="stylesheet" href="/content-assets/wai-aria-practices/styles.css">
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/APG/index/css/github.css">
+<link rel="stylesheet" href="/WAI/ARIA/APG/example-index/css/github.css">
 
 <script>
 const addBodyClass = "pattern-page";
@@ -62,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         
         <ul>
           <li>
-            <a href="../../index/treegrid/treegrid-1.html">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.
+            <a href="../../example-index/treegrid/treegrid-1.html">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.
           </li>
         </ul>
       </section>
