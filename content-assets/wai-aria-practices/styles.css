@@ -216,9 +216,8 @@ li .tile-introduction {
   margin-bottom: 0;
 }
 
-.practice-page main h2,
-.pattern-page main h2 {
-  margin-top: 1em;
+main h2 {
+  margin-top: 1.25em;
 }
 
 /* Tables */

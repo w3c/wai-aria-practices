@@ -13,7 +13,10 @@ const loadExamples = async () => {
     "../../../../_external/aria-practices/examples"
   );
 
-  const destinationExamplesPath = path.resolve(__dirname, "../../../../index");
+  const destinationExamplesPath = path.resolve(
+    __dirname,
+    "../../../../WAI/ARIA/APG/index"
+  );
 
   const exampleDirectories = (await fs.readdir(examplesPath)).filter((item) => {
     return ![
