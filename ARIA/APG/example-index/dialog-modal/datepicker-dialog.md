@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Date Picker Dialog Example"
-ref: /ARIA/APG/example-index/dialog-modal/datepicker-dialog
+ref: /aria/apg/example-index/dialog-modal/datepicker-dialog
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/dialog-modal/datepicker-dialog.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/dialog-modal/datepicker-dialog
+permalink: /aria/apg/example-index/dialog-modal/datepicker-dialog
 
 sidebar: true
 
@@ -40,7 +40,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -61,8 +61,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -73,7 +73,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -85,8 +85,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   <div>
     
     <p>
-      The example below includes a date input field and a button that opens a date picker that implements the <a href="{{ '/ARIA/APG/patterns/dialogmodal/' | relative_url }}">dialog design pattern</a>.
-      The dialog contains a calendar that uses the <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid pattern</a> to present buttons that enable the user to choose a day from the calendar.
+      The example below includes a date input field and a button that opens a date picker that implements the <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">dialog design pattern</a>.
+      The dialog contains a calendar that uses the <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid pattern</a> to present buttons that enable the user to choose a day from the calendar.
       Choosing a date from the calendar closes the dialog and populates the date input field.
       When the dialog is opened, if the input field is empty, or does not contain a valid date, then the current date is focused in the calendar.
       Otherwise, the focus is placed on the day in the calendar that matches the value of the date input field.
@@ -325,7 +325,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li>Moves focus to next element in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>Note that, as specified in the <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
+                <li>Note that, as specified in the <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
                 <li>If focus is on the last button (i.e., &quot;OK&quot;), moves focus to the first button (i.e. &quot;Previous Year&quot;).</li>
               </ul>
             </td>
@@ -335,7 +335,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li>Moves focus to previous element in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>Note that, as specified in the <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
+                <li>Note that, as specified in the <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid design pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
                 <li>If focus is on the first button (i.e., &quot;Previous Year&quot;), moves focus to the last button (i.e. &quot;OK&quot;).</li>
               </ul>
             </td>
@@ -655,7 +655,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li>Makes the cell focusable and includes it in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>Set dynamically by the JavaScript when the element is to be included in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>At any given time, only one <code>gridcell</code> within the grid is in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>
@@ -672,7 +672,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li>Makes the cell focusable and excludes it from the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>Changed dynamically to <code>0</code> by the JavaScript when the cell is to be included in the dialog <kbd>Tab</kbd> sequence.</li>
                 <li>At any given time, only one <code>gridcell</code> within the grid is in the dialog <kbd>Tab</kbd> sequence.</li>
-                <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+                <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
               </ul>
             </td>
           </tr>

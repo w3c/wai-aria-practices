@@ -5,7 +5,7 @@ const getPatternsPage = (patterns) => {
     fileName: "patterns.md",
     fileContent: getTemplateBoilerplate({
       title: "Patterns",
-      permalink: "/ARIA/APG/patterns/",
+      permalink: "/aria/apg/patterns/",
       content: `
         {% include read-this-first.html %}
         <ul class="tiles">
@@ -24,7 +24,7 @@ const getPatternsPage = (patterns) => {
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
                       <a 
-                        href="{{ '/ARIA/APG/example-index/landmarks/index.html' | relative_url }}"
+                        href="{{ '/aria/apg/example-index/landmarks/index.html' | relative_url }}"
                       >
                         <img 
                           src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 

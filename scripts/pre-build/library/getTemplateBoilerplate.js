@@ -16,8 +16,6 @@ const getTemplateBoilerplate = ({
   // will be interpreted as a code block by the markdown engine
   const formattedHead = prettier.format(head, { parser: "html" });
 
-  const bodyClass = `${addBodyClass} ${enableSidebar ? "has-sidebar" : ""}`;
-
   return `---
 # This is a generated file
 title: "${title}"
@@ -48,7 +46,7 @@ ${/* ${prettier.format(` */ ""}
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 ${
   !(addBodyClass || enableSidebar)

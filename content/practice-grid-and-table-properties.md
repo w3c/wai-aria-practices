@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Grid and Table Properties"
-ref: /ARIA/APG/practices/grid-and-table-properties/
+ref: /aria/apg/practices/grid-and-table-properties/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/practices/grid-and-table-properties/
+permalink: /aria/apg/practices/grid-and-table-properties/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -45,7 +45,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
     <p>
       To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the
-      <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid pattern</a> or <a href="{{ '/ARIA/APG/patterns/table/' | relative_url }}">table pattern</a>,
+      <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid pattern</a> or <a href="{{ '/aria/apg/patterns/table/' | relative_url }}">table pattern</a>,
       assistive technologies need to be able to determine:
     </p>
     <ul>

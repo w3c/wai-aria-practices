@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Navigation Treeview Example"
-ref: /ARIA/APG/example-index/treeview/treeview-navigation
+ref: /aria/apg/example-index/treeview/treeview-navigation
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/treeview/treeview-navigation.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/treeview/treeview-navigation
+permalink: /aria/apg/example-index/treeview/treeview-navigation
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -76,10 +76,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <div>
       
       <div class="advisement">
-        <p><strong>CAUTION!</strong> Before considering use of the <a href="{{ '/ARIA/APG/patterns/treeview/' | relative_url }}">ARIA tree pattern</a> for site navigation, it is important to understand:</p>
+        <p><strong>CAUTION!</strong> Before considering use of the <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">ARIA tree pattern</a> for site navigation, it is important to understand:</p>
         <ul>
           <li>Correct implementation of the <code>tree</code> role requires implementation of complex functionality that is not needed for typical site navigation that is styled to look like a tree with expandable sections.</li>
-          <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="{{ '/ARIA/APG/patterns/disclosure/' | relative_url }}">disclosure pattern.</a></li>
+          <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="{{ '/aria/apg/patterns/disclosure/' | relative_url }}">disclosure pattern.</a></li>
         </ul>
       </div><img alt=""
           src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}"
@@ -87,7 +87,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         >
       <p>
         The below example demonstrates how the
-        <a href="{{ '/ARIA/APG/patterns/treeview/' | relative_url }}">Treeview Design Pattern</a>
+        <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">Treeview Design Pattern</a>
         can be used to build a navigation tree for a set of hierarchically organized web pages.
         It illustrates navigation of a mythical university web site that is comparable to the navigation illustrated in the <a href="../disclosure/disclosure-navigation.html">Example Disclosure Navigation Menu</a>.
         As noted above, the disclosure pattern is better suited for most web sites because few sites need the additional keyboard functionality required to support the ARIA <code>tree</code> role.
@@ -452,7 +452,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           It is a closed node when the children are hidden and an open node when it is expanded.
           An end node does not have any children.
           For a complete list of terms and definitions, see the
-          <a href="{{ '/ARIA/APG/patterns/treeview/' | relative_url }}">Treeview Design Pattern.</a>
+          <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">Treeview Design Pattern.</a>
         </p>
       </section>
 
@@ -643,7 +643,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Identifies the <code>ul</code> element as a <code>tree</code> widget.</li>
                   <li>
                     Because focus movement in the tree is managed with a
-                    <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>,
+                    <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>,
                     the <code>tree</code> container does not need a <code>tabindex</code> attribute.
                   </li>
                 </ul>

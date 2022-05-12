@@ -146,7 +146,7 @@ const findExamplesSection = (element, newSlug) => {
 
 const patternFormatters = patterns.map(({ oldSlug, newSlug }) => {
   return {
-    permalink: `/ARIA/APG/patterns/${newSlug}/`,
+    permalink: `/aria/apg/patterns/${newSlug}/`,
     permalinkReplacesFormerAnchorId: oldSlug,
 
     slug: newSlug,

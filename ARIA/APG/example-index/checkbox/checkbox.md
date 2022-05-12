@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Checkbox Example (Two State)"
-ref: /ARIA/APG/example-index/checkbox/checkbox
+ref: /aria/apg/example-index/checkbox/checkbox
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/checkbox/checkbox.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/checkbox/checkbox
+permalink: /aria/apg/example-index/checkbox/checkbox
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -78,7 +78,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
   <div>
     
-    <p>This example implements the  <a href="{{ '/ARIA/APG/patterns/checkbox/' | relative_url }}">Checkbox Design Pattern</a> for a two state checkbox using <code>div</code> elements.</p>
+    <p>This example implements the  <a href="{{ '/aria/apg/patterns/checkbox/' | relative_url }}">Checkbox Design Pattern</a> for a two state checkbox using <code>div</code> elements.</p>
 
     <p>Similar examples include: </p>
     <ul>

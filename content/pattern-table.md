@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Table"
-ref: /ARIA/APG/patterns/table/
+ref: /aria/apg/patterns/table/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/table/
+permalink: /aria/apg/patterns/table/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -44,7 +44,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         Like an HTML <code>table</code> element, a <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> <a href="https://w3c.github.io/aria/#table" class="role-reference">table</a> is a static tabular structure containing one or more rows that each contain one or more cells; it is not an interactive widget.
         Thus, its cells are not focusable or selectable.
-        The <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid pattern</a> is used to make an interactive widget that has a tabular structure.
+        The <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid pattern</a> is used to make an interactive widget that has a tabular structure.
       </p>
       <p>
         However, tables are often used to present a combination of information and interactive widgets.
@@ -87,15 +87,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             Otherwise, a label is specified for the table element using <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>If the table has a caption or description, <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> is set on the table element with a value referring to the element containing the description.</li>
-          <li>If the table contains sortable columns or rows, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the section on <a href="{{ '/ARIA/APG/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>. </li>
+          <li>If the table contains sortable columns or rows, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the section on <a href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>. </li>
           <li>
-            If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., there are widgets on the page for hiding rows or columns, the following properties are applied as described in the section on <a href="{{ '/ARIA/APG/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.
+            If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., there are widgets on the page for hiding rows or columns, the following properties are applied as described in the section on <a href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.
             <ul>
               <li><a href="https://w3c.github.io/aria/#aria-colcount" class="property-reference">aria-colcount</a> or <a href="https://w3c.github.io/aria/#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively. </li>
               <li><a href="https://w3c.github.io/aria/#aria-colindex" class="property-reference">aria-colindex</a> or <a href="https://w3c.github.io/aria/#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively. </li>
             </ul>
           </li>
-          <li>If the table includes cells that span multiple rows or multiple columns, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="{{ '/ARIA/APG/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.</li>
+          <li>If the table includes cells that span multiple rows or multiple columns, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.</li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-27"><div role="heading" class="note-title marker" id="h-note-25" aria-level="5"><span>Note</span></div><p class="">
           If rows or cells are included in a table via <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a>,

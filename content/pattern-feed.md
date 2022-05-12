@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Feed"
-ref: /ARIA/APG/patterns/feed/
+ref: /aria/apg/patterns/feed/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/feed/
+permalink: /aria/apg/patterns/feed/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -47,7 +47,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         So, a feed can be thought of as a dynamic list of articles that often appears to scroll infinitely.
       </p>
       <p>
-        The feature that most distinguishes feed from other ARIA patterns that support loading data as users scroll, e.g., a <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid</a>, is that a feed is a structure, not a widget.
+        The feature that most distinguishes feed from other ARIA patterns that support loading data as users scroll, e.g., a <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid</a>, is that a feed is a structure, not a widget.
         Consequently, assistive technologies with a reading mode, such as screen readers, default to reading mode when interacting with feed content.
         However, unlike most other <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> structures, a feed establishes an interoperability contract between the web page and assistive technologies.
         The contract governs scroll interactions so that assistive technology users can read articles, jump forward and backward by article, and reliably trigger new articles to load while in reading mode.

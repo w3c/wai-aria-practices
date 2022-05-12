@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Layout Grid Examples"
-ref: /ARIA/APG/example-index/grid/LayoutGrids
+ref: /aria/apg/example-index/grid/LayoutGrids
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/grid/LayoutGrids.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/grid/LayoutGrids
+permalink: /aria/apg/example-index/grid/LayoutGrids
 
 sidebar: true
 
@@ -36,7 +36,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -57,8 +57,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -82,7 +82,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
   <p>
     The following examples demonstrate how the
-    <a href="{{ '/ARIA/APG/patterns/grid/' | relative_url }}">grid design pattern</a>
+    <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid design pattern</a>
     can be used to group a collection of interactive widgets into a single tab stop.
     In these examples, each widget, such as a link or button, is in a separate cell of the grid, and the user can navigate between them with the arrow keys.
     While navigating with the arrow keys, widgets receive keyboard focus and can be activated with <kbd>Space</kbd> or <kbd>Enter</kbd>.
@@ -440,7 +440,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <dt>Whether to focus a cell or an element inside it when the cell is clicked or a navigation key is pressed:</dt>
       <dd>
         The section of the grid pattern on
-        <a href="{{ '/ARIA/APG/patterns/grid/#gridNav' | relative_url }}">Setting Focus and Navigating Inside Cells</a>
+        <a href="{{ '/aria/apg/patterns/grid/#gridNav' | relative_url }}">Setting Focus and Navigating Inside Cells</a>
         describes how to design the focus placement strategy.
       </dd>
       <dt>Whether focus can wrap from the last column to the first column in the next row or from the first column to the last column in the previous row when <kbd>Right Arrow</kbd> and <kbd>Left Arrow</kbd> are pressed:</dt>
@@ -620,7 +620,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <td><code>div</code></td>
           <td>
             Identifies the element containing the grid widget.
-            Because focus is managed using <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>, the grid element is not focusable.
+            Because focus is managed using <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>, the grid element is not focusable.
           </td>
         </tr>
         <tr data-test-id="aria-labelledby">
@@ -688,7 +688,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>Applied to all cells that do not contain an interactive widget that consumes arrow keys, such as a link or button.</li>
               <li>Changed dynamically to <code>0</code> by the JavaScript when the cell is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -702,7 +702,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>Clicks and keyboard commands that move focus inside the grid can focus widgets if the containing cell is not focusable.</li>
               <li>Changed dynamically to <code>0</code> by the JavaScript when the widget is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>
@@ -715,7 +715,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>Makes the element focusable and includes it in the page <kbd>Tab</kbd> sequence.</li>
               <li>Set dynamically by the JavaScript when the element is to be included in the page <kbd>Tab</kbd> sequence.</li>
               <li>At any given time, only one element within the grid is in the page <kbd>Tab</kbd> sequence.</li>
-              <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+              <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>

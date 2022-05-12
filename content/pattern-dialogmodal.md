@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Dialog (Modal)"
-ref: /ARIA/APG/patterns/dialogmodal/
+ref: /aria/apg/patterns/dialogmodal/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/dialogmodal/
+permalink: /aria/apg/patterns/dialogmodal/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -56,7 +56,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role is a special-case dialog role
         designed specifically for dialogs that divert users' attention to a brief, important message.
-        Its usage is described in the <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">alert dialog design pattern.</a>
+        Its usage is described in the <a href="{{ '/aria/apg/patterns/alertdialog/' | relative_url }}">alert dialog design pattern.</a>
       </p>
 
       <section class="notoc examples-section"><img alt="" 
@@ -102,7 +102,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>
                 If a dialog contains the final step in a process that is not easily reversible, such as deleting data or completing a financial transaction,
                 it may be advisable to set focus on the least destructive action, especially if undoing the action is difficult or impossible.
-                The <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">Alert Dialog Pattern</a> is often employed in such circumstances.
+                The <a href="{{ '/aria/apg/patterns/alertdialog/' | relative_url }}">Alert Dialog Pattern</a> is often employed in such circumstances.
               </li>
               <li>
                 If a dialog is limited to interactions that either provide additional information or continue processing,

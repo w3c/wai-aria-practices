@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Structural Roles"
-ref: /ARIA/APG/practices/structural-roles/
+ref: /aria/apg/practices/structural-roles/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/practices/structural-roles/
+permalink: /aria/apg/practices/structural-roles/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>

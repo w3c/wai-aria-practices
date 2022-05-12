@@ -7,7 +7,7 @@ const { getHandleElement, getContent } = require("./handleElement");
 
 const loadIndex = async (filePath) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
-  const permalink = `/ARIA/APG/example-index/`;
+  const permalink = `/aria/apg/example-index/`;
 
   const root = parseHtml(html);
 

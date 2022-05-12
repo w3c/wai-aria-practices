@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Tooltip Widget"
-ref: /ARIA/APG/patterns/tooltip/
+ref: /aria/apg/patterns/tooltip/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/tooltip/
+permalink: /aria/apg/patterns/tooltip/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Alert"
-ref: /ARIA/APG/patterns/alert/
+ref: /aria/apg/patterns/alert/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/alert/
+permalink: /aria/apg/patterns/alert/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -49,7 +49,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         Because alerts are intended to provide important and potentially time-sensitive information without interfering with the user's ability to continue working,
         it is crucial they do not affect keyboard focus.
-        The <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">alert dialog</a> is designed for situations where interrupting work flow is necessary.
+        The <a href="{{ '/aria/apg/patterns/alertdialog/' | relative_url }}">alert dialog</a> is designed for situations where interrupting work flow is necessary.
       </p>
       <p>
         It is also important to avoid designing alerts that disappear automatically.

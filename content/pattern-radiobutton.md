@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Radio Group"
-ref: /ARIA/APG/patterns/radiobutton/
+ref: /aria/apg/patterns/radiobutton/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/radiobutton/
+permalink: /aria/apg/patterns/radiobutton/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -65,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           
           <p>
             This section describes the keyboard interaction implemented for most radio groups.
-            For the special case of a radio group nested inside a <a href="{{ '/ARIA/APG/patterns/toolbar/' | relative_url }}">toolbar</a>, use the keyboard interaction described in the following section.
+            For the special case of a radio group nested inside a <a href="{{ '/aria/apg/patterns/toolbar/' | relative_url }}">toolbar</a>, use the keyboard interaction described in the following section.
           </p>
           <ul>
             <li>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Disclosure (Show/Hide)"
-ref: /ARIA/APG/patterns/disclosure/
+ref: /aria/apg/patterns/disclosure/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/disclosure/
+permalink: /aria/apg/patterns/disclosure/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -43,7 +43,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
-        It has two elements: a disclosure <a href="{{ '/ARIA/APG/patterns/button/' | relative_url }}">button</a> and a section of content whose visibility is controlled by the button.
+        It has two elements: a disclosure <a href="{{ '/aria/apg/patterns/button/' | relative_url }}">button</a> and a section of content whose visibility is controlled by the button.
         When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
         When the content is visible, the arrow or triangle typically points down.
       </p>

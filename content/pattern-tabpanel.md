@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Tabs"
-ref: /ARIA/APG/patterns/tabpanel/
+ref: /aria/apg/patterns/tabpanel/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/tabpanel/
+permalink: /aria/apg/patterns/tabpanel/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -120,7 +120,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency.
             This typically requires tab panel content to be preloaded.
             Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list.
-            For additional guidance, see <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}" class="sec-ref">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>
             When a tab list has its <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>:

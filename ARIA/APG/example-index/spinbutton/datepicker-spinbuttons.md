@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Date Picker Spin Button Example"
-ref: /ARIA/APG/example-index/spinbutton/datepicker-spinbuttons
+ref: /aria/apg/example-index/spinbutton/datepicker-spinbuttons
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/spinbutton/datepicker-spinbuttons.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/spinbutton/datepicker-spinbuttons
+permalink: /aria/apg/example-index/spinbutton/datepicker-spinbuttons
 
 sidebar: true
 
@@ -42,7 +42,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -63,8 +63,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -75,7 +75,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -87,7 +87,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   <div>
     
     <p>
-      The following example uses the <a href="{{ '/ARIA/APG/patterns/spinbutton/' | relative_url }}">Spin Button Design Pattern</a> to implement a date picker.
+      The following example uses the <a href="{{ '/aria/apg/patterns/spinbutton/' | relative_url }}">Spin Button Design Pattern</a> to implement a date picker.
       It includes three spin buttons: one for setting the day, a second for month, and a third for year.
     </p>
     <p>Similar examples include:</p>
@@ -212,7 +212,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
     <section>
       <h2 id="kbd_label">Keyboard Support</h2>
-      <p>The spin buttons provide the following keyboard support described in the <a href="{{ '/ARIA/APG/patterns/spinbutton/' | relative_url }}">spin button design pattern.</a></p>
+      <p>The spin buttons provide the following keyboard support described in the <a href="{{ '/aria/apg/patterns/spinbutton/' | relative_url }}">spin button design pattern.</a></p>
       <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
         <thead>
           <tr>

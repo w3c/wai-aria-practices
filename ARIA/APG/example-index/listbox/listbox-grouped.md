@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Listbox Example with Grouped Options"
-ref: /ARIA/APG/example-index/listbox/listbox-grouped
+ref: /aria/apg/example-index/listbox/listbox-grouped
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/listbox/listbox-grouped.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/listbox/listbox-grouped
+permalink: /aria/apg/example-index/listbox/listbox-grouped
 
 sidebar: true
 
@@ -36,7 +36,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -57,8 +57,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -81,7 +81,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   <div>
   
   <p>
-    The following example implementation of the <a href="{{ '/ARIA/APG/patterns/listbox/' | relative_url }}">design pattern for listbox</a> demonstrates a single-select listbox widget with grouped options.
+    The following example implementation of the <a href="{{ '/aria/apg/patterns/listbox/' | relative_url }}">design pattern for listbox</a> demonstrates a single-select listbox widget with grouped options.
     This widget is functionally similar to an HTML <code>select</code> element with <code>size</code> greater than 1 and options grouped into categories with labeled <code>optgroup</code> elements.
   </p>
   <p>Similar examples include:</p>
@@ -152,7 +152,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <p>
       The example listboxes on this page implement the following keyboard interface.
       Other variations and options for the keyboard interface are described in the
-      <a href="{{ '/ARIA/APG/patterns/listbox/#listbox_kbd_interaction' | relative_url }}">Keyboard Interaction section of the Listbox Design Pattern.</a>
+      <a href="{{ '/aria/apg/patterns/listbox/#listbox_kbd_interaction' | relative_url }}">Keyboard Interaction section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
       <thead>
@@ -187,7 +187,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <p>
       The example listboxes on this page implement the following ARIA roles, states, and properties.
       Information about other ways of applying ARIA roles, states, and properties is available in the
-      <a href="{{ '/ARIA/APG/patterns/listbox/#listbox_roles_states_props' | relative_url }}">Roles, States, and Properties section of the Listbox Design Pattern.</a>
+      <a href="{{ '/aria/apg/patterns/listbox/#listbox_roles_states_props' | relative_url }}">Roles, States, and Properties section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
     <thead>

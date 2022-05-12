@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Patterns"
-ref: /ARIA/APG/patterns/
+ref: /aria/apg/patterns/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/
+permalink: /aria/apg/patterns/
 
 sidebar: false
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <div>
@@ -38,7 +38,7 @@ lang: en
           
                 <li class="tile tile-accordion">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/accordion/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/accordion/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/accordion.svg' | relative_url }}" 
                         alt=""
@@ -52,7 +52,7 @@ lang: en
                
                 <li class="tile tile-alert">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/alert/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/alert/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/alert.svg' | relative_url }}" 
                         alt=""
@@ -66,7 +66,7 @@ lang: en
                
                 <li class="tile tile-alertdialog">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/alertdialog/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/alertdialog/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/alertdialog.svg' | relative_url }}" 
                         alt=""
@@ -80,7 +80,7 @@ lang: en
                
                 <li class="tile tile-breadcrumb">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/breadcrumb/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/breadcrumb/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/breadcrumb.svg' | relative_url }}" 
                         alt=""
@@ -94,7 +94,7 @@ lang: en
                
                 <li class="tile tile-button">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/button/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/button/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}" 
                         alt=""
@@ -108,7 +108,7 @@ lang: en
                
                 <li class="tile tile-carousel">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/carousel/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/carousel/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/carousel.svg' | relative_url }}" 
                         alt=""
@@ -122,7 +122,7 @@ lang: en
                
                 <li class="tile tile-checkbox">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/checkbox/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/checkbox/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/checkbox.svg' | relative_url }}" 
                         alt=""
@@ -136,7 +136,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-combobox">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/combobox/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/combobox/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}" 
                         alt=""
@@ -150,7 +150,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-dialogmodal">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/dialogmodal/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/dialogmodal.svg' | relative_url }}" 
                         alt=""
@@ -164,7 +164,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-disclosure">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/disclosure/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/disclosure/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}" 
                         alt=""
@@ -178,7 +178,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-feed">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/feed/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/feed/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/feed.svg' | relative_url }}" 
                         alt=""
@@ -193,7 +193,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                   <li class="tile tile-landmarks">
                     <h2 class="tile-name">
                       <a 
-                        href="{{ '/ARIA/APG/example-index/landmarks/index.html' | relative_url }}"
+                        href="{{ '/aria/apg/example-index/landmarks/index.html' | relative_url }}"
                       >
                         <img 
                           src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
@@ -210,7 +210,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                  
                 <li class="tile tile-link">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/link/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/link/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}" 
                         alt=""
@@ -224,7 +224,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-listbox">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/listbox/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/listbox/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}" 
                         alt=""
@@ -238,7 +238,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-menu">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/menu/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/menu.svg' | relative_url }}" 
                         alt=""
@@ -252,7 +252,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-menubutton">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/menubutton/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/menubutton/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/menubutton.svg' | relative_url }}" 
                         alt=""
@@ -265,7 +265,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-meter">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/meter/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/meter/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/meter.svg' | relative_url }}" 
                         alt=""
@@ -279,7 +279,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-radiobutton">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/radiobutton/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/radiobutton/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/radiobutton.svg' | relative_url }}" 
                         alt=""
@@ -294,7 +294,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-slider">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/slider/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/slider/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}" 
                         alt=""
@@ -308,7 +308,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-slidertwothumb">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/slidertwothumb/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/slidertwothumb/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/slidertwothumb.svg' | relative_url }}" 
                         alt=""
@@ -323,7 +323,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-spinbutton">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/spinbutton/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/spinbutton/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/spinbutton.svg' | relative_url }}" 
                         alt=""
@@ -337,7 +337,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-switch">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/switch/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/switch/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/switch.svg' | relative_url }}" 
                         alt=""
@@ -351,7 +351,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-table">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/table/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/table/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/table.svg' | relative_url }}" 
                         alt=""
@@ -365,7 +365,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-tabpanel">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/tabpanel/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/tabpanel/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/tabpanel.svg' | relative_url }}" 
                         alt=""
@@ -379,7 +379,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-toolbar">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/toolbar/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/toolbar/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}" 
                         alt=""
@@ -392,7 +392,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-tooltip">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/tooltip/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/tooltip/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/tooltip.svg' | relative_url }}" 
                         alt=""
@@ -406,7 +406,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-treeview">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/treeview/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}" 
                         alt=""
@@ -420,7 +420,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-treegrid">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/treegrid/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/treegrid/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/treegrid.svg' | relative_url }}" 
                         alt=""
@@ -434,7 +434,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                
                 <li class="tile tile-windowsplitter">
                   <h2 class="tile-name">
-                    <a href="{{ '/ARIA/APG/patterns/windowsplitter/' | relative_url }}">
+                    <a href="{{ '/aria/apg/patterns/windowsplitter/' | relative_url }}">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/windowsplitter.svg' | relative_url }}" 
                         alt=""

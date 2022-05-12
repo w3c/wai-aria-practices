@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Navigation Menubar Example"
-ref: /ARIA/APG/example-index/menubar/menubar-navigation
+ref: /aria/apg/example-index/menubar/menubar-navigation
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/menubar/menubar-navigation.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/menubar/menubar-navigation
+permalink: /aria/apg/example-index/menubar/menubar-navigation
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -76,11 +76,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   <div>
   
   <div class="advisement">
-    <p><strong>CAUTION!</strong> Before considering use of the <a href="{{ '/ARIA/APG/patterns/menu/' | relative_url }}">ARIA menubar pattern</a> for site navigation, it is important to understand:</p>
+    <p><strong>CAUTION!</strong> Before considering use of the <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}">ARIA menubar pattern</a> for site navigation, it is important to understand:</p>
     <ul>
       <li>The <code>menubar</code> pattern requires complex functionality that is unnecessary for typical site navigation that is styled to look like a menubar with expandable sections or <q>fly outs</q>.</li>
       <li>
-        A pattern more suited for typical site navigation with expandable groups of links is the <a href="{{ '/ARIA/APG/patterns/disclosure/' | relative_url }}">disclosure pattern.</a>
+        A pattern more suited for typical site navigation with expandable groups of links is the <a href="{{ '/aria/apg/patterns/disclosure/' | relative_url }}">disclosure pattern.</a>
         For an example, see <a href="../disclosure/disclosure-navigation.html">Example Disclosure Navigation Menu.</a>
       </li>
     </ul>
@@ -90,7 +90,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         >
   <p>
     The following implementation of the
-    <a href="{{ '/ARIA/APG/patterns/menu/' | relative_url }}">design pattern for menubar</a>
+    <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}">design pattern for menubar</a>
     demonstrates how a menubar can provide navigation menus.
     The parent menu items in the menubar represent a section of a mythical university web site and open a submenu containing menu items that link to pages within that section.
     The navigation system it illustrates is comparable to the navigation illustrated in the <a href="../disclosure/disclosure-navigation.html">Example of Disclosure for Navigation Menus</a>.
@@ -637,7 +637,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <td>
             <ul>
               <li>Identifies the element as a <code>menubar</code> container for a set of <code>menuitem</code> elements.</li>
-              <li>Is not focusable because focus is managed using <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a></li>
+              <li>Is not focusable because focus is managed using <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a></li>
             </ul>
           </td>
         </tr>
@@ -699,7 +699,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>Includes the element in the <kbd>Tab</kbd> sequence.</li>
               <li>Only one menubar item has <code>tabindex="0"</code>.</li>
               <li>On page load, the first menubar item has <code>tabindex="0"</code>.</li>
-              <li>Focus is managed using <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+              <li>Focus is managed using <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
             </ul>
           </td>
         </tr>

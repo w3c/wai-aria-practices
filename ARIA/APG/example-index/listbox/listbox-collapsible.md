@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "(Deprecated) Collapsible Dropdown Listbox Example"
-ref: /ARIA/APG/example-index/listbox/listbox-collapsible
+ref: /aria/apg/example-index/listbox/listbox-collapsible
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/listbox/listbox-collapsible.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/listbox/listbox-collapsible
+permalink: /aria/apg/example-index/listbox/listbox-collapsible
 
 sidebar: true
 
@@ -36,7 +36,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -57,8 +57,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -85,7 +85,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         >
   <p>
     The following example implementation of the
-    <a href="{{ '/ARIA/APG/patterns/listbox/' | relative_url }}">design pattern for listbox</a>
+    <a href="{{ '/aria/apg/patterns/listbox/' | relative_url }}">design pattern for listbox</a>
     demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size=&quot;1&quot;</code>.
     The widget consists of a button that triggers the display of a listbox.
     In its default state, the widget is collapsed (the listbox is not visible)  and the button label shows the currently selected option from the listbox.
@@ -167,7 +167,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <p>
       The example listbox on this page implements the following keyboard interface.
       Other variations and options for the keyboard interface are described in the
-      <a href="{{ '/ARIA/APG/patterns/listbox/#listbox_kbd_interaction' | relative_url }}">Keyboard Interaction section of the Listbox Design Pattern.</a>
+      <a href="{{ '/aria/apg/patterns/listbox/#listbox_kbd_interaction' | relative_url }}">Keyboard Interaction section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
       <thead>
@@ -234,7 +234,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <p>
       The example listbox on this page implements the following ARIA roles, states, and properties.
       Information about other ways of applying ARIA roles, states, and properties is available in the
-      <a href="{{ '/ARIA/APG/patterns/listbox/#listbox_roles_states_props' | relative_url }}">Roles, States, and Properties section of the Listbox Design Pattern.</a>
+      <a href="{{ '/aria/apg/patterns/listbox/#listbox_roles_states_props' | relative_url }}">Roles, States, and Properties section of the Listbox Design Pattern.</a>
     </p>
     <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
     <thead>
@@ -310,7 +310,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element.</li>
               <li>
                 For more information about this focus management technique, see
-                <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+                <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
               </li>
             </ul>
           </td>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "File Directory Treeview Example Using Declared Properties"
-ref: /ARIA/APG/example-index/treeview/treeview-1/treeview-1b
+ref: /aria/apg/example-index/treeview/treeview-1/treeview-1b
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/treeview/treeview-1/treeview-1b.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/treeview/treeview-1/treeview-1b
+permalink: /aria/apg/example-index/treeview/treeview-1/treeview-1b
 
 sidebar: true
 
@@ -43,7 +43,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -89,7 +89,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         The following example implementation of the
-        <a href="{{ '/ARIA/APG/patterns/treeview/' | relative_url }}">Tree View Design Pattern</a>
+        <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">Tree View Design Pattern</a>
         simulates a widget for selecting a file or folder from within a hierarchical file system for viewing in a file viewer.
         In the <q>My Documents</q> tree, each parent node represents a folder and each end node represents a file.
         Activating a node selects the node and puts the name of the folder or file in the read-only edit field that represents the file viewer.
@@ -535,7 +535,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           It is a closed node when the children are hidden and an open node when it is expanded.
           An end node does not have any children.
           For a complete list of terms and definitions, see the
-          <a href="{{ '/ARIA/APG/patterns/treeview/' | relative_url }}">Treeview Design Pattern.</a>
+          <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">Treeview Design Pattern.</a>
         </p>
       </section>
 
@@ -544,7 +544,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           Note that in this example, selection and focus are distinct; moving focus does not change which node is selected.
           Because selection does not follow focus, keyboard and screen reader users can navigate and explore the tree without changing the content of the file viewer.
-          To learn more about this aspect of the design, read the guidance section about <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus.</a>
+          To learn more about this aspect of the design, read the guidance section about <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus.</a>
         </p>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
@@ -654,7 +654,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Identifies the <code>ul</code> element as a <code>tree</code> widget.</li>
                   <li>
                     Because focus movement in the tree is managed with a
-                    <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>,
+                    <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>,
                     the <code>tree</code> container does not need a <code>tabindex</code> attribute.
                   </li>
                 </ul>
@@ -694,7 +694,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>In this implementation, the first <code>treeitem</code> in the <code>tree</code> is included in the tab sequence when the page loads.</li>
                   <li>
                     When the user moves focus in the <code>tree</code>, the element included in the tab sequence changes to the element with focus as described in the section on
-                    <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a>
+                    <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a>
                   </li>
                  </ul>
               </td>

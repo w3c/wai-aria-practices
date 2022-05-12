@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Button"
-ref: /ARIA/APG/patterns/button/
+ref: /aria/apg/patterns/button/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/patterns/button/
+permalink: /aria/apg/patterns/button/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,10 +55,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           In this example, when the pressed state is true, the label remains "Mute" so a screen reader would say something like "Mute toggle button pressed".
           Alternatively, if the design were to call for the button label to change from "Mute" to "Unmute," the aria-pressed attribute would not be needed.
         </li>
-        <li>Menu button: as described in the <a href="{{ '/ARIA/APG/patterns/menubutton/' | relative_url }}">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+        <li>Menu button: as described in the <a href="{{ '/aria/apg/patterns/menubutton/' | relative_url }}">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
       </ul>
       <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Note</span></div><p class="">
-        The types of actions performed by buttons are distinctly different from the function of a link (see <a href="{{ '/ARIA/APG/patterns/link/' | relative_url }}">link pattern</a>).
+        The types of actions performed by buttons are distinctly different from the function of a link (see <a href="{{ '/aria/apg/patterns/link/' | relative_url }}">link pattern</a>).
         It is important that both the appearance and role of a widget match the function it provides.
         Nevertheless, elements occasionally have the visual style of a link but perform the action of a button.
         In such cases, giving the element role <code>button</code> helps assistive technology users understand the function of the element.
@@ -91,7 +91,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <ul>
               <li>
                 If activating the button opens a dialog, the focus moves inside the dialog. (see
-                <a href="{{ '/ARIA/APG/patterns/dialogmodal/' | relative_url }}">dialog pattern</a>)
+                <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">dialog pattern</a>)
               </li>
               <li>If activating the button closes a dialog, focus typically returns to the
                 button that opened the dialog unless the function performed in the dialog context

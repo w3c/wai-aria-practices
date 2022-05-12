@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Actions Menu Button Example Using aria-activedescendant"
-ref: /ARIA/APG/example-index/menu-button/menu-button-actions-active-descendant
+ref: /aria/apg/example-index/menu-button/menu-button-actions-active-descendant
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/menu-button/menu-button-actions-active-descendant.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/menu-button/menu-button-actions-active-descendant
+permalink: /aria/apg/example-index/menu-button/menu-button-actions-active-descendant
 
 sidebar: true
 
@@ -37,7 +37,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -58,8 +58,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -70,7 +70,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -83,13 +83,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         This example demonstrates how the
-        <a href="{{ '/ARIA/APG/patterns/menubutton/' | relative_url }}">menu button design pattern</a>
+        <a href="{{ '/aria/apg/patterns/menubutton/' | relative_url }}">menu button design pattern</a>
       can be used to create a button that opens an actions menu.
       In this example, choosing an action from the menu will cause the chosen action to be displayed in the <q>Last Action</q> edit box.
     </p>
     <p>
     This implementation
-    <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">uses aria-activedescendant to manage focus</a>
+    <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">uses aria-activedescendant to manage focus</a>
     in the menu.
       </p>
       <p>Similar examples include: </p>
@@ -362,7 +362,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element with role <code>menu</code>.</li>
                   <li>
                     For more information about this focus management technique, see
-                    <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+                    <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
                   </li>
                 </ul>
               </td>

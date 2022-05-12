@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Editable Combobox without Autocomplete Example"
-ref: /ARIA/APG/example-index/combobox/combobox-autocomplete-none
+ref: /aria/apg/example-index/combobox/combobox-autocomplete-none
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/combobox/combobox-autocomplete-none.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /ARIA/APG/example-index/combobox/combobox-autocomplete-none
+permalink: /aria/apg/example-index/combobox/combobox-autocomplete-none
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/APG/example-index/css/github.css' | relative_url }}"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/ARIA/APG/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/ARIA/APG/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -80,7 +80,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
     <p>
       The below combobox that enables users to choose a term from a hypothetical list of previously searched terms demonstrates the
-      <a href="{{ '/ARIA/APG/patterns/combobox/' | relative_url }}">ARIA design pattern for combobox.</a>
+      <a href="{{ '/aria/apg/patterns/combobox/' | relative_url }}">ARIA design pattern for combobox.</a>
       The design pattern describes four types of autocomplete behavior.
       This example illustrates the autocomplete behavior known as <q>no autocomplete</q>.
       The terms that appear in the listbox popup are not related to the string that is present in the textbox.
@@ -171,7 +171,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
       The example combobox on this page implements the following keyboard interface.
         Other variations and options for the keyboard interface are described in the
-        <a href="{{ '/ARIA/APG/patterns/combobox/#keyboard-interaction-6' | relative_url }}">Keyboard Interaction section of the combobox design pattern.</a>
+        <a href="{{ '/aria/apg/patterns/combobox/#keyboard-interaction-6' | relative_url }}">Keyboard Interaction section of the combobox design pattern.</a>
       </p>
       <h3 id="kbd_label_textbox">Textbox</h3>
       <div class="table-wrap"><table aria-labelledby="kbd_label_textbox kbd_label" class="def">
@@ -226,7 +226,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <strong>NOTE:</strong> When visual focus is in the listbox, DOM focus remains on the textbox and the value of <code>aria-activedescendant</code> on the textbox is set to a value that refers to the listbox option that is visually indicated as focused.
         Where the following descriptions of keyboard commands mention focus, they are referring to the visual focus indicator.
         For more information about this focus management technique, see
-        <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+        <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
       </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_listbox kbd_label" class="def">
         <thead>
@@ -314,7 +314,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The example combobox on this page implements the following ARIA roles, states, and properties.
         Information about other ways of applying ARIA roles, states, and properties is available in the
-        <a href="{{ '/ARIA/APG/patterns/combobox/#wai-aria-roles-states-and-properties-6' | relative_url }}">Roles, States, and Properties section of the combobox design pattern.</a>
+        <a href="{{ '/aria/apg/patterns/combobox/#wai-aria-roles-states-and-properties-6' | relative_url }}">Roles, States, and Properties section of the combobox design pattern.</a>
       </p>
       <h3 id="rps_label_textbox">Textbox</h3>
       <div class="table-wrap"><table aria-labelledby="rps_label_textbox rps_label" class="data attributes">
@@ -393,7 +393,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>input</code> element.</li>
                 <li>
                   For more information about this focus management technique, see
-                  <a href="{{ '/ARIA/APG/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+                  <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
                 </li>
               </ul>
             </td>
