@@ -50,7 +50,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/spinbutton.svg"
+            src="/content-images/wai-aria-practices/img/spinbutton.svg"
           ><div class="header-wrapper"><h2 id="example-6" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>

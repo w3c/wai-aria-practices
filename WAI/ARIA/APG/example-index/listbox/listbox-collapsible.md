@@ -74,7 +74,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   <div class="advisement">
     <p><strong>DEPRECATION WARNING:</strong> This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices. The <a href="../combobox/combobox-select-only.html">select-only combobox</a> should be used as an alternative to this pattern.</p>
   </div><img alt=""
-          src="/content-assets/wai-aria-practices/img/listbox.svg"
+          src="/content-images/wai-aria-practices/img/listbox.svg"
           class="example-page-example-icon"
         >
   <p>

@@ -25,7 +25,7 @@ const getPatternsPage = (patterns) => {
                     <h2 class="tile-name">
                       <a href="/WAI/ARIA/APG/example-index/landmarks/index.html">
                         <img 
-                          src="/content-assets/wai-aria-practices/img/landmarks.svg" 
+                          src="/content-images/wai-aria-practices/img/landmarks.svg" 
                           alt=""
                         >
                         <span>Landmarks</span>
@@ -44,7 +44,7 @@ const getPatternsPage = (patterns) => {
                   <h2 class="tile-name">
                     <a href="${pattern.permalink}">
                       <img 
-                        src="/content-assets/wai-aria-practices/img/${pattern.slug}.svg" 
+                        src="/content-images/wai-aria-practices/img/${pattern.slug}.svg" 
                         alt=""
                       >
                       <span>${pattern.name}</span>

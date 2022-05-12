@@ -48,7 +48,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </ul></div>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/meter.svg"
+            src="/content-images/wai-aria-practices/img/meter.svg"
           ><div class="header-wrapper"><h2 id="example-4" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/meter/meter.html">Meter Example</a></p>

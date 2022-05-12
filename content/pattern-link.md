@@ -49,7 +49,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p></div>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/link.svg"
+            src="/content-images/wai-aria-practices/img/link.svg"
           ><div class="header-wrapper"><h2 id="examples-6" tabindex="-1">Examples</h2></div>
         
         <p><a href="../../example-index/link/link.html">Link Examples</a>: Link widgets constructed from HTML <code>span</code> and <code>img</code> elements.</p>

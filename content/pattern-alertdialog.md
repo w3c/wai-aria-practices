@@ -44,7 +44,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/alertdialog.svg"
+            src="/content-images/wai-aria-practices/img/alertdialog.svg"
           ><div class="header-wrapper"><h2 id="example-1" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/dialog-modal/alertdialog.html">Alert Dialog Example</a>: A confirmation prompt that demonstrates an alert dialog.</p>

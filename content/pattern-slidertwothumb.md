@@ -52,7 +52,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p></div>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/slidertwothumb.svg"
+            src="/content-images/wai-aria-practices/img/slidertwothumb.svg"
           ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>

@@ -54,7 +54,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <li>Use toolbar as a grouping element only if the group contains 3 or more controls.</li>
       </ul>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/toolbar.svg"
+            src="/content-images/wai-aria-practices/img/toolbar.svg"
           ><div class="header-wrapper"><h2 id="example-7" tabindex="-1">Example</h2></div>
         
         <p>

@@ -66,7 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
 </details>
           <img alt=""
-          src="/content-assets/wai-aria-practices/img/switch.svg"
+          src="/content-images/wai-aria-practices/img/switch.svg"
           class="example-page-example-icon"
         >
   

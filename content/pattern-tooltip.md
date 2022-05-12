@@ -49,7 +49,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         A hover that contains focusable elements can be made using a non-modal dialog.
       </p>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/tooltip.svg"
+            src="/content-images/wai-aria-practices/img/tooltip.svg"
           ><div class="header-wrapper"><h2 id="example-8" tabindex="-1">Example</h2></div>
         
         <p>

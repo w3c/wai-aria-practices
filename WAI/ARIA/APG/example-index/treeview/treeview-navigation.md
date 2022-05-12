@@ -76,7 +76,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="/WAI/ARIA/APG/patterns/disclosure/">disclosure pattern.</a></li>
         </ul>
       </div><img alt=""
-          src="/content-assets/wai-aria-practices/img/treeview.svg"
+          src="/content-images/wai-aria-practices/img/treeview.svg"
           class="example-page-example-icon"
         >
       <p>

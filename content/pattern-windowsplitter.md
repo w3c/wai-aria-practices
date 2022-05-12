@@ -61,7 +61,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Note that the term "primary pane" does not describe the importance or purpose of content inside the pane.
       </p>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/windowsplitter.svg"
+            src="/content-images/wai-aria-practices/img/windowsplitter.svg"
           ><div class="header-wrapper"><h2 id="example-9" tabindex="-1">Example</h2></div>
         
         <p>

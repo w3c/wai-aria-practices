@@ -79,7 +79,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </li>
     </ul>
   </div><img alt=""
-          src="/content-assets/wai-aria-practices/img/menu.svg"
+          src="/content-images/wai-aria-practices/img/menu.svg"
           class="example-page-example-icon"
         >
   <p>

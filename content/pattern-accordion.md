@@ -53,7 +53,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         And, in some cases, a snippet of the hidden content may also be visually persistent.
       </p>
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/accordion.svg"
+            src="/content-images/wai-aria-practices/img/accordion.svg"
           ><div class="header-wrapper"><h2 id="example" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/accordion/accordion.html">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time. </p>

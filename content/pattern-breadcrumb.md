@@ -42,7 +42,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
 
       <section class="notoc examples-section"><img alt="" 
-            src="/content-assets/wai-aria-practices/img/breadcrumb.svg"
+            src="/content-images/wai-aria-practices/img/breadcrumb.svg"
           ><div class="header-wrapper"><h2 id="example-2" tabindex="-1">Example</h2></div>
         
         <p><a href="../../example-index/breadcrumb/index.html">Breadcrumb design pattern example</a></p>
