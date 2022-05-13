@@ -1,48 +1,45 @@
 ---
 # This is a generated file
 title: "Toolbar"
-ref: /aria-practices/
+ref: /aria/apg/patterns/toolbar/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/toolbar/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/toolbar/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#example-7">Example</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-22">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-23">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="toolbar"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="toolbar"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>A <a class="role-reference" href="https://w3c.github.io/aria/#toolbar">toolbar</a> is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</p>
       <p>
@@ -62,10 +59,12 @@ lang: en
         <li>Avoid including controls whose operation requires the pair of arrow keys used for toolbar navigation. If unavoidable, include only one such control and make it the last element in the toolbar. For example, in a horizontal toolbar, a textbox could be included as the last element.</li>
         <li>Use toolbar as a grouping element only if the group contains 3 or more controls.</li>
       </ul>
-      <section class="notoc examples-section"><img alt="" src="/assets/img/toolbar.svg" ><div class="header-wrapper"><h2 id="example-7" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="example-7" tabindex="-1">Example</h2></div>
         
         <p>
-          <a href="../../index/toolbar/toolbar.html">Toolbar Example</a>:
+          <a href="../../example-index/toolbar/toolbar.html">Toolbar Example</a>:
           A toolbar that uses roving tabindex to manage focus and contains several types of controls, including toggle buttons, radio buttons, a menu button, a spin button, a checkbox, and a link.
         </p>
       </section>
@@ -97,7 +96,7 @@ lang: en
           <li>
             Typically, disabled elements are not focusable when navigating with a keyboard.
             However, in circumstances where discoverability of a function is crucial, it may be helpful if disabled controls are focusable so screen reader users are more likely to be aware of their presence.
-            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_disabled_controls" class="sec-ref">Focusability of disabled controls</a>.
+            For additional guidance, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_disabled_controls' | relative_url }}" class="sec-ref">Focusability of disabled controls</a>.
           </li>
           <li>In applications where quick access to a toolbar is important, such as accessing an editor's toolbar from its text area, a documented shortcut key for moving focus from the relevant context to its corresponding toolbar is recommended.</li>
         </ol></div>
@@ -116,9 +115,6 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -131,4 +127,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

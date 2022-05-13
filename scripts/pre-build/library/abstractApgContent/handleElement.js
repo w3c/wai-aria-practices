@@ -28,7 +28,6 @@ const handleElement = (element) => {
     permalinkReplacesFormerAnchorId: formatter.permalinkReplacesFormerAnchorId,
     slug: formatter.slug,
     name: formatter.getName?.(element),
-    outline: formatter.getOutline?.(element),
     introduction: formatter.getIntroduction?.(element),
     content: wrapTablesWithResponsiveDiv(formatter.getContent?.(element)),
   });

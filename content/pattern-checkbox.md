@@ -1,48 +1,45 @@
 ---
 # This is a generated file
 title: "Checkbox"
-ref: /aria-practices/
+ref: /aria/apg/patterns/checkbox/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/checkbox/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/checkbox/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-1">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-5">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-5">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="checkbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="checkbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> supports two types of <a href="https://w3c.github.io/aria/#checkbox" class="role-reference">checkbox</a> widgets:</p>
       <ol>
@@ -68,14 +65,16 @@ lang: en
         </li>
       </ul>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/checkbox.svg" ><div class="header-wrapper"><h2 id="examples-1" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/checkbox.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-1" tabindex="-1">Examples</h2></div>
         
         <ul>
           <li>
-            <a href="../../index/checkbox/checkbox.html">Checkbox (Two-State) Example</a>: Demonstrates a simple 2-state checkbox.
+            <a href="../../example-index/checkbox/checkbox.html">Checkbox (Two-State) Example</a>: Demonstrates a simple 2-state checkbox.
           </li>
           <li>
-            <a href="../../index/checkbox/checkbox-mixed.html">Checkbox (Mixed-State) Example</a>:
+            <a href="../../example-index/checkbox/checkbox-mixed.html">Checkbox (Mixed-State) Example</a>:
             Demonstrates  a checkbox that uses the mixed  value for aria-checked to reflect and control checked states within a group of two-state HTML checkboxes contained in  an HTML <code>fieldset</code>.
           </li>
         </ul>
@@ -106,9 +105,6 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -121,4 +117,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

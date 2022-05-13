@@ -1,48 +1,45 @@
 ---
 # This is a generated file
 title: "Feed"
-ref: /aria-practices/
+ref: /aria/apg/patterns/feed/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/feed/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/feed/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#example-3">Example</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-9">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-9">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="feed"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="feed"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#feed" class="role-reference">feed</a> is a section of a page that automatically loads new sections of content as the user scrolls.
@@ -50,7 +47,7 @@ lang: en
         So, a feed can be thought of as a dynamic list of articles that often appears to scroll infinitely.
       </p>
       <p>
-        The feature that most distinguishes feed from other ARIA patterns that support loading data as users scroll, e.g., a <a href="/patterns/grid/">grid</a>, is that a feed is a structure, not a widget.
+        The feature that most distinguishes feed from other ARIA patterns that support loading data as users scroll, e.g., a <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid</a>, is that a feed is a structure, not a widget.
         Consequently, assistive technologies with a reading mode, such as screen readers, default to reading mode when interacting with feed content.
         However, unlike most other <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> structures, a feed establishes an interoperability contract between the web page and assistive technologies.
         The contract governs scroll interactions so that assistive technology users can read articles, jump forward and backward by article, and reliably trigger new articles to load while in reading mode.
@@ -90,10 +87,12 @@ lang: en
         By identifying the elements inside of an article that provide the title and the primary content, assistive technologies can provide functions that enable users to jump from article to article and efficiently discern which articles may be worthy of more attention.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/feed.svg" ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/feed.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="example-3" tabindex="-1">Example</h2></div>
         
         <p>
-        <a href="../../index/feed/feed.html">Example Implementation of Feed Pattern</a>
+        <a href="../../example-index/feed/feed.html">Example Implementation of Feed Pattern</a>
         </p>
       </section>
 
@@ -175,9 +174,6 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -190,4 +186,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

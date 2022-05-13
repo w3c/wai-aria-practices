@@ -1,56 +1,55 @@
 ---
 # This is a generated file
 title: "Menu Button"
-ref: /aria-practices/
+ref: /aria/apg/patterns/menubutton/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/menubutton/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/menubutton/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
+<section class="widget" id="menubutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+      <p>A menu button is a <a href="{{ '/aria/apg/patterns/button/' | relative_url }}">button</a> that opens a <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
 
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-9">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-13">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-14">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="menubutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
-      <p>A menu button is a <a href="/patterns/button/">button</a> that opens a <a href="/patterns/menu/">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
-
-      <section class="notoc examples-section"><img alt="" src="/assets/img/menubutton.svg" ><div class="header-wrapper"><h2 id="examples-9" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/menubutton.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-9" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/menu-button/menu-button-links.html">Navigation Menu Button</a>: A menu button made from an HTML <code>a</code> element that opens a menu of items that behave as links.</li>
-          <li><a href="../../index/menu-button/menu-button-actions.html">Action Menu Button Example Using element.focus()</a>: A menu button made from an HTML <code>button</code> element that opens a menu of actions or commands where focus in the menu is managed using <code>element.focus()</code>.</li>
-          <li><a href="../../index/menu-button/menu-button-actions-active-descendant.html">Action Menu Button Example Using aria-activedescendant</a>: A button that opens a menu of actions or commands where focus in the menu is managed using aria-activedescendant.</li>
+          <li><a href="../../example-index/menu-button/menu-button-links.html">Navigation Menu Button</a>: A menu button made from an HTML <code>a</code> element that opens a menu of items that behave as links.</li>
+          <li><a href="../../example-index/menu-button/menu-button-actions.html">Action Menu Button Example Using element.focus()</a>: A menu button made from an HTML <code>button</code> element that opens a menu of actions or commands where focus in the menu is managed using <code>element.focus()</code>.</li>
+          <li><a href="../../example-index/menu-button/menu-button-actions-active-descendant.html">Action Menu Button Example Using aria-activedescendant</a>: A button that opens a menu of actions or commands where focus in the menu is managed using aria-activedescendant.</li>
         </ul>
       </section>
 
@@ -65,7 +64,7 @@ lang: en
               <li>(Optional) <kbd>Up Arrow</kbd>: opens the menu and moves focus to the last menu item.</li>
             </ul>
           </li>
-          <li>The keyboard behaviors needed after the menu is open are described in <a href="/patterns/menu/" class="sec-ref">Menu or Menu bar</a>.</li>
+          <li>The keyboard behaviors needed after the menu is open are described in <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}" class="sec-ref">Menu or Menu bar</a>.</li>
         </ul>
       </section>
 
@@ -90,13 +89,10 @@ lang: en
             <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>
             that refers to the element with role <code>menu</code>.
             </li>
-            <li>Additional roles, states, and properties needed for the menu element are described in <a href="/patterns/menu/" class="sec-ref">Menu or Menu bar</a>.</li>
+            <li>Additional roles, states, and properties needed for the menu element are described in <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}" class="sec-ref">Menu or Menu bar</a>.</li>
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -109,4 +105,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

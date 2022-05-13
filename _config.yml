@@ -10,7 +10,7 @@ title: "Web Accessibility Initiative (WAI)"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/wai" # the subpath of your site, e.g. /blog
 url: "https://w3c.github.io" # the base hostname & protocol for your site
 twitter:
   username: w3c_wai
@@ -45,18 +45,20 @@ defaults:
       path: ""
     values:
       layout: "standalone_resource"
-      standalone_resource_doc_name: ARIA Authoring Practices
+      standalone_resource_header:
+        title: "ARIA Authoring Practices Guide (APG)"
+        subtitle: "How to build accessibility semantics into web patterns and widgets"
       standalone_resource_nav_links:
-        - name: Home
-          ref: /
-        - name: Patterns and Widgets
-          ref: /patterns/
+        - name: APG Home
+          ref: /aria/apg/
+        - name: Patterns
+          ref: /aria/apg/patterns/
+        - name: Practices
+          ref: /aria/apg/practices/
         - name: Index
-          ref: /index/index.html # to prevent shadowing issues when deployed to Netlify
-        - name: Fundamentals
-          ref: /fundamentals/
+          ref: /aria/apg/example-index/
         - name: About
-          ref: /about/
+          ref: /aria/apg/about/
 #  -
 #    scope:
 #      path: "_business-case"

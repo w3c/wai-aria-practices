@@ -1,48 +1,45 @@
 ---
 # This is a generated file
 title: "Slider"
-ref: /aria-practices/
+ref: /aria/apg/patterns/slider/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/slider/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/slider/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-11">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-16">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-17">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="slider"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="slider"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A slider is an input where the user selects a value from within a given range.
@@ -54,13 +51,15 @@ lang: en
         This is a new convention that may not be fully implemented by some assistive technologies.
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
-      <section class="notoc examples-section"><img alt="" src="/assets/img/slider.svg" ><div class="header-wrapper"><h2 id="examples-11" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-11" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/slider/slider-color-viewer.html">Color Viewer Slider Example</a>: Basic  horizontal sliders that illustrate setting numeric values for a color picker.</li>
-          <li><a href="../../index/slider/slider-temperature.html">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
-          <li><a href="../../index/slider/slider-rating.html">Rating Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum value of a rating input for a five star rating scale.</li>
-          <li><a href="../../index/slider/slider-seek.html">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
+          <li><a href="../../example-index/slider/slider-color-viewer.html">Color Viewer Slider Example</a>: Basic  horizontal sliders that illustrate setting numeric values for a color picker.</li>
+          <li><a href="../../example-index/slider/slider-temperature.html">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
+          <li><a href="../../example-index/slider/slider-rating.html">Rating Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum value of a rating input for a five star rating scale.</li>
+          <li><a href="../../example-index/slider/slider-seek.html">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
         </ul>
       </section>
 
@@ -106,9 +105,6 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -121,4 +117,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

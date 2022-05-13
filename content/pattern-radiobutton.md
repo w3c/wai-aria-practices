@@ -1,48 +1,45 @@
 ---
 # This is a generated file
 title: "Radio Group"
-ref: /aria-practices/
+ref: /aria/apg/patterns/radiobutton/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/radiobutton/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/radiobutton/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-10">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-15">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-16">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="radiobutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="radiobutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A radio group is a set of checkable buttons, known as radio buttons, where no more than one of
@@ -51,12 +48,14 @@ lang: en
         force the user to check one of the buttons before moving past a certain point in the workflow.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/radiobutton.svg" ><div class="header-wrapper"><h2 id="examples-10" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/radiobutton.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-10" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
-          <li><a href="../../index/radio/radio-activedescendant.html">Radio Group Example Using aria-activedescendant</a></li>
-          <li><a href="../../index/radio/radio-rating.html">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
+          <li><a href="../../example-index/radio/radio.html">Radio Group Example Using Roving tabindex</a></li>
+          <li><a href="../../example-index/radio/radio-activedescendant.html">Radio Group Example Using aria-activedescendant</a></li>
+          <li><a href="../../example-index/radio/radio-rating.html">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
         </ul>
       </section>
 
@@ -66,7 +65,7 @@ lang: en
           
           <p>
             This section describes the keyboard interaction implemented for most radio groups.
-            For the special case of a radio group nested inside a <a href="/patterns/toolbar/">toolbar</a>, use the keyboard interaction described in the following section.
+            For the special case of a radio group nested inside a <a href="{{ '/aria/apg/patterns/toolbar/' | relative_url }}">toolbar</a>, use the keyboard interaction described in the following section.
           </p>
           <ul>
             <li>
@@ -134,7 +133,7 @@ lang: en
           </ul>
           <div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="6"><span>Note</span></div><p class="">
             Radio buttons in a toolbar are frequently styled in a manner that appears more like toggle buttons.
-            For an example, See the <a href="../../index/toolbar/toolbar.html">Simple Editor Toolbar Example</a>
+            For an example, See the <a href="../../example-index/toolbar/toolbar.html">Simple Editor Toolbar Example</a>
           </p></div>
         </section>
       </section>
@@ -180,9 +179,6 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -195,4 +191,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>

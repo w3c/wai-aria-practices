@@ -1,48 +1,45 @@
 ---
 # This is a generated file
 title: "Listbox"
-ref: /aria-practices/
+ref: /aria/apg/patterns/listbox/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/listbox/
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/patterns/listbox/
+
+sidebar: true
+
+footer: ""
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-7">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-11">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-12">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="Listbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="Listbox"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a> widget presents a list of options and allows a user to select one or more of them.
@@ -55,7 +52,7 @@ lang: en
         Thus, if an option contains a semantic element, such as a heading, screen reader users will not have access to the semantics.
         In addition, the interaction model conveyed by the listbox role to assistive technologies does not support interacting with elements inside of an option.
         Because of these traits of the listbox widget, it does not provide an accessible way to present a list of interactive elements, such as links, buttons, or checkboxes.
-        To present a list of interactive elements, see the <a href="/patterns/grid/">grid</a> pattern.
+        To present a list of interactive elements, see the <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid</a> pattern.
       </p>
       <p>
         Avoiding very long option names facilitates understandability and perceivability for screen reader users.
@@ -71,12 +68,14 @@ lang: en
         In such a scenario, it would be better to have 2 list boxes, one for country and one for city.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/listbox.svg" ><div class="header-wrapper"><h2 id="examples-7" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-7" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/listbox/listbox-scrollable.html">Scrollable Listbox Example</a>: Single-select listbox that scrolls to reveal more options, similar to HTML <code>select</code> with <code>size</code> attribute greater than one.</li>
-          <li><a href="../../index/listbox/listbox-rearrangeable.html">Example Listboxes with Rearrangeable Options</a>: Examples of both single-select and multi-select listboxes with accompanying toolbars where options can be added, moved, and removed.</li>
-          <li><a href="../../index/listbox/listbox-grouped.html">Listbox Example with Grouped Options</a>: Single-select listbox with grouped options, similar to an HTML <code>select</code> with <code>optgroup</code> children.</li>
+          <li><a href="../../example-index/listbox/listbox-scrollable.html">Scrollable Listbox Example</a>: Single-select listbox that scrolls to reveal more options, similar to HTML <code>select</code> with <code>size</code> attribute greater than one.</li>
+          <li><a href="../../example-index/listbox/listbox-rearrangeable.html">Example Listboxes with Rearrangeable Options</a>: Examples of both single-select and multi-select listboxes with accompanying toolbars where options can be added, moved, and removed.</li>
+          <li><a href="../../example-index/listbox/listbox-grouped.html">Listbox Example with Grouped Options</a>: Single-select listbox with grouped options, similar to an HTML <code>select</code> with <code>optgroup</code> children.</li>
         </ul>
       </section>
 
@@ -139,17 +138,17 @@ lang: en
           </li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-15"><div role="heading" class="note-title marker" id="h-note-15" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM focus (the active element) is functionally distinct from the selected state. For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection.</a></li>
+          <li>DOM focus (the active element) is functionally distinct from the selected state. For more details, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_vs_selection' | relative_url }}">this description of differences between focus and selection.</a></li>
           <li>
             The <code>listbox</code> role supports the <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant">aria-activedescendant</a> property,
             which provides an alternative to moving DOM focus among <code>option</code> elements when implementing keyboard navigation.
-            For details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            For details, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>
             In a single-select listbox, moving focus may optionally unselect the previously selected option and select the newly focused option.
             This model of selection is known as "selection follows focus".
             Having selection follow focus can be very helpful in some circumstances and can severely degrade accessibility in others.
-            For additional guidance, see <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>If selecting or unselecting all options is an important function, implementing separate controls for these actions, such as buttons for "Select All" and "Unselect All", significantly improves accessibility.</li>
           <li>
@@ -203,7 +202,7 @@ lang: en
               </li>
               <li>
                 Note that except in listboxes where selection follows focus, the selected state is distinct from focus.
-                For more details, see <a href="/fundamentals/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a> and <a href="/fundamentals/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+                For more details, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_vs_selection' | relative_url }}">this description of differences between focus and selection</a> and <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
               </li>
             </ul>
           </li>
@@ -245,9 +244,6 @@ lang: en
         </ol></div>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
 <script>
   var SkipToConfig = {
@@ -260,4 +256,6 @@ lang: en
     }
   };
 </script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>
