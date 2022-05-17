@@ -15,13 +15,13 @@ const getPracticesPage = (practices) => {
             .map((practice) => {
               return `
                 <li class="tile tile-${practice.slug}">
-                  <h2 class="tile-name">
-                    <a 
-                      href="{{ '/aria/apg/practices/${practice.slug}/' | relative_url }}"
-                    >
+                  <a 
+                    href="{{ '/aria/apg/practices/${practice.slug}/' | relative_url }}"
+                  >
+                    <h2 class="tile-name">
                       <span>${practice.name}</span>
-                    </a>
-                  </h2>
+                    </h2>
+                  </a>
                   <div class="tile-introduction">${practice.introduction}</div>
                 </li>
               `;

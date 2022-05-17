@@ -111,22 +111,6 @@ li.tile a {
   color: var(--wai-green);
 }
 
-li.tile a:hover {
-  text-decoration: underline;
-}
-
-li.tile a:focus {
-  display: flex;
-  align-items: flex-start;
-  outline-offset: 8px;
-  outline-color: #a8d2fa;
-  border-radius: 5px;
-}
-
-li.tile a:visited {
-  color: var(--wai-green);
-}
-
 li.tile img {
   float: left;
   margin-right: 1em;
