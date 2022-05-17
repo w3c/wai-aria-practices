@@ -1,0 +1,475 @@
+---
+# This is a generated file
+title: "Example Disclosure (Show/Hide) for Image Description"
+ref: /aria/apg/example-index/disclosure/disclosure-image-description
+
+github:
+  repository: w3c/aria-practices
+  branch: main
+  path: examples/disclosure/disclosure-image-description.html
+feedbackmail: public-aria-practices@w3.org
+permalink: /aria/apg/example-index/disclosure/disclosure-image-description
+
+sidebar: true
+
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: May 17, 2022</p>          </div>        "
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
+
+lang: en
+---
+<script src="../js/examples.js"></script>
+<script src="../js/highlight.pack.js"></script>
+<script src="../js/app.js"></script>
+
+<link href="css/disclosure-image-description.css" rel="stylesheet" />
+<script src="js/disclosure-button.js" type="text/javascript"></script>
+
+
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
+<!-- Code highlighting styles -->
+<link 
+  rel="stylesheet"
+  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+>
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+<div>
+
+            <h2>About This Example</h2>
+            <details id="support-notice" class="note">
+    <summary>Important Note About Use of This Example</summary>
+    <p>
+        Note: This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.
+    </p>
+    <ul>
+    <li>
+        There may be support gaps in some
+        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        Testing code based on this example with assistive technologies is essential before considering use in production systems.
+    </li>
+    <li>
+        The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a>
+        is developing measurements of assistive technology support for APG examples.
+    </li>
+    <li>
+        Robust accessibility can be further optimized by choosing implementation patterns that
+        <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
+        and heeding the warning that
+        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+    </li>
+    </ul>
+</details>
+          <img alt=""
+          src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
+          class="example-page-example-icon"
+        >
+  
+  <div>
+  
+  <p>
+    The following example demonstrates using the
+    <a href="{{ '/aria/apg/patterns/disclosure/' | relative_url }}">disclosure design pattern</a>
+    to provide a way of revealing a table of data that complements an image.
+  </p>
+  <p>Similar examples include:</p>
+  <ul>
+    <li>
+      <a href="disclosure-faq.html">Example Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a>
+    </li>
+    <li>
+      <a href="disclosure-navigation.html">Example Disclosure Navigation Menu</a>
+    </li>
+    <li><a href="disclosure-navigation-hybrid.html">Example Disclosure Navigation Menu with Top-Level Links</a></li>
+  </ul>
+  <section>
+    <div class="example-header">
+      <h2 id="ex_label">Example</h2>
+    </div>
+    <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
+    <div id="ex1">
+      <figure>
+        <img src="images/minard.png" alt="Charles Minard's 1869 chart showing the number of men in
+          Napoleon’s 1812 Russian campaign army, their movements, as well as the temperature they
+          encountered on the return path.">
+        <figcaption>
+          <p>
+            Figurative Map of the successive losses in men of the French Army in the Russian campaign 1812-1813.
+            Drawn by Mr. Minard, Inspector General of Bridges and Roads in retirement.
+            Paris, 20 November 1869.
+          </p>
+          <p>
+            The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones.
+            Red designates men moving into Russia, black those on retreat.
+          </p>
+          <p>
+            The information used for drawing the map were taken from the works of Messrs. Thiers, <span lang="fr">de Ségur, de Fezensac, de Chambray</span> and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
+          </p>
+          <p>
+            In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army.
+          </p>
+  <p><strong>Note: A French translation from Wikipedia.</strong></p>
+        <button type="button" aria-expanded="true" aria-controls="id_long_desc">
+          Data Table for Minard's Chart
+        </button>
+        <div class="long_desc" id="id_long_desc">
+          <h3 id="id_data_label">Data for Charles Minard's Chart of Napoleon's Invasion of Russia</h3>
+          <div class="table-wrap"><table aria-labelledby="id_data_label" class="data">
+            <thead>
+              <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Approximate Date</th>
+                <th scope="col">Size of Army</th>
+                <th scope="col">Temperature C</th>
+                <th scope="col">Temperature F</th>
+                <th scope="col">Direction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Kowno River</th>
+                <td>June 24th</td>
+                <td>442,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Wilna</th>
+                <td>June 30th</td>
+                <td>400,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Witebsk</th>
+                <td>na</td>
+                <td>175,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Smolensk</th>
+                <td>August 16th</td>
+                <td>145,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Chjat</th>
+                <td>na</td>
+                <td>127,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Mojaisk</th>
+                <td>September 7th</td>
+                <td>100,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Moscow</th>
+                <td>September 14th</td>
+                <td>100,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Advance</td>
+              </tr>
+              <tr>
+                <th scope="row">Malo-jarosewli</th>
+                <td>October 18th</td>
+                <td>96,000</td>
+                <td>0</td>
+                <td>32</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Mojaisk</th>
+                <td>October 24th</td>
+                <td>87,000</td>
+                <td>0</td>
+                <td>32</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Wirma</th>
+                <td>na</td>
+                <td>55,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Smolensk</th>
+                <td>November 14th</td>
+                <td>37,000</td>
+                <td>-26</td>
+                <td>-13</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Orscha</th>
+                <td>na</td>
+                <td>24,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Botr</th>
+                <td>na</td>
+                <td>20,000</td>
+                <td>-14</td>
+                <td>-7</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Studienska (reinforcements arrive)</th>
+                <td>December 1st</td>
+                <td>50,000</td>
+                <td>-25</td>
+                <td>-13</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Minsk</th>
+                <td>December 1st</td>
+                <td>28,000</td>
+                <td>-30</td>
+                <td>-22</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Moloderno</th>
+                <td>December 6th</td>
+                <td>28,000</td>
+                <td>-38</td>
+                <td>-34</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Smorgeni</th>
+                <td>December 7th</td>
+                <td>12,000</td>
+                <td>-33</td>
+                <td>-27</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Wilna</th>
+                <td>na</td>
+                <td>8,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Retreat</td>
+              </tr>
+              <tr>
+                <th scope="row">Kowno (reinforcements arrive)</th>
+                <td>December 14th</td>
+                <td>10,000</td>
+                <td>na</td>
+                <td>na</td>
+                <td>Retreat</td>
+              </tr>
+            </tbody>
+          </table></div>
+        </div>
+      </figcaption>
+      </figure>
+    </div>
+    <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
+  </section>
+
+  <section>
+    <h2>Accessibility Features</h2>
+    <ul>
+      <li>
+        To help people with visual impairments identify the disclosure as interactive and make it easier to perceive that clicking either the disclosure button or its label changes the expanded state, when a pointer hovers over the button or its label, the background color changes, a border appears, and the cursor changes to a pointer.
+      </li>
+      <li>
+        Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
+        Instead of using transparency, the focused element has a thicker border and less padding.
+        When an element receives focus, its border changes from 0 to 2 pixels and padding is reduced by 2 pixels.
+        When an element loses focus, its border changes from 2 pixels to 0 and padding is increased by 2 pixels.
+      </li>
+      <li>
+        To ensure the inline SVG arrow graphics in the CSS have sufficient contrast with the background when high contrast settings invert colors, the color of the arrows are synchronized with the color of the text content.
+        For example, the color of the arrow is set to match the foreground color of high contrast mode text by specifying the CSS <code>currentcolor</code> value for the <code>stroke</code> and <code>fill</code> properties of the <code>polygon</code> elements used to draw the arrows.
+        If specific colors were instead used to specify the <code>polygon</code> properties, those colors would remain the same in high contrast mode, which could lead to insufficient contrast between the arrows and the background or even make the arrows invisible if the color matched the high contrast mode background.<br>
+        Note: The SVG element needs to have the CSS <code>forced-color-adjust</code> property set to <code>auto</code> for the <code>currentcolor</code> value to be updated in high contrast mode.
+        Some browsers do not use <code>auto</code> for the default value.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="kbd_label">Keyboard Support</h2>
+    <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-test-id="key-tab">
+          <th>
+            <kbd>Tab</kbd>
+          </th>
+          <td>
+              Moves keyboard focus to the disclosure button.
+          </td>
+        </tr>
+        <tr data-test-id="key-space-or-enter">
+          <th>
+            <kbd>Space</kbd> or <br>
+            <kbd>Enter</kbd>
+          </th>
+          <td>
+              Activates the disclosure button,
+              which toggles the visibility of the long description.
+          </td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
+    <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
+      <thead>
+        <tr>
+          <th scope="col">Role</th>
+          <th scope="col">Attribute</th>
+          <th scope="col">Element</th>
+          <th scope="col">Usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-test-id="aria-controls">
+          <td></td>
+          <th scope="row">
+            <code>aria-controls="ID_REFERENCE"</code>
+          </th>
+          <td><code>button</code></td>
+          <td>Identifies the element controlled by the disclosure button.</td>
+        </tr>
+        <tr data-test-id="aria-expanded">
+          <td></td>
+          <th scope="row">
+            <code>aria-expanded="false"</code>
+          </th>
+          <td>
+            <code>button</code>
+          </td>
+          <td>
+            <ul>
+              <li>
+                Indicates that the container controlled by the disclosure button is <em>hidden </em>.
+              </li>
+              <li>
+                CSS attribute selectors (e.g. <code>[aria-expanded="false"]</code>)
+                synchronize the visual states with the value of the <code>aria-expanded</code>
+                attribute.
+              </li>
+              <li>
+                The visual indicator of the show/hide state is created using the CSS <code>:before</code> pseudo element and the <code>content</code> property
+                so the image is reliably rendered in high contrast mode of operating systems and browsers.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr data-test-id="aria-expanded">
+          <td></td>
+          <th scope="row">
+            <code>aria-expanded="true"</code>
+          </th>
+          <td>
+            <code>button</code>
+          </td>
+          <td>
+          <ul>
+              <li>
+                Indicates that the container controlled by the disclosure button is <em>visible</em>.
+              </li>
+              <li>
+                CSS attribute selectors (e.g. <code>[aria-expanded="true"]</code>)
+                synchronize the visual states with the value of the <code>aria-expanded</code>
+                attribute.
+              </li>
+              <li>
+                The visual indicator of the show/hide state is created using the CSS <code>:before</code> pseudo element and the <code>content</code> property
+                so the image is reliably rendered in high contrast mode of operating systems and browsers.
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Javascript and CSS Source Code</h2>
+    <ul id="css_js_files">
+      <li>
+        CSS:
+        <a href="css/disclosure-image-description.css" type="tex/css">disclosure-img-long-description.css</a>
+      </li>
+      <li>
+        Javascript:
+        <a href="js/disclosure-button.js" type="text/javascript">disclosureButton.js</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="sc1_label">HTML Source Code</h2>
+    <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label"
+      aria-label="Start of"
+    ></div>
+    <pre><code id="sc1"></code></pre>
+    <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label"
+      aria-label="End of"
+    ></div>
+
+    <script>
+      sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');
+      sourceCode.make();
+    </script>
+  </section>
+  </div>
+  
+
+</div>
+<script>
+  var SkipToConfig = {
+    settings: {
+      skipTo: {
+        displayOption: 'popup',
+        attachElement: '#site-header',
+        colorTheme: 'aria'
+      }
+    }
+  };
+</script>
+<script 
+  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+></script>
