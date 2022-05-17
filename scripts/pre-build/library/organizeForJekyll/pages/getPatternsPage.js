@@ -22,17 +22,17 @@ const getPatternsPage = (patterns) => {
                 // This pattern is not like the others and needs separate handling
                 return `
                   <li class="tile tile-landmarks">
-                    <h2 class="tile-name">
-                      <a 
-                        href="{{ '/aria/apg/example-index/landmarks/index.html' | relative_url }}"
-                      >
+                    <a 
+                      href="{{ '/aria/apg/example-index/landmarks/index.html' | relative_url }}"
+                    >
+                      <h2 class="tile-name">
                         <img 
                           src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
                           alt=""
                         >
                         <span>Landmarks</span>
-                      </a>
-                    </h2>
+                      </h2>
+                    </a>
                     <div class="tile-introduction">
                       Landmarks provide a powerful way to identify the 
                       organization and structure of a web page.
@@ -43,15 +43,15 @@ const getPatternsPage = (patterns) => {
 
               return `
                 <li class="tile tile-${pattern.slug}">
-                  <h2 class="tile-name">
-                    <a href="{{ '${pattern.permalink}' | relative_url }}">
+                  <a href="{{ '${pattern.permalink}' | relative_url }}">
+                    <h2 class="tile-name">
                       <img 
                         src="{{ '/content-images/wai-aria-practices/img/${pattern.slug}.svg' | relative_url }}" 
                         alt=""
                       >
                       <span>${pattern.name}</span>
-                    </a>
-                  </h2>
+                    </h2>
+                  </a>
                   <div class="tile-introduction">${pattern.introduction}</div>
                 </li>
               `;

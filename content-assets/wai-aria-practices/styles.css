@@ -98,7 +98,6 @@ li.tile {
   align-self: stretch;
   list-style: none;
   margin: 0;
-  display: inline-block;
   padding: 2em 2em 0;
   background: #ffffff;
   height: 100%;
@@ -107,6 +106,7 @@ li.tile {
 }
 
 li.tile a {
+  display: block;
   text-decoration: none;
   color: var(--wai-green);
 }
@@ -116,8 +116,6 @@ li.tile a:hover {
 }
 
 li.tile a:focus {
-  display: flex;
-  align-items: flex-start;
   outline-offset: 8px;
   outline-color: #a8d2fa;
   border-radius: 5px;
@@ -127,14 +125,14 @@ li.tile a:visited {
   color: var(--wai-green);
 }
 
-li.tile img {
-  float: left;
-  margin-right: 1em;
-}
-
 li.tile h2.tile-name {
   margin: 0;
   border: none;
+  display: flex;
+}
+
+li.tile img {
+  margin-right: 1em;
 }
 
 li.tile .tile-introduction {
