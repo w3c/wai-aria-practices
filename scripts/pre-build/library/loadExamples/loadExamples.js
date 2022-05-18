@@ -142,7 +142,7 @@ const getLastModifiedDate = async (exampleFilePath) => {
   });
   let dateFormatted;
   try {
-    dateFormatted = format(new Date(output), "MMMM d, y");
+    dateFormatted = format(new Date(output), "d MMMM y");
   } catch (error) {
     console.error(
       `Failed to extract a last-modified date for the file "${exampleFilePath}"`
