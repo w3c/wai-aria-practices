@@ -60,7 +60,30 @@ const loadExamples = async () => {
     })
   );
 
-  await editAppJs({ destinationExamplesPath });
+  await editFile(path.join(destinationExamplesPath, "js", "app.js"), [
+    {
+      previousText:
+        "window.addEventListener('DOMContentLoaded', addSupportNotice, false);",
+      replacementText:
+        "// window.addEventListener('DOMContentLoaded', addSupportNotice, false);" +
+        "// Line edited by pre-build script",
+    },
+    {
+      previousText: "let ref = window.location.href.split('examples')[0];",
+      replacementText:
+        "return; // Line added by pre-build script\n" +
+        "  let ref = window.location.href.split('examples')[0];",
+    },
+  ]);
+
+  await editFile(path.join(destinationExamplesPath, "js", "jumpto.js"), [
+    {
+      previousText: "displayOption: 'static',",
+      replacementText:
+        "displayOption: 'popup', // Line edited by pre-build script",
+    },
+  ]);
+
   const getNotice = await loadGetNotice({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {
@@ -92,42 +115,25 @@ const loadExamples = async () => {
   await fs.writeFile(indexDestinationPath, indexContent, { encoding: "utf8" });
 };
 
-const editAppJs = async ({ destinationExamplesPath }) => {
-  const appJsPath = path.join(destinationExamplesPath, "js", "app.js");
-  const appJsContent = await fs.readFile(appJsPath, { encoding: "utf8" });
+const editFile = async (path, replacements) => {
+  let content = await fs.readFile(path, { encoding: "utf8" });
 
-  const lineToEdit =
-    "window.addEventListener('DOMContentLoaded', addSupportNotice, false);";
-  const lineToEditStartIndex = appJsContent.indexOf(lineToEdit);
-  if (!(lineToEditStartIndex > 0)) {
-    throw new Error(
-      "app.js has diverged from a known state and the pre-build script must " +
-        "be updated"
-    );
-  }
-  const lineToEditEndIndex = lineToEditStartIndex + lineToEdit.length;
-  const newContent =
-    appJsContent.substr(0, lineToEditStartIndex) +
-    "// window.addEventListener('DOMContentLoaded', addSupportNotice, false);" +
-    "// Line edited by pre-build script" +
-    appJsContent.substr(lineToEditEndIndex);
+  replacements.forEach(({ previousText, replacementText }) => {
+    const previousTextStartIndex = content.indexOf(previousText);
+    if (!(previousTextStartIndex > 0)) {
+      throw new Error(
+        "app.js has diverged from a known state and the pre-build script must " +
+          "be updated"
+      );
+    }
+    const previousTextEndIndex = previousTextStartIndex + previousText.length;
+    content =
+      content.substr(0, previousTextStartIndex) +
+      replacementText +
+      content.substr(previousTextEndIndex);
+  });
 
-  const lineToEdit2 = "let ref = window.location.href.split('examples')[0];";
-  const lineToEdit2StartIndex = newContent.indexOf(lineToEdit2);
-  if (!(lineToEdit2StartIndex > 0)) {
-    throw new Error(
-      "app.js has diverged from a known state and the pre-build script must " +
-        "be updated"
-    );
-  }
-  const lineToEdit2EndIndex = lineToEdit2StartIndex + lineToEdit2.length;
-  const newContent2 =
-    newContent.substr(0, lineToEdit2StartIndex) +
-    "return; // Line added by pre-build script\n" +
-    "  let ref = window.location.href.split('examples')[0];" +
-    newContent.substr(lineToEdit2EndIndex);
-
-  await fs.writeFile(appJsPath, newContent2);
+  await fs.writeFile(path, content);
 };
 
 const getLastModifiedDate = async (exampleFilePath) => {

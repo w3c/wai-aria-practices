@@ -36,7 +36,7 @@
       // Customization of button and menu
       altAccesskey: '0', // default is the number zero
       optionAccesskey: 'º', // default is the character associated with option+0
-      displayOption: 'static', // options: static (default), popup
+      displayOption: 'popup', // Line edited by pre-build script // options: static (default), popup
       // container element, use containerClass for custom styling
       containerElement: 'div',
       containerRole: '',

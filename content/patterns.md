@@ -449,18 +449,6 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
         </ul>
       
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<!-- <script src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"> -->
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>
