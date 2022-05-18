@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/dialog-modal/datepicker-dialog
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>            <p>Page last updated: 10 February 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>            <p>Page last updated: 18 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -562,7 +562,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </td>
           </tr>
           <tr data-test-id="change-date-aria-live">
-            <th></th>
+            <td></td>
             <th scope="row"><code>aria-live="polite"</code></th>
             <td>
               <code>h2</code>
@@ -575,7 +575,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </td>
           </tr>
           <tr data-test-id="dialog-aria-live">
-            <th></th>
+            <td></td>
             <th scope="row"><code>aria-live="polite"</code></th>
             <td><code>div</code></td>
             <td>

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/switch/switch-button
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>            <p>Page last updated: 23 November 2021</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -149,10 +149,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </ul>
         </li>
         <li>
-          To ensure the SVG graphics have sufficient contrast with the background when high contrast settings invert colors, the CSS <code>currentColor</code> value for the <code>stroke</code> and <code>fill</code> properties is used to synchronize the colors with text content.
+          To ensure the SVG graphics have sufficient contrast with the background when high contrast settings invert colors, the CSS <code>currentcolor</code> value for the <code>stroke</code> and <code>fill</code> properties is used to synchronize the colors with text content.
           If specific colors were used to specify the <code>stroke</code> and <code>fill</code> properties, the color of these elements would remain the same in high contrast mode, which could lead to insufficient contrast between them and their background or even make them invisible if their color were to match the high contrast mode background.
           The <code>fill-opacity</code> of the container <code>rect</code> is set to zero for the background color of the page to provide the contrasting color to the <code>stroke</code> and <code>fill</code> colors.
-          <br>NOTE: The SVG elements need to set the CSS <code>forced-color-adjust</code> property to <code>auto</code> for some browsers to support the <code>currentColor</code> value.
+          <br>NOTE: The SVG elements need to set the CSS <code>forced-color-adjust</code> property to <code>auto</code> for some browsers to support the <code>currentcolor</code> value.
         </li>
       </ul>
     </section>

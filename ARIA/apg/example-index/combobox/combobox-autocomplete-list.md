@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/combobox/combobox-autocomplete-list
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>            <p>Page last updated: 10 February 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -110,7 +110,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               aria-expanded="false" aria-controls="cb1-listbox">
             <button id="cb1-button" tabindex="-1" aria-label="States" aria-expanded="false" aria-controls="cb1-listbox">
               <svg width="18" height="16" aria-hidden="true" focusable="false" style="forced-color-adjust: auto">
-                <polygon class="arrow" stroke-width="0" fill-opacity="0.75" fill="currentColor" points="3,6 15,6 9,14"></polygon>
+                <polygon class="arrow" stroke-width="0" fill-opacity="0.75" fill="currentcolor" points="3,6 15,6 9,14"></polygon>
               </svg>
             </button>
           </div>
@@ -202,7 +202,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
         <li>
           To ensure the inline SVG graphic used for the arrow in the open button has sufficient contrast with the background when high contrast settings change the color of text content,
-          CSS <code>forced-color-adjust</code> is set to <code>auto</code> on the <code>svg</code> element and and the <code>fill</code> attribute of the <code>polygon</code> element is set to <code>currentColor</code>.
+          CSS <code>forced-color-adjust</code> is set to <code>auto</code> on the <code>svg</code> element and and the <code>fill</code> attribute of the <code>polygon</code> element is set to <code>currentcolor</code>.
           This causes the colors of the <code>fill</code> of the polygon elements to be overridden by the high contrast color setting.
           If <code>forced-color-adjust</code> were not used to override the colors specified for the <code>fill</code> property, the color would remain the same in high contrast mode, which could lead to insufficient contrast between the arrow and the background or even make it invisible if the color matched the high contrast mode background.<br>
           Note: The explicit setting of <code>forced-color-adjust</code> is necessary because some browsers do not use <code>auto</code> as the default value for SVG graphics.

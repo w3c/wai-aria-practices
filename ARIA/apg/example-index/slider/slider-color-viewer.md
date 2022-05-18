@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/slider/slider-color-viewer
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: 23 November 2021</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -192,9 +192,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <li>The placement of the slider value above the thumb makes it easier for users with low vision   to see the current value while dragging the thumb.</li>
         <li>To highlight the interactive nature of the thumb, the focus ring is drawn around the thumb and the value.</li>
         <li>
-          To ensure the borders of the slider rail, thumb and focus ring have sufficient contrast with the background when high contrast settings invert colors, the CSS <code>currentColor</code> value for the <code>stroke</code> property is used for the SVG <code>rect</code> elements to synchronize the border color with text content.
+          To ensure the borders of the slider rail, thumb and focus ring have sufficient contrast with the background when high contrast settings invert colors, the CSS <code>currentcolor</code> value for the <code>stroke</code> property is used for the SVG <code>rect</code> elements to synchronize the border color with text content.
           If specific colors were used to specify the <code>stroke</code> property, the color of these elements would remain the same in high contrast mode, which could lead to insufficient contrast between them and their background or even make them invisible if their color were to match the high contrast mode background.
-          NOTE: The SVG elements need to be inline to use <code>currentColor</code>.
+          NOTE: The SVG elements need to be inline to use <code>currentcolor</code>.
                   </li>
       </ul>
     </section>

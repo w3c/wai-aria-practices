@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/menu-button/menu-button-links
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>            <p>Page last updated: 23 November 2021</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -167,7 +167,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </li>
               <li>Because background color and text color styles can be overridden by operating system high contrast settings, a border is used to ensure the button has a visible boundary when high contrast mode is enabled.</li>
               <li>
-                To ensure the arrow icons used to indicate the expanded or collapsed state have sufficient contrast with the background when high contrast settings invert colors, the CSS <code>currentColor</code> value for the <code>fill</code> and <code>stroke</code> properties of the SVG <code>polygon</code> element is used to synchronize the color with text content.
+                To ensure the arrow icons used to indicate the expanded or collapsed state have sufficient contrast with the background when high contrast settings invert colors, the CSS <code>currentcolor</code> value for the <code>fill</code> and <code>stroke</code> properties of the SVG <code>polygon</code> element is used to synchronize the color with text content.
                 If specific colors are used to specify the <code>fill</code> and <code>stroke</code> properties, these colors will remain the same in high contrast mode, which could lead to insufficient contrast between the icon and the background or even make the icon invisible if its color matches the high contrast mode background.
               </li>
             </ul>

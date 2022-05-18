@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/meter/meter
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/30'>View issues related to this example</a></p>            <p>Page last updated: 10 February 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/30'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -101,7 +101,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
       <div role="meter" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-labelledby="cpu_usage_label">
         <svg width="100" height="100" class="fill" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="0" width="100%" height="100%" fill="currentColor" ></rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="currentcolor" ></rect>
         </svg>
       </div>
     </div>
