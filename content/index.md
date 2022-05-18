@@ -130,7 +130,10 @@ lang: en
       </div>
       <div class="work-grid-pattern grid-pattern"></div>
     </div>
-    <div class="off-white-section">
+    <div 
+      class="off-white-section" 
+      style="display: none; /* temporarily hidden because the linked resources are not yet polished */"
+    >
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>Current Work</h2>
