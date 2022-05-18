@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Breadcrumb"
-ref: /aria/apg/patterns/breadcrumb/
+ref: /ARIA/apg/patterns/breadcrumb/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/breadcrumb/
+permalink: /ARIA/apg/patterns/breadcrumb/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -73,5 +73,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Alert and Message Dialogs"
-ref: /aria/apg/patterns/alertdialog/
+ref: /ARIA/apg/patterns/alertdialog/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/alertdialog/
+permalink: /ARIA/apg/patterns/alertdialog/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -42,7 +42,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <section class="widget" id="alertdialog"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
-        An alert dialog  is a <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
+        An alert dialog  is a <a href="{{ '/ARIA/apg/patterns/dialogmodal/' | relative_url }}">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
         Examples include action confirmation prompts and error message confirmations.
         The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role
         enables assistive technologies and browsers to distinguish alert dialogs from other dialogs
@@ -58,7 +58,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-1" tabindex="-1">Keyboard Interaction</h2></div>
         
-        <p>See the keyboard interaction section for the <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">modal dialog pattern</a>.</p>
+        <p>See the keyboard interaction section for the <a href="{{ '/ARIA/apg/patterns/dialogmodal/' | relative_url }}">modal dialog pattern</a>.</p>
       </section>
       <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-1" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
           
@@ -94,5 +94,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

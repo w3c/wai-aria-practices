@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Example of Tabs with Automatic Activation"
-ref: /aria/apg/example-index/tabs/tabs-automatic
+ref: /ARIA/apg/example-index/tabs/tabs-automatic
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/tabs/tabs-automatic.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/tabs/tabs-automatic
+permalink: /ARIA/apg/example-index/tabs/tabs-automatic
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -79,10 +79,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <div>
       
       <p>
-          This example section demonstrates a tabs widget that implements the  <a href="{{ '/aria/apg/patterns/tabpanel/' | relative_url }}">design pattern for tabs</a>.
+          This example section demonstrates a tabs widget that implements the  <a href="{{ '/ARIA/apg/patterns/tabpanel/' | relative_url }}">design pattern for tabs</a>.
           In this example,  a tab is automatically activated and its associated panel is displayed when the tab receives focus.
           It is recommended that authors consider implementing automatic activation of tabs <strong>only in</strong> circumstances where panels can be displayed instantly, i.e., all panel content is present in the DOM.
-          For additional guidance, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
+          For additional guidance, see <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_selection_follows_focus' | relative_url }}">Deciding When to Make Selection Automatically Follow Focus</a>.
       </p>
       <p>Similar examples include: </p>
       <ul>
@@ -337,7 +337,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Removes the element from the page <kbd>Tab</kbd> sequence.</li>
                   <li>Set when a tab is not selected so that only the selected tab is in the page <kbd>Tab</kbd> sequence.</li>
                   <li>Since an HTML <code>button</code> element is used for the tab, it is not necessary to set <code>tabindex="0"</code> on the selected (active) tab element.</li>
-                  <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+                  <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
                 </ul>
               </td>
             </tr>
@@ -430,5 +430,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

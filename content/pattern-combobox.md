@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Combobox"
-ref: /aria/apg/patterns/combobox/
+ref: /ARIA/apg/patterns/combobox/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/combobox/
+permalink: /ARIA/apg/patterns/combobox/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -44,10 +44,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         A <a href="https://w3c.github.io/aria/#combobox" class="role-reference">combobox</a> is an input widget with an associated popup that enables users to select a value for the combobox from a collection of possible values.
         In some implementations, the popup presents allowed values, while in other implementations, the popup presents suggested values, and users may either select one of the suggestions or type a value.
-        The popup may be a <a href="{{ '/aria/apg/patterns/listbox/' | relative_url }}">listbox</a>,
-        <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid</a>,
-        <a href="{{ '/aria/apg/patterns/treeview/' | relative_url }}">tree</a>, or
-        <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">dialog.</a>
+        The popup may be a <a href="{{ '/ARIA/apg/patterns/listbox/' | relative_url }}">listbox</a>,
+        <a href="{{ '/ARIA/apg/patterns/grid/' | relative_url }}">grid</a>,
+        <a href="{{ '/ARIA/apg/patterns/treeview/' | relative_url }}">tree</a>, or
+        <a href="{{ '/ARIA/apg/patterns/dialogmodal/' | relative_url }}">dialog.</a>
         Many implementations also include a third optional element -- a graphical <q>Open</q> button adjacent to the combobox, which indicates availability of the popup.
         Activating the <q>Open</q> button displays the popup if suggestions are available.
       </p>
@@ -107,7 +107,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         the popup may close and, if present, the inline completion string disappears.
       </p>
       <p>
-        Two other widgets that are also visually compact and enable users to make a single choice from a set of discrete choices are <a href="{{ '/aria/apg/patterns/listbox/' | relative_url }}">listbox</a> and <a href="{{ '/aria/apg/patterns/menubutton/' | relative_url }}">menu button</a>.
+        Two other widgets that are also visually compact and enable users to make a single choice from a set of discrete choices are <a href="{{ '/ARIA/apg/patterns/listbox/' | relative_url }}">listbox</a> and <a href="{{ '/ARIA/apg/patterns/menubutton/' | relative_url }}">menu button</a>.
         One feature that distinguishes combobox from both listbox and menu button is that the user's choice can be presented as a value in an editable field, which gives users the ability to select some or all of the value for copying to the clipboard.
         Comboboxes and menu buttons can be implemented so users can explore the set of allowed choices without losing a previously made choice.
         That is, users can navigate the set of available choices in a combobox popup or menu and then press <kbd>escape</kbd>, which closes the popup or menu without changing previous input.
@@ -203,7 +203,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><kbd>Delete</kbd> (Optional): If the combobox is editable, returns focus to the combobox, removes the selected state if a suggestion was selected, and removes the inline autocomplete string if present.</li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant.</a></li>
+          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant.</a></li>
           <li>Selection follows focus in the listbox; the listbox allows only one suggested value to be selected at a time for the combobox value.</li>
         </ol></div>
         </section><section><div class="header-wrapper"><h3 id="grid-popup-keyboard-interaction">Grid Popup Keyboard Interaction</h3></div>
@@ -259,7 +259,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><kbd>Delete</kbd> (Optional): If the combobox is editable, returns focus to the combobox, removes the selected state if a suggestion was selected, and removes the inline autocomplete string if present.</li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="5"><span>Note</span></div><ol class="">
-          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant.</a></li>
+          <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant.</a></li>
           <li>The grid allows only one suggested value to be selected at a time for the combobox value.</li>
           <li>In a grid popup, each suggested value may be represented by either a single cell or an entire row. This aspect of design effects focus and selection movement:
             <ol>
@@ -315,7 +315,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Note</span></div><ol class="">
-        <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant.</a></li>
+        <li>DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Managing Focus in Composites Using aria-activedescendant.</a></li>
         <li>The tree allows only one suggested value to be selected at a time for the combobox value.</li>
           <li>
             In a tree popup, some or all parent nodes may not be selectable values; they may serve as category labels for suggested values.
@@ -345,7 +345,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </li>
             </ol>
           </li>
-          <li>The dialog implements the keyboard interaction defined in the <a href="{{ '/aria/apg/patterns/dialogmodal/' | relative_url }}">modal dialog pattern.</a></li>
+          <li>The dialog implements the keyboard interaction defined in the <a href="{{ '/ARIA/apg/patterns/dialogmodal/' | relative_url }}">modal dialog pattern.</a></li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Note</span></div><p class="">
           Unlike other combobox popups, dialogs do not support <code>aria-activedescendant</code> so DOM focus moves into the dialog from the combobox.
@@ -400,10 +400,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li>When referring to the roles, states, and properties documentation for the below list of patterns used for popups, keep in mind that a combobox is a single-select widget where selection follows focus in the popup.</li>
             <li>The roles, states, and properties for popup elements are defined in their respective design patterns:
               <ul>
-                <li><a href="{{ '/aria/apg/patterns/listbox/#listbox_roles_states_props' | relative_url }}">Listbox Roles, States, and Properties</a></li>
-                <li><a href="{{ '/aria/apg/patterns/grid/#grid_roles_states_props' | relative_url }}">Grid Roles, States, and Properties</a></li>
-                <li><a href="{{ '/aria/apg/patterns/treeview/#tree_roles_states_props' | relative_url }}">Tree Roles, States, and Properties</a></li>
-                <li><a href="{{ '/aria/apg/patterns/dialogmodal/#dialog_roles_states_props' | relative_url }}">Dialog Roles, States, and Properties</a></li>
+                <li><a href="{{ '/ARIA/apg/patterns/listbox/#listbox_roles_states_props' | relative_url }}">Listbox Roles, States, and Properties</a></li>
+                <li><a href="{{ '/ARIA/apg/patterns/grid/#grid_roles_states_props' | relative_url }}">Grid Roles, States, and Properties</a></li>
+                <li><a href="{{ '/ARIA/apg/patterns/treeview/#tree_roles_states_props' | relative_url }}">Tree Roles, States, and Properties</a></li>
+                <li><a href="{{ '/ARIA/apg/patterns/dialogmodal/#dialog_roles_states_props' | relative_url }}">Dialog Roles, States, and Properties</a></li>
               </ul>
             </li>
           </ol>
@@ -412,5 +412,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

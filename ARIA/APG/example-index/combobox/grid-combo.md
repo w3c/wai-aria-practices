@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Editable Combobox with Grid Popup Example"
-ref: /aria/apg/example-index/combobox/grid-combo
+ref: /ARIA/apg/example-index/combobox/grid-combo
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/combobox/grid-combo.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/combobox/grid-combo
+permalink: /ARIA/apg/example-index/combobox/grid-combo
 
 sidebar: true
 
@@ -36,7 +36,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -57,8 +57,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -82,7 +82,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
     <p>
       The following example combobox implements the
-      <a href="{{ '/aria/apg/patterns/combobox/' | relative_url }}">combobox design pattern</a>
+      <a href="{{ '/ARIA/apg/patterns/combobox/' | relative_url }}">combobox design pattern</a>
       using a grid for the suggested values popup.
     </p>
     <p>
@@ -143,7 +143,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
       The example combobox on this page implements the following keyboard interface.
         Other variations and options for the keyboard interface are described in the
-        <a href="{{ '/aria/apg/patterns/combobox/#keyboard-interaction-6' | relative_url }}">Keyboard Interaction section of the combobox design pattern.</a>
+        <a href="{{ '/ARIA/apg/patterns/combobox/#keyboard-interaction-6' | relative_url }}">Keyboard Interaction section of the combobox design pattern.</a>
       </p>
       <h3 id="kbd_label_textbox">Textbox</h3>
       <div class="table-wrap"><table aria-labelledby="kbd_label_textbox kbd_label" class="def">
@@ -187,7 +187,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <strong>NOTE:</strong> When visual focus is in the grid, DOM focus remains on the textbox and the value of <code>aria-activedescendant</code> on the textbox is set to a value that refers to an element in the grid that is visually indicated as focused.
           Where the following descriptions of keyboard commands mention focus, they are referring to the visual focus indicator.
           For more information about this focus management technique, see
-          <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+          <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
         </p>
       <div class="table-wrap"><table aria-labelledby="kbd_label_popup kbd_label" class="def">
         <thead>
@@ -282,7 +282,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The example comboboxes on this page implement the following ARIA roles, states, and properties.
         Information about other ways of applying ARIA roles, states, and properties is available in the
-        <a href="{{ '/aria/apg/patterns/combobox/#wai-aria-roles-states-and-properties-6' | relative_url }}">Roles, States, and Properties section of the combobox design pattern.</a>
+        <a href="{{ '/ARIA/apg/patterns/combobox/#wai-aria-roles-states-and-properties-6' | relative_url }}">Roles, States, and Properties section of the combobox design pattern.</a>
       </p>
       <h3 id="rps_label_textbox">Textbox</h3>
       <div class="table-wrap"><table aria-labelledby="rps_label_textbox rps_label" class="data attributes">
@@ -369,7 +369,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>input</code> element.</li>
                 <li>
                   For more information about this focus management technique, see
-                  <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+                  <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
                 </li>
               </ul>
             </td>
@@ -459,5 +459,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

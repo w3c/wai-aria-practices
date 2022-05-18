@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Color Viewer Slider Example"
-ref: /aria/apg/example-index/slider/slider-color-viewer
+ref: /ARIA/apg/example-index/slider/slider-color-viewer
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/slider/slider-color-viewer.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/slider/slider-color-viewer
+permalink: /ARIA/apg/example-index/slider/slider-color-viewer
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -88,7 +88,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         >
    <p>
       Following is an example of a color viewer that demonstrates the
-      <a href="{{ '/aria/apg/patterns/slider/' | relative_url }}">slider design pattern.</a>
+      <a href="{{ '/ARIA/apg/patterns/slider/' | relative_url }}">slider design pattern.</a>
       Change the background of the color view box by adjusting the sliders for red, green, and blue values.
       The HEX and RGB values of the chosen color are displayed by the color view box.
     </p>
@@ -374,5 +374,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

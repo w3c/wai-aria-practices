@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Read Me First"
-ref: /aria/apg/practices/read-me-first/
+ref: /ARIA/apg/practices/read-me-first/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/practices/read-me-first/
+permalink: /ARIA/apg/practices/read-me-first/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -126,5 +126,5 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
   </section>
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Communicating Value and Limits for Range Widgets"
-ref: /aria/apg/practices/range-related-properties/
+ref: /ARIA/apg/practices/range-related-properties/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/practices/range-related-properties/
+permalink: /ARIA/apg/practices/range-related-properties/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -201,7 +201,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for elements with role <code>meter</code> if the meter's minimum value is not 0 or its maximum value is not 100.
         It is necessary, however, to always specify a value for <code>aria-valuenow</code> and to ensure the value is greater than or equal to the minimum allowed value and less than or equal to the maximum allowed value.
-        A detailed description of the <code>meter</code> role is in the <a href="{{ '/aria/apg/patterns/meter/' | relative_url }}">meter design pattern</a>.</p>
+        A detailed description of the <code>meter</code> role is in the <a href="{{ '/ARIA/apg/patterns/meter/' | relative_url }}">meter design pattern</a>.</p>
 
       <p>This example of a meter shows the current Central Processing Unit (CPU) usage. </p>
 
@@ -291,7 +291,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The <code>aria-valuemin</code> and <code>aria-valuemax</code> properties only need to be set for the <code>slider</code> role when the slider's minimum is not 0 or the maximum value is not 100.
         The <code>aria-valuenow</code> property is required for <code>slider</code> role and the author needs to make sure it is within the minimum and maximum values.
-        A detailed description of the <code>slider</code> role can be found in the <a href="{{ '/aria/apg/patterns/slider/' | relative_url }}">slider design pattern</a> and <a href="{{ '/aria/apg/patterns/slidertwothumb/' | relative_url }}">slider (multi-thumb) design pattern</a>.
+        A detailed description of the <code>slider</code> role can be found in the <a href="{{ '/ARIA/apg/patterns/slider/' | relative_url }}">slider design pattern</a> and <a href="{{ '/ARIA/apg/patterns/slidertwothumb/' | relative_url }}">slider (multi-thumb) design pattern</a>.
       </p>
       <p>
         The following example shows a temperature controller.
@@ -325,7 +325,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Similarly, the <code>aria-valuenow</code> property is set only when a <code>spinbutton</code> has a value.
         If it is not set, a value is not exposed to assistive technologies for the <code>spinbutton</code>.
         <code>aria-valuetext</code> can be used when appropriate.
-        A detailed description of the <code>spinbutton</code> role can be found in the <a href="{{ '/aria/apg/patterns/spinbutton/' | relative_url }}">spinbutton design pattern</a>.
+        A detailed description of the <code>spinbutton</code> role can be found in the <a href="{{ '/ARIA/apg/patterns/spinbutton/' | relative_url }}">spinbutton design pattern</a>.
       </p>
 
       <p>The following example sets the price of paperclips in cents.</p>
@@ -353,5 +353,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

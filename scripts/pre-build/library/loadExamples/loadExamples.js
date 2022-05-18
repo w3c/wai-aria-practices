@@ -15,7 +15,7 @@ const loadExamples = async () => {
 
   const destinationExamplesPath = path.resolve(
     __dirname,
-    "../../../../aria/apg/example-index"
+    "../../../../ARIA/apg/example-index"
   );
 
   const exampleDirectories = (await fs.readdir(examplesPath)).filter((item) => {

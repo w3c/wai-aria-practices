@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Auto-Rotating Image Carousel with Tabs for Slide Control Example"
-ref: /aria/apg/example-index/carousel/carousel-2-tablist
+ref: /ARIA/apg/example-index/carousel/carousel-2-tablist
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/carousel/carousel-2-tablist.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/carousel/carousel-2-tablist
+permalink: /ARIA/apg/example-index/carousel/carousel-2-tablist
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -80,10 +80,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         The following example implementation of the
-        <a href="{{ '/aria/apg/patterns/carousel/' | relative_url }}">carousel design pattern</a>
+        <a href="{{ '/ARIA/apg/patterns/carousel/' | relative_url }}">carousel design pattern</a>
         demonstrates features of the pattern that are essential to accessibility for carousels that automatically start rotating when the page loads.
         This example also illustrates how to use the
-        <a href="{{ '/aria/apg/patterns/tabpanel/' | relative_url }}">tabs pattern</a>
+        <a href="{{ '/ARIA/apg/patterns/tabpanel/' | relative_url }}">tabs pattern</a>
         to provide users with a way to skip slides in the sequence by directly choosing which one to view.
          Navigation among slides is provided by a series of circular buttons that function as tabs and are rendered over the rotating slides.
         Automatic rotation stops when users move focus to any control or link in the carousel or hover the mouse over carousel content.
@@ -756,7 +756,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     <li>Removes the element from the page <kbd>Tab</kbd> sequence.</li>
                     <li>Set when a tab is not selected so that only the selected tab is in the page <kbd>Tab</kbd> sequence.</li>
                     <li>Since the tab element is an HTML <code>button</code>, the tabindex attribute is removed when a tab is selected (activated) rather than setting <code>tabindex="0"</code>.</li>
-                    <li>This approach to managing focus is described in the section on <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
+                    <li>This approach to managing focus is described in the section on <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.</li>
                   </ul>
                 </td>
               </tr>
@@ -848,5 +848,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

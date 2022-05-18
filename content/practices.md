@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Practices"
-ref: /aria/apg/practices/
+ref: /ARIA/apg/practices/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/practices/
+permalink: /ARIA/apg/practices/
 
 sidebar: false
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <div>
@@ -38,7 +38,7 @@ lang: en
           
                 <li class="tile tile-landmark-regions">
                   <a 
-                    href="{{ '/aria/apg/practices/landmark-regions/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/landmark-regions/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Landmark Regions</span>
@@ -50,7 +50,7 @@ lang: en
                
                 <li class="tile tile-names-and-descriptions">
                   <a 
-                    href="{{ '/aria/apg/practices/names-and-descriptions/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/names-and-descriptions/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Providing Accessible Names and Descriptions</span>
@@ -62,7 +62,7 @@ lang: en
                
                 <li class="tile tile-keyboard-interface">
                   <a 
-                    href="{{ '/aria/apg/practices/keyboard-interface/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/keyboard-interface/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Developing a Keyboard Interface</span>
@@ -74,7 +74,7 @@ lang: en
                
                 <li class="tile tile-grid-and-table-properties">
                   <a 
-                    href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/grid-and-table-properties/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Grid and Table Properties</span>
@@ -86,7 +86,7 @@ To fully present and describe a grid or table, in addition to parsing the header
                
                 <li class="tile tile-range-related-properties">
                   <a 
-                    href="{{ '/aria/apg/practices/range-related-properties/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/range-related-properties/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Communicating Value and Limits for Range Widgets</span>
@@ -98,7 +98,7 @@ To fully present and describe a grid or table, in addition to parsing the header
                
                 <li class="tile tile-structural-roles">
                   <a 
-                    href="{{ '/aria/apg/practices/structural-roles/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/structural-roles/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Structural Roles</span>
@@ -110,7 +110,7 @@ To fully present and describe a grid or table, in addition to parsing the header
                
                 <li class="tile tile-hiding-semantics">
                   <a 
-                    href="{{ '/aria/apg/practices/hiding-semantics/' | relative_url }}"
+                    href="{{ '/ARIA/apg/practices/hiding-semantics/' | relative_url }}"
                   >
                     <h2 class="tile-name">
                       <span>Hiding Semantics</span>
@@ -125,5 +125,5 @@ To fully present and describe a grid or table, in addition to parsing the header
       
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

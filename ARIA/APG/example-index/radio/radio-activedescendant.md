@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Radio Group Example Using aria-activedescendant"
-ref: /aria/apg/example-index/radio/radio-activedescendant
+ref: /ARIA/apg/example-index/radio/radio-activedescendant
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/radio/radio-activedescendant.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/radio/radio-activedescendant
+permalink: /ARIA/apg/example-index/radio/radio-activedescendant
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -79,7 +79,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <div>
       
       <p>
-        This example implements the features of the <a href="{{ '/aria/apg/patterns/radiobutton/' | relative_url }}">Radio Group Design Pattern</a>
+        This example implements the features of the <a href="{{ '/ARIA/apg/patterns/radiobutton/' | relative_url }}">Radio Group Design Pattern</a>
         for two radio groups -- one for choosing a pizza crust and another for choosing a delivery method.
         This implementation uses <code>aria-activedescendant</code> for informing assistive technologies which radio button has visual focus.
       </p>
@@ -181,7 +181,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <strong>NOTE:</strong> When visual focus is on a radio button in the radio group, DOM focus remains on the radio group container and the value of <code>aria-activedescendant</code> on the radio group refers to the radio button that is visually indicated as focused.
           Where the following descriptions of keyboard commands mention focus, they are referring to the visual focus indicator, not DOM focus.
           For more information about this focus management technique, see
-          <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+          <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
         </p>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
@@ -280,7 +280,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the  radio group element.</li>
                   <li>
                     For more information about this focus management technique, see
-                    <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
+                    <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_focus_activedescendant' | relative_url }}">Using aria-activedescendant to Manage Focus.</a>
                   </li>
                 </ul>
               </td>
@@ -348,5 +348,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

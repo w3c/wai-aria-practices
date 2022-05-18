@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Auto-Rotating Image Carousel Example with Buttons for Slide Control"
-ref: /aria/apg/example-index/carousel/carousel-1-prev-next
+ref: /ARIA/apg/example-index/carousel/carousel-1-prev-next
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/carousel/carousel-1-prev-next.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/carousel/carousel-1-prev-next
+permalink: /ARIA/apg/example-index/carousel/carousel-1-prev-next
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -80,7 +80,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         The following example implementation of the
-        <a href="{{ '/aria/apg/patterns/carousel/' | relative_url }}">carousel design pattern</a>
+        <a href="{{ '/ARIA/apg/patterns/carousel/' | relative_url }}">carousel design pattern</a>
         demonstrates features of the pattern that are essential to accessibility for carousels that automatically start rotating when the page loads.
         For instance, rotation stops when users either move focus  into the carousel or hover the mouse over carousel content, and users can manually control which slide is displayed with previous and next slide buttons.
         The accessibility features section that follows the example describes these features in detail.
@@ -609,5 +609,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Example Disclosure Navigation Menu with Top-Level Links"
-ref: /aria/apg/example-index/disclosure/disclosure-navigation-hybrid
+ref: /ARIA/apg/example-index/disclosure/disclosure-navigation-hybrid
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/disclosure/disclosure-navigation-hybrid.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/disclosure/disclosure-navigation-hybrid
+permalink: /ARIA/apg/example-index/disclosure/disclosure-navigation-hybrid
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -78,7 +78,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <div class="advisement">
       <p>
         Although this example uses the word "menu" in the colloquial sense to refer to a set of navigation links, it does not use the WAI-ARIA menu role.
-        That is because the menu and menubar roles require complex functionality, such as <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}">composite widget focus management</a> and first-character navigation, that is unnecessary for typical site navigation.
+        That is because the menu and menubar roles require complex functionality, such as <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}">composite widget focus management</a> and first-character navigation, that is unnecessary for typical site navigation.
       </p>
     </div><img alt=""
           src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
@@ -87,7 +87,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
     <p>
       The following example demonstrates using the
-      <a href="{{ '/aria/apg/patterns/disclosure/' | relative_url }}">disclosure design pattern</a>
+      <a href="{{ '/ARIA/apg/patterns/disclosure/' | relative_url }}">disclosure design pattern</a>
       to show and hide dropdown lists of links in a navigation bar for a mythical university web site.
       Unlike the other <a href="disclosure-navigation.html">disclosure navigation menu example</a>, this example includes top-level links alongside the disclosure buttons.
     </p>
@@ -440,5 +440,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

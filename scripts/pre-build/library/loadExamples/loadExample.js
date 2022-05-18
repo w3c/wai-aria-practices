@@ -16,7 +16,7 @@ const loadExample = async (
 ) => {
   const html = await fs.readFile(filePath, { encoding: "utf8" });
   const slug = path.basename(filePath).slice(0, -5);
-  const permalink = `/aria/apg/example-index/${exampleRelativeDirectory}/${slug}`;
+  const permalink = `/ARIA/apg/example-index/${exampleRelativeDirectory}/${slug}`;
   const notice = getNotice({ permalink });
 
   const root = parseHtml(html);

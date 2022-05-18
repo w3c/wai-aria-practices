@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Editor Menubar Example"
-ref: /aria/apg/example-index/menubar/menubar-editor
+ref: /ARIA/apg/example-index/menubar/menubar-editor
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/menubar/menubar-editor.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/menubar/menubar-editor
+permalink: /ARIA/apg/example-index/menubar/menubar-editor
 
 sidebar: true
 
@@ -35,7 +35,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -56,8 +56,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -68,7 +68,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -81,7 +81,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
     <p>
       The following example demonstrates using the
-      <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}">menubar design pattern</a>
+      <a href="{{ '/ARIA/apg/patterns/menu/' | relative_url }}">menubar design pattern</a>
       to provide access to editing actions for a text area.
       Each item in the menubar identifies a category of text formatting actions that can be executed from its submenu.
       The submenus demonstrate <code>menuitemradio</code> and <code>menuitemcheckbox</code> elements.
@@ -423,7 +423,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li>Identifies the element as a <code>menubar</code> container for a set of <code>menuitem</code> elements.</li>
-                <li>Is not focusable because focus is managed using <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a></li>
+                <li>Is not focusable because focus is managed using <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a></li>
               </ul>
             </td>
           </tr>
@@ -495,7 +495,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   When the page loads, the first item in the menubar has <code>tabindex="0"</code>.
                 </li>
                 <li>
-                  Focus is managed using <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.
+                  Focus is managed using <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex</a>.
                 </li>
               </ul>
             </td>
@@ -582,7 +582,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li>Identifies the element as a menu container for a set of menu items.</li>
-                <li>Is not focusable because focus is managed using <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a></li>
+                <li>Is not focusable because focus is managed using <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_roving_tabindex' | relative_url }}">roving tabindex.</a></li>
               </ul>
             </td>
           </tr>
@@ -918,5 +918,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

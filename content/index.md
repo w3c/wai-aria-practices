@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "ARIA Authoring Practices Guide"
-ref: /aria/apg/
+ref: /ARIA/apg/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: index.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/
+permalink: /ARIA/apg/
 
 sidebar: false
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <div>
@@ -286,5 +286,5 @@ lang: en
   
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

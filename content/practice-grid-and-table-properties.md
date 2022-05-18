@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Grid and Table Properties"
-ref: /aria/apg/practices/grid-and-table-properties/
+ref: /ARIA/apg/practices/grid-and-table-properties/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/practices/grid-and-table-properties/
+permalink: /ARIA/apg/practices/grid-and-table-properties/
 
 sidebar: true
 
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -45,7 +45,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
     <p>
       To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the
-      <a href="{{ '/aria/apg/patterns/grid/' | relative_url }}">grid pattern</a> or <a href="{{ '/aria/apg/patterns/table/' | relative_url }}">table pattern</a>,
+      <a href="{{ '/ARIA/apg/patterns/grid/' | relative_url }}">grid pattern</a> or <a href="{{ '/ARIA/apg/patterns/table/' | relative_url }}">table pattern</a>,
       assistive technologies need to be able to determine:
     </p>
     <ul>
@@ -517,5 +517,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

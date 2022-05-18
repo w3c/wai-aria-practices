@@ -1,14 +1,14 @@
 ---
 # This is a generated file
 title: "Switch Example"
-ref: /aria/apg/example-index/switch/switch
+ref: /ARIA/apg/example-index/switch/switch
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: examples/switch/switch.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/example-index/switch/switch
+permalink: /ARIA/apg/example-index/switch/switch
 
 sidebar: true
 
@@ -34,7 +34,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -55,8 +55,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
     <li>
         There may be support gaps in some
-        <a href="{{ '/aria/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
-        especially for <a href="{{ '/aria/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#browser_and_AT_support' | relative_url }}">browser and assistive technology combinations</a>,
+        especially for <a href="{{ '/ARIA/apg/practices/read-me-first/#mobile_and_touch_support' | relative_url }}">mobile/touch devices</a>.
         Testing code based on this example with assistive technologies is essential before considering use in production systems.
     </li>
     <li>
@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         Robust accessibility can be further optimized by choosing implementation patterns that
         <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a>
         and heeding the warning that
-        <a href="{{ '/aria/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
+        <a href="{{ '/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria' | relative_url }}">No ARIA is better than Bad ARIA</a>.
     </li>
     </ul>
 </details>
@@ -79,7 +79,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   <div>
     
     <p>
-      This example illustrates implementation of the <a href="{{ '/aria/apg/patterns/switch/' | relative_url }}">switch design pattern</a> for a notification preferences control.
+      This example illustrates implementation of the <a href="{{ '/ARIA/apg/patterns/switch/' | relative_url }}">switch design pattern</a> for a notification preferences control.
       It uses a <code>div</code> element for the switch and CSS borders to provide graphical rendering of switch states.
     </p>
     <p>Similar examples include: </p>
@@ -253,5 +253,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>
