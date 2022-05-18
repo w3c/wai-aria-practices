@@ -1,6 +1,6 @@
 # WAI-ARIA Authoring Practices
 
-This repository constains the source code for the [ARIA Authoring Practices Guide](https://w3c.github.io/aria-practices/) which is hosted as part of the [Web Accessibility Initiative](https://www.w3.org/WAI/) website.
+This repository contains the source code for the [ARIA Authoring Practices Guide](https://w3c.github.io/aria-practices/) which is hosted as part of the [Web Accessibility Initiative](https://www.w3.org/WAI/) website.
 
 The WAI website is built in Jekyll and [brings together several git submodules
 into one website](https://wai-website-theme.netlify.app/technical/).
