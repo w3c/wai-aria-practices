@@ -166,7 +166,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </thead>
         <tbody>
             <tr data-test-id="h3">
-              <th scope="row"></th>
+              <td></td>
               <td></td>
               <td><code>h3</code></td>
               <td>
@@ -186,8 +186,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
             </tr>
             <tr data-test-id="group-aria-labelledby">
-              <th scope="row"></th>
-              <td><code>aria-labelledby</code></td>
+              <td></td>
+              <th scope="row"><code>aria-labelledby</code></th>
               <td><code>div</code></td>
               <td>References the <code>id</code> attribute of the <code>h3</code> element to define the accessible name for the group of checkboxes.</td>
             </tr>
