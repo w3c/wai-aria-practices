@@ -102,7 +102,7 @@ lang: en
                   <p>
                     
             Providing elements with accessible names and, where appropriate,
-            accessible descriptions, is one of the most important
+            accessible descriptions is one of the most important
             responsibilities authors have when developing accessible web
             experiences.
           
