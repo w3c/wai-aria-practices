@@ -102,7 +102,7 @@ lang: en
                   <p>
                     
             Providing elements with accessible names and, where appropriate,
-            accessible descriptions, is one of the most important
+            accessible descriptions is one of the most important
             responsibilities authors have when developing accessible web
             experiences.
           
@@ -213,12 +213,12 @@ lang: en
     <div class="white-section">
       <div class="centered margin-fix">
         <h2 class="collaboration-h2">
-          Collaboration
+          Get Involved
         </h2>
         <p class="collaboration-p">
           
-        The APG Task Force conducts its work using a variety of synchronous and
-        asynchronous tools. And there are several ways to get involved.
+        The APG Task Force relies on broad community representation and participation to continuously improve the usefulness and quality of the APG.
+        There are a variety of ways you can get involved and help promote development of accessible experiences. 
       
         </p>
       </div>
@@ -226,34 +226,31 @@ lang: en
         
                   <div class="collaboration-item">
                     <img alt="An icon showing three nodes connecting." src="{{ '/content-images/wai-aria-practices/generated/index-6.svg' | relative_url }}">
-                    <h3>Join Our Community</h3>
+                    <h3>Join the Task Force</h3>
                     <p>
-            To join the APG Task Force, individuals must be participants of the
-            ARIA Working Group. Participants are expected to actively contribute
-            to the work of the task force.
+            To join the APG Task Force, individuals need to first join the W3C ARIA Working Group.
+            Participants are expected to actively contribute to the work of the task force.
           </p>
                     <a rel="noopener noreferrer"
             target="_blank"
             href="https://www.w3.org/WAI/ARIA/task-forces/practices/"
           >
-            Connect With Us
+            Learn more about the work of the task force and how to join
           </a>
                   </div>
                 
                   <div class="collaboration-item">
                     <img alt="An icon showing two human shapes carrying a burden." src="{{ '/content-images/wai-aria-practices/generated/index-7.svg' | relative_url }}">
-                    <h3>Contribute to Our Project</h3>
+                    <h3>Contribute via GitHub</h3>
                     <p>
-            To contribute without joining the task force, see the ARIA Working
-            Group contribute page for general instructions. To contribute to
-            documents under development, see how to contribute to the source
-            repository directly.
+            Many valuable contributions are made by people who find or raise issues of interest in our GitHub repository and then submit proposed changes via a GitHub pull request.
+            If you choose this path, please start by studying our guidelines for contributing to the repository and maintaining code quality.
           </p>
                     <a rel="noopener noreferrer"
             target="_blank"
-            href="https://www.w3.org/WAI/ARIA/contribute"
+            href="https://github.com/w3c/aria-practices"
           >
-            Get Involved
+            View ReadMe in the GitHub repository
           </a>
                   </div>
                 
@@ -271,11 +268,9 @@ lang: en
               target="_blank"
               href="https://lists.w3.org/Archives/Public/public-aria-practices/"
               >view the mailing list archive</a>)</span>
-            for email discussion. Participants are automatically added to the
-            mailing list when they become a participant of the task force.
-          </p><p>
-            Discussions of the task force prior to September 2017 are archived
-            on the public-aria mailing list.
+            for email discussion. 
+            Meeting announcements, agendas, and links to minutes are sent to the mailing list.
+            While GitHub issues are the preferred place to discuss APG content, the mailing list is available to anyone who would prefer to communicate with the APG Task Force via email.
           </p>
           </div>
         </div>
