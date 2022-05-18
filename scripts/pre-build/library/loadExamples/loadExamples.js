@@ -122,8 +122,8 @@ const editFile = async (path, replacements) => {
     const previousTextStartIndex = content.indexOf(previousText);
     if (!(previousTextStartIndex > 0)) {
       throw new Error(
-        "app.js has diverged from a known state and the pre-build script must " +
-          "be updated"
+        `The file at ${path} has diverged from a known state and the ` +
+          "pre-build script must be updated"
       );
     }
     const previousTextEndIndex = previousTextStartIndex + previousText.length;
