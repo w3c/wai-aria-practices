@@ -47,6 +47,7 @@ defaults:
       layout: "standalone_resource"
       standalone_resource_header:
         title: "ARIA Authoring Practices Guide (APG)"
+        title-ref: /aria/apg/
         subtitle: "How to build accessibility semantics into web patterns and widgets"
       standalone_resource_nav_links:
         - name: APG Home
