@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Radio Group"
-ref: /aria/apg/patterns/radiobutton/
+ref: /ARIA/apg/patterns/radiobutton/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/radiobutton/
+permalink: /ARIA/apg/patterns/radiobutton/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -65,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           
           <p>
             This section describes the keyboard interaction implemented for most radio groups.
-            For the special case of a radio group nested inside a <a href="{{ '/aria/apg/patterns/toolbar/' | relative_url }}">toolbar</a>, use the keyboard interaction described in the following section.
+            For the special case of a radio group nested inside a <a href="{{ '/ARIA/apg/patterns/toolbar/' | relative_url }}">toolbar</a>, use the keyboard interaction described in the following section.
           </p>
           <ul>
             <li>
@@ -180,17 +180,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Toolbar"
-ref: /aria/apg/patterns/toolbar/
+ref: /ARIA/apg/patterns/toolbar/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/toolbar/
+permalink: /ARIA/apg/patterns/toolbar/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -96,7 +96,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>
             Typically, disabled elements are not focusable when navigating with a keyboard.
             However, in circumstances where discoverability of a function is crucial, it may be helpful if disabled controls are focusable so screen reader users are more likely to be aware of their presence.
-            For additional guidance, see <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_disabled_controls' | relative_url }}" class="sec-ref">Focusability of disabled controls</a>.
+            For additional guidance, see <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls' | relative_url }}" class="sec-ref">Focusability of disabled controls</a>.
           </li>
           <li>In applications where quick access to a toolbar is important, such as accessing an editor's toolbar from its text area, a documented shortcut key for moving focus from the relevant context to its corresponding toolbar is recommended.</li>
         </ol></div>
@@ -116,17 +116,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

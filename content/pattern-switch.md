@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Switch"
-ref: /aria/apg/patterns/switch/
+ref: /ARIA/apg/patterns/switch/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/switch/
+permalink: /ARIA/apg/patterns/switch/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -43,7 +43,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         A <a href="https://w3c.github.io/aria/#switch" class="role-reference">switch</a> is an input widget that allows users to choose one of two values: <q>on</q> or <q>off</q>.
-        Switches are similar to <a href="{{ '/aria/apg/patterns/checkbox/' | relative_url }}">checkboxes</a> and <a href="{{ '/aria/apg/patterns/button/' | relative_url }}">toggle buttons</a>, which can also serve as binary inputs.
+        Switches are similar to <a href="{{ '/ARIA/apg/patterns/checkbox/' | relative_url }}">checkboxes</a> and <a href="{{ '/ARIA/apg/patterns/button/' | relative_url }}">toggle buttons</a>, which can also serve as binary inputs.
         One difference, however, is that switches can only be used for binary input while checkboxes and toggle buttons allow implementations the option of supporting a third middle state.
         Checkboxes can be <q>checked</q> or <q>not checked</q> and can optionally also allow for a <q>partially checked</q> state.
         Toggle buttons can be <q>pressed</q> or <q>not pressed</q> and can optionally allow for a <q>partially pressed</q> state.
@@ -105,17 +105,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Menu Button"
-ref: /aria/apg/patterns/menubutton/
+ref: /ARIA/apg/patterns/menubutton/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/menubutton/
+permalink: /ARIA/apg/patterns/menubutton/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -40,7 +40,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     
 <div>
 <section class="widget" id="menubutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
-      <p>A menu button is a <a href="{{ '/aria/apg/patterns/button/' | relative_url }}">button</a> that opens a <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
+      <p>A menu button is a <a href="{{ '/ARIA/apg/patterns/button/' | relative_url }}">button</a> that opens a <a href="{{ '/ARIA/apg/patterns/menu/' | relative_url }}">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>
 
       <section class="notoc examples-section"><img alt="" 
             src="{{ '/content-images/wai-aria-practices/img/menubutton.svg' | relative_url }}"
@@ -64,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>(Optional) <kbd>Up Arrow</kbd>: opens the menu and moves focus to the last menu item.</li>
             </ul>
           </li>
-          <li>The keyboard behaviors needed after the menu is open are described in <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}" class="sec-ref">Menu or Menu bar</a>.</li>
+          <li>The keyboard behaviors needed after the menu is open are described in <a href="{{ '/ARIA/apg/patterns/menu/' | relative_url }}" class="sec-ref">Menu or Menu bar</a>.</li>
         </ul>
       </section>
 
@@ -89,22 +89,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>
             that refers to the element with role <code>menu</code>.
             </li>
-            <li>Additional roles, states, and properties needed for the menu element are described in <a href="{{ '/aria/apg/patterns/menu/' | relative_url }}" class="sec-ref">Menu or Menu bar</a>.</li>
+            <li>Additional roles, states, and properties needed for the menu element are described in <a href="{{ '/ARIA/apg/patterns/menu/' | relative_url }}" class="sec-ref">Menu or Menu bar</a>.</li>
         </ul>
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

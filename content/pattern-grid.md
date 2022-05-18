@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Grids : Interactive Tabular Data and Layout Containers"
-ref: /aria/apg/patterns/grid/
+ref: /ARIA/apg/patterns/grid/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/grid/
+permalink: /ARIA/apg/patterns/grid/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -49,7 +49,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         While the words "row" and "column" are used in the names of <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> attributes and by assistive technologies when describing and presenting the logical structure of elements with the <code>grid</code> role, using the <code>grid</code> role on an element does not necessarily imply that its visual presentation is tabular.
       </p>
 
-      <p>When presenting content that is tabular, consider the following factors when choosing between implementing this <code>grid</code> pattern or the <a href="{{ '/aria/apg/patterns/table/' | relative_url }}">table</a> pattern.</p>
+      <p>When presenting content that is tabular, consider the following factors when choosing between implementing this <code>grid</code> pattern or the <a href="{{ '/ARIA/apg/patterns/table/' | relative_url }}">table</a> pattern.</p>
 
       <ul>
         <li>
@@ -58,7 +58,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <ul>
             <li>Always contains multiple focusable elements. </li>
             <li>Only one of the focusable elements contained by the grid is included in the page tab sequence.</li>
-            <li>Requires the author to provide code that <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}">manages focus movement inside it</a>.</li>
+            <li>Requires the author to provide code that <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}">manages focus movement inside it</a>.</li>
           </ul>
         </li>
 
@@ -121,11 +121,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <div class="note" role="note" id="issue-container-generatedID-9"><div role="heading" class="note-title marker" id="h-note-9" aria-level="6"><span>Note</span></div><ul class="">
             <li>
               When the above grid navigation keys move focus, whether the focus is set on an element inside the cell or the grid cell depends on cell content.
-              See <a href="{{ '/aria/apg/patterns/grid/#gridNav_focus' | relative_url }}">Whether to Focus on a Cell or an Element Inside It</a>.
+              See <a href="{{ '/ARIA/apg/patterns/grid/#gridNav_focus' | relative_url }}">Whether to Focus on a Cell or an Element Inside It</a>.
             </li>
             <li>
               While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
-              If this functionality is needed, see <a href="{{ '/aria/apg/patterns/grid/#gridNav_inside' | relative_url }}">Editing and Navigating Inside a Cell</a>.
+              If this functionality is needed, see <a href="{{ '/ARIA/apg/patterns/grid/#gridNav_inside' | relative_url }}">Editing and Navigating Inside a Cell</a>.
             </li>
             <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
           </ul></div>
@@ -139,7 +139,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="6"><span>Note</span></div><p class="">See <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_common_conventions' | relative_url }}" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+          <div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="6"><span>Note</span></div><p class="">See <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_common_conventions' | relative_url }}" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
         </section>
       </section>
 
@@ -163,7 +163,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           While This type of focus movement wrapping can be very helpful in a layout grid, it would be disorienting if used in a data grid, especially for users of assistive technologies.
         </p>
 
-        <p> Because arrow keys are used to move focus inside of a <code>grid</code>, a <code>grid</code> is both easier to build and use if the components it contains do not require the arrow keys to operate. If a cell contains an element like a <a href="{{ '/aria/apg/patterns/listbox/' | relative_url }}">listbox</a>, then an extra key command to focus and activate the listbox is needed as well as a command for restoring the grid navigation functionality. Approaches to supporting this need are described in the section on <a href="{{ '/aria/apg/patterns/grid/#gridNav_inside' | relative_url }}">Editing and Navigating Inside a Cell</a>. </p>
+        <p> Because arrow keys are used to move focus inside of a <code>grid</code>, a <code>grid</code> is both easier to build and use if the components it contains do not require the arrow keys to operate. If a cell contains an element like a <a href="{{ '/ARIA/apg/patterns/listbox/' | relative_url }}">listbox</a>, then an extra key command to focus and activate the listbox is needed as well as a command for restoring the grid navigation functionality. Approaches to supporting this need are described in the section on <a href="{{ '/ARIA/apg/patterns/grid/#gridNav_inside' | relative_url }}">Editing and Navigating Inside a Cell</a>. </p>
 
         <section class="notoc"><div class="header-wrapper"><h3 id="keyboard-interaction-for-layout-grids">Keyboard Interaction For Layout Grids</h3></div>
           
@@ -214,11 +214,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <div class="note" role="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-11" aria-level="6"><span>Note</span></div><ul class="">
             <li>
               When the above grid navigation keys move focus, whether the focus is set on an element inside the cell or the grid cell depends on cell content.
-              See <a href="{{ '/aria/apg/patterns/grid/#gridNav_focus' | relative_url }}">Whether to Focus on a Cell or an Element Inside It</a>.
+              See <a href="{{ '/ARIA/apg/patterns/grid/#gridNav_focus' | relative_url }}">Whether to Focus on a Cell or an Element Inside It</a>.
             </li>
             <li>
               While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
-              If this functionality is needed, see <a href="{{ '/aria/apg/patterns/grid/#gridNav_inside' | relative_url }}">Editing and Navigating Inside a Cell</a>.
+              If this functionality is needed, see <a href="{{ '/ARIA/apg/patterns/grid/#gridNav_inside' | relative_url }}">Editing and Navigating Inside a Cell</a>.
             </li>
             <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
           </ul></div>
@@ -237,7 +237,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
-          <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="6"><span>Note</span></div><p class="">See <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_common_conventions' | relative_url }}" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
+          <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="6"><span>Note</span></div><p class="">See <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_common_conventions' | relative_url }}" class="sec-ref">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p></div>
         </section>
       </section>
 
@@ -352,7 +352,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             Otherwise, a label is specified for the grid element using <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>If the grid has a caption or description, <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> is set on the grid element with a value referring to the element containing the description.</li>
-          <li>If the grid provides sort functions, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the section on <a href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>. </li>
+          <li>If the grid provides sort functions, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the section on <a href="{{ '/ARIA/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>. </li>
           <li>
             If the grid supports selection, when a cell or row is selected, the selected element has <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set <code>true</code>.
             If the grid supports column selection and a column is selected, all cells in the column have <code>aria-selected</code> set to <code>true</code>.
@@ -363,13 +363,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             Grids that do not provide editing functions do not include the <code>aria-readonly</code> attribute on any of their elements.
           </li>
           <li>
-            If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., data is dynamically loaded when scrolling or the grid provides functions for hiding rows or columns, the following properties are applied as described in the section on <a href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.
+            If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., data is dynamically loaded when scrolling or the grid provides functions for hiding rows or columns, the following properties are applied as described in the section on <a href="{{ '/ARIA/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.
             <ul>
               <li><a href="https://w3c.github.io/aria/#aria-colcount" class="property-reference">aria-colcount</a> or <a href="https://w3c.github.io/aria/#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively. </li>
               <li><a href="https://w3c.github.io/aria/#aria-colindex" class="property-reference">aria-colindex</a> or <a href="https://w3c.github.io/aria/#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively. </li>
             </ul>
           </li>
-          <li>If the grid includes cells that span multiple rows or multiple columns, and if the <code>grid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="{{ '/aria/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.</li>
+          <li>If the grid includes cells that span multiple rows or multiple columns, and if the <code>grid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in <a href="{{ '/ARIA/apg/practices/grid-and-table-properties/' | relative_url }}">grid and table properties</a>.</li>
         </ul>
 
         <div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>Note</span></div><ul class="">
@@ -386,17 +386,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

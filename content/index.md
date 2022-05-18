@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "ARIA Authoring Practices Guide"
-ref: /aria/apg/
+ref: /ARIA/apg/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: index.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/
+permalink: /ARIA/apg/
 
 sidebar: false
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <div>
@@ -130,7 +130,10 @@ lang: en
       </div>
       <div class="work-grid-pattern grid-pattern"></div>
     </div>
-    <div class="off-white-section">
+    <div 
+      class="off-white-section" 
+      style="display: none; /* temporarily hidden because the linked resources are not yet polished */"
+    >
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>Current Work</h2>
@@ -277,17 +280,6 @@ lang: en
     <div class="bottom-off-white-section off-white-section"></div>
   
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

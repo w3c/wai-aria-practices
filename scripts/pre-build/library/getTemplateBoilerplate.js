@@ -10,7 +10,7 @@ const getTemplateBoilerplate = ({
   // content originates, with the notable exception of the examples
   footerForkAndEditOnGithubPath = "aria-practices.html",
   head = "",
-  footer = "",
+  footer = null,
 }) => {
   // Must be formatted because html which is indented by 4 spaces
   // will be interpreted as a code block by the markdown engine
@@ -30,7 +30,7 @@ permalink: ${permalink}
 
 sidebar: ${enableSidebar}
 
-footer: "${footer.replace(/\n/g, "").replace(/"/g, "'")}"
+${!footer ? "" : `footer: "${footer.replace(/\n/g, "").replace(/"/g, "'")}"`}
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -46,7 +46,7 @@ ${/* ${prettier.format(` */ ""}
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 ${
   !(addBodyClass || enableSidebar)
@@ -63,19 +63,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 ${content}
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };

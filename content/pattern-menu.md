@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Menu or Menu bar"
-ref: /aria/apg/patterns/menu/
+ref: /ARIA/apg/patterns/menu/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/menu/
+permalink: /ARIA/apg/patterns/menu/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -44,7 +44,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         A <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> is a widget that offers a list of choices to the user, such as a set of actions or functions.
         Menu widgets behave like native operating system menus, such as the menus that pull down from the menubars commonly found at the top of many desktop application windows.
-        A menu is usually opened, or made visible, by activating a <a href="{{ '/aria/apg/patterns/menubutton/' | relative_url }}">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift + F10</kbd> in Windows, that opens a context specific menu.
+        A menu is usually opened, or made visible, by activating a <a href="{{ '/ARIA/apg/patterns/menubutton/' | relative_url }}">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift + F10</kbd> in Windows, that opens a context specific menu.
         When a user activates a choice in a menu, the menu usually closes unless the choice opened a submenu.
       </p>
 
@@ -82,7 +82,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ol>
         <p>
           When a <code>menu</code> opens, or when a <code>menubar</code> receives focus, keyboard focus is placed on the first item.
-          Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}" class="sec-ref"> Keyboard Navigation Inside Components</a>,
+          Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}" class="sec-ref"> Keyboard Navigation Inside Components</a>,
           <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus among the items in the menu.
           Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or <code>menu</code>.
         </p>
@@ -210,7 +210,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-expanded" class="property-reference">aria-expanded</a> set to <code>false</code> when its child menu is not visible and set to <code>true</code> when the child menu is visible.</li>
-          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="{{ '/aria/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}" class="sec-ref"> Keyboard Navigation Inside Components</a>:
+          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}" class="sec-ref"> Keyboard Navigation Inside Components</a>:
             <ul>
               <li>The menu container has <code>tabindex</code> set to <code>-1</code> or <code>0</code> and <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to the ID of the focused item. </li>
               <li>Each item in the menu has <code>tabindex</code> set to <code>-1</code>, except in a menubar, where the first item has <code>tabindex</code> set to <code>0</code>. </li>
@@ -247,17 +247,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>

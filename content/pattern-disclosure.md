@@ -1,18 +1,18 @@
 ---
 # This is a generated file
 title: "Disclosure (Show/Hide)"
-ref: /aria/apg/patterns/disclosure/
+ref: /ARIA/apg/patterns/disclosure/
 
 github:
   repository: w3c/aria-practices
   branch: main
   path: aria-practices.html
 feedbackmail: public-aria-practices@w3.org
-permalink: /aria/apg/patterns/disclosure/
+permalink: /ARIA/apg/patterns/disclosure/
 
 sidebar: true
 
-footer: ""
+
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/aria/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -43,7 +43,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
-        It has two elements: a disclosure <a href="{{ '/aria/apg/patterns/button/' | relative_url }}">button</a> and a section of content whose visibility is controlled by the button.
+        It has two elements: a disclosure <a href="{{ '/ARIA/apg/patterns/button/' | relative_url }}">button</a> and a section of content whose visibility is controlled by the button.
         When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
         When the content is visible, the arrow or triangle typically points down.
       </p>
@@ -89,17 +89,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </section>
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
 <script 
-  src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
 ></script>
