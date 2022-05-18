@@ -1049,6 +1049,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
     }
   };
 </script>
+<!-- <script src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"> -->
 <script 
   src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
 ></script>

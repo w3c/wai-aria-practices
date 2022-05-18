@@ -460,6 +460,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
     }
   };
 </script>
+<!-- <script src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"> -->
 <script 
   src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
 ></script>

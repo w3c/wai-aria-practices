@@ -74,6 +74,7 @@ ${content}
     }
   };
 </script>
+<!-- <script src="{{ '/aria/apg/example-index/js/jumpto.js' | relative_url }}"> -->
 <script 
   src="{{ '/content-assets/wai-aria-practices/skipto.min.js' | relative_url }}"
 ></script>
