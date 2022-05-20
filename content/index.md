@@ -46,7 +46,7 @@ lang: en
             <h1>ARIA Authoring Practices Guide Home</h1>
             <p>
         Learn to use the accessibility semantics defined by ARIA 
-        to create accessible rich internet applications.
+        to create accessible rich internet applications (ARIA).
         This guide describes how to apply accessibility semantics to common design patterns and widgets.
         It provides design patterns and functional examples
         complemented by in-depth guidance for fundamental practices.
