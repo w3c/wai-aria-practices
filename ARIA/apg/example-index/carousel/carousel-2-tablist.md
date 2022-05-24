@@ -621,6 +621,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Informs assistive technologies to identify the element as a "carousel" rather than as a "region".</li>
                     <li>Affects how assistive technologies render the role but does not affect functionality, such as commands for navigating to landmark regions.</li>
+                    <li>NOTE: The <code>aria-roledescription</code> value is defined using the language of the page.</li>
                   </ul>
                 </td>
               </tr>
@@ -799,6 +800,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Informs assistive technologies to identify the element as a "slide" rather than as a "tabpanel".</li>
                     <li>Affects how assistive technologies render the role but does not affect assistive technology functionality.</li>
+                    <li>NOTE: The <code>aria-roledescription</code> value is defined using the language of the page.</li>
                   </ul>
                 </td>
               </tr>
