@@ -11,6 +11,8 @@ const getPatternsPage = (patterns) => {
         <ul class="tiles">
           ${patterns
             .map((pattern, index) => {
+              let patternContent = "";
+
               if (pattern.name.startsWith("Grids")) {
                 if (patterns[index + 1].name !== "Link") {
                   throw new Error(
@@ -20,7 +22,7 @@ const getPatternsPage = (patterns) => {
                   );
                 }
                 // This pattern is not like the others and needs separate handling
-                return `
+                patternContent += `
                   <li class="tile tile-landmarks">
                     <a 
                       href="{{ '/ARIA/apg/example-index/landmarks/index.html' | relative_url }}"
@@ -41,7 +43,7 @@ const getPatternsPage = (patterns) => {
                 `;
               }
 
-              return `
+              patternContent += `
                 <li class="tile tile-${pattern.slug}">
                   <a href="{{ '${pattern.permalink}' | relative_url }}">
                     <h2 class="tile-name">
@@ -55,6 +57,8 @@ const getPatternsPage = (patterns) => {
                   <div class="tile-introduction">${pattern.introduction}</div>
                 </li>
               `;
+
+              return patternContent;
             })
             .join(" ")}
         </ul>

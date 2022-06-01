@@ -128,10 +128,6 @@ const lastCharacterIsColon = (str) => {
   return chars[chars.length - 1] === ":";
 };
 
-const removeLastCharacter = (str) => {
-  return str.substr(0, str.length - 1);
-};
-
 const findExamplesSection = (element, newSlug) => {
   const sectionElements = element.querySelectorAll("section");
   for (const sectionElement of sectionElements) {
