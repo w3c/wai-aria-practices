@@ -11,6 +11,21 @@ const getPatternsPage = (patterns) => {
         <ul class="tiles">
           ${patterns
             .map((pattern, index) => {
+              let patternContent = `
+                <li class="tile tile-${pattern.slug}">
+                  <a href="{{ '${pattern.permalink}' | relative_url }}">
+                    <h2 class="tile-name">
+                      <img 
+                        src="{{ '/content-images/wai-aria-practices/img/${pattern.slug}.svg' | relative_url }}" 
+                        alt=""
+                      >
+                      <span>${pattern.name}</span>
+                    </h2>
+                  </a>
+                  <div class="tile-introduction">${pattern.introduction}</div>
+                </li>
+              `;
+
               if (pattern.name.startsWith("Grids")) {
                 if (patterns[index + 1].name !== "Link") {
                   throw new Error(
@@ -20,7 +35,7 @@ const getPatternsPage = (patterns) => {
                   );
                 }
                 // This pattern is not like the others and needs separate handling
-                return `
+                patternContent += `
                   <li class="tile tile-landmarks">
                     <a 
                       href="{{ '/ARIA/apg/example-index/landmarks/index.html' | relative_url }}"
@@ -41,20 +56,7 @@ const getPatternsPage = (patterns) => {
                 `;
               }
 
-              return `
-                <li class="tile tile-${pattern.slug}">
-                  <a href="{{ '${pattern.permalink}' | relative_url }}">
-                    <h2 class="tile-name">
-                      <img 
-                        src="{{ '/content-images/wai-aria-practices/img/${pattern.slug}.svg' | relative_url }}" 
-                        alt=""
-                      >
-                      <span>${pattern.name}</span>
-                    </h2>
-                  </a>
-                  <div class="tile-introduction">${pattern.introduction}</div>
-                </li>
-              `;
+              return patternContent;
             })
             .join(" ")}
         </ul>
