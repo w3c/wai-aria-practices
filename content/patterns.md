@@ -190,6 +190,20 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
         A feed is a section of a page that automatically loads new sections of content as the user scrolls.</div>
                 </li>
                
+                <li class="tile tile-grid">
+                  <a href="{{ '/ARIA/apg/patterns/grid/' | relative_url }}">
+                    <h2 class="tile-name">
+                      <img 
+                        src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}" 
+                        alt=""
+                      >
+                      <span>Grids : Interactive Tabular Data and Layout Containers</span>
+                    </h2>
+                  </a>
+                  <div class="tile-introduction">
+        A grid widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, <kbd>Home</kbd>, and <kbd>End</kbd>.</div>
+                </li>
+              
                   <li class="tile tile-landmarks">
                     <a 
                       href="{{ '/ARIA/apg/example-index/landmarks/index.html' | relative_url }}"
@@ -207,21 +221,7 @@ WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to t
                       organization and structure of a web page.
                     </div>
                   </li>
-                
-                <li class="tile tile-grid">
-                  <a href="{{ '/ARIA/apg/patterns/grid/' | relative_url }}">
-                    <h2 class="tile-name">
-                      <img 
-                        src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}" 
-                        alt=""
-                      >
-                      <span>Grids : Interactive Tabular Data and Layout Containers</span>
-                    </h2>
-                  </a>
-                  <div class="tile-introduction">
-        A grid widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, <kbd>Home</kbd>, and <kbd>End</kbd>.</div>
-                </li>
-               
+                 
                 <li class="tile tile-link">
                   <a href="{{ '/ARIA/apg/patterns/link/' | relative_url }}">
                     <h2 class="tile-name">

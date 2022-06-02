@@ -530,6 +530,14 @@ dl.faq button,
   height: unset;
 }
 
+.page-data-grid-examples .edit-text-button {
+  padding-right: 25px;
+}
+.page-data-grid-examples .edit-text-button::after {
+  right: 0;
+  top: 3px;
+}
+
 .listbox-area {
   grid-gap: 5px;
   padding: 5px;
