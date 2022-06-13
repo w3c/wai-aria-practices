@@ -464,6 +464,11 @@ footer + .info {
   color: white;
 }
 
+.accordion-trigger:hover,
+.accordion-trigger > span {
+  color: black;
+}
+
 .combobox input, #cb-textbox-1 {
   font-size: 16px; /* Any smaller a font-size and iOS will zoom in on focus */
 }
@@ -603,6 +608,12 @@ dl.faq button,
 }
 #treegrid th {
   color: black;
+}
+
+/* Sortable table example */
+table.sortable th button:hover,
+table.sortable th button:focus {
+  background-color: #003366;
 }
 
 /* Read This First Banner */
