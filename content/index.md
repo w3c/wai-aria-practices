@@ -257,14 +257,7 @@ lang: en
           <div>
             <h3>Mailing Lists</h3>
             <p>
-            The APG Task Force uses the public-aria-practices@w3.org mailing
-            list
-            
-            <span>(<a rel="noopener noreferrer"
-              target="_blank"
-              href="https://lists.w3.org/Archives/Public/public-aria-practices/"
-              >view the mailing list archive</a>)</span>
-            for email discussion. 
+            The APG Task Force uses the public aria-practices mailing list for email discussion. 
             Meeting announcements, agendas, and links to minutes are sent to the mailing list.
             While GitHub issues are the preferred place to discuss APG content, the mailing list is available to anyone who would prefer to communicate with the APG Task Force via email.
           </p>
