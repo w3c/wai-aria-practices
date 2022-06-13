@@ -84,6 +84,26 @@ const loadExamples = async () => {
     },
   ]);
 
+  await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
+    {
+      previousText:
+        "<summary>Important Note About Use of This Example</summary>",
+      replacementText: `
+        <summary>
+          <h2>Important Note About Use of This Example</h2>
+          <p>
+            The code in this example is not intended for production environments. 
+            Before using it for any purpose, read this to understand why.
+          </p>
+        </summary>
+      `,
+    },
+    {
+      previousText: "Note: This is an illustrative example",
+      replacementText: "This is an illustrative example",
+    },
+  ]);
+
   const getNotice = await loadGetNotice({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {

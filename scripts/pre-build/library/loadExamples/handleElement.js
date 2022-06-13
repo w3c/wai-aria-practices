@@ -56,8 +56,8 @@ const getHandleElement =
         element.insertAdjacentHTML(
           "afterbegin",
           `
-            <h2>About This Example</h2>
             ${notice}
+            <h2>About This Example</h2>
           `
         );
 
