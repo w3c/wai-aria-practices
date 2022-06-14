@@ -59,8 +59,8 @@ if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 
 // Make nav item "Patterns" active when on a patterns page
-if (window.location.toString().match('patterns\/.*')) {
-  document.querySelector('a[href="/WAI/ARIA/apg/patterns/"]').classList.add('active');
+if (window.location.href.includes('patterns')) {
+  document.querySelector('a[href*="patterns/"]').classList.add('active');
 }
 </script>
     `
