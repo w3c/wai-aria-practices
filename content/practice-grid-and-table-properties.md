@@ -36,6 +36,11 @@ const addBodyClass = "practice-page";
 const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
+
+// Make nav item "Patterns" active when on a patterns page
+if (window.location.pathname.includes('patterns')) {
+  document.querySelector('a[href*="patterns/"]').classList.add('active');
+}
 </script>
     
 <div>
