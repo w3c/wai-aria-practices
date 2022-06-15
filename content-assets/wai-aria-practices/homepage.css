@@ -13,7 +13,7 @@ body {
     --gutter: 20px;
   }
 }
-header {
+main > header {
   display: none;
 }
 body > .nav-container + .default-grid {
