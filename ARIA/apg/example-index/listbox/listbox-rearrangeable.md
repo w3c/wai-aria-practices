@@ -58,11 +58,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-            <h2>About This Example</h2>
             <details id="support-notice" class="note">
-    <summary>Important Note About Use of This Example</summary>
+    
+        <summary>
+          <h2>Important Note About Use of This Example</h2>
+          <p>
+            The code in this example is not intended for production environments. 
+            Before using it for any purpose, read this to understand why.
+          </p>
+        </summary>
+      
     <p>
-        Note: This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.
+        This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.
     </p>
     <ul>
     <li>
@@ -83,6 +90,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </li>
     </ul>
 </details>
+            <h2>About This Example</h2>
           <img alt=""
           src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
           class="example-page-example-icon"
