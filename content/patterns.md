@@ -31,6 +31,15 @@ lang: en
   href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
+
+<script>
+    const parentPages = ['patterns', 'practices', 'example-index'];
+    const parentIndexPage = window.location.pathname.includes('.html') ? 'example-index' : window.location.pathname.match('([^/]+)/([^/]+)/$')[1];
+    const parentHref = 'a[href*="' + parentIndexPage + '"]'
+    if (parentPages.includes(parentIndexPage)) {
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 
         {% include read-this-first.html %}

@@ -36,13 +36,17 @@ const addBodyClass = "pattern-page";
 const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
-
-// Make nav item "Patterns" active when on a patterns page
-if (window.location.pathname.includes('patterns')) {
-  document.querySelector('a[href*="patterns/"]').classList.add('active');
-}
 </script>
     
+
+<script>
+    const parentPages = ['patterns', 'practices', 'example-index'];
+    const parentIndexPage = window.location.pathname.includes('.html') ? 'example-index' : window.location.pathname.match('([^/]+)/([^/]+)/$')[1];
+    const parentHref = 'a[href*="' + parentIndexPage + '"]'
+    if (parentPages.includes(parentIndexPage)) {
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 <section class="widget" id="menubutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       <p>A menu button is a <a href="{{ '/ARIA/apg/patterns/button/' | relative_url }}">button</a> that opens a <a href="{{ '/ARIA/apg/patterns/menu/' | relative_url }}">menu</a>. It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.</p>

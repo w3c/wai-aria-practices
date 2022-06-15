@@ -36,13 +36,17 @@ const addBodyClass = "pattern-page";
 const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
-
-// Make nav item "Patterns" active when on a patterns page
-if (window.location.pathname.includes('patterns')) {
-  document.querySelector('a[href*="patterns/"]').classList.add('active');
-}
 </script>
     
+
+<script>
+    const parentPages = ['patterns', 'practices', 'example-index'];
+    const parentIndexPage = window.location.pathname.includes('.html') ? 'example-index' : window.location.pathname.match('([^/]+)/([^/]+)/$')[1];
+    const parentHref = 'a[href*="' + parentIndexPage + '"]'
+    if (parentPages.includes(parentIndexPage)) {
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 <section class="widget" id="dialog_modal"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
