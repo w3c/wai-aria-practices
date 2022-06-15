@@ -64,10 +64,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 ${
   // Make nav items active when on children pages
   `<script>
-    const parentPages = ['patterns', 'practices', 'example-index'];
-    const parentIndexPage = window.location.pathname.includes('.html') ? 'example-index' : window.location.pathname.match('([^\/]+)\/([^\/]+)\/$')[1];
-    if (parentPages.includes(parentIndexPage)) {
-      const parentHref = 'a[href*="' + parentIndexPage + '"]'
+    const parentPage = window.location.pathname.match(
+      /\\/(patterns|practices|example-index)\\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
       document.querySelector(parentHref).classList.add('active');
     }
   </script>`
