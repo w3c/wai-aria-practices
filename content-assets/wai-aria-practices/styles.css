@@ -129,6 +129,7 @@ li.tile h2.tile-name {
   margin: 0;
   border: none;
   display: flex;
+  align-items: flex-start;
 }
 
 li.tile img {
