@@ -66,8 +66,8 @@ ${
   `<script>
     const parentPages = ['patterns', 'practices', 'example-index'];
     const parentIndexPage = window.location.pathname.includes('.html') ? 'example-index' : window.location.pathname.match('([^\/]+)\/([^\/]+)\/$')[1];
-    const parentHref = 'a[href*="' + parentIndexPage + '"]'
     if (parentPages.includes(parentIndexPage)) {
+      const parentHref = 'a[href*="' + parentIndexPage + '"]'
       document.querySelector(parentHref).classList.add('active');
     }
   </script>`
