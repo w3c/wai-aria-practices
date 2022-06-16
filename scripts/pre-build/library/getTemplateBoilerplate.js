@@ -64,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 ${content}
 </div>
 <script 
-  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
 ></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };

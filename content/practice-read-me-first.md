@@ -126,5 +126,5 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
   </section>
 </div>
 <script 
-  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
 ></script>

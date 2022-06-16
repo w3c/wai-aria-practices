@@ -76,7 +76,7 @@ const loadExamples = async () => {
     },
   ]);
 
-  await editFile(path.join(destinationExamplesPath, "js", "jumpto.js"), [
+  await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
     {
       previousText: "displayOption: 'static',",
       replacementText:
