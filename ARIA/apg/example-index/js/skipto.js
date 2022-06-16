@@ -161,7 +161,7 @@
 
       // Check if skipto is already loaded
 
-      if (document.querySelector('style#' + this.skipToId)) {
+      if (document.querySelector('#' + this.skipToId)) {
         return;
       }
 
