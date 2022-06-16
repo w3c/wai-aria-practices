@@ -107,8 +107,8 @@
     colorThemes: {
       'default': {
         fontFamily: 'Noto Sans, Trebuchet MS, Helvetica Neue, Arial, sans-serif',
-        fontSize: '1.1rem',
-        positionLeft: '',
+        fontSize: `1.1rem`,
+        positionLeft: 0,
         menuTextColor: '#000',
         menuBackgroundColor: '#def',
         menuitemFocusTextColor: '#fff',
