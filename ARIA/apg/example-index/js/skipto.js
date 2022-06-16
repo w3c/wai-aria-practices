@@ -18,8 +18,8 @@
 (function() {
   'use strict';
   const SkipTo = {
-    skipToId: 'id-skip-to-js-4.2',
-    skipToMenuId: 'id-skip-to-menu-4.2',
+    skipToId: 'id-skip-to-js-42',
+    skipToMenuId: 'id-skip-to-menu-42',
     domNode: null,
     buttonNode: null,
     menuNode: null,
@@ -161,7 +161,7 @@
 
       // Check if skipto is already loaded
 
-      if (document.querySelector('#' + this.skipToId)) {
+      if (document.querySelector('style#' + this.skipToId)) {
         return;
       }
 
