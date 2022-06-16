@@ -107,7 +107,7 @@
     colorThemes: {
       'default': {
         fontFamily: 'Noto Sans, Trebuchet MS, Helvetica Neue, Arial, sans-serif',
-        fontSize: '14pt',
+        fontSize: '1rem',
         positionLeft: '7%',
         menuTextColor: '#000',
         menuBackgroundColor: '#def',
@@ -244,7 +244,7 @@
       this.updateStyle('$fontFamily', this.config.fontFamily, theme.fontFamily);
       this.updateStyle('$fontSize', this.config.fontSize, theme.fontSize);
 
-      this.updateStyle('$positionLeft', this.config.positionLeft, theme.  );
+      this.updateStyle('$positionLeft', this.config.positionLeft, theme.positionLeft);
 
       this.updateStyle('$menuTextColor', this.config.menuTextColor, theme.menuTextColor);
       this.updateStyle('$menuBackgroundColor', this.config.menuBackgroundColor, theme.menuBackgroundColor);
