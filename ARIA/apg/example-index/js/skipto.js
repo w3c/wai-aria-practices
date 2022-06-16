@@ -108,7 +108,7 @@
       'default': {
         fontFamily: 'Noto Sans, Trebuchet MS, Helvetica Neue, Arial, sans-serif',
         fontSize: '14px',
-        positionLeft: '7%',
+        positionLeft: '20px',
         menuTextColor: '#000',
         menuBackgroundColor: '#def',
         menuitemFocusTextColor: '#fff',
