@@ -60,6 +60,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     `
 }
+
+${
+  // Make nav items active when on children pages
+  `<script>
+    const parentPage = window.location.pathname.match(
+      /\\/(patterns|practices|example-index)\\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>`
+}
 <div>
 ${content}
 </div>

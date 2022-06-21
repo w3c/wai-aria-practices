@@ -57,6 +57,16 @@ if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 
             <details id="support-notice" class="note">

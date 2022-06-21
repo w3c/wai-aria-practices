@@ -38,6 +38,16 @@ if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
     
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 <section class="widget" id="dialog_modal"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       

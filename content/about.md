@@ -31,6 +31,16 @@ lang: en
   href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
 >
 
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 
         <section id="intro"><div class="header-wrapper"><h2 id="x1-introduction">Introduction</h2></div>
