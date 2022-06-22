@@ -53,13 +53,11 @@ lang: en
           <div class="top-box">
             <div class="top-detail-1 detail-1"></div>
             <div class="detail-2"></div>
-            <h1>ARIA Authoring Practices Guide Home</h1>
+            <h1>ARIA Authoring Practices Guide (APG) Home</h1>
             <p>
-        Learn to use the accessibility semantics defined by ARIA 
-        to create accessible rich internet applications.
+        Learn to use the accessibility semantics defined by the Accessible Rich Internet Application (ARIA) specification to create accessible web experiences.
         This guide describes how to apply accessibility semantics to common design patterns and widgets.
-        It provides design patterns and functional examples
-        complemented by in-depth guidance for fundamental practices.
+        It provides design patterns and functional examples complemented by in-depth guidance for fundamental practices.
       </p>
             <a href="patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
@@ -78,15 +76,14 @@ lang: en
       <div class="contained margin-fix">
         <div class="resource-item">
                 <div class="resource-item-content">
-                  <h3>Design Patterns and Widgets</h3>
+                  <h3>Design Patterns and Examples</h3>
                   <p>
                     
-            Learn how to make common rich internet application patterns and
-            widgets accessible by applying WAI-ARIA roles, states and
-            properties, and implementing keyboard support.
+            Learn how to make accessible web components and widgets with ARIA roles, states and properties and by implementing keyboard support.
+            One or more ways of implementing each pattern is demonstrated with a functional example.
           
                   </p>
-                  <a href="patterns/" aria-label="View patterns" class="button-link">Learn More</a>
+                  <a href="patterns/" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A menagerie of widgets." src="{{ '/content-images/wai-aria-practices/generated/index-2.svg' | relative_url }}">
@@ -101,7 +98,7 @@ lang: en
             meaning of the layout of a page.
           
                   </p>
-                  <a href="practices/landmark-regions/" aria-label="View landmarks guide" class="button-link">Learn More</a>
+                  <a href="practices/landmark-regions/" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A document flies apart into chunks." src="{{ '/content-images/wai-aria-practices/generated/index-3.svg' | relative_url }}">
@@ -117,7 +114,7 @@ lang: en
             experiences.
           
                   </p>
-                  <a href="practices/names-and-descriptions/" aria-label="View names and descriptions guide" class="button-link">Learn More</a>
+                  <a href="practices/names-and-descriptions/" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="Indicators delve inside a document." src="{{ '/content-images/wai-aria-practices/generated/index-4.svg' | relative_url }}">
@@ -131,7 +128,7 @@ lang: en
             developing keyboard interfaces, and more.
           
                   </p>
-                  <a class="button-link" href="practices/" aria-label="View practices">Learn More</a>
+                  <a class="button-link" href="practices/" aria-label="Learn more about APG practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A box with an accessibility label is chock full of widgets and document bits." src="{{ '/content-images/wai-aria-practices/generated/index-5.svg' | relative_url }}">
@@ -271,16 +268,16 @@ lang: en
           <div>
             <h3>Mailing Lists</h3>
             <p>
-            The APG Task Force uses the public-aria-practices@w3.org mailing
-            list
-            
-            <span>(<a rel="noopener noreferrer"
-              target="_blank"
-              href="https://lists.w3.org/Archives/Public/public-aria-practices/"
-              >view the mailing list archive</a>)</span>
-            for email discussion. 
+            The APG Task Force uses the public aria-practices mailing list for email discussion. 
             Meeting announcements, agendas, and links to minutes are sent to the mailing list.
             While GitHub issues are the preferred place to discuss APG content, the mailing list is available to anyone who would prefer to communicate with the APG Task Force via email.
+          </p><p>
+            <a rel="noopener noreferrer"
+              target="_blank"
+              href="https://lists.w3.org/Archives/Public/public-aria-practices/"
+            >
+              View the aria-practices mailing list archive
+            </a>
           </p>
           </div>
         </div>
