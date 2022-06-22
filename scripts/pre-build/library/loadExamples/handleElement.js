@@ -56,6 +56,7 @@ const getHandleElement =
         element.insertAdjacentHTML(
           "afterbegin",
           `
+            <h2 id="support-notice-header">Read This First</h2>
             ${notice}
             <h2>About This Example</h2>
           `

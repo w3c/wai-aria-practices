@@ -629,15 +629,16 @@ table.sortable th button:focus {
 #support-notice h2, #support-notice > * {
   color: #60470C;
 }
+
 #support-notice > * {
   padding-left: var(--left-right-padding);
   padding-right: var(--left-right-padding);
 }
-#support-notice h2 {
-  font-size: 1em;
-  border-bottom: none;
-  margin: 0;
+
+#support-notice-header {
+  color: #60470C;
 }
+
 #support-notice summary {
   background-color: #FCEBC3;
   padding-top: 1em;
@@ -684,6 +685,7 @@ table.sortable th button:focus {
   padding-top: 1em;
 }
 #support-notice summary > :last-child {
+  margin-top: 0;
   margin-bottom: 0;
 }
 #support-notice ul {
