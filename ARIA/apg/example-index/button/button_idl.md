@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/button/button_idl
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: 22 June 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -56,10 +56,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
+            <h2 id="support-notice-header">Read This First</h2>
             <details id="support-notice" class="note">
     
         <summary>
-          <h2>Important Note About Use of This Example</h2>
           <p>
             The code in this example is not intended for production environments. 
             Before using it for any purpose, read this to understand why.
