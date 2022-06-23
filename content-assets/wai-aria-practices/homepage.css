@@ -127,16 +127,17 @@ a.button-link {
   background: #185a6a;
   color: white;
   text-decoration: none;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 5px;
-  border: 2px solid #185a6a;
   transition: background-color 150ms linear, color 150ms linear;
 }
 a.button-link:hover,
-a.button-link:active,
+a.button-link:active {
+  background: #113362;
+}
 a.button-link:focus {
-  background: white;
-  color: #185a6a;
+  background: #113362;
+  outline-color: #113362;
 }
 a.button-link-white {
   background: white;
@@ -144,10 +145,13 @@ a.button-link-white {
   border: 2px solid transparent;
 }
 a.button-link-white:hover,
-a.button-link-white:active,
-a.button-link-white:focus {
+a.button-link-white:active {
   background: #eee;
   color: black;
+}
+a.button-link-white:focus {
+  background: white;
+  outline-color: #E9D047
 }
 .detail-3 {
   position: absolute;
@@ -387,6 +391,7 @@ h2 + h3 + p {
 }
 .mailing-list-item a {
   color: white;
+  text-decoration: underline;
 }
 .collaboration-detail-4 {
   position: absolute;
