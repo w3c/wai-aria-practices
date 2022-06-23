@@ -133,7 +133,8 @@ a.button-link {
   transition: background-color 150ms linear, color 150ms linear;
 }
 a.button-link:hover,
-a.button-link:active {
+a.button-link:active,
+a.button-link:focus {
   background: white;
   color: #185a6a;
 }
@@ -143,7 +144,8 @@ a.button-link-white {
   border: 2px solid transparent;
 }
 a.button-link-white:hover,
-a.button-link-white:active {
+a.button-link-white:active,
+a.button-link-white:focus {
   background: #eee;
   color: black;
 }
