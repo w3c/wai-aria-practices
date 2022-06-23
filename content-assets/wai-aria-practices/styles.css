@@ -693,6 +693,11 @@ table.sortable th button:focus {
   display: none;
 }
 
+/* About Page */
+body.page-about main {
+  max-width: 750px;
+}
+
 /* Read This First Banner */
 
 .read-this-first {
