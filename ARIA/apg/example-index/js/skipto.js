@@ -1,5 +1,5 @@
 /*! skipto - v5.0.0 - 2022-06-16
-* https://github.com/paypal/skipto
+* https://github.com/skipto-landmarks-headings/page-script-5
 * Copyright (c) 2022 Jon Gunderson; Licensed BSD
 * Copyright (c) 2021 PayPal Accessibility Team and University of Illinois; Licensed BSD */
  /*@cc_on @*/
