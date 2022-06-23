@@ -117,8 +117,7 @@ li.tile a:hover {
 
 li.tile a:focus {
   outline-offset: 8px;
-  outline-color: #a8d2fa;
-  border-radius: 5px;
+  outline-color: #113362;
 }
 
 li.tile a:visited {
