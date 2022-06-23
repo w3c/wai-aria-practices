@@ -135,5 +135,5 @@ To fully present and describe a grid or table, in addition to parsing the header
       
 </div>
 <script 
-  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
 ></script>

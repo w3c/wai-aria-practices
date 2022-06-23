@@ -1057,5 +1057,5 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
 
 </div>
 <script 
-  src="{{ '/ARIA/apg/example-index/js/jumpto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
 ></script>
