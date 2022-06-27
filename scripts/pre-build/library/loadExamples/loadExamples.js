@@ -46,9 +46,10 @@ const loadExamples = async () => {
   );
 
   const additionalAssets = [
-    ...(await getPaths(path.join(examplesPath, "js"))),
+    ...(await getPaths(path.join(examplesPath, "js"))).filter(jsFile => jsFile !== "jumpto.js"),
     ...(await getPaths(path.join(examplesPath, "css"))),
   ];
+
   exampleAssetPaths = [...exampleAssetPaths, ...additionalAssets];
 
   await Promise.all(
@@ -76,13 +77,13 @@ const loadExamples = async () => {
     },
   ]);
 
-  await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
-    {
-      previousText: "displayOption: 'static',",
-      replacementText:
-        "displayOption: 'popup', // Line edited by pre-build script",
-    },
-  ]);
+  // await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
+  //   {
+  //     previousText: "displayOption: 'static',",
+  //     replacementText:
+  //       "displayOption: 'popup', // Line edited by pre-build script",
+  //   },
+  // ]);
 
   await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
     {
