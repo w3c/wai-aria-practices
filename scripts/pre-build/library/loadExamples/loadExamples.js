@@ -75,18 +75,17 @@ const loadExamples = async () => {
         "return; // Line added by pre-build script\n" +
         "  let ref = window.location.href.split('examples')[0];",
     },
+    {
+      previousText: "// Add jumpto.js to examples",
+      replacementText: "// Add skipto.js to examples"
+    },
+    {
+      previousText: "scriptNode.setAttribute('src', ref + 'examples/js/jumpto.js');",
+      replacementText: "scriptNode.setAttribute('src', ref + 'examples/js/skipto.js');"
+    }
   ]);
 
   await addSkipToJs();
-
-  // The skipto.js already has displayOption: 'popup' in this iteration
-  // await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
-  //   {
-  //     previousText: "displayOption: 'static',",
-  //     replacementText:
-  //       "displayOption: 'popup', // Line edited by pre-build script",
-  //   },
-  // ]);
 
   await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
     {
