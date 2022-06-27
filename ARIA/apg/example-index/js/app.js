@@ -67,14 +67,14 @@
   }
 })();
 
-// Add skipto.js to examples
+// Add jumpto.js to examples
 (function () {
   return; // Line added by pre-build script
   let ref = window.location.href.split('examples')[0];
   if (ref) {
     let head = document.getElementsByTagName('head')[0];
     let scriptNode = document.createElement('script');
-    scriptNode.setAttribute('src', ref + 'examples/js/skipto.js');
+    scriptNode.setAttribute('src', ref + 'examples/js/jumpto.js');
     head.appendChild(scriptNode);
   }
 })();

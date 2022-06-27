@@ -6,6 +6,7 @@ const { format } = require("date-fns");
 const loadExample = require("./loadExample");
 const loadIndex = require("./loadIndex");
 const loadGetNotice = require("./loadNotice");
+const addSkipToJs = require("../addSkipToJs");
 
 const loadExamples = async () => {
   const examplesPath = path.resolve(
@@ -76,13 +77,16 @@ const loadExamples = async () => {
     },
   ]);
 
-  await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
-    {
-      previousText: "displayOption: 'static',",
-      replacementText:
-        "displayOption: 'popup', // Line edited by pre-build script",
-    },
-  ]);
+  await addSkipToJs();
+
+  // The skipto.js already has displayOption: 'popup' in this iteration
+  // await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
+  //   {
+  //     previousText: "displayOption: 'static',",
+  //     replacementText:
+  //       "displayOption: 'popup', // Line edited by pre-build script",
+  //   },
+  // ]);
 
   await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
     {
