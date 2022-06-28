@@ -6,7 +6,6 @@ const { format } = require("date-fns");
 const loadExample = require("./loadExample");
 const loadIndex = require("./loadIndex");
 const loadGetNotice = require("./loadNotice");
-const copyFromLibraryToExampleIndex = require("../copyFromLibraryToExampleIndex");
 
 const loadExamples = async () => {
   const examplesPath = path.resolve(
@@ -84,8 +83,6 @@ const loadExamples = async () => {
       replacementText: "// Add skipto.js to examples"
     }
   ]);
-
-  await copyFromLibraryToExampleIndex("skipto.js");
 
   await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
     {
