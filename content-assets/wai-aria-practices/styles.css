@@ -295,7 +295,7 @@ table.widget-features td, table.widget-features th {
   border-color: var(--datacell-border);
   border-top-style: solid;
   background: initial;
-  color: initial;
+  color: inherit;
 }
 
 table.data thead, table.index thead, table.widget-features thead, 
