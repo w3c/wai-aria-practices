@@ -113,7 +113,7 @@ lang: en
       <li>Developed a <a href="https://github.com/w3c/aria-practices/wiki/Code-Guide#apg-coding-standards">comprehensive set of coding standards for HTML, CSS, and Javascript</a> for the APG and updated a significant portion of content to conform with the standards.</li>
       <li>In response to feedback, fixed many documentation errors and functional bugs in examples.</li>
     </ul>
-    <p>Comprehensive lists of closed issues included in APG 1.2 release 1 are tracked in the following GitHub milestones.</p>
+    <p>Comprehensive lists of closed issues included in APG 1.2 release 1 are tracked in the following GitHub milestones:</p>
     <ul>
       <li>
         <a href="https://github.com/w3c/aria-practices/milestone/2?closed=1">APG 1.2 Release 1 Milestone</a>:
