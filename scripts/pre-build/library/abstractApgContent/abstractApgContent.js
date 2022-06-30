@@ -8,7 +8,7 @@ const { fixLinks } = require("./fixLinks");
 const abstractApgContent = async () => {
   const htmlFilePath = path.resolve(
     __dirname,
-    "../../../../html/aria-practices.html"
+    "../../../../_html/aria-practices.html"
     // "../../../../_external/aria-practices/aria-practices.html"
   );
 

@@ -18,7 +18,7 @@ post-processed with [ReSpec](https://pages.github.com/)) into a multi-page stati
 - Initialize or update submodules: `git submodule update --init --recursive`
 - Install Jekyll: `bundle install`.
 - Install ReSpec: `npm install --global respec`
-- Run ReSpec: `respec2html --src ./_external/aria-practices/aria-practices.html --out ./html/aria-practices.html`
+- Run ReSpec: `respec2html --src ./_external/aria-practices/aria-practices.html --out ./_html/aria-practices.html`
 - Install npm dependencies: `npm install -C scripts/pre-build`
 - Run the pre-build script: `node ./scripts/pre-build`
 - Run Jekyll: `bundle exec jekyll serve -w --livereload`. (-w --livereload doesn't work on native Windows, OK in WSL)
