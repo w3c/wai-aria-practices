@@ -76,22 +76,38 @@ lang: en
   </section>
         <section id="intro"><div class="header-wrapper"><h2 id="x1-introduction">Introduction</h2></div>
     
-    <p>This section is <em>informative.</em></p>
     <p>
-      <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Authoring Practices is a guide for understanding how to use
-      <cite><a href="https://www.w3.org/TR/wai-aria-1.2/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 1.2</a></cite> to create an accessible Rich Internet Application.
-      It provides guidance on the appropriate application of <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>, describes recommended <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> usage patterns, and explains concepts behind them.
+      The ARIA Authoring Practices Guide (APG) explains how to create accessible web experiences for users of assistive technologies and keyboard interfaces by developing web sites that properly convey accessibility semantics and implement common keyboard conventions.
+      It also provides guidance on some closely related topics, such as supporting operating system settings for high contrast and reduced motion.
     </p>
     <p>
-      Languages used to create rich and dynamic web sites, e.g., HTML, JavaScript, CSS, and SVG, do not natively include all the features required to make sites usable by people who use assistive technologies (AT) or who rely on keyboard navigation.
+      Accessibility semantics refer to the meaning of user interface elements that need to be conveyed to assistive technology users in order for those users to understand and use the elements.
+      For example, people who can visually perceive a search icon button understand the element can be activated to perform a search by the way it is styled and positioned.
+      To make that icon accessible to a screen reader user, one of the semantics that needs to be communicated is that the element represents an interactive button.
+      In addition, keyboard accessibility requires the button to be focusable, and keyboard conventions call for pressing <kbd>Enter</kbd> or <kbd>Space</kbd> to activate the button when it is focused.
+      The APG describes how to convey accessibility semantics and implement keyboard accessibility for many common design patterns, ranging from typical buttons and popup menus to complex tree grids.
+      It also explains essential practices related to these patterns, such as how to convey web page structure with ARIA landmark regions and effectively utilize the many ways of encoding accessible names.
+    </p>
+    <p>
+      The APG is organized into two major sections: patterns and practices.
+      Each pattern explains how to make a common user interface element, such as a button, menu, or dialog, accessible, and provides functional example implementations of the pattern.
+      The practices section gives in-depth explanation of how to satisfy a variety of accessibility needs that surface when making rich internet application experiences accessible.
+      For instance, the practices section on providing accessible names and descriptions gives detailed descriptions of seven different naming techniques as well as a table providing guidance for naming more than 80 types of elements.
+    </p>
+    <p>
+      The APG assumes basic understanding of web development, especially of HTML and CSS.
+      It may be particularly useful to designers and engineers who are working on site design systems and component libraries.
+      However, it is important to understand that the APG only covers a portion of what is needed to create accessible experiences.
+      To understand accessibility more broadly, it is advisable to start with the <a href="https://www.w3.org/WAI/fundamentals/">WAI Accessibility Fundamentals</a> and <a href="https://www.w3.org/WAI/design-develop/">WAI Overview of Design and Development</a>.
+    </p>
+    <p>
+      The accessibility semantics used in the APG patterns and described in APG practices are defined in the
+      <cite><a href="https://www.w3.org/TR/wai-aria-1.2/"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 1.2 Specification</a></cite>.
+      That is, the ARIA specification standardizes the meaning of the attributes that describe elements and their states to assistive technologies, such as the meaning of <code>role="button"</code>.
+      These attributes and other features required to make sites usable by people who rely on assistive technologies or keyboard navigation are not natively included in the languages used to create web sites, such as HTML, JavaScript, CSS, and SVG.
       The <abbr title="World Wide Web Consortium">W3C</abbr> Web Accessibility Initiative's (WAI) Accessible Rich Internet Applications working group (ARIA WG) is addressing these deficiencies through several <abbr title="World Wide Web Consortium">W3C</abbr> standards efforts.
       The <a href="https://www.w3.org/WAI/intro/aria.php"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Overview</a>
       provides additional background on <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>, summarizes those efforts, and lists the other documents included in the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> suite.
-    </p>
-    <p>
-      After a brief <q>Read Me First</q> section, the guide begins with ARIA implementation patterns for common widgets that both enumerate expected behaviors and demonstrate those behaviors with working code.
-      The implementation patterns and examples refer to detailed explanations of supporting concepts in subsequent guidance sections.
-      The guidance sections cover more general topics such as use of ARIA landmarks, practices for keyboard interfaces, grid and table properties, and the effects of role <code>presentation</code>.
     </p>
   </section>
         <section id="no_aria_better_bad_aria"><div class="header-wrapper"><h2 id="x2-1-no-aria-is-better-than-bad-aria">No ARIA is better than Bad ARIA</h2></div>
@@ -243,7 +259,54 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
                 </p></section>
         <section id="change_log" class="appendix"><div class="header-wrapper"><h2 id="b-change-history">Change History</h2></div>
     
-    <p>Change history is maintained in a separate version-specific branch.</p>
+    
+    <p>
+      APG 1.1 supported ARIA 1.1, and this version, APG 1.2, includes changes to support version 1.2 of the ARIA specification.
+      It also includes nearly 200 significant updates to improve the quality and breadth of content.
+      A <a href="https://github.com/w3c/aria-practices/wiki/Change-Log-for-November-2021-APG-1.2-Note-Release-1">detailed log of all changes</a> is available on the wiki of the w3c/aria-practices GitHub repository.
+      Highlights of major changes to support ARIA 1.2 as well as some of the improvements include the following.
+    </p>
+    <ul>
+      <li>Added section to provide guidance related to 38 document structure roles, 18 of which are new in ARIA 1.2.</li>
+      <li>Revised guidance for roles where naming requirements changed in ARIA 1.2. ARIA 1.2 prohibits names on some roles. ARIA 1.2 removed naming requirements from some other roles.</li>
+      <li>Added naming guidance for 18 roles that are new in ARIA 1.2.</li>
+      <li>Revised the combobox pattern and 4 combobox examples to reflect the ARIA 1.2 revisions to combobox.</li>
+      <li>Added example illustrating changes in ARIA 1.2 that enable creation of custom select-only comboboxes, which are similar to HTML select elements. This replaces the Collapsible Listbox example, which is now deprecated.</li>
+      <li>Revised the listbox pattern to specify how to utilize the new ARIA 1.2 support for named groups of options and Added a new listbox example to demonstrate the named option group feature.</li>
+      <li>Revised the editor menubar example to illustrate new ARIA 1.2 support for named groups of items in a menu.</li>
+      <li>Updated the listbox and tree patterns to reflect current browser processing of aria-selected and provided guidance regarding the use of aria-checked to communicate selection.</li>
+      <li>Added section providing guidance about properties used with range widgets, such as aria-valuemin and aria-valuemax.</li>
+      <li>Added a design pattern and example implementation of the meter role, which is new in ARIA 1.2</li>
+      <li>Added two examples that demonstrate how to create rating inputs, one based on slider and one based on radio group.</li>
+      <li>Added two other slider examples: a vertical temperature slider and a media seek slider.</li>
+      <li>Added a switch design pattern and three example implementations: one made from a div element, one based on HTML button, and one that uses HTML checkbox input.</li>
+      <li>Added a button example that illustrates use of the new ARIA 1.2 IDL interface.</li>
+      <li>Added a date picker example that illustrates choosing a date with a combobox.</li>
+      <li>Added another example of a disclosure navigation menu that demonstrates how to include top-level links.</li>
+      <li>Added example of a sortable table.</li>
+      <li>Changed all example pages to include a <q>Jump to</q> menu, a button to  open the example in CodePen, and added a prominently placed warning with guidance about testing before re-using example code.</li>
+      <li>Improved support for high contrast settings and added detailed documentation of high contrast support in many examples.</li>
+      <li>Improved support for touch-based screen readers in several examples, most notably in sliders.</li>
+      <li>Due to change in ARIA 1.2, removed Math role from list of roles that have presentational children.</li>
+      <li>Developed a <a href="https://github.com/w3c/aria-practices/wiki/Code-Guide#apg-coding-standards">comprehensive set of coding standards for HTML, CSS, and Javascript</a> for the APG and updated a significant portion of content to conform with the standards.</li>
+      <li>In response to feedback, fixed many documentation errors and functional bugs in examples.</li>
+    </ul>
+    <p>Comprehensive lists of closed issues included in APG 1.2 release 1 are tracked in the following GitHub milestones.</p>
+    <ul>
+      <li>
+        <a href="https://github.com/w3c/aria-practices/milestone/2?closed=1">APG 1.2 Release 1 Milestone</a>:
+        Github issues closed in the first publication of APG 1.2 as a <abbr title="World Wide Web Consortium">W3C</abbr> Note in November 2021.
+      </li>
+      <li>
+        <a href="https://github.com/w3c/aria-practices/milestone/10">APG 1.2 Working Draft 3 Milestone</a>:
+        Github issues closed in the third working draft of APG 1.2 published in November 2019.
+      </li>
+      <li>
+        <a href="https://github.com/w3c/aria-practices/milestone/7">APG 1.2 Working Draft 1 milestone</a>:
+        GitHub issues closed in the first working draft of APG 1.2 published on July 17, 2018.
+      </li>
+    </ul>
+    
   </section>
         <section id="acknowledgements" class="appendix"><div class="header-wrapper"><h2 id="c-acknowledgements">Acknowledgements</h2></div>
     
@@ -318,7 +381,7 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
       </ul>
     </section>
 
-    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-9848185844495758" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-36609926133582316" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
 
   </section>
         <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>
@@ -326,7 +389,7 @@ Some JavaScript and CSS may not function correctly in Internet Explorer.
     <dl class="bibliography"><dt id="bib-html">[HTML]</dt><dd>
       <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
     </dd><dt id="bib-html-aam">[HTML-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Scott O'Hara.  W3C. 4 April 2022. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
+      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Scott O'Hara.  W3C. 2 June 2022. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
     </dd><dt id="bib-html-aria">[HTML-ARIA]</dt><dd>
       <a href="https://www.w3.org/TR/html-aria/"><cite>ARIA in HTML</cite></a>. Steve Faulkner; Scott O'Hara; Patrick Lauke.  W3C. 9 December 2021. W3C Recommendation. URL: <a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>
     </dd><dt id="bib-svg2">[SVG2]</dt><dd>

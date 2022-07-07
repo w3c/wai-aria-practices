@@ -114,10 +114,10 @@ lang: en
         </li>
         <li>
           To ensure the borders of the inline SVG checkbox graphics in the CSS have sufficient contrast with the background when high contrast settings invert colors, the color of the borders are synchronized with the color of the text content.
-          For example, the color of the checkbox borders is set to match the foreground color of high contrast mode text by specifying the CSS <code>currentColor</code> value for the <code>stroke</code> property of the <code>rect</code> and <code>polyline</code> elements used to draw the checkbox.
+          For example, the color of the checkbox borders is set to match the foreground color of high contrast mode text by specifying the CSS <code>currentcolor</code> value for the <code>stroke</code> property of the <code>rect</code> and <code>polyline</code> elements used to draw the checkbox.
           To make the background of the checkbox graphics match the high contrast background color, the <code>fill-opacity</code> attribute of the <code>rect</code> element is set to zero.
           If specific colors were instead used to specify the <code>stroke</code> and <code>fill</code> properties, those colors would remain the same in high contrast mode, which could lead to insufficient contrast between the checkbox and the background or even make the checkbox invisible if the color matched the high contrast mode background.<br>
-          Note: The SVG element needs to have the CSS <code>forced-color-adjust</code> property set to <code>auto</code> for the <code>currentColor</code> value to be updated in high contrast mode.
+          Note: The SVG element needs to have the CSS <code>forced-color-adjust</code> property set to <code>auto</code> for the <code>currentcolor</code> value to be updated in high contrast mode.
           Some browsers do not use <code>auto</code> for the default value.
         </li>
       </ul>
@@ -158,7 +158,7 @@ lang: en
         </thead>
         <tbody>
             <tr data-test-id="h3">
-              <th scope="row"></th>
+              <td></td>
               <td></td>
               <td><code>h3</code></td>
               <td>
@@ -178,8 +178,8 @@ lang: en
               </td>
             </tr>
             <tr data-test-id="group-aria-labelledby">
-              <th scope="row"></th>
-              <td><code>aria-labelledby</code></td>
+              <td></td>
+              <th scope="row"><code>aria-labelledby</code></th>
               <td><code>div</code></td>
               <td>References the <code>id</code> attribute of the <code>h3</code> element to define the accessible name for the group of checkboxes.</td>
             </tr>

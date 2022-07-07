@@ -89,7 +89,7 @@ lang: en
       </p>
       <div role="meter" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-labelledby="cpu_usage_label">
         <svg width="100" height="100" class="fill" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="0" width="100%" height="100%" fill="currentColor" ></rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="currentcolor" ></rect>
         </svg>
       </div>
     </div>

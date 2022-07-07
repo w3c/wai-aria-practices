@@ -554,7 +554,7 @@ lang: en
           </td>
           </tr>
           <tr data-test-id="change-date-aria-live">
-            <th></th>
+            <td></td>
             <th scope="row"><code>aria-live="polite"</code></th>
             <td>
               <code>h2</code>
@@ -567,7 +567,7 @@ lang: en
             </td>
           </tr>
           <tr data-test-id="dialog-aria-live">
-            <th></th>
+            <td></td>
             <th scope="row"><code>aria-live="polite"</code></th>
             <td><code>div</code></td>
             <td>
