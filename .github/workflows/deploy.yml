@@ -32,7 +32,7 @@ jobs:
       run: |
         bundle install
         npm install -g respec
-        respec2html --src ./_external/aria-practices/aria-practices.html --out ./_includes/aria-practices.html
+        respec2html --src ./_external/aria-practices/aria-practices.html --out ./_html/aria-practices.html
         npm install -C scripts/pre-build
         node ./scripts/pre-build
 
