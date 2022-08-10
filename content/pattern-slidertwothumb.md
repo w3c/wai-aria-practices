@@ -71,8 +71,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             src="{{ '/content-images/wai-aria-practices/img/slidertwothumb.svg' | relative_url }}"
           ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../example-index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
-      </section>
+        <p><a href="../../example-index/slider/slider-multithumb.html">Horizontal Multi-Thumb Slider Example</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
+              </section>
 
       <section id="slidertwothumb_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2></div>
         
