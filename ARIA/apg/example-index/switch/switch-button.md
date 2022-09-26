@@ -136,8 +136,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <rect class="off" x="4" y="4" width="12" height="12" rx="4" ></rect>
               <rect class="on" x="20" y="4" width="12" height="12" rx="4" ></rect>
             </svg>
-
-          
+            <span class="on" aria-hidden="true">On</span>
+            <span class="off" aria-hidden="true">Off</span>
           </button>
         </div>
       </div>
