@@ -12,7 +12,7 @@ permalink: /ARIA/apg/example-index/switch/switch-button
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>            <p>Page last updated: 16 May 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>            <p>Page last updated: 26 September 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -136,8 +136,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <rect class="off" x="4" y="4" width="12" height="12" rx="4" ></rect>
               <rect class="on" x="20" y="4" width="12" height="12" rx="4" ></rect>
             </svg>
-            <span class="on" aria-hidden="true">On</span>
-            <span class="off" aria-hidden="true">Off</span>
+
+          
           </button>
         </div>
       </div>
