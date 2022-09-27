@@ -5,6 +5,7 @@ button[role="switch"] {
   border: 0 solid #005a9c;
   border-radius: 5px;
   width: 17em;
+  height: 3em;
   text-align: left;
   background-color: white;
   color: black;
@@ -23,7 +24,8 @@ button[role="switch"] .label {
 
 button[role="switch"] svg {
   display: inline-block;
-  width: 40px;
+  width: 36px;
+  height: 20px;
   forced-color-adjust: auto;
   position: relative;
   top: 4px;
