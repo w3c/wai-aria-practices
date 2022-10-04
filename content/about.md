@@ -158,8 +158,9 @@ lang: en
       <ul>
         <li>Carolyn MacLeod (IBM Canada)</li>
       </ul>
-    </section>  
-      <section id="major-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-2-major-contributors-to-version-1-1">Major Contributors to Version 1.1</h3></div>
+    </section>
+    <section id="major-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-2-major-contributors-to-version-1-1">Major Contributors to Version 1.1</h3></div> 
+      
       <p>
         While <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Authoring Practices 1.1 is the work of the entire Authoring Practices Task Force and also benefits from many people throughout the open source community who both contribute significant work and provide valuable feedback,
         special thanks goes to the following people who provided distinctly large portions of the content and code in version 1.1.
@@ -169,8 +170,70 @@ lang: en
         <li>Valerie Young of Bocoup and her sponsor, Facebook, for development of the example test framework and regressions tests for more than 50 examples.</li>
         <li>Simon Pieters of Bocoup and his sponsor, Facebook, for authoring of significant guidance sections, including comprehensive treatment of the topic of accessible names and descriptions.</li>
       </ul>
-    </section></section>
-        <section id="references" class="appendix"><div class="header-wrapper"><h2 id="f-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="f-1-informative-references">Informative references</h3></div>
+    </section>
+    <section id="participants-active-in-the-aria-authoring-practices-task-force"><div class="header-wrapper"><h3 id="c-3-participants-active-in-the-aria-authoring-practices-task-force">Participants active in the ARIA Authoring Practices Task Force</h3></div>
+      
+      <ul>
+        <li>Ann Abbott (Invited Expert)</li>
+        <li>Shirisha Balusani (Microsoft Corporation)</li>
+        <li>Dorothy Bass (Wells Fargo Bank N.A.)</li>
+        <li>Curt Bellew (Oracle)</li>
+        <li>Zoë Bijl (Invited Expert)</li>
+        <li>Michael Cooper (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
+        <li>Bryan Garaventa (Level Access)</li>
+        <li>Jon Gunderson (University of Illinois at Urbana-Champaign)</li>
+        <li>Jesse Hausler(Salesforce)</li>
+        <li>Sarah Higley (Microsoft Corporation)</li>
+        <li>Hans Hillen (The Paciello Group, LLC)</li>
+        <li>Matt King (Facebook)</li>
+        <li>Jaeun Ku (University of Illinois at Urbana-Champaign)</li>
+        <li>Aaron Leventhal (Google)</li>
+        <li>Carolyn MacLeod (IBM Corporation)</li>
+        <li>Mark McCarthy (University of Illinois at Urbana-Champaign)</li>
+        <li>James Nurthen (Adobe)</li>
+        <li>Scott O'Hara (The Paciello Group, LLC)</li>
+        <li>Simon Pieters (Bocoup)</li>
+        <li>Scott Vinkle (Shopify)</li>
+        <li>Evan Yamanishi (W. W. Norton)</li>
+        <li>Valerie Young (Bocoup)</li>
+      </ul>
+    </section>
+    <section id="other-commenters-and-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-4-other-commenters-and-contributors-to-version-1-1">Other commenters and contributors to Version 1.1</h3></div>
+      
+      <ul>
+        <li>Vyacheslav Aristov</li>
+        <li>J. Renée Beach</li>
+        <li>Kasper Christensen</li>
+        <li>Gerard K. Cohen</li>
+        <li>Anne-Gaelle Colom</li>
+        <li>Kevin Coughlin</li>
+        <li>Cameron Cundiff</li>
+        <li>Manish Dahamiwal</li>
+        <li>Gilmore Davidson</li>
+        <li>Boris Dušek</li>
+        <li>Michael Fairchild</li>
+        <li>Jeremy Felt</li>
+        <li>Rob Fentress</li>
+        <li>Geppy</li>
+        <li>Tatiana Iskandar</li>
+        <li>Patrick Lauke</li>
+        <li>Marek Lewandowski</li>
+        <li>Dan Matthew</li>
+        <li>Shane McCarron</li>
+        <li>Victor Meyer</li>
+        <li>Jonathan Neal</li>
+        <li>Philipp Rudloff</li>
+        <li>Joseph Scheuhammer</li>
+        <li>Nick Schonning</li>
+        <li>thomascorthals</li>
+        <li>Christopher Tryens</li>
+      </ul>
+    </section>
+
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-5907851191724844" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+
+  </section>
+        <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>
     
     <dl class="bibliography"><dt id="bib-html">[HTML]</dt><dd>
       <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
