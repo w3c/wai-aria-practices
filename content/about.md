@@ -152,9 +152,10 @@ lang: en
     
     <section id="honorary-editor"><div class="header-wrapper"><h3 id="c-1-honorary-editor">Honorary Editor</h3></div>
       
-      <p>This version of the ARIA Authoring Practice Guide is dedicated to the memory of 
-        Carolyn MacLeod whose contributions our Task Force sees throughout Authoring Practice Guides. 
-        She was  dedicated to all aspects of the ARIA Authoring Practice Guide from suggesting editorial edits for the clarification to testing APG examples with assistive technologies.</p>
+      <p>
+        This version of the ARIA Authoring Practices Guide is dedicated to the memory of Carolyn MacLeod whose contributions are visible  throughout the entire guide.
+        She was dedicated to all aspects of the work of the APG Task Force from writing code and suggesting editorial revisions to testing  examples with assistive technologies.
+      </p>
       <ul>
         <li>Carolyn MacLeod (IBM Canada)</li>
       </ul>
@@ -230,7 +231,7 @@ lang: en
       </ul>
     </section>
 
-    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-5473305503667893" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-8619825484288866" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
 
   </section>
         <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>
