@@ -150,7 +150,17 @@ lang: en
     <span class="p-name fn">Rich Schwerdtfeger</span> (<span class="p-org org h-org">IBM Corporation</span>) -  Until <time datetime="2014-10-01">01 October 2014</time>
   </dd></dl>
     
-    <section id="major-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-1-major-contributors-to-version-1-1">Major Contributors to Version 1.1</h3></div>
+    <section id="honorary-editor"><div class="header-wrapper"><h3 id="c-1-honorary-editor">Honorary Editor</h3></div>
+      
+      <p>
+        This version of the ARIA Authoring Practices Guide is dedicated to the memory of Carolyn MacLeod whose contributions are visible  throughout the entire guide.
+        She was dedicated to all aspects of the work of the APG Task Force from writing code and suggesting editorial revisions to testing  examples with assistive technologies.
+      </p>
+      <ul>
+        <li>Carolyn MacLeod (IBM Canada)</li>
+      </ul>
+    </section>
+    <section id="major-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-2-major-contributors-to-version-1-1">Major Contributors to Version 1.1</h3></div> 
       
       <p>
         While <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Authoring Practices 1.1 is the work of the entire Authoring Practices Task Force and also benefits from many people throughout the open source community who both contribute significant work and provide valuable feedback,
@@ -162,7 +172,7 @@ lang: en
         <li>Simon Pieters of Bocoup and his sponsor, Facebook, for authoring of significant guidance sections, including comprehensive treatment of the topic of accessible names and descriptions.</li>
       </ul>
     </section>
-    <section id="participants-active-in-the-aria-authoring-practices-task-force"><div class="header-wrapper"><h3 id="c-2-participants-active-in-the-aria-authoring-practices-task-force">Participants active in the ARIA Authoring Practices Task Force</h3></div>
+    <section id="participants-active-in-the-aria-authoring-practices-task-force"><div class="header-wrapper"><h3 id="c-3-participants-active-in-the-aria-authoring-practices-task-force">Participants active in the ARIA Authoring Practices Task Force</h3></div>
       
       <ul>
         <li>Ann Abbott (Invited Expert)</li>
@@ -189,7 +199,7 @@ lang: en
         <li>Valerie Young (Bocoup)</li>
       </ul>
     </section>
-    <section id="other-commenters-and-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-3-other-commenters-and-contributors-to-version-1-1">Other commenters and contributors to Version 1.1</h3></div>
+    <section id="other-commenters-and-contributors-to-version-1-1"><div class="header-wrapper"><h3 id="c-4-other-commenters-and-contributors-to-version-1-1">Other commenters and contributors to Version 1.1</h3></div>
       
       <ul>
         <li>Vyacheslav Aristov</li>
@@ -221,7 +231,7 @@ lang: en
       </ul>
     </section>
 
-    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-7108159497185784" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
+    <div data-include="common/acknowledgements/funders.html" data-include-replace="true" data-include-id="include-8619825484288866" class="respec-offending-element" title="`data-include` failed: `common/acknowledgements/funders.html` (Failed to fetch)." id="respec-offender-data-include-failed-common-acknowledgements-funders-html-failed-to-fetch"></div>
 
   </section>
         <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-references">References</h2></div><section id="informative-references"><div class="header-wrapper"><h3 id="d-1-informative-references">Informative references</h3></div>
@@ -229,9 +239,9 @@ lang: en
     <dl class="bibliography"><dt id="bib-html">[HTML]</dt><dd>
       <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
     </dd><dt id="bib-html-aam">[HTML-AAM]</dt><dd>
-      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Scott O'Hara.  W3C. 2 June 2022. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
+      <a href="https://www.w3.org/TR/html-aam-1.0/"><cite>HTML Accessibility API Mappings 1.0</cite></a>. Steve Faulkner; Scott O'Hara.  W3C. 4 October 2022. W3C Working Draft. URL: <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a>
     </dd><dt id="bib-html-aria">[HTML-ARIA]</dt><dd>
-      <a href="https://www.w3.org/TR/html-aria/"><cite>ARIA in HTML</cite></a>. Steve Faulkner; Scott O'Hara; Patrick Lauke.  W3C. 9 December 2021. W3C Recommendation. URL: <a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>
+      <a href="https://www.w3.org/TR/html-aria/"><cite>ARIA in HTML</cite></a>. Steve Faulkner; Scott O'Hara; Patrick Lauke.  W3C. 27 September 2022. W3C Recommendation. URL: <a href="https://www.w3.org/TR/html-aria/">https://www.w3.org/TR/html-aria/</a>
     </dd><dt id="bib-svg2">[SVG2]</dt><dd>
       <a href="https://www.w3.org/TR/SVG2/"><cite>Scalable Vector Graphics (SVG) 2</cite></a>. Amelia Bellamy-Royds; Bogdan Brinza; Chris Lilley; Dirk Schulze; David Storey; Eric Willigers.  W3C. 4 October 2018. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a>
     </dd><dt id="bib-wai-aria">[WAI-ARIA]</dt><dd>

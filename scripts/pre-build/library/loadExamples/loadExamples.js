@@ -46,7 +46,7 @@ const loadExamples = async () => {
   );
 
   const additionalAssets = [
-    ...(await getPaths(path.join(examplesPath, "js"))).filter(jsFile => !jsFile.includes("jumpto.js")),
+    ...(await getPaths(path.join(examplesPath, "js"))),
     ...(await getPaths(path.join(examplesPath, "css"))),
   ];
   exampleAssetPaths = [...exampleAssetPaths, ...additionalAssets];
@@ -74,14 +74,15 @@ const loadExamples = async () => {
         "return; // Line added by pre-build script\n" +
         "  let ref = window.location.href.split('examples')[0];",
     },
+  ]);
+
+  await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
     {
-      previousText: "scriptNode.setAttribute('src', ref + 'examples/js/jumpto.js');",
-      replacementText: "scriptNode.setAttribute('src', ref + 'examples/js/skipto.js');"
+      previousText:
+        "displayOption: 'static', // options: static (default), popup",
+      replacementText:
+        "displayOption: 'popup', // Line edited by pre-build script",
     },
-    {
-      previousText: "// Add jumpto.js to examples",
-      replacementText: "// Add skipto.js to examples"
-    }
   ]);
 
   await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
