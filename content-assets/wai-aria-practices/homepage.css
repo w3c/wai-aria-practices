@@ -300,6 +300,7 @@ h2 + h3 + p {
   text-decoration: none;
   color: #215a9c;
   font-weight: bold;
+  display: block;
 }
 .work-item a:after,
 .collaboration-item:not(.mailing-list-item) a:after {
@@ -364,6 +365,10 @@ h2 + h3 + p {
 }
 .collaboration-item {
   margin: 0 auto;
+}
+.collaboration-item a,
+.collaboration-item p {
+    text-align: left;
 }
 .collaboration-item:not(.mailing-list-item) img {
   margin-bottom: 15px;
