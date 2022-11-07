@@ -1,23 +1,30 @@
 const path = require("path");
 const determineContentType = require("./determineContentType");
 
-const contentRoot = path.resolve(
-  __dirname,
-  "../../../_external/aria-practices/content"
-);
+const sourceRoot = path.resolve(__dirname, "../../../_external/aria-practices");
 
 const buildRoot = path.resolve(__dirname, "../../../ARIA/apg");
 
-const rewriteFilePath = (filePath) => {
-  const contentType = determineContentType(filePath);
+const dirname = (sitePath) => {
+  if (sitePath.endsWith("/")) return sitePath;
+  const pathComponents = sitePath.split("/");
+  pathComponents.splice(-1, 1);
+  return pathComponents.join("/") + "/";
+};
 
-  const githubPath = path.relative(contentRoot, filePath);
+const relative = (sitePath1, sitePath2) => {
+  if (sitePath2.endsWith("/")) return path.relative(sitePath1, sitePath2) + "/";
+  return path.relative(sitePath1, sitePath2);
+};
 
-  let buildRelative;
-  if (contentType === "asset") {
-    buildRelative = githubPath;
-  } else {
-    buildRelative = githubPath.replace(/\.html$/, ".md");
+const rewriteSourcePath = (sourcePath) => {
+  const contentType = determineContentType(sourcePath);
+
+  const githubPath = relative(sourceRoot, sourcePath);
+
+  let buildRelative = githubPath.replace(/^content\//, "");
+  if (contentType !== "asset") {
+    buildRelative = buildRelative.replace(/\.html$/, ".md");
   }
 
   const buildPath = path.resolve(buildRoot, buildRelative);
@@ -28,13 +35,13 @@ const rewriteFilePath = (filePath) => {
 };
 
 const getSitePath = (buildPath, contentType) => {
-  const buildRelative = path.relative(buildRoot, buildPath);
+  const buildRelative = relative(buildRoot, buildPath);
 
   switch (contentType) {
     case "pattern":
       return buildRelative.replace(/\/[^/]+-pattern\.md/, "/");
     case "example":
-      return buildRelative.replace(/examples\/([^/])\.md/, "examples/$1/");
+      return buildRelative.replace(/examples\/([^/]+)\.md/, "examples/$1/");
     case "practice":
       return buildRelative.replace(
         /practices\/([^/]+)\/[^/]+\.md/,
@@ -53,16 +60,21 @@ const getSitePath = (buildPath, contentType) => {
   }
 };
 
-const rewriteRelativePath = (relativePath, { onFilePath }) => {
-  const onBuildPath = rewriteFilePath(onFilePath);
-  const filePath = path.resolve(onBuildPath, relativePath);
-  const buildPath = rewriteFilePath(filePath);
+const rewriteRelativePath = (relativePath, { onSourcePath }) => {
+  const { buildPath: onBuildPath } = rewriteSourcePath(onSourcePath);
 
-  const siteRootPath = getSitePath(buildPath, determineContentType(filePath));
-  const onSitePath = getSitePath(onBuildPath, determineContentType(onFilePath));
-  const siteRelativePath = path.relative(onSitePath, siteRootPath);
+  const sourcePath = path.resolve(dirname(onSourcePath), relativePath);
+  const { buildPath } = rewriteSourcePath(sourcePath);
+
+  const siteRootPath = getSitePath(buildPath, determineContentType(sourcePath));
+  console.log(siteRootPath);
+  const onSitePath = getSitePath(
+    onBuildPath,
+    determineContentType(onSourcePath)
+  );
+  const siteRelativePath = relative(dirname(onSitePath), siteRootPath);
 
   return { siteRelativePath, siteRootPath, buildPath };
 };
 
-module.exports = { rewriteFilePath, rewriteRelativePath };
+module.exports = { rewriteSourcePath, rewriteRelativePath };

@@ -1,27 +1,27 @@
-const determineContentType = (filePath) => {
-  if (filePath.endsWith("content/index.html")) {
+const determineContentType = (sourcePath) => {
+  if (sourcePath.endsWith("content/index.html")) {
     return "homepage";
   }
-  if (filePath.endsWith("content/index/index.html")) {
+  if (sourcePath.endsWith("content/index/index.html")) {
     return "exampleIndex";
   }
-  if (filePath.match(/content\/about\/.+\/.+\.html$/)) {
+  if (sourcePath.match(/content\/about\/.+\/.+\.html$/)) {
     return "otherPage";
   }
-  if (!filePath.endsWith("html") || filePath.endsWith("notice.html")) {
+  if (!sourcePath.endsWith("html") || sourcePath.endsWith("notice.html")) {
     return "asset";
   }
-  if (filePath.match(/content\/practices\/.+\/.+-practice\.html$/)) {
+  if (sourcePath.match(/content\/practices\/.+\/.+-practice\.html$/)) {
     return "practice";
   }
-  if (filePath.match(/content\/patterns\/.+-pattern\.html$/)) {
+  if (sourcePath.match(/content\/patterns\/.+-pattern\.html$/)) {
     return "pattern";
   }
-  if (filePath.match(/content\/patterns\/.+\/examples\/.+\.html$/)) {
+  if (sourcePath.match(/content\/patterns\/.+\/examples\/.+\.html$/)) {
     return "example";
   }
   throw new Error(
-    `Could not determine content type for file at ${filePath}\n` +
+    `Could not determine content type for file at ${sourcePath}\n` +
       `This file may not follow established conventions.`
   );
 };

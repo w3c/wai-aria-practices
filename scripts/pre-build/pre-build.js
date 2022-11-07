@@ -13,24 +13,24 @@ const preBuild = async () => {
   await emptyBuildFolders();
 
   await recursivelyCopyAllContent({
-    forEachFile: (filePath, fileContents) => {
-      const contentType = determineContentType(filePath);
+    forEachFile: (sourcePath, sourceContents) => {
+      const contentType = determineContentType(sourcePath);
 
       switch (contentType) {
         case "pattern":
-          return transformPattern(filePath, fileContents);
+          return transformPattern(sourcePath, sourceContents);
         case "example":
-          return transformExample(filePath, fileContents);
+          return transformExample(sourcePath, sourceContents);
         case "practice":
-          return transformPractice(filePath, fileContents);
+          return transformPractice(sourcePath, sourceContents);
         case "homepage":
-          return transformHomepage(filePath, fileContents);
+          return transformHomepage(sourcePath, sourceContents);
         case "exampleIndex":
-          return transformExampleIndex(filePath, fileContents);
+          return transformExampleIndex(sourcePath, sourceContents);
         case "otherPage":
-          return transformOtherPage(filePath, fileContents);
+          return transformOtherPage(sourcePath, sourceContents);
         case "asset":
-          return transformAsset(filePath, fileContents);
+          return transformAsset(sourcePath, sourceContents);
         default:
           throw new Error(
             `Script did not recognize content type ${contentType}`

@@ -46,7 +46,7 @@ ${/* ${prettier.format(` */ ""}
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
 >
 ${
   !(addBodyClass || enableSidebar)
@@ -78,7 +78,7 @@ ${
 ${content}
 </div>
 <script 
-  src="{{ '/ARIA/apg/content/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
 ></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };
