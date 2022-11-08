@@ -3,7 +3,7 @@ const { rewriteRelativePath } = require("./rewritePath");
 const rewriteElementPaths = (html, { onSourcePath }) => {
   const aTags = html.querySelectorAll("a[href]");
   const linkTags = html.querySelectorAll("link[href]");
-  const scriptTags = html.querySelectorAll("link[src]");
+  const scriptTags = html.querySelectorAll("script[src]");
 
   [...aTags, ...linkTags, ...scriptTags].forEach((element) => {
     const href = element.getAttribute("href");

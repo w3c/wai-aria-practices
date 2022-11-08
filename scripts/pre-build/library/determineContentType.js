@@ -8,7 +8,13 @@ const determineContentType = (sourcePath) => {
   if (sourcePath.match(/content\/about\/.+\/.+\.html$/)) {
     return "otherPage";
   }
-  if (!sourcePath.endsWith("html") || sourcePath.endsWith("notice.html")) {
+  if (
+    !sourcePath.endsWith("html") ||
+    sourcePath.includes("landmarks/examples/") ||
+    sourcePath.endsWith("feed/examples/feedDisplay.html") ||
+    sourcePath.endsWith("toolbar/examples/help.html") ||
+    sourcePath.endsWith("shared/js/notice.html")
+  ) {
     return "asset";
   }
   if (sourcePath.match(/content\/practices\/.+\/.+-practice\.html$/)) {
@@ -16,6 +22,9 @@ const determineContentType = (sourcePath) => {
   }
   if (sourcePath.match(/content\/patterns\/.+-pattern\.html$/)) {
     return "pattern";
+  }
+  if (sourcePath.match(/content\/patterns\/patterns\.html$/)) {
+    return "patternIndex";
   }
   if (sourcePath.match(/content\/patterns\/.+\/examples\/.+\.html$/)) {
     return "example";

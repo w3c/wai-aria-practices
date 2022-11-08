@@ -23,7 +23,6 @@ lang: en
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>Combobox Pattern</title>
 
-<link rel="stylesheet" href="../../shared/css/core.css" />
 <script src="../../shared/js/highlight.pack.js"></script>
 <script src="../../shared/js/app.js"></script>
 <script src="../../shared/js/skipto.js"></script>
@@ -49,17 +48,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices|example-index)\//
+      /\/(patterns|practices)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
       document.querySelector(parentHref).classList.add('active');
     }
-    console.log('TODO: fix parent page nav items')
   </script>
 <div>
 
-    <main>
+    <div>
       
 
       <section id="about">
@@ -489,7 +487,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </ol>
         </div>
       </section>
-    </main>
+    </div>
   
 </div>
 <script 

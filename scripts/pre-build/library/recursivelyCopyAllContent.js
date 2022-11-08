@@ -1,19 +1,22 @@
 const path = require("path");
 const { promiseFiles: getPaths } = require("node-dir");
 const fs = require("fs/promises");
-const { rewriteSourcePath } = require("./rewritePath");
+const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
 
 const recursivelyCopyAllContent = async ({ forEachFile }) => {
-  const sourceRoot = path.resolve(
-    __dirname,
-    "../../../_external/aria-practices/content"
-  );
-  const sourcePaths = await getPaths(sourceRoot);
+  const sourcePaths = await getPaths(path.join(sourceRoot, "content"));
+
   for (const sourcePath of sourcePaths) {
-    const sourceContents = await fs.readFile(sourcePath, { encoding: "utf8" });
+    let sourceContents;
+    const doesNotSupportUtf8 = sourcePath.endsWith(".png");
+    if (doesNotSupportUtf8) {
+      sourceContents = await fs.readFile(sourcePath);
+    } else {
+      sourceContents = await fs.readFile(sourcePath, { encoding: "utf8" });
+    }
 
     const { buildPath } = rewriteSourcePath(sourcePath);
-    const buildContents = forEachFile(sourcePath, sourceContents);
+    const buildContents = await forEachFile(sourcePath, sourceContents);
 
     await fs.mkdir(path.dirname(buildPath), { recursive: true });
     await fs.writeFile(buildPath, buildContents, { encoding: "utf8" });

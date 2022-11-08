@@ -51,6 +51,10 @@ const getSitePath = (buildPath, contentType) => {
       return buildRelative.replace(/index\.md/, "");
     case "exampleIndex":
       return buildRelative.replace(/index\/index\.md/, "example-index/");
+    case "patternIndex":
+      return buildRelative.replace(/patterns\/patterns\.md/, "patterns/");
+    case "practiceIndex":
+      return buildRelative.replace(/practices\/practices\.md/, "practices/");
     case "otherPage":
       return buildRelative.replace(/\/([^/]+)\.md/, "$1/");
     case "asset":
@@ -67,7 +71,6 @@ const rewriteRelativePath = (relativePath, { onSourcePath }) => {
   const { buildPath } = rewriteSourcePath(sourcePath);
 
   const siteRootPath = getSitePath(buildPath, determineContentType(sourcePath));
-  console.log(siteRootPath);
   const onSitePath = getSitePath(
     onBuildPath,
     determineContentType(onSourcePath)
@@ -77,4 +80,9 @@ const rewriteRelativePath = (relativePath, { onSourcePath }) => {
   return { siteRelativePath, siteRootPath, buildPath };
 };
 
-module.exports = { rewriteSourcePath, rewriteRelativePath };
+module.exports = {
+  rewriteSourcePath,
+  rewriteRelativePath,
+  sourceRoot,
+  buildRoot,
+};

@@ -3,6 +3,8 @@ const formatForJekyll = require("./formatForJekyll");
 const { rewriteSourcePath } = require("./rewritePath");
 const { parse: parseHtml } = require("node-html-parser");
 const rewriteElementPaths = require("./rewriteElementPaths");
+const removeDuplicateMainTag = require("./removeDuplicateMainTag");
+const removeConflictingCss = require("./removeConflictingCss");
 
 const transformPattern = (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
@@ -13,12 +15,7 @@ const transformPattern = (sourcePath, sourceContents) => {
   const title = html.querySelector("h1").innerHTML;
   html.querySelector("h1").remove();
 
-  const baseCss = html.querySelectorAll("link").find((element) => {
-    return element
-      .toString()
-      .includes("https://www.w3.org/StyleSheets/TR/2016/base.css");
-  });
-  baseCss.remove();
+  removeConflictingCss(html);
 
   const findExamplesSection = () => {
     const sectionElements = html.querySelectorAll("section");
@@ -48,7 +45,7 @@ const transformPattern = (sourcePath, sourceContents) => {
     title,
     sitePath,
     githubPath,
-    content: html.querySelector("body").innerHTML,
+    content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
     enableSidebar: true,
     head: html.querySelector("head").innerHTML,
     footer: "",

@@ -65,13 +65,12 @@ ${
   // Make nav items active when on children pages
   `<script>
     const parentPage = window.location.pathname.match(
-      /\\/(patterns|practices|example-index)\\//
+      /\\/(patterns|practices)\\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
       document.querySelector(parentHref).classList.add('active');
     }
-    console.log('TODO: fix parent page nav items')
   </script>`
 }
 <div>

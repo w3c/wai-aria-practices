@@ -7,6 +7,8 @@ const transformPractice = require("./library/transformPractice");
 const transformOtherPage = require("./library/transformOtherPage");
 const transformHomepage = require("./library/transformHomepage");
 const transformExampleIndex = require("./library/transformExampleIndex");
+const transformPatternIndex = require("./library/transformPatternIndex");
+const transformPracticeIndex = require("./library/transformPracticeIndex");
 const transformAsset = require("./library/transformAsset");
 
 const preBuild = async () => {
@@ -27,6 +29,10 @@ const preBuild = async () => {
           return transformHomepage(sourcePath, sourceContents);
         case "exampleIndex":
           return transformExampleIndex(sourcePath, sourceContents);
+        case "patternIndex":
+          return transformPatternIndex(sourcePath, sourceContents);
+        case "practiceIndex":
+          return transformPracticeIndex(sourcePath, sourceContents);
         case "otherPage":
           return transformOtherPage(sourcePath, sourceContents);
         case "asset":
