@@ -1,8 +1,11 @@
+const { exec } = require("child_process");
 const fs = require("fs/promises");
 const path = require("path");
 const { promiseFiles: getPaths } = require("node-dir");
+const { format } = require("date-fns");
 const loadExample = require("./loadExample");
 const loadIndex = require("./loadIndex");
+const loadGetNotice = require("./loadNotice");
 
 const loadExamples = async () => {
   const examplesPath = path.resolve(
@@ -10,7 +13,10 @@ const loadExamples = async () => {
     "../../../../_external/aria-practices/examples"
   );
 
-  const destinationExamplesPath = path.resolve(__dirname, "../../../../index");
+  const destinationExamplesPath = path.resolve(
+    __dirname,
+    "../../../../ARIA/apg/example-index"
+  );
 
   const exampleDirectories = (await fs.readdir(examplesPath)).filter((item) => {
     return ![
@@ -54,14 +60,63 @@ const loadExamples = async () => {
     })
   );
 
-  await editAppJs({ destinationExamplesPath });
+  await editFile(path.join(destinationExamplesPath, "js", "app.js"), [
+    {
+      previousText:
+        "window.addEventListener('DOMContentLoaded', addSupportNotice, false);",
+      replacementText:
+        "// window.addEventListener('DOMContentLoaded', addSupportNotice, false);" +
+        "// Line edited by pre-build script",
+    },
+    {
+      previousText: "let ref = window.location.href.split('examples')[0];",
+      replacementText:
+        "return; // Line added by pre-build script\n" +
+        "  let ref = window.location.href.split('examples')[0];",
+    },
+  ]);
+
+  await editFile(path.join(destinationExamplesPath, "js", "skipto.js"), [
+    {
+      previousText:
+        "displayOption: 'static', // options: static (default), popup",
+      replacementText:
+        "displayOption: 'popup', // Line edited by pre-build script",
+    },
+  ]);
+
+  await editFile(path.join(destinationExamplesPath, "js", "notice.html"), [
+    {
+      previousText:
+        "<summary>Important Note About Use of This Example</summary>",
+      replacementText: `
+        <summary>
+          <p>
+            The code in this example is not intended for production environments. 
+            Before using it for any purpose, read this to understand why.
+          </p>
+        </summary>
+      `,
+    },
+    {
+      previousText: "Note: This is an illustrative example",
+      replacementText: "This is an illustrative example",
+    },
+  ]);
+
+  const getNotice = await loadGetNotice({ destinationExamplesPath });
 
   for (const currentPath of exampleFilePaths) {
-    const exampleRelative = path.relative(examplesPath, currentPath);
-    const exampleRelativeDirectory = path.dirname(exampleRelative);
+    const exampleRelativePath = path.relative(examplesPath, currentPath);
+    const exampleRelativeDirectory = path.dirname(exampleRelativePath);
+
+    const lastModifiedDateFormatted = await getLastModifiedDate(currentPath);
 
     const { fileName, fileContent } = await loadExample(currentPath, {
+      exampleRelativePath,
       exampleRelativeDirectory,
+      lastModifiedDateFormatted,
+      getNotice,
     });
 
     const destinationPath = path.join(
@@ -80,24 +135,47 @@ const loadExamples = async () => {
   await fs.writeFile(indexDestinationPath, indexContent, { encoding: "utf8" });
 };
 
-const editAppJs = async ({ destinationExamplesPath }) => {
-  const appJsPath = path.join(destinationExamplesPath, "js", "app.js");
-  const appJsContent = await fs.readFile(appJsPath, { encoding: "utf8" });
-  const lineToEdit = "var heading = document.querySelector('h1');";
-  const lineToEditStartIndex = appJsContent.indexOf(lineToEdit);
-  if (!lineToEditStartIndex) {
-    throw new Error(
-      "app.js has diverged from a known state and the pre-build script must " +
-        "be updated"
+const editFile = async (path, replacements) => {
+  let content = await fs.readFile(path, { encoding: "utf8" });
+
+  replacements.forEach(({ previousText, replacementText }) => {
+    const previousTextStartIndex = content.indexOf(previousText);
+    if (!(previousTextStartIndex > 0)) {
+      throw new Error(
+        `The file at ${path} has diverged from a known state and the ` +
+          "pre-build script must be updated"
+      );
+    }
+    const previousTextEndIndex = previousTextStartIndex + previousText.length;
+    content =
+      content.substr(0, previousTextStartIndex) +
+      replacementText +
+      content.substr(previousTextEndIndex);
+  });
+
+  await fs.writeFile(path, content);
+};
+
+const getLastModifiedDate = async (exampleFilePath) => {
+  const output = await new Promise((resolve) => {
+    exec(
+      `git log -1 --pretty="format:%cI" ${path.basename(exampleFilePath)}`,
+      { cwd: path.dirname(exampleFilePath) },
+      (error, stdout, stderr) => {
+        resolve(stdout);
+      }
     );
+  });
+  let dateFormatted;
+  try {
+    dateFormatted = format(new Date(output), "d MMMM y");
+  } catch (error) {
+    console.error(
+      `Failed to extract a last-modified date for the file "${exampleFilePath}"`
+    );
+    throw error;
   }
-  const lineToEditEndIndex = lineToEditStartIndex + lineToEdit.length;
-  const newContent =
-    appJsContent.substr(0, lineToEditStartIndex) +
-    "var heading = document.querySelector('.followed-by-support-notice'); " +
-    "// Line edited by pre-build script" +
-    appJsContent.substr(lineToEditEndIndex);
-  await fs.writeFile(appJsPath, newContent);
+  return dateFormatted;
 };
 
 const isHtmlAsset = (filePath) => {

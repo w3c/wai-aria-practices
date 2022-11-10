@@ -1,48 +1,55 @@
 ---
 # This is a generated file
 title: "Dialog (Modal)"
-ref: /aria-practices/
+ref: /ARIA/apg/patterns/dialogmodal/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/dialogmodal/
+feedbackmail: public-aria-practices@w3.org
+permalink: /ARIA/apg/patterns/dialogmodal/
+
+sidebar: true
+
+
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-3">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-7">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-7">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="dialog_modal"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="dialog_modal"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#dialog" class="role-reference">dialog</a> is a window overlaid on either the primary window or another dialog window.
@@ -59,14 +66,16 @@ lang: en
       <p>
         The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role is a special-case dialog role
         designed specifically for dialogs that divert users' attention to a brief, important message.
-        Its usage is described in the <a href="/patterns/alertdialog/">alert dialog design pattern.</a>
+        Its usage is described in the <a href="{{ '/ARIA/apg/patterns/alertdialog/' | relative_url }}">alert dialog design pattern.</a>
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/dialogmodal.svg" ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/dialogmodal.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-3" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
-          <li><a href="../../index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
+          <li><a href="../../example-index/dialog-modal/dialog.html">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>
+          <li><a href="../../example-index/dialog-modal/datepicker-dialog.html">Date Picker Dialog Example</a>: Demonstrates a dialog containing a calendar grid for choosing a date.</li>
         </ul>
       </section>
 
@@ -103,7 +112,7 @@ lang: en
               <li>
                 If a dialog contains the final step in a process that is not easily reversible, such as deleting data or completing a financial transaction,
                 it may be advisable to set focus on the least destructive action, especially if undoing the action is difficult or impossible.
-                The <a href="/patterns/alertdialog/">Alert Dialog Pattern</a> is often employed in such circumstances.
+                The <a href="{{ '/ARIA/apg/patterns/alertdialog/' | relative_url }}">Alert Dialog Pattern</a> is often employed in such circumstances.
               </li>
               <li>
                 If a dialog is limited to interactions that either provide additional information or continue processing,
@@ -176,19 +185,7 @@ lang: en
         </ul></div>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
+></script>

@@ -1,5 +1,5 @@
 [build]
-command = "./scripts/build.sh"
+command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
 
 [build.environment]
@@ -7,7 +7,7 @@ RUBY_VERSION = "2.6.2"
 
 [[redirects]]
   from = "/"
-  to = "/aria-practices/"
+  to = "/ARIA/apg/"
 
 [dev]
 # NB on win64 (cmd or bash shells) --live reload is broken - s/-w --livereload/--no-watch

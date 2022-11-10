@@ -5,27 +5,34 @@ const { parse: parseHtml } = require("node-html-parser");
 const loadHomepage = async () => {
   const apgPath = path.resolve(__dirname, "../../../_external/aria-practices");
   const homepagePath = path.join(apgPath, "/index.html");
-  const assetsPath = path.resolve(__dirname, "../../../content/assets");
+  const assetsPath = path.resolve(
+    __dirname,
+    "../../../content-images/wai-aria-practices/generated"
+  );
 
   const homepageString = await fs.readFile(homepagePath, "utf8");
   const root = parseHtml(homepageString);
   const body = root.querySelector("body");
-
-  await fs.mkdir(assetsPath);
 
   const copyImg = async (img) => {
     const imgPath = img.getAttribute("src");
     const fileName = path.basename(imgPath);
     const apgImgPath = path.join(apgPath, imgPath);
     const updatedPath = path.join(assetsPath, fileName);
-    img.setAttribute("src", `content/assets/${fileName}`);
+    img.setAttribute(
+      "src",
+      `{{ '/content-images/wai-aria-practices/generated/${fileName}' | relative_url }}`
+    );
     await fs.copyFile(apgImgPath, updatedPath);
   };
 
   const mailing = body.querySelector("#collaboration li:last-of-type");
 
   const homepageContent = `
-    <link rel="stylesheet" href="/assets/homepage.css">
+    <link 
+      rel="stylesheet"
+      href="{{ '/content-assets/wai-aria-practices/homepage.css' | relative_url }}"
+    >
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">
         <div class="top-section">
@@ -55,7 +62,6 @@ const loadHomepage = async () => {
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
         <h2>${body.querySelector("#resources h2").innerHTML}</h2>
-        <h3>${body.querySelector("#resources h3").innerHTML}</h3>
         <p>${body.querySelector("#resources p").innerHTML}</p>
       </div>
       <div class="contained margin-fix">
@@ -86,11 +92,13 @@ const loadHomepage = async () => {
       </div>
       <div class="work-grid-pattern grid-pattern"></div>
     </div>
-    <div class="off-white-section">
+    <div 
+      class="off-white-section" 
+      style="display: none; /* temporarily hidden because the linked resources are not yet polished */"
+    >
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>${body.querySelector("#work h2").innerHTML}</h2>
-        <h3>${body.querySelector("#work h3").innerHTML}</h3>
         <p>${body.querySelector("#work p").innerHTML}</p>
       </div>
       <div class="contained margin-fix">
@@ -119,7 +127,6 @@ const loadHomepage = async () => {
         <h2 class="collaboration-h2">
           ${body.querySelector("#collaboration h2").innerHTML}
         </h2>
-        <h3>${body.querySelector("#collaboration h3").innerHTML}</h3>
         <p class="collaboration-p">
           ${body.querySelector("#collaboration p").innerHTML}
         </p>

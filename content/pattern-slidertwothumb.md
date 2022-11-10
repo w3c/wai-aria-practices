@@ -1,51 +1,58 @@
 ---
 # This is a generated file
 title: "Slider (Multi-Thumb)"
-ref: /aria-practices/
+ref: /ARIA/apg/patterns/slidertwothumb/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/slidertwothumb/
+feedbackmail: public-aria-practices@w3.org
+permalink: /ARIA/apg/patterns/slidertwothumb/
+
+sidebar: true
+
+
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#example-5">Example</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-17">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-18">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="slidertwothumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="slidertwothumb"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
-        A multi-thumb slider is a <a href="/patterns/slider/">slider</a>
+        A multi-thumb slider is a <a href="{{ '/ARIA/apg/patterns/slider/' | relative_url }}">slider</a>
         with two or more thumbs that each set a value in a group of related values.
         For example, in a product search, a two-thumb slider could be used to enable users to set the minimum and maximum price limits for the search.
         In many two-thumb sliders, the thumbs are not allowed to pass one another, such as when the slider sets the minimum and maximum values for a range.
@@ -60,15 +67,17 @@ lang: en
         Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/slidertwothumb.svg" ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/slidertwothumb.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="example-5" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
+        <p><a href="../../example-index/slider/slider-multithumb.html">Multi-Thumb Slider Examples</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
       </section>
 
       <section id="slidertwothumb_kbd_interaction" class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-17" tabindex="-1">Keyboard Interaction</h2></div>
         
         <ul>
-          <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="/patterns/slider/#slider_kbd_interaction">single-thumb slider</a>.</li>
+          <li>Each thumb is in the page tab sequence and has the same keyboard interaction as a <a href="{{ '/ARIA/apg/patterns/slider/#slider_kbd_interaction' | relative_url }}">single-thumb slider</a>.</li>
           <li>
             The tab order remains constant regardless of thumb value and visual position within the slider.
             For example, if the value of a thumb changes such that it moves past one of the other thumbs, the tab order does not change.
@@ -102,19 +111,7 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
+></script>

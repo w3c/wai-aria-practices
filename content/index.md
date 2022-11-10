@@ -1,40 +1,67 @@
 ---
 # This is a generated file
 title: "ARIA Authoring Practices Guide"
-ref: /aria-practices/
+ref: /ARIA/apg/
 
 github:
   repository: w3c/aria-practices
-  path: aria-practices.html
-permalink: /
+  branch: main
+  path: index.html
+feedbackmail: public-aria-practices@w3.org
+permalink: /ARIA/apg/
+
+sidebar: false
+
+
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+>
 
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
 
-    <link rel="stylesheet" href="/assets/homepage.css">
+    <link 
+      rel="stylesheet"
+      href="{{ '/content-assets/wai-aria-practices/homepage.css' | relative_url }}"
+    >
     <div class="off-white-section">
       <div class="contained top-contained margin-fix">
         <div class="top-section">
           <div class="top-box">
             <div class="top-detail-1 detail-1"></div>
             <div class="detail-2"></div>
-            <h1>Get empowered to create accessible rich internet applications</h1>
+            <h1>ARIA Authoring Practices Guide (APG) Home</h1>
             <p>
-        Learn how to use ARIA to create an accessible rich internet application.
-        The ARIA Authoring practices project provides guidance on the
-        appropriate application of ARIA, describes recommended usage patterns
-        and explains concepts behind them.
+        Learn to use the accessibility semantics defined by the Accessible Rich Internet Application (ARIA) specification to create accessible web experiences.
+        This guide describes how to apply accessibility semantics to common design patterns and widgets.
+        It provides design patterns and functional examples complemented by in-depth guidance for fundamental practices.
       </p>
-            <a href="/patterns/" class="button-link button-link-white">View Patterns</a>
+            <a href="patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
-          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="content/assets/index-1.svg">
+          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="{{ '/content-images/wai-aria-practices/generated/index-1.svg' | relative_url }}">
         </div>
       </div>
       <div class="detail-3"></div>
@@ -43,43 +70,38 @@ lang: en
     <div class="white-section">
       <div class="centered">
         <div class="resource-detail-4 detail-4"></div>
-        <h2>Our Resources</h2>
-        <h3>Everything you need to make the web accessible</h3>
-        <p>
-        Recommended approaches to make widgets, navigation and behaviors
-        accessible using WAI-ARIA roles, states and properties.
-      </p>
+        <h2>APG Resources</h2>
+        <p>Building blocks that help you make the web accessible</p>
       </div>
       <div class="contained margin-fix">
         <div class="resource-item">
                 <div class="resource-item-content">
-                  <h3>Design Patterns and Widgets</h3>
+                  <h3>Design Patterns and Examples</h3>
                   <p>
                     
-            Learn how to make common rich internet application patterns and
-            widgets accessible by applying WAI-ARIA roles, states and
-            properties, and implementing keyboard support.
+            Learn how to make accessible web components and widgets with ARIA roles, states and properties and by implementing keyboard support.
+            One or more ways of implementing each pattern is demonstrated with a functional example.
           
                   </p>
-                  <a href="/patterns/" aria-label="View list of patterns" class="button-link">Learn More</a>
+                  <a href="patterns/" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A menagerie of widgets." src="content/assets/index-2.svg">
+                  <img alt="A menagerie of widgets." src="{{ '/content-images/wai-aria-practices/generated/index-2.svg' | relative_url }}">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
-                  <h3>Use of ARIA Landmarks</h3>
+                  <h3>Use ARIA Landmarks</h3>
                   <p>
                     
-            Learn how HTML sectioning elements and ARIA landmark roles are used
+            Learn how to use HTML sectioning elements and ARIA landmark roles
             to make it easy for assistive technology users to understand the
             meaning of the layout of a page.
           
                   </p>
-                  <a href="/fundamentals/landmark-regions/" aria-label="View landmarks guide" class="button-link">Learn More</a>
+                  <a href="practices/landmark-regions/" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A document flies apart into chunks." src="content/assets/index-3.svg">
+                  <img alt="A document flies apart into chunks." src="{{ '/content-images/wai-aria-practices/generated/index-3.svg' | relative_url }}">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -87,45 +109,42 @@ lang: en
                   <p>
                     
             Providing elements with accessible names and, where appropriate,
-            accessible descriptions, is one of the most important
+            accessible descriptions is one of the most important
             responsibilities authors have when developing accessible web
             experiences.
           
                   </p>
-                  <a href="/fundamentals/names-and-descriptions/" aria-label="View names and descriptions guide" class="button-link">Learn More</a>
+                  <a href="practices/names-and-descriptions/" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="Indicators delve inside a document." src="content/assets/index-4.svg">
+                  <img alt="Indicators delve inside a document." src="{{ '/content-images/wai-aria-practices/generated/index-4.svg' | relative_url }}">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
                   <h3>And So Much More...</h3>
                   <p>
                     
-            Learn about other fundamental accessibility resources and understand
-            how to Provide Accessible Names and Descriptions, implement
-            accessible Grid and Table properties, use Hiding Semantics, and
-            more.
+            Learn about other fundamental practices related to correctly using accessibility semantics,
+            developing keyboard interfaces, and more.
           
                   </p>
-                  <a class="button-link" href="/fundamentals/" aria-label="View fundamentals">Learn More</a>
+                  <a class="button-link" href="practices/" aria-label="Learn more about APG practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="content/assets/index-5.svg">
+                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="{{ '/content-images/wai-aria-practices/generated/index-5.svg' | relative_url }}">
                 </div>
               </div>
       </div>
       <div class="work-grid-pattern grid-pattern"></div>
     </div>
-    <div class="off-white-section">
+    <div 
+      class="off-white-section" 
+      style="display: none; /* temporarily hidden because the linked resources are not yet polished */"
+    >
       <div class="centered margin-fix">
         <div class="detail-5"></div>
         <h2>Current Work</h2>
-        <h3>Check out our most recent work</h3>
-        <p>
-        Review the overall scope of work planned for the APG and supporting
-        deliverables and the timelines for completing our work.
-      </p>
+        <p>Check out  recent work of the APG Task Force</p>
       </div>
       <div class="contained margin-fix">
         <div class="work-items">
@@ -201,70 +220,64 @@ lang: en
     <div class="white-section">
       <div class="centered margin-fix">
         <h2 class="collaboration-h2">
-          Collaboration
+          Get Involved
         </h2>
-        <h3>Get involved with our community and our work</h3>
         <p class="collaboration-p">
           
-        The APG Task Force conducts its work using a variety of synchronous and
-        asynchronous tools. And there are several ways to get involved.
+        The APG Task Force relies on broad community representation and participation to continuously improve the usefulness and quality of the APG.
+        There are a variety of ways you can get involved and help promote development of accessible experiences. 
       
         </p>
       </div>
       <div class="collaboration-items">
         
                   <div class="collaboration-item">
-                    <img alt="An icon showing three nodes connecting." src="content/assets/index-6.svg">
-                    <h3>Join Our Community</h3>
+                    <img alt="An icon showing three nodes connecting." src="{{ '/content-images/wai-aria-practices/generated/index-6.svg' | relative_url }}">
+                    <h3>Join the Task Force</h3>
                     <p>
-            To join the APG Task Force, individuals must be participants of the
-            ARIA Working Group. Participants are expected to actively contribute
-            to the work of the task force.
+            To join the APG Task Force, individuals need to first join the W3C ARIA Working Group.
+            Participants are expected to actively contribute to the work of the task force.
           </p>
                     <a rel="noopener noreferrer"
             target="_blank"
             href="https://www.w3.org/WAI/ARIA/task-forces/practices/"
           >
-            Connect With Us
+            Learn more about the work of the task force and how to join
           </a>
                   </div>
                 
                   <div class="collaboration-item">
-                    <img alt="An icon showing two human shapes carrying a burden." src="content/assets/index-7.svg">
-                    <h3>Contribute to Our Project</h3>
+                    <img alt="An icon showing two human shapes carrying a burden." src="{{ '/content-images/wai-aria-practices/generated/index-7.svg' | relative_url }}">
+                    <h3>Contribute via GitHub</h3>
                     <p>
-            To contribute without joining the task force, see the ARIA Working
-            Group contribute page for general instructions. To contribute to
-            documents under development, see how to contribute to the source
-            repository directly.
+            Many valuable contributions are made by people who find or raise issues of interest in our GitHub repository and then submit proposed changes via a GitHub pull request.
+            If you choose this path, please start by studying our guidelines for contributing to the repository and maintaining code quality.
           </p>
                     <a rel="noopener noreferrer"
             target="_blank"
-            href="https://www.w3.org/WAI/ARIA/contribute"
+            href="https://github.com/w3c/aria-practices"
           >
-            Get Involved
+            View ReadMe in the GitHub repository
           </a>
                   </div>
                 
 
         <div class="collaboration-item mailing-list-item">
           <div class="collaboration-detail-4 detail-4"></div>
-          <img alt="A notification bell icon appears over an email icon." src="content/assets/index-8.svg">
+          <img alt="A notification bell icon appears over an email icon." src="{{ '/content-images/wai-aria-practices/generated/index-8.svg' | relative_url }}">
           <div>
             <h3>Mailing Lists</h3>
             <p>
-            The APG Task Force uses the public-aria-practices@w3.org mailing
-            list
-            
-            <span>(<a rel="noopener noreferrer"
+            The APG Task Force uses the public aria-practices mailing list for email discussion. 
+            Meeting announcements, agendas, and links to minutes are sent to the mailing list.
+            While GitHub issues are the preferred place to discuss APG content, the mailing list is available to anyone who would prefer to communicate with the APG Task Force via email.
+          </p><p>
+            <a rel="noopener noreferrer"
               target="_blank"
               href="https://lists.w3.org/Archives/Public/public-aria-practices/"
-              >view the mailing list archive</a>)</span>
-            for email discussion. Participants are automatically added to the
-            mailing list when they become a participant of the task force.
-          </p><p>
-            Discussions of the task force prior to September 2017 are archived
-            on the public-aria mailing list.
+            >
+              View the aria-practices mailing list archive
+            </a>
           </p>
           </div>
         </div>
@@ -274,15 +287,6 @@ lang: en
     <div class="bottom-off-white-section off-white-section"></div>
   
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
+></script>

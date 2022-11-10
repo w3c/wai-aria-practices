@@ -1,48 +1,55 @@
 ---
 # This is a generated file
 title: "Button"
-ref: /aria-practices/
+ref: /ARIA/apg/patterns/button/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/button/
+feedbackmail: public-aria-practices@w3.org
+permalink: /ARIA/apg/patterns/button/
+
+sidebar: true
+
+
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-3">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-3">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="button"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="button"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a class="role-reference" href="https://w3c.github.io/aria/#button">button</a> is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
@@ -58,21 +65,23 @@ lang: en
           In this example, when the pressed state is true, the label remains "Mute" so a screen reader would say something like "Mute toggle button pressed".
           Alternatively, if the design were to call for the button label to change from "Mute" to "Unmute," the aria-pressed attribute would not be needed.
         </li>
-        <li>Menu button: as described in the <a href="/patterns/menubutton/">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+        <li>Menu button: as described in the <a href="{{ '/ARIA/apg/patterns/menubutton/' | relative_url }}">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
       </ul>
       <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Note</span></div><p class="">
-        The types of actions performed by buttons are distinctly different from the function of a link (see <a href="/patterns/link/">link pattern</a>).
+        The types of actions performed by buttons are distinctly different from the function of a link (see <a href="{{ '/ARIA/apg/patterns/link/' | relative_url }}">link pattern</a>).
         It is important that both the appearance and role of a widget match the function it provides.
         Nevertheless, elements occasionally have the visual style of a link but perform the action of a button.
         In such cases, giving the element role <code>button</code> helps assistive technology users understand the function of the element.
         However, a better solution is to adjust the visual design so it matches the function and ARIA role.
       </p></div>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/button.svg" ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
-          <li><a href="../../index/button/button_idl.html">Button Examples (IDL)</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons. This example uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface</a>.</li>
+          <li><a href="../../example-index/button/button.html">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
+          <li><a href="../../example-index/button/button_idl.html">Button Examples (IDL)</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons. This example uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface</a>.</li>
         </ul>
       </section>
 
@@ -92,7 +101,7 @@ lang: en
             <ul>
               <li>
                 If activating the button opens a dialog, the focus moves inside the dialog. (see
-                <a href="/patterns/dialogmodal/">dialog pattern</a>)
+                <a href="{{ '/ARIA/apg/patterns/dialogmodal/' | relative_url }}">dialog pattern</a>)
               </li>
               <li>If activating the button closes a dialog, focus typically returns to the
                 button that opened the dialog unless the function performed in the dialog context
@@ -136,19 +145,7 @@ lang: en
         </ul>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
+></script>

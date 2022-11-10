@@ -1,48 +1,55 @@
 ---
 # This is a generated file
 title: "Alert"
-ref: /aria-practices/
+ref: /ARIA/apg/patterns/alert/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/alert/
+feedbackmail: public-aria-practices@w3.org
+permalink: /ARIA/apg/patterns/alert/
+
+sidebar: true
+
+
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#example-0">Example</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-0">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-0">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="alert"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="alert"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         An <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a> is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task.
@@ -52,7 +59,7 @@ lang: en
       <p>
         Because alerts are intended to provide important and potentially time-sensitive information without interfering with the user's ability to continue working,
         it is crucial they do not affect keyboard focus.
-        The <a href="/patterns/alertdialog/">alert dialog</a> is designed for situations where interrupting work flow is necessary.
+        The <a href="{{ '/ARIA/apg/patterns/alertdialog/' | relative_url }}">alert dialog</a> is designed for situations where interrupting work flow is necessary.
       </p>
       <p>
         It is also important to avoid designing alerts that disappear automatically.
@@ -64,9 +71,11 @@ lang: en
         more difficult.
       </p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/alert.svg" ><div class="header-wrapper"><h2 id="example-0" tabindex="-1">Example</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/alert.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="example-0" tabindex="-1">Example</h2></div>
         
-        <p><a href="../../index/alert/alert.html">Alert Example</a></p>
+        <p><a href="../../example-index/alert/alert.html">Alert Example</a></p>
       </section>
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-0" tabindex="-1">Keyboard Interaction</h2></div>
@@ -79,19 +88,7 @@ lang: en
         <p>The widget has a role of <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a>.</p>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
+></script>

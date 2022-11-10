@@ -3,8 +3,12 @@ const path = require("path");
 const rimraf = require("rimraf");
 
 const contentPaths = [
+  path.resolve(__dirname, "../../../ARIA/apg/example-index"),
   path.resolve(__dirname, "../../../content"),
-  path.resolve(__dirname, "../../../index"),
+  path.resolve(
+    __dirname,
+    "../../../content-images/wai-aria-practices/generated"
+  ),
 ];
 
 const emptyContentFolders = async () => {

@@ -1,53 +1,60 @@
 ---
 # This is a generated file
 title: "Menu or Menu bar"
-ref: /aria-practices/
+ref: /ARIA/apg/patterns/menu/
 
 github:
   repository: w3c/aria-practices
+  branch: main
   path: aria-practices.html
-permalink: /patterns/menu/
+feedbackmail: public-aria-practices@w3.org
+permalink: /ARIA/apg/patterns/menu/
+
+sidebar: true
+
+
+
+# Context here: https://github.com/w3c/wai-aria-practices/issues/31
+type_of_guidance: APG
 
 lang: en
 ---
 
 
-<link rel="stylesheet" href="/assets/styles.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
+>
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/index/css/github.css">
+<link 
+  rel="stylesheet"
+  href="{{ '/ARIA/apg/example-index/css/github.css' | relative_url }}"
+>
 
+<script>
+const addBodyClass = "pattern-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
+<script>
+    const parentPage = window.location.pathname.match(
+      /\/(patterns|practices|example-index)\//
+    )?.[1];
+    if (parentPage) {
+      const parentHref = 'a[href*="' + parentPage + '"]';
+      document.querySelector(parentHref).classList.add('active');
+    }
+  </script>
 <div>
-
-        <div class="sidebar-container">
-          <aside class="sidebar-left">
-            <h2 class="sidebar-headline">Table of Contents</h2>
-            <ul class="sidebar-list">
-              
-                  <li>
-                    <a href="#about-this-pattern">About This Pattern</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#examples-8">Examples</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#keyboard-interaction-12">Keyboard Interaction</a>
-                  </li>
-                 
-                  <li>
-                    <a href="#wai-aria-roles-states-and-properties-13">WAI-ARIA Roles, States, and Properties</a>
-                  </li>
-                
-            </ul>
-          </aside>
-          <div class="sidebar-right">
-            <section class="widget" id="menu"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
+<section class="widget" id="menu"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
       
       <p>
         A <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> is a widget that offers a list of choices to the user, such as a set of actions or functions.
         Menu widgets behave like native operating system menus, such as the menus that pull down from the menubars commonly found at the top of many desktop application windows.
-        A menu is usually opened, or made visible, by activating a <a href="/patterns/menubutton/">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift + F10</kbd> in Windows, that opens a context specific menu.
+        A menu is usually opened, or made visible, by activating a <a href="{{ '/ARIA/apg/patterns/menubutton/' | relative_url }}">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift + F10</kbd> in Windows, that opens a context specific menu.
         When a user activates a choice in a menu, the menu usually closes unless the choice opened a submenu.
       </p>
 
@@ -58,35 +65,52 @@ lang: en
 
       <p>A common convention for indicating that a menu item launches a dialog box is to append "…" (ellipsis) to the menu item label, e.g., "Save as …".</p>
 
-      <section class="notoc examples-section"><img alt="" src="/assets/img/menu.svg" ><div class="header-wrapper"><h2 id="examples-8" tabindex="-1">Examples</h2></div>
+      <section class="notoc examples-section"><img alt="" 
+            src="{{ '/content-images/wai-aria-practices/img/menu.svg' | relative_url }}"
+          ><div class="header-wrapper"><h2 id="examples-8" tabindex="-1">Examples</h2></div>
         
         <ul>
-          <li><a href="../../index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
-          <li><a href="../../index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
+          <li><a href="../../example-index/menubar/menubar-navigation.html">Navigation Menubar Example</a>: Demonstrates a menubar that provides site navigation.</li>
+          <li><a href="../../example-index/menubar/menubar-editor.html">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
         </ul>
       </section>
 
       <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-12" tabindex="-1">Keyboard Interaction</h2></div>
         
+        <p>The following description of keyboard behaviors assumes:</p>
+        <ol>
+          <li>A horizontal <code>menubar</code> containing several <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code> elements.</li>
+          <li>Some <code>menuitem</code> elements in the <code>menubar</code> have child submenus that contain vertically arranged items.</li>
+          <li>Some of the <code>menuitem</code> elements in the submenus have child submenus with items that are also vertically arranged.</li>
+        </ol>
+        <p>When reading the following descriptions, also keep in mind that:</p>
+        <ol>
+          <li>Focusable elements, which may have role <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code>, are referred to as items.</li>
+          <li>If a behavior applies to only certain types of items, e.g., <code>menuitem</code> elements, the specific role name is used.</li>
+          <li>Submenus, also known as popup menus,  are elements with role <code>menu</code>.</li>
+          <li>Except where noted, menus opened from a menubutton behave the same as menus opened from a menubar.</li>
+        </ol>
         <p>
-          The following description of keyboard behaviors assumes:</p>
-          <ol>
-            <li>A horizontal <code>menubar</code> containing several <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code> elements.</li>
-            <li>Some <code>menuitem</code> elements in the <code>menubar</code> have child submenus that contain vertically arranged items.</li>
-            <li>Some of the <code>menuitem</code> elements in the submenus have child submenus with items that are also vertically arranged.</li>
-          </ol>
-          <p>When reading the following descriptions, also keep in mind that:</p>
-          <ol>
-            <li>Focusable elements, which may have role <code>menuitem</code>, <code>menuitemradio</code>, or <code>menuitemcheckbox</code>, are referred to as items.</li>
-            <li>If a behavior applies to only certain types of items, e.g., <code>menuitem</code> elements, the specific role name is used.</li>
-            <li>Submenus, also known as popup menus,  are elements with role <code>menu</code>.</li>
-            <li>Except where noted, menus opened from a menubutton behave the same as menus opened from a menubar.</li>
-          </ol>
+          When a <code>menu</code> opens, or when a <code>menubar</code> receives focus, keyboard focus is placed on the first item.
+          Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}" class="sec-ref"> Keyboard Navigation Inside Components</a>,
+          <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus among the items in the menu.
+          Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or <code>menu</code>.
+        </p>
         <ul>
-          <li>
-            When a <code>menu</code> opens, or when a <code>menubar</code> receives focus,
-            keyboard focus is placed on the first item.
-            All items are focusable as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>.
+          <li><kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>: 
+            <ul>
+              <li>Move  focus into a <code>menubar</code>:
+                <ul>
+                  <li>If focus is moving into the <code>menubar</code> for the first time, focus is set on the first <code>menuitem</code>.</li>
+                  <li>If the <code>menubar</code> has previously contained focus, focus is optionally set on the <code>menuitem</code> that last had focus. Otherwise, it is set on the first <code>menuitem</code> that is not disabled.</li>
+                </ul>
+              </li>
+              <li>When focus is on a <code>menuitem</code> in a <code>menu</code> or <code>menubar</code>, move focus out of the <code>menu</code> or <code>menubar</code>, and close all menus and submenus.</li>
+              <li>
+                Note that <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus into a <code>menu</code>.
+                Unlike a <code>menubar</code>, a <code>menu</code> is not visually persistent, and authors are responsible for ensuring focus moves to an item inside of a <code>menu</code> when the <code>menu</code> opens.
+              </li>
+            </ul>
           </li>
           <li><kbd>Enter</kbd>:
             <ul>
@@ -151,8 +175,6 @@ lang: en
           <li><kbd>End</kbd>: If arrow key wrapping is not supported, moves focus to the last item in the current <code>menu</code> or <code>menubar</code>.</li>
           <li>Any key that corresponds to a printable character (Optional): Move focus to the next item in the current menu whose label begins with that printable character.</li>
           <li><kbd>Escape</kbd>: Close the menu that contains focus and return focus to the element or context, e.g., menu button or parent <code>menuitem</code>, from which the menu was opened.</li>
-          <li><kbd>Tab</kbd>: Moves focus to the next element in the tab sequence, and if the item that had focus is not in a <code>menubar</code>, closes its <code>menu</code> and all open parent <code>menu</code> containers.</li>
-          <li><kbd>Shift + Tab</kbd>: Moves focus to the previous element in the tab sequence, and if the item that had focus is not in a <code>menubar</code>, closes its <code>menu</code> and all open parent <code>menu</code> containers.</li>
         </ul>
         <div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>Note</span></div><ol class="">
           <li>Disabled menu items are focusable but cannot be activated. </li>
@@ -198,7 +220,7 @@ lang: en
           </li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
           <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-expanded" class="property-reference">aria-expanded</a> set to <code>false</code> when its child menu is not visible and set to <code>true</code> when the child menu is visible.</li>
-          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="/fundamentals/keyboard-interface/#kbd_general_within" class="sec-ref"> Keyboard Navigation Inside Components</a>:
+          <li>One of the following approaches is used to enable scripts to move focus among items in a menu as described in <a href="{{ '/ARIA/apg/practices/keyboard-interface/#kbd_general_within' | relative_url }}" class="sec-ref"> Keyboard Navigation Inside Components</a>:
             <ul>
               <li>The menu container has <code>tabindex</code> set to <code>-1</code> or <code>0</code> and <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to the ID of the focused item. </li>
               <li>Each item in the menu has <code>tabindex</code> set to <code>-1</code>, except in a menubar, where the first item has <code>tabindex</code> set to <code>0</code>. </li>
@@ -234,19 +256,7 @@ lang: en
         </p></div>
       </section>
     </section>
-          </div>
-        </div>
-      
 </div>
-<script>
-  var SkipToConfig = {
-    settings: {
-      skipTo: {
-        displayOption: 'popup',
-        attachElement: '#site-header',
-        colorTheme: 'aria'
-      }
-    }
-  };
-</script>
-<script src="/assets/skipto.min.js"></script>
+<script 
+  src="{{ '/ARIA/apg/example-index/js/skipto.js' | relative_url }}"
+></script>

@@ -2,38 +2,24 @@ const fs = require("fs/promises");
 const path = require("path");
 const getHomePage = require("./pages/getHomePage");
 const getAboutPage = require("./pages/getAboutPage");
-const getFundamentalsPage = require("./pages/getFundamentalsPage");
-const getFundamentalPage = require("./pages/getFundamentalPage");
+const getPracticesPage = require("./pages/getPracticesPage");
+const getPracticePage = require("./pages/getPracticePage");
 const getPatternsPage = require("./pages/getPatternsPage");
 const getPatternPage = require("./pages/getPatternPage");
 
 const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
-  const fundamentals = [
+  const practices = [
+    sections.readMeFirst,
     sections.landmarkRegions,
     sections.namesAndDescriptions,
     sections.keyboardInterface,
     sections.gridAndTableProperties,
     sections.rangeRelatedProperties,
-    {
-      slug: "hiding-semantics",
-      name: "Hiding Semantics",
-      permalink: "/fundamentals/hiding-semantics/",
-      introduction: sections.presentationRole.introduction,
-      outline: [
-        {
-          slug: sections.presentationRole.slug,
-          name: sections.presentationRole.name,
-        },
-        {
-          slug: sections.childrenPresentational.slug,
-          name: sections.childrenPresentational.name,
-        },
-      ],
-      content: `
-        ${sections.presentationRole.content}
-        ${sections.childrenPresentational.content}
-      `,
-    },
+    sections.structuralRoles,
+    combinePractices(
+      [sections.presentationRole, sections.childrenPresentational],
+      { slug: "hiding-semantics", name: "Hiding Semantics" }
+    ),
   ];
 
   const pages = [
@@ -41,8 +27,8 @@ const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
     getAboutPage(sections),
     getPatternsPage(patterns),
     ...patterns.map((pattern) => getPatternPage(pattern)),
-    getFundamentalsPage(fundamentals),
-    ...fundamentals.map((fundamental) => getFundamentalPage(fundamental)),
+    getPracticesPage(practices),
+    ...practices.map((practice) => getPracticePage(practice)),
   ];
 
   await Promise.all(
@@ -51,6 +37,18 @@ const organizeForJekyll = async ({ sections, patterns }, homepageContent) => {
       return fs.writeFile(filePath, fileContent);
     })
   );
+};
+
+const combinePractices = (practices, overrides = {}) => {
+  return {
+    slug: overrides.slug ?? practices[0].slug,
+    name: overrides.name ?? practices[0].name,
+    permalink: overrides.permalink ?? practices[0].permalink,
+    introduction: overrides.introduction ?? practices[0].introduction,
+    content:
+      overrides.content ??
+      practices.map((practice) => practice.content).join(" "),
+  };
 };
 
 module.exports = organizeForJekyll;
