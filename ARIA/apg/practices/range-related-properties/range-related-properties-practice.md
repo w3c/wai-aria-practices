@@ -62,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="introduction">
         <h2>Introduction</h2>
-        <p>ARIA defines roles like meter, progressbar and scrollbar as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits. There are the following range-related widgets:</p>
+        <p>ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</p>
         <ul>
           <li><code>meter</code></li>
           <li><code>progressbar</code></li>

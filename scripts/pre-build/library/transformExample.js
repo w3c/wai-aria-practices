@@ -11,7 +11,10 @@ const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 const removeConflictingCss = require("./removeConflictingCss");
 
 const loadNotice = async () => {
-  const noticePath = path.resolve(sourceRoot, "content/shared/js/notice.html");
+  const noticePath = path.resolve(
+    sourceRoot,
+    "content/shared/templates/example-usage-warning.html"
+  );
   const noticeContent = await fs.readFile(noticePath, { encoding: "utf8" });
   const html = parseHtml(noticeContent);
 

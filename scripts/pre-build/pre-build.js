@@ -31,11 +31,10 @@ const preBuild = async () => {
           return transformHomepage(sourcePath, sourceContents);
         case "exampleIndex":
           return transformExampleIndex(sourcePath, sourceContents);
-        // Special cases which are handled below
-        // case "patternIndex":
-        //   return transformPatternIndex(sourcePath, sourceContents);
-        // case "practiceIndex":
-        //   return transformPracticeIndex(sourcePath, sourceContents);
+        case "patternIndex":
+          return transformPatternIndex(sourcePath, sourceContents);
+        case "practiceIndex":
+          return transformPracticeIndex(sourcePath, sourceContents);
         case "about":
           return transformAbout(sourcePath, sourceContents);
         case "asset":
@@ -47,14 +46,6 @@ const preBuild = async () => {
             `Script did not recognize content type ${contentType}`
           );
       }
-    },
-    // Currently generated and not present in the content repo. In the future
-    // it would be preferable for these to originate in the content repo.
-    generateFiles: {
-      [path.join(sourceRoot, "content/patterns/patterns.html")]:
-        transformPatternIndex,
-      [path.join(sourceRoot, "content/practices/practices.html")]:
-        transformPracticeIndex,
     },
   });
 };

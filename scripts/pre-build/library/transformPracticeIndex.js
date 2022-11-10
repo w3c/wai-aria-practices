@@ -39,9 +39,6 @@ const transformPracticeIndex = async (sourcePath /* , sourceContents */) => {
     )?.[1];
 
     let firstParagraph = practiceHtml.querySelectorAll("p")[0].textContent;
-    // if (firstParagraph.trim().startsWith("NOTE:")) {
-    //   firstParagraph = practiceHtml.querySelectorAll("p")[1].textContent;
-    // }
     const periodMatch = /(\.[^\w]|\.$)/.exec(firstParagraph);
     const incompleteSentence = periodMatch === null;
     if (incompleteSentence)

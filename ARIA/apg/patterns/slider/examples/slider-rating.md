@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: 24 October 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice">
+    <details id="support-notice" class="note">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -73,14 +73,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
         <li>
-          There may be support gaps in some <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>, especially for <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          There may be support gaps in some
+          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          especially for
+          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
+        <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
-          The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a>
-          is developing measurements of assistive technology support for APG examples.
+          Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
+          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
-        <li>Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.</li>
       </ul>
     </details>
   
@@ -106,7 +109,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           Following is an example of a rating input that demonstrates the <a href="../../">Slider Pattern</a>.
           This rating widget employs a slider because the slider pattern supports step values of any size.
           This particular input enables half-star steps.
-          A typical five-star rating widget that allows only five possible values could instead be implemented as a <a href="../../../radio/examples/">radio group.</a>
+          A typical five-star rating widget that allows only five possible values could instead be implemented as a <a href="../../../radio/">radio group.</a>
         </p>
         <p>Similar examples include:</p>
         <ul>

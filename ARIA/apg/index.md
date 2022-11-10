@@ -59,7 +59,7 @@ lang: en
         This guide describes how to apply accessibility semantics to common design patterns and widgets.
         It provides design patterns and functional examples complemented by in-depth guidance for fundamental practices.
       </p>
-            <a href="patterns/" class="button-link button-link-white">View Patterns</a>
+            <a href="patterns/patterns.html" class="button-link button-link-white">View Patterns</a>
           </div>
           <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="{{ '/content-images/wai-aria-practices/generated/index-1.svg' | relative_url }}">
         </div>
@@ -83,7 +83,7 @@ lang: en
             One or more ways of implementing each pattern is demonstrated with a functional example.
           
                   </p>
-                  <a href="patterns/" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
+                  <a href="patterns/patterns.html" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A menagerie of widgets." src="{{ '/content-images/wai-aria-practices/generated/index-2.svg' | relative_url }}">
@@ -94,7 +94,7 @@ lang: en
                   <p>
                     Learn how to use HTML sectioning elements and ARIA landmark roles to make it easy for assistive technology users to understand the meaning of the layout of a page.
                   </p>
-                  <a href="practices/landmark-regions/" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
+                  <a href="practices/landmark-regions/landmark-regions-practice.html" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A document flies apart into chunks." src="{{ '/content-images/wai-aria-practices/generated/index-3.svg' | relative_url }}">
@@ -105,7 +105,7 @@ lang: en
                   <p>
                     Providing elements with accessible names and, where appropriate, accessible descriptions is one of the most important responsibilities authors have when developing accessible web experiences.
                   </p>
-                  <a href="practices/names-and-descriptions/" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
+                  <a href="practices/names-and-descriptions/names-and-descriptions-practice.html" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="Indicators delve inside a document." src="{{ '/content-images/wai-aria-practices/generated/index-4.svg' | relative_url }}">
@@ -116,7 +116,7 @@ lang: en
                   <p>
                     Learn about other fundamental practices related to correctly using accessibility semantics, developing keyboard interfaces, and more.
                   </p>
-                  <a class="button-link" href="practices/" aria-label="Learn more about APG practices">Learn More</a>
+                  <a class="button-link" href="practices/practices.html" aria-label="Learn more about APG practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
                   <img alt="A box with an accessibility label is chock full of widgets and document bits." src="{{ '/content-images/wai-aria-practices/generated/index-5.svg' | relative_url }}">

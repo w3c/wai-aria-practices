@@ -13,7 +13,7 @@ const determineContentType = (sourcePath) => {
     sourcePath.includes("landmarks/examples/") ||
     sourcePath.endsWith("feed/examples/feedDisplay.html") ||
     sourcePath.endsWith("toolbar/examples/help.html") ||
-    sourcePath.endsWith("shared/js/notice.html")
+    sourcePath.endsWith("shared/templates/example-usage-warning.html")
   ) {
     return "asset";
   }

@@ -59,7 +59,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
     <div>
       
-      
+
       <section id="intro">
         <h2>Introduction</h2>
         <p>
@@ -99,7 +99,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="change_log">
         <h2>Change History</h2>
-        
+
         <p>
           APG 1.1 supported ARIA 1.1, and this version, APG 1.2, includes changes to support version 1.2 of the ARIA specification.
           It also includes nearly 200 significant updates to improve the quality and breadth of content.
@@ -147,7 +147,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
         </ul>
       </section>
-      
+
       <section id="acknowledgements">
         <h2>Acknowledgements</h2>
         <h3>Editors</h3>
@@ -276,7 +276,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li>Christopher Tryens</li>
           </ul>
         </section>
-      </section>    
+      </section>
 
     <section id="references">
         <h2 id="d-references">References</h2>
@@ -337,7 +337,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </dl>
         </section>
       </section>
-      
+
     </div>
   
 </div>

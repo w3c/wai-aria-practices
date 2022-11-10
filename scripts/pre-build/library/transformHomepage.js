@@ -18,7 +18,7 @@ const transformHomepage = async (sourcePath, sourceContents) => {
   const copyImg = async (img) => {
     const imgPath = img.getAttribute("src");
     const fileName = path.basename(imgPath);
-    const sourceImgPath = path.join(sourceRoot, imgPath);
+    const sourceImgPath = path.join(sourceRoot, "index", imgPath);
     const updatedPath = path.join(assetsPath, fileName);
     img.setAttribute(
       "src",

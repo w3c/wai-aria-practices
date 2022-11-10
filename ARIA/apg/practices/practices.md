@@ -54,7 +54,7 @@ lang: en
                   <span>Grid and Table Properties</span>
                 </h2>
               </a>
-              <div class="tile-introduction">To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the grid pattern or table pattern, assistive technologies need to be able to determine the number of rows and columns and other factors.</div>
+              <div class="tile-introduction">To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the grid pattern or table pattern, assistive technologies need to be able to determine factors such as the number of rows and columns.</div>
             </li>
            
             <li class="tile tile-hiding-semantics">
@@ -113,7 +113,7 @@ lang: en
                   <span>Communicating Value and Limits for Range Widgets</span>
                 </h2>
               </a>
-              <div class="tile-introduction">ARIA defines roles like meter, progressbar and scrollbar as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
+              <div class="tile-introduction">ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
             </li>
            
             <li class="tile tile-structural-roles">

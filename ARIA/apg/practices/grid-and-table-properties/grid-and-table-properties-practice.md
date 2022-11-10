@@ -62,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="introduction">
         <h2>Introduction</h2>
-        <p>To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the <a href="../../patterns/grid/">grid pattern</a> or <a href="../../patterns/table/">table pattern</a>, assistive technologies need to be able to determine the number of rows and columns and other factors.</p>
+        <p>To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the <a href="../../patterns/grid/">grid pattern</a> or <a href="../../patterns/table/">table pattern</a>, assistive technologies need to be able to determine factors such as the number of rows and columns. Data requirements include:</p>
         <ul>
           <li>The number of rows and columns.</li>
           <li>Whether any columns or rows are hidden, e.g., columns 1 through 3 and 5 through 8 are visible but column 4 is hidden.</li>

@@ -22,14 +22,6 @@ const recursivelyCopyAllContent = async ({ forEachFile, generateFiles }) => {
     await fs.mkdir(path.dirname(buildPath), { recursive: true });
     await fs.writeFile(buildPath, buildContents, { encoding: "utf8" });
   }
-
-  for (const [sourcePath, transform] of Object.entries(generateFiles)) {
-    const { buildPath } = rewriteSourcePath(sourcePath);
-    const buildContents = await transform(sourcePath, null);
-
-    await fs.mkdir(path.dirname(buildPath), { recursive: true });
-    await fs.writeFile(buildPath, buildContents, { encoding: "utf8" });
-  }
 };
 
 module.exports = recursivelyCopyAllContent;
