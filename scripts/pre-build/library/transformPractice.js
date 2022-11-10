@@ -4,6 +4,7 @@ const removeConflictingCss = require("./removeConflictingCss");
 const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const rewriteElementPaths = require("./rewriteElementPaths");
 const { rewriteSourcePath } = require("./rewritePath");
+const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 
 const transformPractice = (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
@@ -20,7 +21,9 @@ const transformPractice = (sourcePath, sourceContents) => {
     title,
     sitePath,
     githubPath,
-    content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
+    content: wrapTablesWithResponsiveDiv(
+      removeDuplicateMainTag(html.querySelector("body").innerHTML)
+    ),
     enableSidebar: true,
     head: html.querySelector("head").innerHTML,
   });

@@ -98,7 +98,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           The following table lists all structural roles defined in ARIA 1.2.
           As described above in the section on <a href="#when_to_use_structural_roles">When to Use Structural Roles</a>, use an equivalent HTML element instead of an ARIA structural role unless the ARIA role does not have an HTML equivalent or one of the four circumstances that makes using ARIA necessary exists.
         </p>
-        <table class="widget-features">
+        <div class="table-wrap"><table class="widget-features">
           <caption>
             ARIA structural roles
           </caption>
@@ -262,7 +262,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>No equivalent element</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
     </div>
   

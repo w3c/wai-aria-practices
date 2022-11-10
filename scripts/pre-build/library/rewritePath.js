@@ -23,6 +23,9 @@ const rewriteSourcePath = (sourcePath) => {
   const githubPath = relative(sourceRoot, sourcePath);
 
   let buildRelative = githubPath.replace(/^content\//, "");
+  if (contentType === "ignored") {
+    return { githubPath, buildPath: null, sitePath: null };
+  }
   if (contentType !== "asset") {
     buildRelative = buildRelative.replace(/\.html$/, ".md");
   }
@@ -55,10 +58,12 @@ const getSitePath = (buildPath, contentType) => {
       return buildRelative.replace(/patterns\/patterns\.md/, "patterns/");
     case "practiceIndex":
       return buildRelative.replace(/practices\/practices\.md/, "practices/");
-    case "otherPage":
-      return buildRelative.replace(/\/([^/]+)\.md/, "$1/");
+    case "about":
+      return buildRelative.replace(/\/about\.md/, "about/");
     case "asset":
       return buildRelative;
+    case "ignored":
+      return null;
     default:
       throw new Error(`Script did not recognize content type ${contentType}`);
   }

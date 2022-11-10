@@ -62,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="introduction">
         <h2>Introduction</h2>
-        <p>To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the <a href="../../patterns/grid/">grid pattern</a> or <a href="../../patterns/table/">table pattern</a>, assistive technologies need to be able to determine:</p>
+        <p>To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the <a href="../../patterns/grid/">grid pattern</a> or <a href="../../patterns/table/">table pattern</a>, assistive technologies need to be able to determine the number of rows and columns and other factors.</p>
         <ul>
           <li>The number of rows and columns.</li>
           <li>Whether any columns or rows are hidden, e.g., columns 1 through 3 and 5 through 8 are visible but column 4 is hidden.</li>
@@ -75,7 +75,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           Additionally, some of this information, like skipped columns or rows and how data is sorted, cannot be derived from the DOM structure.
         </p>
         <p>The below sections explain how to use the following properties that ARIA provides for grid and table accessibility.</p>
-        <table class="widget-features">
+        <div class="table-wrap"><table class="widget-features">
           <caption>
             Grid and Table Property Definitions
           </caption>
@@ -125,7 +125,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>Indicates if items in a row or column are sorted in ascending or descending order.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
 
       <section id="gridAndTableProperties_rows">
@@ -422,7 +422,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           When rows or columns are sorted, the <code>aria-sort</code> property can be applied to a column or row header to indicate the sorting method.
           The following table describes allowed values for <code>aria-sort</code>.
         </p>
-        <table class="widget-features">
+        <div class="table-wrap"><table class="widget-features">
           <caption>Description of values for <code>aria-sort</code></caption>
           <thead>
             <tr>
@@ -448,7 +448,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>Default (no sort applied).</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
         <p>
           It is important to note that ARIA does not provide a way to indicate levels of sort for data sets that have multiple sort keys.
           Thus, there is limited value to applying <code>aria-sort</code> with a value other than <code>none</code> to more than one column or row.

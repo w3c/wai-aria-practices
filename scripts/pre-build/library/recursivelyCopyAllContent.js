@@ -3,7 +3,7 @@ const { promiseFiles: getPaths } = require("node-dir");
 const fs = require("fs/promises");
 const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
 
-const recursivelyCopyAllContent = async ({ forEachFile }) => {
+const recursivelyCopyAllContent = async ({ forEachFile, generateFiles }) => {
   const sourcePaths = await getPaths(path.join(sourceRoot, "content"));
 
   for (const sourcePath of sourcePaths) {
@@ -16,7 +16,16 @@ const recursivelyCopyAllContent = async ({ forEachFile }) => {
     }
 
     const { buildPath } = rewriteSourcePath(sourcePath);
+    if (buildPath === null) continue; // File is ignored
     const buildContents = await forEachFile(sourcePath, sourceContents);
+
+    await fs.mkdir(path.dirname(buildPath), { recursive: true });
+    await fs.writeFile(buildPath, buildContents, { encoding: "utf8" });
+  }
+
+  for (const [sourcePath, transform] of Object.entries(generateFiles)) {
+    const { buildPath } = rewriteSourcePath(sourcePath);
+    const buildContents = await transform(sourcePath, null);
 
     await fs.mkdir(path.dirname(buildPath), { recursive: true });
     await fs.writeFile(buildPath, buildContents, { encoding: "utf8" });

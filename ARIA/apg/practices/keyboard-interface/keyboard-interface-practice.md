@@ -487,7 +487,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           While the assignments associated with Windows and Linux platforms can be implemented and used in browsers running in macOS, replacing them with macOS assignments in browsers running on a macOS device can make the keyboard interface more discoverable and intuitive for those users.
           In some cases, it may also help avoid system or browser keyboard conflicts.
         </p>
-        <table class="widget-features">
+        <div class="table-wrap"><table class="widget-features">
           <thead>
             <tr>
               <th>Function</th>
@@ -527,7 +527,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>Command + Shift + Z</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
 
       <section id="kbd_shortcuts">

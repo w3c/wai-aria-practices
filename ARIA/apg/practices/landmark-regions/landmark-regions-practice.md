@@ -78,7 +78,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           So, in order to provide assistive technology users with a logical view of a page, it is important to understand the effects of using HTML sectioning elements.
           [[HTML-ARIA]] contains more information on HTML element role mapping.
         </p>
-        <table class="widget-features">
+        <div class="table-wrap"><table class="widget-features">
           <caption>
             Default landmark roles for HTML sectioning elements
           </caption>
@@ -127,7 +127,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td><code>region</code> when it has an accessible name using <code>aria-labelledby</code> or <code>aria-label</code></td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
 
       <section>

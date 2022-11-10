@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="introduction">
         <h2>Introduction</h2>
         <p>
-          Providing elements with accessible names, and where appropriate, accessible descriptions is one of the most important responsibilities authors have when developing accessible web experiences.
+          Providing elements with accessible names, and where appropriate, accessible descriptions, is one of the most important responsibilities authors have when developing accessible web experiences.
           While doing so is straightforward for most elements, technical mistakes that can completely block users of assistive technologies are easy to make and unfortunately common.
           To help authors effectively provide accessible names and descriptions, this section explains their purpose, when authors need to provide them, how browsers assemble them, and rules for coding and composing them.
           It also guides authors in the use of the following naming and describing techniques and WAI-ARIA properties:
@@ -570,7 +570,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <dt>Guidance:</dt>
           <dd>Provides information to help determine if providing a name is beneficial, and if so, describes any recommended techniques.</dd>
         </dl>
-        <table aria-labelledby="naming_role_guidance_heading">
+        <div class="table-wrap"><table aria-labelledby="naming_role_guidance_heading">
           <thead>
             <tr>
               <th>role</th>
@@ -1527,7 +1527,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
 
       <section id="name_calculation">

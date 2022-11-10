@@ -4,8 +4,9 @@ const removeConflictingCss = require("./removeConflictingCss");
 const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const rewriteElementPaths = require("./rewriteElementPaths");
 const { rewriteSourcePath } = require("./rewritePath");
+const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 
-const transformExampleIndex = (sourcePath, sourceContents) => {
+const transformAbout = (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
 
@@ -20,10 +21,12 @@ const transformExampleIndex = (sourcePath, sourceContents) => {
     title,
     sitePath,
     githubPath,
-    content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
+    content: wrapTablesWithResponsiveDiv(
+      removeDuplicateMainTag(html.querySelector("body").innerHTML)
+    ),
     enableSidebar: true,
     head: html.querySelector("head").innerHTML,
   });
 };
 
-module.exports = transformExampleIndex;
+module.exports = transformAbout;

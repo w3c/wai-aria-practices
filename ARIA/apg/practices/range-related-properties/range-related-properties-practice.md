@@ -62,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="introduction">
         <h2>Introduction</h2>
-        <p>ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</p>
+        <p>ARIA defines roles like meter, progressbar and scrollbar as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits. There are the following range-related widgets:</p>
         <ul>
           <li><code>meter</code></li>
           <li><code>progressbar</code></li>
@@ -77,7 +77,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           For instance, a spin button for choosing a day of the week could support values from 1 to 7 but they could be presented to the user as day names, e.g., "Monday", "Tuesday", etc.
         </p>
         <p>This section describes considerations for using the following four properties that communicate characteristics of a range widget:</p>
-        <table>
+        <div class="table-wrap"><table>
           <thead>
             <tr>
               <th>Property</th>
@@ -105,7 +105,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>If a numeric value is not sufficiently descriptive, this property can define a text description of the current value of a range widget.</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
 
       <section id="range_related_properties_using_aria-valuemin_aria-valuemax_and_aria-valuenow">
@@ -123,7 +123,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           The <code>aria-valuenow</code> property is required for the <code>meter</code>, <code>scrollbar</code>, <code>separator</code> (if the element is focusable), and <code>slider</code> roles.
         </p>
         <p>The range widget roles have the following default values and requirements for <code>aria-valuemin</code>, <code>aria-valuemax</code> and <code>aria-valuenow</code>.</p>
-        <table>
+        <div class="table-wrap"><table>
           <thead>
             <tr>
               <th scope="col">Role</th>
@@ -184,7 +184,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>No</td>
             </tr>
           </tbody>
-        </table>
+        </table></div>
       </section>
 
       <section id="range_related_properties_using_aria-valuetext">
