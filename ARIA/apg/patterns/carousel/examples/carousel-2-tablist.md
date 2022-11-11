@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -74,15 +74,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -124,7 +124,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
           <label for="rotation-paused">
             <input type="checkbox" id="rotation-paused" value="paused" aria-describedby="rotation-paused-desc">
-            Pause auto-rotation on load (<a href="javascript:history.go(0)"><img class="reload" src="images/reload-icon.png" alt="">reload needed</a>)
+            Pause auto-rotation on load (<a href="javascript:history.go(0)"><img class="reload" src="../images/reload-icon.png" alt>reload needed</a>)
           </label>
           <p id="rotation-paused-desc">
             This option controls whether the carousel is paused or playing on page load.
@@ -217,7 +217,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item active" id="carousel-item-1" role="tabpanel" aria-roledescription="slide" aria-label="1 of 6">
                   <div class="carousel-image">
                     <a href="#" id="carousel-image-1">
-                      <img src="images/amsterdamslide__800x600.jpg" alt="Walking Tour in Amsterdam">
+                      <img src="../images/amsterdamslide__800x600.jpg" alt="Walking Tour in Amsterdam">
                     </a>
                   </div>
 
@@ -237,7 +237,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" id="carousel-item-2" role="tabpanel" aria-roledescription="slide" aria-label="2 of 6">
                   <div class="carousel-image">
                     <a href="#" id="carousel-image-2">
-                      <img src="images/lands-endslide__800x600.jpg" alt="Land&#039;s End in Cornwall">
+                      <img src="../images/lands-endslide__800x600.jpg" alt="Land&#039;s End in Cornwall">
                     </a>
                   </div>
 
@@ -257,7 +257,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" id="carousel-item-3" role="tabpanel" aria-roledescription="slide" aria-label="3 of 6">
                   <div class="carousel-image">
                     <a href="#!" id="carousel-image-3">
-                      <img src="images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
+                      <img src="../images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
                     </a>
                   </div>
 
@@ -275,7 +275,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" id="carousel-item-4" role="tabpanel" aria-roledescription="slide" aria-label="4 of 6">
                   <div class="carousel-image">
                     <a href="#" id="carousel-image-4">
-                      <img src="images/foyleswarslide__800x600.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
+                      <img src="../images/foyleswarslide__800x600.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
                     </a>
                   </div>
 
@@ -295,7 +295,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" id="carousel-item-5" role="tabpanel" aria-roledescription="slide" aria-label="5 of 6">
                   <div class="carousel-image">
                     <a href="#" id="carousel-image-5">
-                      <img src="images/britcomdavidslide__800x600.jpg" alt="British flag with WILL-TV host David Thiel.">
+                      <img src="../images/britcomdavidslide__800x600.jpg" alt="British flag with WILL-TV host David Thiel.">
                     </a>
                   </div>
 
@@ -313,7 +313,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" id="carousel-item-6" role="tabpanel" aria-roledescription="slide" aria-label="6 of 6">
                   <div class="carousel-image">
                     <a href="#" id="carousel-image-6">
-                      <img src="images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set">
+                      <img src="../images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set">
                     </a>
                   </div>
 
@@ -702,7 +702,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     <li>Since the tab element is an HTML <code>button</code>, the tabindex attribute is removed when a tab is selected (activated) rather than setting <code>tabindex="0"</code>.</li>
                     <li>
                       This approach to managing focus is described in the section on
-                      <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                      <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                     </li>
                   </ul>
                 </td>

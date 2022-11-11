@@ -110,7 +110,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
 
         <p>
-          The ARIA specification refers to a discrete UI component that contains multiple focusable elements as a <a href="#composite" class="role-reference">composite</a> widget.
+          The ARIA specification refers to a discrete UI component that contains multiple focusable elements as a <a href="https://w3c.github.io/aria/#composite" class="role-reference">composite</a> widget.
           The process of controlling focus movement inside a composite is called managing focus.
           Following are some ARIA design patterns with example implementations that demonstrate focus management:
         </p>
@@ -370,7 +370,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <h3>Managing Focus in Composites Using aria-activedescendant</h3>
 
           <p>
-            If a component container has an ARIA role that supports the <a class="property-reference" href="#aria-activedescendant">aria-activedescendant</a> property, it is not necessary to manipulate the tabindex attribute and move DOM focus among focusable elements within the container.
+            If a component container has an ARIA role that supports the <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant">aria-activedescendant</a> property, it is not necessary to manipulate the tabindex attribute and move DOM focus among focusable elements within the container.
             Instead, only the container element needs to be included in the tab sequence.
             When the container has DOM focus, the value of aria-activedescendant on the container tells assistive technologies which element is active within the widget.
             Assistive technologies will consider the element referred to as active to be the focused element even though DOM focus is on the element that has the aria-activedescendant property.
@@ -405,17 +405,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </ul>
 
           <p>
-            The <a href="#aria-activedescendant" class="property-reference">specification for aria-activedescendant</a> places important restrictions on the DOM relationship between the focused element that has the aria-activedescendant attribute and the element referenced as active by the value of the attribute.
+            The <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">specification for aria-activedescendant</a> places important restrictions on the DOM relationship between the focused element that has the aria-activedescendant attribute and the element referenced as active by the value of the attribute.
             One of the following three conditions must be met.
           </p>
           <ol>
             <li>The element referenced as active is a DOM descendant of the focused referencing element.</li>
-            <li>The focused referencing element has a value specified for the <a href="#aria-owns" class="property-reference">aria-owns</a> property that includes the ID of the element referenced as active.</li>
+            <li>The focused referencing element has a value specified for the <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> property that includes the ID of the element referenced as active.</li>
             <li>
-              The focused referencing element has role of <a href="#combobox" class="role-reference">combobox</a>, <a href="#textbox" class="role-reference">textbox</a>, or <a href="#searchbox" class="role-reference">searchbox</a> and has <a href="#aria-controls" class="property-reference">aria-controls</a> property referring to an element with a role that supports aria-activedescendant and either:
+              The focused referencing element has role of <a href="https://w3c.github.io/aria/#combobox" class="role-reference">combobox</a>, <a href="https://w3c.github.io/aria/#textbox" class="role-reference">textbox</a>, or <a href="https://w3c.github.io/aria/#searchbox" class="role-reference">searchbox</a> and has <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> property referring to an element with a role that supports aria-activedescendant and either:
               <ol>
                 <li>The element referenced as active is a descendant of the controlled element.</li>
-                <li>The controlled element has a value specified for the <a href="#aria-owns" class="property-reference">aria-owns</a> property that includes the ID of the element referenced as active.</li>
+                <li>The controlled element has a value specified for the <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> property that includes the ID of the element referenced as active.</li>
               </ol>
             </li>
           </ol>

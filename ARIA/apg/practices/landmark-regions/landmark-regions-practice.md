@@ -187,7 +187,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <h3 class="widget-name">Banner</h3>
 
           <p>
-            A <a class="role-reference" href="#banner"><code>banner</code></a> landmark identifies site-oriented content at the beginning of each page within a website.
+            A <a class="role-reference" href="https://w3c.github.io/aria/#banner"><code>banner</code></a> landmark identifies site-oriented content at the beginning of each page within a website.
             Site-oriented content typically includes things such as the logo or identity of the site sponsor, and site-specific search tool.
             A banner usually appears at the top of the page and typically spans the full width.
           </p>
@@ -208,7 +208,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>The HTML <code>header</code> element defines a <code>banner</code> landmark when its context is the <code>body</code> element.</li>
 
               <li>
-                The HTML <code>header</code> element is not considered a <code>banner</code> landmark when it is descendant of any of following elements (see <a href class="html-mapping" src>HTML Accessibility Mappings</a>):
+                The HTML <code>header</code> element is not considered a <code>banner</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/" class="html-mapping">HTML Accessibility Mappings</a>):
                 <ul>
                   <li><code>article</code></li>
                   <li><code>aside</code></li>
@@ -235,7 +235,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <h3 class="widget-name">Complementary</h3>
 
           <p>
-            A <a class="role-reference" href="#complementary"><code>complementary</code></a> landmark is a supporting section of the document, designed to be complementary to the main content at a similar level in the DOM hierarchy, but remains meaningful when separated from the main content.
+            A <a class="role-reference" href="https://w3c.github.io/aria/#complementary"><code>complementary</code></a> landmark is a supporting section of the document, designed to be complementary to the main content at a similar level in the DOM hierarchy, but remains meaningful when separated from the main content.
           </p>
 
           <ul>
@@ -266,7 +266,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="aria_lh_contentinfo">
           <h3 class="widget-name">Contentinfo</h3>
 
-          <p>A <a class="role-reference" href="#contentinfo"><code>contentinfo</code></a> landmark is a way to identify common information at the bottom of each page within a website, typically called the &quot;footer&quot; of the page, including information such as copyrights and links to privacy and accessibility statements.</p>
+          <p>A <a class="role-reference" href="https://w3c.github.io/aria/#contentinfo"><code>contentinfo</code></a> landmark is a way to identify common information at the bottom of each page within a website, typically called the &quot;footer&quot; of the page, including information such as copyrights and links to privacy and accessibility statements.</p>
 
           <ul>
             <li>Each page may have one <code>contentinfo</code> landmark.</li>
@@ -285,7 +285,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>The HTML <code>footer</code> element defines a <code>contentinfo</code> landmark when its context is the <code>body</code> element.</li>
 
               <li>
-                The HTML <code>footer</code> element is not considered a <code>contentinfo</code> landmark when it is descendant of any of following elements (see <a href class="html-mapping" src>HTML Accessibility Mappings</a>):
+                The HTML <code>footer</code> element is not considered a <code>contentinfo</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/" class="html-mapping">HTML Accessibility Mappings</a>):
                 <ul>
                   <li><code>article</code></li>
                   <li><code>aside</code></li>
@@ -310,7 +310,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="aria_lh_form">
           <h3 class="widget-name">Form</h3>
 
-          <p>A <a class="role-reference" href="#form"><code>form</code></a> landmark identifies a region that contains a collection of items and objects that, as a whole, combine to create a form when no other named landmark is appropriate (e.g. main or search).</p>
+          <p>A <a class="role-reference" href="https://w3c.github.io/aria/#form"><code>form</code></a> landmark identifies a region that contains a collection of items and objects that, as a whole, combine to create a form when no other named landmark is appropriate (e.g. main or search).</p>
 
           <ul>
             <li>Use the <code>search</code> landmark instead of the <code>form</code> landmark when the form is used for search functionality.</li>
@@ -355,7 +355,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="aria_lh_main">
           <h3 class="widget-name">Main</h3>
 
-          <p>A <a class="role-reference" href="#main"><code>main</code></a> landmark identifies the primary content of the page.</p>
+          <p>A <a class="role-reference" href="https://w3c.github.io/aria/#main"><code>main</code></a> landmark identifies the primary content of the page.</p>
 
           <ul>
             <li>Each page should have one <code>main</code> landmark.</li>
@@ -387,7 +387,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="aria_lh_navigation">
           <h3 class="widget-name">Navigation</h3>
 
-          <p><a class="role-reference" href="#navigation"><code>Navigation</code></a> landmarks provide a way to identify groups (e.g. lists) of links that are intended to be used for website or page content navigation.</p>
+          <p><a class="role-reference" href="https://w3c.github.io/aria/#navigation"><code>Navigation</code></a> landmarks provide a way to identify groups (e.g. lists) of links that are intended to be used for website or page content navigation.</p>
 
           <ul>
             <li>If a page includes more than one <code>navigation</code> landmark, each should have a unique label (see <a href="#aria_lh_step3">Step 3</a> above).</li>
@@ -415,7 +415,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="aria_lh_region">
           <h3 class="widget-name">Region</h3>
 
-          <p>A <a class="role-reference" href="#region"><code>region</code></a> landmark is a perceivable section of the page containing content that is sufficiently important for users to be able to navigate to the section.</p>
+          <p>A <a class="role-reference" href="https://w3c.github.io/aria/#region"><code>region</code></a> landmark is a perceivable section of the page containing content that is sufficiently important for users to be able to navigate to the section.</p>
 
           <ul>
             <li>A <code>region</code> landmark must have a label.</li>
@@ -445,7 +445,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="aria_lh_search">
           <h3 class="widget-name">Search</h3>
 
-          <p>A <a class="role-reference" href="#search"><code>search</code></a> landmark contains a collection of items and objects that, as a whole, combine to create search functionality.</p>
+          <p>A <a class="role-reference" href="https://w3c.github.io/aria/#search"><code>search</code></a> landmark contains a collection of items and objects that, as a whole, combine to create search functionality.</p>
 
           <ul>
             <li>Use the <code>search</code> landmark instead of the <code>form</code> landmark when the form is used for search functionality.</li>

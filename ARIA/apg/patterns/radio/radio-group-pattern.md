@@ -163,15 +163,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The radio buttons are contained in or owned by an element with role <a href="#radiogroup" class="role-reference">radiogroup</a>.</li>
-          <li>Each radio button element has role <a href="#radio" class="role-reference">radio</a>.</li>
+          <li>The radio buttons are contained in or owned by an element with role <a href="https://w3c.github.io/aria/#radiogroup" class="role-reference">radiogroup</a>.</li>
+          <li>Each radio button element has role <a href="https://w3c.github.io/aria/#radio" class="role-reference">radio</a>.</li>
           <li>
-            If a radio button is checked, the <code>radio</code> element has <a href="#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.
-            If it is not checked, it has <a href="#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.
+            If a radio button is checked, the <code>radio</code> element has <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.
+            If it is not checked, it has <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.
           </li>
-          <li>Each <code>radio</code> element is labelled by its content, has a visible label referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a>, or has a label specified with <a href="#aria-label" class="property-reference">aria-label</a>.</li>
-          <li>The <code>radiogroup</code> element has a visible label referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> or has a label specified with <a href="#aria-label" class="property-reference">aria-label</a>.</li>
-          <li>If elements providing additional information about either the radio group or each radio button are present, those elements are referenced by the <code>radiogroup</code> element or <code>radio</code> elements with the <a href="#aria-describedby" class="property-reference">aria-describedby</a> property.</li>
+          <li>Each <code>radio</code> element is labelled by its content, has a visible label referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a>, or has a label specified with <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.</li>
+          <li>The <code>radiogroup</code> element has a visible label referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> or has a label specified with <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.</li>
+          <li>If elements providing additional information about either the radio group or each radio button are present, those elements are referenced by the <code>radiogroup</code> element or <code>radio</code> elements with the <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> property.</li>
         </ul>
       </section>
     </div>

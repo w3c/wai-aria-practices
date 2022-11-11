@@ -62,7 +62,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="about">
         <h2>About This Pattern</h2>
-        <p>A <a class="role-reference" href="#toolbar">toolbar</a> is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</p>
+        <p>A <a class="role-reference" href="https://w3c.github.io/aria/#toolbar">toolbar</a> is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</p>
         <p>
           When a set of controls is visually presented as a group, the <code>toolbar</code> role can be used to communicate the presence and purpose of the grouping to screen reader users.
           Grouping controls into toolbars can also be an effective way of reducing the number of tab stops in the keyboard interface.
@@ -140,7 +140,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>
             Typically, disabled elements are not focusable when navigating with a keyboard.
             However, in circumstances where discoverability of a function is crucial, it may be helpful if disabled controls are focusable so screen reader users are more likely to be aware of their presence.
-            For additional guidance, see <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_disabled_controls">Focusability of disabled controls</a>.
+            For additional guidance, see <a href="../../practices/keyboard-interface/#kbd_disabled_controls">Focusability of disabled controls</a>.
           </li>
           <li>In applications where quick access to a toolbar is important, such as accessing an editor's toolbar from its text area, a documented shortcut key for moving focus from the relevant context to its corresponding toolbar is recommended.</li>
         </ol>
@@ -149,13 +149,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that serves as the toolbar container has role <a class="role-reference" href="#toolbar">toolbar</a>.</li>
+          <li>The element that serves as the toolbar container has role <a class="role-reference" href="https://w3c.github.io/aria/#toolbar">toolbar</a>.</li>
           <li>
-            If the toolbar has a visible label, it is referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> on the toolbar element.
-            Otherwise, the toolbar element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            If the toolbar has a visible label, it is referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the toolbar element.
+            Otherwise, the toolbar element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            If the controls are arranged vertically, the toolbar element has <a href="#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>.
+            If the controls are arranged vertically, the toolbar element has <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>.
             The default orientation is horizontal.
           </li>
         </ul>

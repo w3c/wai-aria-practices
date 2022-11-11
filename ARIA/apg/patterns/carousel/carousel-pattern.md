@@ -158,37 +158,37 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h3>Basic carousel elements</h3>
         <ul>
           <li>
-            A carousel container element that encompasses all components of the carousel, including both carousel controls and slides, has either role <a href="#region" class="role-reference">region</a> or role <a href="#group" class="role-reference">group.</a>
+            A carousel container element that encompasses all components of the carousel, including both carousel controls and slides, has either role <a href="https://w3c.github.io/aria/#region" class="role-reference">region</a> or role <a href="https://w3c.github.io/aria/#group" class="role-reference">group.</a>
             The most appropriate role for the carousel container depends on the information architecture of the page.
             See the
             <a href="../../practices/landmark-regions/">Landmark Regions Practice</a>
             to determine whether the carousel warrants being designated as a landmark region.
           </li>
-          <li>The carousel container has the <a href="#aria-roledescription" class="property-reference">aria-roledescription</a> property set to <code>carousel</code>.</li>
+          <li>The carousel container has the <a href="https://w3c.github.io/aria/#aria-roledescription" class="property-reference">aria-roledescription</a> property set to <code>carousel</code>.</li>
           <li>
-            If the carousel has a visible label, its accessible label is provided by the property <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> on the carousel container set to the ID of the element containing the visible label.
-            Otherwise, an accessible label is provided by the property <a href="#aria-label" class="property-reference">aria-label</a> set on the carousel container.
+            If the carousel has a visible label, its accessible label is provided by the property <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the carousel container set to the ID of the element containing the visible label.
+            Otherwise, an accessible label is provided by the property <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> set on the carousel container.
             Note that since the <code>aria-roledescription</code> is set to &quot;carousel&quot;, the label does not contain the word &quot;carousel&quot;.
           </li>
           <li>The rotation control, next slide control, and previous slide control are either native button elements (recommended) or implement the <a href="../button/">button pattern</a>.</li>
           <li>
-            The rotation control has an accessible label provided by either its inner text or <a href="#aria-label" class="property-reference">aria-label</a>.
+            The rotation control has an accessible label provided by either its inner text or <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
             The label changes to match the action the button will perform, e.g., &quot;Stop slide rotation&quot; or &quot;Start slide rotation&quot;.
             A label that changes when the button is activated clearly communicates both that slide content can change automatically and when it is doing so.
             Note that since the label changes, the rotation control does not have any states, e.g., <code>aria-pressed</code>, specified.
           </li>
-          <li>Each slide container has role <a href="#group" class="role-reference">group</a> with the property <a href="#aria-roledescription" class="property-reference">aria-roledescription</a> set to <code>slide</code>.</li>
+          <li>Each slide container has role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a> with the property <a href="https://w3c.github.io/aria/#aria-roledescription" class="property-reference">aria-roledescription</a> set to <code>slide</code>.</li>
           <li>
             Each slide has an accessible name:
             <ul>
-              <li>If a slide has a visible label, its accessible label is provided by the property <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> on the slide container set to the ID of the element containing the visible label.</li>
-              <li>Otherwise, an accessible label is provided by the property <a href="#aria-label" class="property-reference">aria-label</a> set on the slide container.</li>
-              <li>If unique names that identify the slide content are not available, a number and set size can serve as a meaningful alternative, e.g., &quot;3 of 10&quot;. Note: Normally, including set position and size information in an accessible name is not appropriate. An exception is helpful in this implementation because group elements do not support <a href="#aria-setsize" class="property-reference">aria-setsize</a> or <a href="#aria-posinset" class="property-reference">aria-posinset</a>. The tabbed carousel implementation pattern does not have this limitation.</li>
+              <li>If a slide has a visible label, its accessible label is provided by the property <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the slide container set to the ID of the element containing the visible label.</li>
+              <li>Otherwise, an accessible label is provided by the property <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> set on the slide container.</li>
+              <li>If unique names that identify the slide content are not available, a number and set size can serve as a meaningful alternative, e.g., &quot;3 of 10&quot;. Note: Normally, including set position and size information in an accessible name is not appropriate. An exception is helpful in this implementation because group elements do not support <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference">aria-setsize</a> or <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference">aria-posinset</a>. The tabbed carousel implementation pattern does not have this limitation.</li>
               <li>Note that since the <code>aria-roledescription</code> is set to &quot;slide&quot;, the label does not contain the word &quot;slide.&quot;</li>
             </ul>
           </li>
           <li>
-            Optionally, an element wrapping the set of slide elements has <a href="#aria-atomic" class="property-reference">aria-atomic</a> set to <code>false</code> and <a href="#aria-live" class="property-reference">aria-live</a> set to:
+            Optionally, an element wrapping the set of slide elements has <a href="https://w3c.github.io/aria/#aria-atomic" class="property-reference">aria-atomic</a> set to <code>false</code> and <a href="https://w3c.github.io/aria/#aria-live" class="property-reference">aria-live</a> set to:
             <ul>
               <li><code>off</code>: if the carousel is automatically rotating.</li>
               <li><code>polite</code>: if the carousel is <strong>NOT</strong> automatically rotating.</li>
@@ -198,7 +198,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h3>Tabbed Carousel Elements</h3>
         <p>The structure of a tabbed carousel is the same as a basic carousel except that:</p>
         <ul>
-          <li>Each slide container has role <a href="#tabpanel" class="role-reference">tabpanel</a> in lieu of <code>group</code>, and it does not have the <code>aria-roledescription</code> property.</li>
+          <li>Each slide container has role <a href="https://w3c.github.io/aria/#tabpanel" class="role-reference">tabpanel</a> in lieu of <code>group</code>, and it does not have the <code>aria-roledescription</code> property.</li>
           <li>
             It has slide picker controls implemented using the <a href="../tabs/">tabs pattern</a> where:
             <ul>
@@ -207,7 +207,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 The accessible name of each <code>tab</code> indicates which slide it will display by including the name or number of the slide, e.g., &quot;Slide 3&quot;.
                 Slide names are preferable if each slide has a unique name.
               </li>
-              <li>The set of controls is grouped in a <code>tablist</code> element with an accessible name provided by the value of <a href="#aria-label" class="property-reference">aria-label</a> that identifies the purpose of the tabs, e.g., &quot;Choose slide to display.&quot;</li>
+              <li>The set of controls is grouped in a <code>tablist</code> element with an accessible name provided by the value of <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> that identifies the purpose of the tabs, e.g., &quot;Choose slide to display.&quot;</li>
               <li>The <code>tab</code>, <code>tablist</code>, and <code>tabpanel</code> implement the properties specified in the <a href="../tabs/">tabs pattern</a>.</li>
             </ul>
           </li>
@@ -215,15 +215,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h3>Grouped Carousel Elements</h3>
         <p>A grouped carousel has the same structure as a basic carousel, but it also includes slide picker controls where:</p>
         <ul>
-          <li>The set of slide picker controls is contained in an element with role <a href="#group" class="role-reference">group</a>.</li>
-          <li>The group containing the picker controls has an accessible label provided by the value of <a href="#aria-label" class="property-reference">aria-label</a> that identifies the purpose of the controls, e.g., &quot;Choose slide to display.&quot;</li>
+          <li>The set of slide picker controls is contained in an element with role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a>.</li>
+          <li>The group containing the picker controls has an accessible label provided by the value of <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> that identifies the purpose of the controls, e.g., &quot;Choose slide to display.&quot;</li>
           <li>Each picker control is a native button element (recommended) or implements the <a href="../button/">button pattern.</a></li>
           <li>
             The accessible name of each picker button matches the name of the slide it displays.
-            One technique for accomplishing this is to set <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> to a value that references the slide <code>group</code> element.
+            One technique for accomplishing this is to set <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> to a value that references the slide <code>group</code> element.
           </li>
           <li>
-            The picker button representing the currently displayed slide has the property <a href="#aria-disabled" class="property-reference">aria-disabled</a> set to <code>true</code>.
+            The picker button representing the currently displayed slide has the property <a href="https://w3c.github.io/aria/#aria-disabled" class="property-reference">aria-disabled</a> set to <code>true</code>.
             Note: <code>aria-disabled</code> is preferable to the HTML <code>disabled</code> attribute because this is a circumstance where screen reader users benefit from the disabled button being included in the page <kbd>Tab</kbd> sequence.
           </li>
         </ul>

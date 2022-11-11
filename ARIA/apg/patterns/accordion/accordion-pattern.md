@@ -121,19 +121,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties:</h2>
         <ul>
-          <li>The title of each accordion header is contained in an element with role <a href="#button" class="role-reference">button</a>.</li>
+          <li>The title of each accordion header is contained in an element with role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.</li>
           <li>
-            Each accordion header <code>button</code> is wrapped in an element with role <a href="#heading" class="role-reference">heading</a> that has a value set for <a href="#aria-level" class="property-reference">aria-level</a> that is appropriate for the information architecture of the page.
+            Each accordion header <code>button</code> is wrapped in an element with role <a href="https://w3c.github.io/aria/#heading" class="role-reference">heading</a> that has a value set for <a href="https://w3c.github.io/aria/#aria-level" class="property-reference">aria-level</a> that is appropriate for the information architecture of the page.
             <ul>
               <li>If the native host language has an element with an implicit <code>heading</code> and <code>aria-level</code>, such as an HTML heading tag, a native host language element may be used.</li>
               <li>The <code>button</code> element is the only element inside the <code>heading</code> element. That is, if there are other visually persistent elements, they are not included inside the <code>heading</code> element.</li>
             </ul>
           </li>
-          <li>If the accordion panel associated with an accordion header is visible, the header <code>button</code> element has <a href="#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>. If the panel is not visible, <a href="#aria-expanded" class="state-reference">aria-expanded</a> is set to <code>false</code>.</li>
-          <li>The accordion header <code>button</code> element has <a href="#aria-controls" class="property-reference">aria-controls</a> set to the ID of the element containing the accordion panel content.</li>
-          <li>If the accordion panel associated with an accordion header is visible, and if the accordion does not permit the panel to be collapsed, the header <code>button</code> element has <a href="#aria-disabled" class="state-reference">aria-disabled</a> set to <code>true</code>.</li>
+          <li>If the accordion panel associated with an accordion header is visible, the header <code>button</code> element has <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>. If the panel is not visible, <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> is set to <code>false</code>.</li>
+          <li>The accordion header <code>button</code> element has <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> set to the ID of the element containing the accordion panel content.</li>
+          <li>If the accordion panel associated with an accordion header is visible, and if the accordion does not permit the panel to be collapsed, the header <code>button</code> element has <a href="https://w3c.github.io/aria/#aria-disabled" class="state-reference">aria-disabled</a> set to <code>true</code>.</li>
           <li>
-            Optionally, each element that serves as a container for panel content has role <a href="#region" class="role-reference">region</a> and <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> with a value that refers to the button that controls display of the panel.
+            Optionally, each element that serves as a container for panel content has role <a href="https://w3c.github.io/aria/#region" class="role-reference">region</a> and <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> with a value that refers to the button that controls display of the panel.
             <ul>
               <li>Avoid using the <code>region</code> role in circumstances that create landmark region proliferation, e.g., in an accordion that contains more than approximately 6 panels that can be expanded at the same time.</li>
               <li>Role <code>region</code> is especially helpful to the perception of structure by screen reader users when panels contain heading elements or a nested accordion.</li>

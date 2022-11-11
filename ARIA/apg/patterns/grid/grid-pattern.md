@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#grid" class="role-reference">grid</a> widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, <kbd>Home</kbd>, and <kbd>End</kbd>.
+          A <a href="https://w3c.github.io/aria/#grid" class="role-reference">grid</a> widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, <kbd>Home</kbd>, and <kbd>End</kbd>.
           As a generic container widget that offers flexible keyboard navigation, it can serve a wide variety of needs.
           It can be used for purposes as simple as grouping a collection of checkboxes or navigation links or as complex as creating a full-featured spreadsheet application.
           While the words &quot;row&quot; and &quot;column&quot; are used in the names of WAI-ARIA attributes and by assistive technologies when describing and presenting the logical structure of elements with the <code>grid</code> role, using the <code>grid</code> role on an element does not necessarily imply that its visual presentation is tabular.
@@ -80,7 +80,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>Only one of the focusable elements contained by the grid is included in the page tab sequence.</li>
               <li>
                 Requires the author to provide code that
-                <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_general_within">manages focus movement inside it</a>.
+                <a href="../../practices/keyboard-interface/#kbd_general_within">manages focus movement inside it</a>.
               </li>
             </ul>
           </li>
@@ -182,7 +182,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
           <p class="note">
-            See <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_common_conventions">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p>
+            See <a href="../../practices/keyboard-interface/#kbd_common_conventions">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p>
         </section>
       </section>
 
@@ -288,7 +288,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
           </ul>
           <p class="note">
-            See <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_common_conventions">Key Assignment Conventions for Common Functions</a>
+            See <a href="../../practices/keyboard-interface/#kbd_common_conventions">Key Assignment Conventions for Common Functions</a>
             for cut, copy, and paste key assignments.
           </p>
         </section>
@@ -348,7 +348,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <kbd>Enter</kbd>: Disables grid navigation and:
               <ul>
                 <li>
-                  If the cell contains editable content, places focus in an input field, such as a <a href="#textbox" class="role-reference">textbox</a>.
+                  If the cell contains editable content, places focus in an input field, such as a <a href="https://w3c.github.io/aria/#textbox" class="role-reference">textbox</a>.
                   If the input is a single-line text field, a subsequent press of <kbd>Enter</kbd> may either restore grid navigation functions or move focus to an input field in a neighboring cell.
                 </li>
                 <li>If the cell contains one or more widgets, places focus on the first widget.</li>
@@ -359,7 +359,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <kbd>F2</kbd>:
               <ul>
                 <li>
-                  If the cell contains editable content, places focus in an input field, such as a <a href="#textbox" class="role-reference">textbox</a>.
+                  If the cell contains editable content, places focus in an input field, such as a <a href="https://w3c.github.io/aria/#textbox" class="role-reference">textbox</a>.
                   A subsequent press of <kbd>F2</kbd> restores grid navigation functions.</li>
                 <li>
                   If the cell contains one or more widgets, places focus on the first widget.
@@ -368,7 +368,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </ul>
             </li>
 
-            <li>Alphanumeric keys: If the cell contains editable content, places focus in an input field, such as a <a href="#textbox" class="role-reference">textbox</a>.</li>
+            <li>Alphanumeric keys: If the cell contains editable content, places focus in an input field, such as a <a href="https://w3c.github.io/aria/#textbox" class="role-reference">textbox</a>.</li>
           </ul>
 
           <p>When grid navigation is disabled, conventional changes to navigation behaviors include:</p>
@@ -401,31 +401,31 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The grid container has role <a href="#grid" class="role-reference">grid</a>.</li>
-          <li>Each row container has role <a href="#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>grid</code> element or an element with role <a href="#rowgroup" class="role-reference">rowgroup</a>.</li>
+          <li>The grid container has role <a href="https://w3c.github.io/aria/#grid" class="role-reference">grid</a>.</li>
+          <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>grid</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>.</li>
           <li>
             Each cell is either a DOM descendant of or owned by a <code>row</code> element and has one of the following roles:
             <ul>
-              <li><a href="#columnheader" class="role-reference">columnheader</a> if the cell contains a title or header information for the column.</li>
-              <li><a href="#rowheader" class="role-reference">rowheader</a> if the cell contains title or header information for the row.</li>
-              <li><a href="#gridcell" class="role-reference">gridcell</a> if the cell does not contain column or row header information.</li>
+              <li><a href="https://w3c.github.io/aria/#columnheader" class="role-reference">columnheader</a> if the cell contains a title or header information for the column.</li>
+              <li><a href="https://w3c.github.io/aria/#rowheader" class="role-reference">rowheader</a> if the cell contains title or header information for the row.</li>
+              <li><a href="https://w3c.github.io/aria/#gridcell" class="role-reference">gridcell</a> if the cell does not contain column or row header information.</li>
             </ul>
           </li>
           <li>
-            If there is an element in the user interface that serves as a label for the grid, <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> is set on the grid element with a value that refers to the labelling element.
-            Otherwise, a label is specified for the grid element using <a href="#aria-label" class="property-reference">aria-label</a>.
+            If there is an element in the user interface that serves as a label for the grid, <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> is set on the grid element with a value that refers to the labelling element.
+            Otherwise, a label is specified for the grid element using <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
-          <li>If the grid has a caption or description, <a href="#aria-describedby" class="property-reference">aria-describedby</a> is set on the grid element with a value referring to the element containing the description.</li>
+          <li>If the grid has a caption or description, <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> is set on the grid element with a value referring to the element containing the description.</li>
           <li>
-            If the grid provides sort functions, <a href="#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the
-            <a href="../../practices/grid-and-table-properties/grid-and-table-properties-practice.html#gridAndTableProperties_sort">Grid and Table Properties Practice</a>.
+            If the grid provides sort functions, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the
+            <a href="../../practices/grid-and-table-properties/#gridAndTableProperties_sort">Grid and Table Properties Practice</a>.
           </li>
           <li>
-            If the grid supports selection, when a cell or row is selected, the selected element has <a href="#aria-selected" class="state-reference">aria-selected</a> set <code>true</code>.
+            If the grid supports selection, when a cell or row is selected, the selected element has <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set <code>true</code>.
             If the grid supports column selection and a column is selected, all cells in the column have <code>aria-selected</code> set to <code>true</code>.
           </li>
           <li>
-            If the grid provides content editing functionality and contains cells that may have edit capabilities disabled in certain conditions, <a href="#aria-readonly" class="state-reference">aria-readonly</a> may be set <code>true</code> on cells where editing is disabled.
+            If the grid provides content editing functionality and contains cells that may have edit capabilities disabled in certain conditions, <a href="https://w3c.github.io/aria/#aria-readonly" class="state-reference">aria-readonly</a> may be set <code>true</code> on cells where editing is disabled.
             If edit functions are disabled for all cells, <code>aria-readonly</code> may be set <code>true</code> on the grid element.
             Grids that do not provide editing functions do not include the <code>aria-readonly</code> attribute on any of their elements.
           </li>
@@ -433,13 +433,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., data is dynamically loaded when scrolling or the grid provides functions for hiding rows or columns, the following properties are applied as described in the
             <a href="../../practices/grid-and-table-properties/">Grid and Table Properties Practice</a>.
             <ul>
-              <li><a href="#aria-colcount" class="property-reference">aria-colcount</a> or <a href="#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively.</li>
-              <li><a href="#aria-colindex" class="property-reference">aria-colindex</a> or <a href="#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively.</li>
+              <li><a href="https://w3c.github.io/aria/#aria-colcount" class="property-reference">aria-colcount</a> or <a href="https://w3c.github.io/aria/#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively.</li>
+              <li><a href="https://w3c.github.io/aria/#aria-colindex" class="property-reference">aria-colindex</a> or <a href="https://w3c.github.io/aria/#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively.</li>
             </ul>
           </li>
           <li>
-            If the grid includes cells that span multiple rows or multiple columns, and if the <code>grid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in the
-            <a href="../../practices/grid-and-table-properties/grid-and-table-properties-practice.html#gridAndTableProperties_spans">Grid and Table Properties Practice</a>.
+            If the grid includes cells that span multiple rows or multiple columns, and if the <code>grid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in the
+            <a href="../../practices/grid-and-table-properties/#gridAndTableProperties_spans">Grid and Table Properties Practice</a>.
           </li>
         </ul>
 
@@ -449,7 +449,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             For example, an HTML <code>&lt;TR&gt;</code> has an implied ARIA role of <code>row</code>.
             A <code>grid</code> built from an HTML <code>table</code> that includes cells that span multiple rows or columns must use HTML <code>rowspan</code> and <code>colspan</code> and must not use <code>aria-rowspan</code> or <code>aria-colspan</code>.
           </li>
-          <li>If rows or cells are included in a grid via <a href="#aria-owns" class="property-reference">aria-owns</a>, they will be presented to assistive technologies after the DOM descendants of the <code>grid</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.</li>
+          <li>If rows or cells are included in a grid via <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a>, they will be presented to assistive technologies after the DOM descendants of the <code>grid</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.</li>
         </ul>
       </section>
     </div>

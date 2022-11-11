@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#combobox" class="role-reference">combobox</a> is an input widget with an associated popup that enables users to select a value for the combobox from a collection of possible values.
+          A <a href="https://w3c.github.io/aria/#combobox" class="role-reference">combobox</a> is an input widget with an associated popup that enables users to select a value for the combobox from a collection of possible values.
           In some implementations, the popup presents allowed values, while in other implementations, the popup presents suggested values, and users may either select one of the suggestions or type a value.
           The popup may be a <a href="../listbox/">listbox</a>, <a href="../grid/">grid</a>, <a href="../treeview/">tree</a>, or <a href="../dialog-modal/">dialog.</a>
           Many implementations also include a third optional element -- a graphical <q>Open</q> button adjacent to the combobox, which indicates availability of the popup.
@@ -247,7 +247,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ol class="note">
           <li>
             DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in
-            <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>Selection follows focus in the listbox; the listbox allows only one suggested value to be selected at a time for the combobox value.</li>
         </ol>
@@ -317,7 +317,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ol class="note">
           <li>
             DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in
-            <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>The grid allows only one suggested value to be selected at a time for the combobox value.</li>
           <li>
@@ -386,7 +386,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ol class="note">
           <li>
             DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in
-            <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>The tree allows only one suggested value to be selected at a time for the combobox value.</li>
           <li>
@@ -399,7 +399,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
           <li>
-            If nodes in the tree are arranged horizontally (<a href="#aria-orientation" class="property-reference">aria-orientation</a> is set to <code>horizontal</code>):
+            If nodes in the tree are arranged horizontally (<a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> is set to <code>horizontal</code>):
             <ol>
               <li><kbd>Down Arrow</kbd> performs as <kbd>Right Arrow</kbd> is described above, and vice versa.</li>
               <li><kbd>Up Arrow</kbd> performs as <kbd>Left Arrow</kbd> is described above, and vice versa.</li>
@@ -427,33 +427,33 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that serves as an input and displays the combobox value has role <a href="#combobox" class="role-reference">combobox</a>.</li>
+          <li>The element that serves as an input and displays the combobox value has role <a href="https://w3c.github.io/aria/#combobox" class="role-reference">combobox</a>.</li>
           <li>
-            The combobox element has <a href="#aria-controls" class="property-reference">aria-controls</a> set to a value that refers to the element that serves as the popup.
+            The combobox element has <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> set to a value that refers to the element that serves as the popup.
             Note that <code>aria-controls</code> only needs to be set when the popup is visible.
             However, it is valid to reference an element that is not visible.
           </li>
-          <li>The popup is an element that has role <a href="#listbox" class="role-reference">listbox</a>, <a href="#tree" class="role-reference">tree</a>, <a href="#grid" class="role-reference">grid</a>, or <a href="#dialog" class="role-reference">dialog</a>.</li>
+          <li>The popup is an element that has role <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a>, <a href="https://w3c.github.io/aria/#tree" class="role-reference">tree</a>, <a href="https://w3c.github.io/aria/#grid" class="role-reference">grid</a>, or <a href="https://w3c.github.io/aria/#dialog" class="role-reference">dialog</a>.</li>
           <li>
-            If the popup has a role other than <code>listbox</code>, the element with role <code>combobox</code> has <a href="#aria-haspopup" class="property-reference">aria-haspopup</a> set to a value that corresponds to the popup type.
+            If the popup has a role other than <code>listbox</code>, the element with role <code>combobox</code> has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to a value that corresponds to the popup type.
             That is, <code>aria-haspopup</code> is set to <code>grid</code>, <code>tree</code>, or <code>dialog</code>.
             Note that elements with role <code>combobox</code> have an implicit <code>aria-haspopup</code> value of <code>listbox</code>.
           </li>
           <li>
-            When the combobox popup is not visible, the element with role <code>combobox</code> has <a href="#aria-expanded" class="state-reference">aria-expanded</a> set to <code>false</code>.
+            When the combobox popup is not visible, the element with role <code>combobox</code> has <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> set to <code>false</code>.
             When the popup element is visible, <code>aria-expanded</code> is set to <code>true</code>.
             Note that elements with role <code>combobox</code> have a default value for <code>aria-expanded</code> of <code>false</code>.
           </li>
           <li>When a combobox receives focus, DOM focus is placed on the combobox element.</li>
-          <li>When a descendant of a listbox, grid, or tree popup is focused, DOM focus remains on the combobox and the combobox has <a href="#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to a value that refers to the focused element within the popup.</li>
-          <li>For a combobox that controls a listbox, grid, or tree popup, when a suggested value is visually indicated as the currently selected value, the <code>option</code>, <code>gridcell</code>, <code>row</code>, or <code>treeitem</code> containing that value has <a href="#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code>.</li>
+          <li>When a descendant of a listbox, grid, or tree popup is focused, DOM focus remains on the combobox and the combobox has <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to a value that refers to the focused element within the popup.</li>
+          <li>For a combobox that controls a listbox, grid, or tree popup, when a suggested value is visually indicated as the currently selected value, the <code>option</code>, <code>gridcell</code>, <code>row</code>, or <code>treeitem</code> containing that value has <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code>.</li>
           <li>
             If the combobox has a visible label and the combobox element is an HTML element that can be labelled using the HTML <code>label</code> element (e.g., the <code>input</code> element), it is labeled using the <code>label</code> element.
-            Otherwise, if it has a visible label, the combobox element has <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the labelling element.
-            Otherwise, the combobox element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            Otherwise, if it has a visible label, the combobox element has <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the labelling element.
+            Otherwise, the combobox element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            The combobox element has <a href="#aria-autocomplete" class="property-reference">aria-autocomplete</a> set to a value that corresponds to its autocomplete behavior:
+            The combobox element has <a href="https://w3c.github.io/aria/#aria-autocomplete" class="property-reference">aria-autocomplete</a> set to a value that corresponds to its autocomplete behavior:
             <ul>
               <li><code>none</code>: When the popup is displayed, the suggested values it contains are the same regardless of the characters typed in the combobox.</li>
               <li>
@@ -471,17 +471,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div class="note">
           <ol>
             <li>
-              In ARIA 1.0, the combobox referenced its popup with <a href="#aria-owns" class="property-reference">aria-owns</a> instead of <a href="#aria-controls" class="property-reference">aria-controls</a>.
-              While user agents might support comboboxes with <a href="#aria-owns" class="property-reference">aria-owns</a> for backwards compatibility with legacy content, it is strongly recommended that authors use <a href="#aria-controls" class="property-reference">aria-controls</a>.
+              In ARIA 1.0, the combobox referenced its popup with <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> instead of <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>.
+              While user agents might support comboboxes with <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> for backwards compatibility with legacy content, it is strongly recommended that authors use <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>.
             </li>
             <li>When referring to the roles, states, and properties documentation for the below list of patterns used for popups, keep in mind that a combobox is a single-select widget where selection follows focus in the popup.</li>
             <li>
               The roles, states, and properties for popup elements are defined in their respective design patterns:
               <ul>
-                <li><a href="../listbox/listbox-pattern.html#roles_states_properties">Listbox Roles, States, and Properties</a></li>
-                <li><a href="../grid/grid-pattern.html#roles_states_properties">Grid Roles, States, and Properties</a></li>
-                <li><a href="../treeview/treeview-pattern.html#roles_states_properties">Tree Roles, States, and Properties</a></li>
-                <li><a href="../dialog-modal/dialog-modal-pattern.html#roles_states_properties">Dialog Roles, States, and Properties</a></li>
+                <li><a href="../listbox/#roles_states_properties">Listbox Roles, States, and Properties</a></li>
+                <li><a href="../grid/#roles_states_properties">Grid Roles, States, and Properties</a></li>
+                <li><a href="../treeview/#roles_states_properties">Tree Roles, States, and Properties</a></li>
+                <li><a href="../dialog-modal/#roles_states_properties">Dialog Roles, States, and Properties</a></li>
               </ul>
             </li>
           </ol>

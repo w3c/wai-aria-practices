@@ -64,8 +64,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Introduction</h2>
         <p>
           While ARIA is primarily used to express semantics, there are some situations where hiding an element’s semantics from assistive technologies is helpful.
-          This is done with the <a href="#presentation" class="role-reference">presentation</a> role, which declares that an element is being used only for presentation and therefore does not have any accessibility semantics.
-          The ARIA 1.1 specification also includes role <a href="#none" class="role-reference">none</a>, which serves as a synonym for <code>presentation</code>.
+          This is done with the <a href="https://w3c.github.io/aria/#presentation" class="role-reference">presentation</a> role, which declares that an element is being used only for presentation and therefore does not have any accessibility semantics.
+          The ARIA 1.1 specification also includes role <a href="https://w3c.github.io/aria/#none" class="role-reference">none</a>, which serves as a synonym for <code>presentation</code>.
         </p>
         <p>For example, consider a tabs widget built using an HTML <code>ul</code> element.</p>
         <pre><code>&lt;ul role=&quot;tablist&quot;&gt;
@@ -131,7 +131,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>Browsers ignore <code>role="presentation"</code>, and it therefore has no effect, if either of the following are true about the element to which it is applied:</p>
         <ul>
           <li>The element is focusable, e.g. it is natively focusable like an HTML link or input, or it has a <code>tabindex</code> attribute.</li>
-          <li>The element has any <a href="#global_states" class="specref">global ARIA states and properties</a>, e.g., <code>aria-label</code>.</li>
+          <li>The element has any <a href="https://w3c.github.io/aria/#global_states" class="specref">global ARIA states and properties</a>, e.g., <code>aria-label</code>.</li>
         </ul>
       </section>
 

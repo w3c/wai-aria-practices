@@ -105,7 +105,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ol>
         <p>
           Both the WAI-ARIA specification and WCAG require all focusable, interactive elements to have an accessible name.
-          In addition dialogs and some structural containers, such as <a href="#table" class="role-reference">tables</a> and <a href="#region" class="role-reference">regions</a>, are required to have a name.
+          In addition dialogs and some structural containers, such as <a href="https://w3c.github.io/aria/#table" class="role-reference">tables</a> and <a href="https://w3c.github.io/aria/#region" class="role-reference">regions</a>, are required to have a name.
           Many other elements can be named, but whether a name will enhance the accessible experience is determined by various characteristics of the surrounding context.
           Finally, there are some elements where providing an accessible name is technically possible but not advisable.
           The <a href="#naming_role_guidance">Accessible Name Guidance by Role</a> section lists naming requirements and guidelines for every ARIA role.
@@ -252,7 +252,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="naming_with_aria-label">
           <h3>Naming with a String Attribute Via <code>aria-label</code></h3>
           <p>
-            The <a href="#aria-label" class="property-reference">aria-label</a> property enables authors to name an element with a string that is not visually rendered.
+            The <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> property enables authors to name an element with a string that is not visually rendered.
             For example, the name of the following button is &quot;Close&quot;.
           </p>
           <pre><code>&lt;button type="button" aria-label="Close"&gt;X&lt;/button&gt;</code></pre>
@@ -285,7 +285,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="naming_with_aria-labelledby">
           <h3>Naming with Referenced Content Via <code>aria-labelledby</code></h3>
           <p>
-            The <a href="#aria-labelledby" class="property-reference">aria-labelledby property</a> enables authors to reference other elements on the page to define an accessible name.
+            The <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby property</a> enables authors to reference other elements on the page to define an accessible name.
             For example, the following switch is named by the text content of a previous sibling element.
           </p>
           <pre><code>
@@ -581,7 +581,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tbody>
             <tr>
               <td>
-                <a href="#alert" class="role-reference"><code>alert</code></a>
+                <a href="https://w3c.github.io/aria/#alert" class="role-reference"><code>alert</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -592,21 +592,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#alertdialog" class="role-reference"><code>alertdialog</code></a>
+                <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference"><code>alertdialog</code></a>
               </td>
               <td>Required</td>
               <td>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</td>
             </tr>
             <tr>
               <td>
-                <a href="#application" class="role-reference"><code>application</code></a>
+                <a href="https://w3c.github.io/aria/#application" class="role-reference"><code>application</code></a>
               </td>
               <td>Required</td>
               <td>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</td>
             </tr>
             <tr>
               <td>
-                <a href="#article" class="role-reference"><code>article</code></a>
+                <a href="https://w3c.github.io/aria/#article" class="role-reference"><code>article</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -618,7 +618,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#banner" class="role-reference"><code>banner</code></a>
+                <a href="https://w3c.github.io/aria/#banner" class="role-reference"><code>banner</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -634,14 +634,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#blockquote" class="role-reference"><code>blockquote</code></a>
+                <a href="https://w3c.github.io/aria/#blockquote" class="role-reference"><code>blockquote</code></a>
               </td>
               <td>Discretionary</td>
               <td>If a visible label is present, associating it with the blockquote by using <code>aria-labelledby</code> could benefit some assistive technology users.</td>
             </tr>
             <tr>
               <td>
-                <a href="#button" class="role-reference"><code>button</code></a>
+                <a href="https://w3c.github.io/aria/#button" class="role-reference"><code>button</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -653,14 +653,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#caption" class="role-reference"><code>caption</code></a>
+                <a href="https://w3c.github.io/aria/#caption" class="role-reference"><code>caption</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#cell" class="role-reference"><code>cell</code></a>
+                <a href="https://w3c.github.io/aria/#cell" class="role-reference"><code>cell</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -677,7 +677,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#checkbox" class="role-reference"><code>checkbox</code></a>
+                <a href="https://w3c.github.io/aria/#checkbox" class="role-reference"><code>checkbox</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -690,14 +690,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#code" class="role-reference"><code>code</code></a>
+                <a href="https://w3c.github.io/aria/#code" class="role-reference"><code>code</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#columnheader" class="role-reference"><code>columnheader</code></a>
+                <a href="https://w3c.github.io/aria/#columnheader" class="role-reference"><code>columnheader</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -710,7 +710,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#combobox" class="role-reference"><code>combobox</code></a>
+                <a href="https://w3c.github.io/aria/#combobox" class="role-reference"><code>combobox</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -723,7 +723,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#complementary" class="role-reference"><code>complementary</code></a>
+                <a href="https://w3c.github.io/aria/#complementary" class="role-reference"><code>complementary</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -737,7 +737,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#contentinfo" class="role-reference"><code>contentinfo</code></a>
+                <a href="https://w3c.github.io/aria/#contentinfo" class="role-reference"><code>contentinfo</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -752,28 +752,28 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#definition" class="role-reference"><code>definition</code></a>
+                <a href="https://w3c.github.io/aria/#definition" class="role-reference"><code>definition</code></a>
               </td>
               <td>Recommended</td>
               <td>Reference the term being defined with <code>role="term"</code>, using <code>aria-labelledby</code>.</td>
             </tr>
             <tr>
               <td>
-                <a href="#deletion" class="role-reference"><code>deletion</code></a>
+                <a href="https://w3c.github.io/aria/#deletion" class="role-reference"><code>deletion</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#dialog" class="role-reference"><code>dialog</code></a>
+                <a href="https://w3c.github.io/aria/#dialog" class="role-reference"><code>dialog</code></a>
               </td>
               <td>Required</td>
               <td>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</td>
             </tr>
             <tr>
               <td>
-                <a href="#directory" class="role-reference"><code>directory</code></a>
+                <a href="https://w3c.github.io/aria/#directory" class="role-reference"><code>directory</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -785,7 +785,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#document" class="role-reference"><code>document</code></a>
+                <a href="https://w3c.github.io/aria/#document" class="role-reference"><code>document</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -796,14 +796,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#emphasis" class="role-reference"><code>emphasis</code></a>
+                <a href="https://w3c.github.io/aria/#emphasis" class="role-reference"><code>emphasis</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#feed" class="role-reference"><code>feed</code></a>
+                <a href="https://w3c.github.io/aria/#feed" class="role-reference"><code>feed</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -816,7 +816,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#figure" class="role-reference"><code>figure</code></a>
+                <a href="https://w3c.github.io/aria/#figure" class="role-reference"><code>figure</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -833,7 +833,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#form" class="role-reference"><code>form</code></a>
+                <a href="https://w3c.github.io/aria/#form" class="role-reference"><code>form</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -846,14 +846,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#generic" class="role-reference"><code>generic</code></a>
+                <a href="https://w3c.github.io/aria/#generic" class="role-reference"><code>generic</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#grid" class="role-reference"><code>grid</code></a>
+                <a href="https://w3c.github.io/aria/#grid" class="role-reference"><code>grid</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -865,7 +865,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#gridcell" class="role-reference"><code>gridcell</code></a>
+                <a href="https://w3c.github.io/aria/#gridcell" class="role-reference"><code>gridcell</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -882,7 +882,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#group" class="role-reference"><code>group</code></a>
+                <a href="https://w3c.github.io/aria/#group" class="role-reference"><code>group</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -899,7 +899,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#heading" class="role-reference"><code>heading</code></a>
+                <a href="https://w3c.github.io/aria/#heading" class="role-reference"><code>heading</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -911,14 +911,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#insertion" class="role-reference"><code>insertion</code></a>
+                <a href="https://w3c.github.io/aria/#insertion" class="role-reference"><code>insertion</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#img" class="role-reference"><code>img</code></a>
+                <a href="https://w3c.github.io/aria/#img" class="role-reference"><code>img</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -928,7 +928,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#link" class="role-reference"><code>link</code></a>
+                <a href="https://w3c.github.io/aria/#link" class="role-reference"><code>link</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -940,7 +940,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#list" class="role-reference"><code>list</code></a>
+                <a href="https://w3c.github.io/aria/#list" class="role-reference"><code>list</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -953,7 +953,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#listbox" class="role-reference"><code>listbox</code></a>
+                <a href="https://w3c.github.io/aria/#listbox" class="role-reference"><code>listbox</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -967,14 +967,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#listitem" class="role-reference"><code>listitem</code></a>
+                <a href="https://w3c.github.io/aria/#listitem" class="role-reference"><code>listitem</code></a>
               </td>
               <td>Do Not Name</td>
               <td>Naming is not supported by assistive technologies; it is necessary to include relevant content within the list item.</td>
             </tr>
             <tr>
               <td>
-                <a href="#log" class="role-reference"><code>log</code></a>
+                <a href="https://w3c.github.io/aria/#log" class="role-reference"><code>log</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -985,7 +985,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#main" class="role-reference"><code>main</code></a>
+                <a href="https://w3c.github.io/aria/#main" class="role-reference"><code>main</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -998,14 +998,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#marquee" class="role-reference"><code>marquee</code></a>
+                <a href="https://w3c.github.io/aria/#marquee" class="role-reference"><code>marquee</code></a>
               </td>
               <td>Discretionary</td>
               <td>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</td>
             </tr>
             <tr>
               <td>
-                <a href="#math" class="role-reference"><code>math</code></a>
+                <a href="https://w3c.github.io/aria/#math" class="role-reference"><code>math</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1018,7 +1018,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#menu" class="role-reference"><code>menu</code></a>
+                <a href="https://w3c.github.io/aria/#menu" class="role-reference"><code>menu</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1031,7 +1031,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#menubar" class="role-reference"><code>menubar</code></a>
+                <a href="https://w3c.github.io/aria/#menubar" class="role-reference"><code>menubar</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1049,7 +1049,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#menuitem" class="role-reference"><code>menuitem</code></a>
+                <a href="https://w3c.github.io/aria/#menuitem" class="role-reference"><code>menuitem</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1063,7 +1063,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#menuitemcheckbox" class="role-reference"><code>menuitemcheckbox</code></a>
+                <a href="https://w3c.github.io/aria/#menuitemcheckbox" class="role-reference"><code>menuitemcheckbox</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1076,7 +1076,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#menuitemradio" class="role-reference"><code>menuitemradio</code></a>
+                <a href="https://w3c.github.io/aria/#menuitemradio" class="role-reference"><code>menuitemradio</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1089,7 +1089,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#meter" class="role-reference"><code>meter</code></a>
+                <a href="https://w3c.github.io/aria/#meter" class="role-reference"><code>meter</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1102,7 +1102,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#navigation" class="role-reference"><code>navigation</code></a>
+                <a href="https://w3c.github.io/aria/#navigation" class="role-reference"><code>navigation</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1115,14 +1115,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#none" class="role-reference"><code>none</code></a>
+                <a href="https://w3c.github.io/aria/#none" class="role-reference"><code>none</code></a>
               </td>
               <td>Prohibited</td>
               <td>An element with <code>role="none"</code> is not part of the accessibility tree (except in error cases). Do not use <code>aria-labelledby</code> or <code>aria-label</code>.</td>
             </tr>
             <tr>
               <td>
-                <a href="#note" class="role-reference"><code>note</code></a>
+                <a href="https://w3c.github.io/aria/#note" class="role-reference"><code>note</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -1134,7 +1134,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#option" class="role-reference"><code>option</code></a>
+                <a href="https://w3c.github.io/aria/#option" class="role-reference"><code>option</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1147,14 +1147,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#paragraph" class="role-reference"><code>paragraph</code></a>
+                <a href="https://w3c.github.io/aria/#paragraph" class="role-reference"><code>paragraph</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#presentation" class="role-reference"><code>presentation</code></a>
+                <a href="https://w3c.github.io/aria/#presentation" class="role-reference"><code>presentation</code></a>
               </td>
               <td>Prohibited</td>
               <td>
@@ -1164,7 +1164,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#progressbar" class="role-reference"><code>progressbar</code></a>
+                <a href="https://w3c.github.io/aria/#progressbar" class="role-reference"><code>progressbar</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1177,7 +1177,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#radio" class="role-reference"><code>radio</code></a>
+                <a href="https://w3c.github.io/aria/#radio" class="role-reference"><code>radio</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1190,7 +1190,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#radiogroup" class="role-reference"><code>radiogroup</code></a>
+                <a href="https://w3c.github.io/aria/#radiogroup" class="role-reference"><code>radiogroup</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1203,7 +1203,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#region" class="role-reference"><code>region</code></a>
+                <a href="https://w3c.github.io/aria/#region" class="role-reference"><code>region</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1216,7 +1216,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#row" class="role-reference"><code>row</code></a>
+                <a href="https://w3c.github.io/aria/#row" class="role-reference"><code>row</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient <strong>AND</strong> descendant of a <code>treegrid</code> <strong>AND</strong> the row is focusable</td>
               <td>
@@ -1227,14 +1227,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#rowgroup" class="role-reference"><code>rowgroup</code></a>
+                <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference"><code>rowgroup</code></a>
               </td>
               <td>Do Not Name</td>
               <td>Naming is not supported by assistive technologies.</td>
             </tr>
             <tr>
               <td>
-                <a href="#rowheader" class="role-reference"><code>rowheader</code></a>
+                <a href="https://w3c.github.io/aria/#rowheader" class="role-reference"><code>rowheader</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1247,7 +1247,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#scrollbar" class="role-reference"><code>scrollbar</code></a>
+                <a href="https://w3c.github.io/aria/#scrollbar" class="role-reference"><code>scrollbar</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -1262,7 +1262,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#search" class="role-reference"><code>search</code></a>
+                <a href="https://w3c.github.io/aria/#search" class="role-reference"><code>search</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1275,7 +1275,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#searchbox" class="role-reference"><code>searchbox</code></a>
+                <a href="https://w3c.github.io/aria/#searchbox" class="role-reference"><code>searchbox</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1288,7 +1288,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#separator" class="role-reference"><code>separator</code></a>
+                <a href="https://w3c.github.io/aria/#separator" class="role-reference"><code>separator</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -1301,7 +1301,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#slider" class="role-reference"><code>slider</code></a>
+                <a href="https://w3c.github.io/aria/#slider" class="role-reference"><code>slider</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1315,7 +1315,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#spinbutton" class="role-reference"><code>spinbutton</code></a>
+                <a href="https://w3c.github.io/aria/#spinbutton" class="role-reference"><code>spinbutton</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1329,7 +1329,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#status" class="role-reference"><code>status</code></a>
+                <a href="https://w3c.github.io/aria/#status" class="role-reference"><code>status</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -1340,28 +1340,28 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#strong" class="role-reference"><code>strong</code></a>
+                <a href="https://w3c.github.io/aria/#strong" class="role-reference"><code>strong</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#subscript" class="role-reference"><code>subscript</code></a>
+                <a href="https://w3c.github.io/aria/#subscript" class="role-reference"><code>subscript</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#superscript" class="role-reference"><code>superscript</code></a>
+                <a href="https://w3c.github.io/aria/#superscript" class="role-reference"><code>superscript</code></a>
               </td>
               <td>Prohibited</td>
               <td></td>
             </tr>
             <tr>
               <td>
-                <a href="#switch" class="role-reference"><code>switch</code></a>
+                <a href="https://w3c.github.io/aria/#switch" class="role-reference"><code>switch</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1374,7 +1374,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#tab" class="role-reference"><code>tab</code></a>
+                <a href="https://w3c.github.io/aria/#tab" class="role-reference"><code>tab</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1386,7 +1386,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#table" class="role-reference"><code>table</code></a>
+                <a href="https://w3c.github.io/aria/#table" class="role-reference"><code>table</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1400,7 +1400,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#tablist" class="role-reference"><code>tablist</code></a>
+                <a href="https://w3c.github.io/aria/#tablist" class="role-reference"><code>tablist</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1413,7 +1413,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#tabpanel" class="role-reference"><code>tabpanel</code></a>
+                <a href="https://w3c.github.io/aria/#tabpanel" class="role-reference"><code>tabpanel</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1425,14 +1425,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#term" class="role-reference"><code>term</code></a>
+                <a href="https://w3c.github.io/aria/#term" class="role-reference"><code>term</code></a>
               </td>
               <td>Do Not Name</td>
               <td>Since a term is usually the name for the <code>role="definition"</code> element, it could be confusing if the term itself also has a name.</td>
             </tr>
             <tr>
               <td>
-                <a href="#textbox" class="role-reference"><code>textbox</code></a>
+                <a href="https://w3c.github.io/aria/#textbox" class="role-reference"><code>textbox</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1445,14 +1445,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#time" class="role-reference"><code>time</code></a>
+                <a href="https://w3c.github.io/aria/#time" class="role-reference"><code>time</code></a>
               </td>
               <td>Do Not Name</td>
               <td>Naming is not supported by assistive technologies.</td>
             </tr>
             <tr>
               <td>
-                <a href="#timer" class="role-reference"><code>timer</code></a>
+                <a href="https://w3c.github.io/aria/#timer" class="role-reference"><code>timer</code></a>
               </td>
               <td>Discretionary</td>
               <td>
@@ -1463,7 +1463,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#toolbar" class="role-reference"><code>toolbar</code></a>
+                <a href="https://w3c.github.io/aria/#toolbar" class="role-reference"><code>toolbar</code></a>
               </td>
               <td>Recommended</td>
               <td>
@@ -1477,7 +1477,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#tooltip" class="role-reference"><code>tooltip</code></a>
+                <a href="https://w3c.github.io/aria/#tooltip" class="role-reference"><code>tooltip</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1489,7 +1489,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#tree" class="role-reference"><code>tree</code></a>
+                <a href="https://w3c.github.io/aria/#tree" class="role-reference"><code>tree</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1501,7 +1501,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#treegrid" class="role-reference"><code>treegrid</code></a>
+                <a href="https://w3c.github.io/aria/#treegrid" class="role-reference"><code>treegrid</code></a>
               </td>
               <td>Required</td>
               <td>
@@ -1514,7 +1514,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
-                <a href="#treeitem" class="role-reference"><code>treeitem</code></a>
+                <a href="https://w3c.github.io/aria/#treeitem" class="role-reference"><code>treeitem</code></a>
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient</td>
               <td>
@@ -1534,7 +1534,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Accessible name calculation</h2>
         <p>
           User agents construct an accessible name string for an element by walking through a list of potential naming methods and using the first that generates a name.
-          The algorithm they follow is defined in the <a href class="accname" src>accessible name specification</a>.
+          The algorithm they follow is defined in the <a href="https://w3c.github.io/accname/" class="accname">accessible name specification</a>.
           It is roughly like the following:
         </p>
         <ol>
@@ -1820,7 +1820,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>
           User agents construct an accessible description string for an element by walking through a list of potential description methods and using the first that generates a description.
-          The algorithm they follow is defined in the <a href class="accname" src>accessible name specification</a>.
+          The algorithm they follow is defined in the <a href="https://w3c.github.io/accname/" class="accname">accessible name specification</a>.
           It is roughly like the following:
         </p>
         <ol>

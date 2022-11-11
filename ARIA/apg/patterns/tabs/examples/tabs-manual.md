@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -74,15 +74,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -103,7 +103,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           So, for keyboard users, activating a tab requires two steps: 1) focus the tab, and 2) activate the tab.
           This two-step process is referred to as manual activation.
           Manual activation of tabs is recommended unless panels can be displayed instantly, i.e., all the panel content is present in the DOM.
-          For additional guidance, see <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+          For additional guidance, see <a href="../../../../practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
         </p>
         <p>Similar examples include:</p>
         <ul>
@@ -347,7 +347,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Since an HTML <code>button</code> element is used for the tab, it is not necessary to set <code>tabindex="0"</code> on the selected (active) tab element.</li>
                   <li>
                     This approach to managing focus is described in the section on
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>

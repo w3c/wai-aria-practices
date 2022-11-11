@@ -85,9 +85,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
           <li>Breadcrumb trail is contained within a navigation landmark region.</li>
-          <li>The landmark region is labelled via <a href="#aria-label" class="property-reference">aria-label</a> or <a href="#aria-labelledby" class="property-reference">aria-labelledby</a>.</li>
+          <li>The landmark region is labelled via <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> or <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a>.</li>
           <li>
-            The link to the current page has <a href="#aria-current" class="property-reference">aria-current</a> set to <code>page</code>.
+            The link to the current page has <a href="https://w3c.github.io/aria/#aria-current" class="property-reference">aria-current</a> set to <code>page</code>.
             If the element representing the current page is not a link, aria-current is optional.
           </li>
         </ul>

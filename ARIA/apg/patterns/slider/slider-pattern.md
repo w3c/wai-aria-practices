@@ -107,17 +107,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element serving as the focusable slider control has role <a class="role-reference" href="#slider">slider</a>.</li>
-          <li>The slider element has the <a class="property-reference" href="#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current value of the slider.</li>
-          <li>The slider element has the <a class="property-reference" href="#aria-valuemin">aria-valuemin</a> property set to a decimal value representing the minimum allowed value of the slider.</li>
-          <li>The slider element has the <a class="property-reference" href="#aria-valuemax">aria-valuemax</a> property set to a decimal value representing the maximum allowed value of the slider.</li>
-          <li>If the value of <code>aria-valuenow</code> is not user-friendly, e.g., the day of the week is represented by a number, the <a class="property-reference" href="#aria-valuetext">aria-valuetext</a> property is set to a string that makes the slider value understandable, e.g., &quot;Monday&quot;.</li>
+          <li>The element serving as the focusable slider control has role <a class="role-reference" href="https://w3c.github.io/aria/#slider">slider</a>.</li>
+          <li>The slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current value of the slider.</li>
+          <li>The slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemin">aria-valuemin</a> property set to a decimal value representing the minimum allowed value of the slider.</li>
+          <li>The slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemax">aria-valuemax</a> property set to a decimal value representing the maximum allowed value of the slider.</li>
+          <li>If the value of <code>aria-valuenow</code> is not user-friendly, e.g., the day of the week is represented by a number, the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuetext">aria-valuetext</a> property is set to a string that makes the slider value understandable, e.g., &quot;Monday&quot;.</li>
           <li>
-            If the slider has a visible label, it is referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> on the slider element.
-            Otherwise, the slider element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            If the slider has a visible label, it is referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the slider element.
+            Otherwise, the slider element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            If the slider is vertically oriented, it has <a class="property-reference" href="#aria-orientation">aria-orientation</a> set to <code>vertical</code>.
+            If the slider is vertically oriented, it has <a class="property-reference" href="https://w3c.github.io/aria/#aria-orientation">aria-orientation</a> set to <code>vertical</code>.
             The default value of <code>aria-orientation</code> for a slider is <code>horizontal</code>.
           </li>
         </ul>

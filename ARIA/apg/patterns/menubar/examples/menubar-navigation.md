@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -74,15 +74,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -93,10 +93,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
         <div class="advisement">
           <p><strong>CAUTION!</strong> Before considering use of the <a href="../../">Menubar Pattern</a> for site navigation, it is important to understand:</p>
           <ul>
@@ -106,7 +103,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               For an example, see <a href="../../../disclosure/examples/disclosure-navigation/">Example Disclosure Navigation Menu</a>.
             </li>
           </ul>
-        </div>
+        </div><img alt=""
+    src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}"
+    class="example-page-example-icon"
+  >
         <p>
           The following implementation of the <a href="../../">Menubar Pattern</a> demonstrates how a menubar can provide navigation menus.
           The parent menu items in the menubar represent a section of a mythical university web site and open a submenu containing menu items that link to pages within that section.
@@ -629,7 +629,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Identifies the element as a <code>menubar</code> container for a set of <code>menuitem</code> elements.</li>
                   <li>
                     The menubar element is not focusable because it implements the practice described in the section on
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>
@@ -689,7 +689,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>On page load, the first menubar item has <code>tabindex="0"</code>.</li>
                   <li>
                     Focus is managed using the practice for
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>

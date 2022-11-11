@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -74,15 +74,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -93,18 +93,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
         <div class="advisement">
           <p>
             Although this example uses the word "menu" in the colloquial sense to refer to a set of navigation links, it does not use the WAI-ARIA menu role.
             This implementation of site navigation does not use the menu role because it does not provide the complex functionality that assistive technologies expect in a widget that has the menu role.
             Typical site navigation does not need all the
-            <a href="../../../menubar/menu-and-menubar-pattern.html#keyboard_interaction">keyboard interactions specified by the menu and menubar pattern</a>.
+            <a href="../../../menubar/#keyboard_interaction">keyboard interactions specified by the menu and menubar pattern</a>.
           </p>
-        </div>
+        </div><img alt=""
+    src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
+    class="example-page-example-icon"
+  >
         <p>
           The following example demonstrates using the <a href="../../">Disclosure Pattern</a> to show and hide dropdown lists of links in a navigation bar for a mythical university web site.
           Each disclosure button represents a section of the web site, and expanding it shows a list of links to pages within that section.

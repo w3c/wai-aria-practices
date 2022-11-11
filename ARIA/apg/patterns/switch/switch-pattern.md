@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#switch" class="role-reference">switch</a> is an input widget that allows users to choose one of two values: <q>on</q> or <q>off</q>.
+          A <a href="https://w3c.github.io/aria/#switch" class="role-reference">switch</a> is an input widget that allows users to choose one of two values: <q>on</q> or <q>off</q>.
           Switches are similar to <a href="../checkbox/">checkboxes</a> and <a href="../button/">toggle buttons</a>, which can also serve as binary inputs.
           One difference, however, is that switches can only be used for binary input while checkboxes and toggle buttons allow implementations the option of supporting a third middle state.
           Checkboxes can be <q>checked</q> or <q>not checked</q> and can optionally also allow for a <q>partially checked</q> state.
@@ -102,26 +102,26 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The switch has role <a href="#switch" class="role-reference">switch</a>.</li>
+          <li>The switch has role <a href="https://w3c.github.io/aria/#switch" class="role-reference">switch</a>.</li>
           <li>
             The switch has an accessible label provided by one of the following:
             <ul>
               <li>Visible text content contained within the element with role <code>switch</code>.</li>
-              <li>A visible label referenced by the value of <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> set on the element with role <code>switch</code>.</li>
-              <li><a href="#aria-label" class="property-reference">aria-label</a> set on the element with role <code>switch</code>.</li>
+              <li>A visible label referenced by the value of <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> set on the element with role <code>switch</code>.</li>
+              <li><a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> set on the element with role <code>switch</code>.</li>
             </ul>
           </li>
-          <li>When <code>on</code>, the switch element has state <a href="#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.</li>
-          <li>When <code>off</code>, the switch element has state <a href="#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.</li>
+          <li>When <code>on</code>, the switch element has state <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.</li>
+          <li>When <code>off</code>, the switch element has state <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.</li>
           <li>If the switch element is an HTML <code>input[type="checkbox"]</code>, it uses the HTML <code>checked</code> attribute instead of the <code>aria-checked</code> property.</li>
           <li>
             If a set of switches is presented as a logical group with a visible label, either:
             <ul>
-              <li>The switches are included in an element with role <a href="#group" class="role-reference">group</a> that has the property <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> set to the ID of the element containing the group label.</li>
+              <li>The switches are included in an element with role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a> that has the property <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> set to the ID of the element containing the group label.</li>
               <li>The set is contained in an HTML <code>fieldset</code> and the label for the set is contained in an HTML <code>legend</code> element.</li>
             </ul>
           </li>
-          <li>If the presentation includes additional descriptive static text relevant to a switch or switch group, the switch or switch group has the property <a href="#aria-describedby" class="property-reference">aria-describedby</a> set to the ID of the element containing the description.</li>
+          <li>If the presentation includes additional descriptive static text relevant to a switch or switch group, the switch or switch group has the property <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> set to the ID of the element containing the description.</li>
         </ul>
       </section>
     </div>

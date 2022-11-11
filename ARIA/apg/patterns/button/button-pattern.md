@@ -63,20 +63,20 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a class="role-reference" href="#button">button</a> is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+          A <a class="role-reference" href="https://w3c.github.io/aria/#button">button</a> is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
           A common convention for informing users that a button launches a dialog is to append &quot;&#8230;&quot; (ellipsis) to the button label, e.g., &quot;Save as&#8230;&quot;.
         </p>
         <p>In addition to the ordinary button widget, WAI-ARIA supports 2 other types of buttons:</p>
         <ul>
           <li>
             Toggle button: A two-state button that can be either off (not pressed) or on (pressed).
-            To tell assistive technologies that a button is a toggle button, specify a value for the attribute <a href="#aria-pressed" class="state-reference">aria-pressed</a>.
+            To tell assistive technologies that a button is a toggle button, specify a value for the attribute <a href="https://w3c.github.io/aria/#aria-pressed" class="state-reference">aria-pressed</a>.
             For example, a button labelled mute in an audio player could indicate that sound is muted by setting the pressed state true.
             <strong>Important:</strong> it is critical the label on a toggle does not change when its state changes.
             In this example, when the pressed state is true, the label remains &quot;Mute&quot; so a screen reader would say something like &quot;Mute toggle button pressed&quot;.
             Alternatively, if the design were to call for the button label to change from &quot;Mute&quot; to &quot;Unmute,&quot; the aria-pressed attribute would not be needed.
           </li>
-          <li>Menu button: as described in the <a href="../menu-button/">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+          <li>Menu button: as described in the <a href="../menu-button/">menu button pattern</a>, a button is revealed to assistive technologies as a menu button if it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
         </ul>
         <p class="note">
           The types of actions performed by buttons are distinctly different from the function of a link (see <a href="../link/">link pattern</a>).
@@ -95,7 +95,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><a href="examples/button/">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>
           <li>
             <a href="examples/button_idl/">Button Examples (IDL)</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.
-            This example uses the <a class="specref" href="#idl-interface">IDL Interface</a>.
+            This example uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface</a>.
           </li>
         </ul>
       </section>
@@ -132,16 +132,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The button has role of <a class="role-reference" href="#button">button</a>.</li>
+          <li>The button has role of <a class="role-reference" href="https://w3c.github.io/aria/#button">button</a>.</li>
           <li>
             The <code>button</code> has an accessible label.
             By default, the accessible name is computed from any text content inside the button element.
-            However, it can also be provided with <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> or <a href="#aria-label" class="property-reference">aria-label</a>.
+            However, it can also be provided with <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> or <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
-          <li>If a description of the button's function is present, the button element has <a href="#aria-describedby" class="property-reference">aria-describedby</a> set to the ID of the element containing the description.</li>
-          <li>When the action associated with a button is unavailable, the button has <a class="state-reference" href="#aria-disabled">aria-disabled</a> set to <code>true</code>.</li>
+          <li>If a description of the button's function is present, the button element has <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> set to the ID of the element containing the description.</li>
+          <li>When the action associated with a button is unavailable, the button has <a class="state-reference" href="https://w3c.github.io/aria/#aria-disabled">aria-disabled</a> set to <code>true</code>.</li>
           <li>
-            If the button is a toggle button, it has an <a href="#aria-pressed" class="state-reference">aria-pressed</a> state.
+            If the button is a toggle button, it has an <a href="https://w3c.github.io/aria/#aria-pressed" class="state-reference">aria-pressed</a> state.
             When the button is toggled on, the value of this state is <code>true</code>, and when toggled off, the state is <code>false</code>.
           </li>
         </ul>

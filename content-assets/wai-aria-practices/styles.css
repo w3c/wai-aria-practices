@@ -35,6 +35,16 @@ a.skip-main:focus, a.skip-main:active {
   display: none;
 }
 
+.standalone-resource__sidebar {
+  margin-bottom: 24px;
+}
+@media (min-width: 960px) {
+  .standalone-resource__sidebar {
+      position: sticky;
+      top: 16px;
+  }
+}
+
 /* Patterns */
 .examples-section {
   display: grid;
@@ -351,6 +361,9 @@ table :not(.highlight) code {
   margin: 1em auto;
 }
 .advisement {
+  background-color: #fcebc2;
+  border-left-color: #d9ae4d;
+  color: #60470C;
   clear: both;
 }
 

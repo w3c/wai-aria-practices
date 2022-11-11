@@ -6,7 +6,7 @@ const rewriteElementPaths = require("./rewriteElementPaths");
 const { rewriteSourcePath } = require("./rewritePath");
 const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 
-const transformAbout = (sourcePath, sourceContents) => {
+const transformAbout = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
 
@@ -15,7 +15,7 @@ const transformAbout = (sourcePath, sourceContents) => {
 
   removeConflictingCss(html);
 
-  rewriteElementPaths(html, { onSourcePath: sourcePath });
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   return formatForJekyll({
     title,

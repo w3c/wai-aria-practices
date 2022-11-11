@@ -6,7 +6,7 @@ const rewriteElementPaths = require("./rewriteElementPaths");
 const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const removeConflictingCss = require("./removeConflictingCss");
 
-const transformPattern = (sourcePath, sourceContents) => {
+const transformPattern = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
 
@@ -39,7 +39,7 @@ const transformPattern = (sourcePath, sourceContents) => {
     />`
   );
 
-  rewriteElementPaths(html, { onSourcePath: sourcePath });
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   return formatForJekyll({
     title,

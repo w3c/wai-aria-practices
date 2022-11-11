@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#link" class="role-reference">link</a> widget provides an interactive reference to a resource.
+          A <a href="https://w3c.github.io/aria/#link" class="role-reference">link</a> widget provides an interactive reference to a resource.
           The target resource can be either external or local, i.e., either outside or within the current page or application.
         </p>
         <p class="note">
@@ -90,7 +90,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
-        <p>The element containing the link text or graphic has role of <a href="#link" class="role-reference">link</a>.</p>
+        <p>The element containing the link text or graphic has role of <a href="https://w3c.github.io/aria/#link" class="role-reference">link</a>.</p>
       </section>
     </div>
   

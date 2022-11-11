@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#dialog" class="role-reference">dialog</a> is a window overlaid on either the primary window or another dialog window.
+          A <a href="https://w3c.github.io/aria/#dialog" class="role-reference">dialog</a> is a window overlaid on either the primary window or another dialog window.
           Windows under a modal dialog are inert.
           That is, users cannot interact with content outside an active dialog window.
           Inert content outside an active dialog is typically visually obscured or dimmed so it is difficult to discern, and in some implementations, attempts to interact with the inert content cause the dialog to close.
@@ -74,7 +74,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           However, unlike most non-modal dialogs, modal dialogs do not provide means for moving keyboard focus outside the dialog window without closing the dialog.
         </p>
         <p>
-          The <a href="#alertdialog" class="role-reference">alertdialog</a> role is a special-case dialog role designed specifically for dialogs that divert users' attention to a brief, important message.
+          The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role is a special-case dialog role designed specifically for dialogs that divert users' attention to a brief, important message.
           Its usage is described in the <a href="../alertdialog/">Alert Dialog Pattern</a>.
         </p>
       </section>
@@ -161,27 +161,27 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that serves as the dialog container has a role of <a href="#dialog" class="role-reference">dialog</a>.</li>
+          <li>The element that serves as the dialog container has a role of <a href="https://w3c.github.io/aria/#dialog" class="role-reference">dialog</a>.</li>
           <li>All elements required to operate the dialog are descendants of the element that has role <code>dialog</code>.</li>
-          <li>The dialog container element has <a href="#aria-modal" class="property-reference">aria-modal</a> set to <code>true</code>.</li>
+          <li>The dialog container element has <a href="https://w3c.github.io/aria/#aria-modal" class="property-reference">aria-modal</a> set to <code>true</code>.</li>
           <li>
             The dialog has either:
             <ul>
               <li>
-                A value set for the <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> property that refers to a visible dialog title.
+                A value set for the <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> property that refers to a visible dialog title.
               </li>
-              <li>A label specified by <a href="#aria-label" class="property-reference">aria-label</a>.</li>
+              <li>A label specified by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.</li>
             </ul>
           </li>
           <li>
-            Optionally, the <a href="#aria-describedby" class="property-reference">aria-describedby</a> property is set on the element with the <code>dialog</code> role to indicate which element or elements in the dialog contain content that describes the primary purpose or message of the dialog.
+            Optionally, the <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> property is set on the element with the <code>dialog</code> role to indicate which element or elements in the dialog contain content that describes the primary purpose or message of the dialog.
             Specifying descriptive elements enables screen readers to announce the description along with the dialog title and initially focused element when the dialog opens, which is typically helpful only when the descriptive content is simple and can easily be understood without structural information.
             It is advisable to omit specifying <code>aria-describedby</code> if the dialog content includes semantic structures, such as lists, tables, or multiple paragraphs, that need to be perceived in order to easily understand the content, i.e., if the content would be difficult to understand when announced as a single unbroken string.
           </li>
         </ul>
         <ul class="note">
           <li>
-            Because marking a dialog modal by setting <a href="#aria-modal" class="property-reference">aria-modal</a> to <code>true</code> can prevent users of some assistive technologies from perceiving content outside the dialog, users of those technologies will experience severe negative ramifications if a dialog is marked modal but does not behave as a modal for other users.
+            Because marking a dialog modal by setting <a href="https://w3c.github.io/aria/#aria-modal" class="property-reference">aria-modal</a> to <code>true</code> can prevent users of some assistive technologies from perceiving content outside the dialog, users of those technologies will experience severe negative ramifications if a dialog is marked modal but does not behave as a modal for other users.
             So, mark a dialog modal <strong>only when both:</strong>
             <ol>
               <li>Application code prevents all users from interacting in any way with content outside of it.</li>
@@ -189,7 +189,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ol>
           </li>
           <li>
-            The <code>aria-modal</code> property introduced by ARIA 1.1 replaces <a href="#aria-hidden" class="state-reference">aria-hidden</a> for informing assistive technologies that content outside a dialog is inert.
+            The <code>aria-modal</code> property introduced by ARIA 1.1 replaces <a href="https://w3c.github.io/aria/#aria-hidden" class="state-reference">aria-hidden</a> for informing assistive technologies that content outside a dialog is inert.
             However, in legacy dialog implementations where <code>aria-hidden</code> is used to make content outside a dialog inert for assistive technology users, it is important that:
             <ol>
               <li><code>aria-hidden</code> is set to <code>true</code> on each element containing a portion of the inert layer.</li>

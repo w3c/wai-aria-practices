@@ -65,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -76,15 +76,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -145,7 +145,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <div id="grid-nux" class="grid-nux hidden" role="region" aria-label="Grid Instructions" tabindex="0">
               <p class="grid-nux-header">Move keyboard focus inside a grid with arrow keys.</p>
               <p class="indicator_description">
-                <img src="imgs/black_keys.png" width="100" alt="Arrow keypad" class="indicator_graphic">
+                <img src="../imgs/black_keys.png" width="100" alt="Arrow keypad" class="indicator_graphic">
               </p>
               <p>
                 This focus ring means arrow key navigation is available.
@@ -430,7 +430,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <dl>
           <dt>Whether to focus a cell or an element inside it when the cell is clicked or a navigation key is pressed:</dt>
           <dd>
-            The section of the grid pattern on <a href="../../grid-pattern.html#gridNav">Setting Focus and Navigating Inside Cells</a> describes how to design the focus placement strategy.
+            The section of the grid pattern on <a href="../../#gridNav">Setting Focus and Navigating Inside Cells</a> describes how to design the focus placement strategy.
           </dd>
           <dt>Whether focus can wrap from the last column to the first column in the next row or from the first column to the last column in the previous row when <kbd>Right Arrow</kbd> and <kbd>Left Arrow</kbd> are pressed:</dt>
           <dd>
@@ -598,7 +598,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Identifies the element containing the grid widget.</li>
                   <li>
                     The grid element is not focusable because it implements the practice described in the section on
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>
@@ -671,7 +671,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
                   <li>
                     This approach to managing focus is described in the section on
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>
@@ -688,7 +688,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>At any given time, only one of the cells or widgets within the grid is in the page <kbd>Tab</kbd> sequence.</li>
                   <li>
                     This approach to managing focus is described in the section on
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>
@@ -704,7 +704,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>At any given time, only one element within the grid is in the page <kbd>Tab</kbd> sequence.</li>
                   <li>
                     This approach to managing focus is described in the section on
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_roving_tabindex">Managing Focus Within Components Using a Roving tabindex</a>.
                   </li>
                 </ul>
               </td>

@@ -63,8 +63,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#feed" class="role-reference">feed</a> is a section of a page that automatically loads new sections of content as the user scrolls.
-          The sections of content in a feed are presented in <a href="#article" class="role-reference">article</a> elements.
+          A <a href="https://w3c.github.io/aria/#feed" class="role-reference">feed</a> is a section of a page that automatically loads new sections of content as the user scrolls.
+          The sections of content in a feed are presented in <a href="https://w3c.github.io/aria/#article" class="role-reference">article</a> elements.
           So, a feed can be thought of as a dynamic list of articles that often appears to scroll infinitely.
         </p>
         <p>
@@ -150,24 +150,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that contains the set of feed articles has role <a href="#feed" class="role-reference">feed</a>.</li>
+          <li>The element that contains the set of feed articles has role <a href="https://w3c.github.io/aria/#feed" class="role-reference">feed</a>.</li>
           <li>
-            If the feed has a visible label, the <code>feed</code> element has <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> referring to the element containing the title.
-            Otherwise, the <code>feed</code> element has a label specified with <a href="#aria-label" class="property-reference">aria-label</a>.
+            If the feed has a visible label, the <code>feed</code> element has <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> referring to the element containing the title.
+            Otherwise, the <code>feed</code> element has a label specified with <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            Each unit of content in a feed is contained in an element with role <a href="#article" class="role-reference">article</a>.
+            Each unit of content in a feed is contained in an element with role <a href="https://w3c.github.io/aria/#article" class="role-reference">article</a>.
             All content inside the feed is contained in an <code>article</code> element.
           </li>
-          <li>Each <code>article</code> element has <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> referring to elements inside the article that can serve as a distinguishing label.</li>
-          <li>It is optional but strongly recommended for each <code>article</code> element to have <a href="#aria-describedby" class="property-reference">aria-describedby</a> referring to one or more elements inside the article that serve as the primary content of the article.</li>
-          <li>Each <code>article</code> element has <a href="#aria-posinset" class="property-reference">aria-posinset</a> set to a value that represents its position in the feed.</li>
+          <li>Each <code>article</code> element has <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> referring to elements inside the article that can serve as a distinguishing label.</li>
+          <li>It is optional but strongly recommended for each <code>article</code> element to have <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> referring to one or more elements inside the article that serve as the primary content of the article.</li>
+          <li>Each <code>article</code> element has <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference">aria-posinset</a> set to a value that represents its position in the feed.</li>
           <li>
-            Each <code>article</code> element has <a href="#aria-setsize" class="property-reference">aria-setsize</a> set to a value that represents either the total number of articles that have been loaded or the total number in the feed, depending on which value is deemed more helpful to users.
+            Each <code>article</code> element has <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference">aria-setsize</a> set to a value that represents either the total number of articles that have been loaded or the total number in the feed, depending on which value is deemed more helpful to users.
             If the total number in the feed is undetermined, it can be represented by a <code>aria-setsize</code> value of <code>-1</code>.
           </li>
           <li>
-            When <code>article</code> elements are being added to or removed from the <code>feed</code> container, and if the operation requires multiple DOM operations, the <code>feed</code> element has <a href="#aria-busy" class="state-reference">aria-busy</a> set to <code>true</code> during the update operation.
+            When <code>article</code> elements are being added to or removed from the <code>feed</code> container, and if the operation requires multiple DOM operations, the <code>feed</code> element has <a href="https://w3c.github.io/aria/#aria-busy" class="state-reference">aria-busy</a> set to <code>true</code> during the update operation.
             Note that it is extremely important that <code>aria-busy</code> is set to <code>false</code> when the operation is complete or the changes may not become visible to some assistive technology users.
           </li>
         </ul>

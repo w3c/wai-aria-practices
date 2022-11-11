@@ -119,21 +119,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that serves as the focusable splitter has role <a href="#separator" class="role-reference">separator</a>.</li>
-          <li>The separator element has the <a class="property-reference" href="#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current position of the separator.</li>
+          <li>The element that serves as the focusable splitter has role <a href="https://w3c.github.io/aria/#separator" class="role-reference">separator</a>.</li>
+          <li>The separator element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current position of the separator.</li>
           <li>
-            The separator element has the <a class="property-reference" href="#aria-valuemin">aria-valuemin</a> property set to a decimal value that represents the position where the primary pane has its minimum size.
+            The separator element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemin">aria-valuemin</a> property set to a decimal value that represents the position where the primary pane has its minimum size.
             This is typically <code>0</code>.
           </li>
           <li>
-            The separator element has the <a class="property-reference" href="#aria-valuemax">aria-valuemax</a> property set to a decimal value that represents the position where the primary pane has its maximum size.
+            The separator element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemax">aria-valuemax</a> property set to a decimal value that represents the position where the primary pane has its maximum size.
             This is typically <code>100</code>.
           </li>
           <li>
-            If the primary pane has a visible label, it is referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> on the separator element.
-            Otherwise, the separator element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            If the primary pane has a visible label, it is referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the separator element.
+            Otherwise, the separator element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
-          <li>The separator element has <a href="#aria-controls" class="property-reference">aria-controls</a> referring to the primary pane.</li>
+          <li>The separator element has <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> referring to the primary pane.</li>
         </ul>
       </section>
     </div>

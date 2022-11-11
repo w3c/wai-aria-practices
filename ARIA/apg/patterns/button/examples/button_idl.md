@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -74,15 +74,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -94,13 +94,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This example</h2>
         <p>The following examples of the <a href="../../">Button Pattern</a> demonstrate a new JavaScript syntax for coding ARIA attributes.</p>
         <p>
-          The JavaScript for the example buttons on this page uses the <a class="specref" href="#idl-interface">IDL Interface defined in ARIA 1.2</a>.
+          The JavaScript for the example buttons on this page uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface defined in ARIA 1.2</a>.
           The purpose of these examples is to illustrate how to use ARIA Attribute Reflection and provide a test case for browser and assistive technology interoperability.
           Specifically, the <code>role</code> and <code>ariaPressed</code> attributes are accessed using dot notation instead of <code>setAttribute()</code> and <code>getAttribute()</code>.
           In all other respects, these examples are identical to the <a href="../button/">Button Examples</a>.
@@ -120,7 +117,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             When using a
             <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>,
             the buttons will not be styled correctly.
-          </p>
+          </p><img alt=""
+    src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
+    class="example-page-example-icon"
+  >
 
           <p>This <q>Print</q> action button uses a <code>div</code> element.</p>
           <div tabindex="0" id="action">Print Page</div>

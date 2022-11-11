@@ -61,10 +61,10 @@ const transformExample = async (sourcePath, sourceContents) => {
     src="{{ '/content-images/wai-aria-practices/img/${slug}.svg' | relative_url }}"
     class="example-page-example-icon"
   />`;
-  if (html.querySelector("h2")) {
-    html.querySelector("h2").insertAdjacentHTML("afterend", img);
+  if (html.querySelector(".advisement")) {
+    html.querySelector(".advisement").insertAdjacentHTML("afterend", img);
   } else {
-    html.insertAdjacentHTML("afterbegin", img);
+    html.querySelector("h2").insertAdjacentHTML("afterend", img);
   }
 
   removeConflictingCss(html);
@@ -81,7 +81,7 @@ const transformExample = async (sourcePath, sourceContents) => {
 
   const lastModifiedDateFormatted = await getLastModifiedDate(sourcePath);
 
-  rewriteElementPaths(html, { onSourcePath: sourcePath });
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   const relatedLinksElement = html.querySelector(
     '[aria-label="Related Links"]'

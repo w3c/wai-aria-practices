@@ -91,7 +91,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul>
           <li>
             Each thumb is in the page tab sequence and has the keyboard interactions described in the
-            <a href="../slider/slider-pattern.html#keyboard_interaction">Slider Pattern</a>.
+            <a href="../slider/#keyboard_interaction">Slider Pattern</a>.
           </li>
           <li>
             The tab order remains constant regardless of thumb value and visual position within the slider.
@@ -103,20 +103,20 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>Each element serving as a focusable slider thumb has role <a class="role-reference" href="#slider">slider</a>.</li>
-          <li>Each slider element has the <a class="property-reference" href="#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current value of the slider.</li>
-          <li>Each slider element has the <a class="property-reference" href="#aria-valuemin">aria-valuemin</a> property set to a decimal value representing the minimum allowed value of the slider.</li>
-          <li>Each slider element has the <a class="property-reference" href="#aria-valuemax">aria-valuemax</a> property set to a decimal value representing the maximum allowed value of the slider.</li>
-          <li>When the range (e.g. minimum and/or maximum value) of another slider is dependent on the current value of a slider, the values of <a class="property-reference" href="#aria-valuemin">aria-valuemin</a> or <a class="property-reference" href="#aria-valuemax">aria-valuemax</a> of the dependent sliders are updated when the value changes.</li>
+          <li>Each element serving as a focusable slider thumb has role <a class="role-reference" href="https://w3c.github.io/aria/#slider">slider</a>.</li>
+          <li>Each slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuenow">aria-valuenow</a> property set to a decimal value representing the current value of the slider.</li>
+          <li>Each slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemin">aria-valuemin</a> property set to a decimal value representing the minimum allowed value of the slider.</li>
+          <li>Each slider element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemax">aria-valuemax</a> property set to a decimal value representing the maximum allowed value of the slider.</li>
+          <li>When the range (e.g. minimum and/or maximum value) of another slider is dependent on the current value of a slider, the values of <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemin">aria-valuemin</a> or <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemax">aria-valuemax</a> of the dependent sliders are updated when the value changes.</li>
           <li>
-            If a value of <code>aria-valuenow</code> is not user-friendly, e.g., the day of the week is represented by a number, the <a class="property-reference" href="#aria-valuetext">aria-valuetext</a> property is set to a string that makes the slider value understandable, e.g., &quot;Monday&quot;.
+            If a value of <code>aria-valuenow</code> is not user-friendly, e.g., the day of the week is represented by a number, the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuetext">aria-valuetext</a> property is set to a string that makes the slider value understandable, e.g., &quot;Monday&quot;.
           </li>
           <li>
-            If a slider has a visible label, it is referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> on the slider element.
-            Otherwise, the slider element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            If a slider has a visible label, it is referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the slider element.
+            Otherwise, the slider element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            If a slider is vertically oriented, it has <a class="property-reference" href="#aria-orientation">aria-orientation</a> set to <code>vertical</code>.
+            If a slider is vertically oriented, it has <a class="property-reference" href="https://w3c.github.io/aria/#aria-orientation">aria-orientation</a> set to <code>vertical</code>.
             The default value of <code>aria-orientation</code> for a slider is <code>horizontal</code>.
           </li>
         </ul>

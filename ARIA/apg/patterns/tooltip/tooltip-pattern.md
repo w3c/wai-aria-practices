@@ -98,8 +98,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that serves as the tooltip container has role <a href="#tooltip" class="role-reference">tooltip</a>.</li>
-          <li>The element that triggers the tooltip references the tooltip element with <a href="#aria-describedby" class="property-reference">aria-describedby</a>.</li>
+          <li>The element that serves as the tooltip container has role <a href="https://w3c.github.io/aria/#tooltip" class="role-reference">tooltip</a>.</li>
+          <li>The element that triggers the tooltip references the tooltip element with <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a>.</li>
         </ul>
       </section>
     </div>

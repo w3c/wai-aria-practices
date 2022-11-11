@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          An <a class="role-reference" href="#alert">alert</a> is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task.
+          An <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a> is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task.
           Dynamically rendered alerts are automatically announced by most screen readers, and in some operating systems, they may trigger an alert sound.
           It is important to note that, at this time, screen readers do not inform users of alerts that are present on the page before page load completes.
         </p>
@@ -95,7 +95,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
-        <p>The widget has a role of <a class="role-reference" href="#alert">alert</a>.</p>
+        <p>The widget has a role of <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a>.</p>
       </section>
     </div>
   

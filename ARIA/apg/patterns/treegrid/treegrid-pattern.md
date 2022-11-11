@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#treegrid" class="role-reference">treegrid</a> widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.
+          A <a href="https://w3c.github.io/aria/#treegrid" class="role-reference">treegrid</a> widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.
           Any row in the hierarchy may have child rows, and rows with children may be expanded or collapsed to show or hide the children.
           For example, in a <code>treegrid</code> used to display messages and message responses for a e-mail discussion list, messages with responses would be in rows that can be expanded to reveal the response messages.
         </p>
@@ -81,7 +81,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           However, in a multi-select <code>treegrid</code>, which enables users to select more than one row or cell for an action, the selected state is independent of the focus.
           For example, in a hierarchical e-mail discussion grid, users can move focus to select any number of rows for an action, such as delete or move.
           It is important that the visual design distinguish between items that are selected and the item that has focus.
-          For more details, see <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_vs_selection">this description of differences between focus and selection</a>.
+          For more details, see <a href="../../practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a>.
         </p>
       </section>
 
@@ -233,11 +233,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul class="note">
           <li>
             When the above <code>treegrid</code> navigation keys move focus, whether the focus is set on an element inside the cell or on the cell depends on cell content.
-            See <a href="../grid/grid-pattern.html#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
+            See <a href="../grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
           </li>
           <li>
             While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
-            If this functionality is needed, see <a href="../grid/grid-pattern.html#gridNav_inside">Editing and Navigating Inside a Cell</a>.
+            If this functionality is needed, see <a href="../grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
           </li>
           <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
         </ul>
@@ -290,51 +290,51 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
         </ul>
-        <p class="note">See <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_common_conventions">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p>
+        <p class="note">See <a href="../../practices/keyboard-interface/#kbd_common_conventions">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p>
       </section>
 
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The treegrid container has role <a href="#treegrid" class="role-reference">treegrid</a>.</li>
-          <li>Each row container has role <a href="#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>treegrid</code> element or an element with role <a href="#rowgroup" class="role-reference">rowgroup</a>.</li>
+          <li>The treegrid container has role <a href="https://w3c.github.io/aria/#treegrid" class="role-reference">treegrid</a>.</li>
+          <li>Each row container has role <a href="https://w3c.github.io/aria/#row" class="role-reference">row</a> and is either a DOM descendant of or owned by the <code>treegrid</code> element or an element with role <a href="https://w3c.github.io/aria/#rowgroup" class="role-reference">rowgroup</a>.</li>
           <li>
             Each cell is either a DOM descendant of or owned by a <code>row</code> element and has one of the following roles:
             <ul>
-              <li><a href="#columnheader" class="role-reference">columnheader</a> if the cell contains a title or header information for the column.</li>
-              <li><a href="#rowheader" class="role-reference">rowheader</a> if the cell contains title or header information for the row.</li>
-              <li><a href="#gridcell" class="role-reference">gridcell</a> if the cell does not contain column or row header information.</li>
+              <li><a href="https://w3c.github.io/aria/#columnheader" class="role-reference">columnheader</a> if the cell contains a title or header information for the column.</li>
+              <li><a href="https://w3c.github.io/aria/#rowheader" class="role-reference">rowheader</a> if the cell contains title or header information for the row.</li>
+              <li><a href="https://w3c.github.io/aria/#gridcell" class="role-reference">gridcell</a> if the cell does not contain column or row header information.</li>
             </ul>
           </li>
           <li>
             A <code>row</code> that can be expanded or collapsed to show or hide a set of child rows is a parent row.
-            Each parent <code>row</code> has the <a class="property-reference" href="#aria-expanded">aria-expanded</a> state set on either the <code>row</code> element or on a cell contained in the<code>row</code>.
+            Each parent <code>row</code> has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-expanded">aria-expanded</a> state set on either the <code>row</code> element or on a cell contained in the<code>row</code>.
             The <code>aria-expanded</code> state is set to <code>false</code> when the child rows are not displayed and set to <code>true</code> when the child rows are displayed.
             Rows that do not control display of child rows do not have the <code>aria-expanded</code> attribute because, if they were to have it, they would be incorrectly described to assistive technologies as parent rows.
           </li>
           <li>
-            If the treegrid supports selection of more than one row or cell, it is a multi-select treegrid and the element with role <code>treegrid</code> has <a class="property-reference" href="#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
+            If the treegrid supports selection of more than one row or cell, it is a multi-select treegrid and the element with role <code>treegrid</code> has <a class="property-reference" href="https://w3c.github.io/aria/#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
             Otherwise, it is a single-select treegrid, and <code>aria-multiselectable</code> is either set to <code>false</code> or the default value of <code>false</code> is implied.
           </li>
-          <li>If the treegrid is a single-select treegrid, <a href="#aria-selected" class="property-reference">aria-selected</a> is set to <code>true</code> on the selected row or cell, and it is not present on any other row or cell in the treegrid.</li>
+          <li>If the treegrid is a single-select treegrid, <a href="https://w3c.github.io/aria/#aria-selected" class="property-reference">aria-selected</a> is set to <code>true</code> on the selected row or cell, and it is not present on any other row or cell in the treegrid.</li>
           <li>
             if the treegrid is a multi-select treegrid:
             <ul>
-              <li>All selected rows or cells have <a href="#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code>.</li>
-              <li>All rows and cells that are not selected have <a href="#aria-selected" class="state-reference">aria-selected</a> set to <code>false</code>.</li>
+              <li>All selected rows or cells have <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code>.</li>
+              <li>All rows and cells that are not selected have <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>false</code>.</li>
             </ul>
           </li>
           <li>
-            If there is an element in the user interface that serves as a label for the treegrid, <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> is set on the grid element with a value that refers to the labelling element.
-            Otherwise, a label is specified for the grid element using <a href="#aria-label" class="property-reference">aria-label</a>.
+            If there is an element in the user interface that serves as a label for the treegrid, <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> is set on the grid element with a value that refers to the labelling element.
+            Otherwise, a label is specified for the grid element using <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
-          <li>If the treegrid has a caption or description, <a href="#aria-describedby" class="property-reference">aria-describedby</a> is set on the grid element with a value referring to the element containing the description.</li>
+          <li>If the treegrid has a caption or description, <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> is set on the grid element with a value referring to the element containing the description.</li>
           <li>
-            If the treegrid provides sort functions, <a href="#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the
-            <a href="../../practices/grid-and-table-properties/grid-and-table-properties-practice.html#gridAndTableProperties_sort">Grid and Table Properties Practice</a>.
+            If the treegrid provides sort functions, <a href="https://w3c.github.io/aria/#aria-sort" class="property-reference">aria-sort</a> is set to an appropriate value on the header cell element for the sorted column or row as described in the
+            <a href="../../practices/grid-and-table-properties/#gridAndTableProperties_sort">Grid and Table Properties Practice</a>.
           </li>
           <li>
-            If the treegrid provides content editing functionality and contains cells that may have edit capabilities disabled in certain conditions, <a href="#aria-readonly" class="state-reference">aria-readonly</a> is set to <code>true</code> on cells where editing is disabled.
+            If the treegrid provides content editing functionality and contains cells that may have edit capabilities disabled in certain conditions, <a href="https://w3c.github.io/aria/#aria-readonly" class="state-reference">aria-readonly</a> is set to <code>true</code> on cells where editing is disabled.
             If edit functions are disabled for all cells, instead of setting <code>aria-readonly</code> to <code>true</code> on every cell, <code>aria-readonly</code> may be set to <code>true</code> on the <code>treegrid</code> element.
             Treegrids that do not provide cell content editing functions do not include the <code>aria-readonly</code> attribute on any of their elements.
           </li>
@@ -342,18 +342,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             If there are conditions where some rows or columns are hidden or not present in the DOM, e.g., data is dynamically loaded when scrolling or the treegrid provides functions for hiding rows or columns, the following properties are applied as described in the
             <a href="../../practices/grid-and-table-properties/">Grid and Table Properties Practice</a>.
             <ul>
-              <li><a href="#aria-colcount" class="property-reference">aria-colcount</a> or <a href="#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively.</li>
-              <li><a href="#aria-colindex" class="property-reference">aria-colindex</a> or <a href="#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively.</li>
+              <li><a href="https://w3c.github.io/aria/#aria-colcount" class="property-reference">aria-colcount</a> or <a href="https://w3c.github.io/aria/#aria-rowcount" class="property-reference">aria-rowcount</a> is set to the total number of columns or rows, respectively.</li>
+              <li><a href="https://w3c.github.io/aria/#aria-colindex" class="property-reference">aria-colindex</a> or <a href="https://w3c.github.io/aria/#aria-rowindex" class="property-reference">aria-rowindex</a> is set to the position of a cell within a row or column, respectively.</li>
             </ul>
           </li>
           <li>
-            If the treegrid includes cells that span multiple rows or multiple columns, and if the <code>treegrid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in the
-            <a href="../../practices/grid-and-table-properties/grid-and-table-properties-practice.html#gridAndTableProperties_spans">Grid and Table Properties Practice</a>.
+            If the treegrid includes cells that span multiple rows or multiple columns, and if the <code>treegrid</code> role is NOT applied to an HTML <code>table</code> element, then <a href="https://w3c.github.io/aria/#aria-rowspan" class="property-reference">aria-rowspan</a> or <a href="https://w3c.github.io/aria/#aria-colspan" class="property-reference">aria-colspan</a> is applied as described in the
+            <a href="../../practices/grid-and-table-properties/#gridAndTableProperties_spans">Grid and Table Properties Practice</a>.
           </li>
         </ul>
         <ul class="note">
           <li>A <code>treegrid</code> built from an HTML <code>table</code> that includes cells that span multiple rows or columns must use HTML <code>rowspan</code> and <code>colspan</code> and must not use <code>aria-rowspan</code> or <code>aria-colspan</code>.</li>
-          <li>If rows or cells are included in a treegrid via <a href="#aria-owns" class="property-reference">aria-owns</a>, they will be presented to assistive technologies after the DOM descendants of the <code>treegrid</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.</li>
+          <li>If rows or cells are included in a treegrid via <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a>, they will be presented to assistive technologies after the DOM descendants of the <code>treegrid</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.</li>
         </ul>
       </section>
     </div>

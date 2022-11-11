@@ -63,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#listbox" class="role-reference">listbox</a> widget presents a list of options and allows a user to select one or more of them.
+          A <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a> widget presents a list of options and allows a user to select one or more of them.
           A listbox that allows a single option to be chosen is a single-select listbox; one that allows multiple options to be selected is a multi-select listbox.
         </p>
         <p>
@@ -200,17 +200,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ol class="note">
           <li>
             DOM focus (the active element) is functionally distinct from the selected state.
-            For more details, see <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_vs_selection">this description of differences between focus and selection</a>.
+            For more details, see <a href="../../practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a>.
           </li>
           <li>
-            The <code>listbox</code> role supports the <a class="property-reference" href="#aria-activedescendant">aria-activedescendant</a> property, which provides an alternative to moving DOM focus among <code>option</code> elements when implementing keyboard navigation. For details, see
-            <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            The <code>listbox</code> role supports the <a class="property-reference" href="https://w3c.github.io/aria/#aria-activedescendant">aria-activedescendant</a> property, which provides an alternative to moving DOM focus among <code>option</code> elements when implementing keyboard navigation. For details, see
+            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
           </li>
           <li>
             In a single-select listbox, moving focus may optionally unselect the previously selected option and select the newly focused option.
             This model of selection is known as &quot;selection follows focus&quot;.
             Having selection follow focus can be very helpful in some circumstances and can severely degrade accessibility in others.
-            For additional guidance, see <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="../../practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>If selecting or unselecting all options is an important function, implementing separate controls for these actions, such as buttons for &quot;Select All&quot; and &quot;Unselect All&quot;, significantly improves accessibility.</li>
           <li>
@@ -226,12 +226,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>An element that contains or owns all the listbox options has role <a href="#listbox" class="role-reference">listbox</a>.</li>
+          <li>An element that contains or owns all the listbox options has role <a href="https://w3c.github.io/aria/#listbox" class="role-reference">listbox</a>.</li>
           <li>
-            Each option in the listbox has role <a href="#option" class="role-reference">option</a> and is contained in or owned by either:
+            Each option in the listbox has role <a href="https://w3c.github.io/aria/#option" class="role-reference">option</a> and is contained in or owned by either:
             <ul>
               <li>The element with role <code>listbox</code>.</li>
-              <li>An element with role <a href="#group" class="role-reference">group</a> that is contained in or owned by the element with role <code>listbox</code>.</li>
+              <li>An element with role <a href="https://w3c.github.io/aria/#group" class="role-reference">group</a> that is contained in or owned by the element with role <code>listbox</code>.</li>
             </ul>
           </li>
           <li>
@@ -239,16 +239,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             If a listbox contains grouped options, then:
             <ul>
               <li>All option groups contain at least one option.</li>
-              <li>Each option group has an accessible name provided via <a href="#aria-label" class="property-reference">aria-label</a> or <a href="#aria-labelledby" class="property-reference">aria-labelledby</a>.</li>
+              <li>Each option group has an accessible name provided via <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> or <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a>.</li>
             </ul>
           </li>
-          <li>If the element with role <code>listbox</code> is not part of another widget, such as a combobox, then it has either a visible label referenced by <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> or a value specified for <a href="#aria-label" class="property-reference">aria-label</a>.</li>
+          <li>If the element with role <code>listbox</code> is not part of another widget, such as a combobox, then it has either a visible label referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> or a value specified for <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.</li>
           <li>
-            If the listbox supports selection of more than one option, the element with role <code>listbox</code> has <a class="property-reference" href="#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
+            If the listbox supports selection of more than one option, the element with role <code>listbox</code> has <a class="property-reference" href="https://w3c.github.io/aria/#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
             Otherwise, <code>aria-multiselectable</code> is either set to <code>false</code> or the default value of <code>false</code> is implied.
           </li>
           <li>
-            The selection state of each selectable option is indicated with either <a href="#aria-selected" class="state-reference">aria-selected</a> or <a href="#aria-checked" class="state-reference">aria-checked</a>:
+            The selection state of each selectable option is indicated with either <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> or <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a>:
             <ul>
               <li>
                 If the selection state is indicated with <code>aria-selected</code>, then <code>aria-checked</code> is not specified for any options.
@@ -256,20 +256,20 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 See notes below regarding considerations for which property to use and for details of the unusual conditions that might allow for both properties in the same listbox.
               </li>
               <li>
-                If any options are selected, each selected option has either <a href="#aria-selected" class="state-reference">aria-selected</a> or <a href="#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.
-                No more than one option is selected at a time if the element with role <code>listbox</code> does <em>not</em> have <a class="property-reference" href="#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
+                If any options are selected, each selected option has either <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> or <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>true</code>.
+                No more than one option is selected at a time if the element with role <code>listbox</code> does <em>not</em> have <a class="property-reference" href="https://w3c.github.io/aria/#aria-multiselectable">aria-multiselectable</a> set to <code>true</code>.
               </li>
-              <li>All options that are selectable but not selected have either <a href="#aria-selected" class="state-reference">aria-selected</a> or <a href="#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.</li>
+              <li>All options that are selectable but not selected have either <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> or <a href="https://w3c.github.io/aria/#aria-checked" class="state-reference">aria-checked</a> set to <code>false</code>.</li>
               <li>
                 Note that except in listboxes where selection follows focus, the selected state is distinct from focus.
-                For more details, see <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_vs_selection">this description of differences between focus and selection</a>
-                and <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+                For more details, see <a href="../../practices/keyboard-interface/#kbd_focus_vs_selection">this description of differences between focus and selection</a>
+                and <a href="../../practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
               </li>
             </ul>
           </li>
-          <li>If the complete set of available options is not present in the DOM due to dynamic loading as the user scrolls, their <a href="#aria-setsize" class="property-reference">aria-setsize</a> and <a href="#aria-posinset" class="property-reference">aria-posinset</a> attributes are set appropriately.</li>
+          <li>If the complete set of available options is not present in the DOM due to dynamic loading as the user scrolls, their <a href="https://w3c.github.io/aria/#aria-setsize" class="property-reference">aria-setsize</a> and <a href="https://w3c.github.io/aria/#aria-posinset" class="property-reference">aria-posinset</a> attributes are set appropriately.</li>
           <li>
-            If options are arranged horizontally, the element with role <code>listbox</code> has <a href="#aria-orientation" class="property-reference">aria-orientation</a> set to <code>horizontal</code>.
+            If options are arranged horizontally, the element with role <code>listbox</code> has <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>horizontal</code>.
             The default value of <code>aria-orientation</code> for <code>listbox</code> is <code>vertical</code>.
           </li>
         </ul>
@@ -300,7 +300,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
           <li>
-            If <a href="#aria-owns" class="property-reference">aria-owns</a> is set on the listbox element to include elements that are not DOM children of the container, those elements will appear in the reading order in the sequence they are referenced and after any items that are DOM children.
+            If <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> is set on the listbox element to include elements that are not DOM children of the container, those elements will appear in the reading order in the sequence they are referenced and after any items that are DOM children.
             Scripts that manage focus need to ensure the visual focus order matches this assistive technology reading order.
           </li>
         </ol>

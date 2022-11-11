@@ -63,14 +63,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="about">
         <h2>About This Pattern</h2>
         <p>
-          A <a href="#menu" class="role-reference">menu</a> is a widget that offers a list of choices to the user, such as a set of actions or functions.
+          A <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> is a widget that offers a list of choices to the user, such as a set of actions or functions.
           Menu widgets behave like native operating system menus, such as the menus that pull down from the menubars commonly found at the top of many desktop application windows.
           A menu is usually opened, or made visible, by activating a <a href="../menu-button/">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift + F10</kbd> in Windows, that opens a context specific menu.
           When a user activates a choice in a menu, the menu usually closes unless the choice opened a submenu.
         </p>
 
         <p>
-          A menu that is visually persistent is a <a href="#menubar" class="role-reference">menubar</a>.
+          A menu that is visually persistent is a <a href="https://w3c.github.io/aria/#menubar" class="role-reference">menubar</a>.
           A menubar is typically horizontal and is often used to create a menu bar similar to those found near the top of the window in many desktop applications, offering the user quick access to a consistent set of commands.
         </p>
 
@@ -105,7 +105,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           When a <code>menu</code> opens, or when a <code>menubar</code> receives focus, keyboard focus is placed on the first item.
           Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in the practice for
-          <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_general_within">Keyboard Navigation Inside Components</a>,
+          <a href="../../practices/keyboard-interface/#kbd_general_within">Keyboard Navigation Inside Components</a>,
           <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus among the items in the menu.
           Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or <code>menu</code>.
         </p>
@@ -198,7 +198,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
         <ol class="note">
           <li>Disabled menu items are focusable but cannot be activated.</li>
-          <li>A <a href="#separator" class="role-reference">separator</a> in a menu is not focusable or interactive.</li>
+          <li>A <a href="https://w3c.github.io/aria/#separator" class="role-reference">separator</a> in a menu is not focusable or interactive.</li>
           <li>
             If a menu is opened or a menubar receives focus as a result of a context action, <kbd>Escape</kbd> or <kbd>Enter</kbd> may return focus to the invoking context.
             For example, a rich text editor may have a menubar that receives focus when a shortcut key, e.g., <kbd>alt + F10</kbd>, is pressed while editing.
@@ -223,63 +223,63 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul>
           <li>
             A menu is a container of items that represent choices.
-            The element serving as the menu has a role of either <a href="#menu" class="role-reference">menu</a> or <a href="#menubar" class="role-reference">menubar</a>.
+            The element serving as the menu has a role of either <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> or <a href="https://w3c.github.io/aria/#menubar" class="role-reference">menubar</a>.
           </li>
           <li>
             The items contained in a menu are child elements of the containing menu or menubar and have any of the following roles:
             <ul>
-              <li><a href="#menuitem" class="role-reference">menuitem</a></li>
-              <li><a href="#menuitemcheckbox" class="role-reference">menuitemcheckbox</a></li>
-              <li><a href="#menuitemradio" class="role-reference">menuitemradio</a></li>
+              <li><a href="https://w3c.github.io/aria/#menuitem" class="role-reference">menuitem</a></li>
+              <li><a href="https://w3c.github.io/aria/#menuitemcheckbox" class="role-reference">menuitemcheckbox</a></li>
+              <li><a href="https://w3c.github.io/aria/#menuitemradio" class="role-reference">menuitemradio</a></li>
             </ul>
           </li>
           <li>
-            If activating a <a href="#menuitem" class="role-reference">menuitem</a> opens a submenu, the menuitem is known as a parent menuitem.
+            If activating a <a href="https://w3c.github.io/aria/#menuitem" class="role-reference">menuitem</a> opens a submenu, the menuitem is known as a parent menuitem.
             A submenu's <code>menu</code> element is:
             <ul>
               <li>Contained inside the same <code>menu</code> element as its parent <code>menuitem</code>.</li>
               <li>Is the sibling element immediately following its parent <code>menuitem</code>.</li>
             </ul>
           </li>
-          <li>A parent menuitem has <a href="#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
-          <li>A parent menuitem has <a href="#aria-expanded" class="property-reference">aria-expanded</a> set to <code>false</code> when its child menu is not visible and set to <code>true</code> when the child menu is visible.</li>
+          <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+          <li>A parent menuitem has <a href="https://w3c.github.io/aria/#aria-expanded" class="property-reference">aria-expanded</a> set to <code>false</code> when its child menu is not visible and set to <code>true</code> when the child menu is visible.</li>
           <li>
             One of the following approaches is used to enable scripts to move focus among items in a menu as described in the practice for
-            <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_general_within">Keyboard Navigation Inside Components</a>:
+            <a href="../../practices/keyboard-interface/#kbd_general_within">Keyboard Navigation Inside Components</a>:
             <ul>
-              <li>The menu container has <code>tabindex</code> set to <code>-1</code> or <code>0</code> and <a href="#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to the ID of the focused item.</li>
+              <li>The menu container has <code>tabindex</code> set to <code>-1</code> or <code>0</code> and <a href="https://w3c.github.io/aria/#aria-activedescendant" class="property-reference">aria-activedescendant</a> set to the ID of the focused item.</li>
               <li>Each item in the menu has <code>tabindex</code> set to <code>-1</code>, except in a menubar, where the first item has <code>tabindex</code> set to <code>0</code>.</li>
             </ul>
           </li>
-          <li>When a <a href="#menuitemcheckbox" class="role-reference">menuitemcheckbox</a> or <a href="#menuitemradio" class="role-reference">menuitemradio</a> is checked, <a href="#aria-checked" class="property-reference">aria-checked</a> is set to <code>true</code>.</li>
-          <li>When a menu item is disabled, <a href="#aria-disabled" class="state-reference">aria-disabled</a> is set to <code>true</code>.</li>
+          <li>When a <a href="https://w3c.github.io/aria/#menuitemcheckbox" class="role-reference">menuitemcheckbox</a> or <a href="https://w3c.github.io/aria/#menuitemradio" class="role-reference">menuitemradio</a> is checked, <a href="https://w3c.github.io/aria/#aria-checked" class="property-reference">aria-checked</a> is set to <code>true</code>.</li>
+          <li>When a menu item is disabled, <a href="https://w3c.github.io/aria/#aria-disabled" class="state-reference">aria-disabled</a> is set to <code>true</code>.</li>
           <li>
-            Items in a menu may be divided into groups by placing an element with a role of <a href="#separator" class="role-reference">separator</a> between groups.
-            For example, this technique should be used when a menu contains a set of <a href="#menuitemradio" class="role-reference">menuitemradio</a> items.
+            Items in a menu may be divided into groups by placing an element with a role of <a href="https://w3c.github.io/aria/#separator" class="role-reference">separator</a> between groups.
+            For example, this technique should be used when a menu contains a set of <a href="https://w3c.github.io/aria/#menuitemradio" class="role-reference">menuitemradio</a> items.
           </li>
-          <li>All <a href="#separator" class="role-reference">separators</a> should have <a href="#aria-orientation" class="property-reference">aria-orientation</a> consistent with the separator's orientation.</li>
+          <li>All <a href="https://w3c.github.io/aria/#separator" class="role-reference">separators</a> should have <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> consistent with the separator's orientation.</li>
           <li>
-            If a menubar has a visible label, the element with role <code>menubar</code> has <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the labelling element.
-            Otherwise, the menubar element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            If a menubar has a visible label, the element with role <code>menubar</code> has <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the labelling element.
+            Otherwise, the menubar element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            If a menubar is vertically oriented, it has <a class="property-reference" href="#aria-orientation">aria-orientation</a> set to <code>vertical</code>.
+            If a menubar is vertically oriented, it has <a class="property-reference" href="https://w3c.github.io/aria/#aria-orientation">aria-orientation</a> set to <code>vertical</code>.
             The default value of <code>aria-orientation</code> for a menubar is <code>horizontal</code>.
           </li>
           <li>
             An element with role <code>menu</code> either has:
             <ul>
-              <li><a href="#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the menuitem or button that controls its display.</li>
-              <li>A label provided by <a href="#aria-label" class="property-reference">aria-label</a>.</li>
+              <li><a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the menuitem or button that controls its display.</li>
+              <li>A label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.</li>
             </ul>
           </li>
           <li>
-            If a menu is horizontally oriented, it has <a class="property-reference" href="#aria-orientation">aria-orientation</a> set to <code>horizontal</code>.
+            If a menu is horizontally oriented, it has <a class="property-reference" href="https://w3c.github.io/aria/#aria-orientation">aria-orientation</a> set to <code>horizontal</code>.
             The default value of <code>aria-orientation</code> for a menu is <code>vertical</code>.
           </li>
         </ul>
         <p class="note">
-          If <a href="#aria-owns" class="property-reference">aria-owns</a> is set on the menu container to include elements that are not DOM children of the container, those elements will appear in the reading order in the sequence they are referenced and after any items that are DOM children.
+          If <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> is set on the menu container to include elements that are not DOM children of the container, those elements will appear in the reading order in the sequence they are referenced and after any items that are DOM children.
           Scripts that manage focus need to ensure the visual focus order matches this assistive technology reading order.
         </p>
       </section>

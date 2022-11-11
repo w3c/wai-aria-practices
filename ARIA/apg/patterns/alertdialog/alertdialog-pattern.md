@@ -65,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           An alert dialog is a <a href="../dialog-modal/">modal dialog</a> that interrupts the user's workflow to communicate an important message and acquire a response.
           Examples include action confirmation prompts and error message confirmations.
-          The <a href="#alertdialog" class="role-reference">alertdialog</a> role enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.
+          The <a href="https://w3c.github.io/aria/#alertdialog" class="role-reference">alertdialog</a> role enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.
         </p>
       </section>
 
@@ -85,21 +85,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
           <li>
-            The element that contains all elements of the dialog, including the alert message and any dialog buttons, has role <a class="role-reference" href="#alertdialog">alertdialog</a>.
+            The element that contains all elements of the dialog, including the alert message and any dialog buttons, has role <a class="role-reference" href="https://w3c.github.io/aria/#alertdialog">alertdialog</a>.
           </li>
           <li>
             The element with role <code>alertdialog</code> has either:
             <ul>
               <li>
-                A value for <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> that refers to the element containing the title of the dialog if the dialog has a visible label.
+                A value for <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> that refers to the element containing the title of the dialog if the dialog has a visible label.
               </li>
               <li>
-                A value for <a href="#aria-label" class="property-reference">aria-label</a> if the dialog does not have a visible label.
+                A value for <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a> if the dialog does not have a visible label.
               </li>
             </ul>
           </li>
           <li>
-            The element with role <code>alertdialog</code> has a value set for <a href="#aria-describedby" class="property-reference">aria-describedby</a> that refers to the element containing the alert message.
+            The element with role <code>alertdialog</code> has a value set for <a href="https://w3c.github.io/aria/#aria-describedby" class="property-reference">aria-describedby</a> that refers to the element containing the alert message.
           </li>
         </ul>
       </section>

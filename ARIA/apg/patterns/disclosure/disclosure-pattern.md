@@ -94,13 +94,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that shows and hides the content has role <a href="#button" class="role-reference">button</a>.</li>
+          <li>The element that shows and hides the content has role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.</li>
           <li>
-            When the content is visible, the element with role <code>button</code> has <a href="#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>.
+            When the content is visible, the element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>.
             When the content area is hidden, it is set to <code>false</code>.
           </li>
           <li>
-            Optionally, the element with role <code>button</code> has a value specified for <a href="#aria-controls" class="property-reference">aria-controls</a> that refers to the element that contains all the content that is shown or hidden.
+            Optionally, the element with role <code>button</code> has a value specified for <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> that refers to the element that contains all the content that is shown or hidden.
           </li>
         </ul>
       </section>

@@ -72,10 +72,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <dt>Tabs or Tabbed Interface</dt>
           <dd>A set of tab elements and their associated tab panels.</dd>
           <dt>Tab List</dt>
-          <dd>A set of tab elements contained in a <a href="#tablist" class="role-reference">tablist</a> element.</dd>
-          <dt><a href="#tab" class="role-reference">tab</a></dt>
+          <dd>A set of tab elements contained in a <a href="https://w3c.github.io/aria/#tablist" class="role-reference">tablist</a> element.</dd>
+          <dt><a href="https://w3c.github.io/aria/#tab" class="role-reference">tab</a></dt>
           <dd>An element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.</dd>
-          <dt><a href="#tabpanel" class="role-reference">tabpanel</a></dt>
+          <dt><a href="https://w3c.github.io/aria/#tabpanel" class="role-reference">tabpanel</a></dt>
           <dd>The element that contains the content associated with a tab.</dd>
         </dl>
         <p>
@@ -146,10 +146,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             It is recommended that tabs activate automatically when they receive focus as long as their associated tab panels are displayed without noticeable latency.
             This typically requires tab panel content to be preloaded.
             Otherwise, automatic activation slows focus movement, which significantly hampers users' ability to navigate efficiently across the tab list.
-            For additional guidance, see <a href="../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
+            For additional guidance, see <a href="../../practices/keyboard-interface/#kbd_selection_follows_focus">Deciding When to Make Selection Automatically Follow Focus</a>.
           </li>
           <li>
-            When a tab list has its <a href="#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>:
+            When a tab list has its <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>:
             <ol>
               <li><kbd>Down Arrow</kbd> performs as <kbd>Right Arrow</kbd> is described above.</li>
               <li><kbd>Up Arrow</kbd> performs as <kbd>Left Arrow</kbd> is described above.</li>
@@ -163,19 +163,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="roles_states_properties">
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
-          <li>The element that serves as the container for the set of tabs has role <a class="role-reference" href="#tablist">tablist</a>.</li>
-          <li>Each element that serves as a tab has role <a class="role-reference" href="#tab">tab</a> and is contained within the element with role <code>tablist</code>.</li>
-          <li>Each element that contains the content panel for a <code>tab</code> has role <a class="role-reference" href="#tabpanel">tabpanel</a>.</li>
+          <li>The element that serves as the container for the set of tabs has role <a class="role-reference" href="https://w3c.github.io/aria/#tablist">tablist</a>.</li>
+          <li>Each element that serves as a tab has role <a class="role-reference" href="https://w3c.github.io/aria/#tab">tab</a> and is contained within the element with role <code>tablist</code>.</li>
+          <li>Each element that contains the content panel for a <code>tab</code> has role <a class="role-reference" href="https://w3c.github.io/aria/#tabpanel">tabpanel</a>.</li>
           <li>
-            If the tab list has a visible label, the element with role <code>tablist</code> has <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the labelling element.
-            Otherwise, the <code>tablist</code> element has a label provided by <a href="#aria-label" class="property-reference">aria-label</a>.
+            If the tab list has a visible label, the element with role <code>tablist</code> has <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> set to a value that refers to the labelling element.
+            Otherwise, the <code>tablist</code> element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
-          <li>Each element with role <code>tab</code> has the property <a href="#aria-controls" class="property-reference">aria-controls</a> referring to its associated <code>tabpanel</code> element.</li>
-          <li>The active <code>tab</code> element has the state <a href="#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code> and all other <code>tab</code> elements have it set to <code>false</code>.</li>
-          <li>Each element with role <code>tabpanel</code> has the property <a href="#aria-labelledby" class="property-reference">aria-labelledby</a> referring to its associated <code>tab</code> element.</li>
-          <li>If a <code>tab</code> element has a popup menu, it has the property <a href="#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+          <li>Each element with role <code>tab</code> has the property <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> referring to its associated <code>tabpanel</code> element.</li>
+          <li>The active <code>tab</code> element has the state <a href="https://w3c.github.io/aria/#aria-selected" class="state-reference">aria-selected</a> set to <code>true</code> and all other <code>tab</code> elements have it set to <code>false</code>.</li>
+          <li>Each element with role <code>tabpanel</code> has the property <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> referring to its associated <code>tab</code> element.</li>
+          <li>If a <code>tab</code> element has a popup menu, it has the property <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
           <li>
-            If the <code>tablist</code> element is vertically oriented, it has the property <a href="#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>.
+            If the <code>tablist</code> element is vertically oriented, it has the property <a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> set to <code>vertical</code>.
             The default value of <code>aria-orientation</code> for a <code>tablist</code> element is <code>horizontal</code>.</li>
         </ul>
       </section>

@@ -65,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <details id="support-notice" class="note">
+    <details id="support-notice">
       <summary>
         <p>
           The code in this example is not intended for production environments.
@@ -76,15 +76,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li>
           There may be support gaps in some
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#browser_and_AT_support">browser and assistive technology combinations</a>,
+          <a href="../../../../practices/read-me-first/#browser_and_AT_support">browser and assistive technology combinations</a>,
           especially for
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#mobile_and_touch_support">mobile/touch devices</a>.
+          <a href="../../../../practices/read-me-first/#mobile_and_touch_support">mobile/touch devices</a>.
           Testing code based on this example with assistive technologies is essential before considering use in production systems.
         </li>
         <li>The <a href="https://aria-at.w3.org">ARIA and Assistive Technologies Project</a> is developing measurements of assistive technology support for APG examples.</li>
         <li>
           Robust accessibility can be further optimized by choosing implementation patterns that <a href="https://www.w3.org/TR/using-aria/#rule1">maximize use of semantic HTML</a> and heeding the warning that
-          <a href="../../../../practices/read-me-first/read-me-first-practice.html#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
+          <a href="../../../../practices/read-me-first/#no_aria_better_bad_aria">No ARIA is better than Bad ARIA</a>.
         </li>
       </ul>
     </details>
@@ -95,16 +95,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
         <div class="advisement">
           <p>
             <strong>DEPRECATION WARNING:</strong> This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices.
             The <a href="../../../combobox/examples/combobox-select-only/">select-only combobox</a> should be used as an alternative to this pattern.
           </p>
-        </div>
+        </div><img alt=""
+    src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
+    class="example-page-example-icon"
+  >
         <p>
           The following example implementation of the <a href="../../">Listbox Pattern</a> demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size=&quot;1&quot;</code>.
           The widget consists of a button that triggers the display of a listbox.
@@ -189,7 +189,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="kbd_label">Keyboard Support</h2>
         <p>
           The example listbox on this page implements the following keyboard interface.
-          Other variations and options for the keyboard interface are described in the <a href="../../listbox-pattern.html#keyboard_interaction">Keyboard Interaction section of the Listbox Pattern</a>.
+          Other variations and options for the keyboard interface are described in the <a href="../../#keyboard_interaction">Keyboard Interaction section of the Listbox Pattern</a>.
         </p>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
@@ -255,7 +255,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
         <p>
           The example listbox on this page implements the following ARIA roles, states, and properties.
-          Information about other ways of applying ARIA roles, states, and properties is available in the <a href="../../listbox-pattern.html#roles_states_properties">Roles, States, and Properties section of the Listbox Pattern</a>.
+          Information about other ways of applying ARIA roles, states, and properties is available in the <a href="../../#roles_states_properties">Roles, States, and Properties section of the Listbox Pattern</a>.
         </p>
         <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
           <thead>
@@ -331,7 +331,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element.</li>
                   <li>
                     For more information about this focus management technique, see
-                    <a href="../../../../practices/keyboard-interface/keyboard-interface-practice.html#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+                    <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
                   </li>
                 </ul>
               </td>

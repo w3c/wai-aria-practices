@@ -59,7 +59,7 @@ const getSitePath = (buildPath, contentType) => {
     case "practiceIndex":
       return buildRelative.replace(/practices\/practices\.md/, "practices/");
     case "about":
-      return buildRelative.replace(/\/about\.md/, "about/");
+      return buildRelative.replace(/about\/about\.md/, "about/");
     case "asset":
       return buildRelative;
     case "ignored":
@@ -69,18 +69,30 @@ const getSitePath = (buildPath, contentType) => {
   }
 };
 
-const rewriteRelativePath = (relativePath, { onSourcePath }) => {
+const rewriteRelativePath = (relativePathAndHash, { onSourcePath }) => {
   const { buildPath: onBuildPath } = rewriteSourcePath(onSourcePath);
+
+  const [relativePath, hash] = relativePathAndHash.split("#");
 
   const sourcePath = path.resolve(dirname(onSourcePath), relativePath);
   const { buildPath } = rewriteSourcePath(sourcePath);
 
-  const siteRootPath = getSitePath(buildPath, determineContentType(sourcePath));
+  const siteRootPathPreHash = getSitePath(
+    buildPath,
+    determineContentType(sourcePath)
+  );
   const onSitePath = getSitePath(
     onBuildPath,
     determineContentType(onSourcePath)
   );
-  const siteRelativePath = relative(dirname(onSitePath), siteRootPath);
+  const siteRelativePathPreHash = relative(
+    dirname(onSitePath),
+    siteRootPathPreHash
+  );
+
+  const hashFormatted = hash ? `#${hash}` : "";
+  const siteRootPath = `${siteRootPathPreHash}${hashFormatted}`;
+  const siteRelativePath = `${siteRelativePathPreHash}${hashFormatted}`;
 
   return { siteRelativePath, siteRootPath, buildPath };
 };
