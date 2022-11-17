@@ -230,17 +230,20 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
         </ul>
-        <ul class="note">
-          <li>
-            When the above <code>treegrid</code> navigation keys move focus, whether the focus is set on an element inside the cell or on the cell depends on cell content.
-            See <a href="../grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
-          </li>
-          <li>
-            While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
-            If this functionality is needed, see <a href="../grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
-          </li>
-          <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
-        </ul>
+        <div class="note">
+          <h3>Note</h3>
+          <ul>
+            <li>
+              When the above <code>treegrid</code> navigation keys move focus, whether the focus is set on an element inside the cell or on the cell depends on cell content.
+              See <a href="../grid/#gridNav_focus">Whether to Focus on a Cell or an Element Inside It</a>.
+            </li>
+            <li>
+              While navigation keys, such as arrow keys, are moving focus from cell to cell, they are not available to do something like operate a combobox or move an editing caret inside of a cell.
+              If this functionality is needed, see <a href="../grid/#gridNav_inside">Editing and Navigating Inside a Cell</a>.
+            </li>
+            <li>If navigation functions can dynamically add more rows or columns to the DOM, key events that move focus to the beginning or end of the grid, such as <kbd>control + End</kbd>, may move focus to the last row in the DOM rather than the last available row in the back-end data.</li>
+          </ul>
+        </div>
         <p>If a treegrid supports selection of cells, rows, or columns, the following keys are commonly used for these functions.</p>
         <ul>
           <li>
@@ -290,7 +293,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
         </ul>
-        <p class="note">See <a href="../../practices/keyboard-interface/#kbd_common_conventions">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p>
+        <div class="note">
+          <h3>Note</h3>
+          <p>See <a href="../../practices/keyboard-interface/#kbd_common_conventions">Key Assignment Conventions for Common Functions</a> for cut, copy, and paste key assignments.</p>
+        </div>
       </section>
 
       <section id="roles_states_properties">
@@ -351,10 +357,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../practices/grid-and-table-properties/#gridAndTableProperties_spans">Grid and Table Properties Practice</a>.
           </li>
         </ul>
-        <ul class="note">
-          <li>A <code>treegrid</code> built from an HTML <code>table</code> that includes cells that span multiple rows or columns must use HTML <code>rowspan</code> and <code>colspan</code> and must not use <code>aria-rowspan</code> or <code>aria-colspan</code>.</li>
-          <li>If rows or cells are included in a treegrid via <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a>, they will be presented to assistive technologies after the DOM descendants of the <code>treegrid</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.</li>
-        </ul>
+        <div class="note">
+          <h3>Note</h3>
+          <ul>
+            <li>A <code>treegrid</code> built from an HTML <code>table</code> that includes cells that span multiple rows or columns must use HTML <code>rowspan</code> and <code>colspan</code> and must not use <code>aria-rowspan</code> or <code>aria-colspan</code>.</li>
+            <li>If rows or cells are included in a treegrid via <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a>, they will be presented to assistive technologies after the DOM descendants of the <code>treegrid</code> element unless the DOM descendants are also included in the <code>aria-owns</code> attribute.</li>
+          </ul>
+        </div>
       </section>
     </div>
   

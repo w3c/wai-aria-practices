@@ -200,6 +200,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
         </ul>
         <div class="note">
+          <h4>Note</h4>
           <p>Standard single line text editing keys appropriate for the device platform:</p>
           <ol>
             <li>include keys for input, cursor movement, selection, and text manipulation.</li>
@@ -244,13 +245,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><kbd>Backspace</kbd> (Optional): If the combobox is editable, returns focus to the combobox and deletes the character prior to the cursor.</li>
           <li><kbd>Delete</kbd> (Optional): If the combobox is editable, returns focus to the combobox, removes the selected state if a suggestion was selected, and removes the inline autocomplete string if present.</li>
         </ul>
-        <ol class="note">
-          <li>
-            DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in
-            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
-          </li>
-          <li>Selection follows focus in the listbox; the listbox allows only one suggested value to be selected at a time for the combobox value.</li>
-        </ol>
+        <div class="note">
+          <h4>Note</h4>
+          <ol>
+            <li>
+              DOM Focus is maintained on the combobox and the assistive technology focus is moved within the listbox using <code>aria-activedescendant</code> as described in
+              <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            </li>
+            <li>Selection follows focus in the listbox; the listbox allows only one suggested value to be selected at a time for the combobox value.</li>
+          </ol>
+        </div>
         <h3>Grid Popup Keyboard Interaction</h3>
         <p>
           In a grid popup, each suggested value may be represented by either a single cell or an entire row.
@@ -314,35 +318,38 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><kbd>Backspace</kbd> (Optional): If the combobox is editable, returns focus to the combobox and deletes the character prior to the cursor.</li>
           <li><kbd>Delete</kbd> (Optional): If the combobox is editable, returns focus to the combobox, removes the selected state if a suggestion was selected, and removes the inline autocomplete string if present.</li>
         </ul>
-        <ol class="note">
-          <li>
-            DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in
-            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
-          </li>
-          <li>The grid allows only one suggested value to be selected at a time for the combobox value.</li>
-          <li>
-            In a grid popup, each suggested value may be represented by either a single cell or an entire row.
-            This aspect of design effects focus and selection movement:
-            <ol>
-              <li>
-                If every cell contains a different suggested value:
-                <ul>
-                  <li>Selection follows focus so that the cell containing focus is selected.</li>
-                  <li>Horizontal arrow key navigation typically wraps from one row to another.</li>
-                  <li>Vertical arrow key navigation typically wraps from one column to another.</li>
-                </ul>
-              </li>
-              <li>
-                If all cells in a row contain information about the same suggested value:
-                <ul>
-                  <li>Either the row containing focus is selected or a cell containing a suggested value is selected when any cell in the same row contains focus.</li>
-                  <li>Horizontal key navigation may wrap from one row to another.</li>
-                  <li>Vertical arrow key navigation <strong>does not</strong> wrap from one column to another.</li>
-                </ul>
-              </li>
-            </ol>
-          </li>
-        </ol>
+        <div class="note">
+          <h4>Note</h4>
+          <ol>
+            <li>
+              DOM Focus is maintained on the combobox and the assistive technology focus is moved within the grid using <code>aria-activedescendant</code> as described in
+              <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            </li>
+            <li>The grid allows only one suggested value to be selected at a time for the combobox value.</li>
+            <li>
+              In a grid popup, each suggested value may be represented by either a single cell or an entire row.
+              This aspect of design effects focus and selection movement:
+              <ol>
+                <li>
+                  If every cell contains a different suggested value:
+                  <ul>
+                    <li>Selection follows focus so that the cell containing focus is selected.</li>
+                    <li>Horizontal arrow key navigation typically wraps from one row to another.</li>
+                    <li>Vertical arrow key navigation typically wraps from one column to another.</li>
+                  </ul>
+                </li>
+                <li>
+                  If all cells in a row contain information about the same suggested value:
+                  <ul>
+                    <li>Either the row containing focus is selected or a cell containing a suggested value is selected when any cell in the same row contains focus.</li>
+                    <li>Horizontal key navigation may wrap from one row to another.</li>
+                    <li>Vertical arrow key navigation <strong>does not</strong> wrap from one column to another.</li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
         <h3>Tree Popup Keyboard Interaction</h3>
         <p>
           In some implementations of tree popups, some or all parent nodes may serve as suggestion category labels so may not be selectable values.
@@ -383,29 +390,32 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
         </ul>
-        <ol class="note">
-          <li>
-            DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in
-            <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
-          </li>
-          <li>The tree allows only one suggested value to be selected at a time for the combobox value.</li>
-          <li>
-            In a tree popup, some or all parent nodes may not be selectable values; they may serve as category labels for suggested values.
-            If focus moves to a node that is not a selectable value, either:
-            <ul>
-              <li>The previously selected node, if any, remains selected until focus moves to a node that is selectable.</li>
-              <li>There is no selected value.</li>
-              <li>In either case, focus is visually distinct from selection so users can readily see if a value is selected or not.</li>
-            </ul>
-          </li>
-          <li>
-            If nodes in the tree are arranged horizontally (<a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> is set to <code>horizontal</code>):
-            <ol>
-              <li><kbd>Down Arrow</kbd> performs as <kbd>Right Arrow</kbd> is described above, and vice versa.</li>
-              <li><kbd>Up Arrow</kbd> performs as <kbd>Left Arrow</kbd> is described above, and vice versa.</li>
-            </ol>
-          </li>
-        </ol>
+        <div class="note">
+          <h4>Note</h4>
+          <ol>
+            <li>
+              DOM Focus is maintained on the combobox and the assistive technology focus is moved within the tree using <code>aria-activedescendant</code> as described in
+              <a href="../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
+            </li>
+            <li>The tree allows only one suggested value to be selected at a time for the combobox value.</li>
+            <li>
+              In a tree popup, some or all parent nodes may not be selectable values; they may serve as category labels for suggested values.
+              If focus moves to a node that is not a selectable value, either:
+              <ul>
+                <li>The previously selected node, if any, remains selected until focus moves to a node that is selectable.</li>
+                <li>There is no selected value.</li>
+                <li>In either case, focus is visually distinct from selection so users can readily see if a value is selected or not.</li>
+              </ul>
+            </li>
+            <li>
+              If nodes in the tree are arranged horizontally (<a href="https://w3c.github.io/aria/#aria-orientation" class="property-reference">aria-orientation</a> is set to <code>horizontal</code>):
+              <ol>
+                <li><kbd>Down Arrow</kbd> performs as <kbd>Right Arrow</kbd> is described above, and vice versa.</li>
+                <li><kbd>Up Arrow</kbd> performs as <kbd>Left Arrow</kbd> is described above, and vice versa.</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
         <h3>Dialog Popup Keyboard Interaction</h3>
         <p>When focus is in a dialog popup:</p>
         <ul>
@@ -421,7 +431,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>The dialog implements the keyboard interaction defined in the <a href="../dialog-modal/">modal dialog pattern.</a></li>
         </ul>
-        <p class="note">Unlike other combobox popups, dialogs do not support <code>aria-activedescendant</code> so DOM focus moves into the dialog from the combobox.</p>
+        <div class="note">
+          <h4>Note</h4>
+          <p>Unlike other combobox popups, dialogs do not support <code>aria-activedescendant</code> so DOM focus moves into the dialog from the combobox.</p>
+        </div>
       </section>
 
       <section id="roles_states_properties">
@@ -469,6 +482,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
         </ul>
         <div class="note">
+          <h3>Note</h3>
           <ol>
             <li>
               In ARIA 1.0, the combobox referenced its popup with <a href="https://w3c.github.io/aria/#aria-owns" class="property-reference">aria-owns</a> instead of <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>.

@@ -6,7 +6,7 @@ ref: /ARIA/apg/
 github:
   repository: w3c/aria-practices
   branch: main
-  path: content/index.html
+  path: content/apg-home.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/
 
@@ -122,52 +122,6 @@ lang: en
                   <img alt="A box with an accessibility label is chock full of widgets and document bits." src="{{ '/content-images/wai-aria-practices/generated/index-5.svg' | relative_url }}">
                 </div>
               </div>
-      </div>
-      <div class="work-grid-pattern grid-pattern"></div>
-    </div>
-    <div 
-      class="off-white-section" 
-      style="display: none; /* temporarily hidden because the linked resources are not yet polished */"
-    >
-      <div class="centered margin-fix">
-        <div class="detail-5"></div>
-        <h2>Current Work</h2>
-        <p>Check out  recent work of the APG Task Force</p>
-      </div>
-      <div class="contained margin-fix">
-        <div class="work-items">
-          <div class="detail-6"></div>
-          <div class="work-detail-4 detail-4"></div>
-          <div class="work-detail-1 detail-1"></div>
-          
-                <div class="work-item">
-                  <h3>Release Plans</h3>
-                  <p>Take a look at the plan overview for WAI-ARIA Authoring Practices, priorities and work in progress.</p>
-                  <a rel="noopener noreferrer" target="_blank" href="https://github.com/w3c/aria-practices/wiki/Release-Plans" aria-label="View release plans wiki">Learn More</a>
-                </div>
-              
-                <div class="work-item">
-                  <h3>Patterns Progress Status</h3>
-                  <p>Status of work on design patterns and reference implementations of those patterns for the first release of the ARIA 1.1 Authoring Practices.</p>
-                  <a rel="noopener noreferrer" target="_blank" href="https://github.com/w3c/aria-practices/wiki/Design-Patterns-Development-Status" aria-label="View pattern status wiki">Learn More</a>
-                </div>
-              
-                <div class="work-item">
-                  <h3>How to Write Regression Tests</h3>
-                  <p>Learn what the APG Regression Tests test, how to run them and understand the results.</p>
-                  <a rel="noopener noreferrer" target="_blank" href="https://github.com/w3c/aria-practices/wiki/Regression-Tests-for-APG-Example-Pages" aria-label="View regression test documentation">Learn More</a>
-                </div>
-              
-                <div class="work-item">
-                  <h3>Meetings</h3>
-                  <p>
-            The APG Task Force meets on Tuesdays at 14:00 until 15:00 Eastern Time.
-            Minutes from previous meetings are available.
-          </p>
-                  <a rel="noopener noreferrer" target="_blank" href="https://github.com/w3c/aria-practices/wiki/Meetings" aria-label="View meetings wiki">Learn More</a>
-                </div>
-              
-        </div>
       </div>
       <div class="collaboration-grid-pattern grid-pattern"></div>
     </div>

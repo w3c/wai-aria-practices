@@ -2,7 +2,7 @@ const determineContentType = (sourcePath) => {
   if (sourcePath.includes("content/about/coverage-and-quality/")) {
     return "ignored";
   }
-  if (sourcePath.endsWith("content/index.html")) {
+  if (sourcePath.endsWith("content/apg-home.html")) {
     return "homepage";
   }
   if (sourcePath.match(/content\/about\/about\.html$/)) {

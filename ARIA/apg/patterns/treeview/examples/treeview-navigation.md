@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-navigation/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>            <p>Page last updated: 17 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -95,7 +95,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>About This Example</h2>
         <div class="advisement">
-          <p><strong>CAUTION!</strong> Before considering use of the <a href="../../">Tree View Pattern</a> for site navigation, it is important to understand:</p>
+          <h3>Caution!</h3>
+          <p>Before considering use of the <a href="../../">Tree View Pattern</a> for site navigation, it is important to understand:</p>
           <ul>
             <li>Correct implementation of the <code>tree</code> role requires implementation of complex functionality that is not needed for typical site navigation that is styled to look like a tree with expandable sections.</li>
             <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="../../../disclosure/">disclosure pattern.</a></li>

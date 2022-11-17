@@ -113,7 +113,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li><kbd>F6</kbd> (Optional): Cycle through window panes.</li>
         </ul>
-        <p class="note">A fixed size splitter omits implementation of the arrow keys.</p>
+        <div class="note">
+          <h3>Note</h3>
+          <p>A fixed size splitter omits implementation of the arrow keys.</p>
+        </div>
       </section>
 
       <section id="roles_states_properties">

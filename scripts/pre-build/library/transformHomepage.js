@@ -18,7 +18,7 @@ const transformHomepage = async (sourcePath, sourceContents) => {
   const copyImg = async (img) => {
     const imgPath = img.getAttribute("src");
     const fileName = path.basename(imgPath);
-    const sourceImgPath = path.join(sourceRoot, "index", imgPath);
+    const sourceImgPath = path.join(sourceRoot, "content", imgPath);
     const updatedPath = path.join(assetsPath, fileName);
     img.setAttribute(
       "src",
@@ -90,36 +90,6 @@ const transformHomepage = async (sourcePath, sourceContents) => {
             })
           ).then((htmlStrings) => htmlStrings.join(""));
         })()}
-      </div>
-      <div class="work-grid-pattern grid-pattern"></div>
-    </div>
-    <div 
-      class="off-white-section" 
-      style="display: none; /* temporarily hidden because the linked resources are not yet polished */"
-    >
-      <div class="centered margin-fix">
-        <div class="detail-5"></div>
-        <h2>${body.querySelector("#work h2").innerHTML}</h2>
-        <p>${body.querySelector("#work p").innerHTML}</p>
-      </div>
-      <div class="contained margin-fix">
-        <div class="work-items">
-          <div class="detail-6"></div>
-          <div class="work-detail-4 detail-4"></div>
-          <div class="work-detail-1 detail-1"></div>
-          ${body
-            .querySelectorAll("#work li")
-            .map((work) => {
-              return `
-                <div class="work-item">
-                  <h3>${work.querySelector("h3").innerHTML}</h3>
-                  <p>${work.querySelector("p").innerHTML}</p>
-                  ${work.querySelector("a").outerHTML}
-                </div>
-              `;
-            })
-            .join("")}
-        </div>
       </div>
       <div class="collaboration-grid-pattern grid-pattern"></div>
     </div>

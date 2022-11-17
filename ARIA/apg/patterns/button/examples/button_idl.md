@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/button/examples/button_idl/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: 17 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -112,12 +112,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
 
         <div id="example">
-          <p class="advisement">
-            <strong>IMPORTANT:</strong> This example is coded using syntax that was not introduced until version 1.2 of the ARIA specification.
-            When using a
-            <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>,
-            the buttons will not be styled correctly.
-          </p><img alt=""
+          <div class="advisement">
+            <h3>Important</h3>
+            <p>
+              This example is coded using syntax that was not introduced until version 1.2 of the ARIA specification.
+              When using a
+              <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>,
+              the buttons will not be styled correctly.
+            </p>
+          </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
     class="example-page-example-icon"
   >

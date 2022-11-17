@@ -54,7 +54,8 @@ lang: en
                   <span>Grid and Table Properties</span>
                 </h2>
               </a>
-              <div class="tile-introduction">To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the grid pattern or table pattern, assistive technologies need to be able to determine factors such as the number of rows and columns.</div>
+              <div class="tile-introduction">
+          To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the grid pattern or table pattern, assistive technologies need to be able to determine other structural and presentation characteristics, such as the number and visibility of rows and columns.</div>
             </li>
            
             <li class="tile tile-hiding-semantics">

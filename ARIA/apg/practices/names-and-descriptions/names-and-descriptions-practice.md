@@ -242,11 +242,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   &lt;/li&gt;
 &lt;/ul&gt;
           </code></pre>
-          <p class="warning">
-            If an element with one of the above roles that supports naming from child content is named by using <code>aria-label</code> or <code>aria-labelledby</code>, content contained in the element and its descendants is hidden from assistive technology users unless the descendant content is referenced by <code>aria-labelledby</code>.
+          <div class="warning">
+            <h3>Warning</h3>
+            <p>If an element with one of the above roles that supports naming from child content is named by using <code>aria-label</code> or <code>aria-labelledby</code>, content contained in the element and its descendants is hidden from assistive technology users unless the descendant content is referenced by <code>aria-labelledby</code>.
             It is strongly recommended to avoid using either of these attributes to override content of one of the above elements except in rare circumstances where hiding content from assistive technology users is beneficial.
-            In addition, in situations where visible content is hidden from assistive technology users by use of one of these attributes, thorough testing with assistive technologies is particularly important.
-          </p>
+            In addition, in situations where visible content is hidden from assistive technology users by use of one of these attributes, thorough testing with assistive technologies is particularly important.</p>
+          </div>
         </section>
 
         <section id="naming_with_aria-label">
@@ -268,18 +269,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   &lt;!-- list of navigation links to product pages --&gt;
 &lt;/nav&gt;</code></pre>
           <p>When encountering this navigation region, a screen reader user will hear the name and role of the element, e.g., &quot;Product navigation region&quot;, and then be able to read through the links contained in the region.</p>
-          <ol class="warning">
-            <li>
-              If <code>aria-label</code> is applied to an element with one of the roles that supports <a href="#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users.
-              It is strongly recommended to avoid using <code>aria-label</code> to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
-            </li>
-            <li>
-              There are certain types of elements, such as paragraphs and list items, that should not be named with <code>aria-label</code>.
-              They are identified in the table in the <a href="#naming_role_guidance">Accessible Name Guidance by Role</a> section.
-            </li>
-            <li>Because the value of <code>aria-label</code> is not rendered visually, testing with assistive technologies to ensure the expected name is presented to users is particularly important.</li>
-            <li>When a user interface is translated into multiple languages, ensure that <code>aria-label</code> values are translated.</li>
-          </ol>
+          <div class="warning">
+            <h4>Warning</h4>
+            <ol>
+              <li>
+                If <code>aria-label</code> is applied to an element with one of the roles that supports <a href="#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users.
+                It is strongly recommended to avoid using <code>aria-label</code> to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
+              </li>
+              <li>
+                There are certain types of elements, such as paragraphs and list items, that should not be named with <code>aria-label</code>.
+                They are identified in the table in the <a href="#naming_role_guidance">Accessible Name Guidance by Role</a> section.
+              </li>
+              <li>Because the value of <code>aria-label</code> is not rendered visually, testing with assistive technologies to ensure the expected name is presented to users is particularly important.</li>
+              <li>When a user interface is translated into multiple languages, ensure that <code>aria-label</code> values are translated.</li>
+            </ol>
+          </div>
         </section>
 
         <section id="naming_with_aria-labelledby">
@@ -328,19 +332,22 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 &lt;button id="download-button" aria-labelledby="download-button download-details"&gt;Download&lt;/button&gt;
 &lt;span id="download-details"&gt;PDF, 2.4 MB&lt;/span&gt;</code></pre>
           <p>In the above example, the accessible name of the button will be "Download PDF, 2.4 MB", with a space between "Download" and "PDF", and not "DownloadPDF, 2.4 MB".</p>
-          <ol class="warning">
-            <li>The <code>aria-labelledby</code> property cannot be chained, i.e., if an element with <code>aria-labelledby</code> references another element that also has <code>aria-labelledby</code>, the <code>aria-labelledby</code> attribute on the referenced element will be ignored.</li>
-            <li>If an element is referenced by <code>aria-labelledby</code> more than one time during a name calculation, the second and any subsequent references will be ignored.</li>
-            <li>
-              There are certain types of elements, such as paragraphs and list items, that should not be named with <code>aria-labelledby</code>.
-              They are identified in the table in the <a href="#naming_role_guidance">Accessible Name Guidance by Role</a> section.
-            </li>
-            <li>
-              If <code>aria-labelledby</code> is applied to an element with one of the roles that supports <a href="#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users unless it is also referenced by <code>aria-labelledby</code>.
-              It is strongly recommended to avoid using this attribute to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
-            </li>
-            <li>Because calculating the name of an element with <code>aria-labelledby</code> can be complex and reference hidden content, testing with assistive technologies to ensure the expected name is presented to users is particularly important.</li>
-          </ol>
+          <div class="warning">
+            <h4>Warning</h4>
+            <ol>
+              <li>The <code>aria-labelledby</code> property cannot be chained, i.e., if an element with <code>aria-labelledby</code> references another element that also has <code>aria-labelledby</code>, the <code>aria-labelledby</code> attribute on the referenced element will be ignored.</li>
+              <li>If an element is referenced by <code>aria-labelledby</code> more than one time during a name calculation, the second and any subsequent references will be ignored.</li>
+              <li>
+                There are certain types of elements, such as paragraphs and list items, that should not be named with <code>aria-labelledby</code>.
+                They are identified in the table in the <a href="#naming_role_guidance">Accessible Name Guidance by Role</a> section.
+              </li>
+              <li>
+                If <code>aria-labelledby</code> is applied to an element with one of the roles that supports <a href="#naming_with_child_content">naming from child content</a>, content contained in the element and its descendants is hidden from assistive technology users unless it is also referenced by <code>aria-labelledby</code>.
+                It is strongly recommended to avoid using this attribute to override content of one of these elements except in rare circumstances where hiding content from assistive technology users is beneficial.
+              </li>
+              <li>Because calculating the name of an element with <code>aria-labelledby</code> can be complex and reference hidden content, testing with assistive technologies to ensure the expected name is presented to users is particularly important.</li>
+            </ol>
+          </div>
         </section>
 
         <section id="naming_with_labels">
@@ -628,7 +635,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     It is otherwise optional.
                   </li>
                   <li>Named using <code>aria-labelledby</code> if a visible label is present, otherwise with <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_banner">Banner Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_banner">Banner Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -731,7 +738,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>Naming is necessary when two complementary landmark regions are present on the same page.</li>
                   <li>Naming is recommended even when one complementary region is present to help users understand the purpose of the region's content when navigating among landmark regions.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_complementary">Complementary Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_complementary">Complementary Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -840,7 +847,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the form landmark.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_form">Form Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_form">Form Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -992,7 +999,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Potentially helpful for orienting assistive technology users, especially in single-page applications where main content changes happen without generating a page load event.</li>
                   <li>Can be named using <code>aria-labelledby</code> if a visible label is present, otherwise with <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_main">Main Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_main">Main Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -1109,7 +1116,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the navigation landmark.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_navigation">Navigation Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_navigation">Navigation Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -1210,7 +1217,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the landmark.</li>
                   <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_region">Region Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_region">Region Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>
@@ -1220,7 +1227,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
               <td>Required <strong>Only If</strong> Content Insufficient <strong>AND</strong> descendant of a <code>treegrid</code> <strong>AND</strong> the row is focusable</td>
               <td>
-                When <code>row</code> elements are focusable in a <a href="#treegrid">treegrid</a>, screen readers announce the entire contents of a row when navigating by row.
+                When <code>row</code> elements are focusable in a <a href="../../patterns/treegrid/">treegrid</a>, screen readers announce the entire contents of a row when navigating by row.
                 This is typically the most appropriate behavior.
                 However, in some circumstances, it could be beneficial to change the order in which cells are announced or exclude announcement of certain cells by using <code>aria-labelledby</code> to specify which cells to announce.
               </td>
@@ -1269,7 +1276,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the search landmark.</li>
                   <li>Named using <code>aria-labelledby</code> if a visible label is present, otherwise with <code>aria-label</code>.</li>
-                  <li>See the <a href="#aria_lh_search">Search Landmark</a> section.</li>
+                  <li>See the <a href="../landmark-regions/#aria_lh_search">Search Landmark</a> section.</li>
                 </ul>
               </td>
             </tr>

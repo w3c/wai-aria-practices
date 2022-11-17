@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>            <p>Page last updated: 2 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -329,11 +329,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tbody>
         </table></div>
         <h3 id="kbd_label_multiselect">Multiple selection keys supported in example 2</h3>
-        <p class="note">
-          The selection behavior demonstrated differs from the behavior provided by browsers for native HTML <code>&lt;select multiple&gt;</code> elements.
+        <div class="note">
+          <h4>Note</h4>
+          <p>The selection behavior demonstrated differs from the behavior provided by browsers for native HTML <code>&lt;select multiple&gt;</code> elements.
           The HTML select element behavior is to alter selection with unmodified up/down arrow keys, requiring the use of modifier keys to select multiple options.
-          This example demonstrates the multiple selection interaction model recommended in the <a href="../../#keyboard_interaction">Keyboard Interaction section of the Listbox Pattern</a>, which does not require the use of modifier keys.
-        </p>
+          This example demonstrates the multiple selection interaction model recommended in the <a href="../../#keyboard_interaction">Keyboard Interaction section of the Listbox Pattern</a>, which does not require the use of modifier keys.</p>
+        </div>
         <div class="table-wrap"><table aria-labelledby="kbd_label_multiselect" class="def">
           <thead>
             <tr>

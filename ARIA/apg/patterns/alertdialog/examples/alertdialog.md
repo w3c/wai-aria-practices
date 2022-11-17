@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/alertdialog/examples/alertdialog/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/20'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/20'>View issues related to this example</a></p>            <p>Page last updated: 16 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -114,7 +114,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>
             Activate the "save" button to trigger an alert when the contents of the "Notes" text area is saved to
-            <a href="https://www.w3.org/TR/webstorage/#the-localstorage-attribute">local storage</a>.
+            <a href="https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute">local storage</a>.
             <ul>
               <li>A successful save triggers a short alert to notify the user that the notes have been saved.</li>
               <li>The "save" button is disabled if the user's local storage value is the same as the "Notes" field.</li>

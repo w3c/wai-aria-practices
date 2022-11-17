@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-temperature/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>            <p>Page last updated: 17 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -95,8 +95,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>About This Example</h2>
         <div class="advisement">
+          <h3>Warning!</h3>
           <p>
-            <strong>WARNING!</strong> Some users of touch-based assistive technologies may experience difficulty utilizing widgets that implement this slider pattern because the gestures their assistive technology provides for operating sliders may not yet generate the necessary output.
+            Some users of touch-based assistive technologies may experience difficulty utilizing widgets that implement this slider pattern because the gestures their assistive technology provides for operating sliders may not yet generate the necessary output.
             To change the slider value, touch-based assistive technologies need to respond to user gestures for increasing and decreasing the value by synthesizing key events.
             This is a new convention that may not be fully implemented by some assistive technologies.
             Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
@@ -113,7 +114,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul>
           <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
           <li><a href="../slider-color-viewer/">Color Viewer Slider Example</a>: Basic horizontal sliders that illustrate setting numeric values for a color picker.</li>
-          <li><a href="/">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
+          <li><a href>Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
           <li><a href="../slider-seek/">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
           <li><a href="../../../slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider Example</a>: Demonstrates using sliders with two thumbs to provide inputs for numeric ranges, such as for searching in a price range.</li>
         </ul>

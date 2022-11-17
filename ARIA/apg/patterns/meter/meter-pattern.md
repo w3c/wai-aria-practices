@@ -66,13 +66,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           A <a class="role-reference" href="https://w3c.github.io/aria/#meter">meter</a> is a graphical display of a numeric value that varies within a defined range.
           For example, a meter could be used to depict a device's current battery percentage or a car's fuel level.
         </p>
-        <ul class="note">
-          <li>A <code>meter</code> should not be used to represent a value like the current world population since it does not have a meaningful maximum limit.</li>
-          <li>
-            The <code>meter</code> should not be used to indicate progress, such as loading or percent completion of a task.
-            To communicate progress, use the <a href="https://w3c.github.io/aria/#progressbar" class="role-reference">progressbar</a> role instead.
-          </li>
-        </ul>
+        <div class="note">
+          <h3>Note</h3>
+          <ul>
+            <li>A <code>meter</code> should not be used to represent a value like the current world population since it does not have a meaningful maximum limit.</li>
+            <li>
+              The <code>meter</code> should not be used to indicate progress, such as loading or percent completion of a task.
+              To communicate progress, use the <a href="https://w3c.github.io/aria/#progressbar" class="role-reference">progressbar</a> role instead.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="examples" class="examples-section"><img alt="" 

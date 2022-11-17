@@ -13,7 +13,9 @@ const dirname = (sitePath) => {
 };
 
 const relative = (sitePath1, sitePath2) => {
-  if (sitePath2.endsWith("/")) return path.relative(sitePath1, sitePath2) + "/";
+  if (sitePath2.endsWith("/") && sitePath1 !== sitePath2) {
+    return path.relative(sitePath1, sitePath2) + "/";
+  }
   return path.relative(sitePath1, sitePath2);
 };
 
@@ -51,7 +53,7 @@ const getSitePath = (buildPath, contentType) => {
         "practices/$1/"
       );
     case "homepage":
-      return buildRelative.replace(/index\.md/, "");
+      return buildRelative.replace(/apg-home\.md/, "");
     case "exampleIndex":
       return buildRelative.replace(/index\/index\.md/, "example-index/");
     case "patternIndex":
@@ -72,7 +74,8 @@ const getSitePath = (buildPath, contentType) => {
 const rewriteRelativePath = (relativePathAndHash, { onSourcePath }) => {
   const { buildPath: onBuildPath } = rewriteSourcePath(onSourcePath);
 
-  const [relativePath, hash] = relativePathAndHash.split("#");
+  const [relativePathAndQuery, hash] = relativePathAndHash.split("#");
+  const [relativePath, queryString] = relativePathAndQuery.split("?");
 
   const sourcePath = path.resolve(dirname(onSourcePath), relativePath);
   const { buildPath } = rewriteSourcePath(sourcePath);
@@ -90,9 +93,10 @@ const rewriteRelativePath = (relativePathAndHash, { onSourcePath }) => {
     siteRootPathPreHash
   );
 
+  const queryStringFormatted = queryString ? `?${queryString}` : "";
   const hashFormatted = hash ? `#${hash}` : "";
   const siteRootPath = `${siteRootPathPreHash}${hashFormatted}`;
-  const siteRelativePath = `${siteRelativePathPreHash}${hashFormatted}`;
+  const siteRelativePath = `${siteRelativePathPreHash}${queryStringFormatted}${hashFormatted}`;
 
   return { siteRelativePath, siteRootPath, buildPath };
 };

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-collapsible/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>            <p>Page last updated: 17 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -97,8 +97,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>About This Example</h2>
         <div class="advisement">
+          <h3>Deprecation Warning</h3>
           <p>
-            <strong>DEPRECATION WARNING:</strong> This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices.
+            This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices.
             The <a href="../../../combobox/examples/combobox-select-only/">select-only combobox</a> should be used as an alternative to this pattern.
           </p>
         </div><img alt=""

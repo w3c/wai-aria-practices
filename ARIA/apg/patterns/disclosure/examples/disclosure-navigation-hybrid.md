@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>            <p>Page last updated: 17 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -95,6 +95,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>About This Example</h2>
         <div class="advisement">
+          <h3>Important</h3>
           <p>
             Although this example uses the word "menu" in the colloquial sense to refer to a set of navigation links, it does not use the WAI-ARIA menu role.
             This implementation of site navigation does not use the menu role because it does not provide the complex functionality that assistive technologies expect in a widget that has the menu role.

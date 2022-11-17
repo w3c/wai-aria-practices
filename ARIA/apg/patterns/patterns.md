@@ -140,7 +140,7 @@ lang: en
                   <span>Checkbox Pattern</span>
                 </h2>
               </a>
-              <div class="tile-introduction">WAI-ARIA supports two types of checkbox widgets: dual-state allows the user to toggle between two choices -- checked and not checked -- and tri-state supports an additional third state known as partially checked.</div>
+              <div class="tile-introduction">WAI-ARIA supports two types of checkbox widgets: dual-state checkboxes toggle between two choices -- checked and not checked -- and tri-state checkboxes, which  allow an additional third state known as partially checked.</div>
             </li>
            
             <li class="tile tile-combobox">

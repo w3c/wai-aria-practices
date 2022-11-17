@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treegrid/examples/treegrid-1/
 
 sidebar: true
 
-footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>            <p>Page last updated: 10 November 2022</p>          </div>        "
+footer: "          <div class='example-page-footer'>            <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>            <p>Page last updated: 17 November 2022</p>          </div>        "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -136,15 +136,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <ul>
           <li id="option-cell-focus-allow">
-            <a href="/">Rows are focused first, but cells can be focused</a>:<br>
+            <a href="?cell">Rows are focused first, but cells can be focused</a>:<br>
             Useful when the desired experience is for the treegrid to act primarily like a tree where each row is treated like a node in a tree, but it is still possible for users to navigate across the cells in a row.
           </li>
           <li id="option-cell-focus-start">
-            <a href="../treegrid-1.html?cell=start">Cells are focused first, but rows can be focused</a>:<br>
+            <a href="?cell=start">Cells are focused first, but rows can be focused</a>:<br>
             Useful when the desired experience is for the treegrid to act primarily like a grid where arrow keys move among cells, but it is still possible for users to focus a row and then start navigating the structure like a tree.
           </li>
           <li id="option-cell-focus-force">
-            <a href="../treegrid-1.html?cell=force">Only cells can be focused</a>:<br>
+            <a href="?cell=force">Only cells can be focused</a>:<br>
             Useful when the desired experience is that the treegrid act primarily like a grid and there is no need to focus complete rows.
           </li>
         </ul>
