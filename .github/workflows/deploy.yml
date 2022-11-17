@@ -24,9 +24,9 @@ jobs:
         ruby-version: 2.6.2
         bundler-cache: true
 
-    # - name: Update git submodules
-    #   run: |
-    #     git submodule update --recursive --remote
+    - name: Update git submodules
+      run: |
+        git submodule update --recursive --remote
 
     - name: Update site files
       run: |
@@ -38,6 +38,6 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Commit changes
-        # branch: main
+        branch: main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
