@@ -59,9 +59,9 @@ lang: en
         This guide describes how to apply accessibility semantics to common design patterns and widgets.
         It provides design patterns and functional examples complemented by in-depth guidance for fundamental practices.
       </p>
-            <a href="patterns/patterns.html" class="button-link button-link-white">View Patterns</a>
+            <a href="patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
-          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="{{ '/content-images/wai-aria-practices/generated/index-1.svg' | relative_url }}">
+          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="images/index-1.svg">
         </div>
       </div>
       <div class="detail-3"></div>
@@ -83,10 +83,10 @@ lang: en
             One or more ways of implementing each pattern is demonstrated with a functional example.
           
                   </p>
-                  <a href="patterns/patterns.html" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
+                  <a href="patterns/" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A menagerie of widgets." src="{{ '/content-images/wai-aria-practices/generated/index-2.svg' | relative_url }}">
+                  <img alt="A menagerie of widgets." src="images/index-2.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -94,10 +94,10 @@ lang: en
                   <p>
                     Learn how to use HTML sectioning elements and ARIA landmark roles to make it easy for assistive technology users to understand the meaning of the layout of a page.
                   </p>
-                  <a href="practices/landmark-regions/landmark-regions-practice.html" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
+                  <a href="practices/landmark-regions/" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A document flies apart into chunks." src="{{ '/content-images/wai-aria-practices/generated/index-3.svg' | relative_url }}">
+                  <img alt="A document flies apart into chunks." src="images/index-3.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -105,10 +105,10 @@ lang: en
                   <p>
                     Providing elements with accessible names and, where appropriate, accessible descriptions is one of the most important responsibilities authors have when developing accessible web experiences.
                   </p>
-                  <a href="practices/names-and-descriptions/names-and-descriptions-practice.html" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
+                  <a href="practices/names-and-descriptions/" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="Indicators delve inside a document." src="{{ '/content-images/wai-aria-practices/generated/index-4.svg' | relative_url }}">
+                  <img alt="Indicators delve inside a document." src="images/index-4.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -116,10 +116,10 @@ lang: en
                   <p>
                     Learn about other fundamental practices related to correctly using accessibility semantics, developing keyboard interfaces, and more.
                   </p>
-                  <a class="button-link" href="practices/practices.html" aria-label="Learn more about APG practices">Learn More</a>
+                  <a class="button-link" href="practices/" aria-label="Learn more about APG practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="{{ '/content-images/wai-aria-practices/generated/index-5.svg' | relative_url }}">
+                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="images/index-5.svg">
                 </div>
               </div>
       </div>
@@ -140,7 +140,7 @@ lang: en
       <div class="collaboration-items">
         
                   <div class="collaboration-item">
-                    <img alt="An icon showing three nodes connecting." src="{{ '/content-images/wai-aria-practices/generated/index-6.svg' | relative_url }}">
+                    <img alt="An icon showing three nodes connecting." src="images/index-6.svg">
                     <h3>Join the Task Force</h3>
                     <p>
             To join the APG Task Force, individuals need to first join the W3C ARIA Working Group.
@@ -150,7 +150,7 @@ lang: en
                   </div>
                 
                   <div class="collaboration-item">
-                    <img alt="An icon showing two human shapes carrying a burden." src="{{ '/content-images/wai-aria-practices/generated/index-7.svg' | relative_url }}">
+                    <img alt="An icon showing two human shapes carrying a burden." src="images/index-7.svg">
                     <h3>Contribute via GitHub</h3>
                     <p>
             Many valuable contributions are made by people who find or raise issues of interest in our GitHub repository and then submit proposed changes via a GitHub pull request.
@@ -162,7 +162,7 @@ lang: en
 
         <div class="collaboration-item mailing-list-item">
           <div class="collaboration-detail-4 detail-4"></div>
-          <img alt="A notification bell icon appears over an email icon." src="{{ '/content-images/wai-aria-practices/generated/index-8.svg' | relative_url }}">
+          <img alt="A notification bell icon appears over an email icon." src="images/index-8.svg">
           <div>
             <h3>Mailing Lists</h3>
             <p>

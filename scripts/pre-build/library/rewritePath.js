@@ -6,7 +6,7 @@ const sourceRoot = path.resolve(__dirname, "../../../_external/aria-practices");
 const buildRoot = path.resolve(__dirname, "../../../ARIA/apg");
 
 const dirname = (sitePath) => {
-  if (sitePath.endsWith("/")) return sitePath;
+  if (sitePath.endsWith("/") || sitePath === "") return sitePath;
   const pathComponents = sitePath.split("/");
   pathComponents.splice(-1, 1);
   return pathComponents.join("/") + "/";

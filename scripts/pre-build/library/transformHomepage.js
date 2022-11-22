@@ -1,31 +1,15 @@
-const path = require("path");
-const fs = require("fs/promises");
 const { parse: parseHtml } = require("node-html-parser");
-const { sourceRoot, rewriteSourcePath } = require("./rewritePath");
+const { rewriteSourcePath } = require("./rewritePath");
 const formatForJekyll = require("./formatForJekyll");
+const rewriteElementPaths = require("./rewriteElementPaths");
 
 const transformHomepage = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
 
-  const assetsPath = path.resolve(
-    __dirname,
-    "../../../content-images/wai-aria-practices/generated"
-  );
-
   const html = parseHtml(sourceContents);
-  const body = html.querySelector("body");
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
-  const copyImg = async (img) => {
-    const imgPath = img.getAttribute("src");
-    const fileName = path.basename(imgPath);
-    const sourceImgPath = path.join(sourceRoot, "content", imgPath);
-    const updatedPath = path.join(assetsPath, fileName);
-    img.setAttribute(
-      "src",
-      `{{ '/content-images/wai-aria-practices/generated/${fileName}' | relative_url }}`
-    );
-    await fs.copyFile(sourceImgPath, updatedPath);
-  };
+  const body = html.querySelector("body");
 
   const mailing = body.querySelector("#collaboration li:last-of-type");
 
@@ -49,11 +33,7 @@ const transformHomepage = async (sourcePath, sourceContents) => {
               return a.outerHTML;
             })()}
           </div>
-          ${await (async () => {
-            const img = body.querySelector("#top-card img");
-            await copyImg(img);
-            return img.outerHTML;
-          })()}
+          ${body.querySelector("#top-card img").outerHTML}
         </div>
       </div>
       <div class="detail-3"></div>
@@ -66,12 +46,10 @@ const transformHomepage = async (sourcePath, sourceContents) => {
         <p>${body.querySelector("#resources p").innerHTML}</p>
       </div>
       <div class="contained margin-fix">
-        ${await (async () => {
-          return Promise.all(
-            body.querySelectorAll("#resources li").map(async (resource) => {
-              const img = resource.querySelector("img");
-              await copyImg(img);
-              return `<div class="resource-item">
+        ${body
+          .querySelectorAll("#resources li")
+          .map((resource) => {
+            return `<div class="resource-item">
                 <div class="resource-item-content">
                   <h3>${resource.querySelector("h3").innerHTML}</h3>
                   <p>
@@ -84,12 +62,11 @@ const transformHomepage = async (sourcePath, sourceContents) => {
                   })()}
                 </div>
                 <div class="resource-item-img">
-                  ${img.outerHTML}
+                  ${resource.querySelector("img").outerHTML}
                 </div>
               </div>`;
-            })
-          ).then((htmlStrings) => htmlStrings.join(""));
-        })()}
+          })
+          .join("")}
       </div>
       <div class="collaboration-grid-pattern grid-pattern"></div>
     </div>
@@ -103,32 +80,23 @@ const transformHomepage = async (sourcePath, sourceContents) => {
         </p>
       </div>
       <div class="collaboration-items">
-        ${await (async () => {
-          return Promise.all(
-            body
-              .querySelectorAll("#collaboration li:not(:last-of-type)")
-              .map(async (item) => {
-                const img = item.querySelector("img");
-                await copyImg(img);
-                return `
+        ${body
+          .querySelectorAll("#collaboration li:not(:last-of-type)")
+          .map((item) => {
+            return `
                   <div class="collaboration-item">
-                    ${img.outerHTML}
+                    ${item.querySelector("img").outerHTML}
                     <h3>${item.querySelector("h3").innerHTML}</h3>
                     <p>${item.querySelector("p").innerHTML}</p>
                     ${item.querySelector("a").outerHTML}
                   </div>
                 `;
-              })
-          ).then((htmlStrings) => htmlStrings.join(""));
-        })()}
+          })
+          .join("")}
 
         <div class="collaboration-item mailing-list-item">
           <div class="collaboration-detail-4 detail-4"></div>
-          ${await (async () => {
-            const img = mailing.querySelector("img");
-            await copyImg(img);
-            return img.outerHTML;
-          })()}
+          ${mailing.querySelector("img").outerHTML}
           <div>
             <h3>${mailing.querySelector("h3").innerHTML}</h3>
             ${mailing
