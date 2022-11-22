@@ -10,7 +10,6 @@ PATH
       jekyll-remote-theme
       jekyll-seo-tag
       jekyll-sitemap
-      rouge (= 3.30.0)
       wai-website-plugin
 
 GEM
@@ -81,7 +80,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.13.9-x86_64-linux)
+    nokogiri (1.13.9-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
@@ -111,7 +112,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   nokogiri
