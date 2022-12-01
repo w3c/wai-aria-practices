@@ -46,6 +46,29 @@ lang: en
     {% include read-this-first.html %}
     <ul class="tiles">
       
+            <li class="tile tile-range-related-properties">
+              <a 
+                href="{{ '/ARIA/apg/practices/range-related-properties/' | relative_url }}"
+              >
+                <h2 class="tile-name">
+                  <span>Communicating Value and Limits for Range Widgets</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
+            </li>
+           
+            <li class="tile tile-keyboard-interface">
+              <a 
+                href="{{ '/ARIA/apg/practices/keyboard-interface/' | relative_url }}"
+              >
+                <h2 class="tile-name">
+                  <span>Developing a Keyboard Interface</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          Unlike native HTML form elements, browsers do not provide keyboard support for graphical user interface (GUI) components that are made accessible with ARIA; authors have to provide the keyboard support in their code.</div>
+            </li>
+           
             <li class="tile tile-grid-and-table-properties">
               <a 
                 href="{{ '/ARIA/apg/practices/grid-and-table-properties/' | relative_url }}"
@@ -70,18 +93,6 @@ lang: en
           While ARIA is primarily used to express semantics, there are some situations where hiding an element’s semantics from assistive technologies is helpful.</div>
             </li>
            
-            <li class="tile tile-keyboard-interface">
-              <a 
-                href="{{ '/ARIA/apg/practices/keyboard-interface/' | relative_url }}"
-              >
-                <h2 class="tile-name">
-                  <span>Developing a Keyboard Interface</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          Unlike native HTML form elements, browsers do not provide keyboard support for graphical user interface (GUI) components that are made accessible with ARIA; authors have to provide the keyboard support in their code.</div>
-            </li>
-           
             <li class="tile tile-landmark-regions">
               <a 
                 href="{{ '/ARIA/apg/practices/landmark-regions/' | relative_url }}"
@@ -104,17 +115,6 @@ lang: en
               </a>
               <div class="tile-introduction">
           Providing elements with accessible names, and where appropriate, accessible descriptions, is one of the most important responsibilities authors have when developing accessible web experiences.</div>
-            </li>
-           
-            <li class="tile tile-range-related-properties">
-              <a 
-                href="{{ '/ARIA/apg/practices/range-related-properties/' | relative_url }}"
-              >
-                <h2 class="tile-name">
-                  <span>Communicating Value and Limits for Range Widgets</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
             </li>
            
             <li class="tile tile-structural-roles">

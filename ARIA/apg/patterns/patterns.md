@@ -53,7 +53,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/accordion.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Accordion Pattern (Sections With Show/Hide Functionality)</span>
+                  <span>Accordion (Sections With Show/Hide Functionality)</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -67,7 +67,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/alert.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Alert Pattern</span>
+                  <span>Alert</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -81,7 +81,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/alertdialog.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Alert and Message Dialogs Pattern</span>
+                  <span>Alert and Message Dialogs</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -95,7 +95,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/breadcrumb.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Breadcrumb Pattern</span>
+                  <span>Breadcrumb</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -109,7 +109,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Button Pattern</span>
+                  <span>Button</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -123,7 +123,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/carousel.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Carousel (Slide Show or Image Rotator) Pattern</span>
+                  <span>Carousel (Slide Show or Image Rotator)</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -137,7 +137,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/checkbox.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Checkbox Pattern</span>
+                  <span>Checkbox</span>
                 </h2>
               </a>
               <div class="tile-introduction">WAI-ARIA supports two types of checkbox widgets: dual-state checkboxes toggle between two choices -- checked and not checked -- and tri-state checkboxes, which  allow an additional third state known as partially checked.</div>
@@ -150,7 +150,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Combobox Pattern</span>
+                  <span>Combobox</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -164,7 +164,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/dialog-modal.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Dialog (Modal) Pattern</span>
+                  <span>Dialog (Modal)</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -178,7 +178,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Disclosure (Show/Hide) Pattern</span>
+                  <span>Disclosure (Show/Hide)</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -192,7 +192,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/feed.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Feed Pattern</span>
+                  <span>Feed</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -206,7 +206,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Grid (Interactive Tabular Data and Layout Containers) Pattern</span>
+                  <span>Grid (Interactive Tabular Data and Layout Containers)</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -238,7 +238,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Link Pattern</span>
+                  <span>Link</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -252,25 +252,11 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Listbox Pattern</span>
+                  <span>Listbox</span>
                 </h2>
               </a>
               <div class="tile-introduction">
           A listbox widget presents a list of options and allows a user to select one or more of them.</div>
-            </li>
-           
-            <li class="tile tile-menu-button">
-              <a href="{{ '/ARIA/apg/patterns/menu-button/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Menu Button Pattern</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A menu button is a button that opens a menu as described in the Menu and Menubar Pattern.</div>
             </li>
            
             <li class="tile tile-menubar">
@@ -280,11 +266,25 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Menu and Menubar Pattern</span>
+                  <span>Menu and Menubar</span>
                 </h2>
               </a>
               <div class="tile-introduction">
           A menu is a widget that offers a list of choices to the user, such as a set of actions or functions.</div>
+            </li>
+           
+            <li class="tile tile-menu-button">
+              <a href="{{ '/ARIA/apg/patterns/menu-button/' | relative_url }}">
+                <h2 class="tile-name">
+                  <img 
+                    src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}" 
+                    alt=""
+                  >
+                  <span>Menu Button</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          A menu button is a button that opens a menu as described in the Menu and Menubar Pattern.</div>
             </li>
            
             <li class="tile tile-meter">
@@ -294,7 +294,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/meter.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Meter Pattern</span>
+                  <span>Meter</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -308,25 +308,11 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/radio.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Radio Group Pattern</span>
+                  <span>Radio Group</span>
                 </h2>
               </a>
               <div class="tile-introduction">
           A radio group is a set of checkable buttons, known as radio buttons, where no more than one of the buttons can be checked at a time.</div>
-            </li>
-           
-            <li class="tile tile-slider-multithumb">
-              <a href="{{ '/ARIA/apg/patterns/slider-multithumb/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/slider-multithumb.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Slider (Multi-Thumb) Pattern</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A multi-thumb slider implements the Slider Pattern but includes two or more thumbs, often on a single rail.</div>
             </li>
            
             <li class="tile tile-slider">
@@ -336,11 +322,25 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Slider Pattern</span>
+                  <span>Slider</span>
                 </h2>
               </a>
               <div class="tile-introduction">
           A slider is an input where the user selects a value from within a given range.</div>
+            </li>
+           
+            <li class="tile tile-slider-multithumb">
+              <a href="{{ '/ARIA/apg/patterns/slider-multithumb/' | relative_url }}">
+                <h2 class="tile-name">
+                  <img 
+                    src="{{ '/content-images/wai-aria-practices/img/slider-multithumb.svg' | relative_url }}" 
+                    alt=""
+                  >
+                  <span>Slider (Multi-Thumb)</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          A multi-thumb slider implements the Slider Pattern but includes two or more thumbs, often on a single rail.</div>
             </li>
            
             <li class="tile tile-spinbutton">
@@ -350,7 +350,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/spinbutton.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Spinbutton Pattern</span>
+                  <span>Spinbutton</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -364,7 +364,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/switch.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Switch Pattern</span>
+                  <span>Switch</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -378,7 +378,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/table.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Table Pattern</span>
+                  <span>Table</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -392,7 +392,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/tabs.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Tabs Pattern</span>
+                  <span>Tabs</span>
                 </h2>
               </a>
               <div class="tile-introduction">
@@ -406,7 +406,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Toolbar Pattern</span>
+                  <span>Toolbar</span>
                 </h2>
               </a>
               <div class="tile-introduction">A toolbar is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</div>
@@ -419,25 +419,11 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/tooltip.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Tooltip Pattern</span>
+                  <span>Tooltip</span>
                 </h2>
               </a>
               <div class="tile-introduction">
           A tooltip is a popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.</div>
-            </li>
-           
-            <li class="tile tile-treegrid">
-              <a href="{{ '/ARIA/apg/patterns/treegrid/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/treegrid.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Treegrid Pattern</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A treegrid widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.</div>
             </li>
            
             <li class="tile tile-treeview">
@@ -447,11 +433,25 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Tree View Pattern</span>
+                  <span>Tree View</span>
                 </h2>
               </a>
               <div class="tile-introduction">
           A tree view widget presents a hierarchical list.</div>
+            </li>
+           
+            <li class="tile tile-treegrid">
+              <a href="{{ '/ARIA/apg/patterns/treegrid/' | relative_url }}">
+                <h2 class="tile-name">
+                  <img 
+                    src="{{ '/content-images/wai-aria-practices/img/treegrid.svg' | relative_url }}" 
+                    alt=""
+                  >
+                  <span>Treegrid</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          A treegrid widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.</div>
             </li>
            
             <li class="tile tile-windowsplitter">
@@ -461,7 +461,7 @@ lang: en
                     src="{{ '/content-images/wai-aria-practices/img/windowsplitter.svg' | relative_url }}" 
                     alt=""
                   >
-                  <span>Window Splitter Pattern</span>
+                  <span>Window Splitter</span>
                 </h2>
               </a>
               <div class="tile-introduction">

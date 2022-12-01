@@ -51,6 +51,8 @@ const transformPracticeIndex = async (sourcePath /* , sourceContents */) => {
     practices.push({ sitePath, title, slug, introduction: firstSentence });
   }
 
+  practices.sort((a, b) => a.title.localeCompare(b.title));
+
   const content = `
     {% include read-this-first.html %}
     <ul class="tiles">
