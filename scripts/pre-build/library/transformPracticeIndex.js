@@ -51,7 +51,29 @@ const transformPracticeIndex = async (sourcePath /* , sourceContents */) => {
     practices.push({ sitePath, title, slug, introduction: firstSentence });
   }
 
-  practices.sort((a, b) => a.title.localeCompare(b.title));
+  const importanceOrder = [
+    "landmark-regions",
+    "names-and-descriptions",
+    "keyboard-interface",
+    "grid-and-table-properties",
+    "range-related-properties",
+    "structural-roles",
+    "hiding-semantics",
+  ];
+
+  practices.sort((a, b) => {
+    const aRank =
+      importanceOrder.indexOf(a.slug) === -1
+        ? Infinity
+        : importanceOrder.indexOf(a.slug);
+
+    const bRank =
+      importanceOrder.indexOf(b.slug) === -1
+        ? Infinity
+        : importanceOrder.indexOf(b.slug);
+
+    return aRank < bRank ? -1 : 1;
+  });
 
   const content = `
     {% include read-this-first.html %}

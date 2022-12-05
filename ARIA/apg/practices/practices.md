@@ -46,15 +46,28 @@ lang: en
     {% include read-this-first.html %}
     <ul class="tiles">
       
-            <li class="tile tile-range-related-properties">
+            <li class="tile tile-landmark-regions">
               <a 
-                href="{{ '/ARIA/apg/practices/range-related-properties/' | relative_url }}"
+                href="{{ '/ARIA/apg/practices/landmark-regions/' | relative_url }}"
               >
                 <h2 class="tile-name">
-                  <span>Communicating Value and Limits for Range Widgets</span>
+                  <span>Landmark Regions</span>
                 </h2>
               </a>
-              <div class="tile-introduction">ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
+              <div class="tile-introduction">
+          ARIA landmark roles provide a powerful way to identify the organization and structure of a web page.</div>
+            </li>
+           
+            <li class="tile tile-names-and-descriptions">
+              <a 
+                href="{{ '/ARIA/apg/practices/names-and-descriptions/' | relative_url }}"
+              >
+                <h2 class="tile-name">
+                  <span>Providing Accessible Names and Descriptions</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          Providing elements with accessible names, and where appropriate, accessible descriptions, is one of the most important responsibilities authors have when developing accessible web experiences.</div>
             </li>
            
             <li class="tile tile-keyboard-interface">
@@ -81,40 +94,15 @@ lang: en
           To fully present and describe a grid or table, in addition to parsing the headers, rows, and cells using the roles described in the grid pattern or table pattern, assistive technologies need to be able to determine other structural and presentation characteristics, such as the number and visibility of rows and columns.</div>
             </li>
            
-            <li class="tile tile-hiding-semantics">
+            <li class="tile tile-range-related-properties">
               <a 
-                href="{{ '/ARIA/apg/practices/hiding-semantics/' | relative_url }}"
+                href="{{ '/ARIA/apg/practices/range-related-properties/' | relative_url }}"
               >
                 <h2 class="tile-name">
-                  <span>Hiding Semantics with the <code>presentation</code> Role</span>
+                  <span>Communicating Value and Limits for Range Widgets</span>
                 </h2>
               </a>
-              <div class="tile-introduction">
-          While ARIA is primarily used to express semantics, there are some situations where hiding an element’s semantics from assistive technologies is helpful.</div>
-            </li>
-           
-            <li class="tile tile-landmark-regions">
-              <a 
-                href="{{ '/ARIA/apg/practices/landmark-regions/' | relative_url }}"
-              >
-                <h2 class="tile-name">
-                  <span>Landmark Regions</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          ARIA landmark roles provide a powerful way to identify the organization and structure of a web page.</div>
-            </li>
-           
-            <li class="tile tile-names-and-descriptions">
-              <a 
-                href="{{ '/ARIA/apg/practices/names-and-descriptions/' | relative_url }}"
-              >
-                <h2 class="tile-name">
-                  <span>Providing Accessible Names and Descriptions</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          Providing elements with accessible names, and where appropriate, accessible descriptions, is one of the most important responsibilities authors have when developing accessible web experiences.</div>
+              <div class="tile-introduction">ARIA defines the following roles as range widgets, which means they communicate a value that is typically numeric and constrained to defined limits.</div>
             </li>
            
             <li class="tile tile-structural-roles">
@@ -127,6 +115,18 @@ lang: en
               </a>
               <div class="tile-introduction">
           ARIA provides a set of roles that convey the accessibility semantics of structures on a page.</div>
+            </li>
+           
+            <li class="tile tile-hiding-semantics">
+              <a 
+                href="{{ '/ARIA/apg/practices/hiding-semantics/' | relative_url }}"
+              >
+                <h2 class="tile-name">
+                  <span>Hiding Semantics with the <code>presentation</code> Role</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          While ARIA is primarily used to express semantics, there are some situations where hiding an element’s semantics from assistive technologies is helpful.</div>
             </li>
           
     </ul>

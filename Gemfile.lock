@@ -112,7 +112,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  universal-darwin-20
+  ruby
 
 DEPENDENCIES
   nokogiri
