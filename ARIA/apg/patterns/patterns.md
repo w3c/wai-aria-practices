@@ -215,7 +215,7 @@ lang: en
           
               <li class="tile tile-landmarks">
                 <a 
-                  href="{{ '/ARIA/apg/patterns/landmarks/examples/index.html' | relative_url }}"
+                  href="{{ '/ARIA/apg/patterns/landmarks/examples/general-principles.html' | relative_url }}"
                 >
                   <h2 class="tile-name">
                     <img 
