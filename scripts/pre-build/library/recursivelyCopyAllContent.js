@@ -3,12 +3,13 @@ const { promiseFiles: getPaths } = require("node-dir");
 const fs = require("fs/promises");
 const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
 
-const recursivelyCopyAllContent = async ({ forEachFile, generateFiles }) => {
+const recursivelyCopyAllContent = async ({ forEachFile }) => {
   const sourcePaths = await getPaths(path.join(sourceRoot, "content"));
 
   for (const sourcePath of sourcePaths) {
     let sourceContents;
-    const doesNotSupportUtf8 = sourcePath.endsWith(".png");
+    const doesNotSupportUtf8 =
+      sourcePath.endsWith(".png") || sourcePath.endsWith(".jpg");
     if (doesNotSupportUtf8) {
       sourceContents = await fs.readFile(sourcePath);
     } else {

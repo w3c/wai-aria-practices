@@ -104,11 +104,11 @@ const transformExample = async (sourcePath, sourceContents) => {
     enableSidebar: true,
     head: html.querySelector("head").innerHTML,
     footer: `
-          <div class="example-page-footer">
-            <p>${relatedIssuesLink}</p>
-            <p>Page last updated: ${lastModifiedDateFormatted}</p>
-          </div>
-        `,
+      <div class="example-page-footer">
+        <p>${relatedIssuesLink}</p>
+        <p>Page last updated: ${lastModifiedDateFormatted}</p>
+      </div>
+    `,
   });
 };
 

@@ -33,7 +33,11 @@ const transformPatternIndex = async (sourcePath /* , sourceContents */) => {
 
     const patternHtml = parseHtml(patternContents);
 
-    const title = patternHtml.querySelector("h1").innerHTML;
+    let title = patternHtml.querySelector("h1").innerHTML.trim();
+    if (!title.match(/ Pattern\b/)) {
+      throw new Error("Found pattern with unexpected h1 headline");
+    }
+    title = title.replace(/ Pattern/g, "");
 
     const slug = patternPath.match(
       /content\/patterns\/([^/]+)\/[^/]+-pattern\.html/
@@ -54,6 +58,8 @@ const transformPatternIndex = async (sourcePath /* , sourceContents */) => {
 
     patterns.push({ sitePath, title, slug, introduction: firstSentence });
   }
+
+  patterns.sort((a, b) => a.title.localeCompare(b.title));
 
   const content = `
     {% include read-this-first.html %}
@@ -87,7 +93,7 @@ const transformPatternIndex = async (sourcePath /* , sourceContents */) => {
             patternContent += `
               <li class="tile tile-landmarks">
                 <a 
-                  href="{{ '/ARIA/apg/patterns/landmarks/examples/index.html' | relative_url }}"
+                  href="{{ '/ARIA/apg/patterns/landmarks/examples/general-principles.html' | relative_url }}"
                 >
                   <h2 class="tile-name">
                     <img 
