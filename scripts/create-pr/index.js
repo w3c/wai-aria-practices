@@ -33,7 +33,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
   const previewLinkUrl = isSuccess
     ? `https://deploy-preview-${
         waiPrNumber || createPullRequestResult.data.number
-      }--${previewLink}`
+      }--${previewLink}/ARIA/apg`
     : `https://github.com/${repositoryOwner}/wai-aria-practices/runs/${jobId}?check_suite_focus=true`;
   const additionalBodyContent = isSuccess
     ? `[WAI Preview Link](${previewLinkUrl}) _(Last built on ${new Date().toUTCString()})._`
