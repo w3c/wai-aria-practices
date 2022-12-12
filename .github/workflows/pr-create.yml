@@ -45,14 +45,14 @@ jobs:
           ruby-version: 2.6.2
 
       - name: Update git submodules
-        if: github.event.inputs.fork_path == false
+        if: github.event.inputs.fork_path == 'false'
         run: |
           git submodule update --recursive --remote
           cd _external/aria-practices
           git checkout ${{ github.event.inputs.apg_sha }}
 
       - name: Update git submodules from fork
-        if: github.event.inputs.fork_path != false
+        if: github.event.inputs.fork_path != 'false'
         run: |
           git submodule update --recursive --remote
           cd _external/aria-practices
