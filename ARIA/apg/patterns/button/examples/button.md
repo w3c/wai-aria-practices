@@ -264,11 +264,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
 
-
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
         <iframe class="support-levels-command-button"
           src="https://aria-at.w3.org/embed/reports/command-button"
+          height="500"
+          allow="clipboard-write"
+          style="border-style: none; width: 100%;">
+        </iframe>
+
+        <iframe class="support-levels-toggle-button"
+          src="https://aria-at.w3.org/embed/reports/toggle-button"
           height="500"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
