@@ -267,7 +267,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
         <iframe class="support-levels-command-button"
-          src="https://aria-at.w3.org/embed/reports/command-button"
+          src="https://aria-at.w3.org/embed/reports/command-button?title=Command+Button"
           height="500"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
