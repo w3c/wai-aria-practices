@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/treeview-navigation.css" rel="stylesheet" />
-<script src="../js/treeview-navigation.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/css/treeview-navigation.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeview-navigation.js"></script>
 
 
 <link 
@@ -742,11 +745,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/treeview-navigation.css" type="text/css">treeview-navigation.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/css/treeview-navigation.css" type="text/css">treeview-navigation.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/treeview-navigation.js" type="text/javascript">treeview-navigation.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeview-navigation.js" type="text/javascript">treeview-navigation.js</a>
           </li>
         </ul>
       </section>

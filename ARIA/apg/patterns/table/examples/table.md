@@ -28,7 +28,10 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/table.css" rel="stylesheet" />
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/table.css"
+  rel="stylesheet"
+/>
 
 
 <link 
@@ -232,7 +235,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/table.css" type="tex/css">table.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/table.css" type="tex/css">table.css</a>
           </li>
           <li>Javascript: Not applicable.</li>
         </ul>

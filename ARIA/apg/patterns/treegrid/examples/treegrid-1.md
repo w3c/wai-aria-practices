@@ -28,7 +28,10 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/treegrid-1.css" rel="stylesheet" />
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/treegrid/examples/css/treegrid-1.css"
+  rel="stylesheet"
+/>
 <style>
   /* Style the current cell focus option so user know what they're getting */
   [aria-current] {
@@ -50,7 +53,10 @@ lang: en
     font-weight: bold;
   }
 </style>
-<script src="../js/treegrid-1.js" type="text/javascript"></script>
+<script
+  src="../../../../../../content-assets/wai-aria-practices/patterns/treegrid/examples/js/treegrid-1.js"
+  type="text/javascript"
+></script>
 
 
 <link 
@@ -513,11 +519,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/treegrid-1.css" type="text/css">treegrid-1.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treegrid/examples/css/treegrid-1.css" type="text/css">treegrid-1.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/treegrid-1.js" type="text/javascript">treegrid-1.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treegrid/examples/js/treegrid-1.js" type="text/javascript">treegrid-1.js</a>
           </li>
         </ul>
       </section>

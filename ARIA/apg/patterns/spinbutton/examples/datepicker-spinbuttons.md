@@ -34,9 +34,12 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link href="../css/datepicker-spinbuttons.css" rel="stylesheet" />
-<script src="../js/spinbutton-date.js"></script>
-<script src="../js/datepicker-spinbuttons.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/css/datepicker-spinbuttons.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/js/spinbutton-date.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/js/datepicker-spinbuttons.js"></script>
 
 
 <link 
@@ -383,13 +386,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/datepicker-spinbuttons.css" type="text/css">datepicker-spinbuttons.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/css/datepicker-spinbuttons.css" type="text/css">datepicker-spinbuttons.css</a>
           </li>
           <li>
             Javascript:
             <ul>
-              <li><a href="../js/datepicker-spinbuttons.js" type="text/javascript">datepicker-spinbuttons.js</a></li>
-              <li><a href="../js/spinbutton-date.js" type="text/javascript">spinbutton-date.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/js/datepicker-spinbuttons.js" type="text/javascript">datepicker-spinbuttons.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/js/spinbutton-date.js" type="text/javascript">spinbutton-date.js</a></li>
             </ul>
           </li>
         </ul>

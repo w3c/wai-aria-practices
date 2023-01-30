@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/combobox-autocomplete.css" />
-<script src="../js/combobox-autocomplete.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/combobox-autocomplete.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/combobox-autocomplete.js"></script>
 
 
 <link 
@@ -589,11 +592,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/combobox-autocomplete.css" type="text/css">combobox-autocomplete.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/combobox-autocomplete.css" type="text/css">combobox-autocomplete.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/combobox-autocomplete.js" type="text/javascript">combobox-autocomplete.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/combobox-autocomplete.js" type="text/javascript">combobox-autocomplete.js</a>
           </li>
         </ul>
       </section>

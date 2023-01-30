@@ -28,10 +28,13 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/listbox.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/listbox.js"></script>
-<script src="../js/listbox-scrollable.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css"
+  rel="stylesheet"
+/>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-scrollable.js"></script>
 
 
 <link 
@@ -288,11 +291,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/listbox.css" type="tex/css">listbox.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css" type="tex/css">listbox.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../js/listbox-scrollable.js" type="text/javascript">listbox-scrollable.js</a>, <a href="../../../../shared/js/utils.js">utils.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-scrollable.js" type="text/javascript">listbox-scrollable.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a>
           </li>
         </ul>
       </section>

@@ -34,8 +34,11 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link href="../css/datepicker-dialog.css" rel="stylesheet" />
-<script src="../js/datepicker-dialog.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/datepicker-dialog.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/datepicker-dialog.js"></script>
 
 
 <link 
@@ -707,11 +710,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/datepicker-dialog.css" type="text/css">datepicker-dialog.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/datepicker-dialog.css" type="text/css">datepicker-dialog.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/datepicker-dialog.js" type="text/javascript">datepicker-dialog.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/datepicker-dialog.js" type="text/javascript">datepicker-dialog.js</a>
           </li>
         </ul>
       </section>

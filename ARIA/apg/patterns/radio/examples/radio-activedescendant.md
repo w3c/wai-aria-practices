@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/radio.css" />
-<script src="../js/radio-activedescendant.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/css/radio.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/js/radio-activedescendant.js"></script>
 
 
 <link 
@@ -315,8 +318,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/radio.css" type="tex/css">radio.css</a></li>
-          <li>Javascript: <a href="../js/radio-activedescendant.js" type="text/javascript">radio-activedescendant.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/css/radio.css" type="tex/css">radio.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/js/radio-activedescendant.js" type="text/javascript">radio-activedescendant.js</a></li>
         </ul>
       </section>
 

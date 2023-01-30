@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/select-only.css" rel="stylesheet" />
-<script src="../js/select-only.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/select-only.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/select-only.js"></script>
 
 
 <link 
@@ -465,11 +468,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/select-only.css" type="text/css">select-only.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/select-only.css" type="text/css">select-only.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/select-only.js" type="text/javascript">select-only.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/select-only.js" type="text/javascript">select-only.js</a>
           </li>
         </ul>
       </section>

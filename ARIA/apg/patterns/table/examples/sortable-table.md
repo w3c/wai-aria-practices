@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/sortable-table.css" rel="stylesheet" />
-<script src="../js/sortable-table.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/sortable-table.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/js/sortable-table.js"></script>
 
 
 <link 
@@ -265,11 +268,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/sortable-table.css" type="text/css">sortable-table.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/sortable-table.css" type="text/css">sortable-table.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/sortable-table.js" type="text/javascript">sortable-table.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/js/sortable-table.js" type="text/javascript">sortable-table.js</a>
           </li>
         </ul>
       </section>

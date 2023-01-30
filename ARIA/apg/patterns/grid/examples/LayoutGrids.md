@@ -28,10 +28,13 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/layoutGrids.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/dataGrid.js"></script>
-<script src="../js/layoutGrids.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/layoutGrids.css"
+  rel="stylesheet"
+/>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/layoutGrids.js"></script>
 
 
 <link 
@@ -145,7 +148,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <div id="grid-nux" class="grid-nux hidden" role="region" aria-label="Grid Instructions" tabindex="0">
               <p class="grid-nux-header">Move keyboard focus inside a grid with arrow keys.</p>
               <p class="indicator_description">
-                <img src="../imgs/black_keys.png" width="100" alt="Arrow keypad" class="indicator_graphic">
+                <img src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/imgs/black_keys.png" width="100" alt="Arrow keypad" class="indicator_graphic">
               </p>
               <p>
                 This focus ring means arrow key navigation is available.
@@ -719,15 +722,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>
             CSS:
             <ul>
-              <li><a href="../css/layoutGrids.css" type="tex/css">layoutGrids.css</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/layoutGrids.css" type="tex/css">layoutGrids.css</a></li>
             </ul>
           </li>
           <li>
             JavaScript:
             <ul>
-              <li><a href="../js/layoutGrids.js" type="text/javascript">layoutGrids.js</a></li>
-              <li><a href="../js/dataGrid.js" type="text/javascript">dataGrid.js</a></li>
-              <li><a href="../../../../shared/js/utils.js">utils.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/layoutGrids.js" type="text/javascript">layoutGrids.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js" type="text/javascript">dataGrid.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
             </ul>
           </li>
         </ul>

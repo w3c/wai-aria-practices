@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/slider-temperature.css" />
-<script src="../js/slider-temperature.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-temperature.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-temperature.js"></script>
 
 
 <link 
@@ -350,8 +353,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/slider-temperature.css" type="text/css">slider-temperature.css</a></li>
-          <li>Javascript: <a href="../js/slider-temperature.js" type="text/javascript">slider-temperature.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-temperature.css" type="text/css">slider-temperature.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-temperature.js" type="text/javascript">slider-temperature.js</a></li>
         </ul>
       </section>
 

@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/tabs.css" rel="stylesheet" />
-<script src="../js/tabs-automatic.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-automatic.js"></script>
 
 
 <link 
@@ -406,8 +409,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/tabs.css" type="tex/css">tabs.css</a></li>
-          <li>Javascript: <a href="../js/tabs-automatic.js" type="text/javascript">tabs-automatic.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs.css" type="tex/css">tabs.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-automatic.js" type="text/javascript">tabs-automatic.js</a></li>
         </ul>
       </section>
 

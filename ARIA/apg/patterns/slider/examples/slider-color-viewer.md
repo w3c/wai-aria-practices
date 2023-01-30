@@ -28,8 +28,12 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" type="text/css" href="../css/slider-color-viewer.css" />
-<script src="../js/slider-color-viewer.js"></script>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-color-viewer.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-color-viewer.js"></script>
 
 
 <link 
@@ -362,8 +366,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/slider-color-viewer.css" type="text/css">slider-color-viewer.css</a></li>
-          <li>Javascript: <a href="../js/slider-color-viewer.js" type="text/javascript">slider-color-viewer.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-color-viewer.css" type="text/css">slider-color-viewer.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-color-viewer.js" type="text/javascript">slider-color-viewer.js</a></li>
         </ul>
       </section>
 

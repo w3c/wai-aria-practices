@@ -28,10 +28,13 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/grid-combo.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/grid-combo.js"></script>
-<script src="../js/grid-combo-example.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/grid-combo.css"
+  rel="stylesheet"
+/>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/grid-combo.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/grid-combo-example.js"></script>
 
 
 <link 
@@ -448,8 +451,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/grid-combo.css" type="tex/css">grid-combo.css</a></li>
-          <li>Javascript: <a href="../js/grid-combo.js">grid-combo.js</a>, <a href="../js/grid-combo-example.js">grid-combo-example.js</a>, <a href="../../../../shared/js/utils.js">utils.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/grid-combo.css" type="tex/css">grid-combo.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/grid-combo.js">grid-combo.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/grid-combo-example.js">grid-combo-example.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
         </ul>
       </section>
 

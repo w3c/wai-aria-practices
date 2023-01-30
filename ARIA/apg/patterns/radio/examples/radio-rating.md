@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/radio-rating.css" />
-<script src="../js/radio-rating.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/css/radio-rating.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/js/radio-rating.js"></script>
 
 
 <link 
@@ -345,8 +348,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/radio-rating.css" type="text/css">radio-rating.css</a></li>
-          <li>Javascript: <a href="../js/radio-rating.js" type="text/javascript">radio-rating.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/css/radio-rating.css" type="text/css">radio-rating.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/radio/examples/js/radio-rating.js" type="text/javascript">radio-rating.js</a></li>
         </ul>
       </section>
 

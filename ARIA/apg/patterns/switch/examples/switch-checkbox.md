@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/switch-checkbox.css" rel="stylesheet" />
-<script src="../js/switch-checkbox.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/css/switch-checkbox.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch-checkbox.js"></script>
 
 
 <link 
@@ -242,11 +245,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/switch-checkbox.css" type="tex/css">switch-checkbox.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/css/switch-checkbox.css" type="tex/css">switch-checkbox.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/switch-checkbox.js" type="text/javascript">switch-checkbox.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch-checkbox.js" type="text/javascript">switch-checkbox.js</a>
           </li>
         </ul>
       </section>

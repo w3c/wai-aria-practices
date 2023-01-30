@@ -34,8 +34,11 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link rel="stylesheet" href="../css/meter.css" />
-<script src="../js/meter.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/css/meter.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/js/meter.js"></script>
 
 
 <link 
@@ -193,11 +196,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/meter.css" type="text/css">meter.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/css/meter.css" type="text/css">meter.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/meter.js" type="text/javascript">meter.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/js/meter.js" type="text/javascript">meter.js</a>
           </li>
         </ul>
       </section>

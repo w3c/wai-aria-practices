@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/disclosure-navigation.css" rel="stylesheet" />
-<script src="../js/disclosureMenu.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-navigation.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosureMenu.js"></script>
 
 
 <link 
@@ -425,11 +428,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/disclosure-navigation.css" type="tex/css">disclosure-navigation.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-navigation.css" type="tex/css">disclosure-navigation.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/disclosureMenu.js" type="text/javascript">disclosureMenu.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosureMenu.js" type="text/javascript">disclosureMenu.js</a>
           </li>
         </ul>
       </section>

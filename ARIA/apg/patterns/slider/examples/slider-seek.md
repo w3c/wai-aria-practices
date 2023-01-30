@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/slider-seek.css" />
-<script src="../js/slider-seek.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-seek.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-seek.js"></script>
 
 
 <link 
@@ -369,8 +372,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/slider-seek.css" type="text/css">slider-seek.css</a></li>
-          <li>Javascript: <a href="../js/slider-seek.js" type="text/javascript">slider-seek.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-seek.css" type="text/css">slider-seek.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-seek.js" type="text/javascript">slider-seek.js</a></li>
         </ul>
       </section>
 

@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/menu-button-links.css" rel="stylesheet" />
-<script src="../js/menu-button-links.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-links.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-links.js"></script>
 
 
 <link 
@@ -407,8 +410,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Javascript and CSS Source Code</h2>
 
         <ul id="cssJsFiles">
-          <li>CSS: <a href="../css/menu-button-links.css" type="text/css">menu-button-links.css</a></li>
-          <li>Javascript: <a href="../js/menu-button-links.js" type="text/javascript">menu-button-links.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-links.css" type="text/css">menu-button-links.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-links.js" type="text/javascript">menu-button-links.js</a></li>
         </ul>
       </section>
 

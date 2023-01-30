@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/button.css" />
-<script src="../js/button.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/css/button.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/js/button.js"></script>
 
 
 <link 
@@ -244,11 +247,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/button.css" type="text/css">button.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/css/button.css" type="text/css">button.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/button.js" type="text/javascript">button.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/js/button.js" type="text/javascript">button.js</a>
           </li>
         </ul>
       </section>

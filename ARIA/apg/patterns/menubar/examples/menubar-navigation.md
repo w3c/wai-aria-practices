@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/menubar-navigation.css" rel="stylesheet" />
-<script src="../js/menubar-navigation.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/css/menubar-navigation.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-navigation.js"></script>
 
 
 <link 
@@ -871,8 +874,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/menubar-navigation.css" type="tex/css">menubar-navigation.css</a></li>
-          <li>Javascript: <a href="../js/menubar-navigation.js" type="text/javascript">menubar-navigation.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/css/menubar-navigation.css" type="tex/css">menubar-navigation.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-navigation.js" type="text/javascript">menubar-navigation.js</a></li>
         </ul>
       </section>
 

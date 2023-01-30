@@ -18,6 +18,7 @@ const formatForJekyll = ({
     .replace(/.*app.js.*/, '<script src="{{ \'/content-assets/wai-aria-practices/shared/js/app.js\' | relative_url }}"></script>')
     .replace(/.*highlight.pack.js.*/, '<script src="{{ \'/content-assets/wai-aria-practices/shared/js/highlight.pack.js\' | relative_url }}"></script>')
     .replace(/.*examples.js.*/, '<script src="{{ \'/content-assets/wai-aria-practices/shared/js/examples.js\' | relative_url }}"></script>')
+    .replace(/.*utils.js.*/, '<script src="{{ \'/content-assets/wai-aria-practices/shared/js/utils.js\' | relative_url }}"></script>')
     .replace(/.*skipto.js.*/, '');
 
   return `---

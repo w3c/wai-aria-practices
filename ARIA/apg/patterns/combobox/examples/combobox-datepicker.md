@@ -34,8 +34,11 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link href="../css/combobox-datepicker.css" rel="stylesheet" />
-<script src="../js/combobox-datepicker.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/combobox-datepicker.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/combobox-datepicker.js"></script>
 
 
 <link 
@@ -773,11 +776,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/combobox-datepicker.css" type="text/css">combobox-datepicker.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/combobox-datepicker.css" type="text/css">combobox-datepicker.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/combobox-datepicker.js" type="text/javascript">combobox-datepicker.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/combobox-datepicker.js" type="text/javascript">combobox-datepicker.js</a>
           </li>
         </ul>
       </section>

@@ -28,7 +28,10 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/accordion.css" />
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/css/accordion.css"
+/>
 
 
 <link 
@@ -316,8 +319,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/accordion.css" type="tex/css">accordion.css</a></li>
-          <li>JavaScript: <a href="../js/accordion.js" type="text/javascript">accordion.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/css/accordion.css" type="tex/css">accordion.css</a></li>
+          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js" type="text/javascript">accordion.js</a></li>
         </ul>
       </section>
 
@@ -332,7 +335,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-    <script src="../js/accordion.js"></script>
+    <script src="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js"></script>
   
 </div>
 <script 

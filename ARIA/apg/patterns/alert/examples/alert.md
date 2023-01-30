@@ -28,8 +28,14 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/alert.css" rel="stylesheet" />
-<script src="../js/alert.js" type="text/javascript"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/alert/examples/css/alert.css"
+  rel="stylesheet"
+/>
+<script
+  src="../../../../../../content-assets/wai-aria-practices/patterns/alert/examples/js/alert.js"
+  type="text/javascript"
+></script>
 
 
 <link 
@@ -192,11 +198,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/alert.css" type="tex/css">alert.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/alert/examples/css/alert.css" type="tex/css">alert.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/alert.js" type="text/javascript">alert.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/alert/examples/js/alert.js" type="text/javascript">alert.js</a>
           </li>
         </ul>
       </section>

@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/switch.css" rel="stylesheet" />
-<script src="../js/switch.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/css/switch.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch.js"></script>
 
 
 <link 
@@ -252,8 +255,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/switch.css" type="tex/css">switch.css</a></li>
-          <li>Javascript: <a href="../js/switch.js" type="text/javascript">switch.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/css/switch.css" type="tex/css">switch.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch.js" type="text/javascript">switch.js</a></li>
         </ul>
       </section>
 

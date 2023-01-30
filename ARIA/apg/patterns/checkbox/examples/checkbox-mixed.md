@@ -28,8 +28,11 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/checkbox-mixed.css" rel="stylesheet" />
-<script src="../js/checkbox-mixed.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/css/checkbox-mixed.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/js/checkbox-mixed.js"></script>
 
 
 <link 
@@ -270,8 +273,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/checkbox-mixed.css" type="text/css">checkbox-mixed.css</a></li>
-          <li>Javascript: <a href="../js/checkbox-mixed.js" type="text/javascript">checkbox-mixed.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/css/checkbox-mixed.css" type="text/css">checkbox-mixed.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/js/checkbox-mixed.js" type="text/javascript">checkbox-mixed.js</a></li>
         </ul>
       </section>
 

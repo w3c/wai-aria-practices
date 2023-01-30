@@ -24,7 +24,7 @@ lang: en
 <title>File Directory Treeview Example Using Computed Properties</title>
 
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/examples.js' | relative_url }}"></script>
-<script src="../../../../shared/js/utils.js"></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/highlight.pack.js' | relative_url }}"></script>
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
@@ -35,10 +35,13 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link href="../css/tree.css" rel="stylesheet" />
-<script src="../js/tree.js"></script>
-<script src="../js/treeitem.js"></script>
-<script src="../js/treeitemClick.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/css/tree.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/tree.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeitem.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeitemClick.js"></script>
 
 
 <link 
@@ -472,19 +475,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/tree.css" type="text/css">tree.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/css/tree.css" type="text/css">tree.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/tree.js" type="text/javascript">tree.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/tree.js" type="text/javascript">tree.js</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/treeitem.js" type="text/javascript">treeitem.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeitem.js" type="text/javascript">treeitem.js</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/treeitemClick.js" type="text/javascript">treeitemClick.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeitemClick.js" type="text/javascript">treeitemClick.js</a>
           </li>
         </ul>
       </section>

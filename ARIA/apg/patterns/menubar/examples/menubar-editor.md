@@ -28,9 +28,12 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/menubar-editor.css" rel="stylesheet" />
-<script src="../js/menubar-editor.js"></script>
-<script src="../js/style-manager.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/css/menubar-editor.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-editor.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/style-manager.js"></script>
 
 
 <link 
@@ -840,10 +843,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/menubar-editor.css" type="tex/css">menubar-editor.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/css/menubar-editor.css" type="tex/css">menubar-editor.css</a>
           </li>
-          <li>Javascript: <a href="../js/menubar-editor.js" type="text/javascript">menubar-editor.js</a></li>
-          <li>Javascript: <a href="../js/style-manager.js" type="text/javascript">style-manager.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-editor.js" type="text/javascript">menubar-editor.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/style-manager.js" type="text/javascript">style-manager.js</a></li>
         </ul>
       </section>
 

@@ -28,9 +28,12 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/dialog.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/dialog.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/dialog.css"
+  rel="stylesheet"
+/>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js"></script>
 
 
 <link 
@@ -401,12 +404,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/dialog.css" type="text/css">dialog.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/dialog.css" type="text/css">dialog.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/dialog.js" type="text/javascript">dialog.js</a>,
-            <a href="../../../../shared/js/utils.js">utils.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js" type="text/javascript">dialog.js</a>,
+            <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a>
           </li>
         </ul>
       </section>

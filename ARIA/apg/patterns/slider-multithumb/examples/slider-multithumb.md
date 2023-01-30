@@ -28,8 +28,14 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link rel="stylesheet" href="../css/slider-multithumb.css" />
-<script src="../js/slider-multithumb.js" type="text/javascript"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/slider-multithumb/examples/css/slider-multithumb.css"
+/>
+<script
+  src="../../../../../../content-assets/wai-aria-practices/patterns/slider-multithumb/examples/js/slider-multithumb.js"
+  type="text/javascript"
+></script>
 
 
 <link 
@@ -322,8 +328,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/slider-multithumb.css" type="tex/css">slider-multithumb.css</a></li>
-          <li>Javascript: <a href="../js/slider-multithumb.js" type="text/javascript">slider-multithumb.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider-multithumb/examples/css/slider-multithumb.css" type="tex/css">slider-multithumb.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider-multithumb/examples/js/slider-multithumb.js" type="text/javascript">slider-multithumb.js</a></li>
         </ul>
       </section>
 

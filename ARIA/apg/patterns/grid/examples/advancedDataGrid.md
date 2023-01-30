@@ -28,12 +28,18 @@ lang: en
 <script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
 
 
-<link href="../css/menuButton.css" rel="stylesheet" />
-<link href="../css/dataGrids.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/menuButton.js"></script>
-<script src="../js/dataGrid.js"></script>
-<script src="../js/dataGrids.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/menuButton.css"
+  rel="stylesheet"
+/>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/dataGrids.css"
+  rel="stylesheet"
+/>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/menuButton.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrids.js"></script>
 
 
 <link 
