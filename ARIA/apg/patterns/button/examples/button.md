@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/button/examples/button/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 21 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -23,10 +23,10 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Button Examples</title>
 
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/examples.js' | relative_url }}"></script>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/highlight.pack.js' | relative_url }}"></script>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
-
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -265,6 +265,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           sourceCode.add('sc1', 'example', 'ex_label', 'css_js_files');
           sourceCode.make();
         </script>
+      </section>
+
+
+      <section>
+        <h2>Support Levels</h2>
+        <iframe class="support-levels-command-button"
+          src="https://aria-at-app-sandbox.bocoup.com/embed/reports/command-button"
+          height="500"
+          allow="clipboard-write"
+          style="border-style: none; width: 100%;">
+        </iframe>
       </section>
     </div>
   

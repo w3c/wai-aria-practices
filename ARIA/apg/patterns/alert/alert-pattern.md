@@ -23,9 +23,9 @@ lang: en
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>Alert Pattern</title>
 
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/highlight.pack.js' | relative_url }}"></script>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
-
+<script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 

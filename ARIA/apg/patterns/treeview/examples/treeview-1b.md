@@ -23,11 +23,11 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>File Directory Treeview Example Using Declared Properties</title>
 
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/examples.js' | relative_url }}"></script>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/utils.js' | relative_url }}"></script>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/highlight.pack.js' | relative_url }}"></script>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/app.js' | relative_url }}"></script>
-
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
