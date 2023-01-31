@@ -23,9 +23,9 @@ lang: en
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>Index</title>
 
-<script src="../shared/js/examples.js"></script>
-<script src="../shared/js/highlight.pack.js"></script>
-<script src="../shared/js/app.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
 
 <link 
@@ -35,7 +35,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -952,5 +952,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions-active-de
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 19 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -23,13 +23,16 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Actions Menu Button Example Using aria-activedescendant</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/menu-button-actions.css" rel="stylesheet" />
-<script src="../js/menu-button-actions-active-descendant.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-actions.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-actions-active-descendant.js"></script>
 
 
 <link 
@@ -39,7 +42,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -404,8 +407,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Javascript and CSS Source Code</h2>
 
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/menu-button-actions.css" type="text/css">menu-button-actions.css</a></li>
-          <li>Javascript: <a href="../js/menu-button-actions-active-descendant.js" type="text/javascript">menu-button-actions-active-descendant.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-actions.css" type="text/css">menu-button-actions.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-actions-active-descendant.js" type="text/javascript">menu-button-actions-active-descendant.js</a></li>
         </ul>
       </section>
 
@@ -423,5 +426,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

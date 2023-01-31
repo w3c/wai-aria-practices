@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/6'>View issues related to this example</a></p>        <p>Page last updated: 19 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/6'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -23,14 +23,17 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Modal Dialog Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/dialog.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/dialog.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/dialog.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js"></script>
 
 
 <link 
@@ -40,7 +43,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -401,12 +404,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/dialog.css" type="text/css">dialog.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/dialog.css" type="text/css">dialog.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/dialog.js" type="text/javascript">dialog.js</a>,
-            <a href="../../../../shared/js/utils.js">utils.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js" type="text/javascript">dialog.js</a>,
+            <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a>
           </li>
         </ul>
       </section>
@@ -425,5 +428,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

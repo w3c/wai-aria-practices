@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 19 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -23,10 +23,10 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Date Picker Dialog Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -34,8 +34,11 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link href="../css/datepicker-dialog.css" rel="stylesheet" />
-<script src="../js/datepicker-dialog.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/datepicker-dialog.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/datepicker-dialog.js"></script>
 
 
 <link 
@@ -45,7 +48,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -707,11 +710,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/datepicker-dialog.css" type="text/css">datepicker-dialog.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/datepicker-dialog.css" type="text/css">datepicker-dialog.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/datepicker-dialog.js" type="text/javascript">datepicker-dialog.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/datepicker-dialog.js" type="text/javascript">datepicker-dialog.js</a>
           </li>
         </ul>
       </section>
@@ -730,5 +733,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

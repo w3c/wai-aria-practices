@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/toolbar/examples/toolbar/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 19 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -23,10 +23,10 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Toolbar Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -34,14 +34,20 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link href="../css/toolbar.css" rel="stylesheet" />
-<link href="../css/menuButton.css" rel="stylesheet" />
-<script src="../js/FormatToolbarItem.js"></script>
-<script src="../js/FormatToolbar.js"></script>
-<script src="../js/FontMenuItem.js"></script>
-<script src="../js/FontMenu.js"></script>
-<script src="../js/FontMenuButton.js"></script>
-<script src="../js/SpinButton.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/toolbar.css"
+  rel="stylesheet"
+/>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/menuButton.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbarItem.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbar.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuItem.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenu.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuButton.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/SpinButton.js"></script>
 
 
 <link 
@@ -51,7 +57,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -192,7 +198,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
             <div class="group">
               <label class="input"><input id="checkbox" class="item nightmode" type="checkbox" tabindex="-1"> Night Mode</label>
-              <a id="link" class="item link" href="../help.html" tabindex="-1">Help</a>
+              <a id="link" class="item link" href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/help.html" tabindex="-1">Help</a>
             </div>
           </div>
           <label for="textarea1" class="hidden">Text Sample</label><br>
@@ -1016,14 +1022,14 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/toolbar.css" type="text/css">toolbar.css</a></li>
-          <li>CSS: <a href="../css/menuButton.css" type="text/css">menuButton.css</a></li>
-          <li>Javascript: <a href="../js/FormatToolbar.js" type="text/javascript">FormatToolbar.js</a></li>
-          <li>Javascript: <a href="../js/FormatToolbarItem.js" type="text/javascript">FormatToolbarItem.js</a></li>
-          <li>Javascript: <a href="../js/FontMenuButton.js" type="text/javascript">FontMenuButton.js</a></li>
-          <li>Javascript: <a href="../js/FontMenu.js" type="text/javascript">FontMenu.js</a></li>
-          <li>Javascript: <a href="../js/FontMenuItem.js" type="text/javascript">FontMenuItem.js</a></li>
-          <li>Javascript: <a href="../js/SpinButton.js" type="text/javascript">SpinButton.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/toolbar.css" type="text/css">toolbar.css</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/menuButton.css" type="text/css">menuButton.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbar.js" type="text/javascript">FormatToolbar.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbarItem.js" type="text/javascript">FormatToolbarItem.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuButton.js" type="text/javascript">FontMenuButton.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenu.js" type="text/javascript">FontMenu.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuItem.js" type="text/javascript">FontMenuItem.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/SpinButton.js" type="text/javascript">SpinButton.js</a></li>
         </ul>
       </section>
 
@@ -1041,5 +1047,5 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>
