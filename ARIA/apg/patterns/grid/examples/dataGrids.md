@@ -23,17 +23,23 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Data Grid Examples</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/menuButton.css" rel="stylesheet" />
-<link href="../css/dataGrids.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/menuButton.js"></script>
-<script src="../js/dataGrid.js"></script>
-<script src="../js/dataGrids.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/menuButton.css"
+  rel="stylesheet"
+/>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/dataGrids.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/menuButton.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrids.js"></script>
 
 
 <link 
@@ -43,7 +49,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -820,17 +826,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>
             CSS:
             <ul>
-              <li><a href="../css/dataGrids.css" type="tex/css">dataGrids.css</a></li>
-              <li><a href="../css/menuButton.css" type="tex/css">menuButton.css</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/dataGrids.css" type="tex/css">dataGrids.css</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/css/menuButton.css" type="tex/css">menuButton.css</a></li>
             </ul>
           </li>
           <li>
             JavaScript:
             <ul>
-              <li><a href="../js/dataGrid.js" type="text/javascript">dataGrid.js</a></li>
-              <li><a href="../js/dataGrids.js" type="text/javascript">dataGrids.js</a></li>
-              <li><a href="../js/menuButton.js" type="text/javascript">menuButton.js</a></li>
-              <li><a href="../../../../shared/js/utils.js">utils.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js" type="text/javascript">dataGrid.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrids.js" type="text/javascript">dataGrids.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/menuButton.js" type="text/javascript">menuButton.js</a></li>
+              <li><a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
             </ul>
           </li>
         </ul>
@@ -870,5 +876,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

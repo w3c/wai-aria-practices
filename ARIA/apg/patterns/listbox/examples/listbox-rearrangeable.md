@@ -23,16 +23,19 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Example Listboxes with Rearrangeable Options</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/listbox.css" rel="stylesheet" />
-<script src="../../../../shared/js/utils.js"></script>
-<script src="../js/listbox.js"></script>
-<script src="../js/toolbar.js"></script>
-<script src="../js/listbox-rearrangeable.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/toolbar.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-rearrangeable.js"></script>
 
 
 <link 
@@ -42,7 +45,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -476,11 +479,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/listbox.css" type="tex/css">listbox.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css" type="tex/css">listbox.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../js/toolbar.js" type="text/javascript">toolbar.js</a>, <a href="../js/listbox-rearrangeable.js" type="text/javascript">listbox-rearrangeable.js</a>, <a href="../../../../shared/js/utils.js">utils.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/toolbar.js" type="text/javascript">toolbar.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-rearrangeable.js" type="text/javascript">listbox-rearrangeable.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a>
           </li>
         </ul>
       </section>
@@ -510,5 +513,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

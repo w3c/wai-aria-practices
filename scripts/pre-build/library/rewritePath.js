@@ -3,6 +3,7 @@ const determineContentType = require("./determineContentType");
 
 const sourceRoot = path.resolve(__dirname, "../../../_external/aria-practices");
 
+const projectRoot = path.resolve(__dirname, "../../../");
 const buildRoot = path.resolve(__dirname, "../../../ARIA/apg");
 
 const dirname = (sitePath) => {
@@ -32,7 +33,20 @@ const rewriteSourcePath = (sourcePath) => {
     buildRelative = buildRelative.replace(/\.html$/, ".md");
   }
 
-  const buildPath = path.resolve(buildRoot, buildRelative);
+  let buildPath = path.resolve(buildRoot, buildRelative);
+  if (buildRelative.match(/^images\//)) {
+    buildPath = path.resolve(projectRoot, `content-images/wai-aria-practices/${buildRelative}`)
+  }
+  if (buildRelative.match(/^shared\//) ||
+      buildRelative.match(/^patterns\/.*\/examples\/js\//) ||
+      buildRelative.match(/^patterns\/.*\/examples\/css\//) ||
+      buildRelative.match(/^patterns\/.*\/examples\/images\//) ||
+      buildRelative.match(/^patterns\/.*\/examples\/img\//) ||
+      buildRelative.match(/^patterns\/.*\/examples\/imgs\//) ||
+      buildRelative.includes('patterns/feed/examples/feedDisplay.html') ||
+      buildRelative.includes('patterns/toolbar/examples/help.html')) {
+    buildPath = path.resolve(projectRoot, `content-assets/wai-aria-practices/${buildRelative}`)
+  }
 
   const sitePath = getSitePath(buildPath, contentType);
 

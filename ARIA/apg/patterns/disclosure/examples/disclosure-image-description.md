@@ -23,13 +23,16 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Example Disclosure (Show/Hide) for Image Description</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/disclosure-image-description.css" rel="stylesheet" />
-<script src="../js/disclosure-button.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-image-description.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosure-button.js"></script>
 
 
 <link 
@@ -39,7 +42,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -119,7 +122,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <figure>
-            <img src="../images/minard.png" alt="Charles Minard's 1869 chart showing the number of men in Napoleon’s 1812 Russian campaign army, their movements, as well as the temperature they encountered on the return path.">
+            <img src="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/images/minard.png" alt="Charles Minard's 1869 chart showing the number of men in Napoleon’s 1812 Russian campaign army, their movements, as well as the temperature they encountered on the return path.">
             <figcaption>
               <p>
                 Figurative Map of the successive losses in men of the French Army in the Russian campaign 1812-1813.
@@ -421,11 +424,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/disclosure-image-description.css" type="tex/css">disclosure-img-long-description.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-image-description.css" type="tex/css">disclosure-img-long-description.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/disclosure-button.js" type="text/javascript">disclosureButton.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosure-button.js" type="text/javascript">disclosureButton.js</a>
           </li>
         </ul>
       </section>
@@ -444,5 +447,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

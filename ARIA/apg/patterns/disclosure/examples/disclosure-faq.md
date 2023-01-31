@@ -25,13 +25,16 @@ lang: en
   Example Disclosure (Show/Hide) for Answers to Frequently Asked Questions
 </title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/disclosure-faq.css" rel="stylesheet" />
-<script src="../js/disclosure-button.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-faq.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosure-button.js"></script>
 
 
 <link 
@@ -41,7 +44,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -284,11 +287,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/disclosure-faq.css" type="tex/css">disclosure-faq.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-faq.css" type="tex/css">disclosure-faq.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/disclosure-button.js" type="text/javascript">disclosureButton.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosure-button.js" type="text/javascript">disclosureButton.js</a>
           </li>
         </ul>
       </section>
@@ -307,5 +310,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

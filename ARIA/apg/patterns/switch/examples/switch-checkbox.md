@@ -23,13 +23,16 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Switch Example Using HTML Checkbox Input</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/switch-checkbox.css" rel="stylesheet" />
-<script src="../js/switch-checkbox.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/css/switch-checkbox.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch-checkbox.js"></script>
 
 
 <link 
@@ -39,7 +42,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -242,11 +245,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/switch-checkbox.css" type="tex/css">switch-checkbox.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/css/switch-checkbox.css" type="tex/css">switch-checkbox.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/switch-checkbox.js" type="text/javascript">switch-checkbox.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch-checkbox.js" type="text/javascript">switch-checkbox.js</a>
           </li>
         </ul>
       </section>
@@ -265,5 +268,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

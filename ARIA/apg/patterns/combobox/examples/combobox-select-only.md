@@ -23,13 +23,16 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Select-Only Combobox Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/select-only.css" rel="stylesheet" />
-<script src="../js/select-only.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/select-only.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/select-only.js"></script>
 
 
 <link 
@@ -39,7 +42,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -465,11 +468,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/select-only.css" type="text/css">select-only.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/select-only.css" type="text/css">select-only.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/select-only.js" type="text/javascript">select-only.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/select-only.js" type="text/javascript">select-only.js</a>
           </li>
         </ul>
       </section>
@@ -488,5 +491,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

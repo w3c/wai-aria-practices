@@ -23,10 +23,10 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Feed Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -36,7 +36,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -112,7 +112,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <p>The example feed experience is presented on a separate <a href="../feedDisplay.html">feed display page.</a></p>
+          <p>The example feed experience is presented on a separate <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/feedDisplay.html">feed display page.</a></p>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
@@ -261,18 +261,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Javascript and CSS Source Code</h2>
         <p>The following Javascript and CSS is used by the feedDisplay.html page:</p>
         <ul>
-          <li><a href="../css/feedDisplay.css" type="tex/css">feedDisplay.css</a></li>
-          <li>Javascript: <a href="../js/feed.js" type="text/javascript">feed.js</a>, <a href="../js/feedDisplay.js" type="text/javascript">feedDisplay.js</a>, <a href="../js/main.js" type="text/javascript">main.js</a>, <a href="../../../../shared/js/utils.js">utils.js</a></li>
+          <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/css/feedDisplay.css" type="tex/css">feedDisplay.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feed.js" type="text/javascript">feed.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feedDisplay.js" type="text/javascript">feedDisplay.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/main.js" type="text/javascript">main.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
         </ul>
       </section>
 
       <section>
         <h2 id="sc1_label">HTML Source Code</h2>
-        <p>Please open <a href="../feedDisplay.html">feedDisplay.html</a> and view source.</p>
+        <p>Please open <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/feedDisplay.html">feedDisplay.html</a> and view source.</p>
       </section>
     </div>
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

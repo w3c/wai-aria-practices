@@ -23,10 +23,10 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Meter Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -34,8 +34,11 @@ lang: en
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
   crossorigin="anonymous"
 />
-<link rel="stylesheet" href="../css/meter.css" />
-<script src="../js/meter.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/css/meter.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/js/meter.js"></script>
 
 
 <link 
@@ -45,7 +48,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -193,11 +196,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/meter.css" type="text/css">meter.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/css/meter.css" type="text/css">meter.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/meter.js" type="text/javascript">meter.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/js/meter.js" type="text/javascript">meter.js</a>
           </li>
         </ul>
       </section>
@@ -216,5 +219,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

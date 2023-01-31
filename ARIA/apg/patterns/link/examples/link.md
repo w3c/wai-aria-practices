@@ -23,13 +23,16 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Link Examples</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/link.css" rel="stylesheet" />
-<script src="../js/link.js"></script>
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/css/link.css"
+  rel="stylesheet"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/js/link.js"></script>
 
 
 <link 
@@ -39,7 +42,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -134,7 +137,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </th>
               <td><code>img</code> element with <code>alt</code> attribute.</td>
               <td id="ex2">
-                <img tabindex="0" role="link" onclick="goToLink(event, 'https://www.w3.org/')" onkeydown="goToLink(event, 'https://www.w3.org/')" src="../images/w3c-logo.svg" alt="W3C Website">
+                <img tabindex="0" role="link" onclick="goToLink(event, 'https://www.w3.org/')" onkeydown="goToLink(event, 'https://www.w3.org/')" src="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/images/w3c-logo.svg" alt="W3C Website">
               </td>
             </tr>
             <tr>
@@ -219,11 +222,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/link.css" type="tex/css">link.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/css/link.css" type="tex/css">link.css</a>
           </li>
           <li>
             Javascript:
-            <a href="../js/link.js" type="text/javascript">link.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/js/link.js" type="text/javascript">link.js</a>
           </li>
         </ul>
       </section>
@@ -253,5 +256,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

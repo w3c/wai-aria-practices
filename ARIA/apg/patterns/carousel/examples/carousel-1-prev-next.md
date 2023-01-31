@@ -25,13 +25,16 @@ lang: en
   Auto-Rotating Image Carousel Example with Buttons for Slide Control
 </title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link rel="stylesheet" href="../css/carousel-prev-next.css" />
-<script src="../js/carousel-prev-next.js"></script>
+<link
+  rel="stylesheet"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/css/carousel-prev-next.css"
+/>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/js/carousel-prev-next.js"></script>
 
 
 <link 
@@ -41,7 +44,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -124,7 +127,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
           <label for="rotation-paused">
             <input type="checkbox" id="rotation-paused" value="paused" aria-describedby="rotation-paused-desc">
-            Pause auto-rotation on load (<a href="javascript:history.go(0)"><img class="reload" src="../images/reload-icon.png" alt>reload needed</a>)
+            Pause auto-rotation on load (<a href="javascript:history.go(0)"><img class="reload" src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/reload-icon.png" alt>reload needed</a>)
           </label>
           <p id="rotation-paused-desc">
             This option controls whether the carousel is paused or playing on page load.
@@ -185,7 +188,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 6">
                   <div class="carousel-image">
                     <a href="#">
-                      <img src="../images/amsterdamslide__800x600.jpg" alt="Walking Tour in Amsterdam">
+                      <img src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/amsterdamslide__800x600.jpg" alt="Walking Tour in Amsterdam">
                     </a>
                   </div>
 
@@ -205,7 +208,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 6">
                   <div class="carousel-image">
                     <a href="#">
-                      <img src="../images/lands-endslide__800x600.jpg" alt="Land&#039;s End in Cornwall">
+                      <img src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/lands-endslide__800x600.jpg" alt="Land&#039;s End in Cornwall">
                     </a>
                   </div>
 
@@ -225,7 +228,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
                   <div class="carousel-image">
                     <a href="#">
-                      <img src="../images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
+                      <img src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
                     </a>
                   </div>
 
@@ -243,7 +246,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="4 of 6">
                   <div class="carousel-image">
                     <a href="#">
-                      <img src="../images/foyleswarslide__800x600.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
+                      <img src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/foyleswarslide__800x600.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
                     </a>
                   </div>
 
@@ -263,7 +266,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="5 of 6">
                   <div class="carousel-image">
                     <a href="#">
-                      <img src="../images/britcomdavidslide__800x600.jpg" alt="British flag with WILL-TV host David Thiel.">
+                      <img src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/britcomdavidslide__800x600.jpg" alt="British flag with WILL-TV host David Thiel.">
                     </a>
                   </div>
 
@@ -281,7 +284,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="6 of 6">
                   <div class="carousel-image">
                     <a href="#">
-                      <img src="../images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set">
+                      <img src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set">
                     </a>
                   </div>
 
@@ -586,8 +589,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../css/carousel-prev-next.css" type="text/css">carousel-prev-next.css</a></li>
-          <li>Javascript: <a href="../js/carousel-prev-next.js" type="text/javascript">carousel-prev-next.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/css/carousel-prev-next.css" type="text/css">carousel-prev-next.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/js/carousel-prev-next.js" type="text/javascript">carousel-prev-next.js</a></li>
         </ul>
       </section>
 
@@ -605,5 +608,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>
