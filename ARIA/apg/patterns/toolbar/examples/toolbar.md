@@ -198,7 +198,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
             <div class="group">
               <label class="input"><input id="checkbox" class="item nightmode" type="checkbox" tabindex="-1"> Night Mode</label>
-              <a id="link" class="item link" href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/help.html" tabindex="-1">Help</a>
+              <a id="link" class="item link" href="../help.html" tabindex="-1">Help</a>
             </div>
           </div>
           <label for="textarea1" class="hidden">Text Sample</label><br>

@@ -9,7 +9,9 @@ const transformHomepage = require("./library/transformHomepage");
 const transformExampleIndex = require("./library/transformExampleIndex");
 const transformPatternIndex = require("./library/transformPatternIndex");
 const transformPracticeIndex = require("./library/transformPracticeIndex");
-const transformAsset = require("./library/transformAsset");
+const transformImageAsset = require("./library/transformImageAsset");
+const transformHtmlAsset = require("./library/transformHtmlAsset");
+const transformOtherAsset = require("./library/transformOtherAsset");
 
 const preBuild = async () => {
   await emptyBuildFolders();
@@ -35,8 +37,12 @@ const preBuild = async () => {
           return transformPracticeIndex(sourcePath, sourceContents);
         case "about":
           return transformAbout(sourcePath, sourceContents);
-        case "asset":
-          return transformAsset(sourcePath, sourceContents);
+        case "imageAsset":
+          return transformImageAsset(sourcePath, sourceContents);
+        case "htmlAsset":
+          return transformHtmlAsset(sourcePath, sourceContents);
+        case "otherAsset":
+          return transformOtherAsset(sourcePath, sourceContents);
         case "ignored":
           break;
         default:
