@@ -16,7 +16,8 @@ const determineContentType = (sourcePath) => {
     return "imageAsset";
   }
   if (
-    sourcePath.endsWith("feed/examples/feedDisplay.html") ||
+    sourcePath.endsWith("feed/examples/feed-display.html") ||
+    sourcePath.endsWith("feed/examples/feedDisplay.html") || // To be removed
     sourcePath.match(/content\/patterns\/landmarks\/examples\/.+\.html/) ||
     sourcePath.endsWith("toolbar/examples/help.html") ||
     sourcePath.endsWith("shared/templates/example-usage-warning.html")
