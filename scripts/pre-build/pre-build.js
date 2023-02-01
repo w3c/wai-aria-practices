@@ -19,11 +19,6 @@ const preBuild = async () => {
   await recursivelyCopyAllContent({
     forEachFile: (sourcePath, sourceContents) => {
       const contentType = determineContentType(sourcePath);
-      console.log(
-        contentType === "htmlAsset" ? "*** " : "",
-        sourcePath.substr(67),
-        contentType
-      );
 
       switch (contentType) {
         case "pattern":
