@@ -14,7 +14,7 @@ const transformImageAsset = async (sourcePath, sourceContents) => {
 
   return `---
 layout: null
-permalink: ${sitePath}
+permalink: ARIA/apg/${sitePath}
 ---
 ${html.outerHTML}`;
 };
