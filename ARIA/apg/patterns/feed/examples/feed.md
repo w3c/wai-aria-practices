@@ -112,7 +112,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <p>The example feed experience is presented on a separate <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/feedDisplay.html">feed display page.</a></p>
+          <p>The example feed experience is presented on a separate <a href="../feedDisplay.html">feed display page.</a></p>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
@@ -268,7 +268,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="sc1_label">HTML Source Code</h2>
-        <p>Please open <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/feedDisplay.html">feedDisplay.html</a> and view source.</p>
+        <p>Please open <a href="../feedDisplay.html">feedDisplay.html</a> and view source.</p>
       </section>
     </div>
   

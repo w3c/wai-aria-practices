@@ -148,7 +148,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <div id="grid-nux" class="grid-nux hidden" role="region" aria-label="Grid Instructions" tabindex="0">
               <p class="grid-nux-header">Move keyboard focus inside a grid with arrow keys.</p>
               <p class="indicator_description">
-                <img src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/imgs/black_keys.png" width="100" alt="Arrow keypad" class="indicator_graphic">
+                <img src="../../../../../../content-images/wai-aria-practices/patterns/grid/examples/imgs/black_keys.png" width="100" alt="Arrow keypad" class="indicator_graphic">
               </p>
               <p>
                 This focus ring means arrow key navigation is available.

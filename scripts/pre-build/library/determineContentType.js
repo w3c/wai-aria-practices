@@ -9,13 +9,22 @@ const determineContentType = (sourcePath) => {
     return "about";
   }
   if (
-    !sourcePath.endsWith("html") ||
-    sourcePath.includes("landmarks/examples/") ||
+    sourcePath.endsWith("svg") ||
+    sourcePath.endsWith("png") ||
+    sourcePath.endsWith("jpg")
+  ) {
+    return "imageAsset";
+  }
+  if (
     sourcePath.endsWith("feed/examples/feedDisplay.html") ||
+    sourcePath.match(/content\/patterns\/landmarks\/examples\/.+\.html/) ||
     sourcePath.endsWith("toolbar/examples/help.html") ||
     sourcePath.endsWith("shared/templates/example-usage-warning.html")
   ) {
-    return "asset";
+    return "htmlAsset";
+  }
+  if (!sourcePath.endsWith("html")) {
+    return "otherAsset";
   }
   if (sourcePath.match(/content\/practices\/.+\/.+-practice\.html$/)) {
     return "practice";
