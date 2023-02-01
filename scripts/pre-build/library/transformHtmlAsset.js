@@ -1,6 +1,6 @@
 const { parse: parseHtml } = require("node-html-parser");
 const rewriteElementPaths = require("./rewriteElementPaths");
-const {rewriteSourcePath} = require("./rewritePath");
+const { rewriteSourcePath } = require("./rewritePath");
 
 const transformImageAsset = async (sourcePath, sourceContents) => {
   const { sitePath } = rewriteSourcePath(sourcePath);
@@ -14,7 +14,7 @@ const transformImageAsset = async (sourcePath, sourceContents) => {
 
   return `---
 layout: null
-permalink: ARIA/apg/${sitePath}
+permalink: /ARIA/apg/${sitePath}
 ---
 ${html.outerHTML}`;
 };
