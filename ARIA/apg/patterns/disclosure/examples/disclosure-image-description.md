@@ -122,7 +122,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <figure>
-            <img src="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/images/minard.png" alt="Charles Minard's 1869 chart showing the number of men in Napoleon’s 1812 Russian campaign army, their movements, as well as the temperature they encountered on the return path.">
+            <img src="../../../../../../content-images/wai-aria-practices/patterns/disclosure/examples/images/minard.png" alt="Charles Minard's 1869 chart showing the number of men in Napoleon’s 1812 Russian campaign army, their movements, as well as the temperature they encountered on the return path.">
             <figcaption>
               <p>
                 Figurative Map of the successive losses in men of the French Army in the Russian campaign 1812-1813.

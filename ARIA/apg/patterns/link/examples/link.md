@@ -137,7 +137,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </th>
               <td><code>img</code> element with <code>alt</code> attribute.</td>
               <td id="ex2">
-                <img tabindex="0" role="link" onclick="goToLink(event, 'https://www.w3.org/')" onkeydown="goToLink(event, 'https://www.w3.org/')" src="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/images/w3c-logo.svg" alt="W3C Website">
+                <img tabindex="0" role="link" onclick="goToLink(event, 'https://www.w3.org/')" onkeydown="goToLink(event, 'https://www.w3.org/')" src="../../../../../../content-images/wai-aria-practices/patterns/link/examples/images/w3c-logo.svg" alt="W3C Website">
               </td>
             </tr>
             <tr>

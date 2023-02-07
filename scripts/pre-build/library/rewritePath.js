@@ -29,23 +29,21 @@ const rewriteSourcePath = (sourcePath) => {
   if (contentType === "ignored") {
     return { githubPath, buildPath: null, sitePath: null };
   }
-  if (contentType !== "asset") {
+  if (contentType !== "htmlAsset") {
     buildRelative = buildRelative.replace(/\.html$/, ".md");
   }
 
   let buildPath = path.resolve(buildRoot, buildRelative);
-  if (buildRelative.match(/^images\//)) {
-    buildPath = path.resolve(projectRoot, `content-images/wai-aria-practices/${buildRelative}`)
-  }
-  if (buildRelative.match(/^shared\//) ||
-      buildRelative.match(/^patterns\/.*\/examples\/js\//) ||
-      buildRelative.match(/^patterns\/.*\/examples\/css\//) ||
-      buildRelative.match(/^patterns\/.*\/examples\/images\//) ||
-      buildRelative.match(/^patterns\/.*\/examples\/img\//) ||
-      buildRelative.match(/^patterns\/.*\/examples\/imgs\//) ||
-      buildRelative.includes('patterns/feed/examples/feedDisplay.html') ||
-      buildRelative.includes('patterns/toolbar/examples/help.html')) {
-    buildPath = path.resolve(projectRoot, `content-assets/wai-aria-practices/${buildRelative}`)
+  if (contentType === "imageAsset") {
+    buildPath = path.resolve(
+      projectRoot,
+      `content-images/wai-aria-practices/${buildRelative}`
+    );
+  } else if (contentType === "otherAsset") {
+    buildPath = path.resolve(
+      projectRoot,
+      `content-assets/wai-aria-practices/${buildRelative}`
+    );
   }
 
   const sitePath = getSitePath(buildPath, contentType);
@@ -76,7 +74,9 @@ const getSitePath = (buildPath, contentType) => {
       return buildRelative.replace(/practices\/practices\.md/, "practices/");
     case "about":
       return buildRelative.replace(/about\/about\.md/, "about/");
-    case "asset":
+    case "imageAsset":
+    case "htmlAsset":
+    case "otherAsset":
       return buildRelative;
     case "ignored":
       return null;
