@@ -100,9 +100,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     >
         <h2>Examples</h2>
         <ul>
-          <li><a href="examples/LayoutGrids/">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
-          <li><a href="examples/dataGrids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
-          <li><a href="examples/advancedDataGrid/">Advanced Data Grid Example</a>: Example of a grid with behaviors and features similar to a typical spreadsheet, including cell and row selection.</li>
+          <li><a href="examples/layout-grids/">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
+          <li><a href="examples/data-grids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
+          <li><a href="examples/advanced-data-grid/">Advanced Data Grid Example</a>: Example of a grid with behaviors and features similar to a typical spreadsheet, including cell and row selection.</li>
         </ul>
       </section>
 
