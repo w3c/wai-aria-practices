@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treegrid/examples/treegrid-1/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -127,7 +127,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>The following example demonstrates how the <a href="../../">Treegrid Pattern</a> can be used to make an interactive tree that enables users to both navigate the hierarchical structure of email conversations and also navigate elements that describe each email, such as subject and sender.</p>
         <p>Similar examples include:</p>
         <ul>
-          <li><a href="../../../grid/examples/dataGrids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
+          <li><a href="../../../grid/examples/data-grids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
           <li><a href="../../../treeview/examples/treeview-1a/">File Directory Treeview using <em>computed</em> properties</a></li>
           <li><a href="../../../treeview/examples/treeview-1b/">File Directory Treeview using <em>declared</em> properties</a></li>
           <li><a href="../../../treeview/examples/treeview-navigation/">Navigation Treeview Example</a></li>
