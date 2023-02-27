@@ -23,9 +23,9 @@ lang: en
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>Grid (Interactive Tabular Data or Layout Container) Pattern</title>
 
-<script src="../../shared/js/highlight.pack.js"></script>
-<script src="../../shared/js/app.js"></script>
-<script src="../../shared/js/skipto.js"></script>
+<script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -35,7 +35,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -100,9 +100,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     >
         <h2>Examples</h2>
         <ul>
-          <li><a href="examples/LayoutGrids/">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
-          <li><a href="examples/dataGrids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
-          <li><a href="examples/advancedDataGrid/">Advanced Data Grid Example</a>: Example of a grid with behaviors and features similar to a typical spreadsheet, including cell and row selection.</li>
+          <li><a href="examples/layout-grids/">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>
+          <li><a href="examples/data-grids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
+          <li><a href="examples/advanced-data-grid/">Advanced Data Grid Example</a>: Example of a grid with behaviors and features similar to a typical spreadsheet, including cell and row selection.</li>
         </ul>
       </section>
 
@@ -467,5 +467,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

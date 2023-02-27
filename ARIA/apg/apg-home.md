@@ -28,7 +28,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 
@@ -61,7 +61,7 @@ lang: en
       </p>
             <a href="patterns/" class="button-link button-link-white">View Patterns</a>
           </div>
-          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="images/index-1.svg">
+          <img alt="A laptop screen fills with an accessibility icon and emits a checkmark." src="../../content-images/wai-aria-practices/images/index-1.svg">
         </div>
       </div>
       <div class="detail-3"></div>
@@ -86,7 +86,7 @@ lang: en
                   <a href="patterns/" aria-label="Learn more about APG patterns and examples" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A menagerie of widgets." src="images/index-2.svg">
+                  <img alt="A menagerie of widgets." src="../../content-images/wai-aria-practices/images/index-2.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -97,7 +97,7 @@ lang: en
                   <a href="practices/landmark-regions/" aria-label="Learn more about ARIA landmarks" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A document flies apart into chunks." src="images/index-3.svg">
+                  <img alt="A document flies apart into chunks." src="../../content-images/wai-aria-practices/images/index-3.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -108,7 +108,7 @@ lang: en
                   <a href="practices/names-and-descriptions/" aria-label="Learn more about accessible names and descriptions" class="button-link">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="Indicators delve inside a document." src="images/index-4.svg">
+                  <img alt="Indicators delve inside a document." src="../../content-images/wai-aria-practices/images/index-4.svg">
                 </div>
               </div><div class="resource-item">
                 <div class="resource-item-content">
@@ -119,7 +119,7 @@ lang: en
                   <a class="button-link" href="practices/" aria-label="Learn more about APG practices">Learn More</a>
                 </div>
                 <div class="resource-item-img">
-                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="images/index-5.svg">
+                  <img alt="A box with an accessibility label is chock full of widgets and document bits." src="../../content-images/wai-aria-practices/images/index-5.svg">
                 </div>
               </div>
       </div>
@@ -140,7 +140,7 @@ lang: en
       <div class="collaboration-items">
         
                   <div class="collaboration-item">
-                    <img alt="An icon showing three nodes connecting." src="images/index-6.svg">
+                    <img alt="An icon showing three nodes connecting." src="../../content-images/wai-aria-practices/images/index-6.svg">
                     <h3>Join the Task Force</h3>
                     <p>
             To join the APG Task Force, individuals need to first join the W3C ARIA Working Group.
@@ -150,7 +150,7 @@ lang: en
                   </div>
                 
                   <div class="collaboration-item">
-                    <img alt="An icon showing two human shapes carrying a burden." src="images/index-7.svg">
+                    <img alt="An icon showing two human shapes carrying a burden." src="../../content-images/wai-aria-practices/images/index-7.svg">
                     <h3>Contribute via GitHub</h3>
                     <p>
             Many valuable contributions are made by people who find or raise issues of interest in our GitHub repository and then submit proposed changes via a GitHub pull request.
@@ -162,7 +162,7 @@ lang: en
 
         <div class="collaboration-item mailing-list-item">
           <div class="collaboration-detail-4 detail-4"></div>
-          <img alt="A notification bell icon appears over an email icon." src="images/index-8.svg">
+          <img alt="A notification bell icon appears over an email icon." src="../../content-images/wai-aria-practices/images/index-8.svg">
           <div>
             <h3>Mailing Lists</h3>
             <p>
@@ -179,5 +179,5 @@ lang: en
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

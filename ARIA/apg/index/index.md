@@ -23,9 +23,9 @@ lang: en
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>Index</title>
 
-<script src="../shared/js/examples.js"></script>
-<script src="../shared/js/highlight.pack.js"></script>
-<script src="../shared/js/app.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
 
 <link 
@@ -35,7 +35,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -184,8 +184,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
-                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
               </ul>
             </td>
           </tr>
@@ -194,7 +194,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
-                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
               </ul>
             </td>
@@ -369,7 +369,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
-                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../patterns/table/examples/table/">Table</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
               </ul>
@@ -549,11 +549,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>aria-colcount</code></td>
-            <td><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></td>
+            <td><a href="../patterns/grid/examples/data-grids/">Data Grid</a></td>
           </tr>
           <tr>
             <td><code>aria-colindex</code></td>
-            <td><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></td>
+            <td><a href="../patterns/grid/examples/data-grids/">Data Grid</a></td>
           </tr>
           <tr>
             <td><code>aria-controls</code></td>
@@ -720,8 +720,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
                 <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
-                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
-                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -831,8 +831,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-rowcount</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
-                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
               </ul>
             </td>
           </tr>
@@ -840,8 +840,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-rowindex</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
-                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
               </ul>
             </td>
           </tr>
@@ -882,7 +882,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-sort</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../patterns/table/examples/sortable-table/">Sortable Table</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
@@ -952,5 +952,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

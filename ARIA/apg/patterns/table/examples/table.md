@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/table/examples/table/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/16'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/16'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -23,12 +23,15 @@ lang: en
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Table Example</title>
 
-<script src="../../../../shared/js/examples.js"></script>
-<script src="../../../../shared/js/highlight.pack.js"></script>
-<script src="../../../../shared/js/app.js"></script>
-<script src="../../../../shared/js/skipto.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link href="../css/table.css" rel="stylesheet" />
+<link
+  href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/table.css"
+  rel="stylesheet"
+/>
 
 
 <link 
@@ -38,7 +41,7 @@ lang: en
 <!-- Code highlighting styles -->
 <link 
   rel="stylesheet"
-  href="{{ '/ARIA/apg/shared/css/github.css' | relative_url }}"
+  href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
 
 <script>
@@ -103,7 +106,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>Similar examples include:</p>
         <ul>
           <li><a href="../sortable-table/">Sortable Table Example</a>: Basic HTML table that illustrates implementation of <code>aria-sort</code> in the headers of sortable columns.</li>
-          <li><a href="../../../grid/examples/dataGrids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
+          <li><a href="../../../grid/examples/data-grids/">Data Grid Examples</a>: Three example implementations of grid that include features relevant to presenting tabular information, such as content editing, sort, and column hiding.</li>
         </ul>
       </section>
 
@@ -232,7 +235,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul id="css_js_files">
           <li>
             CSS:
-            <a href="../css/table.css" type="tex/css">table.css</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/table.css" type="tex/css">table.css</a>
           </li>
           <li>Javascript: Not applicable.</li>
         </ul>
@@ -252,5 +255,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   
 </div>
 <script 
-  src="{{ '/ARIA/apg/shared/js/skipto.js' | relative_url }}"
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
 ></script>

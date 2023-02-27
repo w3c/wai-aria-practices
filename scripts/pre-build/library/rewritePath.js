@@ -3,6 +3,7 @@ const determineContentType = require("./determineContentType");
 
 const sourceRoot = path.resolve(__dirname, "../../../_external/aria-practices");
 
+const projectRoot = path.resolve(__dirname, "../../../");
 const buildRoot = path.resolve(__dirname, "../../../ARIA/apg");
 
 const dirname = (sitePath) => {
@@ -28,11 +29,22 @@ const rewriteSourcePath = (sourcePath) => {
   if (contentType === "ignored") {
     return { githubPath, buildPath: null, sitePath: null };
   }
-  if (contentType !== "asset") {
+  if (contentType !== "htmlAsset") {
     buildRelative = buildRelative.replace(/\.html$/, ".md");
   }
 
-  const buildPath = path.resolve(buildRoot, buildRelative);
+  let buildPath = path.resolve(buildRoot, buildRelative);
+  if (contentType === "imageAsset") {
+    buildPath = path.resolve(
+      projectRoot,
+      `content-images/wai-aria-practices/${buildRelative}`
+    );
+  } else if (contentType === "otherAsset") {
+    buildPath = path.resolve(
+      projectRoot,
+      `content-assets/wai-aria-practices/${buildRelative}`
+    );
+  }
 
   const sitePath = getSitePath(buildPath, contentType);
 
@@ -62,7 +74,9 @@ const getSitePath = (buildPath, contentType) => {
       return buildRelative.replace(/practices\/practices\.md/, "practices/");
     case "about":
       return buildRelative.replace(/about\/about\.md/, "about/");
-    case "asset":
+    case "imageAsset":
+    case "htmlAsset":
+    case "otherAsset":
       return buildRelative;
     case "ignored":
       return null;
