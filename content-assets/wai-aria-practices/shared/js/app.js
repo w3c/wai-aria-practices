@@ -7,10 +7,10 @@
   hljs.initHighlightingOnLoad();
 
   // Add usage warning to all examples
-  // window.addEventListener('DOMContentLoaded', addExampleUsageWarning, false);// Line edited by pre-build script
+  // window.addEventListener('DOMContentLoaded', addExampleUsageWarning, false); // Line edited by pre-build script
 
   // Rewrite links so they point to the proper spec document
-  // window.addEventListener('DOMContentLoaded', resolveSpecLinks, false);// Line edited by pre-build script
+  // window.addEventListener('DOMContentLoaded', resolveSpecLinks, false); // Line edited by pre-build script
 
   // Support levels iframes should not show scrollbars, so a message with the
   // correct height will be posted from the iframe.
@@ -55,7 +55,7 @@
     }
     const iframe = document.querySelector(`.${data.iframe}`);
     if (!iframe) return;
-    const magicNumberAdjustment = 5;
+    const magicNumberAdjustment = 35;
     iframe.style.height = `${data.height + magicNumberAdjustment}px`;
   }
 })();
