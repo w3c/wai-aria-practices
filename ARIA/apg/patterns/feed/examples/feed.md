@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -62,10 +62,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
     <details id="support-notice">
       <summary>
-        <p>
-          The code in this example is not intended for production environments.
-          Before using it for any purpose, read this to understand why.
-        </p>
+        The code in this example is not intended for production environments.
+        Before using it for any purpose, read this to understand why.
       </summary>
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
@@ -112,7 +110,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <p>The example feed experience is presented on a separate <a href="../feed-display.html">feed display page.</a></p>
+          <p>The example feed experience is presented on a separate <a href="../feedDisplay.html">feed display page.</a></p>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
@@ -259,7 +257,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>Javascript and CSS Source Code</h2>
-        <p>The following Javascript and CSS is used by the feed-display.html page:</p>
+        <p>The following Javascript and CSS is used by the feedDisplay.html page:</p>
         <ul>
           <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/css/feedDisplay.css" type="tex/css">feedDisplay.css</a></li>
           <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feed.js" type="text/javascript">feed.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feedDisplay.js" type="text/javascript">feedDisplay.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/main.js" type="text/javascript">main.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
@@ -268,7 +266,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="sc1_label">HTML Source Code</h2>
-        <p>Please open <a href="../feed-display.html">feed-display.html</a> and view source.</p>
+        <p>Please open <a href="../feedDisplay.html">feedDisplay.html</a> and view source.</p>
       </section>
     </div>
   
