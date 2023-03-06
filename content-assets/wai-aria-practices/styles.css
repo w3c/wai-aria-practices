@@ -831,3 +831,23 @@ body.page-about main {
     margin-right: 2em;
   }
 }
+
+
+/* hack for fixing navbar on pages, has to stay at the end */
+
+  div.default-grid.with-gap.leftcol {
+    display: grid !important;
+  }
+
+  nav.box.nav-hack.sidebar.standalone-resource__sidebar {
+    margin-left: 32px;
+  }
+
+  @media screen and (max-width: 35em) {
+    div.default-grid.with-gap.leftcol {
+      display: block !important;
+    }
+    nav.box.nav-hack.sidebar.standalone-resource__sidebar {
+      margin-left: 0px;
+    }
+  }
