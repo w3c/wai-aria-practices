@@ -2,7 +2,7 @@
 .page-practices .standalone-resource__main,
 .default-grid.with-gap.leftcol .standalone-resource__prevnext,
 body:not(.has-sidebar) .leftcol .standalone-resource__main { 
-  grid-column: 2/10 !important;
+  grid-column: 2/10;
 }
 
 
