@@ -38,7 +38,8 @@ a.skip-main:focus, a.skip-main:active {
 .standalone-resource__sidebar {
   margin-bottom: 24px;
 }
-@media (min-width: 960px) {
+
+@media (min-width: 60em) {
   .standalone-resource__sidebar {
       position: sticky;
       top: 16px;
@@ -91,13 +92,13 @@ ul.tiles {
   row-gap: 50px;
   padding: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 60em) {
   ul.tiles {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 70em) {
   ul.tiles {
     grid-template-columns: 32% 32% 32%;
     column-gap: 2%;
@@ -143,6 +144,15 @@ li.tile h2.tile-name {
 
 li.tile img {
   margin-right: 1em;
+}
+
+@media screen and (max-width: 23em) {
+  li.tile h2.tile-name {
+    flex-direction: column;
+  }
+  li.tile h2.tile-name span {
+    margin-top: 0.5em;
+  }
 }
 
 li.tile .tile-introduction {
@@ -208,7 +218,7 @@ ul.content-list > li > p:last-child {
 .sidebar-left {
   min-width: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   .sidebar-container {
     display: block;
   }
@@ -546,7 +556,7 @@ footer + .info {
   margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   #ex1 .page .body {
     display: block;
   }
@@ -819,13 +829,13 @@ table.sortable th button:focus {
   width: 50%;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 23em) {
   .read-this-first img {
     width: 178px;
   }
 }
 
-@media screen and (min-width: 550px) { 
+@media screen and (min-width: 35em) { 
   .read-this-first {
     overflow: visible;
   }
@@ -839,14 +849,14 @@ table.sortable th button:focus {
   }
 }
 
-@media screen and (min-width: 610px) { 
+@media screen and (min-width: 35em) { 
   .read-this-first {
     margin-top: 3em;
   }
 
 }
 
-@media screen and (min-width: 945px) { 
+@media screen and (min-width: 60em) { 
   .read-this-first {
     margin-top: 4em;
     padding: 1em;
