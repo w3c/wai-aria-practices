@@ -64,6 +64,8 @@ const getSitePath = (buildPath, contentType) => {
         /practices\/([^/]+)\/[^/]+\.md/,
         "practices/$1/"
       );
+    case "aboutPage":
+      return buildRelative.replace(/about\/[^/]+\/([^/]+)\.md/, "about/$1/");
     case "homepage":
       return buildRelative.replace(/apg-home\.md/, "");
     case "exampleIndex":
@@ -72,7 +74,7 @@ const getSitePath = (buildPath, contentType) => {
       return buildRelative.replace(/patterns\/patterns\.md/, "patterns/");
     case "practiceIndex":
       return buildRelative.replace(/practices\/practices\.md/, "practices/");
-    case "about":
+    case "aboutIndex":
       return buildRelative.replace(/about\/about\.md/, "about/");
     case "imageAsset":
     case "htmlAsset":

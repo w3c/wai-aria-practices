@@ -6,12 +6,20 @@ const rewriteElementPaths = require("./rewriteElementPaths");
 const { rewriteSourcePath } = require("./rewritePath");
 const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 
-const transformAbout = async (sourcePath, sourceContents) => {
+const transformAboutContent = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
 
   const title = html.querySelector("h1").innerHTML;
   html.querySelector("h1").remove();
+
+  const isAboutIndexPage = sourcePath.endsWith("about.html");
+  if (isAboutIndexPage) {
+    html.querySelector("main ul").classList.add("content-list");
+  }
+
+  const sidebarWouldBeUseless = html.querySelectorAll("h2").length < 2;
+  enableSidebar = !(isAboutIndexPage || sidebarWouldBeUseless);
 
   removeConflictingCss(html);
 
@@ -24,9 +32,9 @@ const transformAbout = async (sourcePath, sourceContents) => {
     content: wrapTablesWithResponsiveDiv(
       removeDuplicateMainTag(html.querySelector("body").innerHTML)
     ),
-    enableSidebar: true,
+    enableSidebar,
     head: html.querySelector("head").innerHTML,
   });
 };
 
-module.exports = transformAbout;
+module.exports = transformAboutContent;

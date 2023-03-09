@@ -79,7 +79,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices)\//
+      /\/(patterns|practices|about)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';

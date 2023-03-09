@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-1b/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 27 October 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -64,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices)\//
+      /\/(patterns|practices|about)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
