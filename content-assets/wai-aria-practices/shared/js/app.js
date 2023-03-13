@@ -55,7 +55,8 @@
     }
     const iframe = document.querySelector(`.${data.iframe}`);
     if (!iframe) return;
-    const magicNumberAdjustment = 35;
-    iframe.style.height = `${data.height + magicNumberAdjustment}px`;
+    // const magicNumberAdjustment = 35;
+    // iframe.style.height = `${data.height + magicNumberAdjustment}px`;
+    iframe.style.height = data.height + 'px';
   }
 })();
