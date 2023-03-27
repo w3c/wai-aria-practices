@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/button/examples/button/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 13 March 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 27 March 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -271,7 +271,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Assistive Technology Support</h2>
         <h3>Command Button</h3>
         <iframe class="support-levels-command-button"
-          src="https://aria-at-app-sandbox.bocoup.com/embed/reports/command-button"
+          src="https://aria-at.w3.org/embed/reports/command-button"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -279,7 +279,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <h3>Toggle Button</h3>
         <iframe class="support-levels-toggle-button"
-          src="https://aria-at-app-sandbox.bocoup.com/embed/reports/toggle-button"
+          src="https://aria-at.w3.org/embed/reports/toggle-button"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
