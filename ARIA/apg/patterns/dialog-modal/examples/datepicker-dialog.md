@@ -496,7 +496,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tbody>
               <tr data-test-id="textbox-aria-describedby">
                 <td></td>
-                <th scope="row"><code>aria-describedby="IDREF"</code></th>
+                <th scope="row"><code>aria-describedby="ID_REFERENCE"</code></th>
                 <td><code>input</code></td>
                 <td>Identifies the element that provides an accessible description for the textbox, enabling assistive technologies to associate the date format description with the input.</td>
               </tr>
@@ -640,7 +640,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </tr>
               <tr data-test-id="grid-aria-labelledby">
                 <td></td>
-                <th scope="row"><code>aria-labelledby=&quot;IDREF&quot;</code></th>
+                <th scope="row"><code>aria-labelledby="ID_REFERENCE"</code></th>
                 <td><code>table</code></td>
                 <td>Identifies the element that provides the accessible name for the <code>grid</code>.</td>
               </tr>
