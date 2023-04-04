@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 14 March 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 4 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -408,7 +408,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Changes the grid of dates to the previous month.</li>
                     <li>
-                      Sets focus on the same day of the same week.
+                      Moves focus to the day of the month that has the same number.
                       If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
@@ -418,9 +418,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <th><kbd>Shift + Page Up</kbd></th>
                 <td>
                   <ul>
-                    <li>Changes the grid of dates to the previous Year.</li>
+                    <li>Changes the grid of dates to the same month in the previous year.</li>
                     <li>
-                      Sets focus on the same day of the same week.
+                      Moves focus to the day of the month that has the same number.
                       If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
@@ -432,7 +432,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Changes the grid of dates to the next month.</li>
                     <li>
-                      Sets focus on the same day of the same week.
+                      Moves focus to the day of the month that has the same number.
                       If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
@@ -442,9 +442,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <th><kbd>Shift + Page Down</kbd></th>
                 <td>
                   <ul>
-                    <li>Changes the grid of dates to the next Year.</li>
+                    <li>Changes the grid of dates to the same month in the next year.</li>
                     <li>
-                      Sets focus on the same day of the same week.
+                      Moves focus to the day of the month that has the same number.
                       If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
