@@ -6,7 +6,7 @@ ref: /ARIA/apg/about/aria-basics/
 github:
   repository: w3c/aria-practices
   branch: main
-  path: content/about/introduction/aria-basics.html
+  path: content/about/aria-basics/aria-basics.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/about/aria-basics/
 
@@ -65,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="what-is-aria">
         <h2>What is ARIA?</h2>
         <p>
-          ARIA, which   stands for Accessible Rich Internet Applications, refers to a set of more than 150 declarations that can be added into web page code so assistive technologies, such as screen readers, can understand how to present the page.
+          ARIA, which stands for Accessible Rich Internet Applications, refers to a set of more than 150 declarations that can be added into web page code so assistive technologies, such as screen readers, can understand how to present the page.
           For example, the text "Home" might be visually presented as a heading, an interactive link or button, or as the label for a phone number.
           If the web code does not declare what the element containing that text represents, a screen reader cannot present it to a blind user in an accessible way.
         </p>

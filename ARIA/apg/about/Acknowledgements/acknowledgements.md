@@ -6,7 +6,7 @@ ref: /ARIA/apg/about/acknowledgements/
 github:
   repository: w3c/aria-practices
   branch: main
-  path: content/about/Acknowledgements/acknowledgements.html
+  path: content/about/acknowledgements/acknowledgements.html
 feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/about/acknowledgements/
 

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/carousel/examples/carousel-1-prev-next/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 27 October 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 21 March 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -464,6 +464,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Informs assistive technologies to identify the element as a &quot;carousel&quot; rather than a &quot;region.&quot;</li>
                   <li>Affects how the assistive technology renders the role but does not affect functionality, such as commands for navigating to landmark regions.</li>
+                  <li>NOTE: The <code>aria-roledescription</code> value is defined using the language of the page and should be localized by the author.</li>
                 </ul>
               </td>
             </tr>
@@ -536,6 +537,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Informs assistive technologies to identify the element as a &quot;slide&quot; rather than a &quot;group.&quot;</li>
                   <li>Affects how the assistive technology renders the role but does not remove any assistive technology functions related to <code>group</code> elements.</li>
+                  <li>NOTE: The <code>aria-roledescription</code> value is defined using the language of the page and should be localized by the author.</li>
                 </ul>
               </td>
             </tr>
