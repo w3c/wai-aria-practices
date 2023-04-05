@@ -60,7 +60,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <div>
       
       <p>
-        A solid understanding of what ARIA is, what accessibility semantics are, and  their purpose and limitations can facilitate success when applying guidance provided by the APG.
+        A solid understanding of what ARIA is, what accessibility semantics are, and their purpose and limitations can facilitate success when applying guidance provided by the APG.
       </p>
       <section id="what-is-aria">
         <h2>What is ARIA?</h2>

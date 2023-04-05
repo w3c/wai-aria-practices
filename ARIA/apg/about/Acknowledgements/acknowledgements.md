@@ -187,7 +187,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>Philipp Rudloff</li>
           <li>Joseph Scheuhammer</li>
           <li>Nick Schonning</li>
-          <li>thomascorthals</li>
+          <li>Thomas Corthals</li>
           <li>Christopher Tryens</li>
         </ul>
       </section>
