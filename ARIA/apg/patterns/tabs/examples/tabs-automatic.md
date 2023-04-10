@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-automatic/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 2 March 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 10 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -195,7 +195,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
           <li>
-            To insure the tab content remains visible when the screen is magnified, the width of the tabs and tab panels are defined using a percentage of the screen width.  As the page is magnified the height of the tabs increases and the tab content re-flows to the new dimensions of the tab.
+            To ensure the tab content remains visible when the screen is magnified, the width of the tabs and tab panels are defined using a percentage of the screen width.  As the page is magnified the height of the tab increases and the tab content re-flows to the new dimensions of the tab.
           </li>
         </ul>
       </section>
