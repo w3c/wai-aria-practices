@@ -67,7 +67,11 @@ const getSitePath = (buildPath, contentType) => {
     case "aboutPage":
       const match = buildRelative.match(/about\/([^/]+)\/([^/]+)\.md/);
       if (!match) throw new Error("Unexpected about page error");
-      if (match[1] === match[2]) {
+      if (
+        match[1] === match[2] ||
+        (match[1] === "coverage-and-quality" &&
+          match[2] === "coverage-and-quality-report")
+      ) {
         return buildRelative.replace(
           /about\/([^/]+)\/([^/]+)\.md/,
           "about/$1/"

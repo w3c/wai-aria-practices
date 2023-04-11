@@ -89,11 +89,11 @@ lang: en
           </p>
         </li>
         <li>
-          <h2><a href="coverage-and-quality/coverage-and-quality-report/">Coverage and Quality Report</a></h2>
+          <h2><a href="coverage-and-quality/">Coverage and Quality Report</a></h2>
           <p>
             Objectives of the APG Task Force include providing guidance or examples for all ARIA attributes and doing so with code that implements practices documented in the APG code guide.
             As the APG is revised, the build process updates our view of Progress toward these objectives in the
-            <a href="coverage-and-quality/coverage-and-quality-report/">Coverage and Quality Report</a>.
+            <a href="coverage-and-quality/">Coverage and Quality Report</a>.
           </p>
         </li>
       </ul>

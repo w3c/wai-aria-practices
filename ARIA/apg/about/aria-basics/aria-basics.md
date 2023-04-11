@@ -61,7 +61,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
       <p>
         A solid understanding of what ARIA is, what accessibility semantics are, and their purpose and limitations can facilitate success when applying guidance provided by the APG.
-        <a href="aria-advanced/">Advanced here.</a>
       </p>
       <section id="what-is-aria">
         <h2>What is ARIA?</h2>
@@ -87,7 +86,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           This is accomplished by encoding the element in a way that enables browsers to determine that the accessibility role of the element is <q>button</q>.
           Similarly, another accessibility semantic browsers must be able to convey for the search icon is its accessible name, which inturn enables screen reader users to know the purpose of the button.
         </p>
-        <p>
+        <p> 
           The types of accessibility semantics that may be required to make an element accessible include:
         </p>
         <ul>
