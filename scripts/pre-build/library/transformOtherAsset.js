@@ -4,12 +4,12 @@ const transformAsset = async (sourcePath, sourceContents) => {
       .replace(
         "window.addEventListener('DOMContentLoaded', addExampleUsageWarning, false);",
         "// window.addEventListener('DOMContentLoaded', addExampleUsageWarning, false);" +
-          "// Line edited by pre-build script"
+          " // Line edited by pre-build script"
       )
       .replace(
         "window.addEventListener('DOMContentLoaded', resolveSpecLinks, false);",
         "// window.addEventListener('DOMContentLoaded', resolveSpecLinks, false);" +
-          "// Line edited by pre-build script"
+          " // Line edited by pre-build script"
       );
   }
   if (sourcePath.endsWith("content/shared/js/skipto.js")) {
