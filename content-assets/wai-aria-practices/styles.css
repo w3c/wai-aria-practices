@@ -162,6 +162,44 @@ li.tile .tile-introduction {
   margin-top: 1.25em;
 }
 
+ul.content-list {
+  list-style-type: none;
+  padding: 0 1.5em;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid var(--line-grey);
+}
+
+ul.content-list > li {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid var(--line-grey);
+}
+ul.content-list > li:last-child {
+  border-bottom: none;
+}
+
+ul.content-list > li > h2,
+ul.content-list > li > h3 {
+  border-bottom: none;
+  margin: 1.5rem 0 0.75rem 0;
+  line-height: 1;
+  font-size: 1.3em;
+}
+ul.content-list > li > h2 > a,
+ul.content-list > li > h3 > a {
+  text-decoration: none;
+  color: var(--wai-green);
+}
+ul.content-list > li > p {
+  margin: 0 0 0.75em 0;
+}
+ul.content-list > li > p a {
+  color: var(--w3c-blue);
+}
+ul.content-list > li > p:last-child {
+  margin-bottom: 0;
+}
+
 /* Sidebar Content */
 .sidebar-container {
   display: grid;
@@ -761,11 +799,6 @@ table.sortable th button:focus {
 }
 [dir=ltr] #support-notice summary > :first-child:before {
   display: none;
-}
-
-/* About Page */
-body.page-about main {
-  max-width: 750px;
 }
 
 /* Read This First Banner */

@@ -64,6 +64,24 @@ const getSitePath = (buildPath, contentType) => {
         /practices\/([^/]+)\/[^/]+\.md/,
         "practices/$1/"
       );
+    case "aboutPage":
+      const match = buildRelative.match(/about\/([^/]+)\/([^/]+)\.md/);
+      if (!match) throw new Error("Unexpected about page error");
+      if (
+        match[1] === match[2] ||
+        (match[1] === "coverage-and-quality" &&
+          match[2] === "coverage-and-quality-report")
+      ) {
+        return buildRelative.replace(
+          /about\/([^/]+)\/([^/]+)\.md/,
+          "about/$1/"
+        );
+      } else {
+        return buildRelative.replace(
+          /about\/([^/]+)\/([^/]+)\.md/,
+          "about/$1/$2/"
+        );
+      }
     case "homepage":
       return buildRelative.replace(/apg-home\.md/, "");
     case "exampleIndex":
@@ -72,7 +90,7 @@ const getSitePath = (buildPath, contentType) => {
       return buildRelative.replace(/patterns\/patterns\.md/, "patterns/");
     case "practiceIndex":
       return buildRelative.replace(/practices\/practices\.md/, "practices/");
-    case "about":
+    case "aboutIndex":
       return buildRelative.replace(/about\/about\.md/, "about/");
     case "imageAsset":
     case "htmlAsset":

@@ -4,7 +4,7 @@ const determineContentType = require("./library/determineContentType");
 const transformExample = require("./library/transformExample");
 const transformPattern = require("./library/transformPattern");
 const transformPractice = require("./library/transformPractice");
-const transformAbout = require("./library/transformAbout");
+const transformAboutContent = require("./library/transformAboutContent");
 const transformHomepage = require("./library/transformHomepage");
 const transformExampleIndex = require("./library/transformExampleIndex");
 const transformPatternIndex = require("./library/transformPatternIndex");
@@ -29,14 +29,16 @@ const preBuild = async () => {
           return transformPractice(sourcePath, sourceContents);
         case "homepage":
           return transformHomepage(sourcePath, sourceContents);
+        case "aboutPage":
+          return transformAboutContent(sourcePath, sourceContents);
         case "exampleIndex":
           return transformExampleIndex(sourcePath, sourceContents);
         case "patternIndex":
           return transformPatternIndex(sourcePath, sourceContents);
         case "practiceIndex":
           return transformPracticeIndex(sourcePath, sourceContents);
-        case "about":
-          return transformAbout(sourcePath, sourceContents);
+        case "aboutIndex":
+          return transformAboutContent(sourcePath, sourceContents);
         case "imageAsset":
           return transformImageAsset(sourcePath, sourceContents);
         case "htmlAsset":
