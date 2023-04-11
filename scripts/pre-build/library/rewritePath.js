@@ -65,7 +65,19 @@ const getSitePath = (buildPath, contentType) => {
         "practices/$1/"
       );
     case "aboutPage":
-      return buildRelative.replace(/about\/[^/]+\/([^/]+)\.md/, "about/$1/");
+      const match = buildRelative.match(/about\/([^/]+)\/([^/]+)\.md/);
+      if (!match) throw new Error("Unexpected about page error");
+      if (match[1] === match[2]) {
+        return buildRelative.replace(
+          /about\/([^/]+)\/([^/]+)\.md/,
+          "about/$1/"
+        );
+      } else {
+        return buildRelative.replace(
+          /about\/([^/]+)\/([^/]+)\.md/,
+          "about/$1/$2/"
+        );
+      }
     case "homepage":
       return buildRelative.replace(/apg-home\.md/, "");
     case "exampleIndex":

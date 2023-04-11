@@ -16,10 +16,6 @@
   // correct height will be posted from the iframe.
   window.addEventListener('message', fixIframeHeight);
 
-  // Support levels iframes should not show scrollbars, so a message with the
-  // correct height will be posted from the iframe.
-  window.addEventListener('message', fixIframeHeight);
-
   async function addExampleUsageWarning() {
     // Determine we are on an example page
     if (!document.location.href.match(/examples\/[^/]+\.html/)) return;
