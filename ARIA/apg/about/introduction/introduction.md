@@ -133,7 +133,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>Follow or mimic keyboard conventions in similar APG patterns or native operating system widgets.</li>
         </ul>
       </section>
-      
+
       <section id="not-design-system">
         <h2>APG is not a UI Design System</h2>
         <p>
@@ -150,7 +150,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="prerequisite-knowledge">
         <h2>Important Prerequisite Knowledge</h2>
         <p>
-          The APG Task Force strives to make the APG welcoming to a broad audience by using plane and simple language wherever possible.
+          The APG Task Force strives to make the APG welcoming to a broad audience by using plain and simple language wherever possible.
           Consequently, even readers with minimal understanding of web development or accessibility can benefit from a significant portion of the guidance, e.g., the keyboard interaction patterns.
           At the same time, many topics addressed by the APG are inherently complex and call for technically precise terminology.
           Additionally, some important aspects of creating accessible experiences fall outside the scope of the APG.
@@ -177,7 +177,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           These topics are covered by <a href="../aria-basics/">ARIA Basics</a>.
         </p>
       </section>
-      
+
       <section id="organization">
         <h2>How the APG is Organized</h2>
         <p>
@@ -223,7 +223,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tbody>
         </table></div>
       </section>
-      
+
     </div>
   
 </div>
