@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/carousel/examples/carousel-2-tablist/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 13 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -55,7 +55,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices)\//
+      /\/(patterns|practices|about)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
@@ -570,6 +570,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Informs assistive technologies to identify the element as a "carousel" rather than as a "region".</li>
                     <li>Affects how assistive technologies render the role but does not affect functionality, such as commands for navigating to landmark regions.</li>
+                    <li>NOTE: The <code>aria-roledescription</code> value is defined using the language of the page and should be localized by the author.</li>
                   </ul>
                 </td>
               </tr>
@@ -747,6 +748,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Informs assistive technologies to identify the element as a "slide" rather than as a "tabpanel".</li>
                     <li>Affects how assistive technologies render the role but does not affect assistive technology functionality.</li>
+                    <li>NOTE: The <code>aria-roledescription</code> value is defined using the language of the page and should be localized by the author.</li>
                   </ul>
                 </td>
               </tr>

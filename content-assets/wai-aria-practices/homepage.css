@@ -8,7 +8,7 @@ body {
   --gutter: 40px;
   --centered-max-width: 700px;
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   body {
     --gutter: 20px;
   }
@@ -103,7 +103,7 @@ h1 {
   bottom: -40px;
   right: 30%;
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   h1 {
     font-size: 24px;
     margin-top: 10px;
@@ -202,7 +202,7 @@ h2 + h3 + p {
   color: #215a9c;
 
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   .detail-3 {
     left: 30%;
   }
@@ -216,7 +216,7 @@ h2 + h3 + p {
     font-size: 26px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 70em) {
   .resource-detail-4 {
     left: -40px;
     bottom: -120px;
@@ -245,7 +245,7 @@ h2 + h3 + p {
 .resource-item:last-child {
   margin-bottom: 60px;
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   .resource-item {
     grid-template-columns: 1fr;
   }
@@ -310,18 +310,18 @@ h2 + h3 + p {
 .collaboration-item a:hover {
   text-decoration: underline;
 }
-@media (max-width: 1000px) {
+@media (max-width: 70em) {
   .detail-5 {
     right: 32px;
     top: 19px;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 70em) {
   .work-items {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   .work-grid-pattern {
     height: 110px;
     bottom: -80px;
@@ -423,7 +423,7 @@ h2 + h3 + p {
 .button-backtotop {
   z-index: 11;
 }
-@media (max-width: 767px) {
+@media (max-width: 47.5em) {
   .collaboration-items {
     grid-template-columns: 1fr;
   }

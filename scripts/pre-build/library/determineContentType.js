@@ -1,12 +1,6 @@
 const determineContentType = (sourcePath) => {
-  if (sourcePath.includes("content/about/coverage-and-quality/")) {
-    return "ignored";
-  }
   if (sourcePath.endsWith("content/apg-home.html")) {
     return "homepage";
-  }
-  if (sourcePath.match(/content\/about\/about\.html$/)) {
-    return "about";
   }
   if (
     sourcePath.endsWith("svg") ||
@@ -17,7 +11,6 @@ const determineContentType = (sourcePath) => {
   }
   if (
     sourcePath.endsWith("feed/examples/feed-display.html") ||
-    sourcePath.endsWith("feed/examples/feedDisplay.html") || // To be removed
     sourcePath.match(/content\/patterns\/landmarks\/examples\/.+\.html/) ||
     sourcePath.endsWith("toolbar/examples/help.html") ||
     sourcePath.endsWith("shared/templates/example-usage-warning.html")
@@ -27,6 +20,9 @@ const determineContentType = (sourcePath) => {
   if (!sourcePath.endsWith("html")) {
     return "otherAsset";
   }
+  if (sourcePath.match(/content\/about\/.+\/.+\.html$/)) {
+    return "aboutPage";
+  }
   if (sourcePath.match(/content\/practices\/.+\/.+-practice\.html$/)) {
     return "practice";
   }
@@ -35,6 +31,9 @@ const determineContentType = (sourcePath) => {
   }
   if (sourcePath.match(/content\/patterns\/.+\/examples\/.+\.html$/)) {
     return "example";
+  }
+  if (sourcePath.match(/content\/about\/about\.html$/)) {
+    return "aboutIndex";
   }
   if (sourcePath.match(/content\/patterns\/patterns\.html$/)) {
     return "patternIndex";

@@ -7,10 +7,14 @@
   hljs.initHighlightingOnLoad();
 
   // Add usage warning to all examples
-  // window.addEventListener('DOMContentLoaded', addExampleUsageWarning, false);// Line edited by pre-build script
+  // window.addEventListener('DOMContentLoaded', addExampleUsageWarning, false); // Line edited by pre-build script
 
   // Rewrite links so they point to the proper spec document
-  // window.addEventListener('DOMContentLoaded', resolveSpecLinks, false);// Line edited by pre-build script
+  // window.addEventListener('DOMContentLoaded', resolveSpecLinks, false); // Line edited by pre-build script
+
+  // Support levels iframes should not show scrollbars, so a message with the
+  // correct height will be posted from the iframe.
+  window.addEventListener('message', fixIframeHeight);
 
   async function addExampleUsageWarning() {
     // Determine we are on an example page
@@ -42,5 +46,15 @@
     const { specLinks } = await import('./specLinks.mjs');
     const fixSpecLink = specLinks({ specStatus: 'ED' });
     document.querySelectorAll('a[href]').forEach(fixSpecLink);
+  }
+
+  function fixIframeHeight(event) {
+    const data = event.data;
+    if (!data.iframe || !data.height || isNaN(data.height)) {
+      return;
+    }
+    const iframe = document.querySelector(`.${data.iframe}`);
+    if (!iframe) return;
+    iframe.style.height = data.height + 'px';
   }
 })();
