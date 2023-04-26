@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/grid-combo/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 13 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 26 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/grid-combo.css"
