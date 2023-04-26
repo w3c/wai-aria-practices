@@ -2538,7 +2538,7 @@ $skipToId [role="menuitem"]:focus .label {
         attachElement: 'body',
         displayOption: 'popup', // Line edited by pre-build script, fixed
         // container element, use containerClass for custom styling
-        containerElement: 'nav',
+        containerElement: 'div',
         containerRole: '',
         customClass: '',
 
