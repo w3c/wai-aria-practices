@@ -25,7 +25,6 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -59,7 +58,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
     <div>
       
-      
+
       <section id="editors">
         <h2>Editors</h2>
         <dl>
