@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 13 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 16 February 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -32,7 +32,6 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css"
   rel="stylesheet"
 />
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/toolbar.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-rearrangeable.js"></script>
@@ -276,6 +275,27 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>In example 1, since there are four action buttons, a toolbar widget is used to group all the action buttons into a single tab stop.</li>
           <li>Live regions provide confirmation of completed actions.</li>
+           <li>
+            The listbox receives accessibility focus via <code>aria-activedescendant</code>.
+            This enables users to perceive the presence of the options, and enables assistive technology users to comprehend the size of the list of options.</li>
+          <li>
+            Navigating the list of options does not set the selection of an option.
+            This gives screen reader users, who need to navigate among the options to perceive them, the ability to explore options without changing the currently selected options.
+            The value is set when users press <kbd>Space</kbd> or <kbd>Enter</kbd>.
+            Selected options have a check preceding the text label for the option.
+          </li>
+          <li>
+            Browsers do not manage visibility of elements referenced by <code>aria-activedescendant</code> like they do for elements with focus.
+            When a keyboard event changes the active option in the listbox, the JavaScript scrolls the option referenced by <code>aria-activedescendant</code> into view.
+            Managing <code>aria-activedescendant</code> visibility is essential to accessibility for people who use a browser's zoom feature to increase the size of content.
+          </li>
+          <li>
+            To enhance perceivability when operating the listbox, visual keyboard focus and hover are styled using the CSS <code>:hover</code> and <code>:focus</code> pseudo-classes:
+            <ul>
+              <li>To help people with visual impairments identify the listbox as an interactive element, the cursor is changed to a pointer when hovering over the combobox or list.</li>
+              <li>To make it easier to distinguish the selected listbox option from other options, selection creates a 2 pixel border above and below the option.</li>
+            </ul>
+          </li>
         </ol>
       </section>
 
