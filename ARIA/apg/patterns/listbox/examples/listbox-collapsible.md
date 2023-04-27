@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-collapsible/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 26 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 27 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -174,7 +174,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Accessibility Features</h2>
         <ul>
           <li>
-            Because this listbox implementation is scrollable and manages which option is focus by <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">using aria-activedescendant</a>, the JavaScript must ensure the focused option is visible.
+            Because this listbox implementation is scrollable and manages which option is focused by <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">using aria-activedescendant</a>, the JavaScript must ensure the focused option is visible.
             So, when a keyboard or pointer event changes the option referenced by <code>aria-activedescendant</code>, if the referenced option is not fully visible, the JavaScript scrolls the listbox to position the option in view.
           </li>
           <li>
