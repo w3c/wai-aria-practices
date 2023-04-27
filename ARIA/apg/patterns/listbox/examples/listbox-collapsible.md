@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-collapsible/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 16 February 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 26 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -109,7 +109,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     class="example-page-example-icon"
   >
         <p>
-          The following example implementation of the <a href="../../">Listbox Pattern</a> demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size=&quot;1&quot;</code>.
+          The following example implementation of the <a href="../../">Listbox Pattern</a> demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size="1"</code>.
           The widget consists of a button that triggers the display of a listbox.
           In its default state, the widget is collapsed (the listbox is not visible) and the button label shows the currently selected option from the listbox.
           When the button is activated, the listbox is displayed and the current option is focused and selected.
@@ -168,51 +168,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </div>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
-        <h3>Notes</h3>
-        <p>This listbox is scrollable; it has more options than its height can accommodate.</p>
-        <ol>
-          <li>
-            Scrolling only works as expected if the listbox is the options' <code>offsetParent</code>.
-            The example uses <code>position: relative</code> on the listbox to that effect.
-          </li>
-          <li>
-            When an option is focused that isn't (fully) visible, the listbox's scroll position is updated:
-            <ol>
-              <li>If <kbd>Up Arrow</kbd> or <kbd>Down Arrow</kbd> is pressed, the previous or next option is scrolled into view.</li>
-              <li>If <kbd>Home</kbd> or <kbd>End</kbd> is pressed, the listbox scrolls all the way to the top or to the bottom.</li>
-              <li>If <code>focusItem</code> is called, the focused option will be scrolled to the top of the view if it was located above it or to the bottom if it was below it.</li>
-              <li>If the mouse is clicked on a partially visible option, it will be scrolled fully into view.</li>
-            </ol>
-          </li>
-          <li>When a fully visible option is focused in any way, no scrolling occurs.</li>
-        </ol>
       </section>
 
-      <section>
-        <h2 id="accessibilityfeatures">Accessibility Features</h2>
-        <ol>
+      <section id="accessibility_features">
+        <h2>Accessibility Features</h2>
+        <ul>
           <li>
-            The listbox receives accessibility focus via <code>aria-activedescendant</code>.
-            This enables users to perceive the presence of the options, and enables assistive technology users to comprehend the size of the list of options.</li>
-          <li>
-            Navigating the list of options does not set the selection of an option.
-            This gives screen reader users, who need to navigate among the options to perceive them, the ability to explore options without changing the currently selected options.
-            The value is set when users press <kbd>Space</kbd> or <kbd>Enter</kbd>.
-            Selected options have a check preceding the text label for the option.
-          </li>
-          <li>
-            Browsers do not manage visibility of elements referenced by <code>aria-activedescendant</code> like they do for elements with focus.
-            When a keyboard event changes the active option in the listbox, the JavaScript scrolls the option referenced by <code>aria-activedescendant</code> into view.
-            Managing <code>aria-activedescendant</code> visibility is essential to accessibility for people who use a browser's zoom feature to increase the size of content.
+            Because this listbox implementation is scrollable and manages which option is focus by <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">using aria-activedescendant</a>, the JavaScript must ensure the focused option is visible.
+            So, when a keyboard or pointer event changes the option referenced by <code>aria-activedescendant</code>, if the referenced option is not fully visible, the JavaScript scrolls the listbox to position the option in view.
           </li>
           <li>
             To enhance perceivability when operating the listbox, visual keyboard focus and hover are styled using the CSS <code>:hover</code> and <code>:focus</code> pseudo-classes:
             <ul>
-              <li>To help people with visual impairments identify the listbox as an interactive element, the cursor is changed to a pointer when hovering over the combobox or list.</li>
+              <li>To help people with visual impairments identify the listbox as an interactive element, the cursor is changed to a pointer when hovering over the list.</li>
               <li>To make it easier to distinguish the selected listbox option from other options, selection creates a 2 pixel border above and below the option.</li>
             </ul>
           </li>
-        </ol>
+        </ul>
       </section>
 
       <section>
@@ -220,6 +192,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           The example listbox on this page implements the following keyboard interface.
           Other variations and options for the keyboard interface are described in the <a href="../../#keyboard_interaction">Keyboard Interaction section of the Listbox Pattern</a>.
+        </p>
+        <p>
+          <strong>NOTE:</strong> When visual focus is on an option in this listbox implementation, DOM focus remains on the listbox element and the value of <code>aria-activedescendant</code> on the listbox refers to the descendant option that is visually indicated as focused.
+          Where the following descriptions of keyboard commands mention focus, they are referring to the visual focus indicator, not DOM focus.
+          For more information about this focus management technique, see
+          <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
         </p>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
@@ -229,6 +207,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
           </thead>
           <tbody>
+            <tr data-test-id="key-tab">
+              <th><kbd>Tab</kbd></th>
+              <td>
+                <ul>
+                  <li>Moves focus into and out of the listbox.</li>
+                  <li>If the listbox is expanded, selects the focused option, collapses the listbox, and moves focus out of the listbox.</li>
+                </ul>
+              </td>
+            </tr>
             <tr data-test-id="key-enter">
               <th><kbd>Enter</kbd></th>
               <td>
@@ -299,7 +286,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tbody>
             <tr data-test-id="button-aria-labelledby">
               <td></td>
-              <th scope="row"><code>aria-labelledby=&quot;ID_REF1 ID_REF2&quot;</code></th>
+              <th scope="row"><code>aria-labelledby="ID_REF1 ID_REF2"</code></th>
               <td><code>button</code></td>
               <td>
                 <ul>
@@ -311,13 +298,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="button-aria-haspopup">
               <td></td>
-              <th scope="row"><code>aria-haspopup=&quot;listbox&quot;</code></th>
+              <th scope="row"><code>aria-haspopup="listbox"</code></th>
               <td><code>button</code></td>
               <td>Indicates that activating the button displays a listbox.</td>
             </tr>
             <tr data-test-id="button-aria-expanded">
               <td></td>
-              <th scope="row"><code>aria-expanded=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-expanded="true"</code></th>
               <td><code>button</code></td>
               <td>
                 <ul>
@@ -334,13 +321,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="listbox-aria-labelledby">
               <td></td>
-              <th scope="row"><code>aria-labelledby=&quot;ID_REF&quot;</code></th>
+              <th scope="row"><code>aria-labelledby="ID_REF"</code></th>
               <td><code>ul</code></td>
               <td>Refers to the element containing the listbox label.</td>
             </tr>
             <tr data-test-id="listbox-tabindex">
               <td></td>
-              <th scope="row"><code>tabindex=&quot;-1&quot;</code></th>
+              <th scope="row"><code>tabindex="-1"</code></th>
               <td><code>ul</code></td>
               <td>
                 <ul>
@@ -351,14 +338,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="listbox-aria-activedescendant">
               <td></td>
-              <th scope="row"><code>aria-activedescendant=&quot;ID_REF&quot;</code></th>
+              <th scope="row"><code>aria-activedescendant="ID_REF"</code></th>
               <td><code>ul</code></td>
               <td>
                 <ul>
-                  <li>Set by the JavaScript when it displays and sets focus on the listbox; otherwise is not present.</li>
-                  <li>Refers to the option in the listbox that is visually indicated as having keyboard focus.</li>
+                  <li>When an option in the listbox is visually indicated as having keyboard focus, refers to that option.</li>
+                  <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the listbox element.</li>
                   <li>When navigation keys, such as <kbd>Down Arrow</kbd>, are pressed, the JavaScript changes the value.</li>
-                  <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element.</li>
                   <li>
                     For more information about this focus management technique, see
                     <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
@@ -374,7 +360,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="option-aria-selected">
               <td></td>
-              <th scope="row"><code>aria-selected=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-selected="true"</code></th>
               <td><code>li</code></td>
               <td>
                 <ul>
@@ -397,7 +383,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>
             Javascript:
-            <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-collapsible.js" type="text/javascript">listbox-collapsible.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a>
+            <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-collapsible.js" type="text/javascript">listbox-collapsible.js</a>
           </li>
         </ul>
       </section>
