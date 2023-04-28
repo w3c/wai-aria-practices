@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 27 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 28 April 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -413,6 +413,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <ul>
                   <li>Moves focus to the last option.</li>
                   <li>In the example 1 single-select listboxes, also selects the focused option.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr data-test-id="key-character">
+              <th>Printable Characters</th>
+              <td>
+                <ul>
+                  <li>Type a character: focus moves to the next item with a name that starts with the typed character.</li>
+                  <li>Type multiple characters in rapid succession: focus moves to the next item with a name that starts with the string of characters typed.</li>
                 </ul>
               </td>
             </tr>
