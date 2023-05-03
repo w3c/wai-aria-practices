@@ -65,8 +65,8 @@ const transformPatternIndex = async (sourcePath /* , sourceContents */) => {
     {% include read-this-first.html %}
     <ul class="tiles">
       ${patterns
-        .map((pattern, index) => {
-          let patternContent = `
+        .map(
+          (pattern) => `
             <li class="tile tile-${pattern.slug}">
               <a href="{{ '/ARIA/apg/${pattern.sitePath}' | relative_url }}">
                 <h2 class="tile-name">
@@ -79,40 +79,8 @@ const transformPatternIndex = async (sourcePath /* , sourceContents */) => {
               </a>
               <div class="tile-introduction">${pattern.introduction}</div>
             </li>
-          `;
-
-          if (pattern.title.startsWith("Grid")) {
-            if (!patterns[index + 1].title.startsWith("Link")) {
-              throw new Error(
-                "Cannot insert the landmarks pattern link because the " +
-                  "correct alphabetical position has diverged from a known " +
-                  "state."
-              );
-            }
-            // This pattern is not like the others and needs separate handling
-            patternContent += `
-              <li class="tile tile-landmarks">
-                <a 
-                  href="{{ '/ARIA/apg/patterns/landmarks/examples/general-principles.html' | relative_url }}"
-                >
-                  <h2 class="tile-name">
-                    <img 
-                      src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
-                      alt=""
-                    >
-                    <span>Landmarks</span>
-                  </h2>
-                </a>
-                <div class="tile-introduction">
-                  Landmarks provide a powerful way to identify the 
-                  organization and structure of a web page.
-                </div>
-              </li>
-            `;
-          }
-
-          return patternContent;
-        })
+          `
+        )
         .join(" ")}
     </ul>
   `;
