@@ -25,7 +25,6 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -86,7 +85,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           This is accomplished by encoding the element in a way that enables browsers to determine that the accessibility role of the element is <q>button</q>.
           Similarly, another accessibility semantic browsers must be able to convey for the search icon is its accessible name, which inturn enables screen reader users to know the purpose of the button.
         </p>
-        <p> 
+        <p>
           The types of accessibility semantics that may be required to make an element accessible include:
         </p>
         <ul>

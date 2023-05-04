@@ -12,12 +12,6 @@ const transformAsset = async (sourcePath, sourceContents) => {
           " // Line edited by pre-build script"
       );
   }
-  if (sourcePath.endsWith("content/shared/js/skipto.js")) {
-    return sourceContents.replace(
-      "displayOption: 'static', // options: static (default), popup",
-      "displayOption: 'popup', // Line edited by pre-build script"
-    );
-  }
   return sourceContents;
 };
 
