@@ -2554,9 +2554,9 @@ $skipToId [role="menuitem"]:focus .label {
         altShortcut: '0', // default shortcut key is the number zero
         optionShortcut: 'º', // default shortcut key character associated with option+0 on mac 
         attachElement: 'body',
-        displayOption: 'popup', // Line edited by pre-build script, fixed
+        displayOption: 'popup', // options: static (default), popup, fixed
         // container element, use containerClass for custom styling
-        containerElement: 'nav',
+        containerElement: 'div',
         containerRole: '',
         customClass: '',
 
@@ -2589,7 +2589,7 @@ $skipToId [role="menuitem"]:focus .label {
         headings: 'main h1 h2',
 
         // Place holders for configuration
-        colorTheme: '',
+        colorTheme: 'aria',
         fontFamily: '',
         fontSize: '',
         positionLeft: '',
