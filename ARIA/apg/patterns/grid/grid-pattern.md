@@ -141,7 +141,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               If focus is on the bottom cell in the column, focus does not move.
             </li>
             <li>
-              <kbd>Up Arrow</kbd>: Moves focus one cell Up.
+              <kbd>Up Arrow</kbd>: Moves focus one cell up.
               If focus is on the top cell in the column, focus does not move.
             </li>
             <li>
@@ -182,7 +182,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><kbd>Shift + Right Arrow</kbd>: Extends selection one cell to the right.</li>
             <li><kbd>Shift + Left Arrow</kbd>: Extends selection one cell to the left.</li>
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
-            <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
+            <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell up.</li>
           </ul>
           <div class="note">
             <h5>Note</h5>
@@ -292,7 +292,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><kbd>Shift + Right Arrow</kbd>: Extends selection one cell to the right.</li>
             <li><kbd>Shift + Left Arrow</kbd>: Extends selection one cell to the left.</li>
             <li><kbd>Shift + Down Arrow</kbd>: Extends selection one cell down.</li>
-            <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell Up.</li>
+            <li><kbd>Shift + Up Arrow</kbd>: Extends selection one cell up.</li>
           </ul>
           <div class="note">
             <h4>Note</h4>
