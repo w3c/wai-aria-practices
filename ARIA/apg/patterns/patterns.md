@@ -224,7 +224,7 @@ lang: en
                 </h2>
               </a>
               <div class="tile-introduction">
-          Landmarks are a class of roles that enable assistive technology users to perceive how the presentation of a page segments content into sections.</div>
+          Landmarks are a set of eight roles that identify the major sections of a page.</div>
             </li>
            
             <li class="tile tile-link">
