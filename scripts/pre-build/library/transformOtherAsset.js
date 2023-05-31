@@ -18,6 +18,12 @@ const transformAsset = async (sourcePath, sourceContents) => {
       "displayOption: 'popup', // Line edited by pre-build script"
     );
   }
+  if (sourcePath.endsWith("content/patterns/feed/examples/js/feedDisplay.js")) {
+    return sourceContents.replace(
+        "'src=\"imgs/rating-' +",
+        "'src=\"../../../../../content-assets/wai-aria-practices/patterns/feed/examples/imgs/rating-' +"
+    )
+  }
   return sourceContents;
 };
 
