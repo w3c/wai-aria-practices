@@ -116,6 +116,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>
           Similarly, JavaScript and CSS in this guide is written to be compatible with the most recent version of Chrome, Firefox, and Safari at the time of writing.
+  Some JavaScript and CSS may not function correctly in Internet Explorer.
         </p>
         <p>
           Except in cases where the ARIA Working Group and other contributors have overlooked an error,
