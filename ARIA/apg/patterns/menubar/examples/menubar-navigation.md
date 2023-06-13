@@ -12,14 +12,13 @@ permalink: /ARIA/apg/patterns/menubar/examples/menubar-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Navigation Menubar Example</title>
@@ -34,6 +33,7 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-navigation.js"></script>
+
 
 <link 
   rel="stylesheet"
@@ -51,6 +51,7 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
+    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -64,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-
+      
     <details id="support-notice">
       <summary>
         <p>
@@ -88,11 +89,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-
-
-
+  
+    
+    
     <div>
-
+      
 
       <section>
         <h2>About This Example</h2>
@@ -109,9 +110,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}"
     class="example-page-example-icon"
-
->
-
+  >
         <p>
           The following implementation of the <a href="../../">Menubar Pattern</a> demonstrates how a menubar can provide navigation menus.
           The parent menu items in the menubar represent a section of a mythical university web site and open a submenu containing menu items that link to pages within that section.
@@ -134,7 +133,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="page">
-
+            
             <header role="banner">
               <div class="title">Mythical University</div>
               <div class="tagline">Using a Menubar for navigation links</div>
@@ -280,7 +279,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </li>
               </ul>
             </nav>
-
+            
             <div class="main">
               <section aria-labelledby="id-page-title">
                 <h1 id="id-page-title" class="page_title">Mythical University</h1>
@@ -289,7 +288,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </div>
               </section>
             </div>
-
+            
             <footer role="contentinfo">Mythical University footer information</footer>
           </div>
         </div>
@@ -891,7 +890,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-
+  
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

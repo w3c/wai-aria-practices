@@ -12,14 +12,13 @@ permalink: /ARIA/apg/patterns/button/examples/button/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 27 March 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
-
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Button Examples</title>
@@ -34,6 +33,7 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/css/button.css"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/js/button.js"></script>
+
 
 <link 
   rel="stylesheet"
@@ -51,6 +51,7 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
+    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -64,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-
+      
     <details id="support-notice">
       <summary>
         <p>
@@ -88,20 +89,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-
-
-
+  
+    
+    
 
     <div>
-
+      
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
     class="example-page-example-icon"
-
->
-
+  >
         <p>The following command and toggle button examples demonstrate the <a href="../../">Button Pattern</a>.</p>
         <p>Similar examples include:</p>
         <ul>
@@ -287,7 +286,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </iframe>
       </section>
     </div>
-
+  
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

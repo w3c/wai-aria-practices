@@ -12,14 +12,13 @@ permalink: /ARIA/apg/patterns/combobox/examples/grid-combo/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
-
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Editable Combobox with Grid Popup Example</title>
@@ -37,6 +36,7 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/grid-combo.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/grid-combo-example.js"></script>
 
+
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -53,6 +53,7 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
+    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -66,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-
+      
     <details id="support-notice">
       <summary>
         <p>
@@ -90,19 +91,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-
-
-
+  
+    
+    
     <div>
-
+      
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}"
     class="example-page-example-icon"
-
->
-
+  >
         <p>
           The following example combobox implements the <a href="../../">combobox pattern</a> using a grid for the suggested values popup.
         </p>
@@ -468,7 +467,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-
+  
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
