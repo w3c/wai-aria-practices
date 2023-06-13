@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Alert Dialog Example</title>
@@ -34,7 +35,6 @@ lang: en
 />
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/alertdialog/examples/js/alertdialog.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -52,7 +52,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -66,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -90,17 +89,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/alertdialog.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The below example of a confirmation prompt demonstrates the <a href="../../">Alert Dialog Pattern</a>.
           It also includes an example of the <a href="../../../alert/">Alert Pattern</a> to make comparing the experiences provided by the two patterns easy.
@@ -314,7 +315,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

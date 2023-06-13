@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Color Viewer Slider Example</title>
@@ -34,7 +35,6 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-color-viewer.css"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-color-viewer.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -52,7 +52,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -66,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -90,11 +89,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2>
@@ -109,7 +108,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           Following is an example of a color viewer that demonstrates the <a href="../../">Slider Pattern</a>.
           Change the background of the color view box by adjusting the sliders for red, green, and blue values.
@@ -136,7 +137,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
             <div id="id-red" class="color-slider-label">Red</div>
             <div class="color-slider red" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="128" aria-valuemax="255" aria-labelledby="id-red">
-              
+
 
               <svg width="0" height="0" aria-hidden="true">
                 <text class="value" x="0" y="0">128</text>
@@ -149,7 +150,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
             <div id="id-green" class="color-slider-label">Green</div>
             <div class="color-slider green" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="128" aria-valuemax="255" aria-labelledby="id-green">
-              
+
 
               <svg width="0" height="0" aria-hidden="true">
                 <text class="value" x="0" y="0">128</text>
@@ -162,7 +163,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
             <div id="id-blue" class="color-slider-label">Blue</div>
             <div class="color-slider blue" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="128" aria-valuemax="255" aria-labelledby="id-blue">
-              
+
 
               <svg width="0" height="0" aria-hidden="true">
                 <text class="value" x="0" y="0">128</text>
@@ -382,7 +383,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

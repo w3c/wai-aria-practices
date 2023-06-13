@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Modal Dialog Example</title>
@@ -34,7 +35,6 @@ lang: en
 />
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -52,7 +52,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -66,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -90,17 +89,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/dialog-modal.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           Following is an example implementation of the <a href="../../">Dialog (Modal) Pattern</a>.
           The below <q>Add Delivery Address</q> button opens a modal dialog that contains two buttons that open other dialogs.
@@ -164,7 +165,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </div>
             </div>
 
-            
+
             <div id="dialog2" role="dialog" aria-labelledby="dialog2_label" aria-describedby="dialog2_desc" aria-modal="true" class="hidden">
               <h2 id="dialog2_label" class="dialog_label">Verification Result</h2>
               <div id="dialog2_desc" class="dialog_desc">
@@ -216,7 +217,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </div>
             </div>
 
-            
+
             <div id="dialog3" role="dialog" aria-labelledby="dialog3_label" aria-describedby="dialog3_desc" aria-modal="true" class="hidden">
               <h2 id="dialog3_label" class="dialog_label">Address Added</h2>
               <p id="dialog3_desc" class="dialog_desc">
@@ -425,7 +426,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

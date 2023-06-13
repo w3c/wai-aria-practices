@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Toolbar Example</title>
@@ -49,7 +50,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuButton.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/SpinButton.js"></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -66,7 +66,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -80,7 +79,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -104,17 +103,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following example of an editor toolbar implements the <a href="../../">Toolbar Pattern</a> and demonstrates how a toolbar can group a set of interactive widgets into a single tab stop.
           For illustrative and interoperability assessment purposes, this implementation includes a diverse set of widgets, some of which may not be ordinarily grouped in the same toolbar.
@@ -203,6 +204,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </div>
           <label for="textarea1" class="hidden">Text Sample</label><br>
           <textarea id="textarea1" rows="20" cols="80" style="font-family: sans-serif">
+
 Abraham Lincoln's Gettysburg Address
 
 Four score and seven years ago our fathers brought forth on this continent a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
@@ -211,9 +213,10 @@ Now we are engaged in a great civil war, testing whether that nation, or any nat
 
 But, in a larger sense, we can not dedicate, we can not consecrate, we can not hallow, this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us, that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion, that we here highly resolve that these dead shall not have died in vain, that this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth.
 </textarea>
-        </div>
-        <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
-      </section>
+
+</div>
+<div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
+</section>
 
       <section>
         <h2>Accessibility Features</h2>
@@ -1044,7 +1047,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

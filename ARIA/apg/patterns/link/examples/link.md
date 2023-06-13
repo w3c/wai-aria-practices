@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Link Examples</title>
@@ -33,7 +34,6 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/js/link.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -51,7 +51,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -65,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -89,17 +88,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The examples below demonstrate three variations of the <a href="../../">Link Pattern</a>.
           The link pattern is used when it is necessary for elements other than the HTML <code>a</code> element to have link behaviors.
@@ -264,7 +265,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

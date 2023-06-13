@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
@@ -36,7 +37,6 @@ lang: en
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosure-button.js"></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -53,7 +53,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -67,7 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -91,17 +90,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following example demonstrates using the <a href="../../">Disclosure Pattern</a> to create a set of frequently asked questions where the answers may be independently shown or hidden.
         </p>
@@ -283,7 +284,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>Javascript and CSS Source Code</h2>
-        
+
         <ul id="css_js_files">
           <li>
             CSS:
@@ -307,7 +308,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

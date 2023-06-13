@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>(Deprecated) Collapsible Dropdown Listbox Example</title>
@@ -36,7 +37,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-collapsible.js"></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -53,7 +53,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -67,7 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -91,11 +90,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2>
@@ -108,7 +107,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following example implementation of the <a href="../../">Listbox Pattern</a> demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size=&quot;1&quot;</code>.
           The widget consists of a button that triggers the display of a listbox.
@@ -387,7 +388,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Breadcrumb Example</title>
@@ -32,7 +33,6 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/breadcrumb/examples/css/breadcrumb.css"
   rel="stylesheet"
 />
-
 
 <link 
   rel="stylesheet"
@@ -50,7 +50,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -64,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -88,17 +87,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/breadcrumb.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>The following example demonstrates the <a href="../../">Breadcrumb Pattern</a>.</p>
       </section>
 
@@ -208,7 +209,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Select-Only Combobox Example</title>
@@ -33,7 +34,6 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/select-only.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -51,7 +51,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -65,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -89,17 +88,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following example implementation of the <a href="../../">Combobox Pattern</a> demonstrates a single-select combobox widget that is functionally similar to an HTML <code>select</code> element.
           Unlike the editable combobox examples, this select-only combobox is not made with an <code>&lt;input&gt;</code> element, and it does not accept freeform user input.
@@ -125,8 +126,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <div class="combo js-select">
             <div aria-controls="listbox1" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="combo1-label" id="combo1" class="combo-input" role="combobox" tabindex="0"></div>
             <div class="combo-menu" role="listbox" id="listbox1" aria-labelledby="combo1-label" tabindex="-1">
-              
-              
+
+
             </div>
           </div>
         </div>
@@ -488,7 +489,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Rating Slider Example</title>
@@ -34,7 +35,6 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-rating.css"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-rating.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -52,7 +52,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -66,7 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -90,11 +89,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2>
@@ -109,7 +108,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           Following is an example of a rating input that demonstrates the <a href="../../">Slider Pattern</a>.
           This rating widget employs a slider because the slider pattern supports step values of any size.
@@ -135,7 +136,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <div id="id-rating-label" class="label">Rating</div>
 
           <div id="id-rating" class="rating-slider" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="0" aria-valuemax="5" aria-valuetext="no stars" aria-labelledby="id-rating-label">
-            
+
 
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="224" height="48">
               <defs>
@@ -364,7 +365,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

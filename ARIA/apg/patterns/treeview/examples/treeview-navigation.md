@@ -19,6 +19,7 @@ type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Navigation Treeview Example</title>
@@ -33,7 +34,6 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeview-navigation.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -51,7 +51,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -65,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -89,11 +88,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2>
@@ -107,7 +106,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The below example demonstrates how the <a href="../../">Tree View Pattern</a> can be used to build a navigation tree for a set of hierarchically organized web pages.
           It illustrates navigation of a mythical university web site that is comparable to the navigation illustrated in the
@@ -138,7 +139,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
 
         <div id="ex1">
-          
+
           <div class="page">
             <header role="banner">
               <div class="title" id="id_website_title">Mythical University</div>
@@ -359,7 +360,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </ul>
               </nav>
 
-              
+
               <section class="main" aria-labelledby="id_website_title id_page_title">
                 <h1 class="page_title" id="id_page_title">Mythical University</h1>
                 <div class="content">
@@ -367,7 +368,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </div>
               </section>
             </div>
-            
+
             <footer role="contentinfo">Mythical University footer information</footer>
           </div>
         </div>
@@ -765,7 +766,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
