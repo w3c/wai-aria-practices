@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/carousel/examples/carousel-1-prev-next/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 21 March 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
@@ -36,7 +37,6 @@ lang: en
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/js/carousel-prev-next.js"></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -53,7 +53,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -67,7 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -91,17 +90,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/carousel.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following example implementation of the <a href="../../">Carousel Pattern</a> demonstrates features of the pattern that are essential to accessibility for carousels that automatically start rotating when the page loads.
           For instance, rotation stops when users either move focus into the carousel or hover the mouse over carousel content, and users can manually control which slide is displayed with previous and next slide buttons.
@@ -201,9 +202,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <p><span class="contrast">7 pm Tuesday, March 3, on TV</span></p>
                     </div>
                   </div>
-                  
+
                 </div>
-                
+
 
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 6">
                   <div class="carousel-image">
@@ -221,9 +222,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <p><span class="contrast">Sept. 14 to Sept. 24 or 27</span></p>
                     </div>
                   </div>
-                  
+
                 </div>
-                
+
 
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
                   <div class="carousel-image">
@@ -239,9 +240,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
                     <div></div>
                   </div>
-                  
+
                 </div>
-                
+
 
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="4 of 6">
                   <div class="carousel-image">
@@ -259,9 +260,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <p><span class="contrast">8 pm Sunday, March 8, on TV: Sneak peek at the final season.</span></p>
                     </div>
                   </div>
-                  
+
                 </div>
-                
+
 
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="5 of 6">
                   <div class="carousel-image">
@@ -277,9 +278,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
                     <div></div>
                   </div>
-                  
+
                 </div>
-                
+
 
                 <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="6 of 6">
                   <div class="carousel-image">
@@ -297,14 +298,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <p><span class="contrast">Watch the latest episodes.</span></p>
                     </div>
                   </div>
-                  
+
                 </div>
-                
+
               </div>
             </div>
-            
+
           </section>
-          
+
 
           <div class="col-sm-1"></div>
         </div>
@@ -607,7 +608,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

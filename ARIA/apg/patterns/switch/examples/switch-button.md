@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/switch/examples/switch-button/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Switch Example Using HTML Button</title>
@@ -33,7 +34,6 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/switch/examples/js/switch-button.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -51,7 +51,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -65,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -89,17 +88,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/switch.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           This example illustrates implementing the <a href="../../">Switch Pattern</a> with an HTML <code>button</code> as a switch element and using an <code>SVG</code> element to provide graphical rendering of switch states.
           It also demonstrates using the <code>group</code> role to present multiple switches in a labeled group.
@@ -283,7 +284,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>Javascript and CSS Source Code</h2>
-        
+
         <ul id="css_js_files">
           <li>
             CSS:
@@ -307,7 +308,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

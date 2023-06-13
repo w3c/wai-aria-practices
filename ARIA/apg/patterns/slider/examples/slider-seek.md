@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-seek/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Media Seek Slider Example</title>
@@ -33,7 +34,6 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-seek.css"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-seek.js"></script>
-
 
 <link 
   rel="stylesheet"
@@ -51,7 +51,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -65,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -89,11 +88,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2>
@@ -108,7 +107,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following example of the <a href="../../">Slider Pattern</a> illustrates a seek control that could be used to move the current play position in an audio or video media player.
           The example demonstrates how to use <code>aria-valuetext</code> to provide assistive technology users with meaningful names for numeric values.
@@ -142,7 +143,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <rect class="focus-ring" x="0" y="0" width="28" height="60" rx="12" ></rect>
                 <rect class="thumb" x="0" y="0" width="14" height="48" rx="5" ></rect>
               </g>
-              
+
               <g class="value-label" data-value="0">
                 <text x="0" y="0">0:00</text>
               </g>
@@ -388,7 +389,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

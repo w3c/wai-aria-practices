@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/grid/examples/layout-grids/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 10 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Layout Grid Examples</title>
@@ -36,7 +37,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/layoutGrids.js"></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -53,7 +53,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -67,7 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -91,17 +90,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The following examples demonstrate how the <a href="../../">Grid Pattern</a> can be used to group a collection of interactive widgets into a single tab stop.
           In these examples, each widget, such as a link or button, is in a separate cell of the grid, and the user can navigate between them with the arrow keys.
@@ -196,7 +197,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </p>
           <div role="separator" id="ex2_start_sep" aria-labelledby="ex2_start_sep ex2_label" aria-label="Start of"></div>
           <div id="ex2">
-            
+
             <div class="recipient-list">
               <span id="send_to_label">Send To:</span>
               <div id="ex2-grid" role="grid" class="pill-list" aria-labelledby="send_to_label" data-wrap-cols="true">
@@ -761,13 +762,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <script>
           sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files');
         </script>
-        
+
         <script>
           sourceCode.make();
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

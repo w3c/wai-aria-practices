@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/alert/examples/alert/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/20'>View issues related to this example</a></p>        <p>Page last updated: 30 March 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/20'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Alert Example</title>
@@ -37,7 +38,6 @@ lang: en
   type="text/javascript"
 ></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -54,7 +54,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -68,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -92,17 +91,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/alert.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           The below example demonstrates the <a href="../../">Alert Pattern</a>.
           Activating the <q>Trigger Alert</q> button causes a message to be inserted into the example alert element.
@@ -124,7 +125,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
           <div id="example" role="alert"></div>
 
-          
+
           <script type="text/template" id="alert-template">
             <p>Hello</p>
           </script>
@@ -217,7 +218,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           sourceCode.make();
         </script>
       </section>
-      
+
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
         <iframe class="support-levels-alert"
@@ -229,7 +230,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

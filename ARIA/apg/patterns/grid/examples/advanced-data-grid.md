@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/grid/examples/advanced-data-grid/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Advanced Data Grid Example</title>
@@ -41,7 +42,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrid.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/grid/examples/js/dataGrids.js"></script>
 
-
 <link 
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/styles.css' | relative_url }}"
@@ -58,7 +58,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -72,7 +71,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -96,17 +95,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>
           This example has not yet been developed.
           Development is described in <a href="https://github.com/w3c/aria-practices/issues/155">issue 155.</a>
@@ -124,9 +125,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
-        
+
         <div id="ex1">
-          
+
           <p>This is the place where the reader will experience the functioning example.</p>
           <p>The HTML in this section along with the javascript and CSS it uses demonstrate the design pattern.</p>
         </div>
@@ -146,7 +147,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="kbd_label">Keyboard Support</h2>
-        
+
         <ul>
           <li><kbd>KEY_NAME</kbd>: function</li>
           <li><kbd>KEY_NAME</kbd>: function</li>
@@ -155,7 +156,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
-        
+
         <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
           <thead>
             <tr>
@@ -172,7 +173,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <th>
-                
+
                 <code>aria-labelledby=&quot;ID_REF&quot;</code>
               </th>
               <td><code>HTML_ELEMENT</code></td>
@@ -189,15 +190,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>Javascript and CSS Source Code</h2>
-        
+
         <ul>
           <li>
             CSS:
-            
+
           </li>
           <li>
             Javascript:
-            
+
           </li>
         </ul>
       </section>
@@ -213,7 +214,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </script>
       </section>
     </div>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"

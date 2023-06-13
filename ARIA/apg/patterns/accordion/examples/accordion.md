@@ -12,13 +12,14 @@ permalink: /ARIA/apg/patterns/accordion/examples/accordion/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/8'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/8'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
 lang: en
 ---
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Accordion Example</title>
@@ -32,7 +33,6 @@ lang: en
   rel="stylesheet"
   href="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/css/accordion.css"
 />
-
 
 <link 
   rel="stylesheet"
@@ -50,7 +50,6 @@ const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
 </script>
-    
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -64,7 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <div>
 
       <h2 id="support-notice-header">Read This First</h2>
-      
+
     <details id="support-notice">
       <summary>
         <p>
@@ -88,17 +87,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </li>
       </ul>
     </details>
-  
-    
-    
+
+
+
     <div>
-      
+
 
       <section>
         <h2>About This Example</h2><img alt=""
     src="{{ '/content-images/wai-aria-practices/img/accordion.svg' | relative_url }}"
     class="example-page-example-icon"
-  >
+
+>
+
         <p>The below example section contains a simple personal information input form divided into 3 sections that demonstrates the <a href="../../">Accordion Pattern</a>.</p>
       </section>
 
@@ -119,7 +120,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </h3>
             <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
               <div>
-                
+
                 <fieldset>
                   <p>
                     <label for="cufc1">Name<span aria-hidden="true">*</span>:</label>
@@ -259,7 +260,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
-        
+
         <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
           <thead>
             <tr>
@@ -336,7 +337,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </div>
     <script src="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js"></script>
-  
+
 </div>
 <script 
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
