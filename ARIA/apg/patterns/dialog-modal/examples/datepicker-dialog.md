@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -248,7 +248,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul>
           <li>The description of the date format is associated with the text input via <code>aria-describedby</code>, making it available to assistive technologies as an accessible description.</li>
           <li>
-            After a date is chosen, the accessible name of the &quot;Choose Date&quot; button is changed to &quot;Change Date, DATE_STRING&quot; where DATE_STRING is the selected date.
+            After a date is chosen, the accessible name of the "Choose Date" button is changed to "Change Date, DATE_STRING" where DATE_STRING is the selected date.
             So, when the dialog closes and focus returns to the button, screen reader users hear confirmation of the selected date.
           </li>
           <li>In the dialog, shortcut keys are assigned to the additional buttons for changing the month and year displayed in the calendar.</li>
@@ -314,7 +314,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tbody>
               <tr data-test-id="dialog-esc">
                 <th><kbd>ESC</kbd></th>
-                <td>Closes the dialog and returns focus to the &quot;Choose Date&quot; button.</td>
+                <td>Closes the dialog and returns focus to the "Choose Date" button.</td>
               </tr>
               <tr data-test-id="dialog-tab">
                 <th><kbd>Tab</kbd></th>
@@ -322,7 +322,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Moves focus to next element in the dialog <kbd>Tab</kbd> sequence.</li>
                     <li>Note that, as specified in the <a href="../../../grid/">Grid Pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
-                    <li>If focus is on the last button (i.e., &quot;OK&quot;), moves focus to the first button (i.e. &quot;Previous Year&quot;).</li>
+                    <li>If focus is on the last button (i.e., "OK"), moves focus to the first button (i.e. "Previous Year").</li>
                   </ul>
                 </td>
               </tr>
@@ -332,7 +332,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Moves focus to previous element in the dialog <kbd>Tab</kbd> sequence.</li>
                     <li>Note that, as specified in the <a href="../../../grid/">Grid Pattern</a>, only one button in the calendar grid is in the <kbd>Tab</kbd> sequence.</li>
-                    <li>If focus is on the first button (i.e., &quot;Previous Year&quot;), moves focus to the last button (i.e. &quot;OK&quot;).</li>
+                    <li>If focus is on the first button (i.e., "Previous Year"), moves focus to the last button (i.e. "OK").</li>
                   </ul>
                 </td>
               </tr>
@@ -372,9 +372,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <th><kbd>Space</kbd>,<br><kbd>Enter</kbd></th>
                 <td>
                   <ul>
-                    <li>Select the date, close the dialog, and move focus to the &quot;Choose Date&quot; button.</li>
-                    <li>Update the value of the &quot;Date&quot; input with the selected date.</li>
-                    <li>Update the accessible name of the &quot;Choose Date&quot; button to include the selected date.</li>
+                    <li>Select the date, close the dialog, and move focus to the "Choose Date" button.</li>
+                    <li>Update the value of the "Date" input with the selected date.</li>
+                    <li>Update the accessible name of the "Choose Date" button to include the selected date.</li>
                   </ul>
                 </td>
               </tr>
@@ -408,8 +408,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Changes the grid of dates to the previous month.</li>
                     <li>
-                      Sets focus on the same day of the same week.
-                      If that day does not exist, then moves focus to the same day of the previous or next week.
+                      Moves focus to the day of the month that has the same number.
+                      If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
                 </td>
@@ -418,10 +418,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <th><kbd>Shift + Page Up</kbd></th>
                 <td>
                   <ul>
-                    <li>Changes the grid of dates to the previous Year.</li>
+                    <li>Changes the grid of dates to the same month in the previous year.</li>
                     <li>
-                      Sets focus on the same day of the same week.
-                      If that day does not exist, then moves focus to the same day of the previous or next week.
+                      Moves focus to the day of the month that has the same number.
+                      If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
                 </td>
@@ -432,8 +432,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <ul>
                     <li>Changes the grid of dates to the next month.</li>
                     <li>
-                      Sets focus on the same day of the same week.
-                      If that day does not exist, then moves focus to the same day of the previous or next week.
+                      Moves focus to the day of the month that has the same number.
+                      If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
                 </td>
@@ -442,10 +442,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <th><kbd>Shift + Page Down</kbd></th>
                 <td>
                   <ul>
-                    <li>Changes the grid of dates to the next Year.</li>
+                    <li>Changes the grid of dates to the same month in the next year.</li>
                     <li>
-                      Sets focus on the same day of the same week.
-                      If that day does not exist, then moves focus to the same day of the previous or next week.
+                      Moves focus to the day of the month that has the same number.
+                      If that day does not exist, moves focus to the last day of the month.
                     </li>
                   </ul>
                 </td>
@@ -469,8 +469,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <td>
                   Activates the button:
                   <ul>
-                    <li>&quot;Cancel&quot;: Closes the dialog, moves focus to &quot;Choose Date&quot; button, does not update date in date input.</li>
-                    <li>&quot;OK&quot;: Closes the dialog, moves focus to &quot;Choose Date&quot; button, updates date in date input, updates accessible name of the &quot;Choose Date&quot; button to include the selected date.</li>
+                    <li>"Cancel": Closes the dialog, moves focus to "Choose Date" button, does not update date in date input.</li>
+                    <li>"OK": Closes the dialog, moves focus to "Choose Date" button, updates date in date input, updates accessible name of the "Choose Date" button to include the selected date.</li>
                   </ul>
                 </td>
               </tr>
@@ -496,7 +496,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tbody>
               <tr data-test-id="textbox-aria-describedby">
                 <td></td>
-                <th scope="row"><code>aria-describedby="IDREF"</code></th>
+                <th scope="row"><code>aria-describedby="ID_REFERENCE"</code></th>
                 <td><code>input</code></td>
                 <td>Identifies the element that provides an accessible description for the textbox, enabling assistive technologies to associate the date format description with the input.</td>
               </tr>
@@ -522,8 +522,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <td><code>button</code></td>
                 <td>
                   <ul>
-                    <li>The initial value of accessible name is &quot;Choose Date&quot;.</li>
-                    <li>When users select a date, the accessible name is changed to &quot;Change Date, DATE_STRING&quot; where DATE_STRING is the selected date.</li>
+                    <li>The initial value of accessible name is "Choose Date".</li>
+                    <li>When users select a date, the accessible name is changed to "Change Date, DATE_STRING" where DATE_STRING is the selected date.</li>
                   </ul>
                 </td>
               </tr>
@@ -607,7 +607,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <td></td>
                 <th scope="row"><code>aria-label="String"</code></th>
                 <td><code>button</code></td>
-                <td>Defines the accessible name of the button (e.g. &quot;Next Year&quot;).</td>
+                <td>Defines the accessible name of the button (e.g. "Next Year").</td>
               </tr>
             </tbody>
           </table></div>
@@ -640,7 +640,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </tr>
               <tr data-test-id="grid-aria-labelledby">
                 <td></td>
-                <th scope="row"><code>aria-labelledby=&quot;IDREF&quot;</code></th>
+                <th scope="row"><code>aria-labelledby="ID_REFERENCE"</code></th>
                 <td><code>table</code></td>
                 <td>Identifies the element that provides the accessible name for the <code>grid</code>.</td>
               </tr>
