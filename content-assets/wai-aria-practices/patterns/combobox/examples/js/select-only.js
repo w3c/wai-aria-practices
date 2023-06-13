@@ -197,6 +197,10 @@ Select.prototype.init = function () {
   this.comboEl.addEventListener('blur', this.onComboBlur.bind(this));
   this.comboEl.addEventListener('click', this.onComboClick.bind(this));
   this.comboEl.addEventListener('keydown', this.onComboKeyDown.bind(this));
+  this.listboxEl.addEventListener(
+    'mousedown',
+    this.onListBoxMouseDown.bind(this)
+  );
 
   // create options
   this.options.map((option, index) => {
@@ -349,6 +353,12 @@ Select.prototype.onOptionClick = function (index) {
 Select.prototype.onOptionMouseDown = function () {
   // Clicking an option will cause a blur event,
   // but we don't want to perform the default keyboard blur action
+  this.ignoreBlur = true;
+};
+
+Select.prototype.onListBoxMouseDown = function () {
+  // Clicking on the listbox will cause a blur event,
+  // but we don't want to perform the default keyboard blur action when clicking the scrollbar
   this.ignoreBlur = true;
 };
 
