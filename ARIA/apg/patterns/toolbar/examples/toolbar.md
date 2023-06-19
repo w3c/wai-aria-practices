@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/toolbar/examples/toolbar/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -1020,7 +1020,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
       </section>
 
       <section>
-        <h2>Javascript and CSS Source Code</h2>
+        <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/toolbar.css" type="text/css">toolbar.css</a></li>
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/menuButton.css" type="text/css">menuButton.css</a></li>

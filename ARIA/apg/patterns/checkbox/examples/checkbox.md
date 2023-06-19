@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/checkbox/examples/checkbox/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/9'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/9'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -258,7 +258,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2>Javascript and CSS Source Code</h2>
+        <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/css/checkbox.css" type="text/css">checkbox.css</a></li>
           <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/js/checkbox.js" type="text/javascript">checkbox.js</a></li>
