@@ -212,25 +212,21 @@ lang: en
               <div class="tile-introduction">
           A grid widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, Home, and End.</div>
             </li>
-          
-              <li class="tile tile-landmarks">
-                <a 
-                  href="{{ '/ARIA/apg/patterns/landmarks/examples/general-principles.html' | relative_url }}"
-                >
-                  <h2 class="tile-name">
-                    <img 
-                      src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
-                      alt=""
-                    >
-                    <span>Landmarks</span>
-                  </h2>
-                </a>
-                <div class="tile-introduction">
-                  Landmarks provide a powerful way to identify the 
-                  organization and structure of a web page.
-                </div>
-              </li>
-             
+           
+            <li class="tile tile-landmarks">
+              <a href="{{ '/ARIA/apg/patterns/landmarks/' | relative_url }}">
+                <h2 class="tile-name">
+                  <img 
+                    src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
+                    alt=""
+                  >
+                  <span>Landmarks</span>
+                </h2>
+              </a>
+              <div class="tile-introduction">
+          Landmarks are a set of eight roles that identify the major sections of a page.</div>
+            </li>
+           
             <li class="tile tile-link">
               <a href="{{ '/ARIA/apg/patterns/link/' | relative_url }}">
                 <h2 class="tile-name">

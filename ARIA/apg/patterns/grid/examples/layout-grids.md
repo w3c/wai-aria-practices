@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/grid/examples/layout-grids/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 13 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -327,7 +327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <div role="row">
                 <div role="gridcell">
                   <h5 class="ex3_result_header">
-                    <a tabindex="-1" href="https://www.w3.org/WAI/ARIA/faq">Accessible Rich Internet Applications (ARIA) Working Group - W3C</a>
+                    <a tabindex="-1" href="https://www.w3.org/WAI/standards-guidelines/aria/">Accessible Rich Internet Applications (ARIA) Overview</a>
                   </h5>
                 </div>
                 <span tabindex="-1" role="gridcell">World Wide Web Consortium</span> <span tabindex="-1" role="gridcell">Here are answers to some frequently asked questions (FAQ) about WAI-ARIA, the Accessible Rich Internet Applications Suite. When we add significant ...</span>
@@ -717,7 +717,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2>Javascript and CSS Source Code</h2>
+        <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>
             CSS:
