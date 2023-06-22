@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-automatic/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 10 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -410,7 +410,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2>Javascript and CSS Source Code</h2>
+        <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs.css" type="tex/css">tabs.css</a></li>
           <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-automatic.js" type="text/javascript">tabs-automatic.js</a></li>
