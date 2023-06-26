@@ -77,10 +77,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
     <details id="support-notice">
       <summary>
-        <p>
-          The code in this example is not intended for production environments.
-          Before using it for any purpose, read this to understand why.
-        </p>
+        The code in this example is not intended for production environments.
+        Before using it for any purpose, read this to understand why.
       </summary>
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
