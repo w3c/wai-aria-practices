@@ -154,7 +154,7 @@ lang: en
                 </h2>
               </a>
               <div class="tile-introduction">
-          A combobox is an input widget with an associated popup that enables users to select a value for the combobox from a collection of possible values.</div>
+          A combobox is an input widget that has an associated popup.</div>
             </li>
            
             <li class="tile tile-dialog-modal">
