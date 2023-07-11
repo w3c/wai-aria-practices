@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 28 April 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 11 July 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -134,35 +134,35 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     role="listbox"
                     aria-labelledby="ss_imp_l">
                   <li id="ss_opt1" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Proximity of public K-12 schools
                   </li>
                   <li id="ss_opt2" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Proximity of child-friendly parks</li>
                   <li id="ss_opt3" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Proximity of grocery shopping</li>
                   <li id="ss_opt4" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Proximity of fast food</li>
                   <li id="ss_opt5" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Proximity of fine dining</li>
                   <li id="ss_opt6" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Neighborhood walkability</li>
                   <li id="ss_opt7" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Availability of public transit</li>
                   <li id="ss_opt8" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Proximity of hospital and medical services</li>
                   <li id="ss_opt9" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Level of traffic noise</li>
                   <li id="ss_opt10" role="option">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Access to major highways</li>
                 </ul>
                 <div role="toolbar" aria-label="Actions" class="toolbar">
@@ -187,7 +187,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                           tabindex="-1"
                           aria-keyshortcuts="Alt+ArrowRight Delete"
                           aria-disabled="true">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Not Important
                   </button>
                 </div>
@@ -204,7 +204,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         class="move-left-btn"
                         aria-keyshortcuts="Alt+ArrowLeft Enter"
                         aria-disabled="true">
-                  <span class="icon" aria-hidden="true"></span>
+                  <span class="checkmark" aria-hidden="true"></span>
                   Important
                 </button>
               </div>
@@ -230,43 +230,43 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     aria-labelledby="ms_av_l"
                     aria-multiselectable="true">
                   <li id="ms_opt1" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Leather seats
                   </li>
                   <li id="ms_opt2" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Front seat warmers
                   </li>
                   <li id="ms_opt3" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Rear bucket seats
                   </li>
                   <li id="ms_opt4" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Rear seat warmers
                   </li>
                   <li id="ms_opt5" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Front sun roof
                   </li>
                   <li id="ms_opt6" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Rear sun roof
                   </li>
                   <li id="ms_opt7" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Cloaking capability
                   </li>
                   <li id="ms_opt8" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Food synthesizer
                   </li>
                   <li id="ms_opt9" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Advanced waste recycling system
                   </li>
                   <li id="ms_opt10" role="option" aria-selected="false">
-                    <span class="icon" aria-hidden="true"></span>
+                    <span class="checkmark" aria-hidden="true"></span>
                     Turbo vertical take-off capability
                   </li>
                 </ul>
@@ -275,7 +275,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         class="move-right-btn"
                         aria-keyshortcuts="Alt+ArrowRight Enter"
                         aria-disabled="true">
-                  <span class="icon" aria-hidden="true"></span>
+                  <span class="checkmark" aria-hidden="true"></span>
                   Add
                 </button>
               </div>
@@ -293,7 +293,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         class="move-left-btn"
                         aria-keyshortcuts="Alt+ArrowLeft Delete"
                         aria-disabled="true">
-                  <span class="icon" aria-hidden="true"></span>
+                  <span class="checkmark" aria-hidden="true"></span>
                   Remove
                 </button>
               </div>
