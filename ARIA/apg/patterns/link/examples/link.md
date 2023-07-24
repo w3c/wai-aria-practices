@@ -215,6 +215,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </table></div>
       </section>
 
+      <section id="at-support">
+        <h2>Assistive Technology Support</h2>
+        <iframe class="support-levels-link-span-text"
+          src="https://aria-at.w3.org/embed/reports/link-span-text"
+          height="100"
+          allow="clipboard-write"
+          style="border-style: none; width: 100%;">
+        </iframe>
+      </section>
+
       <section>
         <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
@@ -249,16 +259,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files');
           sourceCode.make();
         </script>
-      </section>
-
-      <section id="at-support">
-        <h2>Assistive Technology Support</h2>
-        <iframe class="support-levels-link-span-text"
-          src="https://aria-at.w3.org/embed/reports/link-span-text"
-          height="100"
-          allow="clipboard-write"
-          style="border-style: none; width: 100%;">
-        </iframe>
       </section>
 
     </div>
