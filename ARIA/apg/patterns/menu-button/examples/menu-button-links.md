@@ -404,6 +404,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </table></div>
       </section>
 
+      <section id="at-support">
+        <h2>Assistive Technology Support</h2>
+        <iframe class="support-levels-menu-button-navigation"
+          src="https://aria-at.w3.org/embed/reports/menu-button-navigation"
+          height="100"
+          allow="clipboard-write"
+          style="border-style: none; width: 100%;">
+        </iframe>
+      </section>
+
       <section>
         <h2>JavaScript and CSS Source Code</h2>
 
