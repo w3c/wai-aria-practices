@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/button/examples/button_idl/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 24 July 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -68,10 +68,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
     <details id="support-notice">
       <summary>
-        <p>
-          The code in this example is not intended for production environments.
-          Before using it for any purpose, read this to understand why.
-        </p>
+        The code in this example is not intended for production environments.
+        Before using it for any purpose, read this to understand why.
       </summary>
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
