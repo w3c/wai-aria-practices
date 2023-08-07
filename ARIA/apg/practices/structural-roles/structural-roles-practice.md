@@ -194,6 +194,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>li</td>
             </tr>
             <tr>
+              <th>mark</th>
+              <td>mark</td>
+            </tr>
+            <tr>
               <th>math</th>
               <td>No equivalent element</td>
             </tr>
