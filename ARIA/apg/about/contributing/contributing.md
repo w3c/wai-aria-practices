@@ -82,7 +82,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h3>ARIA and Assistive Technologies Community Group</h3>
       <p>
-        The <a href="https://www.w3.org/community/aria-at/">ARIA and Assistive Technologies Community Group</a> is testing the implementation of assistive technology support for ARIA.  The community group also works with AT vendors to improve the consistency of how ARIA information is conveyed to users.  Results of implementation testing are integrated into the APG implementation reports.  The group meets weekly to coordinate the development of tests and testing with assistive technologies.  Members are expected to regularly attend meetings and to actively contribute to the assistive technology testing. Examples of member participation include:
+        The <a href="https://www.w3.org/community/aria-at/">ARIA and Assistive Technologies Community Group</a> is testing the implementation of assistive technology support for ARIA.  The community group also works with AT vendors to improve the consistency of how ARIA information is conveyed to users.  Results of implementation testing are integrated into the associated examples in the practices.  The group meets weekly to coordinate the development of tests and testing with assistive technologies.  Members are expected to regularly attend meetings and to actively contribute to the assistive technology testing. Examples of member participation include:
       </p>
       <ul>
         <li>Running test cases on specific screen readers and web browser</li>
@@ -97,7 +97,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h3>Raise a Github Issue</h3>
       <p>
-        The APG Task Force uses github issues to manage the activities of the working group.  Creating an issue is the best way to ask a question or report problems with an example or other information in the APG.  Please review the issues list to see if your question has been asked or your problem reported.  If an issue already exists feel free to add your own comments to the issue.  New issues are reviewed in the weekly APG meetings.
+        The APG Task Force uses github issues to manage the activities of the working group.  Creating an issue is the best way to ask a question or report problems with an example or other information in the practices.  Before creating a new issue, please review the current list of issues to see if your question has been asked or your problem reported.  If an issue already exists feel free to add your own comments to the issue.  New issues are reviewed in the weekly APG meetings.
       </p>
       <p>
         <a target="_blank" href="https://github.com/w3c/aria-practices/issues">View and create APG issues on GitHub.</a>
