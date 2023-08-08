@@ -68,13 +68,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h3>ARIA Authoring Practices Group Task Force</h3>
       <p>
-        The <a href="https://www.w3.org/WAI/ARIA/task-forces/practices/">ARIA Authoring Practices Task Force</a> is a sub-group of the <a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a> and meets weekly to coordinate the development of the practices.  Members are expected to regularly attend meetings and to actively contribute to the development of the practices.  Examples of member contributions include:
+        The <a href="https://www.w3.org/WAI/ARIA/task-forces/practices/">ARIA Authoring Practices Task Force</a> is a sub-group of the <a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a>.  The group meets weekly to coordinate the development of the practices.  Members are expected to regularly attend meetings and to actively contribute to the development of the practices.  Examples of member contributions include:
       </p>
       <ul>
         <li>Testing examples for WCAG compliance</li>
         <li>Reviewing and editing example documentation</li>
         <li>Creating code and test cases for examples</li>
-        <li>Creating and editing patterns of aria usage</li>
+        <li>Creating and editing patterns of ARIA usage</li>
         <li>Reviewing issues and responding to commenters</li>
       </ul>
 
@@ -82,9 +82,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h3>ARIA and Assistive Technologies Community Group</h3>
       <p>
-        The <a href="https://www.w3.org/community/aria-at/">ARIA and Assistive Technologies Community Group</a> is testing the implementation of assistive technology support for ARIA.  The community group also works with AT vendors to improve the consistency of how ARIA information is conveyed to users.  Results of implementation testing are integrated into the APG implementation reports.  The group meets weekly to coordinate the development of tests and testing with assistive technologies.  Members are expected to regularly attend meetings and to actively contribute to the assistive technology testing.</p>
+        The <a href="https://www.w3.org/community/aria-at/">ARIA and Assistive Technologies Community Group</a> is testing the implementation of assistive technology support for ARIA.  The community group also works with AT vendors to improve the consistency of how ARIA information is conveyed to users.  Results of implementation testing are integrated into the APG implementation reports.  The group meets weekly to coordinate the development of tests and testing with assistive technologies.  Members are expected to regularly attend meetings and to actively contribute to the assistive technology testing. Examples of member participation include:
+      </p>
+      <ul>
+        <li>Running test cases on specific screen readers and web browser</li>
+        <li>Providing feedback on test case development</li>
+      </ul>
 
-      <p>NOTE: Participation in the community group is open to anyone.</p>
+      <p>NOTE: Participation in the community group is open to anyone, assistive technology users are encouraged to participate.</p>
     </section>
 
     <section id="other_ways">
