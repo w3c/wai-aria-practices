@@ -68,6 +68,13 @@ lang: en
           </p>
         </li>
         <li>
+          <h2><a href="contributing/">Contributing to the APG</a></h2>
+          <p>
+            The APG Task Force relies on broad community representation and participation to continuously improve the usefulness and quality of the APG.
+            <a href="contributing/">Learn how you can contribute and help promote development of accessible experiences</a>.
+          </p>
+        </li>
+        <li>
           <h2><a href="acknowledgements/">Acknowledgements</a></h2>
             <p>
               To learn about the people and organizations who contribute to the development of the APG, read the <a href="acknowledgements/">Acknowledgements</a>.

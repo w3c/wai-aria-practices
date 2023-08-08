@@ -195,7 +195,6 @@ Select.prototype.init = function () {
 
   // add event listeners
   this.comboEl.addEventListener('blur', this.onComboBlur.bind(this));
-  this.listboxEl.addEventListener('focusout', this.onComboBlur.bind(this));
   this.comboEl.addEventListener('click', this.onComboClick.bind(this));
   this.comboEl.addEventListener('keydown', this.onComboKeyDown.bind(this));
 
@@ -240,9 +239,10 @@ Select.prototype.getSearchString = function (char) {
   return this.searchString;
 };
 
-Select.prototype.onComboBlur = function (event) {
-  // do nothing if relatedTarget is contained within listboxEl
-  if (this.listboxEl.contains(event.relatedTarget)) {
+Select.prototype.onComboBlur = function () {
+  // do not do blur action if ignoreBlur flag has been set
+  if (this.ignoreBlur) {
+    this.ignoreBlur = false;
     return;
   }
 

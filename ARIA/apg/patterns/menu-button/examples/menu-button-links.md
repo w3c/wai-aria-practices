@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-links/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 8 August 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -402,16 +402,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
           </tbody>
         </table></div>
-      </section>
-
-      <section id="at-support">
-        <h2>Assistive Technology Support</h2>
-        <iframe class="support-levels-menu-button-navigation"
-          src="https://aria-at.w3.org/embed/reports/menu-button-navigation"
-          height="100"
-          allow="clipboard-write"
-          style="border-style: none; width: 100%;">
-        </iframe>
       </section>
 
       <section>
