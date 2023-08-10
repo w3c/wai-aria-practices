@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-autocomplete-both/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -212,7 +212,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>To help people with visual impairments identify the combobox as an interactive element, the cursor is changed to a pointer when hovering over the combobox or list.</li>
               <li>To make it easier to distinguish the selected listbox option from other options, selection creates a 2 pixel border above and below the option.</li>
               <li>
-                Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
+                Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from zero to two pixels and padding is reduced by two pixels.
                 When an element loses focus, its border changes from two pixels to two and padding is increased by two pixels.

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -149,7 +149,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             To support operating system high contrast settings:
             <ul>
               <li>
-                Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
+                Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from 1 to 3 pixels and padding is reduced by 2 pixels.
                 When an element loses focus, its border changes from 3 pixels to 1 and padding is increased by 2 pixels.
