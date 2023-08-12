@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/grid/examples/advanced-data-grid/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 8 August 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 22 February 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -75,8 +75,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
     <details id="support-notice">
       <summary>
-        The code in this example is not intended for production environments.
-        Before using it for any purpose, read this to understand why.
+        <p>
+          The code in this example is not intended for production environments.
+          Before using it for any purpose, read this to understand why.
+        </p>
       </summary>
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
@@ -186,7 +188,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2>JavaScript and CSS Source Code</h2>
+        <h2>Javascript and CSS Source Code</h2>
         
         <ul>
           <li>

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/accordion/examples/accordion/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/8'>View issues related to this example</a></p>        <p>Page last updated: 8 August 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/8'>View issues related to this example</a></p>        <p>Page last updated: 7 December 2022</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -67,8 +67,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
     <details id="support-notice">
       <summary>
-        The code in this example is not intended for production environments.
-        Before using it for any purpose, read this to understand why.
+        <p>
+          The code in this example is not intended for production environments.
+          Before using it for any purpose, read this to understand why.
+        </p>
       </summary>
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
@@ -315,7 +317,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2>JavaScript and CSS Source Code</h2>
+        <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/css/accordion.css" type="tex/css">accordion.css</a></li>
           <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js" type="text/javascript">accordion.js</a></li>

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/carousel/examples/carousel-2-tablist/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 8 August 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/10'>View issues related to this example</a></p>        <p>Page last updated: 21 March 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -68,8 +68,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
     <details id="support-notice">
       <summary>
-        The code in this example is not intended for production environments.
-        Before using it for any purpose, read this to understand why.
+        <p>
+          The code in this example is not intended for production environments.
+          Before using it for any purpose, read this to understand why.
+        </p>
       </summary>
       <p>This is an illustrative example of one way of using ARIA that conforms with the ARIA specification.</p>
       <ul>
@@ -771,7 +773,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2>JavaScript and CSS Source Code</h2>
+        <h2>Javascript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/css/carousel-tablist.css" type="text/css">carousel-tablist.css</a></li>
           <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/carousel/examples/js/carousel-tablist.js" type="text/javascript">carousel-tablist.js</a></li>
