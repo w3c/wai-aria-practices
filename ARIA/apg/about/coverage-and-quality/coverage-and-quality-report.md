@@ -2313,7 +2313,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a></td>
+            <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
             <td></td>
             <td></td>
             <td></td>
