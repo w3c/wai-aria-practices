@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 10 August 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 28 August 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -27,16 +27,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
-
-<link
-  href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/css/feedDisplay.css"
-  rel="stylesheet"
-/>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feed.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feedDisplay.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/main.js"></script>
 
 
 <link 
@@ -113,35 +103,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           To imitate an infinitely scrolling set of data, information about ten restaurants is repeatedly loaded as the user reads the feed.
           Outside of the feed, an article load time selector is available for simulating data fetch delays.
         </p>
+        <p>Unlike other examples in the WAI-ARIA Authoring Practices, the example experience has its own page separate from this documentation page.</p>
       </section>
 
       <section>
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <button type="button" onclick="openDialog('dialog1', this)">Open feed example</button>
-          <div id="dialog_layer" class="dialogs">
-            <div role="dialog" id="dialog1" aria-labelledby="dialog1_label" aria-modal="true" class="hidden">
-              <div class="dialog_content">
-                <h1 id="dialog1_label">Recommended Restaurants</h1>
-
-                <section id="main-content">
-                  <div id="restaurant-feed" role="feed"></div>
-                </section>
-
-                <section id="side-panel">
-                  <label for="delay-time-select">Select article loading delay</label>
-                  <select id="delay-time-select" name="delay_time">
-                    <option value="200">200 ms</option>
-                    <option value="400">400 ms</option>
-                  </select>
-                </section>
-                <div class="dialog_action">
-                  <button type="button" onclick="closeDialog(this)">Cancel</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p>The example feed experience below is presented in an iframe in order not to obstruct from the rest of the content of the page. </p>
+          <iframe src="./feed-display.html" width="100%" height="500px" title="Feed example"></iframe>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
@@ -288,7 +258,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>JavaScript and CSS Source Code</h2>
-        <p>The following Javascript and CSS is used by the feed.html page:</p>
+        <p>The following Javascript and CSS is used by the feed-display.html page:</p>
         <ul>
           <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/css/feedDisplay.css" type="tex/css">feedDisplay.css</a></li>
           <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feed.js" type="text/javascript">feed.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feedDisplay.js" type="text/javascript">feedDisplay.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/main.js" type="text/javascript">main.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
@@ -297,7 +267,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="sc1_label">HTML Source Code</h2>
-        <p>Please open <a href>feed.html</a> and view source.</p>
+        <p>Please open <a href="../feed-display.html">feed-display.html</a> and view source.</p>
       </section>
     </div>
   

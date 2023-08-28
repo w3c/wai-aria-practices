@@ -1635,6 +1635,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>heading,menu,menuitem,feed,article,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription,aria-describedby,aria-posinset,aria-setsize</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
+            <td>prototype</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td>not found</td>
+            <td>0</td>
+            <td>0</td>
+            <td>6</td>
+            <td>0</td>
+            <td>aria-busy,aria-describedby,aria-label,aria-labelledby,aria-posinset,aria-setsize</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
             <td>prototype</td>
             <td>Yes</td>
