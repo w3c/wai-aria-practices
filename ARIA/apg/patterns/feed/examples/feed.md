@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 30 August 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 31 August 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -27,11 +27,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
-
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feed.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/feedDisplay.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/feed/examples/js/main.js"></script>
 
 
 <link 
@@ -120,7 +115,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <label for="delay-time-select">Select article loading delay</label>
             <select id="delay-time-select" name="delay_time">
               <option value="200">200 ms</option>
-              <option value="800">800 ms</option>
+              <option value="400">400 ms</option>
             </select>
           </div>
           <iframe id="feed_frame" src="./feed-display.html" height="500" title="Feed example" style="width: 100%"></iframe>
