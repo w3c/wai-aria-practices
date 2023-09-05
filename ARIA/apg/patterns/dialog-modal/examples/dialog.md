@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/6'>View issues related to this example</a></p>        <p>Page last updated: 2 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/6'>View issues related to this example</a></p>        <p>Page last updated: 24 July 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
