@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-manual/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 2 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 18 September 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
