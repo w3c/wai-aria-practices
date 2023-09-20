@@ -524,7 +524,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr>
               <th scope="row">Redo action</th>
               <td><kbd>Control + Y</kbd></td>
-              <td>Command + Shift + Z</td>
+              <td><kbd>Command + Shift + Z</kbd></td>
             </tr>
           </tbody>
         </table></div>
