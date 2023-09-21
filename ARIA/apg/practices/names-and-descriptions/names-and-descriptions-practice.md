@@ -975,6 +975,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <td>
+                <a href="https://w3c.github.io/aria/#mark" class="role-reference"><code>mark</code></a>
+              </td>
+              <td>Prohibited</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
                 <a href="https://w3c.github.io/aria/#main" class="role-reference"><code>main</code></a>
               </td>
               <td>Discretionary</td>
