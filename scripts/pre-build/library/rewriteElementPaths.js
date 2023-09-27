@@ -10,8 +10,9 @@ const rewriteElementPaths = async (html, { onSourcePath }) => {
   const linkTags = html.querySelectorAll("link[href]");
   const scriptTags = html.querySelectorAll("script[src]");
   const imgTags = html.querySelectorAll("img[src]");
+  const iframeTags = html.querySelectorAll("iframe[src]");
 
-  [...aTags, ...linkTags, ...scriptTags, ...imgTags].forEach((element) => {
+  [...aTags, ...linkTags, ...scriptTags, ...imgTags, ...iframeTags].forEach((element) => {
     fixSpecLink(element);
 
     const href = element.getAttribute("href");
