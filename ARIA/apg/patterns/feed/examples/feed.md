@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 26 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 28 September 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -127,7 +127,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <p>The example feed experience below is presented in an iframe in order not to obstruct from the rest of the content of the page. </p>
+          <p>The example feed experience below is presented in an iframe in order not to obstruct from the rest of the content of the page.</p>
           <iframe id="feed_frame" src="./feed-display.html" height="500" title="Feed example" style="width: 100%"></iframe>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
