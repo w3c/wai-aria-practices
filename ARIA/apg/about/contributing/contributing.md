@@ -123,19 +123,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </ol>
       <p>
         If you run into any difficulties, please feel free to ask questions either via a GitHub issue or by
-        <a href="mailto://public-aria-practices@w3.org">sending email to the public authoring practices mailing list</a>.
+        <a href="mailto://public-aria-practices@w3.org">sending email to the ARIA Authoring Practices public mailing list</a>.
       </p>
     </section>
 
-    <section id="joining-task-force">
+    <section id="joining-the-authoring-practices-task-force">
       <h2>Joining The Authoring Practices Task Force</h2>
       <p>
         The APG is developed by the
         <a target="_blank" href="https://www.w3.org/WAI/ARIA/task-forces/practices/">ARIA Authoring Practices Task Force</a>,
         which  is a sub-group of the
         <a target="_blank" href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a>.
-        The task force meets weekly to coordinate work on development of the APG.
-        Task force participants are expected to regularly attend meetings and to actively contribute.
+        The Task Force meets weekly to coordinate work on development of the APG.
+        Task Force participants are expected to regularly attend meetings and to actively contribute.
         Examples of contributions include:
       </p>
       <ul>
@@ -155,7 +155,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
     </section>
 
-    <section id="aria-at">
+    <section id="Helping-provide-assistive-technology-support-data">
       <h2>Helping provide assistive technology support data</h2>
       <p>
         The assistive technology support tables included on APG example pages, e.g.,
