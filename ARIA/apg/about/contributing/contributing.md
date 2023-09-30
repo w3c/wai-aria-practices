@@ -71,7 +71,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
     </section>
 
-    <section id="feedback">
+    <section id="providing-feedback">
       <h2>Providing feedback</h2>
       <p>
         The APG provides two public feedback channels -- GitHub and email.
@@ -90,15 +90,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The task force also uses the public aria-practices mailing list for email discussion.
         Meeting announcements, agendas, and links to minutes are sent to the mailing list.
-        While GitHub issues are the preferred place to discuss APG content, the mailing list is available to anyone who would prefer to communicate with the APG Task Force by
-        <a href="mailto://public-aria-practices@w3.org">sending email</a>.
+        While GitHub issues are the preferred place to discuss APG content, the mailing list is available to anyone who would prefer to communicate by
+        <a href="mailto://public-aria-practices@w3.org">sending email to the APG Task Force</a>.
       </p>
       <p>
         <a href="https://lists.w3.org/Archives/Public/public-aria-practices/">View the aria-practices mailing list archive</a>.
       </p>
     </section>
     
-    <section id="making-content-improvements">
+    <section id="Making-improvements-to-documentation-or-code">
       <h2>Making improvements to documentation or code</h2>
       <p>
         If you would like to help improve the APG with enhancements or fixes to documentation or code, please adhere to the following procedure.
