@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 28 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 1 October 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -101,26 +101,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           The example below implements the <a href="../../">Feed Pattern</a> for a restaurant review site.
           To imitate an infinitely scrolling set of data, information about ten restaurants is repeatedly loaded as the user reads the feed.
-          Outside of the feed, an article load time selector is available for simulating data fetch delays.
+          This example includes an article load time selector that simulates data fetch delays.
         </p>
-        <p>Unlike other examples in the WAI-ARIA Authoring Practices, the example experience has its own page separate from this documentation page.</p>
       </section>
 
       <section>
-        <h2>Example Options</h2>
-
-        <fieldset class="feed-options">
-          <legend>Feed Options</legend>
-
-          <select id="delay-time-select" name="delay_time" aria-describedby="feed-controls-desc">
-            <option value="200">200 ms</option>
-            <option value="400">400 ms</option>
-          </select>
-          <label for="delay-time-select"> Loading delay</label>
-
-          <p id="feed-controls-desc">This option determines the article loading delay time in this feed example.</p>
-
-        </fieldset>
+        <h2>Example Usage Option</h2>
+        <p id="feed-controls-desc">
+          The article loading delay time enables simulation of scenarios where data fetches occasionally introduce significant latency.
+          This type of latency can impact assistive technology behavior when using assistive technology functions for navigating by article.
+        </p>
+        <select id="delay-time-select" name="delay_time" aria-describedby="feed-controls-desc">
+          <option value="200">200 ms</option>
+          <option value="400">400 ms</option>
+        </select>
+        <label for="delay-time-select"> Loading delay</label>
       </section>
 
       <section>
