@@ -123,7 +123,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </ol>
       <p>
         If you run into any difficulties, please feel free to ask questions either via a GitHub issue or by
-        <a href="mailto://public-aria-practices@w3.org">sending email to the ARIA Authoring Practices public mailing list</a>.
+        <a href="mailto:public-aria-practices@w3.org">sending email to the ARIA Authoring Practices public mailing list</a>.
       </p>
     </section>
 
