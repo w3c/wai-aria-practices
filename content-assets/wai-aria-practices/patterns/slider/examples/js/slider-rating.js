@@ -20,8 +20,11 @@ class RatingSlider {
     //    var  color = getComputedStyle(this.sliderNode).color;
     //    this.svgNode.setAttribute('color', color);
 
-    this.starsWidth = 198;
-    this.starsX = 0;
+    this.railWidth = 360;
+    this.railOffset = 20;
+
+    this.valueMin = this.getValueMin();
+    this.valueMax = this.getValueMax();
 
     this.svgPoint = this.svgNode.createSVGPoint();
 
@@ -44,10 +47,10 @@ class RatingSlider {
     // bind a pointerup event handler to stop tracking pointer movements
     document.addEventListener('pointerup', this.onPointerUp.bind(this));
 
-    this.addTotalStarsToRatingLabel();
+    this.addTotalCirclesToRatingLabel();
     this.sliderNode.addEventListener(
       'blur',
-      this.addTotalStarsToRatingLabel.bind(this)
+      this.addTotalCirclesToRatingLabel.bind(this)
     );
   }
 
@@ -70,46 +73,43 @@ class RatingSlider {
     return parseFloat(this.sliderNode.getAttribute('aria-valuemax'));
   }
 
-  isInRange(value) {
-    let valueMin = this.getValueMin();
-    let valueMax = this.getValueMax();
-    return value <= valueMax && value >= valueMin;
-  }
-
   getValueText(value) {
     switch (value) {
+      case -1:
+        return 'no rating selected';
+
       case 0:
-        return 'zero stars';
+        return 'Unacceptable service';
 
-      case 0.5:
-        return 'one half star';
+      case 1:
+        return 'Extremely dissatisfied';
 
-      case 1.0:
-        return 'one star';
+      case 2:
+        return 'Strongly dissatisfied';
 
-      case 1.5:
-        return 'one and a half stars';
+      case 3:
+        return 'dissatisfied';
 
-      case 2.0:
-        return 'two stars';
+      case 4:
+        return 'Slightly dissatisfied';
 
-      case 2.5:
-        return 'two and a half stars';
+      case 5:
+        return 'Neither satisfied or dissatisfied';
 
-      case 3.0:
-        return 'three stars';
+      case 6:
+        return 'Slightly satisfied';
 
-      case 3.5:
-        return 'three and a half stars';
+      case 7:
+        return 'Satisfied';
 
-      case 4.0:
-        return 'four stars';
+      case 8:
+        return 'Strongly satisfied';
 
-      case 4.5:
-        return 'four and a half stars';
+      case 9:
+        return 'Extremely satisfied';
 
-      case 5.0:
-        return 'five stars';
+      case 10:
+        return 'Completely satisfied';
 
       default:
         break;
@@ -120,38 +120,41 @@ class RatingSlider {
 
   getValueTextWithMax(value) {
     switch (value) {
+      case -1:
+        return 'no rating on the 11 point rating scale selected';
+
       case 0:
-        return 'zero of five stars';
+        return 'Unacceptable service, first of eleven point rating scale';
 
-      case 0.5:
-        return 'one half of five stars';
+      case 1:
+        return 'Extremely dissatisfied, second of eleven point rating scale';
 
-      case 1.0:
-        return 'one of five stars';
+      case 2:
+        return 'Strongly dissatisfied, third of eleven point rating scale';
 
-      case 1.5:
-        return 'one and a half of five stars';
+      case 3:
+        return 'dissatisfied, fourth of eleven point rating scale';
 
-      case 2.0:
-        return 'two of five stars';
+      case 4:
+        return 'Slightly dissatisfied, fifth of eleven point rating scale';
 
-      case 2.5:
-        return 'two and a half of five stars';
+      case 5:
+        return 'Neither satisfied or dissatisfied, sixth of eleven point rating scale';
 
-      case 3.0:
-        return 'three of five stars';
+      case 6:
+        return 'Slightly satisfied, seventh of eleven point rating scale';
 
-      case 3.5:
-        return 'three and a half of five stars';
+      case 7:
+        return 'Satisfied, eighth of eleven point rating scale';
 
-      case 4.0:
-        return 'four of five stars';
+      case 8:
+        return 'Strongly satisfied, ninth of eleven point rating scale';
 
-      case 4.5:
-        return 'four and a half of five stars';
+      case 9:
+        return 'Extremely satisfied, tenth of eleven point rating scale';
 
-      case 5.0:
-        return 'five of five stars';
+      case 10:
+        return 'Completely satisfied, eleventh of eleven point rating scale';
 
       default:
         break;
@@ -161,54 +164,45 @@ class RatingSlider {
   }
 
   moveSliderTo(value) {
-    let valueMax, valueMin;
-
-    valueMin = this.getValueMin();
-    valueMax = this.getValueMax();
-
-    value = Math.min(Math.max(value, valueMin), valueMax);
-
+    value = Math.min(Math.max(value, this.valueMin + 1), this.valueMax);
     this.sliderNode.setAttribute('aria-valuenow', value);
-
     this.sliderNode.setAttribute('aria-valuetext', this.getValueText(value));
   }
 
   onSliderKeydown(event) {
     var flag = false;
     var value = this.getValue();
-    var valueMin = this.getValueMin();
-    var valueMax = this.getValueMax();
 
     switch (event.key) {
       case 'ArrowLeft':
       case 'ArrowDown':
-        this.moveSliderTo(value - 0.5);
+        this.moveSliderTo(value - 1);
         flag = true;
         break;
 
       case 'ArrowRight':
       case 'ArrowUp':
-        this.moveSliderTo(value + 0.5);
-        flag = true;
-        break;
-
-      case 'PageDown':
-        this.moveSliderTo(value - 1);
-        flag = true;
-        break;
-
-      case 'PageUp':
         this.moveSliderTo(value + 1);
         flag = true;
         break;
 
+      case 'PageDown':
+        this.moveSliderTo(value - 2);
+        flag = true;
+        break;
+
+      case 'PageUp':
+        this.moveSliderTo(value + 2);
+        flag = true;
+        break;
+
       case 'Home':
-        this.moveSliderTo(valueMin);
+        this.moveSliderTo(this.valueMin + 1);
         flag = true;
         break;
 
       case 'End':
-        this.moveSliderTo(valueMax);
+        this.moveSliderTo(this.valueMax);
         flag = true;
         break;
 
@@ -222,17 +216,18 @@ class RatingSlider {
     }
   }
 
-  addTotalStarsToRatingLabel() {
+  addTotalCirclesToRatingLabel() {
     let valuetext = this.getValueTextWithMax(this.getValue());
     this.sliderNode.setAttribute('aria-valuetext', valuetext);
   }
 
   onRailClick(event) {
-    var x = this.getSVGPoint(event).x;
-    var min = this.getValueMin();
-    var max = this.getValueMax();
-    var diffX = x - this.starsX;
-    var value = Math.round((2 * (diffX * (max - min))) / this.starsWidth) / 2;
+    const x = this.getSVGPoint(event).x;
+    const diffX = x - this.railOffset;
+    const fract =
+      0.5 + (diffX * (this.valueMax - this.valueMin)) / this.railWidth;
+    const value = Math.round(fract);
+
     this.moveSliderTo(value);
 
     event.preventDefault();
@@ -254,11 +249,12 @@ class RatingSlider {
 
   onPointerMove(event) {
     if (this.isMoving) {
-      var x = this.getSVGPoint(event).x;
-      var min = this.getValueMin();
-      var max = this.getValueMax();
-      var diffX = x - this.starsX;
-      var value = Math.round((2 * (diffX * (max - min))) / this.starsWidth) / 2;
+      const x = this.getSVGPoint(event).x;
+      const diffX = x - this.railOffset;
+      const fract =
+        0.5 + (diffX * (this.valueMax - this.valueMin)) / this.railWidth;
+      const value = Math.round(fract);
+
       this.moveSliderTo(value);
 
       event.preventDefault();

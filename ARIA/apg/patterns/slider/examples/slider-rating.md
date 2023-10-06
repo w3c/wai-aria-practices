@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 2 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 6 October 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -130,41 +130,67 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <div id="id-rating-label" class="label">Rating</div>
+          <div id="id-rating-label" class="label">On a scale of 0-10, rate your satisfaction with the service you received?</div>
 
-          <div id="id-rating" class="rating-slider" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="0" aria-valuemax="5" aria-valuetext="no stars" aria-labelledby="id-rating-label">
+          <div id="id-rating"
+               class="rating-slider"
+               role="slider"
+               tabindex="0"
+               aria-valuemin="-1"
+               aria-valuenow="-1"
+               aria-valuemax="10"
+               aria-valuetext="no rating on the 11 point rating scale selected"
+              aria-labelledby="id-rating-label">
             
 
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="224" height="48">
-              <defs>
-                <g id="star">
-                  <polygon points="2.0,13.4 11.7,20.5 8.0,31.1 17.7,24.8 27.4,31.9 23.7,20.5 33.4,13.4 21.4,13.4 17.7,2.0 14.0,13.4" ></polygon>
-                </g>
-                <g id="fill-left">
-                  <polygon points="2.0,13.4 11.7,20.5 8.0,31.1 17.7,24.8 17.7,2.0 14.0,13.4" ></polygon>
-                </g>
-              </defs>
-              <rect class="focus-ring" x="2" y="2" width="212" height="44" rx="5" ></rect>
-              <g class="star-1 star-2 star-3 star-4 star-5">
-                <use class="star" xlink:href="#star" x="10" y="7" ></use>
-                <use class="fill-left" xlink:href="#fill-left" x="10" y="7" ></use>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="342" height="48">
+              <rect class="focus-ring" x="2" y="2" width="338" height="36" rx="5" ></rect>
+              <g class="rating-0">
+                <circle class="value" cx="20" cy="20" r="10"></circle>
+                <circle class="focus" cx="20" cy="20" r="14"></circle>
+                <text x="15" y="48">0</text>
               </g>
-              <g class="star-2 star-3 star-4 star-5">
-                <use class="star" xlink:href="#star" x="50" y="7" ></use>
-                <use class="fill-left" xlink:href="#fill-left" x="50" y="7" ></use>
+              <g class="rating-1">
+                <circle class="value" cx="50" cy="20" r="10"></circle>
+                <circle class="focus" cx="50" cy="20" r="14"></circle>
+                <text x="45" y="48">1</text>
               </g>
-              <g class="star-3 star-4 star-5">
-                <use class="star" xlink:href="#star" x="90" y="7" ></use>
-                <use class="fill-left" xlink:href="#fill-left" x="90" y="7" ></use>
+              <g class="rating-2">
+                <circle class="value" cx="80" cy="20" r="10"></circle>
+                <circle class="focus" cx="80" cy="20" r="14"></circle>
               </g>
-              <g class="star-4 star-5">
-                <use class="star" xlink:href="#star" x="130" y="7" ></use>
-                <use class="fill-left" xlink:href="#fill-left" x="130" y="7" ></use>
+              <g class="rating-3">
+                <circle class="value" cx="110" cy="20" r="10"></circle>
+                <circle class="focus" cx="110" cy="20" r="14"></circle>
               </g>
-              <g class="star-5">
-                <use class="star" xlink:href="#star" x="170" y="7" ></use>
-                <use class="fill-left" xlink:href="#fill-left" x="170" y="7" ></use>
+              <g class="rating-4">
+                <circle class="value" cx="140" cy="20" r="10"></circle>
+                <circle class="focus" cx="140" cy="20" r="14"></circle>
               </g>
+              <g class="rating-5">
+                <circle class="value" cx="170" cy="20" r="10"></circle>
+                <circle class="focus" cx="170" cy="20" r="14"></circle>
+              </g>
+              <g class="rating-6">
+                <circle class="value" cx="200" cy="20" r="10"></circle>
+                <circle class="focus" cx="200" cy="20" r="14"></circle>
+              </g>
+              <g class="rating-7">
+                <circle class="value" cx="230" cy="20" r="10"></circle>
+                <circle class="focus" cx="230" cy="20" r="14"></circle>
+              </g>
+              <g class="rating-8">
+                <circle class="value" cx="260" cy="20" r="10"></circle>
+                <circle class="focus" cx="260" cy="20" r="14"></circle>
+              </g>
+              <g class="rating-9">
+                <circle class="value" cx="290" cy="20" r="10"></circle>
+                <circle class="focus" cx="290" cy="20" r="14"></circle>
+               </g>
+              <g class="rating-10">
+                <circle class="value" cx="320" cy="20" r="10"></circle>
+                <circle class="focus" cx="320" cy="20" r="14"></circle>
+               </g>
             </svg>
           </div>
         </div>
