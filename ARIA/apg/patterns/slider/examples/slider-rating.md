@@ -320,7 +320,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>div</code>
               </td>
-              <td>Specifies the minimum value of the slider.  NOTE: -1 means no rating value has been selected.</td>
+              <td>Specifies the minimum value of the slider.  <br>NOTE: -1 means no rating value has been selected.</td>
             </tr>
             <tr data-test-id="aria-valuenow">
               <td></td>
