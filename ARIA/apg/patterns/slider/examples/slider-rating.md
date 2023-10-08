@@ -110,8 +110,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   >
         <p>
           Following is an example of a rating input that demonstrates the <a href="../../">Slider Pattern</a>.
-          This rating widget employs a slider because number of rating values.
-          
+          This rating widget employs a slider because number of rating values, in general when there are more than seven choices consider using the slider pattern.
         </p>
         <p>Similar examples include:</p>
         <ul>
