@@ -114,7 +114,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>Similar examples include:</p>
         <ul>
-          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a eleve point rating scale.</li>
+          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a eleven point rating scale.</li>
           <li><a href="../slider-color-viewer/">Color Viewer Slider Example</a>: Basic horizontal sliders that illustrate setting numeric values for a color picker.</li>
           <li><a href="../slider-temperature/">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
           <li><a href="../slider-seek/">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
@@ -199,7 +199,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <circle class="focus" cx="340" cy="20" r="14"></circle>
                 <text class="label" x="332" y="50">10</text>
                 <text class="description"  x="310" y="65">Completely</text>
-                <text class="description"  x="315" y="80">Satisified</text>
+                <text class="description"  x="315" y="80">Satisfied</text>
                </g>
             </svg>
           </div>
