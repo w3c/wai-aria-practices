@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 7 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 8 October 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -218,7 +218,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>To highlight the interactive nature of the satisfaction rating, a focus ring appears around the group of rating options when the thumb has focus and no rating value has been selected.</li>
           <li>
             To ensure the borders of the circles and focus ring have sufficient contrast with the background when high contrast settings invert colors, the color of the borders are synchronized with the color of the text content.
-            For example, the color of the circle borders is set to match the foreground color of high contrast mode text by specifying the CSS <code>currentcolor</code> value for the <code>stroke</code> property of each inline SVG <code>polygon</code> element.
+            For example, the color of the circle borders is set to match the foreground color of high contrast mode text by specifying the CSS <code>currentcolor</code> value for the <code>stroke</code> property of each inline SVG <code>circle</code> and <code>text</code> elements.
             If specific colors were used to specify the <code>stroke</code> and <code>fill</code> properties, the color of these elements would remain the same in high contrast mode, which could lead to insufficient contrast between them and their background or even make them invisible if their color were to match the high contrast mode background.<br>
             Note: The SVG element needs to have the CSS <code>forced-color-adjust</code> property set to the value <code>auto</code> for the <code>currentcolor</code> value to be updated in high contrast modes.
             Some browsers do not use <code>auto</code> for the default value.</li>
@@ -255,23 +255,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th><kbd>Page Up</kbd></th>
               <td>
                 Increases slider value multiple steps.
-                In this slider, by two rating step.
+                In this slider, by two rating steps.
               </td>
             </tr>
             <tr data-test-id="key-page-down">
               <th><kbd>Page Down</kbd></th>
               <td>
                 Decreases slider value multiple steps.
-                In this slider, by two rating step.
+                In this slider, by two rating steps.
               </td>
             </tr>
             <tr data-test-id="key-home">
               <th><kbd>Home</kbd></th>
-              <td>Sets slider to its minimum value, unaccpetable.</td>
+              <td>Sets slider to its minimum value, unacceptable.</td>
             </tr>
             <tr data-test-id="key-end">
               <th><kbd>End</kbd></th>
-              <td>Sets slider to its maximum value, completely satisified.</td>
+              <td>Sets slider to its maximum value, completely satisfied.</td>
             </tr>
           </tbody>
         </table></div>
@@ -332,7 +332,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>div</code>
               </td>
-              <td>Specifies the minimum value of the slider.  <br>NOTE: -1 means no rating value has been selected.</td>
+              <td>Specifies the minimum value of the slider.  <br>NOTE: -1 identifies the slider as having no rating value selected.</td>
             </tr>
             <tr data-test-id="aria-valuenow">
               <td></td>
