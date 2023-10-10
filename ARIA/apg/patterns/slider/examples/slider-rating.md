@@ -114,7 +114,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>Similar examples include:</p>
         <ul>
-          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a eleven point rating scale.</li>
+          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a ten point satisfaction rating scale.</li>
           <li><a href="../slider-color-viewer/">Color Viewer Slider Example</a>: Basic horizontal sliders that illustrate setting numeric values for a color picker.</li>
           <li><a href="../slider-temperature/">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
           <li><a href="../slider-seek/">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
@@ -327,7 +327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>div</code>
               </td>
-              <td>Specifies the minimum value of the slider.  <br>NOTE: -1 identifies the slider as having no rating value selected.</td>
+              <td>Specifies the minimum value of the slider.  <br>NOTE: 0 identifies the slider as having no rating value selected.</td>
             </tr>
             <tr data-test-id="aria-valuenow">
               <td></td>
@@ -350,7 +350,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <ul>
                   <li>A string value that provides a user-friendly name for the current value of the slider -- the level of satisfaction.</li>
-                  <li>When initialized, and when the slider loses focus, the string also includes the number of rating values e.g., <q>seventh of eleven point rating scale</q>.</li>
+                  <li>When initialized, and when the slider loses focus, the string also includes the number of rating values e.g., <q>seven, seventh value on ten point satisfaction scale</q>.</li>
                 </ul>
               </td>
             </tr>
