@@ -322,7 +322,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr data-test-id="aria-valuemin">
               <td></td>
               <th scope="row">
-                <code>aria-valuemin="-1"</code>
+                <code>aria-valuemin="0"</code>
               </th>
               <td>
                 <code>div</code>
