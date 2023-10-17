@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions-active-de
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 2 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 17 October 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -306,6 +306,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     Included to support touch devices where screen reader users can touch the menu button when the menu is displayed.
                     Keyboard users cannot focus the menu button when the menu is open.
                   </li>
+                </ul>
+              </td>
+            </tr>
+            <tr data-test-id="button-aria-expanded-false">
+              <td></td>
+              <th scope="row"><code>aria-expanded=&quot;false&quot;</code></th>
+              <td><code>button</code></td>
+              <td>
+                <ul>
+                  <li>Added when the menu is closed.</li>
+                  <li>The <code>aria-expanded</code> attribute is set to false when the menu is closed.</li>
                 </ul>
               </td>
             </tr>

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-links/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 2 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 17 October 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -125,7 +125,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="menu-button-links">
-            <button type="button" id="menubutton" aria-haspopup="true" aria-controls="menu2">
+            <button type="button" id="menubutton" aria-haspopup="true" aria-controls="menu2" aria-expanded="false">
               WAI-ARIA Quick Links
               <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
                 <polygon points="1 0, 11 0, 6 8" ></polygon>
@@ -317,6 +317,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     Included to support touch devices where screen reader users can touch the menu button when the menu is displayed.
                     Keyboard users cannot focus the menu button when the menu is open.
                   </li>
+                </ul>
+              </td>
+            </tr>
+            <tr data-test-id="button-aria-expanded-false">
+              <td></td>
+              <th scope="row"><code>aria-expanded=&quot;false&quot;</code></th>
+              <td><code>button</code></td>
+              <td>
+                <ul>
+                  <li>Added when the menu is closed.</li>
+                  <li>The <code>aria-expanded</code> attribute is set to false when the menu is closed.</li>
                 </ul>
               </td>
             </tr>
