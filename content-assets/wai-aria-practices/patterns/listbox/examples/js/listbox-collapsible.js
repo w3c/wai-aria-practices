@@ -1,18 +1,4 @@
-/*
- *   This content is licensed according to the W3C Software License at
- *   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
- */
-
 'use strict';
-
-/**
- * @namespace aria
- * @description
- * The aria namespace is used to support sharing class definitions between example files
- * without causing eslint errors for undefined classes
- */
-var aria = aria || {};
-
 /**
  * ARIA Collapsible Dropdown Listbox Example
  *
@@ -21,66 +7,70 @@ var aria = aria || {};
  */
 
 window.addEventListener('load', function () {
-  const button = document.getElementById('exp_button');
-  const exListbox = new aria.Listbox(document.getElementById('exp_elem_list'));
-  new ListboxButton(button, exListbox);
+  var button = document.getElementById('exp_button');
+  var exListbox = new aria.Listbox(document.getElementById('exp_elem_list'));
+  new aria.ListboxButton(button, exListbox);
 });
 
-class ListboxButton {
-  constructor(button, listbox) {
-    this.button = button;
-    this.listbox = listbox;
-    this.registerEvents();
-  }
+var aria = aria || {};
 
-  registerEvents() {
-    this.button.addEventListener('click', this.showListbox.bind(this));
-    this.button.addEventListener('keyup', this.checkShow.bind(this));
-    this.listbox.listboxNode.addEventListener(
-      'blur',
-      this.hideListbox.bind(this)
-    );
-    this.listbox.listboxNode.addEventListener(
-      'keydown',
-      this.checkHide.bind(this)
-    );
-    this.listbox.setHandleFocusChange(this.onFocusChange.bind(this));
-  }
+aria.ListboxButton = function (button, listbox) {
+  this.button = button;
+  this.listbox = listbox;
+  this.registerEvents();
+};
 
-  checkShow(evt) {
-    switch (evt.key) {
-      case 'ArrowUp':
-      case 'ArrowDown':
-        evt.preventDefault();
-        this.showListbox();
-        this.listbox.checkKeyPress(evt);
-        break;
-    }
-  }
+aria.ListboxButton.prototype.registerEvents = function () {
+  this.button.addEventListener('click', this.showListbox.bind(this));
+  this.button.addEventListener('keyup', this.checkShow.bind(this));
+  this.listbox.listboxNode.addEventListener(
+    'blur',
+    this.hideListbox.bind(this)
+  );
+  this.listbox.listboxNode.addEventListener(
+    'keydown',
+    this.checkHide.bind(this)
+  );
+  this.listbox.setHandleFocusChange(this.onFocusChange.bind(this));
+};
 
-  checkHide(evt) {
-    switch (evt.key) {
-      case 'Enter':
-      case 'Escape':
-        evt.preventDefault();
-        this.hideListbox();
-        this.button.focus();
-        break;
-    }
-  }
+aria.ListboxButton.prototype.checkShow = function (evt) {
+  var key = evt.which || evt.keyCode;
 
-  showListbox() {
-    this.listbox.listboxNode.classList.remove('hidden');
-    this.button.setAttribute('aria-expanded', 'true');
-    this.listbox.listboxNode.focus();
+  switch (key) {
+    case aria.KeyCode.UP:
+    case aria.KeyCode.DOWN:
+      evt.preventDefault();
+      this.showListbox();
+      this.listbox.checkKeyPress(evt);
+      break;
   }
+};
 
-  hideListbox() {
-    this.listbox.listboxNode.classList.add('hidden');
-    this.button.removeAttribute('aria-expanded');
-  }
+aria.ListboxButton.prototype.checkHide = function (evt) {
+  var key = evt.which || evt.keyCode;
 
-  onFocusChange(focusedItem) {
-    this.button.innerText = focusedItem.innerText;
+  switch (key) {
+    case aria.KeyCode.RETURN:
+    case aria.KeyCode.ESC:
+      evt.preventDefault();
+      this.hideListbox();
+      this.button.focus();
+      break;
   }
-}
+};
+
+aria.ListboxButton.prototype.showListbox = function () {
+  aria.Utils.removeClass(this.listbox.listboxNode, 'hidden');
+  this.button.setAttribute('aria-expanded', 'true');
+  this.listbox.listboxNode.focus();
+};
+
+aria.ListboxButton.prototype.hideListbox = function () {
+  aria.Utils.addClass(this.listbox.listboxNode, 'hidden');
+  this.button.removeAttribute('aria-expanded');
+};
+
+aria.ListboxButton.prototype.onFocusChange = function (focusedItem) {
+  this.button.innerText = focusedItem.innerText;
+};
