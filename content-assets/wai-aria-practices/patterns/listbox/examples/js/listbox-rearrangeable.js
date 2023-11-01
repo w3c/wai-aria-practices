@@ -3,15 +3,9 @@
  *   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
  */
 
-'use strict';
+/* global aria */
 
-/**
- * @namespace aria
- * @description
- * The aria namespace is used to support sharing class definitions between example files
- * without causing eslint errors for undefined classes
- */
-var aria = aria || {};
+'use strict';
 
 /**
  * ARIA Listbox Examples

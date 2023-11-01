@@ -44,30 +44,15 @@
 [role="option"] {
   position: relative;
   display: block;
-  margin: 2px;
-  padding: 2px 1em 2px 1.5em;
+  padding: 0 1em 0 1.5em;
   line-height: 1.8em;
-  cursor: pointer;
 }
 
-[role="listbox"]:focus [role="option"].focused {
+[role="option"].focused {
   background: #bde4ff;
 }
 
-[role="listbox"]:focus [role="option"].focused,
-[role="option"]:hover {
-  outline: 2px solid currentcolor;
-}
-
-.move-right-btn span.checkmark::after {
-  content: " →";
-}
-
-.move-left-btn span.checkmark::before {
-  content: "← ";
-}
-
-[role="option"][aria-selected="true"] span.checkmark::before {
+[role="option"][aria-selected="true"]::before {
   position: absolute;
   left: 0.5em;
   content: "✓";
@@ -133,6 +118,14 @@ button {
 
 button[aria-disabled="true"] {
   opacity: 0.5;
+}
+
+.move-right-btn::after {
+  content: " →";
+}
+
+.move-left-btn::before {
+  content: "← ";
 }
 
 .annotate {
