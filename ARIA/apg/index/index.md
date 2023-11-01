@@ -667,6 +667,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>
               <ul>
                 <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>

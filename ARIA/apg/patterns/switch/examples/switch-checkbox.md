@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/switch/examples/switch-checkbox/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>        <p>Page last updated: 24 July 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/2'>View issues related to this example</a></p>        <p>Page last updated: 20 September 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -168,7 +168,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>To make it easier to perceive that clicking either the label or switch will activate the switch, the hover indicator is the same as the focus indicator.</li>
               <li>To help people with visual impairments identify the switch as an interactive element, the cursor is changed to a pointer when hovering over the switch.</li>
               <li>
-                Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
+                Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from zero to two pixels and padding is reduced by two pixels.
                 When an element loses focus, its border changes from two pixels to zero and padding is increased by two pixels.
