@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 31 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 8 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -141,12 +141,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               aria-labelledby="id-rating-label">
             
 
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="520" height="96">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="800" height="110">
               <rect class="focus-ring" x="23" y="2" width="54" height="90" rx="5" ></rect>
               <g class="rating">
                 <rect class="value" height="24" width="32" x="13" y="30"></rect>
                 <text class="label" x="25" y="47">1</text>
-                <text class="description"  x="10" y="20">Extremely Unsatisfied</text>
+                <text class="description"  x="13" y="20">Extremely Unsatisfied</text>
               </g>
               <g class="rating">
                 <rect class="value" height="24" width="32" x="45" y="30"></rect>
