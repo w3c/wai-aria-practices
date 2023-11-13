@@ -99,7 +99,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
           <li>The element that opens the menu has role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.</li>
-          <li>The element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
+          <li>The element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code> (<code>true</code> is an alias for <code>menu</code>).</li>
           <li>
             When the menu is displayed, the element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>.
             When the menu is hidden, it is recommended that <code>aria-expanded</code> is not present.
