@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions-active-de
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 17 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 28 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -120,7 +120,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="menu-button-actions">
-            <button type="button" id="menubutton1" aria-haspopup="true" aria-controls="menu1">
+            <button type="button" id="menubutton1" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
               Actions
               <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
                 <polygon points="1 0, 11 0, 6 8" ></polygon>
