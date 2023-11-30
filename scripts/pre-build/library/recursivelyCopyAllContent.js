@@ -17,7 +17,10 @@ const recursivelyCopyAllContent = async ({ forEachFile }) => {
     }
 
     const { buildPath } = rewriteSourcePath(sourcePath);
-    if (buildPath === null) continue; // File is ignored
+    
+    // Some files, notably templates, have no buildPath and can be ignored
+    if (buildPath === null) continue; 
+    
     const buildContents = await forEachFile(sourcePath, sourceContents);
 
     await fs.mkdir(path.dirname(buildPath), { recursive: true });
