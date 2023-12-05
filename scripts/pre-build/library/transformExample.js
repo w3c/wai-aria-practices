@@ -44,6 +44,7 @@ const getLastModifiedDate = async (exampleFilePath) => {
     );
     throw error;
   }
+  console.log(path.basename(exampleFilePath), dateFormatted)
   return dateFormatted;
 };
 
