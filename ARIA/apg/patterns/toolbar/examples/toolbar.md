@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/toolbar/examples/toolbar/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 28 November 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 5 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -855,7 +855,7 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
                 <td><code>button</code></td>
                 <td>Indicates the menu is not displayed and that activating the menu button opens the menu.</td>
               </tr>
-              <tr data-test-id="toolbar-menubutton-aria-expanded">
+              <tr data-test-id="toolbar-menubutton-aria-expanded-true">
                 <td></td>
                 <th scope="row"><code>aria-expanded="true"</code></th>
                 <td><code>button</code></td>
