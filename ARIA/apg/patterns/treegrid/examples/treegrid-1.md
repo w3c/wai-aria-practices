@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treegrid/examples/treegrid-1/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 30 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -118,10 +118,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/treegrid.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-treegrid.svg">
         <p>The following example demonstrates how the <a href="../../">Treegrid Pattern</a> can be used to make an interactive tree that enables users to both navigate the hierarchical structure of email conversations and also navigate elements that describe each email, such as subject and sender.</p>
         <p>Similar examples include:</p>
         <ul>

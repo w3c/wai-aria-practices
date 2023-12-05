@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 30 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -94,10 +94,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-menu-button.svg">
         <p>
           This example demonstrates how the <a href="../../">Menu Button Pattern</a> can be used to create a button that opens an actions menu.
           In this example, choosing an action from the menu will cause the chosen action to be displayed in the <q>Last Action</q> edit box.

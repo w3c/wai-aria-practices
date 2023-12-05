@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/table/examples/sortable-table/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/16'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/16'>View issues related to this example</a></p>        <p>Page last updated: 30 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -94,10 +94,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/table.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-table.svg">
         <p>
           The example below illustrates an implementation of the <a href="../../">Table Pattern</a> for a table with sortable rows.
           The example uses HTML table markup for all elements of the table structure, e.g., cells, rows, column headers, and caption.

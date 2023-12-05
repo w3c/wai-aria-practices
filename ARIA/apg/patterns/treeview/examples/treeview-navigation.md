@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 30 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -102,10 +102,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li>Correct implementation of the <code>tree</code> role requires implementation of complex functionality that is not needed for typical site navigation that is styled to look like a tree with expandable sections.</li>
             <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="../../../disclosure/">disclosure pattern.</a></li>
           </ul>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-treeview.svg">
         <p>
           The below example demonstrates how the <a href="../../">Tree View Pattern</a> can be used to build a navigation tree for a set of hierarchically organized web pages.
           It illustrates navigation of a mythical university web site that is comparable to the navigation illustrated in the

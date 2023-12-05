@@ -77,9 +77,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-slider.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/slider-color-viewer/">Color Viewer Slider Example</a>: Basic horizontal sliders that illustrate setting numeric values for a color picker.</li>

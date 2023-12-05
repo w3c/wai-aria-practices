@@ -95,9 +95,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-grid.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/layout-grids/">Layout Grid Examples</a>: Three example implementations of grids that are used to lay out widgets, including a collection of navigation links, a message recipients list, and a set of search results.</li>

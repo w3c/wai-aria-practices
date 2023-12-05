@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-seek/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 30 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -103,10 +103,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             This is a new convention that may not be fully implemented by some assistive technologies.
             Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
           </p>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-slider.svg">
         <p>
           The following example of the <a href="../../">Slider Pattern</a> illustrates a seek control that could be used to move the current play position in an audio or video media player.
           The example demonstrates how to use <code>aria-valuetext</code> to provide assistive technology users with meaningful names for numeric values.

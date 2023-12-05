@@ -68,9 +68,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/radio.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-radio.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/radio/">Radio Group Example Using Roving tabindex</a></li>

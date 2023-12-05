@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 30 November 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -104,10 +104,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             This is a new convention that may not be fully implemented by some assistive technologies.
             Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
           </p>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-slider.svg">
         <p>
           Following is an example of a rating input that demonstrates the <a href="../../">Slider Pattern</a>.
           This rating widget employs a slider because the slider pattern supports step values of any size.

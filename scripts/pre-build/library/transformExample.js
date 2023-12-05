@@ -16,9 +16,10 @@ const loadNotice = async () => {
   const noticeContent = await fs.readFile(templateSourcePath, {
     encoding: "utf8",
   });
-  const html = parseHtml(noticeContent);
-
+  
   return async (sourcePath) => {
+    const html = parseHtml(noticeContent);
+    
     await rewriteElementPaths(html, {
       onSourcePath: sourcePath,
       optionalTemplateSourcePath: templateSourcePath,
@@ -49,6 +50,7 @@ const getLastModifiedDate = async (exampleFilePath) => {
     );
     throw error;
   }
+  // console.log(path.basename(exampleFilePath), dateFormatted)
   return dateFormatted;
 };
 
