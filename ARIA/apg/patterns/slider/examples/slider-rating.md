@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 5 December 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -110,11 +110,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   >
         <p>
           Following is an example of a rating input that demonstrates the <a href="../../">Slider Pattern</a>.
-          This rating widget employs a slider because number of rating values, in general when there are more than seven choices consider using the slider pattern.
+          This rating widget employs a slider because of the relatively large number of values on its scale; it provides a ten-point scale.
+          For inputs with seven or fewer choices,another pattern that could be used is radio group as demonstrated by the
+          <a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>.
+          However, when there are more than seven choices, the radio group pattern is less friendly to keyboard and assistive technology users because it does not provide as many ways of easily navigating through choices as other input patterns, such as
+          <a href="../../">slider</a>,
+          <a href="../../../spinbutton/">spin button</a>,
+          <a href="../../../combobox/">combobox</a>,
+          and <a href="../../../listbox/">listbox</a>.
         </p>
         <p>Similar examples include:</p>
         <ul>
-          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a ten point satisfaction rating scale.</li>
+          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a five star rating scale.</li>
           <li><a href="../slider-color-viewer/">Color Viewer Slider Example</a>: Basic horizontal sliders that illustrate setting numeric values for a color picker.</li>
           <li><a href="../slider-temperature/">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
           <li><a href="../slider-seek/">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
@@ -137,7 +144,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                aria-valuemin="0"
                aria-valuenow="0"
                aria-valuemax="10"
-               aria-valuetext="no rating on the 10 point satisfaction scale selected"
+               aria-valuetext="Choose a rating from 1 to 10 where 10 is extremely satisfied"
               aria-labelledby="id-rating-label">
             
 
@@ -195,16 +202,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Accessibility Features</h2>
         <ul>
           <li>
-            To ensure assistive technology users correctly perceive the maximum slider value, this example uses the <code>aria-valuetext</code> property to communicate both the current and maximum values.
+            To ensure assistive technology users correctly understand the meaning of the current value, this example uses the
+            <a href="https://w3c.github.io/aria/#aria-valuetext" class="property-reference">aria-valuetext</a>
+            property to communicate the current value, maximum value, and the meaning of the maximum value (<q>Extremely Satisfied</q>).
             However, since repeating the maximum value every time the slider value changes is potentially distracting, the maximum value is included in <code>aria-valuetext</code> only when the slider is initialized and when the thumb loses keyboard focus.
           </li>
-          <li>To highlight the interactive nature of the satisfaction rating, a focus ring appears around the group of rating options when the slider has focus and no rating value has been selected.</li>
+          <li>To highlight the interactive nature of the satisfaction rating, a focus ring appears around the group of rating options when the slider has focus and a rating value has not yet been set.</li>
           <li>
-            To ensure the borders of the rating values and focus ring have sufficient contrast with the background when high contrast settings invert colors, the color of the borders are synchronized with the color of the text content using a CSS media query selector  (e.g. <code>@media (forced-colors: active)</code>) .
-            For example, the color of the rating value borders is set to match the link foreground color of high contrast mode text by specifying the CSS <code>canvas</code> and <code>linkText</code> values for the <code>stroke</code> and <code>fill</code> properties of each inline SVG <code>rect</code> and <code>text</code> elements.
+            To ensure the borders of the rating values and focus ring have sufficient contrast with the background when high contrast settings invert colors, the color of the borders is synchronized with the color of the text content using a CSS media query selector  (e.g. <code>@media (forced-colors: active)</code>) .
+            For example, the color of the rating value borders is set to match the link foreground color of high contrast mode text by specifying the CSS <code>canvas</code> and <code>linkText</code> values for the <code>stroke</code> and <code>fill</code> properties of each inline SVG <code>rect</code> and <code>text</code> element.
             If specific colors were used to specify the <code>stroke</code> and <code>fill</code> properties, the color of these elements would remain the same in high contrast mode, which could lead to insufficient contrast between them and their background or even make them invisible if their color were to match the high contrast mode background.<br>
             Note: The SVG element needs to have the CSS <code>forced-color-adjust</code> property set to the value <code>auto</code> for the <code>currentcolor</code> value to be updated in high contrast modes.
-            Some browsers do not use <code>auto</code> for the default value.</li>
+            Some browsers do not use <code>auto</code> for the default value.
+          </li>
         </ul>
       </section>
 
@@ -250,11 +260,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="key-home">
               <th><kbd>Home</kbd></th>
-              <td>Sets slider to its minimum value, unacceptable.</td>
+              <td>Sets slider to its minimum value, extremely dissatisfied.</td>
             </tr>
             <tr data-test-id="key-end">
               <th><kbd>End</kbd></th>
-              <td>Sets slider to its maximum value, completely satisfied.</td>
+              <td>Sets slider to its maximum value, extremely satisfied.</td>
             </tr>
           </tbody>
         </table></div>
@@ -315,7 +325,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>div</code>
               </td>
-              <td>Specifies the minimum value of the slider.  <br>NOTE: 0 identifies the slider as having no rating value selected.</td>
+              <td>Specifies the minimum value of the slider.  <br>NOTE: 0 indicates a rating value has not yet been set.</td>
             </tr>
             <tr data-test-id="aria-valuenow">
               <td></td>
@@ -337,15 +347,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
               <td>
                 <ul>
-                  <li>A string value that provides a user-friendly name for the current value of the slider -- the level of satisfaction.</li>
-                  <li>When initialized, and when the slider loses focus, the string also includes the number of rating values e.g., <q>seven, seventh value on ten point satisfaction scale</q>.</li>
+                  <li>A string that provides a user-friendly name for the current value.</li>
+                  <li>When the value is <code>0</code>, <code>1</code>, or <code>10</code>, provides the name of the value.</li>
+                  <li>When initialized and when the slider loses focus, the string also includes the number of rating values and the meaning of the maximum value, e.g., <q>seven out of 10 where 10 is extremely satisfied</q>.</li>
                 </ul>
               </td>
             </tr>
             <tr data-test-id="aria-labelledby">
               <td></td>
               <th scope="row">
-                <code>aria-labelledby="IDREF"</code>
+                <code>aria-labelledby="ID_REFERENCE"</code>
               </th>
               <td>
                 <code>div</code>
