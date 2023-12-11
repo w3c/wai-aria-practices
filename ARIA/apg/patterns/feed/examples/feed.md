@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -88,10 +88,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/feed.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-feed.svg">
         <p>
           <strong>NOTE:</strong> The feed role is a new WAI-ARIA feature, introduced by WAI-ARIA 1.1.
           This page provides a proposed implementation of a feed component.

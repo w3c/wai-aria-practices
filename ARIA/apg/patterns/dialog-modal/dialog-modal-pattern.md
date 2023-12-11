@@ -79,9 +79,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/dialog-modal.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-dialog-modal.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/dialog/">Modal Dialog Example</a>: Demonstrates multiple layers of modal dialogs with both small and large amounts of content.</li>

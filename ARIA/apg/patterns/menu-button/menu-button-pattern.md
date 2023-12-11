@@ -68,9 +68,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-menu-button.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/menu-button-actions-active-descendant/">Action Menu Button Example Using aria-activedescendant</a>: A button that opens a menu of actions or commands where focus in the menu is managed using aria-activedescendant.</li>

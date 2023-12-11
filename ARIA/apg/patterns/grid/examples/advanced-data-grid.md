@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/grid/examples/advanced-data-grid/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -101,10 +101,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-grid.svg">
         <p>
           This example has not yet been developed.
           Development is described in <a href="https://github.com/w3c/aria-practices/issues/155">issue 155.</a>

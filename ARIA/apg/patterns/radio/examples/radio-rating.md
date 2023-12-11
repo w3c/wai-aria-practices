@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/radio/examples/radio-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/22'>View issues related to this example</a></p>        <p>Page last updated: 24 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/22'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -94,10 +94,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/radio.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-radio.svg">
         <p>
           Following is an example of a rating input that demonstrates the <a href="../../">Radio Group Pattern.</a>
           The rating is indicated by the number of stars selected by the user.

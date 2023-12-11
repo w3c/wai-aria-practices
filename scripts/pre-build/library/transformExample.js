@@ -11,14 +11,20 @@ const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 const removeConflictingCss = require("./removeConflictingCss");
 
 const loadNotice = async () => {
-  const noticePath = path.resolve(
-    sourceRoot,
-    "content/shared/templates/example-usage-warning.html"
-  );
-  const noticeContent = await fs.readFile(noticePath, { encoding: "utf8" });
-  const html = parseHtml(noticeContent);
+  const relativePath = "content/shared/templates/example-usage-warning.html";
+  const templateSourcePath = path.resolve(sourceRoot, relativePath);
+  const noticeContent = await fs.readFile(templateSourcePath, {
+    encoding: "utf8",
+  });
 
-  return () => {
+  return async (sourcePath) => {
+    const html = parseHtml(noticeContent);
+
+    await rewriteElementPaths(html, {
+      onSourcePath: sourcePath,
+      optionalTemplateSourcePath: templateSourcePath,
+    });
+
     return html.querySelector("body").innerHTML;
   };
 };
@@ -54,23 +60,14 @@ const transformExample = async (sourcePath, sourceContents) => {
   const title = html.querySelector("h1").innerHTML;
   html.querySelector("h1").remove();
 
-  const slug = sitePath.match(/patterns\/([^/]+)\//)?.[1];
-
-  const img = `<img 
-    alt=""
-    src="{{ '/content-images/wai-aria-practices/img/${slug}.svg' | relative_url }}"
-    class="example-page-example-icon"
-  />`;
-  if (html.querySelector(".advisement")) {
-    html.querySelector(".advisement").insertAdjacentHTML("afterend", img);
-  } else {
-    html.querySelector("h2").insertAdjacentHTML("afterend", img);
-  }
-
   removeConflictingCss(html);
 
+  const lastModifiedDateFormatted = await getLastModifiedDate(sourcePath);
+
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
+
   const getNotice = await loadedNotice;
-  const notice = getNotice();
+  const notice = await getNotice(sourcePath);
   html.querySelector("body").insertAdjacentHTML(
     "afterbegin",
     `
@@ -78,10 +75,6 @@ const transformExample = async (sourcePath, sourceContents) => {
       ${notice}
     `
   );
-
-  const lastModifiedDateFormatted = await getLastModifiedDate(sourcePath);
-
-  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   const relatedLinksElement = html.querySelector(
     '[aria-label="Related Links"]'

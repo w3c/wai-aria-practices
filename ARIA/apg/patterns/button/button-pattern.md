@@ -90,9 +90,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-button.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/button/">Button Examples</a>: Examples of clickable HTML <code>div</code> and <code>span</code> elements made into accessible command and toggle buttons.</li>

@@ -80,9 +80,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/accordion.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-accordion.svg">
         <h2>Example</h2>
         <p><a href="examples/accordion/">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time.</p>
       </section>
