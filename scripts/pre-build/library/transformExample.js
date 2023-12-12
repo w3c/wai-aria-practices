@@ -48,7 +48,13 @@ const transformExample = async (sourcePath, sourceContents) => {
 
   const getNotice = await loadedNotice;
   const notice = await getNotice(sourcePath);
-  html.querySelector("body").insertAdjacentHTML("afterbegin", notice);
+  html.querySelector("body").insertAdjacentHTML(
+    "afterbegin",
+    `
+      <h2 id="support-notice-header">Read This First</h2>
+      ${notice}
+    `
+  );
 
   const relatedLinksElement = html.querySelector(
     '[aria-label="Related Links"]'
