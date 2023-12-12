@@ -90,7 +90,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
-    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
