@@ -74,9 +74,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-link.svg">
         <h2>Examples</h2>
         <p><a href="examples/link/">Link Examples</a>: Link widgets constructed from HTML <code>span</code> and <code>img</code> elements.</p>
       </section>

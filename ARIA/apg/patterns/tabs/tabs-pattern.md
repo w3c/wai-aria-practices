@@ -84,9 +84,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/tabs.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-tabs.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/tabs-automatic/">Tabs With Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>

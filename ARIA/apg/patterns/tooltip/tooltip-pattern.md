@@ -76,9 +76,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/tooltip.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-tooltip.svg">
         <h2>Example</h2>
         <p>Work to develop a tooltip example is tracked by <a href="https://github.com/w3c/aria-practices/issues/127">issue 127.</a></p>
       </section>

@@ -26,7 +26,7 @@ const rewriteSourcePath = (sourcePath) => {
   const githubPath = relative(sourceRoot, sourcePath);
 
   let buildRelative = githubPath.replace(/^content\//, "");
-  if (contentType === "ignored") {
+  if (contentType === "template") {
     return { githubPath, buildPath: null, sitePath: null };
   }
   if (contentType !== "htmlAsset") {
@@ -96,20 +96,32 @@ const getSitePath = (buildPath, contentType) => {
     case "htmlAsset":
     case "otherAsset":
       return buildRelative;
-    case "ignored":
+    case "template":
       return null;
     default:
       throw new Error(`Script did not recognize content type ${contentType}`);
   }
 };
 
-const rewriteRelativePath = (relativePathAndHash, { onSourcePath }) => {
-  const { buildPath: onBuildPath } = rewriteSourcePath(onSourcePath);
+const rewriteRelativePath = (
+  relativePathAndHash,
+  {
+    onSourcePath,
+    // Only needed for templates. This is required because templates have a 
+    // sourcePath (the template file) but they lack a predetermined buildPath 
+    // (which will be wherever the template is used).
+    optionalTemplateSourcePath,
+  }
+) => {
+  let onBuildPath = rewriteSourcePath(onSourcePath).buildPath;
 
   const [relativePathAndQuery, hash] = relativePathAndHash.split("#");
   const [relativePath, queryString] = relativePathAndQuery.split("?");
 
-  const sourcePath = path.resolve(dirname(onSourcePath), relativePath);
+  const sourcePath = path.resolve(
+    dirname(optionalTemplateSourcePath || onSourcePath),
+    relativePath
+  );
   const { buildPath } = rewriteSourcePath(sourcePath);
 
   const siteRootPathPreHash = getSitePath(

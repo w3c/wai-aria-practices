@@ -85,9 +85,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>Note that the term &quot;primary pane&quot; does not describe the importance or purpose of content inside the pane.</p>
       </section>
 
-      <section id="example" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/windowsplitter.svg' | relative_url }}"
-    >
+      <section id="example" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-windowsplitter.svg">
         <h2>Example</h2>
         <p>Work to develop an example window splitter widget is tracked by <a href="https://github.com/w3c/aria-practices/issues/130">issue 130.</a></p>
       </section>

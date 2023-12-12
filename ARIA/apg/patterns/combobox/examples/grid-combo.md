@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/grid-combo/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 2 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -68,6 +68,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -96,10 +97,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-combobox.svg">
         <p>
           The following example combobox implements the <a href="../../">combobox pattern</a> using a grid for the suggested values popup.
         </p>

@@ -80,9 +80,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/table.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-table.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/table/">Table Example</a>: ARIA table made using HTML <code>div</code> and <code>span</code> elements.</li>

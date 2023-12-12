@@ -78,9 +78,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/meter.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-meter.svg">
         <h2>Example</h2>
         <p><a href="examples/meter/">Meter Example</a></p>
       </section>

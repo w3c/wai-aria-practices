@@ -97,9 +97,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/carousel.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-carousel.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/carousel-1-prev-next/">Auto-Rotating Image Carousel with Buttons for Slide Control:</a> A basic image carousel that demonstrates the accessibility features necessary for carousels that rotate automatically on page load and also enables users to choose which slide is displayed with buttons for previous and next slide.</li>

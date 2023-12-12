@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-collapsible/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 18 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -67,6 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -102,10 +103,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             This pattern has been deprecated, and will be removed in a future version of the ARIA Authoring Practices.
             The <a href="../../../combobox/examples/combobox-select-only/">select-only combobox</a> should be used as an alternative to this pattern.
           </p>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-listbox.svg">
         <p>
           The following example implementation of the <a href="../../">Listbox Pattern</a> demonstrates a collapsible single-select listbox widget that is functionally similar to an HTML <code>select</code> input with the attribute <code>size="1"</code>.
           The widget consists of a button that triggers the display of a listbox.
