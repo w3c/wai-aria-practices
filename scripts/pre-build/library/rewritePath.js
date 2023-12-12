@@ -130,7 +130,7 @@ const rewriteRelativePath = (relativePathAndHash, { onSourcePath }) => {
   const siteRootPath = `${siteRootPathPreHash}${hashFormatted}`;
   const siteRelativePath = `${siteRelativePathPreHash}${queryStringFormatted}${hashFormatted}`;
 
-  return { siteRelativePath, siteRootPath, buildPath };
+  return { siteRelativePath, siteRootPath, sourcePath, buildPath };
 };
 
 module.exports = {
