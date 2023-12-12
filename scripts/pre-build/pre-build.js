@@ -45,7 +45,7 @@ const preBuild = async () => {
           return transformHtmlAsset(sourcePath, sourceContents);
         case "otherAsset":
           return transformOtherAsset(sourcePath, sourceContents);
-        case "ignored":
+        case "template":
           break;
         default:
           throw new Error(

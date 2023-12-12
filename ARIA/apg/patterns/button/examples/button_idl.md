@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/button/examples/button_idl/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 2 October 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -66,6 +66,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <h2 id="support-notice-header">Read This First</h2>
       
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -96,6 +97,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>About This example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-button.svg">
         <p>The following examples of the <a href="../../">Button Pattern</a> demonstrate a new JavaScript syntax for coding ARIA attributes.</p>
         <p>
           The JavaScript for the example buttons on this page uses the <a class="specref" href="https://w3c.github.io/aria/#idl-interface">IDL Interface defined in ARIA 1.2</a>.
@@ -121,10 +123,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <a href="https://github.com/w3c/aria-practices/issues/1692" target="_blank">browser that does not yet provide support for ARIA attribute reflection</a>,
               the buttons will not be styled correctly.
             </p>
-          </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+          </div>
 
           <p>This <q>Print</q> action button uses a <code>div</code> element.</p>
           <div tabindex="0" id="action">Print Page</div>

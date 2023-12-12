@@ -82,9 +82,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/slider-multithumb.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-slider-multithumb.svg">
         <h2>Example</h2>
         <p><a href="examples/slider-multithumb/">Horizontal Multi-Thumb Slider Example</a>: Demonstrates a two-thumb slider for picking a price range for a hotel reservation.</p>
       </section>
