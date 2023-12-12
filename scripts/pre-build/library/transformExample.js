@@ -46,13 +46,6 @@ const transformExample = async (sourcePath, sourceContents) => {
 
   removeConflictingCss(html);
 
-  const lastModifiedDateFormatted = await getExampleLastModifiedDate({
-    html,
-    sourcePath,
-  });
-
-  await rewriteElementPaths(html, { onSourcePath: sourcePath });
-
   const getNotice = await loadedNotice;
   const notice = getNotice();
   html.querySelector("body").insertAdjacentHTML(
@@ -62,6 +55,13 @@ const transformExample = async (sourcePath, sourceContents) => {
       ${notice}
     `
   );
+
+  const lastModifiedDateFormatted = await getExampleLastModifiedDate({
+    html,
+    sourcePath,
+  });
+
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   const relatedLinksElement = html.querySelector(
     '[aria-label="Related Links"]'
