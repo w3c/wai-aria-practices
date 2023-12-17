@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/radio/examples/radio-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/22'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/22'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -104,7 +104,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>Similar examples include:</p>
         <ul>
-          <li><a href="../../../slider/examples/slider-rating/">Rating Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum value of a rating input for a five star rating scale.</li>
+          <li><a href="../../../slider/examples/slider-rating/">Rating Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to make it easy for assistive technology users to understand the meaning of the current value chosen on a ten-point satisfaction scale.</li>
           <li><a href="../radio-activedescendant/">Radio Group Example Using aria-activedescendant</a>: Radio button group that uses <code>aria-activedescendant</code> for managing keyboard focus.</li>
           <li><a href="../radio/">Radio Group Example Using Roving tabindex</a>: A radio button group that uses roving <code>tabindex</code> for managing keyboard focus.</li>
         </ul>
