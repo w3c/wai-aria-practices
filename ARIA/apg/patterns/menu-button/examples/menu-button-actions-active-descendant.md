@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions-active-de
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 18 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -116,7 +116,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="menu-button-actions">
-            <button type="button" id="menubutton1" aria-haspopup="true" aria-controls="menu1">
+            <button type="button" id="menubutton1" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
               Actions
               <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
                 <polygon points="1 0, 11 0, 6 8" ></polygon>
@@ -262,7 +262,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tbody>
             <tr data-test-id="button-aria-haspopup">
               <td></td>
-              <th scope="row"><code>aria-haspopup=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-haspopup="true"</code></th>
               <td>
                 <code>button</code>
               </td>
@@ -278,7 +278,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="button-aria-controls">
               <td></td>
-              <th scope="row"><code>aria-controls=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-controls="ID_REFERENCE"</code></th>
               <td>
                 <code>button</code>
               </td>
@@ -289,21 +289,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </ul>
               </td>
             </tr>
+            <tr data-test-id="button-aria-expanded-false">
+              <td></td>
+              <th scope="row"><code>aria-expanded="false"</code></th>
+              <td><code>button</code></td>
+              <td>Indicates the menu is not displayed and that activating the menu button opens the menu.</td>
+            </tr>
             <tr data-test-id="button-aria-expanded">
               <td></td>
-              <th scope="row"><code>aria-expanded=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-expanded="true"</code></th>
               <td><code>button</code></td>
-              <td>
-                <ul>
-                  <li>Added when the menu is open.</li>
-                  <li>Indicates that the menu is displayed and that activating the menu button closes the menu.</li>
-                  <li>The <code>aria-expanded</code> attribute is removed when the menu is closed.</li>
-                  <li>
-                    Included to support touch devices where screen reader users can touch the menu button when the menu is displayed.
-                    Keyboard users cannot focus the menu button when the menu is open.
-                  </li>
-                </ul>
-              </td>
+              <td>Indicates the menu is displayed and that activating the menu button closes the menu.</td>
             </tr>
           </tbody>
         </table></div>
@@ -332,7 +328,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code></code>
               </td>
-              <th scope="row"><code>aria-labelledby=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-labelledby="ID_REFERENCE"</code></th>
               <td>
                 <code>ul</code>
               </td>
@@ -345,7 +341,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="menu-tabindex">
               <td></td>
-              <th scope="row"><code>tabindex=&quot;-1&quot;</code></th>
+              <th scope="row"><code>tabindex="-1"</code></th>
               <td>
                 <code>ul</code>
               </td>
@@ -362,14 +358,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="menu-aria-activedescendant">
               <td></td>
-              <th scope="row"><code>aria-activedescendant=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-activedescendant="ID_REFERENCE"</code></th>
               <td>
                 <code>ul</code>
               </td>
               <td>
                 <ul>
                   <li>Refers to the descendant <code>menuitem</code> element that is visually indicated as focused.</li>
-                  <li>The <code>IDREF</code> value is updated when keys that move the focus indicator among menu items are pressed.</li>
+                  <li>The <code>ID_REFERENCE</code> value is updated when keys that move the focus indicator among menu items are pressed.</li>
                   <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the <code>ul</code> element with role <code>menu</code>.</li>
                   <li>
                     For more information about this focus management technique, see

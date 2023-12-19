@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-links/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 18 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -121,7 +121,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="menu-button-links">
-            <button type="button" id="menubutton" aria-haspopup="true" aria-controls="menu2">
+            <button type="button" id="menubutton" aria-haspopup="true" aria-controls="menu2" aria-expanded="false">
               WAI-ARIA Quick Links
               <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
                 <polygon points="1 0, 11 0, 6 8" ></polygon>
@@ -273,7 +273,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tbody>
             <tr data-test-id="button-aria-haspopup">
               <td></td>
-              <th scope="row"><code>aria-haspopup=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-haspopup="true"</code></th>
               <td>
                 <code>button</code>
               </td>
@@ -289,7 +289,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="button-aria-controls">
               <td></td>
-              <th scope="row"><code>aria-controls=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-controls="ID_REFERENCE"</code></th>
               <td>
                 <code>button</code>
               </td>
@@ -300,21 +300,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </ul>
               </td>
             </tr>
+            <tr data-test-id="button-aria-expanded-false">
+              <td></td>
+              <th scope="row"><code>aria-expanded="false"</code></th>
+              <td><code>button</code></td>
+              <td>Indicates the menu is not displayed and that activating the menu button opens the menu.</td>
+            </tr>
             <tr data-test-id="button-aria-expanded">
               <td></td>
-              <th scope="row"><code>aria-expanded=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-expanded="true"</code></th>
               <td><code>button</code></td>
-              <td>
-                <ul>
-                  <li>Added when the menu is open.</li>
-                  <li>Indicates that the menu is displayed and that activating the menu button closes the menu.</li>
-                  <li>The <code>aria-expanded</code> attribute is removed when the menu is closed.</li>
-                  <li>
-                    Included to support touch devices where screen reader users can touch the menu button when the menu is displayed.
-                    Keyboard users cannot focus the menu button when the menu is open.
-                  </li>
-                </ul>
-              </td>
+              <td>Indicates the menu is displayed and that activating the menu button closes the menu.</td>
             </tr>
           </tbody>
         </table></div>
@@ -345,7 +341,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code></code>
               </td>
-              <th scope="row"><code>aria-labelledby=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-labelledby="ID_REFERENCE"</code></th>
               <td>
                 <code>ul</code>
               </td>
@@ -390,7 +386,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="menuitem-tabindex">
               <td></td>
-              <th scope="row"><code>tabindex=&quot;-1&quot;</code></th>
+              <th scope="row"><code>tabindex="-1"</code></th>
               <td>
                 <code>a</code>
               </td>
@@ -413,7 +409,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>JavaScript and CSS Source Code</h2>
 
-        <ul id="cssJsFiles">
+        <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-links.css" type="text/css">menu-button-links.css</a></li>
           <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-links.js" type="text/javascript">menu-button-links.js</a></li>
         </ul>
