@@ -1,14 +1,13 @@
 const fs = require("fs/promises");
 const path = require("path");
-const { exec } = require("child_process");
 const { parse: parseHtml } = require("node-html-parser");
-const { format } = require("date-fns");
 const formatForJekyll = require("./formatForJekyll");
 const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
 const rewriteElementPaths = require("./rewriteElementPaths");
 const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 const removeConflictingCss = require("./removeConflictingCss");
+const getExampleLastModifiedDate = require("./getExampleLastModifiedDate");
 
 const loadNotice = async () => {
   const relativePath = "content/shared/templates/example-usage-warning.html";
@@ -31,28 +30,6 @@ const loadNotice = async () => {
 
 const loadedNotice = loadNotice();
 
-const getLastModifiedDate = async (exampleFilePath) => {
-  const output = await new Promise((resolve) => {
-    exec(
-      `git log -1 --pretty="format:%cI" ${path.basename(exampleFilePath)}`,
-      { cwd: path.dirname(exampleFilePath) },
-      (error, stdout, stderr) => {
-        resolve(stdout);
-      }
-    );
-  });
-  let dateFormatted;
-  try {
-    dateFormatted = format(new Date(output), "d MMMM y");
-  } catch (error) {
-    console.error(
-      `Failed to extract a last-modified date for the file "${exampleFilePath}"`
-    );
-    throw error;
-  }
-  return dateFormatted;
-};
-
 const transformExample = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
@@ -62,7 +39,10 @@ const transformExample = async (sourcePath, sourceContents) => {
 
   removeConflictingCss(html);
 
-  const lastModifiedDateFormatted = await getLastModifiedDate(sourcePath);
+  const lastModifiedDateFormatted = await getExampleLastModifiedDate({
+    html,
+    sourcePath,
+  });
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
