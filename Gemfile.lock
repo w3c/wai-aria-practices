@@ -87,6 +87,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -126,4 +128,4 @@ DEPENDENCIES
   wai-gems!
 
 BUNDLED WITH
-   2.3.10
+   2.4.22
