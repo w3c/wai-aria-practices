@@ -40,6 +40,7 @@ const transformPattern = async (sourcePath, sourceContents) => {
     githubPath,
     content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
     enableSidebar: true,
+    skipToData: html.querySelector('script[data-skipto]')?.getAttribute('data-skipto'),
     head: html.querySelector("head").innerHTML,
     footer: "",
   });

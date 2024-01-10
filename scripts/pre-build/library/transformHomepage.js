@@ -116,6 +116,7 @@ const transformHomepage = async (sourcePath, sourceContents) => {
     sitePath,
     githubPath,
     content: homepageContent,
+    skipToData: html.querySelector('script[data-skipto]')?.getAttribute('data-skipto'),
   });
 };
 

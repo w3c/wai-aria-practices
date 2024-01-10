@@ -7,6 +7,7 @@ const formatForJekyll = ({
   content,
   enableSidebar = false,
   githubPath,
+  skipToData,
   head = "",
   footer = null,
 }) => {
@@ -76,8 +77,9 @@ ${
 <div>
 ${content}
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  ${skipToData ? `data-skipto="${skipToData}"` : 'data-skipto'}
 ></script>
 ${/* `, { parser: "html" })} */ ""}`;
 };
