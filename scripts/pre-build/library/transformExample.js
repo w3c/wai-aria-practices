@@ -69,8 +69,7 @@ const transformExample = async (sourcePath, sourceContents) => {
       wrapTablesWithResponsiveDiv(html.querySelector("body").innerHTML)
     ),
     enableSidebar: true,
-    skipToData: html.querySelector('script[data-skipto]')?.getAttribute('data-skipto'),
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
     footer: `
       <div class="example-page-footer">
         <p>${relatedIssuesLink}</p>

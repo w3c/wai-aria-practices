@@ -29,8 +29,7 @@ const transformPatternIndex = async (sourcePath, sourceContents) => {
     githubPath,
     content,
     enableSidebar: false,
-    skipToData: html.querySelector('script[data-skipto]')?.getAttribute('data-skipto'),
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
   });
 };
 

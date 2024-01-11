@@ -111,12 +111,14 @@ const transformHomepage = async (sourcePath, sourceContents) => {
     <div class="bottom-off-white-section off-white-section"></div>
   `;
 
+  // TODO: Remove conflicting img css properties
+
   return formatForJekyll({
     title: "ARIA Authoring Practices Guide",
     sitePath,
     githubPath,
     content: homepageContent,
-    skipToData: html.querySelector('script[data-skipto]')?.getAttribute('data-skipto'),
+    head: html.querySelector("head"),
   });
 };
 
