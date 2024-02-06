@@ -19,6 +19,10 @@ type_of_guidance: APG
 
 lang: en
 ---
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ARIA Authoring Practices Guide</title>
 
 
 <link 
@@ -178,6 +182,8 @@ lang: en
     <div class="bottom-off-white-section off-white-section"></div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

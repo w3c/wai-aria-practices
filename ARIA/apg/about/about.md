@@ -25,10 +25,6 @@ lang: en
 
 <script src="../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-  src="../../../content-assets/wai-aria-practices/shared/js/skipto.js"
-></script>
 
 
 <link 
@@ -110,6 +106,8 @@ lang: en
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+
