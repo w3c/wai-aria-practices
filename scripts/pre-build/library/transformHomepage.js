@@ -111,11 +111,16 @@ const transformHomepage = async (sourcePath, sourceContents) => {
     <div class="bottom-off-white-section off-white-section"></div>
   `;
 
+  // Remove conflicting `img { *` CSS properties; safe to do while the source apg-home.html ONLY has that single rule
+  // defined inside it's `<style>` tag
+  html.querySelector("head").querySelector("style").remove();
+
   return formatForJekyll({
     title: "ARIA Authoring Practices Guide",
     sitePath,
     githubPath,
     content: homepageContent,
+    head: html.querySelector("head"),
   });
 };
 
