@@ -954,6 +954,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 
 </div>
-<script 
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
+
