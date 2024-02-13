@@ -68,6 +68,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
+    <p> Page last updated: February 12, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
