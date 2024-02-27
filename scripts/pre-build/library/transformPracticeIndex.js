@@ -29,7 +29,7 @@ const transformPatternIndex = async (sourcePath, sourceContents) => {
     githubPath,
     content,
     enableSidebar: false,
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
   });
 };
 

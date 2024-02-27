@@ -33,7 +33,7 @@ const transformAboutContent = async (sourcePath, sourceContents) => {
       removeDuplicateMainTag(html.querySelector("body").innerHTML)
     ),
     enableSidebar,
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
   });
 };
 
