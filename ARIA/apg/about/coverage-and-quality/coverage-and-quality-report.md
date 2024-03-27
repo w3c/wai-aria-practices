@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: February 13, 2024</p>
+    <p>Page last updated: March 27, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -421,6 +421,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
@@ -755,6 +756,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><ul>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
@@ -765,6 +767,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><ul>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
@@ -1012,6 +1015,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
@@ -1119,6 +1123,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
                 <li><a href="../../patterns/landmarks/examples/form.html">Form Landmark</a></li>
@@ -1230,6 +1235,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
             </ul>
 </td>
           </tr>
@@ -1324,7 +1330,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">60</td>
+            <td id="example_summary_total">61</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
@@ -1340,11 +1346,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses <code>event.KeyCode</code></th>
-            <td id="example_summary_keycode">16</td>
+            <td id="example_summary_keycode">17</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>event.which</code></th>
-            <td id="example_summary_which">60</td>
+            <td id="example_summary_which">61</td>
           </tr>
           <tr>
             <th scope="row">Use Class</th>
@@ -1352,15 +1358,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
-            <td id="example_summary_prototype">60</td>
+            <td id="example_summary_prototype">61</td>
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">15</td>
+            <td id="example_summary_mouse">16</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
-            <td id="example_summary_pointer">59</td>
+            <td id="example_summary_pointer">60</td>
           </tr>
         </tbody>
       </table></div>
@@ -2151,6 +2157,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></td>
+            <td>prototype</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td>ex1</td>
+            <td>4</td>
+            <td>3</td>
+            <td>9</td>
+            <td>3</td>
+            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
             <td>class, prototype</td>
             <td>Yes</td>
@@ -2661,6 +2680,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+            <td>Yes</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
             <td>Yes</td>
             <td>Yes</td>
@@ -2969,6 +2998,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></td>
             <td>Yes</td>
             <td>Yes</td>
           </tr>
