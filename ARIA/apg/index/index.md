@@ -213,7 +213,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
@@ -464,7 +463,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <ul>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
@@ -479,7 +477,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <ul>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
@@ -646,7 +643,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
@@ -752,7 +748,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
                 <li><a href="../patterns/landmarks/examples/form.html">Form Landmark</a></li>
@@ -874,7 +869,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li>
               </ul>
             </td>
           </tr>
@@ -959,7 +953,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <section id="examples_experimental">
       <h2 id="examples_experimental_label">Experimental Examples</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
-      <ul id="examples_experimental_ul"></ul>
+      <ul id="examples_experimental_ul">
+                <li><a href="../patterns/treeview/examples/treeview-1c/">[Experimental] File Directory Treeview  Using Computed Properties</a></li></ul>
     </section>
   </div>
 
