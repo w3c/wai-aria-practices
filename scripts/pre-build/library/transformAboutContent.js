@@ -5,6 +5,7 @@ const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const rewriteElementPaths = require("./rewriteElementPaths");
 const { rewriteSourcePath } = require("./rewritePath");
 const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
+const getCoverageAndQualityLastModifiedDate = require("./getCoverageAndQualityLastModifiedDate");
 
 const transformAboutContent = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
@@ -17,6 +18,20 @@ const transformAboutContent = async (sourcePath, sourceContents) => {
   if (isAboutIndexPage) {
     html.querySelector("main ul").classList.add("content-list");
   }
+
+  const isCoverageAndQualityReportPage = sourcePath.endsWith("coverage-and-quality-report.html");
+	if (isCoverageAndQualityReportPage) {
+		const lastModifiedDateFormatted = await getCoverageAndQualityLastModifiedDate(sourcePath);
+
+    let paragraphs = html.querySelectorAll("p");
+    for (const p of paragraphs) {
+      if (!p.innerHTML.includes("Page last updated:")) continue;
+      else {
+        p.innerHTML = p.innerHTML.replace(/Page last updated:.*/, `Page last updated: ${lastModifiedDateFormatted}`);
+        break;
+      }
+    }
+	}
 
   const sidebarWouldBeUseless = html.querySelectorAll("h2").length < 2;
   enableSidebar = !(isAboutIndexPage || sidebarWouldBeUseless);

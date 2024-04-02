@@ -1,31 +1,8 @@
-const path = require("path");
-const { exec } = require("child_process");
 const { format } = require("date-fns");
 const { rewriteRelativePath } = require("./rewritePath");
+const getFileLastModifiedDate = require("./getFileLastModifiedDate");
 
 const getExampleLastModifiedDate = async ({ html, sourcePath }) => {
-  const getFileLastModifiedDate = async (sourcePath) => {
-    const output = await new Promise((resolve) => {
-      exec(
-        `git log -1 --pretty="format:%cI" ${path.basename(sourcePath)}`,
-        { cwd: path.dirname(sourcePath) },
-        (error, stdout, stderr) => {
-          resolve(stdout);
-        }
-      );
-    });
-    let date;
-    try {
-      date = new Date(output);
-    } catch (error) {
-      console.error(
-        `Failed to extract a last-modified date for the file "${sourcePath}"`
-      );
-      throw error;
-    }
-    return date;
-  };
-
   const dependencyFilePaths = html
     .querySelectorAll("#css_js_files a")
     .map(
