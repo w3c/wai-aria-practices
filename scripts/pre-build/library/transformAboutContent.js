@@ -20,8 +20,8 @@ const transformAboutContent = async (sourcePath, sourceContents) => {
   }
 
   const isCoverageAndQualityReportPage = sourcePath.endsWith("coverage-and-quality-report.html");
-	if (isCoverageAndQualityReportPage) {
-		const lastModifiedDateFormatted = await getCoverageAndQualityLastModifiedDate(sourcePath);
+  if (isCoverageAndQualityReportPage) {
+    const lastModifiedDateFormatted = await getCoverageAndQualityLastModifiedDate(sourcePath);
 
     let paragraphs = html.querySelectorAll("p");
     for (const p of paragraphs) {
@@ -31,7 +31,7 @@ const transformAboutContent = async (sourcePath, sourceContents) => {
         break;
       }
     }
-	}
+  }
 
   const sidebarWouldBeUseless = html.querySelectorAll("h2").length < 2;
   enableSidebar = !(isAboutIndexPage || sidebarWouldBeUseless);
