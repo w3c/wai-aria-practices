@@ -25,7 +25,6 @@ const transformAboutContent = async (sourcePath, sourceContents) => {
 
     let paragraphs = html.querySelectorAll("p");
     for (const p of paragraphs) {
-      console.log(p.innerHTML)
       if (!p.innerHTML.includes("Page last updated:")) continue;
       else {
         p.innerHTML = `Page last updated: ${lastModifiedDateFormatted}`;
