@@ -1,5 +1,5 @@
 /* ========================================================================
- * Version: 5.2.1
+ * Version: 5.1.6
  * Copyright (c) 2022, 2023 Jon Gunderson; Licensed BSD
  * Copyright (c) 2021 PayPal Accessibility Team and University of Illinois; Licensed BSD
  * All rights reserved.
@@ -110,8 +110,8 @@
   /* style.js */
 
   /* Constants */
-  const debug$6 = new DebugLogging('style', false);
-  debug$6.flag = false;
+  const debug$5 = new DebugLogging('style', false);
+  debug$5.flag = false;
 
   const styleTemplate = document.createElement('template');
   styleTemplate.innerHTML = `
@@ -229,11 +229,10 @@ $skipToId [role="menuitem"] .label {
   font-size: 100%;
   font-weight: normal;
   color: $menuTextColor;
-  background-color: $menuBackgroundColor;
   display: inline-block;
+  background-color: $menuBackgroundColor;
   line-height: inherit;
   display: inline-block;
-  white-space: nowrap;
 }
 
 $skipToId [role="menuitem"] .level {
@@ -245,6 +244,7 @@ $skipToId [role="menuitem"] .label {
   text-align: left;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -537,8 +537,8 @@ $skipToId [role="menuitem"]:focus .label {
   /* utils.js */
 
   /* Constants */
-  const debug$5 = new DebugLogging('Utils', false);
-  debug$5.flag = false;
+  const debug$4 = new DebugLogging('Utils', false);
+  debug$4.flag = false;
 
 
   /*
@@ -627,8 +627,8 @@ $skipToId [role="menuitem"]:focus .label {
 
   /* constants */
 
-  const debug$4 = new DebugLogging('nameFrom', false);
-  debug$4.flag = false;
+  const debug$3 = new DebugLogging('nameFrom', false);
+  debug$3.flag = false;
 
   //
   // LOW-LEVEL HELPER FUNCTIONS (NOT EXPORTED)
@@ -897,8 +897,8 @@ $skipToId [role="menuitem"]:focus .label {
   /* accName.js */
 
   /* Constants */
-  const debug$3 = new DebugLogging('accName', false);
-  debug$3.flag = false;
+  const debug$2 = new DebugLogging('accName', false);
+  debug$2.flag = false;
 
   /**
    *   @fuction getAccessibleName
@@ -976,8 +976,8 @@ $skipToId [role="menuitem"]:focus .label {
   /* landmarksHeadings.js */
 
   /* Constants */
-  const debug$2 = new DebugLogging('landmarksHeadings', false);
-  debug$2.flag = false;
+  const debug$1 = new DebugLogging('landmarksHeadings', false);
+  debug$1.flag = false;
 
   const skipableElements = [
     'base',
@@ -1794,8 +1794,8 @@ $skipToId [role="menuitem"]:focus .label {
   /* skiptoMenuButton.js */
 
   /* Constants */
-  const debug$1 = new DebugLogging('SkipToButton', false);
-  debug$1.flag = false;
+  const debug = new DebugLogging('SkipToButton', false);
+  debug.flag = false;
 
   /**
    * @class SkiptoMenuButton
@@ -2532,10 +2532,6 @@ $skipToId [role="menuitem"]:focus .label {
       }
   }
 
-  /* constants */
-  const debug = new DebugLogging('skipto', false);
-  debug.flag = true;
-
   (function() {
 
     const SkipTo = {
@@ -2558,9 +2554,9 @@ $skipToId [role="menuitem"]:focus .label {
         altShortcut: '0', // default shortcut key is the number zero
         optionShortcut: 'º', // default shortcut key character associated with option+0 on mac 
         attachElement: 'body',
-        displayOption: 'popup', // Line edited by pre-build script, fixed
+        displayOption: 'popup', // options: static (default), popup, fixed
         // container element, use containerClass for custom styling
-        containerElement: 'nav',
+        containerElement: 'div',
         containerRole: '',
         customClass: '',
 
@@ -2593,7 +2589,7 @@ $skipToId [role="menuitem"]:focus .label {
         headings: 'main h1 h2',
 
         // Place holders for configuration
-        colorTheme: '',
+        colorTheme: 'aria',
         fontFamily: '',
         fontSize: '',
         positionLeft: '',
@@ -2698,7 +2694,7 @@ $skipToId [role="menuitem"]:focus .label {
        * @param  {object} config - Reference to configuration object
        *                           can be undefined
        */
-      init: function(globalConfig) {
+      init: function(config) {
         let node;
 
         // Check if skipto is already loaded
@@ -2710,13 +2706,9 @@ $skipToId [role="menuitem"]:focus .label {
         document.skipToHasBeenLoaded = true;
 
         let attachElement = document.body;
-
-        if (globalConfig) {
-          this.config = this.setupConfigFromGlobal(this.config, globalConfig);
+        if (config) {
+          this.setupConfig(config);
         }
-
-        this.config = this.setupConfigFromDataAttribute(this.config);
-
         if (typeof this.config.attachElement === 'string') {
           node = document.querySelector(this.config.attachElement);
           if (node && node.nodeType === Node.ELEMENT_NODE) {
@@ -2730,92 +2722,45 @@ $skipToId [role="menuitem"]:focus .label {
       },
 
       /*
-       * @method setupConfigFromGlobal
+       * @method setupConfig
        *
-       * @desc Get configuration information from author configuration to change
+       * @desc Get configuration information from user configuration to change 
        *       default settings 
        *
-       * @param  {object}  config       - Javascript object with default configuration information
-       * @param  {object}  globalConfig - Javascript object with configuration information oin a global variable
+       * @param  {object}  appConfig - Javascript object with configuration information
        */
-      setupConfigFromGlobal: function(config, globalConfig) {
-        let authorConfig = {};
+      setupConfig: function(appConfig) {
+        let appConfigSettings;
         // Support version 4.1 configuration object structure 
         // If found use it
-        if ((typeof globalConfig.settings === 'object') &&
-            (typeof globalConfig.settings.skipTo === 'object')) {
-          authorConfig = globalConfig.settings.skipTo;
+        if ((typeof appConfig.settings === 'object') && 
+            (typeof appConfig.settings.skipTo === 'object')) {
+          appConfigSettings = appConfig.settings.skipTo;
         }
         else {
           // Version 5.0 removes the requirement for the "settings" and "skipto" properties
           // to reduce the complexity of configuring skipto
-          if (typeof globalConfig === 'object') {
-            authorConfig = globalConfig;
+          if ((typeof appConfig === 'undefined') || 
+               (typeof appConfig !== 'object')) {
+            appConfigSettings = {};
+          }
+          else {
+            appConfigSettings = appConfig;
           }
         }
 
-        for (const name in authorConfig) {
+        for (const name in appConfigSettings) {
           //overwrite values of our local config, based on the external config
-          if ((typeof config[name] !== 'undefined') &&
-             ((typeof authorConfig[name] === 'string') &&
-              (authorConfig[name].length > 0 ) ||
-             typeof authorConfig[name] === 'boolean')
+          if ((typeof this.config[name] !== 'undefined') &&
+             ((typeof appConfigSettings[name] === 'string') &&
+              (appConfigSettings[name].length > 0 ) ||
+             typeof appConfigSettings[name] === 'boolean')
             ) {
-            config[name] = authorConfig[name];
+            this.config[name] = appConfigSettings[name];
           } else {
-            console.warn('[SkipTo]: Unsupported or deprecated configuration option in global configuration object: ' + name);
+            console.warn('[SkipTo]: Unsuported or deprecated configuration option "' + name + '".');
           }
         }
-
-        return config;
-      },
-
-      /*
-       * @method setupConfigFromDataAttribute
-       *
-       * @desc Get configuration information from author configuration to change
-       *       default settings
-       *
-       * @param  {object}  config - Javascript object with default configuration information
-       */
-      setupConfigFromDataAttribute: function(config) {
-        let dataConfig = {};
-
-        // Check for data-skipto attribute values for configuration
-        const configElem = document.querySelector('[data-skipto]');
-        if (configElem) {
-          const dataSkiptoValue = configElem.getAttribute('data-skipto');
-          if (dataSkiptoValue) {
-            const values = dataSkiptoValue.split(';');
-            values.forEach( v => {
-              let [prop, value] = v.split(':');
-              if (prop) {
-                prop = prop.trim();
-              }
-              if (value) {
-                value = value.trim();
-              }
-              if (prop && value) {
-                dataConfig[prop] = value;
-              }
-            });
-          }
-        }
-
-        for (const name in dataConfig) {
-          //overwrite values of our local config, based on the external config
-          if ((typeof config[name] !== 'undefined') &&
-             ((typeof dataConfig[name] === 'string') &&
-              (dataConfig[name].length > 0 ) ||
-             typeof dataConfig[name] === 'boolean')
-            ) {
-            config[name] = dataConfig[name];
-          } else {
-            console.warn('[SkipTo]: Unsupported or deprecated configuration option in data-skipto attribute: ' + name);
-          }
-        }
-        return config;
-
       }
     };
 
