@@ -213,7 +213,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
         <iframe class="support-levels-link-span-text"
-          src="https://aria-at.w3.org/embed/reports/link-span-text"
+          src="https://aria-at-app-sandbox.bocoup.com/embed/reports/link-span-text"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
