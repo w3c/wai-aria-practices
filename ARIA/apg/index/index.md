@@ -110,8 +110,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>button</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../patterns/button/examples/button/">Button</a></li>
+                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
               </ul>
             </td>
           </tr>
@@ -815,8 +815,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-pressed</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../patterns/button/examples/button/">Button</a></li>
+                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>

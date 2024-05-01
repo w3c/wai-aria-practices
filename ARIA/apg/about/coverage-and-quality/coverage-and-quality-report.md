@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: April 7, 2024</p>
+    <p>Page last updated: May 1, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -285,9 +285,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../practices/landmark-regions/#aria_lh_banner">Banner</a>
 </td>
             <td><ul>
+                <li><a href="../../patterns/landmarks/examples/banner.html">Banner Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/landmarks/examples/banner.html">Banner Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -299,8 +299,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
 </td>
             <td><ul>
-                <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../../patterns/button/examples/button/">Button</a></li>
+                <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
             </ul>
 </td>
           </tr>
@@ -347,9 +347,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../practices/landmark-regions/#aria_lh_contentinfo">Contentinfo</a>
 </td>
             <td><ul>
+                <li><a href="../../patterns/landmarks/examples/contentinfo.html">Contentinfo Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/landmarks/examples/contentinfo.html">Contentinfo Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -505,17 +505,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><code>navigation</code></td>
             <td><ul>
-                <li><a href="../../practices/keyboard-interface/#kbd_generalnav">Fundamental Keyboard Navigation Conventions</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_general_between">Keyboard Navigation Between Components (The Tab Sequence)</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_general_within">Keyboard Navigation Inside Components</a></li>
+                <li><a href="../../practices/keyboard-interface/#kbd_generalnav">Fundamental Keyboard Navigation Conventions</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_shortcuts_design_basic">Ensure Basic Access Via Navigation</a></li>
                 <li><a href="../../practices/landmark-regions/#aria_lh_navigation">Navigation</a></li>
             </ul>
 </td>
             <td><ul>
+                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -596,10 +596,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>presentation</code></td>
             <td><ul>
                 <li><a href="../../practices/hiding-semantics/">Hiding Semantics with the presentation Role</a></li>
-                <li><a href="../../practices/hiding-semantics/#presentation_role_uses">Common Uses of Role presentation</a></li>
                 <li><a href="../../practices/hiding-semantics/#presentation_role_effects">Effects of Role presentation</a></li>
-                <li><a href="../../practices/hiding-semantics/#presentation_role_ignored">Conditions That Cause Role presentation to be Ignored</a></li>
                 <li><a href="../../practices/hiding-semantics/#presentation_role_examples">Example Demonstrating Effects of the presentation Role</a></li>
+                <li><a href="../../practices/hiding-semantics/#presentation_role_ignored">Conditions That Cause Role presentation to be Ignored</a></li>
+                <li><a href="../../practices/hiding-semantics/#presentation_role_uses">Common Uses of Role presentation</a></li>
             </ul>
 </td>
             <td></td>
@@ -639,9 +639,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/accordion/examples/accordion/">Accordion</a></li>
                 <li><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -1097,6 +1097,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
                 <li><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
+                <li><a href="../../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/form.html">Form Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/main.html">Main Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/search.html">Search Landmark</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -1120,12 +1126,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/form.html">Form Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/main.html">Main Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/search.html">Search Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -1175,8 +1175,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-pressed</code></td>
             <td></td>
             <td><ul>
-                <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../../patterns/button/examples/button/">Button</a></li>
+                <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
             </ul>
 </td>
@@ -1436,19 +1436,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>heading,navigation,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-labelledby,aria-roledescription</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td></td>
-            <td>example</td>
-            <td>2</td>
-            <td>1</td>
-            <td>9</td>
-            <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-labelledby,aria-roledescription</td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/button/examples/button/">Button</a></td>
             <td>prototype</td>
             <td>Yes</td>
@@ -1460,6 +1447,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>9</td>
             <td>1</td>
             <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
+            <td>prototype</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td>example</td>
+            <td>2</td>
+            <td>1</td>
+            <td>9</td>
+            <td>2</td>
+            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-labelledby,aria-roledescription</td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
@@ -2201,7 +2201,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
+            <td><a href="../../patterns/button/examples/button/">Button</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
@@ -2211,7 +2211,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/button/examples/button/">Button</a></td>
+            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
@@ -2703,12 +2703,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
+            <td><a href="../../patterns/button/examples/button/">Button</a></td>
             <td></td>
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/button/examples/button/">Button</a></td>
+            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
             <td></td>
             <td>Yes</td>
           </tr>
