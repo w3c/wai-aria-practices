@@ -26,6 +26,10 @@ lang: en
 <script src="../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+  src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"
+></script>
 <style>
   .sr-only {
     position: absolute;
@@ -68,6 +72,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
+    <p>Page last updated:</p>
     <section>
       <h2>About These Reports</h2>
       <p>
