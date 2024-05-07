@@ -209,7 +209,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 If focus is in the first row, focus does not move.
               </li>
               <li>
-                If focus is on a cell, moves focus to the first cell in the column.
+                If focus is on a cell, moves focus to the cell in the first row in the same column as the cell that had focus.
                 If focus is in the first row, focus does not move.
               </li>
             </ul>
@@ -222,7 +222,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 If focus is in the last row, focus does not move.
               </li>
               <li>
-                If focus is on a cell, moves focus to the last cell in the column.
+                If focus is on a cell, moves focus to the cell in the last row in the same column as the cell that had focus.
                 If focus is in the last row, focus does not move.
               </li>
             </ul>
