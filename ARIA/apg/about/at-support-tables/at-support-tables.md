@@ -56,27 +56,57 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-    <div>
-      
+  <div>
+    
+    <p>
+      As reports on assistive technology interoperability are made available by the ARIA and Assistive Technologies
+      project, the APG Task Force adds a summary of assistive technology support to the relevant pages showing example
+      implementations of APG patterns. This page explains how to interpret and use the assistive technology support
+      summaries.
+    </p>
+
+    <section id="purpose">
+      <h2>Purpose of AT Support Tables</h2>
+      <p>The purpose of the support tables is to provide APG readers with a legible and actionable summary of the
+        tests performed in the ARIA-AT project.</p>
+    </section>
+    <section id="meaning">
+      <h2>Meaning of scores</h2>
+      <p>Two scores are presented for each Assistive Technology and Browser combination for APG patterns that have
+        ARIA-AT data available: Must and Should. “Must”
+        failures block users. “Should” failures impede users. Learn more about ARIA-AT’s <a href="https://github.com/w3c/aria-at/wiki/Glossary#assertion-priority">definitions of Must and Should on the
+          project wiki</a>.</p>
+    </section>
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+
+      <h3>Understand the failures</h3>
+      <p>Where possible, APG readers should avoid implementing patterns that have a score lower than 100% in the must
+        column. If, however, you find yourself implementing a pattern with less than 100% in the Must column, you should
+        take time to understand what is failing. You can learn more about the specific failures of a given pattern by
+        clicking through to the detailed report on the ARIA-AT website.</p>
+
+      <h3>Don’t Code to the Bugs</h3>
       <p>
-        As reports on  assistive technology interoperability are made available by the
-        ARIA and Assistive Technologies project,
-        the APG Task Force adds a summary of assistive technology support to the relevant pages showing example implementations of APG patterns.
-        This page explains how to interpret and use the assistive technology support summaries.
+        ARIA-AT is working with Assistive Technology vendors to get to 100% Must and Should passing rates. This means
+        that Assistive Technologies which use ARIA-AT will change over time.
+        When implementing a pattern that has less than 100% support for either MUST and SHOULD, be careful not to modify
+        your code to accommodate the Assistive Technology failure, especially if doing so would affect passing Assistive
+        Technologies.
       </p>
+      <h3>Perform your own tests</h3>
 
-      <section id="purpose">
-        <h2>Purpose of AT Support Tables</h2>
-          <p>...</p>
-      </section>
+      <p>The original purpose of ARIA-AT data are to help Assistive Technology vendors coordinate the interoperable
+        rendering of ARIA. The ARIA-AT summary tables on APG should be used as an indicator for web developers about
+        what
+        areas to prioritize testing further, not as a final verdict on whether a feature in a web application will work.
+        You should always test your application’s rendering with multiple assistive technologies.
+      </p>
+    </section>
 
-      <section>
-        <h2>next section</h2>
-        <p>...</p>
-      </section>
-      
-    </div>
-  
+
+  </div>
+
 </div>
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
