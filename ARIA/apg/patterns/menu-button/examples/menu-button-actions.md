@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-actions/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-actions.css"
@@ -64,8 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -89,21 +87,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-menu-button.svg">
         <p>
           This example demonstrates how the <a href="../../">Menu Button Pattern</a> can be used to create a button that opens an actions menu.
           In this example, choosing an action from the menu will cause the chosen action to be displayed in the <q>Last Action</q> edit box.
         </p>
         <p>
-          In this implementation, each item in the menu is made focusable by setting <code>tabindex=&quot;-1&quot;</code> so the JavaScript can use <code>element.focus()</code> to set focus in response to events that trigger focus movement inside the menu.
+          In this implementation, each item in the menu is made focusable by setting <code>tabindex="-1"</code> so the JavaScript can use <code>element.focus()</code> to set focus in response to events that trigger focus movement inside the menu.
           An alternative technique for managing focus movement among menu items is demonstrated in <a href="../menu-button-actions-active-descendant/">the action menu button example that uses aria-activedescendant.</a>
         </p>
         <p>Similar examples include:</p>
@@ -120,7 +115,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="menu-button-actions">
-            <button type="button" id="menubutton1" aria-haspopup="true" aria-controls="menu1">
+            <button type="button" id="menubutton1" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
               Actions
               <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
                 <polygon points="1 0, 11 0, 6 8" ></polygon>
@@ -149,7 +144,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             To support operating system high contrast settings:
             <ul>
               <li>
-                Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
+                Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from 1 to 3 pixels and padding is reduced by 2 pixels.
                 When an element loses focus, its border changes from 3 pixels to 1 and padding is increased by 2 pixels.
@@ -267,7 +262,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tbody>
             <tr data-test-id="menu-button-aria-haspopup">
               <td></td>
-              <th scope="row"><code>aria-haspopup=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-haspopup="true"</code></th>
               <td>
                 <code>button</code>
               </td>
@@ -283,7 +278,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="menu-button-aria-controls">
               <td></td>
-              <th scope="row"><code>aria-controls=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-controls="ID_REFERENCE"</code></th>
               <td>
                 <code>button</code>
               </td>
@@ -294,21 +289,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </ul>
               </td>
             </tr>
+            <tr data-test-id="button-aria-expanded-false">
+              <td></td>
+              <th scope="row"><code>aria-expanded="false"</code></th>
+              <td><code>button</code></td>
+              <td>Indicates the menu is not displayed and that activating the menu button opens the menu.</td>
+            </tr>
             <tr data-test-id="menu-button-aria-expanded">
               <td></td>
-              <th scope="row"><code>aria-expanded=&quot;true&quot;</code></th>
+              <th scope="row"><code>aria-expanded="true"</code></th>
               <td><code>button</code></td>
-              <td>
-                <ul>
-                  <li>Added when the menu is open.</li>
-                  <li>Indicates that the menu is displayed and that activating the menu button closes the menu.</li>
-                  <li>The <code>aria-expanded</code> attribute is removed when the menu is closed.</li>
-                  <li>
-                    Included to support touch devices where screen reader users can touch the menu button when the menu is displayed.
-                    Keyboard users cannot focus the menu button when the menu is open.
-                  </li>
-                </ul>
-              </td>
+              <td>Indicates the menu is displayed and that activating the menu button closes the menu.</td>
             </tr>
           </tbody>
         </table></div>
@@ -337,7 +328,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code></code>
               </td>
-              <th scope="row"><code>aria-labelledby=&quot;IDREF&quot;</code></th>
+              <th scope="row"><code>aria-labelledby="ID_REFERENCE"</code></th>
               <td>
                 <code>ul</code>
               </td>
@@ -365,7 +356,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="menuitem-tabindex">
               <td></td>
-              <th scope="row"><code>tabindex=&quot;-1&quot;</code></th>
+              <th scope="row"><code>tabindex="-1"</code></th>
               <td>
                 <code>li</code>
               </td>
@@ -402,6 +393,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/css/treeview-navigation.css"
@@ -64,8 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -89,7 +87,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
@@ -102,10 +99,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li>Correct implementation of the <code>tree</code> role requires implementation of complex functionality that is not needed for typical site navigation that is styled to look like a tree with expandable sections.</li>
             <li>A pattern more suited for typical site navigation with expandable groups of links is the <a href="../../../disclosure/">disclosure pattern.</a></li>
           </ul>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-treeview.svg">
         <p>
           The below example demonstrates how the <a href="../../">Tree View Pattern</a> can be used to build a navigation tree for a set of hierarchically organized web pages.
           It illustrates navigation of a mythical university web site that is comparable to the navigation illustrated in the
@@ -419,7 +414,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             To support operating system high contrast settings:
             <ul>
               <li>
-                Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
+                Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from 1 to 3 pixels and padding is reduced by 2 pixels.
                 When an element loses focus, its border changes from 3 pixels to 1 and padding is increased by 2 pixels.
@@ -765,6 +760,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

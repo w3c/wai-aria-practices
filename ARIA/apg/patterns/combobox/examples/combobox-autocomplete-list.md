@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/combobox-autocomplete.css"
@@ -64,8 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -89,15 +87,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-combobox.svg">
         <p>
           The below combobox for choosing the name of a US state or territory demonstrates the <a href="../../">Combobox Pattern</a>.
           The design pattern describes four types of autocomplete behavior.
@@ -212,7 +207,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>To help people with visual impairments identify the combobox as an interactive element, the cursor is changed to a pointer when hovering over the combobox or list.</li>
               <li>To make it easier to distinguish the selected listbox option from other options, selection creates a 2 pixel border above and below the option.</li>
               <li>
-                Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
+                Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from zero to two pixels and padding is reduced by two pixels.
                 When an element loses focus, its border changes from two pixels to two and padding is increased by two pixels.
@@ -606,6 +601,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

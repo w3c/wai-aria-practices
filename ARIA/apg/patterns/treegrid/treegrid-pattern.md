@@ -25,7 +25,6 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -85,9 +84,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/treegrid.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-treegrid.svg">
         <h2>Example</h2>
         <p><a href="examples/treegrid-1/">E-mail Inbox <code>treegrid</code> Example</a>: A treegrid for navigating an e-mail inbox that demonstrates three keyboard navigation models -- rows first, cells first, and cells only.</p>
       </section>
@@ -368,6 +366,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

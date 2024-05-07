@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -70,8 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -95,15 +93,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/dialog-modal.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-dialog-modal.svg">
         <p>
           The example below includes a date input field and a button that opens a date picker that implements the <a href="../../">Dialog (Modal) Pattern</a>.
           The dialog contains a calendar that uses the <a href="../../../grid/">grid pattern</a> to present buttons that enable the user to choose a day from the calendar.
@@ -730,6 +725,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

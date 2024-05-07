@@ -25,7 +25,6 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -77,9 +76,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>A common convention for indicating that a menu item launches a dialog box is to append &quot;&#8230;&quot; (ellipsis) to the menu item label, e.g., &quot;Save as &#8230;&quot;.</p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-menubar.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/menubar-editor/">Editor Menubar Example</a>: Demonstrates menu radios and menu checkboxes in submenus of a menubar that provides text formatting commands for a text field.</li>
@@ -290,6 +288,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

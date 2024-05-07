@@ -25,7 +25,6 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -80,9 +79,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p><strong>Important:</strong> it is critical the label on a switch does not change when its state changes.</p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/switch.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-switch.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/switch/">Switch Example</a>: A switch based on a <code>div</code> element that turns a notification preference on and off.</li>
@@ -127,6 +125,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

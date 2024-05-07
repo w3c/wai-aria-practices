@@ -170,6 +170,7 @@ function maintainScrollVisibility(activeElement, scrollParent) {
 const Select = function (el, options = []) {
   // element refs
   this.el = el;
+  this.labelEl = el.querySelector('.combo-label');
   this.comboEl = el.querySelector('[role=combobox]');
   this.listboxEl = el.querySelector('[role=listbox]');
 
@@ -194,7 +195,9 @@ Select.prototype.init = function () {
   this.comboEl.innerHTML = this.options[0];
 
   // add event listeners
+  this.labelEl.addEventListener('click', this.onLabelClick.bind(this));
   this.comboEl.addEventListener('blur', this.onComboBlur.bind(this));
+  this.listboxEl.addEventListener('focusout', this.onComboBlur.bind(this));
   this.comboEl.addEventListener('click', this.onComboClick.bind(this));
   this.comboEl.addEventListener('keydown', this.onComboKeyDown.bind(this));
 
@@ -239,10 +242,13 @@ Select.prototype.getSearchString = function (char) {
   return this.searchString;
 };
 
-Select.prototype.onComboBlur = function () {
-  // do not do blur action if ignoreBlur flag has been set
-  if (this.ignoreBlur) {
-    this.ignoreBlur = false;
+Select.prototype.onLabelClick = function () {
+  this.comboEl.focus();
+};
+
+Select.prototype.onComboBlur = function (event) {
+  // do nothing if relatedTarget is contained within listboxEl
+  if (this.listboxEl.contains(event.relatedTarget)) {
     return;
   }
 

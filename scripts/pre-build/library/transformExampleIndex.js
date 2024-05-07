@@ -22,7 +22,7 @@ const transformExampleIndex = async (sourcePath, sourceContents) => {
     githubPath,
     content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
     enableSidebar: true,
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
   });
 };
 

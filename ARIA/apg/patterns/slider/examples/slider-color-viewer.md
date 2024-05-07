@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-color-viewer/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 24 July 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -65,8 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -90,7 +88,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
@@ -104,10 +101,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             This is a new convention that may not be fully implemented by some assistive technologies.
             Authors should fully test slider widgets using assistive technologies on devices where touch is a primary input mechanism before considering incorporation into production systems.
           </p>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-slider.svg">
         <p>
           Following is an example of a color viewer that demonstrates the <a href="../../">Slider Pattern</a>.
           Change the background of the color view box by adjusting the sliders for red, green, and blue values.
@@ -115,9 +110,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>Similar examples include:</p>
         <ul>
-          <li><a href="../../../radio/examples/radio-rating/">Rating Radio Group Example</a>: Radio group that provides input for a five-star rating scale.</li>
-          <li><a href>Color Viewer Slider Example</a>: Basic horizontal sliders that illustrate setting numeric values for a color picker.</li>
           <li><a href="../slider-temperature/">Vertical Temperature Slider Example</a>: Demonstrates using <code>aria-orientation</code> to specify vertical orientation and <code>aria-valuetext</code> to communicate unit of measure for a temperature input.</li>
+          <li><a href="../slider-rating/">Rating Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to make it easy for assistive technology users to understand the meaning of the current value chosen on a ten-point satisfaction scale.</li>
           <li><a href="../slider-seek/">Media Seek Slider Example</a>: Horizontal slider that demonstrates using <code>aria-valuetext</code> to communicate current and maximum values of time in media to make the values easy to understand for assistive technology users by converting the total number of seconds to minutes and seconds.</li>
           <li><a href="../../../slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider Example</a>: Demonstrates using sliders with two thumbs to provide inputs for numeric ranges, such as for searching in a price range.</li>
         </ul>
@@ -392,6 +386,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

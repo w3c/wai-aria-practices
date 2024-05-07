@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-faq/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -28,7 +28,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-faq.css"
@@ -66,8 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -91,15 +89,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-disclosure.svg">
         <p>
           The following example demonstrates using the <a href="../../">Disclosure Pattern</a> to create a set of frequently asked questions where the answers may be independently shown or hidden.
         </p>
@@ -177,7 +172,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>To help people with visual impairments identify the disclosure as interactive and make it easier to perceive that clicking either the disclosure button or its label changes the expanded state, when a pointer hovers over the button or its label, the background color changes, a border appears, and the cursor changes to a pointer.</li>
           <li>
-            Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused an other elements.
+            Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
             Instead of using transparency, the focused element has a thicker border and less padding.
             When an element receives focus, its border changes from 0 to 2 pixels and padding is reduced by 2 pixels.
             When an element loses focus, its border changes from 2 pixels to 0 and padding is increased by 2 pixels.
@@ -307,6 +302,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+
