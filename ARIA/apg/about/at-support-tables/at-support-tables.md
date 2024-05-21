@@ -76,16 +76,32 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <p>
         The assistive technology support tables present two percentages for each Assistive Technology and Browser combination that have been tested: "Must-Have Behaviors" and "Should-Have Behaviors".
          A behavior designated as “Must-Have" is essential; if not provided, users could be blocked from using the UI element.
-        Failure to provide a “Should-Have” behavior could meaningfully impede users.
+        Failure to provide a “Should-Have” behavior could impede users.
         Learn more about ARIA-AT’s
         <a href="https://github.com/w3c/aria-at/wiki/Glossary#assertion-priority">definitions of Must and Should on the project wiki</a>.
         </p>
 
-      <h3>Example Must-Have</h3>
-      <p>TODO</p>
-      <h3>Example Should-Have</h3>
-      <p>TODO</p>
+      <h3>Examples of Must-Have behaviors</h3>
+      <ul>
+        <li>Convey the name of a radio button.</li>
+        <li>Convey the state of a checked radio button.</li>
+      </ul>
+      <h3>Examples of Should-Have behaviors</h3>
+      <ul>
+        <li>Convey the position of a radio button in a radio group, e.g., the button is 1 of 3.</li>
+        <li>Convey the number of radio buttons in a radio group.</li>
+      </ul>
+      <h3>Important constraints</h3>
+      <ul>
+        <li>Unless otherwise noted, all testing is done using the default configuration of an assistive technology.</li>
+        <li>
+          ARIA-AT interoperability  tests do not prescribe exactly how to satisfy a need.
+          For example, they do not specify exactly what a screen reader should speak.
+          Two different screen readers may convey the same information in different ways.
+        </li>
+      </ul>
     </section>
+    
     <section id="recommendations">
       <h2>Recommendations</h2>
       <h3>Don’t Code to the Bugs</h3>
