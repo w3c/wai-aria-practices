@@ -147,7 +147,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="key-control-home">
               <th><kbd>Control + Home</kbd></th>
-              <td>Move focus to the first focusable element before the feed.</td>
+              <td>Move focus to the first focusable element in the feed.</td>
             </tr>
           </tbody>
         </table></div>
