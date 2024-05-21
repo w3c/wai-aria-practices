@@ -201,12 +201,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: Night sky</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/currentcolor-windows11-theme-night-sky.png" alt="Screen shot of switch example with night sky contrast theme applied" style="height: 90px"></td>
+              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/currentcolor-windows11-theme-night-sky.png" alt="Screen shot of switch example with night sky contrast theme applied" style="height: 87px"></td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: Desert</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/currentcolor-windows11-theme-desert.png" alt="Screen shot of switch example with desert contrast theme applied" style="height: 90px"></td>
+              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/currentcolor-windows11-theme-desert.png" alt="Screen shot of switch example with desert contrast theme applied" style="height: 95px"></td>
             </tr>
           </tbody>
         </table></div>
@@ -243,35 +243,35 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>macOS 14.4</td>
               <td>Invert Colors: Off (default)</td>
               <td>
-                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-off.png" alt="Screen shot of switch example with invert colors turned off" style="height: 85px">
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-off.png" alt="Screen shot of switch example with invert colors turned off" style="height: 90px">
               </td>
             </tr>
             <tr>
               <td>macOS 14.4</td>
               <td>Invert Colors: on</td>
               <td>
-                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-on.png" alt="Screen shot of switch example with invert colors turned on" style="height: 85px">
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-on.png" alt="Screen shot of switch example with invert colors turned on" style="height: 90px">
               </td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: none (default)</td>
               <td>
-                
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-windows11-theme-none.png" alt="Screen shot of switch example with no contrast theme applied" style="height: 90px">
               </td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: Night sky</td>
               <td>
-                
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-windows11-theme-night-sky.png" alt="Screen shot of switch example with night sky contrast theme applied" style="height: 90px">
               </td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: Desert</td>
               <td>
-                
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-windows11-theme-desert.png" alt="Screen shot of switch example with desert contrast theme applied" style="height: 90px">
               </td>
             </tr>
           </tbody>
