@@ -212,8 +212,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
-        <iframe <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a>
-          class="support-levels-link-span-text"
+        <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
+        <iframe class="support-levels-link-span-text"
           src="https://aria-at.w3.org/embed/reports/link-span-text"
           height="100"
           allow="clipboard-write"
