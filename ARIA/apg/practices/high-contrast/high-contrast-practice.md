@@ -27,11 +27,9 @@ lang: en
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
-<style>
-  table.data {
-    img {
-      border: 1px solid gray;
-    }
+<style type="text/css">
+  table.data img {
+    border: 1px solid gray;
   }
 </style>
 
@@ -173,7 +171,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <h3 id="currentcolot-example">Button Switch Example</h3>
 
-        <p>The <a href="../../../../content-assets/wai-aria-practices/patterns/switch/examples/switch-button">Button Switch Example</a> uses <code>currentcolor</code> value to style the SVG <code>rect</code> elements used as the switch container and to inducate the on and off states.  Current color is used for the <code>stroke</code> and <code>fill</code> properties of the <code>text</code> elements.   The following table shows how the graphical rendering changes for some high ciontrast options. </p>
+        <p>The <a href="../../../../content-assets/wai-aria-practices/patterns/switch/examples/switch-button">Button Switch Example</a> uses <code>currentcolor</code> value to style the SVG <code>rect</code> elements used as the switch container and to indicate the on and off states.  Current color is used for the <code>stroke</code> and <code>fill</code> properties of the <code>text</code> elements.   The following table shows how the graphical rendering changes for some high contrast options. </p>
 
         <h4 id="currentcolor-example-screenshots">Button Switch Example with Selected High Contrast User Settings</h4>
         <div class="table-wrap"><table aria-labelledby="currentcolor-example-screenshots" class="data">
@@ -231,8 +229,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <p>The <code>forced-colors</code> CSS media query provides a means for components to use the color preferences of people with visual impairments.   When the user chooses a high contrast setting in their operating system, browsers set <code>forced-colors</code> property to <code>active</code>.   CSS media queries change component colors to use operating system specified values using <code>&lt;system-colors&gt;</code> CSS data types.  The advantage of using <code>forced-colors</code> over <code>currentcolor</code> is the ability to set a background color and to uniquely define colors for borders, outlines and text content.</p>
 
-        <h4 id="forcedcolor-example-screenshots">Rating Slider Example with Selected High Contrast User Settings</h4>
-        <div class="table-wrap"><table aria-labelledby="color-example-screenshots" class="data">
+        <h4 id="forced-colors-example-screenshots">Rating Slider Example with Selected High Contrast User Settings</h4>
+        <div class="table-wrap"><table aria-labelledby="forced-colors-example-screenshots" class="data">
           <thead>
             <tr>
               <th>OS</th>
@@ -244,7 +242,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr>
               <td>macOS 14.4</td>
               <td>Invert Colors: Off (default)</td>
-              <td><img height="85px" src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-off.png" alt="Screen shot of switch example with invert colors turned off" style="height: 85px"></td>
+              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-off.png" alt="Screen shot of switch example with invert colors turned off" style="height: 85px"></td>
             </tr>
             <tr>
               <td>macOS 14.4</td>
