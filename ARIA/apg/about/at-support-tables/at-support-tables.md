@@ -72,73 +72,87 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="meaning">
-      <h2>Meaning of support levels</h2>
+      <h2>Meaning of Support Levels</h2>
       <p>
-        The assistive technology support tables present two percentages for each Assistive Technology and Browser combination that have been tested: "Must-Have Behaviors" and "Should-Have Behaviors".
+        The assistive technology support tables present two percentages for each assistive technology and browser combination that have been tested: "Must-Have Behaviors" and "Should-Have Behaviors".
          A behavior designated as “Must-Have" is essential; if not provided, users could be blocked from using the UI element.
         Failure to provide a “Should-Have” behavior could impede users.
         Learn more about ARIA-AT’s
         <a href="https://github.com/w3c/aria-at/wiki/Glossary#assertion-priority">definitions of Must and Should on the project wiki</a>.
         </p>
 
-      <h3>Examples of Must-Have behaviors</h3>
-      <ul>
-        <li>Convey the name of a radio button.</li>
-        <li>Convey the state of a checked radio button.</li>
-      </ul>
-      <h3>Examples of Should-Have behaviors</h3>
-      <ul>
-        <li>Convey the position of a radio button in a radio group, e.g., the button is 1 of 3.</li>
-        <li>Convey the number of radio buttons in a radio group.</li>
-      </ul>
-      <h3>Important constraints</h3>
-      <ul>
-        <li>Unless otherwise noted, all testing is done using the default configuration of an assistive technology.</li>
-        <li>
-          ARIA-AT interoperability  tests do not prescribe exactly how to satisfy a need.
-          For example, they do not specify exactly what a screen reader should speak.
-          Two different screen readers may convey the same information in different ways.
-        </li>
-      </ul>
+      <section>
+        <h3>Examples of Must-Have Behaviors</h3>
+        <ul>
+          <li>Convey the name of a radio button.</li>
+          <li>Convey the state of a checked radio button.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Examples of Should-Have Behaviors</h3>
+        <ul>
+          <li>Convey the position of a radio button in a radio group, e.g., the button is 1 of 3.</li>
+          <li>Convey the number of radio buttons in a radio group.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Important Constraints</h3>
+        <ul>
+          <li>Unless otherwise noted, all testing is done using the default configuration of an assistive technology.</li>
+          <li>
+            ARIA-AT interoperability  tests do not prescribe exactly how to satisfy a need.
+            For example, they do not specify exactly what a screen reader should speak.
+            Two different screen readers may convey the same information in different ways.
+          </li>
+        </ul>
+      </section>
     </section>
-    
+
     <section id="recommendations">
       <h2>Recommendations</h2>
-      <h3>Don’t Code to the Bugs</h3>
-      <p>
-        ARIA-AT is working with Assistive Technology vendors to get to 100% Must and Should passing rates. This means
-        that Assistive Technologies which use ARIA-AT will change over time.
-        When implementing a pattern that has less than 100% support for either MUST and SHOULD, be careful not to modify
-        code to accommodate the Assistive Technology failure, especially if doing so would affect passing Assistive
-        Technologies.
-      </p>
 
-      <p>
-        When possible, readers should test with an AT that scores 100% in the Must-have column and hew to to that AT
-        since it is known to be working correctly.</p>
+      <section>
+        <h3>Don’t Code to the Bugs</h3>
+        <p>
+          ARIA-AT is working with assistive technology vendors to increase their support levels.
+          This means that assistive technologies that align with ARIA-AT interoperability tests will change over time.
+          Exercise caution when implementing a pattern where support levels are less than 100%.
+          Avoid modifying code to accommodate an assistive technology failure unless you are confident that the modification will:
+        </p>
+        <ul>
+          <li>Not negatively affect the experience when using assistive technologies that provide 100% support.</li>
+          <li>Not negatively affect the experience when the failure being accommodated is resolved.</li>
+        </ul>
+        <p>
+          When possible, test implementations of APG patterns with an assistive technology that provides 100% support for both must-have and should-have behaviors.
+        </p>
+      </section>
 
-      <h3>Understand the failures</h3>
-      <p>Where possible, APG readers should avoid implementing patterns that have a score lower than 100% in the must
-        column. If, however, the reader finds themselves implementing a pattern with less than 100% in the Must column,
-        they should
-        take time to understand what is failing. Readers should learn what specific part of an implementation is
-        problematic and design interactions around it that remain within the pattern's guidelines.
-      </p>
-      <p>
-        Readers can learn more about the specific failures of a given pattern
-        by
-        navigating to the detailed report with the View Complete Report button.
-      </p>
+      <section>
+        <h3>Design Around Critical Support Failures</h3>
+        <p>
+          Where feasible, avoid implementing features of APG patterns where support for must-have behaviors is less than 100%.
+          If the must-have support level is less than 100% for the example implementation of a pattern, that does not mean all variants of that pattern will present assistive technology users with critical problems.
+          In these cases:
+        </p>
+        <ol>
+          <li>If there are multiple implementation examples of the pattern, compare support levels across examples to discover whether another method of implementation provides better support.</li>
+          <li>learn about the specific aspects of an example implementation that are not fully supported by navigating to the detailed report with the View Complete Report button.</li>
+            <li>If possible, use the guidelines of the pattern to design interactions such that they avoid the problematic features.</li>
+        </ol>
+      </section>
 
-      <h3>Perform your own tests</h3>
+      <section>
+        <h3>Perform Your Own Tests</h3>
+        <p>
+          A primary purpose of ARIA-AT data are to help assistive technology vendors coordinate interoperable rendering of ARIA.
+          While the ARIA-AT summary tables on APG example pages can be used as a guide of where to prioritize testing, the data is not as a final verdict on whether a feature in a web application will work.
+          It is essential  for all developers to test applications with multiple assistive technologies to ensure a good user experience.
+        </p>
+      </section>
 
-      <p>
-        The original purpose of ARIA-AT data are to help Assistive Technology vendors coordinate the interoperable
-        rendering of ARIA. The ARIA-AT summary tables on APG should be used as an indicator for web developers about
-        what
-        areas to prioritize testing further, not as a final verdict on whether a feature in a web application will work.
-        Readers should always test their application’s rendering with multiple assistive technologies.
-      </p>
     </section>
 
 
