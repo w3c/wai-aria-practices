@@ -177,7 +177,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div class="table-wrap"><table aria-labelledby="currentcolor-example-screenshots" class="data">
           <thead>
             <tr>
-              <th>OS</th>
+              <th>Operating System</th>
               <th>Setting</th>
               <th>Screen Shot</th>
             </tr>
@@ -233,7 +233,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div class="table-wrap"><table aria-labelledby="forced-colors-example-screenshots" class="data">
           <thead>
             <tr>
-              <th>OS</th>
+              <th>Operating System</th>
               <th>Setting</th>
               <th>Screen Shot</th>
             </tr>
@@ -243,14 +243,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>macOS 14.4</td>
               <td>Invert Colors: Off (default)</td>
               <td>
-                
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-off.png" alt="Screen shot of switch example with invert colors turned off" style="height: 85px">
               </td>
             </tr>
             <tr>
               <td>macOS 14.4</td>
               <td>Invert Colors: on</td>
               <td>
-                
+                <img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-on.png" alt="Screen shot of switch example with invert colors turned on" style="height: 85px">
               </td>
             </tr>
             <tr>
