@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/feed/examples/feed/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 30 April 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 21 May 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -88,9 +88,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>About This Example</h2>
         <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-feed.svg">
         <p>
-          <strong>NOTE:</strong> The feed role is a new WAI-ARIA feature, introduced by WAI-ARIA 1.1.
-          This page provides a proposed implementation of a feed component.
-          This proposal does not yet have ARIA Practices Task Force consensus.
+          <strong>NOTE:</strong> The feed role was introduced by WAI-ARIA 1.1.
+          Since native desktop operating systems offer only a few conventions that are applicable to the feed pattern, the implementation of a feed illustrated by this example is intended to serve as as a proposal.
           Feedback is welcome in <a href="https://github.com/w3c/aria-practices/issues/565">issue 565.</a>
         </p>
         <p>
