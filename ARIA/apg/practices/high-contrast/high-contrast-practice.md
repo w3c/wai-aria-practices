@@ -171,7 +171,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <h3 id="currentcolot-example">Button Switch Example</h3>
 
-        <p>The <a href="../../../../content-assets/wai-aria-practices/patterns/switch/examples/switch-button">Button Switch Example</a> uses <code>currentcolor</code> value to style the SVG <code>rect</code> elements used as the switch container and to indicate the on and off states.  Current color is used for the <code>stroke</code> and <code>fill</code> properties of the <code>text</code> elements.   The following table shows how the graphical rendering changes for some high contrast options. </p>
+        <p>The <a href="../../patterns/switch/examples/switch-button/">Button Switch Example</a> uses <code>currentcolor</code> value to style the SVG <code>rect</code> elements used as the switch container and to indicate the on and off states.  Current color is used for the <code>stroke</code> and <code>fill</code> properties of the <code>text</code> elements.   The following table shows how the graphical rendering changes for some high contrast options. </p>
 
         <h4 id="currentcolor-example-screenshots">Button Switch Example with Selected High Contrast User Settings</h4>
         <div class="table-wrap"><table aria-labelledby="currentcolor-example-screenshots" class="data">
@@ -219,7 +219,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></li>
           <li><a href="../../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a></li>
           <li><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a></li>
-          <li><a href="../../../../content-assets/wai-aria-practices/patterns/slider/examples/slider-temperature">Vertical Temperature Slider</a></li>
+          <li><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></li>
         </ul>
       </section>
 
@@ -242,27 +242,37 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr>
               <td>macOS 14.4</td>
               <td>Invert Colors: Off (default)</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-off.png" alt="Screen shot of switch example with invert colors turned off" style="height: 85px"></td>
+              <td>
+                
+              </td>
             </tr>
             <tr>
               <td>macOS 14.4</td>
               <td>Invert Colors: on</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-macos-invert-on.png" alt="Screen shot of switch example with invert colors turned on" style="height: 85px"></td>
+              <td>
+                
+              </td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: none (default)</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-windows11-theme-none.png" alt="Screen shot of switch example with no contrast theme applied" style="height: 90px"></td>
+              <td>
+                
+              </td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: Night sky</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-windows11-theme-night-sky.png" alt="Screen shot of switch example with night sky contrast theme applied" style="height: 90px"></td>
+              <td>
+                
+              </td>
             </tr>
             <tr>
               <td>Windows 11</td>
               <td>Contrast Theme: Desert</td>
-              <td><img src="../../../../content-images/wai-aria-practices/practices/high-contrast/images/forced-colors-windows11-theme-desert.png" alt="Screen shot of switch example with desert contrast theme applied" style="height: 90px"></td>
+              <td>
+                
+              </td>
             </tr>
           </tbody>
         </table></div>
