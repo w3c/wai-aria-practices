@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: April 7, 2024</p>
+    <p>Page last updated: May 22, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -177,7 +177,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><code>article</code></td>
             <td></td>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -197,7 +197,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>feed</code></td>
             <td><a href="../../patterns/feed/">Feed Pattern</a>
 </td>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -811,7 +811,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><code>aria-busy</code></td>
             <td></td>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -972,7 +972,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/table/examples/table/">Table</a></li>
             </ul>
 </td>
@@ -1094,7 +1094,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
@@ -1165,7 +1165,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-posinset</code></td>
             <td></td>
             <td><ul>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
             </ul>
@@ -1237,7 +1237,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-setsize</code></td>
             <td></td>
             <td><ul>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
             </ul>
@@ -1683,7 +1683,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>aria-busy,aria-describedby,aria-label,aria-labelledby,aria-posinset,aria-setsize</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a></td>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
             <td>prototype</td>
             <td></td>
             <td>Yes</td>
@@ -2793,7 +2793,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a></td>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
             <td></td>
             <td>Yes</td>
           </tr>
