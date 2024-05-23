@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: May 22, 2024</p>
+    <p>Page last updated: May 23, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -1344,7 +1344,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses <code>event.which</code></th>
-            <td id="example_summary_which">60</td>
+            <td id="example_summary_which">8</td>
           </tr>
           <tr>
             <th scope="row">Use Class</th>
@@ -1352,7 +1352,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
-            <td id="example_summary_prototype">60</td>
+            <td id="example_summary_prototype">22</td>
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
@@ -1360,7 +1360,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
-            <td id="example_summary_pointer">59</td>
+            <td id="example_summary_pointer">11</td>
           </tr>
         </tbody>
       </table></div>
@@ -1385,29 +1385,29 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody id="example_coding_practices_tbody">
           <tr>
             <td><a href="../../patterns/accordion/examples/accordion/">Accordion</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>10</td>
+            <td>1</td>
+            <td>5</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-required,aria-roledescription</td>
+            <td>aria-hidden,aria-required</td>
           </tr>
           <tr>
             <td><a href="../../patterns/alert/examples/alert/">Alert</a></td>
-            <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>8</td>
+            <td>1</td>
+            <td>0</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-labelledby,aria-roledescription,aria-live,aria-atomic</td>
+            <td>aria-live,aria-atomic</td>
           </tr>
           <tr>
             <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
@@ -1416,167 +1416,167 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex_alertdialog</td>
-            <td>3</td>
             <td>2</td>
-            <td>10</td>
+            <td>2</td>
+            <td>5</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/breadcrumb/examples/breadcrumb/">Breadcrumb</a></td>
-            <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>2</td>
+            <td>1</td>
             <td>0</td>
-            <td>9</td>
             <td>2</td>
-            <td>heading,navigation,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td>navigation</td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
+            <td></td>
             <td>Yes</td>
             <td></td>
+            <td></td>
             <td>example</td>
-            <td>2</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button/">Button</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
+            <td></td>
             <td>Yes</td>
             <td></td>
+            <td></td>
             <td>example</td>
+            <td>1</td>
+            <td>1</td>
             <td>2</td>
             <td>1</td>
-            <td>9</td>
-            <td>1</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
             <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>10</td>
+            <td>2</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-labelledby</td>
+            <td>4</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a></td>
             <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>4</td>
-            <td>11</td>
+            <td>4</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-labelledby</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>10</td>
+            <td>1</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>9</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>2</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>12</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>12</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
+            <td>ex1</td>
+            <td>3</td>
+            <td>3</td>
+            <td>7</td>
+            <td>6</td>
+            <td>aria-hidden</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
+            <td>class</td>
+            <td></td>
+            <td></td>
             <td>Yes</td>
             <td>ex1</td>
             <td>4</td>
             <td>3</td>
-            <td>12</td>
-            <td>6</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-labelledby,aria-roledescription</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
-            <td>class, prototype</td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>ex1</td>
-            <td>5</td>
-            <td>3</td>
-            <td>14</td>
+            <td>11</td>
             <td>10</td>
-            <td>gridcell,heading,aria-busy,aria-errormessage,aria-hidden,aria-roledescription</td>
+            <td>gridcell,aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></td>
             <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
+            <td>2</td>
             <td>3</td>
-            <td>3</td>
-            <td>12</td>
+            <td>6</td>
             <td>5</td>
-            <td>heading,option,aria-busy,aria-describedby,aria-errormessage,aria-haspopup,aria-hidden,aria-label,aria-roledescription</td>
+            <td>option,aria-haspopup</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></td>
@@ -1585,24 +1585,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>3</td>
+            <td>2</td>
             <td>4</td>
-            <td>13</td>
             <td>7</td>
-            <td>heading,row,gridcell,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+            <td>7</td>
+            <td>row,gridcell</td>
           </tr>
           <tr>
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
             <td></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>example</td>
-            <td>4</td>
+            <td>3</td>
             <td>2</td>
-            <td>11</td>
             <td>6</td>
-            <td>gridcell,heading,aria-busy,aria-errormessage,aria-expanded,aria-hidden,aria-roledescription</td>
+            <td>6</td>
+            <td>gridcell</td>
           </tr>
           <tr>
             <td><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></td>
@@ -1611,63 +1611,63 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>1</td>
             <td>0</td>
-            <td>9</td>
+            <td>0</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>1</td>
             <td>0</td>
-            <td>9</td>
+            <td>0</td>
+            <td>3</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></td>
             <td>class, prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>5</td>
+            <td>4</td>
             <td>0</td>
-            <td>10</td>
+            <td>5</td>
             <td>3</td>
-            <td>banner,contentinfo,heading,navigation,region,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>banner,contentinfo,navigation,region,aria-label,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a></td>
             <td>class, prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
+            <td>2</td>
             <td>0</td>
-            <td>10</td>
+            <td>4</td>
             <td>3</td>
-            <td>heading,navigation,region,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>navigation,region,aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
@@ -1684,16 +1684,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
-            <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>1</td>
+            <td>0</td>
             <td>2</td>
-            <td>8</td>
+            <td>0</td>
             <td>5</td>
-            <td>heading,feed,article,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription,aria-posinset,aria-setsize</td>
+            <td>feed,article,aria-labelledby,aria-busy,aria-describedby,aria-posinset,aria-setsize</td>
           </tr>
           <tr>
             <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
@@ -1702,11 +1702,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>1</td>
             <td>0</td>
-            <td>13</td>
             <td>0</td>
-            <td>heading,aria-busy,aria-colindex,aria-controls,aria-describedby,aria-errormessage,aria-expanded,aria-haspopup,aria-hidden,aria-label,aria-labelledby,aria-roledescription,aria-rowindex,aria-sort</td>
+            <td>5</td>
+            <td>0</td>
+            <td>aria-colindex,aria-controls,aria-haspopup,aria-rowindex,aria-sort</td>
           </tr>
           <tr>
             <td><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></td>
@@ -1715,11 +1715,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>5</td>
+            <td>4</td>
             <td>1</td>
-            <td>15</td>
+            <td>8</td>
             <td>6</td>
-            <td>button,heading,menu,menuitem,aria-busy,aria-controls,aria-describedby,aria-errormessage,aria-expanded,aria-haspopup,aria-hidden,aria-label,aria-roledescription</td>
+            <td>button,menu,menuitem,aria-controls,aria-haspopup</td>
           </tr>
           <tr>
             <td><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></td>
@@ -1728,440 +1728,440 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>6</td>
+            <td>5</td>
             <td>3</td>
-            <td>15</td>
+            <td>9</td>
             <td>3</td>
-            <td>button,heading,region,aria-busy,aria-colindex,aria-describedby,aria-errormessage,aria-expanded,aria-haspopup,aria-hidden,aria-label,aria-live,aria-relevant,aria-roledescription,aria-sort</td>
+            <td>button,region,aria-colindex,aria-haspopup,aria-label,aria-live,aria-relevant,aria-sort</td>
           </tr>
           <tr>
             <td><a href="../../patterns/link/examples/link/">Link</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
+            <td></td>
             <td>Yes</td>
             <td></td>
+            <td></td>
             <td>not found</td>
-            <td>2</td>
             <td>1</td>
-            <td>8</td>
             <td>1</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>1</td>
+            <td>1</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
             <td>class, prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex</td>
-            <td>3</td>
             <td>2</td>
-            <td>14</td>
+            <td>2</td>
+            <td>8</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-describedby,aria-disabled,aria-errormessage,aria-hidden,aria-keyshortcuts,aria-label,aria-multiselectable,aria-roledescription</td>
+            <td>aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></td>
             <td>class, prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex</td>
-            <td>5</td>
-            <td>3</td>
-            <td>13</td>
             <td>4</td>
-            <td>heading,presentation,aria-busy,aria-describedby,aria-disabled,aria-errormessage,aria-expanded,aria-keyshortcuts,aria-label,aria-multiselectable,aria-roledescription</td>
+            <td>3</td>
+            <td>7</td>
+            <td>4</td>
+            <td>presentation,aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
             <td>class, prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
+            <td>3</td>
             <td>2</td>
-            <td>14</td>
+            <td>9</td>
             <td>5</td>
-            <td>heading,toolbar,aria-busy,aria-describedby,aria-disabled,aria-errormessage,aria-expanded,aria-keyshortcuts,aria-label,aria-live,aria-roledescription</td>
+            <td>toolbar,aria-disabled,aria-keyshortcuts,aria-label,aria-live</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
             <td>class, prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex</td>
-            <td>3</td>
             <td>2</td>
-            <td>13</td>
+            <td>2</td>
+            <td>7</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-describedby,aria-disabled,aria-errormessage,aria-expanded,aria-keyshortcuts,aria-label,aria-multiselectable,aria-roledescription</td>
+            <td>aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>11</td>
+            <td>2</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>10</td>
+            <td>2</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+            <td>4</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>10</td>
+            <td>3</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+            <td>4</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>9</td>
+            <td>8</td>
             <td>7</td>
-            <td>12</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,none,aria-busy,aria-describedby,aria-errormessage,aria-labelledby,aria-orientation,aria-roledescription</td>
+            <td>none,aria-orientation</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>10</td>
+            <td>9</td>
             <td>8</td>
-            <td>11</td>
+            <td>6</td>
             <td>5</td>
-            <td>heading,separator,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-orientation,aria-roledescription</td>
+            <td>separator,aria-orientation</td>
           </tr>
           <tr>
             <td><a href="../../patterns/meter/examples/meter/">Meter</a></td>
             <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>example</td>
-            <td>2</td>
             <td>1</td>
-            <td>11</td>
+            <td>1</td>
+            <td>5</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>10</td>
+            <td>2</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>9</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-roledescription</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>9</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>2</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>11</td>
+            <td>2</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-labelledby,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>11</td>
+            <td>2</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-rating/">Rating Slider</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>12</td>
+            <td>1</td>
             <td>6</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-roledescription</td>
+            <td>6</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>12</td>
+            <td>2</td>
             <td>6</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-roledescription</td>
+            <td>6</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>13</td>
+            <td>2</td>
             <td>7</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-roledescription</td>
+            <td>7</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></td>
             <td>prototype</td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>example</td>
-            <td>3</td>
             <td>2</td>
-            <td>12</td>
+            <td>2</td>
             <td>7</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-roledescription</td>
+            <td>7</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>9</td>
+            <td>2</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>8</td>
             <td>1</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>1</td>
+            <td>1</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/switch/examples/switch/">Switch</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>2</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/table/examples/sortable-table/">Sortable Table</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>1</td>
             <td>0</td>
-            <td>9</td>
+            <td>0</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/table/examples/table/">Table</a></td>
-            <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>6</td>
             <td>5</td>
-            <td>8</td>
+            <td>5</td>
             <td>2</td>
-            <td>heading,aria-busy,aria-errormessage,aria-expanded,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>10</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
+            <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>10</td>
             <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/help.html">Toolbar</a></td>
-            <td>prototype</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>not found</td>
-            <td>1</td>
             <td>0</td>
-            <td>8</td>
             <td>0</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-expanded,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
             <td>prototype</td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>7</td>
             <td>6</td>
-            <td>17</td>
+            <td>6</td>
             <td>12</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-labelledby,aria-roledescription</td>
+            <td>12</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
             <td>prototype</td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>13</td>
+            <td>3</td>
+            <td>7</td>
             <td>5</td>
-            <td>heading,aria-activedescendant,aria-busy,aria-current,aria-describedby,aria-errormessage,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>aria-activedescendant,aria-current</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></td>
             <td>prototype</td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
+            <td>3</td>
+            <td>3</td>
             <td>4</td>
             <td>3</td>
-            <td>9</td>
-            <td>3</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+            <td>aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
             <td>prototype</td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>12</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-label,aria-roledescription</td>
+            <td>aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
-            <td>class, prototype</td>
+            <td>class</td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>9</td>
             <td>8</td>
-            <td>10</td>
+            <td>8</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-describedby,aria-errormessage,aria-hidden,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr></tbody>
       </table></div>
 
@@ -2683,54 +2683,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </thead>
         <tbody id="example_mouse_pointer_tbody">
           <tr>
-            <td><a href="../../patterns/accordion/examples/accordion/">Accordion</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/alert/examples/alert/">Alert</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/breadcrumb/examples/breadcrumb/">Breadcrumb</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/button/examples/button/">Button</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a></td>
             <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a></td>
             <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a></td>
@@ -2750,17 +2710,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
@@ -2768,89 +2723,39 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/link/examples/link/">Link</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
@@ -2859,26 +2764,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/meter/examples/meter/">Meter</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a></td>
             <td></td>
             <td>Yes</td>
           </tr>
@@ -2908,74 +2793,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/switch/examples/switch/">Switch</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/table/examples/sortable-table/">Sortable Table</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/table/examples/table/">Table</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/toolbar/examples/help.html">Toolbar</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
             <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr></tbody>
       </table></div>
 
