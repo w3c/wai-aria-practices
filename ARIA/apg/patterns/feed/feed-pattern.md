@@ -108,7 +108,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <img alt src="../../../../content-images/wai-aria-practices/images/pattern-feed.svg">
         <h2>Example</h2>
         <p>
-          <a href="examples/feed/">Example Implementation of Feed Pattern</a>
+          <a href="examples/feed/">Infinite Scrolling Feed Example</a>
         </p>
       </section>
 
