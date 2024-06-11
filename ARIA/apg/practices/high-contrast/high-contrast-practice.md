@@ -332,7 +332,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th>Canvas</th>
               <th>Canvas Text</th>
               <th>Link Text</th>
-              <th>Field Text</th>
+              <th>Button Text</th>
               <th>Transparent<br>Content</th>
               <th>Background<br>Images</th>
             </tr>
