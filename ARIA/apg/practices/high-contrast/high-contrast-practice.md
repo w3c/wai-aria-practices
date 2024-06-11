@@ -329,7 +329,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <thead>
             <tr>
               <th>Option</th>
-              <th>Description</th>
+              <th>Canvas</th>
+              <th>Canvas Text</th>
+              <th>Link Text</th>
+              <th>Field Text</th>
+              <th>Transparent<br>Content</th>
+              <th>Background<br>Images</th>
             </tr>
           </thead>
           <tbody>
@@ -337,25 +342,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <a href="https://developer.chrome.com/docs/devtools/rendering/emulate-css">Chrome: Emulate <code>prefers-color-scheme: dark</code> and <code>forced-colors: active</code></a>
               </td>
-              <td>
-                <ul>
-                  <li>Text content is white on a black background</li>
-                  <li>Links are yellow on a black background</li>
-                  <li>Transparent content becomes visible (e.g. borders, ..) become visible (white)</li>
-                </ul>
-              </td>
+              <td>Black</td>
+              <td>White</td>
+              <td>Yellow</td>
+              <td>White</td>
+              <td>White</td>
+              <td>Disabled</td>
             </tr>
             <tr>
               <td>
-                <a href="https://chromewebstore.google.com/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl%3Den&pli=1">Chrome High Contrast Extension</a>
+                <a href="https://chromewebstore.google.com/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl%3Den&pli=1">Chrome High Contrast Extension</a><br>
+                (Using "Yellow on Black" option)
               </td>
-              <td>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </td>
+              <td>Black</td>
+              <td>Yellow</td>
+              <td>Yellow</td>
+              <td>Yellow</td>
+              <td>Transparent</td>
+              <td>Enabled</td>
             </tr>
           </tbody>
         </table></div>
