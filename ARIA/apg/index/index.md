@@ -95,7 +95,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>article</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
           </tr>
           <tr>
             <td><code>banner</code></td>
@@ -172,7 +172,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>feed</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
           </tr>
           <tr>
             <td><code>form</code></td>
@@ -530,7 +530,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>aria-busy</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
           </tr>
           <tr>
             <td><code>aria-checked</code></td>
@@ -603,7 +603,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../patterns/table/examples/table/">Table</a></li>
               </ul>
             </td>
@@ -723,7 +723,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
@@ -806,7 +806,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-posinset</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
@@ -876,7 +876,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-setsize</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
