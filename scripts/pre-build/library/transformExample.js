@@ -9,8 +9,14 @@ const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 const removeConflictingCss = require("./removeConflictingCss");
 const getExampleLastModifiedDate = require("./getExampleLastModifiedDate");
 
-const loadNotice = async () => {
-  const relativePath = "content/shared/templates/example-usage-warning.html";
+const loadNoticeCommon = async ({ isExperimental }) => {
+  let relativePath;
+  if (isExperimental) {
+    relativePath =
+      "content/shared/templates/experimental-example-usage-warning.html";
+  } else {
+    relativePath = "content/shared/templates/example-usage-warning.html";
+  }
   const templateSourcePath = path.resolve(sourceRoot, relativePath);
   const noticeContent = await fs.readFile(templateSourcePath, {
     encoding: "utf8",
@@ -28,7 +34,8 @@ const loadNotice = async () => {
   };
 };
 
-const loadedNotice = loadNotice();
+const loadedNotice = loadNoticeCommon({ isExperimental: false });
+const loadedExperimentalNotice = loadNoticeCommon({ isExperimental: true });
 
 const transformExample = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
@@ -46,7 +53,16 @@ const transformExample = async (sourcePath, sourceContents) => {
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
-  const getNotice = await loadedNotice;
+  const isExperimental =
+    html.querySelector("main")?.getAttribute("data-content-phase") ===
+    "experimental";
+
+  let getNotice;
+  if (isExperimental) {
+    getNotice = await loadedExperimentalNotice;
+  } else {
+    getNotice = await loadedNotice;
+  }
   const notice = await getNotice(sourcePath);
   html.querySelector("body").insertAdjacentHTML("afterbegin", notice);
 
