@@ -87,6 +87,41 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 /* Patterns and Practices */
+.pattern-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--cloudy-subtle);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+.pattern-search form {
+  display: flex;
+  flex: 1;
+  margin-right: 1em;
+}
+
+.pattern-search form input {
+  flex: 1;
+  margin-right: 1em;
+}
+
+.view-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.view-toggle button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.view-toggle button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
 ul.tiles {
   display: grid;
   row-gap: 50px;
