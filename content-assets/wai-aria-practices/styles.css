@@ -105,61 +105,93 @@ ul.tiles {
   }
 }
 
-li.tile {
+ul.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0;
+  padding: 2em;
+  background: #ffffff;
+  border: 1px solid var(--line-grey);
+  border-radius: 4px;
+  row-gap: 1em;
+}
+
+ul.list img {
+  width: 42px;
+  height: auto;
+}
+
+li.pattern {
   align-self: stretch;
   list-style: none;
   margin: 0;
   padding: 2em 2em 0;
-  background: #ffffff;
   height: 100%;
   border: 1px solid var(--line-grey);
   border-radius: 4px;
 }
 
-li.tile a {
+ul.list li.pattern {
+  border: none;
+  border-bottom: 1px solid var(--line-grey);
+  padding: 0.25em 0 0.5em 0;
+}
+
+ul.list li.pattern:last-child {
+  border-bottom: none;
+}
+
+li.pattern a {
   display: block;
   text-decoration: none;
   color: var(--wai-green);
 }
 
-li.tile a:hover {
+li.pattern a:hover {
   text-decoration: underline;
 }
 
-li.tile a:focus {
+li.pattern a:focus {
   outline-offset: 8px;
   outline-color: #113362;
 }
 
-li.tile a:visited {
+li.pattern a:visited {
   color: var(--wai-green);
 }
 
-li.tile h2.tile-name {
+li.pattern h2.pattern-name {
   margin: 0;
   border: none;
   display: flex;
   align-items: flex-start;
 }
 
-li.tile img {
+li.pattern img {
   margin-right: 1em;
 }
 
 @media screen and (max-width: 23em) {
-  li.tile h2.tile-name {
+  li.pattern h2.pattern-name {
     flex-direction: column;
   }
-  li.tile h2.tile-name span {
+  li.pattern h2.pattern-name span {
     margin-top: 0.5em;
   }
 }
 
-li.tile .tile-introduction {
+li.pattern .pattern-introduction {
   float: left;
   border-top: 1px solid var(--line-grey);
   padding-top: 1em;
   margin-top: 1.25em;
+}
+
+ul.list .pattern-introduction {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 4em;
 }
 
 ul.content-list {
@@ -263,7 +295,7 @@ ul.sidebar-list li a code {
   display: inline-block;
 }
 
-li .tile-introduction {
+li .pattern-introduction {
   color: rgb(29, 29, 29);
 }
 
