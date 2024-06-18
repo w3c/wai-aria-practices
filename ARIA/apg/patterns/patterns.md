@@ -28,6 +28,36 @@ lang: en
 <script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 <script src="../../../content-assets/wai-aria-practices/shared/js/filterBySearch.js"></script>
 
+<script>
+  window.onload = function () {
+    document
+      .getElementById("listViewButton")
+      .addEventListener("click", function () {
+        updateView("list");
+      });
+    document
+      .getElementById("tilesViewButton")
+      .addEventListener("click", function () {
+        updateView("tiles");
+      });
+  };
+
+  function updateView(view) {
+    const buttons = document.querySelectorAll(".view-toggle button");
+    buttons.forEach((btn) => {
+      btn.setAttribute("aria-pressed", "false");
+      btn.classList.remove("active");
+    });
+    const activeButton =
+      view === "list"
+        ? document.getElementById("listViewButton")
+        : document.getElementById("tilesViewButton");
+    activeButton.setAttribute("aria-pressed", "true");
+    activeButton.classList.add("active");
+    document.getElementById("patterns").className = view;
+  }
+</script>
+
 
 <link 
   rel="stylesheet"
@@ -64,40 +94,47 @@ lang: en
   
     
     
-    <form action="javascript:void(0);"
-      onsubmit="aria.Filter.filterListItems(document.getElementById('pattern-search-input').value, '#patterns', 'pattern-name')"
-      role="search"
-    >
-      <input type="text"
-        id="pattern-search-input"
-        placeholder="Search patterns"
-        oninput="aria.Filter.filterListItems(this.value, '#patterns', 'pattern-name')"
-        aria-label="Search patterns"
+    <section class="pattern-search">
+      <form action="javascript:void(0);"
+        onsubmit="aria.Filter.filterListItems(document.getElementById('pattern-search-input').value, '#patterns', 'pattern-name')"
+        role="search"
       >
-      <button type="submit" aria-label="Submit search">Search</button>
-    </form>
-    <fieldset class="view-toggle">
-      <button aria-pressed="true" onclick="
-        document.querySelectorAll('.view-toggle button').forEach(btn => btn.setAttribute('aria-pressed', 'false'));
-        this.setAttribute('aria-pressed', 'true');
-        document.getElementById('patterns').classList.add('tiles');
-        document.getElementById('patterns').classList.remove('list');
-      "
-      aria-label="Show tiles view"
-      >
-        <img alt src="../../../content-images/wai-aria-practices/images/icon-gridview.svg" width="25px">
-      </button>
-      <button aria-pressed="false" onclick="
-        document.querySelectorAll('.view-toggle button').forEach(btn => btn.setAttribute('aria-pressed', 'false'));
-        this.setAttribute('aria-pressed', 'true');
-        document.getElementById('patterns').classList.add('list');
-        document.getElementById('patterns').classList.remove('tiles');
-        "
-        aria-label="Show list view"
-      >
-        <img alt src="../../../content-images/wai-aria-practices/images/icon-listview.svg" width="25px">
-      </button>
-    </fieldset>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20">
+          <g transform="translate(-3.5 -3.5)" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M20.5,12.5a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" ></path>
+            <path d="M29.325,29.325l-4.35-4.35" transform="translate(-6.825 -6.825)"></path>
+          </g>
+        </svg>
+        <input type="text"
+          id="pattern-search-input"
+          placeholder="Search patterns"
+          oninput="aria.Filter.filterListItems(this.value, '#patterns', 'pattern-name')"
+          aria-label="Search patterns"
+        >
+        <button type="submit" aria-label="Submit search">Search</button>
+      </form>
+      <fieldset class="view-toggle">
+        <button id="listViewButton" aria-pressed="false" aria-label="Show list view">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 25 21">
+            <g transform="translate(0 -0.4)" fill="currentColor">
+              <path d="M4,20.775H1a1.135,1.135,0,0,0-1,1v3a1.135,1.135,0,0,0,1,1H4a1.135,1.135,0,0,0,1-1v-3A1.135,1.135,0,0,0,4,20.775Zm20,1H9a1.135,1.135,0,0,0-1,1v1a1.135,1.135,0,0,0,1,1H24a1.135,1.135,0,0,0,1-1v-1A1.135,1.135,0,0,0,24,21.775Z" transform="translate(0 -20.375)" ></path>
+              <path d="M4,20.775H1a1.135,1.135,0,0,0-1,1v3a1.135,1.135,0,0,0,1,1H4a1.135,1.135,0,0,0,1-1v-3A1.135,1.135,0,0,0,4,20.775Zm20,1H9a1.135,1.135,0,0,0-1,1v1a1.135,1.135,0,0,0,1,1H24a1.135,1.135,0,0,0,1-1v-1A1.135,1.135,0,0,0,24,21.775Z" transform="translate(0 -12.375)"></path>
+              <path d="M4,20.775H1a1.135,1.135,0,0,0-1,1v3a1.135,1.135,0,0,0,1,1H4a1.135,1.135,0,0,0,1-1v-3A1.135,1.135,0,0,0,4,20.775Zm20,1H9a1.135,1.135,0,0,0-1,1v1a1.135,1.135,0,0,0,1,1H24a1.135,1.135,0,0,0,1-1v-1A1.135,1.135,0,0,0,24,21.775Z" transform="translate(0 -4.375)"></path>
+            </g>
+          </svg>
+        </button>
+        <button id="tilesViewButton" aria-pressed="true" aria-label="Show tiles view" class="active">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 22 22" >
+            <g transform="translate(0 -0.5)" fill="currentColor">
+              <rect width="9" height="9" rx="1" transform="translate(0 0.5)"></rect>
+              <rect width="9" height="9" rx="1" transform="translate(0 13.5)"></rect>
+              <rect width="9" height="9" rx="1" transform="translate(13 0.5)"></rect>
+              <rect width="9" height="9" rx="1" transform="translate(13 13.5)"></rect>
+            </g>
+          </svg>
+        </button>
+      </fieldset>
+    </section>
     <ul id="patterns" class="tiles">
       <li class="pattern">
         <a href="accordion/">
