@@ -96,7 +96,58 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
 
         <h3 id="os-hc-features">Operating System High Contrast Features</h3>
-        <div class="table-wrap"><table aria-labelledby="os-hc-features" class="data">
+        <div class="table-wrap"><table aria-labelledby="os-media-query" class="data">
+          <thead>
+            <tr>
+              <th>Operating System</th>
+              <th>Invert Colors</th>
+              <th>Increase Contrast</th>
+              <th>Color Themes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Android</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>dark option</td>
+            </tr>
+            <tr>
+              <th>Linux GNOME (Fedora 40)</th>
+              <td>no</td>
+              <td>Yes</td>
+              <td>dark option</td>
+            </tr>
+            <tr>
+              <th>iPadOS</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>no</td>
+            </tr>
+            <tr>
+              <th>iPhoneOS</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>no</td>
+            </tr>
+            <tr>
+              <th>macOS</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>no</td>
+            </tr>
+            <tr>
+              <th>Windows 10/11</th>
+              <td>no</td>
+              <td>no</td>
+              <td>Multiple options</td>
+            </tr>
+          </tbody>
+        </table></div>
+
+
+        <h3 id="os-media-query">Operating System Support for setting Media Queries</h3>
+        <div class="table-wrap"><table aria-labelledby="os-media-query" class="data">
           <thead>
             <tr>
               <th>Operating System and Feature</th>
@@ -105,6 +156,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </th>
               <th>
                 <code>forced-colors</code>
+              </th>
+              <th>
+                <code>prefers-color-theme</code>
               </th>
             </tr>
           </thead>
@@ -117,6 +171,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>none</code>
               </td>
+              <td>
+                <code>light</code>
+              </td>
+            </tr>
+            <tr>
+              <td>Android: Dark Theme enabled</td>
+              <td>
+                <code>no-preference</code>
+              </td>
+              <td>
+                <code>none</code>
+              </td>
+              <td>
+                <code>dark</code>
+              </td>
             </tr>
             <tr>
               <td>iPhone/iPad: Increase Contrast Enabled</td>
@@ -125,6 +194,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
               <td>
                 <code>none</code>
+              </td>
+              <td>
+                <code>light</code>
               </td>
             </tr>
             <tr>
@@ -135,6 +207,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>none</code>
               </td>
+              <td>
+                <code>light</code>
+              </td>
             </tr>
             <tr>
               <td>GNOME Desktop: Increase Contrast Enabled</td>
@@ -144,6 +219,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                 <code>none</code>
               </td>
+              <td>
+                <code>light</code>
+              </td>
+            </tr>
+            <tr>
+              <td>GNOME Desktop: Dark Theme Enabled</td>
+              <td>
+                <code>no-preference</code>
+              </td>
+              <td>
+                <code>none</code>
+              </td>
+              <td>
+                <code>dark</code>
+              </td>
             </tr>
             <tr>
               <td>Microsoft Windows 10/11: Dark Sky Theme</td>
@@ -152,6 +242,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
               <td>
                 <code>active</code>
+              </td>
+              <td>
+                <code>dark</code>
               </td>
             </tr>
           </tbody>
@@ -239,8 +332,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <thead>
             <tr>
               <th>System Color</th>
-              <th>Sample</th>
-              <th>Color</th>
+              <th>Computed Sample</th>
+              <th>Computed Color</th>
               <th>Description</th>
             </tr>
           </thead>
