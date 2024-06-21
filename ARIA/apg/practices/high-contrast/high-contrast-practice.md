@@ -317,17 +317,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h3 id="os-high-contrast-config">Operating System High Contrast Settings</h3>
 
         <ul>
-          <li><a href="https://support.microsoft.com/en-us/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696"> Windows 10 and 11: Change color contrast</a></li>
-          <li><a href="https://support.apple.com/guide/mac-help/change-display-colors-easier-onscreen-mchl11ddd4b3/mac">MacOS: Change display colors on Mac to make it easier to see what’s onscreen</a></li>
+          <li><a href="https://support.microsoft.com/en-us/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696#WindowsVersion=Windows_11"> Windows 10 and 11: Change color contrast in Windows</a></li>
+          <li><a href="https://support.apple.com/guide/mac-help/change-display-settings-for-accessibility-unac089/mac">macOS: Change Display settings for accessibility on Mac</a></li>
           <li><a href="https://help.gnome.org/users/gnome-help/stable/a11y-contrast.html.en">Linux GNOME: Adjust the contrast</a></li>
-          <li><a href="https://support.apple.com/guide/ipad/change-color-and-brightness-ipad674f91c0/ipados">iPad: Change color on iPad to make it easier to see items onscreen</a></li>
-          <li><a href="https://support.apple.com/guide/iphone/change-color-and-brightness-iph3e2e1fb0/17.0/ios/17.0">iPhone: Change color on iPhone to make it easier to see items onscreen</a></li>
+          <li><a href="https://support.apple.com/guide/ipad/make-text-easier-to-read-ipad9a246013/17.0/ipados/17.0">iPad: Make iPad text easier to read with accessibility features</a></li>
+          <li><a href="https://support.apple.com/guide/iphone/make-text-easier-to-read-iph3c076905a/17.0/ios/17.0">iPhone: Make iPhone text easier to read with accessibility features</a></li>
           <li><a href="https://support.google.com/accessibility/android/answer/11183305">Android: Change text &amp; display settings</a></li>
         </ul>
 
         <h3 id="chrome-high-contrast-options">Chrome High Contrast Options</h3>
 
-        <p>There are two main ways to test for high contrast using the Chrome browser using the Render options in the DOM Inspector or installing the Google High Contast extension.  The extnsion provides a toolbar button to easily toggle between high contrast and author styled rendering.  The DOM Inspector method is </p>
+        <p>There are two main ways to test for high contrast using the Chrome browser using the Render options in the DOM Inspector or installing the Google High Contrast extension.  The extension provides a toolbar button to easily toggle between high contrast and author styled rendering.  The DOM Inspector method is </p>
 
         <ul>
           <li>
