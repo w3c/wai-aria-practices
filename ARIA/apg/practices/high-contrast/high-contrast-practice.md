@@ -76,80 +76,82 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="introduction">
         <h2>Introduction</h2>
         <p>
-          People with <a href="https://www.w3.org/WAI/people-use-web/abilities-barriers/#visual">visual impairments using the web</a> often need to override the default colors to make content perceivable to them.  Operating systems provide settings to enable users to choose color themes or preset high contrast themes that are useful to them.  For web content to be compatible with high contrast settings, authors must ensure their content adapts to user settings.  This section explains how to ensure components respect those preferences and verify compatibility through testing.
+          People with <a href="https://www.w3.org/WAI/people-use-web/abilities-barriers/#visual">visual impairments using the web</a> often need to increase the contrast of content to make it perceivable to them.  Operating systems provide settings for users to increase contrast or choose color themes that are useful to them.  Authors must ensure content adapts to user settings and this section explains how to components can adapt to those settings and verify compatibility through testing.
         </p>
 
         <p>This section covers:</p>
         <ol>
-          <li>Using SVG graphics to create components whose rendering can adapt operating system color settings.</li>
-          <li>Using <code>currentcolor</code> value for inheriting the <code>color</code> property value of ancestors.</li>
+          <li>Using SVG graphics to create components whose rendering can adapt operating system contrast and theme settings.</li>
           <li>Setting the <code>forced-colors-adjust=auto</code> CSS property on SVG elements.</li>
+          <li>Using the <code>prefers-contrast</code> CSS media query for high contrast settings.</li>
           <li>Using the <code>forced-colors</code> CSS media query for high contrast settings.</li>
           <li>Using <code>&lt;system-colors&gt;</code> CSS data types for consistency with the rendering of other components in high contrast settings.</li>
+          <li>Using <code>currentcolor</code> value for inheriting the <code>color</code> property value of ancestors.</li>
         </ol>
       </section>
 
       <section id="os-high-contrast">
         <h2>Operating System Color and High Contrast Settings</h2>
-        <p>Mobile, tablet and desktop operating systems have accessibility features for users to change the colors used to render content, including the rendering ot content from web browsers.   The features are found in the accessibility settings of the operating system.  The following table highlights the major high contrast features in selected operating systems.
+        <p>Mobile, tablet and desktop operating systems have accessibility features for users to change the colors used to render content, including the rendering of content from web browsers.   The features are found in the accessibility settings of the operating system.  The following table highlights the major high contrast features in selected operating systems.
         </p>
 
         <h3 id="os-hc-features">Operating System High Contrast Features</h3>
         <div class="table-wrap"><table aria-labelledby="os-hc-features" class="data">
           <thead>
             <tr>
-              <th>Operating System</th>
-              <th>Accessibility Features</th>
+              <th>Operating System and Feature</th>
+              <th>
+                <code>prefers-contrast</code>
+              </th>
+              <th>
+                <code>forced-colors</code>
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Android</td>
+              <td>Android: High Contrast Text Enabled</td>
               <td>
-                <ul>
-                  <li>High contrast text</li>
-                </ul>
+                <code>more</code>
+              </td>
+              <td>
+                <code>none</code>
               </td>
             </tr>
             <tr>
-              <td>iPhone/iPad</td>
+              <td>iPhone/iPad: Increase Contrast Enabled</td>
               <td>
-                <ul>
-                  <li>Invert colors</li>
-                  <li>Increase contrast</li>
-                  <li>Display contrast</li>
-                  <li>Reduce transparency</li>
-                </ul>
+                <code>more</code>
+              </td>
+              <td>
+                <code>none</code>
               </td>
             </tr>
             <tr>
-              <td>Apple macOS</td>
+              <td>Apple macOS: Increase Contrast Enabled</td>
               <td>
-                <ul>
-                  <li>Smart invert</li>
-                  <li>Classic invert</li>
-                  <li>Increase contrast</li>
-                  <li>Display contrast</li>
-                </ul>
+                <code>more</code>
+              </td>
+              <td>
+                <code>none</code>
               </td>
             </tr>
             <tr>
-              <td>GNOME Desktop</td>
+              <td>GNOME Desktop: Increase Contrast Enabled</td>
               <td>
-                <ul>
-                  <li>Dark mode theme</li>
-                  <li>High contrast setting</li>
-                </ul>
+                <code>more</code>
+              </td>
+              <td>
+                <code>none</code>
               </td>
             </tr>
             <tr>
-              <td>Microsoft Windows 10/11</td>
+              <td>Microsoft Windows 10/11: Dark Sky Theme</td>
               <td>
-                <ul>
-                  <li>Enable high contrast color theme</li>
-                  <li>Choose high contrast color theme</li>
-                  <li>User can define custom theme</li>
-                </ul>
+                <code>no-preference</code>
+              </td>
+              <td>
+                <code>active</code>
               </td>
             </tr>
           </tbody>
@@ -325,52 +327,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <h3 id="chrome-high-contrast-options">Chrome High Contrast Options</h3>
 
-        <div class="table-wrap"><table class="data">
-          <thead>
-            <tr>
-              <th>Option</th>
-              <th>Canvas</th>
-              <th>Canvas Text</th>
-              <th>Link Text</th>
-              <th>Button Text</th>
-              <th>Transparent<br>Content</th>
-              <th>Background<br>Images</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="https://developer.chrome.com/docs/devtools/rendering/emulate-css">Chrome: Emulate <code>prefers-color-scheme: dark</code> and <code>forced-colors: active</code></a>
-              </td>
-              <td>Black</td>
-              <td>White</td>
-              <td>Yellow</td>
-              <td>White</td>
-              <td>White</td>
-              <td>Disabled</td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://chromewebstore.google.com/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl%3Den&pli=1">Chrome High Contrast Extension</a><br>
-                (Using "Yellow on Black" option)
-              </td>
-              <td>Black</td>
-              <td>Yellow</td>
-              <td>Yellow</td>
-              <td>Yellow</td>
-              <td>Transparent</td>
-              <td>Enabled</td>
-            </tr>
-          </tbody>
-        </table></div>
+        <p>There are two main ways to test for high contrast using the Chrome browser using the Render options in the DOM Inspector or installing the Google High Contast extension.  The extnsion provides a toolbar button to easily toggle between high contrast and author styled rendering.  The DOM Inspector method is </p>
 
-        <h3 id="high-contrast-features">High Contrast Features</h3>
-
-        <p>Add content</p>
-
-
+        <ul>
+          <li>
+            <a href="https://developer.chrome.com/docs/devtools/rendering/emulate-css">DOM Inspector Render Tab: Emulate <code>prefers-color-scheme: dark</code> and <code>forced-colors: active</code></a>
+          </li>
+          <li>
+            <a href="https://chromewebstore.google.com/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl%3Den&pli=1">Google High Contrast Extension</a>, use "Yellow on Black" option.
+          </li>
+        </ul>
       </section>
-
 
       <script src="../../../../content-assets/wai-aria-practices/practices/high-contrast/high-contrast-practice.js"></script>
     </div>
