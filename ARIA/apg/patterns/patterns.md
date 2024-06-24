@@ -68,7 +68,7 @@ lang: en
       <h2>Filter</h2>
       <div class="pattern-search-flex-container">
       <form action="javascript:void(0);"
-        onsubmit="aria.Filter.filterListItems(document.getElementById('pattern-search-input').value, '#patterns', 'pattern-name')"
+        onsubmit="aria.Filter.filterListItems(document.getElementById('pattern-search-input').value, '#patterns', 'pattern-name', 'no-patterns-found')"
         role="search"
       >
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20">
@@ -80,7 +80,7 @@ lang: en
         <input type="text"
           id="pattern-search-input"
           placeholder="Search patterns"
-          oninput="aria.Filter.filterListItems(this.value, '#patterns', 'pattern-name')"
+          oninput="aria.Filter.filterListItems(this.value, '#patterns', 'pattern-name', 'no-patterns-found')"
           aria-label="Search patterns"
         >
         <button type="submit" aria-label="Submit search">Search</button>
@@ -467,6 +467,10 @@ lang: en
         <div class="pattern-introduction">
           A window splitter is a moveable separator between two sections, or panes, of a window that enables users to change the relative size of the panes.
         </div>
+      </li>
+
+      <li id="no-patterns-found" aria-hidden="true" style="display: none">
+        <h2>No results found.</h2>
       </li>
     </ul>
   

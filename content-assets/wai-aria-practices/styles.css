@@ -211,6 +211,14 @@ ul.list img {
   height: auto;
 }
 
+#patterns #no-patterns-found {
+  list-style: none;
+}
+
+#patterns #no-patterns-found h2 {
+  border: none;
+}
+
 li.pattern {
   align-self: stretch;
   list-style: none;
