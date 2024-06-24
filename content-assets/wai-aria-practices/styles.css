@@ -88,13 +88,20 @@ a.skip-main:focus, a.skip-main:active {
 
 /* Patterns and Practices */
 .pattern-search {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: var(--cloudy-subtle);
   padding: 2em 1em;
   margin: 1em 0;
   border-radius: 4px;
+}
+
+.pattern-search h2 {
+  margin-top: 0;
+}
+
+.pattern-search-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .pattern-search form {

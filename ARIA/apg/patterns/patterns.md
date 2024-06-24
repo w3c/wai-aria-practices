@@ -65,6 +65,8 @@ lang: en
     
     
     <section class="pattern-search">
+      <h2>Filter</h2>
+      <div class="pattern-search-flex-container">
       <form action="javascript:void(0);"
         onsubmit="aria.Filter.filterListItems(document.getElementById('pattern-search-input').value, '#patterns', 'pattern-name')"
         role="search"
@@ -104,6 +106,7 @@ lang: en
           </svg>
         </button>
       </fieldset>
+      </div>
     </section>
     <ul id="patterns" class="tiles">
       <li class="pattern">
