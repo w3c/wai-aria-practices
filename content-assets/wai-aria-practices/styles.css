@@ -219,6 +219,7 @@ ul.list img {
   border: none;
 }
 
+li.tile,
 li.pattern {
   align-self: stretch;
   list-style: none;
@@ -239,25 +240,30 @@ ul.list li.pattern:last-child {
   border-bottom: none;
 }
 
+li.tile a,
 li.pattern a {
   display: block;
   text-decoration: none;
   color: var(--wai-green);
 }
 
+li.tile a:hover,
 li.pattern a:hover {
   text-decoration: underline;
 }
 
+li.tile a:focus,
 li.pattern a:focus {
   outline-offset: 8px;
   outline-color: #113362;
 }
 
+li.tile a:visited,
 li.pattern a:visited {
   color: var(--wai-green);
 }
 
+li.tile h2.tile-name,
 li.pattern h2.pattern-name {
   margin: 0;
   border: none;
@@ -270,14 +276,17 @@ li.pattern img {
 }
 
 @media screen and (max-width: 23em) {
+  li.tile h2.tile-name,
   li.pattern h2.pattern-name {
     flex-direction: column;
   }
+  li.tile h2.tile-name span,
   li.pattern h2.pattern-name span {
     margin-top: 0.5em;
   }
 }
 
+li.tile .tile-introduction,
 li.pattern .pattern-introduction {
   float: left;
   border-top: 1px solid var(--line-grey);
@@ -394,6 +403,7 @@ ul.sidebar-list li a code {
   display: inline-block;
 }
 
+li .tile-introduction,
 li .pattern-introduction {
   color: rgb(29, 29, 29);
 }
