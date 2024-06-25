@@ -67,7 +67,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
       <li><a href="#examples_by_role_label">Examples by Role</a></li>
       <li><a href="#examples_by_props_label">Examples by Properties and States</a></li>
-      
     </ul>
     <section id="examples_by_roles">
       <h2 id="examples_by_role_label">Examples by Role</h2>
@@ -950,7 +949,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr></tbody>
       </table>
     </section>
-    
   </div>
 
 

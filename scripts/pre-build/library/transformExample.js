@@ -17,10 +17,24 @@ const loadNoticeCommon = async ({ isExperimental }) => {
   } else {
     relativePath = "content/shared/templates/example-usage-warning.html";
   }
-  const templateSourcePath = path.resolve(sourceRoot, relativePath);
-  const noticeContent = await fs.readFile(templateSourcePath, {
-    encoding: "utf8",
-  });
+  
+  let templateSourcePath = path.resolve(sourceRoot, relativePath);
+
+  let noticeContent;
+  try {
+    noticeContent = await fs.readFile(templateSourcePath, {
+      encoding: "utf8",
+    });
+  } catch (e) {
+    console.warn(`${e.message}\nReverting to using default example-usage-warning.html ...\n`);
+
+    // Could happen if experimental-example-usage-warning.html doesn't exist
+    relativePath = "content/shared/templates/example-usage-warning.html";
+    templateSourcePath = path.resolve(sourceRoot, relativePath);
+    noticeContent = await fs.readFile(templateSourcePath, {
+      encoding: "utf8",
+    });
+  }
 
   return async (sourcePath) => {
     const html = parseHtml(noticeContent);
