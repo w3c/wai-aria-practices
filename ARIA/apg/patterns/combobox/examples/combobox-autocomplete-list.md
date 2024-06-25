@@ -592,6 +592,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="sc1_label">HTML Source Code</h2>
         <p>To copy the following code, open it in code pen.</p>p><button>Open in Codepen</button>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
+        <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
         <script>
           sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_start_sep');
