@@ -12,12 +12,13 @@ const getExampleLastModifiedDate = require("./getExampleLastModifiedDate");
 const loadNoticeCommon = async ({ isExperimental }) => {
   let relativePath;
   if (isExperimental) {
+    // Depends on https://github.com/w3c/aria-practices/pull/2977 being merged
     relativePath =
       "content/shared/templates/experimental-example-usage-warning.html";
   } else {
     relativePath = "content/shared/templates/example-usage-warning.html";
   }
-  
+
   let templateSourcePath = path.resolve(sourceRoot, relativePath);
 
   let noticeContent;
