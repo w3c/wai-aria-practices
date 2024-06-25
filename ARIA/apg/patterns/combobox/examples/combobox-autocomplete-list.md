@@ -595,7 +595,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_start_sep');
+          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_label');
           sourceCode.make();
         </script>
       </section>
