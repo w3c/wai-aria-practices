@@ -68,7 +68,6 @@ lang: en
       <h2>Filter Patterns</h2>
       <div class="pattern-filter-flex-container">
       <form action="javascript:void(0);"
-        onsubmit="aria.Filter.filterListItems(document.getElementById('pattern-search-input').value, '#patterns', 'pattern-name', 'no-patterns-found')"
         role="search"
       >
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20">
@@ -77,12 +76,20 @@ lang: en
             <path d="M29.325,29.325l-4.35-4.35" transform="translate(-6.825 -6.825)"></path>
           </g>
         </svg>
-        <input type="search"
+        <input type="text"
           id="pattern-filter-input"
           placeholder="Filter patterns"
           oninput="aria.Filter.filterListItems(this.value, '#patterns', 'pattern-name', 'no-patterns-found')"
           aria-label="Filter patterns"
         >
+        <button id="clear-pattern-filter"
+          aria-label="Clear pattern filter"
+          onclick="aria.Filter.clearInput(document.getElementById('pattern-filter-input'), '#patterns', 'pattern-name', 'no-patterns-found')"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <path d="M17.5,8.507,16.493,7.5,12.5,11.493,8.507,7.5,7.5,8.507,11.493,12.5,7.5,16.493,8.507,17.5,12.5,13.507,16.493,17.5,17.5,16.493,13.507,12.5Z" transform="translate(-7.5 -7.5)"></path>
+          </svg>
+        </button>
       </form>
       <fieldset class="view-toggle">
         <button id="listViewButton" onclick="aria.Filter.onViewButtonClicked(this)"  aria-pressed="false" aria-label="Show list view">
