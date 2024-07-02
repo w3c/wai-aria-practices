@@ -87,30 +87,30 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 /* Patterns and Practices */
-.pattern-search {
+.pattern-filter-section {
   background-color: var(--cloudy-subtle);
   padding: 2em 1em;
   margin: 1em 0;
   border-radius: 4px;
 }
 
-.pattern-search h2 {
+.pattern-filter-section h2 {
   margin-top: 0;
 }
 
-.pattern-search-flex-container {
+.pattern-filter-flex-container {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.pattern-search form {
+.pattern-filter-section form {
   display: flex;
   flex: 1;
   margin-right: 1em;
 }
 
-.pattern-search form svg {
+.pattern-filter-section form svg {
   background-color: var(--pure-white);
   border: solid 1px var(--light-blue);
   border-right: none;
@@ -119,27 +119,36 @@ a.skip-main:focus, a.skip-main:active {
   border-radius: 4px 0 0 4px;
 }
 
-.pattern-search form input {
+.pattern-filter-section form input {
   flex: 1;
-  margin-right: 1em;
-  border-radius: 0 4px 4px 0;
+  margin-right: 0;
   border-left: none !important;
+  border-right: none !important;
 }
 
-.pattern-search form input,
-.pattern-search form svg {
+.pattern-filter-section form input,
+.pattern-filter-section form svg,
+#clear-pattern-filter {
   border-color: #8fadce !important;
 }
 
-.pattern-search form input::placeholder {
+.pattern-filter-section form input::placeholder {
   font-style: normal;
   font-size: 1em;
 }
 
-.pattern-search form button {
-  font-size: 1em;
-  font-weight: 400;
-  padding: 0.5em 1.5em 0.5em 1.5em;
+#clear-pattern-filter {
+  background-color: var(--pure-white);
+  border: solid 1px;
+  border-left: none;
+  color: var(--grey);
+  padding: 0 0.25em 0 0.5em;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#clear-pattern-filter svg {
+  border: none;
 }
 
 .view-toggle {
@@ -154,8 +163,8 @@ a.skip-main:focus, a.skip-main:active {
   background-color: #e7eff7;
   border: solid 1px #8fadce;
   color: #8fadce;
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 35px;
 }
 
 .view-toggle button.active {
@@ -187,11 +196,21 @@ ul.tiles {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
   }
+
+  .view-toggle button {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and (min-width: 70em) {
   ul.tiles {
     grid-template-columns: 32% 32% 32%;
     column-gap: 2%;
+  }
+
+  .view-toggle button svg {
+    width: 22px;
+    height: auto;
   }
 }
 
