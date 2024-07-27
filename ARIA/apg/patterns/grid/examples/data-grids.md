@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/grid/examples/data-grids/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -835,30 +835,33 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section>
+      <section class="example-code">
         <h2>HTML Source Code</h2>
         <h3 id="sc1_label">Example 1: Minimal Data Grid</h3>
+        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc1"></code></pre>
         <div id="sc1_end_sep" role="separator" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files');
+          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files', 'sc1_description');
         </script>
 
         <h3 id="sc2_label">Example 2: Sortable Data Grid With Editable Cells</h3>
+        <p id="sc2_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc2_start_sep" role="separator" aria-labelledby="sc2_start_sep sc2_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc2"></code></pre>
         <div id="sc2_end_sep" role="separator" aria-labelledby="sc2_end_sep sc2_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files');
+          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files', 'sc2_description');
         </script>
 
         <h3 id="sc3_label">Example 3: Scrollable Data Grid With Column Hiding</h3>
+        <p id="sc3_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc3_start_sep" role="separator" aria-labelledby="sc3_start_sep sc3_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc3"></code></pre>
         <div id="sc3_end_sep" role="separator" aria-labelledby="sc3_end_sep sc3_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files');
+          sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files', 'sc3_description');
         </script>
         
         <script>
