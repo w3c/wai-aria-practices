@@ -99,6 +99,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>Similar examples include:</p>
         <ul>
+          <li><a href="../tabs-automatic/">Example of Tabs with Automatic Activation</a>: A tabs widget where tabs are automatically activated and their panel is displayed when they receive focus.</li>
           <li><a href="../tabs-manual/">Example of Tabs with Manual Activation</a>: A tabs widget where users activate a tab and display its panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
         </ul>
       </section>

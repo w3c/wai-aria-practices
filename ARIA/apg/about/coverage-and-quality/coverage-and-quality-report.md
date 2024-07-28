@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: July 23, 2024</p>
+    <p>Page last updated: July 28, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -701,6 +701,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
           </tr>
@@ -721,6 +722,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
           </tr>
@@ -731,6 +733,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
 </td>
           </tr>
@@ -947,6 +950,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
             </ul>
 </td>
@@ -1117,6 +1121,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1228,6 +1233,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
             </ul>
@@ -1324,11 +1330,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">60</td>
+            <td id="example_summary_total">61</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
-            <td id="example_summary_hc">31</td>
+            <td id="example_summary_hc">32</td>
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
@@ -1353,7 +1359,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Use Class</th>
-            <td id="example_summary_class">36</td>
+            <td id="example_summary_class">37</td>
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
@@ -2079,6 +2085,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a></td>
+            <td>class</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td>ex1</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-removable/">Experimental  Tabs with Remove Buttons</a></td>
             <td>class</td>
             <td></td>
             <td></td>
