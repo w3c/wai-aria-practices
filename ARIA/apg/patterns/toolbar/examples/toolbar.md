@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/toolbar/examples/toolbar/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 19 June 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   rel="stylesheet"
@@ -79,8 +78,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -104,15 +102,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-toolbar.svg">
         <p>
           The following example of an editor toolbar implements the <a href="../../">Toolbar Pattern</a> and demonstrates how a toolbar can group a set of interactive widgets into a single tab stop.
           For illustrative and interoperability assessment purposes, this implementation includes a diverse set of widgets, some of which may not be ordinarily grouped in the same toolbar.
@@ -165,7 +160,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <button type="button" class="item cut" aria-disabled="true" tabindex="-1">Cut</button>
             </div>
             <div class="menu-popup group">
-              <button type="button" aria-haspopup="true" aria-controls="menu1" class="item menu-button" tabindex="-1" aria-label="Font: Sans-serif" style="text-align: left; width: 140px; font-family: sans-serif">
+              <button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu1" class="item menu-button" tabindex="-1" aria-label="Font: Sans-serif" style="text-align: left; width: 140px; font-family: sans-serif">
                 SANS-SERIF
                 <span></span>
               </button>
@@ -849,21 +844,17 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
                   </ul>
                 </td>
               </tr>
-              <tr data-test-id="toolbar-menubutton-aria-expanded">
+              <tr data-test-id="toolbar-menubutton-aria-expanded-false">
+                <td></td>
+                <th scope="row"><code>aria-expanded="false"</code></th>
+                <td><code>button</code></td>
+                <td>Indicates the menu is not displayed and that activating the menu button opens the menu.</td>
+              </tr>
+              <tr data-test-id="toolbar-menubutton-aria-expanded-true">
                 <td></td>
                 <th scope="row"><code>aria-expanded="true"</code></th>
                 <td><code>button</code></td>
-                <td>
-                  <ul>
-                    <li>Added when the menu is open.</li>
-                    <li>Indicates that the menu is displayed and that activating the menu button closes the menu.</li>
-                    <li>The <code>aria-expanded</code> attribute is removed when the menu is closed.</li>
-                    <li>
-                      Included to support touch devices where screen reader users can touch the menu button when the menu is displayed.
-                      Keyboard users cannot focus the menu button when the menu is open.
-                    </li>
-                  </ul>
-                </td>
+                <td>Indicates the menu is displayed and that activating the menu button closes the menu.</td>
               </tr>
             </tbody>
           </table></div>
@@ -1031,19 +1022,22 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
         </ul>
       </section>
 
-      <section>
+      <section class="example-code">
         <h2 id="sc1_label">HTML Source Code</h2>
+        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for "></div>
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of HTML for "></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');
+          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_description');
           sourceCode.make();
         </script>
       </section>
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

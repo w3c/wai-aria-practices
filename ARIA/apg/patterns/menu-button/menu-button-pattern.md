@@ -25,7 +25,6 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 
 <link 
@@ -68,9 +67,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
       </section>
 
-      <section id="examples" class="examples-section"><img alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}"
-    >
+      <section id="examples" class="examples-section">
+        <img alt src="../../../../content-images/wai-aria-practices/images/pattern-menu-button.svg">
         <h2>Examples</h2>
         <ul>
           <li><a href="examples/menu-button-actions-active-descendant/">Action Menu Button Example Using aria-activedescendant</a>: A button that opens a menu of actions or commands where focus in the menu is managed using aria-activedescendant.</li>
@@ -102,8 +100,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>The element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-haspopup" class="property-reference">aria-haspopup</a> set to either <code>menu</code> or <code>true</code>.</li>
           <li>
             When the menu is displayed, the element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>.
-            When the menu is hidden, it is recommended that <code>aria-expanded</code> is not present.
-            If <code>aria-expanded</code> is specified when the menu is hidden, it is set to <code>false</code>.
+            When the menu is hidden, <code>aria-expanded</code> is set to <code>false</code>.
           </li>
           <li>
             The element that contains the menu items displayed by activating the button has role <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a>.
@@ -117,6 +114,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

@@ -31,13 +31,6 @@ const transformPattern = async (sourcePath, sourceContents) => {
 
   examplesSection = findExamplesSection();
   examplesSection.classList.add("examples-section");
-  examplesSection.insertAdjacentHTML(
-    "afterbegin",
-    `<img 
-      alt="" 
-      src="{{ '/content-images/wai-aria-practices/img/${slug}.svg' | relative_url }}"
-    />`
-  );
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
@@ -47,7 +40,7 @@ const transformPattern = async (sourcePath, sourceContents) => {
     githubPath,
     content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
     enableSidebar: true,
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
     footer: "",
   });
 };

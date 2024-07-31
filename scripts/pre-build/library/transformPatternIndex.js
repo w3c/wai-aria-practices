@@ -1,97 +1,50 @@
 const path = require("path");
 const fs = require("fs/promises");
 const { parse: parseHtml } = require("node-html-parser");
-const glob = require("glob");
 const formatForJekyll = require("./formatForJekyll");
-const { rewriteSourcePath } = require("./rewritePath");
+const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
+const removeConflictingCss = require("./removeConflictingCss");
+const rewriteElementPaths = require("./rewriteElementPaths");
 
-const transformPatternIndex = async (sourcePath /* , sourceContents */) => {
-  const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
-
-  const patterns = [];
-
-  const patternPaths = await new Promise((resolve, reject) => {
-    glob(
-      path.resolve(
-        __dirname,
-        "../../../_external/aria-practices/content/patterns/*/*-pattern.html"
-      ),
-      {},
-      (error, patternPaths) => {
-        if (error) return reject(error);
-        resolve(patternPaths);
-      }
-    );
+const getReadThisFirst = async (sourcePath) => {
+  const relativePath = "content/shared/templates/read-this-first.html";
+  const filePath = path.resolve(sourceRoot, relativePath);
+  const fileContent = await fs.readFile(filePath, { encoding: "utf8" });
+  const html = parseHtml(fileContent);
+  await rewriteElementPaths(html, {
+    onSourcePath: sourcePath,
+    optionalTemplateSourcePath: path.join(sourceRoot, relativePath),
   });
+  return html.querySelector("body").innerHTML;
+};
 
-  for (const patternPath of patternPaths) {
-    const { sitePath } = rewriteSourcePath(patternPath);
+const transformPatternIndex = async (sourcePath, sourceContents) => {
+  const readThisFirst = await getReadThisFirst(sourcePath);
 
-    const patternContents = await fs.readFile(patternPath, {
-      encoding: "utf8",
-    });
+  const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
+  const html = parseHtml(sourceContents);
 
-    const patternHtml = parseHtml(patternContents);
+  const title = html.querySelector("h1").innerHTML;
+  html.querySelector("h1").remove();
 
-    let title = patternHtml.querySelector("h1").innerHTML.trim();
-    if (!title.match(/ Pattern\b/)) {
-      throw new Error("Found pattern with unexpected h1 headline");
-    }
-    title = title.replace(/ Pattern/g, "");
+  removeConflictingCss(html);
 
-    const slug = patternPath.match(
-      /content\/patterns\/([^/]+)\/[^/]+-pattern\.html/
-    )?.[1];
-
-    let firstParagraph = patternHtml.querySelectorAll("p")[0].textContent;
-    if (firstParagraph.trim().startsWith("NOTE:")) {
-      firstParagraph = patternHtml.querySelectorAll("p")[1].textContent;
-    }
-    const periodMatch = /(\.[^\w]|\.$)/.exec(firstParagraph);
-    const incompleteSentence = periodMatch === null;
-    if (incompleteSentence)
-      throw new Error(
-        `Pattern ${slug} does not begin with a complete sentence.`
-      );
-    const endOfSentence = periodMatch.index + 1;
-    const firstSentence = firstParagraph.substr(0, endOfSentence);
-
-    patterns.push({ sitePath, title, slug, introduction: firstSentence });
-  }
-
-  patterns.sort((a, b) => a.title.localeCompare(b.title));
+  await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   const content = `
-    {% include read-this-first.html %}
-    <ul class="tiles">
-      ${patterns
-        .map(
-          (pattern) => `
-            <li class="tile tile-${pattern.slug}">
-              <a href="{{ '/ARIA/apg/${pattern.sitePath}' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/${pattern.slug}.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>${pattern.title}</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">${pattern.introduction}</div>
-            </li>
-          `
-        )
-        .join(" ")}
-    </ul>
-  `;
+    ${readThisFirst}
+    ${html.querySelector("body").innerHTML}
+  `
 
   return formatForJekyll({
-    title: "Patterns",
+    title,
     sitePath,
     githubPath,
     content,
     enableSidebar: false,
+    head: html.querySelector("head"),
   });
 };
 
 module.exports = transformPatternIndex;
+module.exports.getReadThisFirst = getReadThisFirst

@@ -19,6 +19,14 @@ type_of_guidance: APG
 
 lang: en
 ---
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Patterns</title>
+
+<script src="../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../content-assets/wai-aria-practices/shared/js/filterBySearch.js"></script>
 
 
 <link 
@@ -43,430 +51,439 @@ lang: en
   </script>
 <div>
 
-    {% include read-this-first.html %}
-    <ul class="tiles">
-      
-            <li class="tile tile-accordion">
-              <a href="{{ '/ARIA/apg/patterns/accordion/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/accordion.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Accordion (Sections With Show/Hide Functionality)</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          An accordion is a vertically stacked set of interactive headings that each contain a title, content snippet, or thumbnail representing a section of content.</div>
-            </li>
-           
-            <li class="tile tile-alert">
-              <a href="{{ '/ARIA/apg/patterns/alert/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/alert.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Alert</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          An alert is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task.</div>
-            </li>
-           
-            <li class="tile tile-alertdialog">
-              <a href="{{ '/ARIA/apg/patterns/alertdialog/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/alertdialog.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Alert and Message Dialogs</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          An alert dialog is a modal dialog that interrupts the user's workflow to communicate an important message and acquire a response.</div>
-            </li>
-           
-            <li class="tile tile-breadcrumb">
-              <a href="{{ '/ARIA/apg/patterns/breadcrumb/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/breadcrumb.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Breadcrumb</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A breadcrumb trail consists of a list of links to the parent pages of the current page in hierarchical order.</div>
-            </li>
-           
-            <li class="tile tile-button">
-              <a href="{{ '/ARIA/apg/patterns/button/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/button.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Button</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.</div>
-            </li>
-           
-            <li class="tile tile-carousel">
-              <a href="{{ '/ARIA/apg/patterns/carousel/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/carousel.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Carousel (Slide Show or Image Rotator)</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A carousel presents a set of items, referred to as slides, by sequentially displaying a subset of one or more slides.</div>
-            </li>
-           
-            <li class="tile tile-checkbox">
-              <a href="{{ '/ARIA/apg/patterns/checkbox/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/checkbox.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Checkbox</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">WAI-ARIA supports two types of checkbox widgets: dual-state checkboxes toggle between two choices -- checked and not checked -- and tri-state checkboxes, which  allow an additional third state known as partially checked.</div>
-            </li>
-           
-            <li class="tile tile-combobox">
-              <a href="{{ '/ARIA/apg/patterns/combobox/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/combobox.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Combobox</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A combobox is an input widget that has an associated popup.</div>
-            </li>
-           
-            <li class="tile tile-dialog-modal">
-              <a href="{{ '/ARIA/apg/patterns/dialog-modal/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/dialog-modal.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Dialog (Modal)</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A dialog is a window overlaid on either the primary window or another dialog window.</div>
-            </li>
-           
-            <li class="tile tile-disclosure">
-              <a href="{{ '/ARIA/apg/patterns/disclosure/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/disclosure.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Disclosure (Show/Hide)</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).</div>
-            </li>
-           
-            <li class="tile tile-feed">
-              <a href="{{ '/ARIA/apg/patterns/feed/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/feed.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Feed</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A feed is a section of a page that automatically loads new sections of content as the user scrolls.</div>
-            </li>
-           
-            <li class="tile tile-grid">
-              <a href="{{ '/ARIA/apg/patterns/grid/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/grid.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Grid (Interactive Tabular Data and Layout Containers)</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A grid widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, Home, and End.</div>
-            </li>
-           
-            <li class="tile tile-landmarks">
-              <a href="{{ '/ARIA/apg/patterns/landmarks/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/landmarks.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Landmarks</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          Landmarks are a set of eight roles that identify the major sections of a page.</div>
-            </li>
-           
-            <li class="tile tile-link">
-              <a href="{{ '/ARIA/apg/patterns/link/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Link</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A link widget provides an interactive reference to a resource.</div>
-            </li>
-           
-            <li class="tile tile-listbox">
-              <a href="{{ '/ARIA/apg/patterns/listbox/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Listbox</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A listbox widget presents a list of options and allows a user to select one or more of them.</div>
-            </li>
-           
-            <li class="tile tile-menubar">
-              <a href="{{ '/ARIA/apg/patterns/menubar/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Menu and Menubar</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A menu is a widget that offers a list of choices to the user, such as a set of actions or functions.</div>
-            </li>
-           
-            <li class="tile tile-menu-button">
-              <a href="{{ '/ARIA/apg/patterns/menu-button/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/menu-button.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Menu Button</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A menu button is a button that opens a menu as described in the Menu and Menubar Pattern.</div>
-            </li>
-           
-            <li class="tile tile-meter">
-              <a href="{{ '/ARIA/apg/patterns/meter/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/meter.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Meter</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A meter is a graphical display of a numeric value that varies within a defined range.</div>
-            </li>
-           
-            <li class="tile tile-radio">
-              <a href="{{ '/ARIA/apg/patterns/radio/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/radio.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Radio Group</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A radio group is a set of checkable buttons, known as radio buttons, where no more than one of the buttons can be checked at a time.</div>
-            </li>
-           
-            <li class="tile tile-slider">
-              <a href="{{ '/ARIA/apg/patterns/slider/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/slider.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Slider</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A slider is an input where the user selects a value from within a given range.</div>
-            </li>
-           
-            <li class="tile tile-slider-multithumb">
-              <a href="{{ '/ARIA/apg/patterns/slider-multithumb/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/slider-multithumb.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Slider (Multi-Thumb)</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A multi-thumb slider implements the Slider Pattern but includes two or more thumbs, often on a single rail.</div>
-            </li>
-           
-            <li class="tile tile-spinbutton">
-              <a href="{{ '/ARIA/apg/patterns/spinbutton/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/spinbutton.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Spinbutton</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A spinbutton is an input widget that restricts its value to a set or range of discrete values.</div>
-            </li>
-           
-            <li class="tile tile-switch">
-              <a href="{{ '/ARIA/apg/patterns/switch/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/switch.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Switch</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A switch is an input widget that allows users to choose one of two values: on or off.</div>
-            </li>
-           
-            <li class="tile tile-table">
-              <a href="{{ '/ARIA/apg/patterns/table/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/table.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Table</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          Like an HTML table element, a WAI-ARIA table is a static tabular structure containing one or more rows that each contain one or more cells; it is not an interactive widget.</div>
-            </li>
-           
-            <li class="tile tile-tabs">
-              <a href="{{ '/ARIA/apg/patterns/tabs/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/tabs.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Tabs</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time.</div>
-            </li>
-           
-            <li class="tile tile-toolbar">
-              <a href="{{ '/ARIA/apg/patterns/toolbar/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/toolbar.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Toolbar</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">A toolbar is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.</div>
-            </li>
-           
-            <li class="tile tile-tooltip">
-              <a href="{{ '/ARIA/apg/patterns/tooltip/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/tooltip.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Tooltip</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A tooltip is a popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.</div>
-            </li>
-           
-            <li class="tile tile-treeview">
-              <a href="{{ '/ARIA/apg/patterns/treeview/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/treeview.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Tree View</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A tree view widget presents a hierarchical list.</div>
-            </li>
-           
-            <li class="tile tile-treegrid">
-              <a href="{{ '/ARIA/apg/patterns/treegrid/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/treegrid.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Treegrid</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A treegrid widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.</div>
-            </li>
-           
-            <li class="tile tile-windowsplitter">
-              <a href="{{ '/ARIA/apg/patterns/windowsplitter/' | relative_url }}">
-                <h2 class="tile-name">
-                  <img 
-                    src="{{ '/content-images/wai-aria-practices/img/windowsplitter.svg' | relative_url }}" 
-                    alt=""
-                  >
-                  <span>Window Splitter</span>
-                </h2>
-              </a>
-              <div class="tile-introduction">
-          A window splitter is a moveable separator between two sections, or panes, of a window that enables users to change the relative size of the panes.</div>
-            </li>
-          
+    
+    <div class="read-this-first">
+      <div class="text">
+        <img src="../../../content-images/wai-aria-practices/images/read-this-first.svg" width="178" alt="Illustration of a brown-skinned woman with a slight smile gesturing towards the right with her hand">
+        <h2>Read This First</h2>
+        <p>
+          No ARIA is better than Bad ARIA. Before using any ARIA, <a href="../practices/read-me-first/" aria-label="Read this to understand why no ARIA is better than bad ARIA">read this to understand why</a>.
+        </p>
+      </div>
+    </div>
+  
+    
+    
+    <section class="pattern-filter-section">
+      <h2>Filter Patterns</h2>
+      <div class="pattern-filter-flex-container">
+      <form action="javascript:void(0);"
+        role="search"
+      >
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20">
+          <g transform="translate(-3.5 -3.5)" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M20.5,12.5a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" ></path>
+            <path d="M29.325,29.325l-4.35-4.35" transform="translate(-6.825 -6.825)"></path>
+          </g>
+        </svg>
+        <input type="text"
+          id="pattern-filter-input"
+          placeholder="Filter patterns"
+          oninput="aria.Filter.filterListItems(this.value, '#patterns', 'pattern-name', 'no-patterns-found')"
+          aria-label="Filter patterns"
+        >
+        <button id="clear-pattern-filter"
+          aria-label="Clear pattern filter"
+          onclick="aria.Filter.clearInput(document.getElementById('pattern-filter-input'), '#patterns', 'pattern-name', 'no-patterns-found')"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <path d="M17.5,8.507,16.493,7.5,12.5,11.493,8.507,7.5,7.5,8.507,11.493,12.5,7.5,16.493,8.507,17.5,12.5,13.507,16.493,17.5,17.5,16.493,13.507,12.5Z" transform="translate(-7.5 -7.5)"></path>
+          </svg>
+        </button>
+      </form>
+      <fieldset class="view-toggle">
+        <button id="listViewButton" onclick="aria.Filter.onViewButtonClicked(this)"  aria-pressed="false" aria-label="Show list view">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 25 21">
+            <g transform="translate(0 -0.4)" fill="currentColor">
+              <path d="M4,20.775H1a1.135,1.135,0,0,0-1,1v3a1.135,1.135,0,0,0,1,1H4a1.135,1.135,0,0,0,1-1v-3A1.135,1.135,0,0,0,4,20.775Zm20,1H9a1.135,1.135,0,0,0-1,1v1a1.135,1.135,0,0,0,1,1H24a1.135,1.135,0,0,0,1-1v-1A1.135,1.135,0,0,0,24,21.775Z" transform="translate(0 -20.375)" ></path>
+              <path d="M4,20.775H1a1.135,1.135,0,0,0-1,1v3a1.135,1.135,0,0,0,1,1H4a1.135,1.135,0,0,0,1-1v-3A1.135,1.135,0,0,0,4,20.775Zm20,1H9a1.135,1.135,0,0,0-1,1v1a1.135,1.135,0,0,0,1,1H24a1.135,1.135,0,0,0,1-1v-1A1.135,1.135,0,0,0,24,21.775Z" transform="translate(0 -12.375)"></path>
+              <path d="M4,20.775H1a1.135,1.135,0,0,0-1,1v3a1.135,1.135,0,0,0,1,1H4a1.135,1.135,0,0,0,1-1v-3A1.135,1.135,0,0,0,4,20.775Zm20,1H9a1.135,1.135,0,0,0-1,1v1a1.135,1.135,0,0,0,1,1H24a1.135,1.135,0,0,0,1-1v-1A1.135,1.135,0,0,0,24,21.775Z" transform="translate(0 -4.375)"></path>
+            </g>
+          </svg>
+        </button>
+        <button id="tilesViewButton" onclick="aria.Filter.onViewButtonClicked(this)" aria-pressed="true" aria-label="Show tiles view" class="active">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 22 22" >
+            <g transform="translate(0 -0.5)" fill="currentColor">
+              <rect width="9" height="9" rx="1" transform="translate(0 0.5)"></rect>
+              <rect width="9" height="9" rx="1" transform="translate(0 13.5)"></rect>
+              <rect width="9" height="9" rx="1" transform="translate(13 0.5)"></rect>
+              <rect width="9" height="9" rx="1" transform="translate(13 13.5)"></rect>
+            </g>
+          </svg>
+        </button>
+      </fieldset>
+      </div>
+    </section>
+    <ul id="patterns" class="tiles">
+      <li class="pattern">
+        <a href="accordion/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-accordion.svg">
+            <span>Accordion (Sections With Show/Hide Functionality)</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          An accordion is a vertically stacked set of interactive headings that each contain a title, content snippet, or thumbnail representing a section of content.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="alert/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-alert.svg">
+            <span>Alert</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          An alert is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="alertdialog/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-alertdialog.svg">
+            <span>Alert and Message Dialogs</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          An alert dialog is a modal dialog that interrupts the user's workflow to communicate an important message and acquire a response.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="breadcrumb/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-breadcrumb.svg">
+            <span>Breadcrumb</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A breadcrumb trail consists of a list of links to the parent pages of the current page in hierarchical order.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="button/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-button.svg">
+            <span>Button</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="carousel/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-carousel.svg">
+            <span>Carousel (Slide Show or Image Rotator)</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A carousel presents a set of items, referred to as slides, by sequentially displaying a subset of one or more slides.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="checkbox/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-checkbox.svg">
+            <span>Checkbox</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          WAI-ARIA supports two types of checkbox widgets: dual-state checkboxes toggle between two choices -- checked and not checked -- and tri-state checkboxes, which allow an additional third state known as partially checked.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="combobox/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-combobox.svg">
+            <span>Combobox</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A combobox is an input widget that has an associated popup.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="dialog-modal/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-dialog-modal.svg">
+            <span>Dialog (Modal)</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A dialog is a window overlaid on either the primary window or another dialog window.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="disclosure/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-disclosure.svg">
+            <span>Disclosure (Show/Hide)</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="feed/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-feed.svg">
+            <span>Feed</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A feed is a section of a page that automatically loads new sections of content as the user scrolls.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="grid/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-grid.svg">
+            <span>Grid (Interactive Tabular Data and Layout Containers)</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A grid widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, Home, and End.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="landmarks/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-landmarks.svg">
+            <span>Landmarks</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          Landmarks are a set of eight roles that identify the major sections of a page.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="link/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-link.svg">
+            <span>Link</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A link widget provides an interactive reference to a resource.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="listbox/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-listbox.svg">
+            <span>Listbox</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A listbox widget presents a list of options and allows a user to select one or more of them.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="menubar/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-menubar.svg">
+            <span>Menu and Menubar</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A menu is a widget that offers a list of choices to the user, such as a set of actions or functions.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="menu-button/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-menu-button.svg">
+            <span>Menu Button</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A menu button is a button that opens a menu as described in the Menu and Menubar Pattern.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="meter/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-meter.svg">
+            <span>Meter</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A meter is a graphical display of a numeric value that varies within a defined range.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="radio/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-radio.svg">
+            <span>Radio Group</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A radio group is a set of checkable buttons, known as radio buttons, where no more than one of the buttons can be checked at a time.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="slider/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-slider.svg">
+            <span>Slider</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A slider is an input where the user selects a value from within a given range.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="slider-multithumb/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-slider-multithumb.svg">
+            <span>Slider (Multi-Thumb)</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A multi-thumb slider implements the Slider Pattern but includes two or more thumbs, often on a single rail.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="spinbutton/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-spinbutton.svg">
+            <span>Spinbutton</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A spinbutton is an input widget that restricts its value to a set or range of discrete values.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="switch/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-switch.svg">
+            <span>Switch</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A switch is an input widget that allows users to choose one of two values: on or off.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="table/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-table.svg">
+            <span>Table</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          Like an HTML table element, a WAI-ARIA table is a static tabular structure containing one or more rows that each contain one or more cells; it is not an interactive widget.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="tabs/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-tabs.svg">
+            <span>Tabs</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="toolbar/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-toolbar.svg">
+            <span>Toolbar</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A toolbar is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="tooltip/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-tooltip.svg">
+            <span>Tooltip</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A tooltip is a popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="treeview/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-treeview.svg">
+            <span>Tree View</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A tree view widget presents a hierarchical list.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="treegrid/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-treegrid.svg">
+            <span>Treegrid</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A treegrid widget presents a hierarchical data grid consisting of tabular information that is editable or interactive.
+        </div>
+      </li>
+
+      <li class="pattern">
+        <a href="windowsplitter/">
+          <h2 class="pattern-name">
+            <img alt src="../../../content-images/wai-aria-practices/images/pattern-windowsplitter.svg">
+            <span>Window Splitter</span>
+          </h2>
+        </a>
+        <div class="pattern-introduction">
+          A window splitter is a moveable separator between two sections, or panes, of a window that enables users to change the relative size of the panes.
+        </div>
+      </li>
+
+      <li id="no-patterns-found" aria-hidden="true" style="display: none">
+        <h2>No results found.</h2>
+      </li>
     </ul>
   
+  
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

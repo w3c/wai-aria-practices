@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menubar/examples/menubar-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 20 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/css/menubar-navigation.css"
@@ -64,8 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -89,7 +87,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
@@ -105,10 +102,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               For an example, see <a href="../../../disclosure/examples/disclosure-navigation/">Example Disclosure Navigation Menu</a>.
             </li>
           </ul>
-        </div><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/menubar.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        </div>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-menubar.svg">
         <p>
           The following implementation of the <a href="../../">Menubar Pattern</a> demonstrates how a menubar can provide navigation menus.
           The parent menu items in the menubar represent a section of a mythical university web site and open a submenu containing menu items that link to pages within that section.
@@ -877,19 +872,22 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section>
+      <section class="example-code">
         <h2 id="sc_label">HTML Source Code</h2>
+        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc_label" aria-label="Start of "></div>
         <pre><code id="sc1"></code></pre>
         <div id="sc1_end_sep" role="separator" aria-labelledby="sc1_end_sep sc_label" aria-label="End of "></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');
+          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_description');
           sourceCode.make();
         </script>
       </section>
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

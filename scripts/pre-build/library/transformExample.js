@@ -1,51 +1,56 @@
 const fs = require("fs/promises");
 const path = require("path");
-const { exec } = require("child_process");
 const { parse: parseHtml } = require("node-html-parser");
-const { format } = require("date-fns");
 const formatForJekyll = require("./formatForJekyll");
 const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
 const rewriteElementPaths = require("./rewriteElementPaths");
 const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 const removeConflictingCss = require("./removeConflictingCss");
+const getExampleLastModifiedDate = require("./getExampleLastModifiedDate");
 
-const loadNotice = async () => {
-  const noticePath = path.resolve(
-    sourceRoot,
-    "content/shared/templates/example-usage-warning.html"
-  );
-  const noticeContent = await fs.readFile(noticePath, { encoding: "utf8" });
-  const html = parseHtml(noticeContent);
+const loadNoticeCommon = async ({ isExperimental }) => {
+  let relativePath;
+  if (isExperimental) {
+    // Depends on https://github.com/w3c/aria-practices/pull/2977 being merged
+    relativePath =
+      "content/shared/templates/experimental-example-usage-warning.html";
+  } else {
+    relativePath = "content/shared/templates/example-usage-warning.html";
+  }
 
-  return () => {
+  let templateSourcePath = path.resolve(sourceRoot, relativePath);
+
+  let noticeContent;
+  try {
+    noticeContent = await fs.readFile(templateSourcePath, {
+      encoding: "utf8",
+    });
+  } catch (e) {
+    console.warn(`${e.message}\nReverting to using default example-usage-warning.html ...\n`);
+
+    // Could happen if experimental-example-usage-warning.html doesn't exist
+    relativePath = "content/shared/templates/example-usage-warning.html";
+    templateSourcePath = path.resolve(sourceRoot, relativePath);
+    noticeContent = await fs.readFile(templateSourcePath, {
+      encoding: "utf8",
+    });
+  }
+
+  return async (sourcePath) => {
+    const html = parseHtml(noticeContent);
+
+    await rewriteElementPaths(html, {
+      onSourcePath: sourcePath,
+      optionalTemplateSourcePath: templateSourcePath,
+    });
+
     return html.querySelector("body").innerHTML;
   };
 };
 
-const loadedNotice = loadNotice();
-
-const getLastModifiedDate = async (exampleFilePath) => {
-  const output = await new Promise((resolve) => {
-    exec(
-      `git log -1 --pretty="format:%cI" ${path.basename(exampleFilePath)}`,
-      { cwd: path.dirname(exampleFilePath) },
-      (error, stdout, stderr) => {
-        resolve(stdout);
-      }
-    );
-  });
-  let dateFormatted;
-  try {
-    dateFormatted = format(new Date(output), "d MMMM y");
-  } catch (error) {
-    console.error(
-      `Failed to extract a last-modified date for the file "${exampleFilePath}"`
-    );
-    throw error;
-  }
-  return dateFormatted;
-};
+const loadedNotice = loadNoticeCommon({ isExperimental: false });
+const loadedExperimentalNotice = loadNoticeCommon({ isExperimental: true });
 
 const transformExample = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
@@ -54,34 +59,27 @@ const transformExample = async (sourcePath, sourceContents) => {
   const title = html.querySelector("h1").innerHTML;
   html.querySelector("h1").remove();
 
-  const slug = sitePath.match(/patterns\/([^/]+)\//)?.[1];
-
-  const img = `<img 
-    alt=""
-    src="{{ '/content-images/wai-aria-practices/img/${slug}.svg' | relative_url }}"
-    class="example-page-example-icon"
-  />`;
-  if (html.querySelector(".advisement")) {
-    html.querySelector(".advisement").insertAdjacentHTML("afterend", img);
-  } else {
-    html.querySelector("h2").insertAdjacentHTML("afterend", img);
-  }
-
   removeConflictingCss(html);
 
-  const getNotice = await loadedNotice;
-  const notice = getNotice();
-  html.querySelector("body").insertAdjacentHTML(
-    "afterbegin",
-    `
-      <h2 id="support-notice-header">Read This First</h2>
-      ${notice}
-    `
-  );
-
-  const lastModifiedDateFormatted = await getLastModifiedDate(sourcePath);
+  const lastModifiedDateFormatted = await getExampleLastModifiedDate({
+    html,
+    sourcePath,
+  });
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
+
+  const isExperimental =
+    html.querySelector("main")?.getAttribute("data-content-phase") ===
+    "experimental";
+
+  let getNotice;
+  if (isExperimental) {
+    getNotice = await loadedExperimentalNotice;
+  } else {
+    getNotice = await loadedNotice;
+  }
+  const notice = await getNotice(sourcePath);
+  html.querySelector("body").insertAdjacentHTML("afterbegin", notice);
 
   const relatedLinksElement = html.querySelector(
     '[aria-label="Related Links"]'
@@ -102,7 +100,7 @@ const transformExample = async (sourcePath, sourceContents) => {
       wrapTablesWithResponsiveDiv(html.querySelector("body").innerHTML)
     ),
     enableSidebar: true,
-    head: html.querySelector("head").innerHTML,
+    head: html.querySelector("head"),
     footer: `
       <div class="example-page-footer">
         <p>${relatedIssuesLink}</p>

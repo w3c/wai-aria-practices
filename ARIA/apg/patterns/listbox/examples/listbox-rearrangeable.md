@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 19 September 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css"
@@ -66,8 +65,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -91,15 +89,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/listbox.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-listbox.svg">
         <p>
           The following two example implementations of the <a href="../../">Listbox Pattern</a> demonstrate differences between single-select and multi-select functionality.
           In both examples, users can use action buttons to move options from one list to another.
@@ -593,21 +588,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section>
+      <section class="example-code">
         <h2>HTML Source Code</h2>
         <h3 id="sc1_label">Example 1: Single-Select Listbox</h3>
+        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc1"></code></pre>
         <div id="sc1_end_sep" role="separator" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files');
+          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files', 'sc1_description');
         </script>
         <h3 id="sc2_label">Example 2: Multi-Select Listbox</h3>
+        <p id="sc2_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc2_start_sep" role="separator" aria-labelledby="sc2_start_sep sc2_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc2"></code></pre>
         <div id="sc2_end_sep" role="separator" aria-labelledby="sc2_end_sep sc2_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files');
+          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files', 'sc2_description');
         </script>
         
         <script>
@@ -617,6 +614,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

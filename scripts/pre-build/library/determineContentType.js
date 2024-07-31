@@ -12,8 +12,7 @@ const determineContentType = (sourcePath) => {
   if (
     sourcePath.endsWith("feed/examples/feed-display.html") ||
     sourcePath.match(/content\/patterns\/landmarks\/examples\/.+\.html/) ||
-    sourcePath.endsWith("toolbar/examples/help.html") ||
-    sourcePath.endsWith("shared/templates/example-usage-warning.html")
+    sourcePath.endsWith("toolbar/examples/help.html")
   ) {
     return "htmlAsset";
   }
@@ -43,6 +42,15 @@ const determineContentType = (sourcePath) => {
   }
   if (sourcePath.endsWith("content/index/index.html")) {
     return "exampleIndex";
+  }
+  if (
+    sourcePath.endsWith("shared/templates/read-this-first.html") ||
+    sourcePath.endsWith("shared/templates/example-usage-warning.html") ||
+    sourcePath.endsWith(
+      "shared/templates/experimental-example-usage-warning.html"
+    )
+  ) {
+    return "template";
   }
   throw new Error(
     `Could not determine content type for file at ${sourcePath}\n` +

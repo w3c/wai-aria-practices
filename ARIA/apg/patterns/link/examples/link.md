@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/link/examples/link/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/21'>View issues related to this example</a></p>        <p>Page last updated: 24 July 2023</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/21'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -26,7 +26,6 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
 <link
   href="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/css/link.css"
@@ -64,8 +63,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-      <h2 id="support-notice-header">Read This First</h2>
-      
+    <h2 id="support-notice-header">Read This First</h2>
     <details id="support-notice">
       <summary>
         The code in this example is not intended for production environments.
@@ -89,15 +87,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </details>
   
     
-    
     <div>
       
 
       <section>
-        <h2>About This Example</h2><img alt=""
-    src="{{ '/content-images/wai-aria-practices/img/link.svg' | relative_url }}"
-    class="example-page-example-icon"
-  >
+        <h2>About This Example</h2>
+        <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-link.svg">
         <p>
           The examples below demonstrate three variations of the <a href="../../">Link Pattern</a>.
           The link pattern is used when it is necessary for elements other than the HTML <code>a</code> element to have link behaviors.
@@ -217,6 +212,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
+        <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
         <iframe class="support-levels-link-span-text"
           src="https://aria-at.w3.org/embed/reports/link-span-text"
           height="100"
@@ -239,24 +235,27 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section>
+      <section class="example-code">
         <h2>HTML Source Code</h2>
         <h3 id="sc1_label">Link 1</h3>
+        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
         <h3 id="sc2_label">Link 2</h3>
+        <p id="sc2_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc2_start_sep" aria-labelledby="sc2_start_sep sc2_label" aria-label="Start of"></div>
         <pre><code id="sc2"></code></pre>
         <div role="separator" id="sc2_end_sep" aria-labelledby="sc2_end_sep sc2_label" aria-label="End of"></div>
         <h3 id="sc3_label">Link 3</h3>
+        <p id="sc3_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc3_start_sep" aria-labelledby="sc3_start_sep sc3_label" aria-label="Start of"></div>
         <pre><code id="sc3"></code></pre>
         <div role="separator" id="sc3_end_sep" aria-labelledby="sc3_end_sep sc3_label" aria-label="End of"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files');
-          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files');
-          sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files');
+          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files', 'sc1_description');
+          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files', 'sc2_description');
+          sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files', 'sc3_description');
           sourceCode.make();
         </script>
       </section>
@@ -264,6 +263,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script 
+<script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+

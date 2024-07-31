@@ -1,6 +1,9 @@
 const { rewriteRelativePath } = require("./rewritePath");
 
-const rewriteElementPaths = async (html, { onSourcePath }) => {
+const rewriteElementPaths = async (html, { 
+  onSourcePath, 
+  optionalTemplateSourcePath // See rewriteRelativePath for more info
+}) => {
   const { specLinks } = await import(
     "../../../_external/aria-practices/content/shared/js/specLinks.mjs"
   );
@@ -24,6 +27,7 @@ const rewriteElementPaths = async (html, { onSourcePath }) => {
     if (isRelativeLink && !isJekyllLink) {
       const { siteRelativePath } = rewriteRelativePath(href ?? src, {
         onSourcePath,
+        optionalTemplateSourcePath
       });
       element.setAttribute(href ? "href" : "src", siteRelativePath);
     }
