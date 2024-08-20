@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: July 30, 2024</p>
+    <p>Page last updated: August 20, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -1338,7 +1338,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">34</td>
+            <td id="example_summary_svg">35</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>forced-colors</code> media query</th>
@@ -1346,7 +1346,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
-            <td id="example_summary_current_color">27</td>
+            <td id="example_summary_current_color">28</td>
           </tr>
 
           <tr>
@@ -1367,7 +1367,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">15</td>
+            <td id="example_summary_mouse">16</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -2077,11 +2077,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
+            <td>6</td>
             <td>3</td>
+            <td>7</td>
             <td>3</td>
-            <td>3</td>
-            <td>3</td>
-            <td></td>
+            <td>menu,menuitem,presentation,aria-expanded,aria-haspopup,aria-hidden,aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
@@ -2507,6 +2507,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
             <td>Yes</td>
             <td>Yes</td>
@@ -2651,6 +2659,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
             <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
