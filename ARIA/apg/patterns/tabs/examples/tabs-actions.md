@@ -28,10 +28,9 @@ lang: en
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
 <link
-  href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs-with-actions.css"
+  href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs-actions.css"
   rel="stylesheet"
 />
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-manual.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-actions.js"></script>
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-actions.js"></script>
 
@@ -130,7 +129,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <span class="focus">Maria Ahlefeldt</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-1-actions" tabindex="-1" aria-label="Maria Ahlefeldt tab actions" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
+                  <button type="button" id="tab-1-actions" tabindex="-1" aria-label="Actions for Maria Ahlefeldt tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                       <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
                     </svg>
@@ -148,7 +147,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <span class="focus">Carl Andersen</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-2-actions" tabindex="-1" aria-label="Carl Andersen tab actions" aria-haspopup="true" aria-expanded="false" aria-controls="menu2">
+                  <button type="button" id="tab-2-actions" tabindex="-1" aria-label="Actions for Carl Andersen tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu2">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                       <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
                     </svg>
@@ -166,7 +165,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <span class="focus">Ida da Fonseca</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-3-actions" tabindex="-1" aria-label="Ida da Fonseca tab actions" aria-haspopup="true" aria-expanded="false" aria-controls="menu3">
+                  <button type="button" id="tab-3-actions" tabindex="-1" aria-label="Actions for Ida da Fonseca tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                       <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
                     </svg>
@@ -184,7 +183,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <span class="focus">Peter Müller</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-4-actions" tabindex="-1" aria-label="Peter Müller tab actions" aria-haspopup="true" aria-expanded="false" aria-controls="menu4">
+                  <button type="button" id="tab-4-actions" tabindex="-1" aria-label="Actions for Peter Müller tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu4">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width= "12" height="12" viewBox="0 0 12 12">
                       <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
                     </svg>
