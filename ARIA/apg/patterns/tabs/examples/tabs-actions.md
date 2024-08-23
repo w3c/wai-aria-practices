@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-actions/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 20 August 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 23 August 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -122,119 +122,248 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <div class="tabs">
-            <h3 id="tablist-1">Danish Composers</h3>
+            <h3 id="tablist-1">Interesting Sharks</h3>
             <div role="tablist" aria-labelledby="tablist-1" class="manual">
               <div role="presentation">
-                <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1" aria-actions="tab-1-actions">
-                  <span class="focus">Maria Ahlefeldt</span>
+                <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1" aria-actions="tab-1-action">
+                  <span class="focus">Nurse shark</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-1-actions" tabindex="-1" aria-label="Actions for Maria Ahlefeldt tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
+                  <button type="button" id="tab-1-action" tabindex="-1" aria-label="Actions for Nurse shark tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu1">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="8" cy="13" r="2" fill="black"></circle>
+                      <circle cx="8" cy="3" r="2" fill="black"></circle>
+                      <circle cx="8" cy="8" r="2" fill="black"></circle>
                     </svg>
                   </button>
-                  <ul id="menu1" role="menu" aria-labelledby="tab-1-actions">
-                    <li role="menuitem">Move tab backward</li>
-                    <li role="menuitem">Move tab forward</li>
-                    <li role="menuitem">Copy tab contents to clipboard</li>
-                    <li role="menuitem">Close tab</li>
+                  <ul id="menu1" role="menu" aria-labelledby="tab-1-action">
+                    <li role="menuitem" data-action="tab-1-action" data-operation="move-forward">Move tab forward</li>
+                    <li role="menuitem" data-action="tab-1-action" data-operation="move-backward">Move tab backward</li>
+                    <li role="menuitem" data-action="tab-1-action" data-operation="clipboard-copy">Copy tab contents to clipboard</li>
+                    <li role="menuitem" data-action="tab-1-action" data-operation="close">Close tab</li>
                   </ul>
                 </div>
               </div>
               <div role="presentation">
-                <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1" aria-actions="tab-2-actions">
-                  <span class="focus">Carl Andersen</span>
+                <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1" aria-actions="tab-2-action">
+                  <span class="focus">Basking shark</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-2-actions" tabindex="-1" aria-label="Actions for Carl Andersen tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu2">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
+                  <button type="button" id="tab-2-action" tabindex="-1" aria-label="Actions for Basking shark tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu2">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="8" cy="13" r="2" fill="black"></circle>
+                      <circle cx="8" cy="3" r="2" fill="black"></circle>
+                      <circle cx="8" cy="8" r="2" fill="black"></circle>
                     </svg>
                   </button>
-                  <ul id="menu2" role="menu" aria-labelledby="tab-2-actions">
-                    <li role="menuitem">Move tab backward</li>
-                    <li role="menuitem">Move tab forward</li>
-                    <li role="menuitem">Copy tab contents to clipboard</li>
-                    <li role="menuitem">Close tab</li>
+                  <ul id="menu2" role="menu" aria-labelledby="tab-2-action">
+                    <li role="menuitem" data-action="tab-2-action" data-operation="move-forward">Move tab forward</li>
+                    <li role="menuitem" data-action="tab-2-action" data-operation="move-backward">Move tab backward</li>
+                    <li role="menuitem" data-action="tab-2-action" data-operation="clipboard-copy">Copy tab contents to clipboard</li>
+                    <li role="menuitem" data-action="tab-2-action" data-operation="close">Close tab</li>
                   </ul>
                 </div>
               </div>
               <div role="presentation">
-                <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1" aria-actions="tab-3-actions">
-                  <span class="focus">Ida da Fonseca</span>
+                <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1" aria-actions="tab-3-action">
+                  <span class="focus">Whale shark</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-3-actions" tabindex="-1" aria-label="Actions for Ida da Fonseca tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                      <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
+                  <button type="button" id="tab-3-action" tabindex="-1" aria-label="Actions for Whale shark tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu3">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="8" cy="13" r="2" fill="black"></circle>
+                      <circle cx="8" cy="3" r="2" fill="black"></circle>
+                      <circle cx="8" cy="8" r="2" fill="black"></circle>
                     </svg>
                   </button>
-                  <ul id="menu3" role="menu" aria-labelledby="tab-3-actions">
-                    <li role="menuitem">Move tab backward</li>
-                    <li role="menuitem">Move tab forward</li>
-                    <li role="menuitem">Copy tab contents to clipboard</li>
-                    <li role="menuitem">Close tab</li>
+                  <ul id="menu3" role="menu" aria-labelledby="tab-3-action">
+                    <li role="menuitem" data-action="tab-3-action" data-operation="move-forward">Move tab forward</li>
+                    <li role="menuitem" data-action="tab-3-action" data-operation="move-backward">Move tab backward</li>
+                    <li role="menuitem" data-action="tab-3-action" data-operation="clipboard-copy">Copy tab contents to clipboard</li>
+                    <li role="menuitem" data-action="tab-3-action" data-operation="close">Close tab</li>
                   </ul>
                 </div>
               </div>
               <div role="presentation">
-                <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1" aria-actions="tab-4-actions">
-                  <span class="focus">Peter Müller</span>
+                <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1" aria-actions="tab-4-action">
+                  <span class="focus">Goblin shark</span>
                 </button>
                 <div class="menu-button-actions">
-                  <button type="button" id="tab-4-actions" tabindex="-1" aria-label="Actions for Peter Müller tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu4">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width= "12" height="12" viewBox="0 0 12 12">
-                      <polygon points="1 2, 11 2, 6 10" fill="black"></polygon>
+                  <button type="button" id="tab-4-action" tabindex="-1" aria-label="Actions for Goblin shark tab" aria-haspopup="true" aria-expanded="false" aria-controls="menu4">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="8" cy="13" r="2" fill="black"></circle>
+                      <circle cx="8" cy="3" r="2" fill="black"></circle>
+                      <circle cx="8" cy="8" r="2" fill="black"></circle>
                     </svg>
                   </button>
-                  <ul id="menu4" role="menu" aria-labelledby="tab-4-actions">
-                    <li role="menuitem">Move tab backward</li>
-                    <li role="menuitem">Move tab forward</li>
-                    <li role="menuitem">Copy tab contents to clipboard</li>
-                    <li role="menuitem">Close tab</li>
+                  <ul id="menu4" role="menu" aria-labelledby="tab-4-action">
+                    <li role="menuitem" data-action="tab-4-action" data-operation="move-forward">Move tab forward</li>
+                    <li role="menuitem" data-action="tab-4-action" data-operation="move-backward">Move tab backward</li>
+                    <li role="menuitem" data-action="tab-4-action" data-operation="clipboard-copy">Copy tab contents to clipboard</li>
+                    <li role="menuitem" data-action="tab-4-action" data-operation="close">Close tab</li>
                   </ul>
                 </div>
               </div>
             </div>
             <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
               <p>
-                <a href="https://en.wikipedia.org/wiki/Maria_Theresia_Ahlefeldt">Maria Theresia Ahlefeldt</a>
-                (16 January 1755 – 20 December 1810) was a Danish, (originally German), composer.
-                She is known as the first female composer in Denmark.
-                Maria Theresia composed music for several ballets, operas, and plays of the royal theatre.
-                She was given good critic as a composer and described as a “<span lang="da">virkelig Tonekunstnerinde</span>” ('a True Artist of Music').
+                The <a href="https://en.wikipedia.org/wiki/Nurse_shark">nurse
+                shark</a> (<span lang="la">Ginglymostoma cirratum</span>) is an
+                elasmobranch fish in the family <span lang="la">Ginglymostomatidae</span>. The conservation status of
+                the nurse shark is globally assessed as Vulnerable in the IUCN
+                List of Threatened Species. They are considered to be a species
+                of least concern in the United States and in The Bahamas, but
+                considered to be near threatened in the western Atlantic Ocean
+                because of their vulnerable status in South America and reported
+                threats throughout many areas of Central America and the
+                Caribbean. They are directly targeted in some fisheries and
+                considered by-catch in others.
               </p>
             </div>
             <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
               <p>
-                <a href="https://en.wikipedia.org/wiki/Joachim_Andersen_(composer)">Carl Joachim Andersen</a>
-                (29 April 1847 – 7 May 1909) was a Danish flutist, conductor and composer born in Copenhagen, son of the flutist Christian Joachim Andersen.
-                Both as a virtuoso and as composer of flute music, he is considered one of the best of his time.
-                He was considered to be a tough leader and teacher and demanded as such a lot from his orchestras but through that style he reached a high level.
+                The <a href="https://en.wikipedia.org/wiki/Basking_shark">basking
+                shark</a> (<span lang="la">Cetorhinus maximus</span>) is the
+                second-largest living shark and fish, after the whale shark. It
+                is one of three plankton-eating shark species, along with the
+                whale shark and megamouth shark. Typically, basking sharks reach
+                7.9 m (26 ft) in length. It is usually greyish-brown, with
+                mottled skin, with the inside of the mouth being white in
+                colour. The caudal fin has a strong lateral keel and a crescent
+                shape. Other common names include bone shark, elephant shark,
+                sailfish, and sunfish. In Orkney, it is called hoe-mother
+                (contracted homer), meaning "the mother of the picked dogfish".
               </p>
             </div>
             <div id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3" class="is-hidden">
               <p>
-                <a href="https://en.wikipedia.org/wiki/Ida_Henriette_da_Fonseca">Ida Henriette da Fonseca</a>
-                (July 27, 1802 – July 6, 1858) was a Danish opera singer and composer.
-                Ida Henriette da Fonseca was the daughter of Abraham da Fonseca (1776–1849) and Marie Sofie Kiærskou (1784–1863).
-                She and her sister Emilie da Fonseca were students of Giuseppe Siboni, choir master of the Opera in Copenhagen.
-                She was given a place at the royal Opera alongside her sister the same year she debuted in 1827.
+                The <a href="https://en.wikipedia.org/wiki/Whale_shark">whale
+                shark</a> (<span lang="la">Rhincodon typus</span>) is a
+                slow-moving, filter-feeding carpet shark and the largest known
+                extant fish species. The largest confirmed individual had a
+                length of 18.8 m (61.7 ft). The whale shark holds many records
+                for size in the animal kingdom, most notably being by far the
+                most massive living non-cetacean animal. It is the sole member
+                of the genus <span lang="la">Rhincodon</span> and the only
+                extant member of the family
+                <span lang="la">Rhincodontidae</span>, which belongs to the
+                subclass <span lang="la">Elasmobranchii</span> in the class
+                <span lang="la">Chondrichthyes</span>. Before 1984 it was
+                classified as <span lang="la">Rhiniodon</span> into <span lang="la">Rhinodontidae</span>.
               </p>
             </div>
             <div id="tabpanel-4" role="tabpanel" aria-labelledby="tab-4" class="is-hidden">
               <p>
-                <a href="https://en.wikipedia.org/wiki/Peter_Lange-M%C3%BCller">Peter Erasmus Lange-Müller</a>
-                (1 December 1850 – 26 February 1926) was a Danish composer and pianist.
-                His compositional style was influenced by Danish folk music and by the work of Robert Schumann; Johannes Brahms; and his Danish countrymen, including J.P.E. Hartmann.
+                The <a href="https://en.wikipedia.org/wiki/Goblin_shark">goblin
+                shark</a> (<span lang="la">Mitsukurina owstoni</span>) is a rare
+                species of deep-sea shark. Sometimes called a "living fossil",
+                it is the only extant representative of the family
+                <span lang="la">Mitsukurinidae</span>, a lineage some 125
+                million years old. This pink-skinned animal has a distinctive
+                profile with an elongated, flat snout, and highly protrusible
+                jaws containing prominent nail-like teeth. It is usually between
+                3 and 4 m (10 and 13 ft) long when mature, though it can grow
+                considerably larger such as one captured in 2000 that is thought
+                to have measured 6 m (20 ft). Goblin sharks are benthopelagic
+                creatures that inhabit upper continental slopes, submarine
+                canyons, and seamounts throughout the world at depths greater
+                than 100 m (330 ft), with adults found deeper than juveniles.
+                Some researchers believe that these sharks could also dive to
+                depths of up to 1,300 m (4,270 ft), for short periods of time.
+              </p>
+            </div>
+            <output for="tablist-1" class="action"></output>
+          </div>
+
+          <div class="tabs">
+            <h3 id="tablist-3">Tropical Fruit</h3>
+            <div role="tablist" aria-labelledby="tablist-3" class="manual">
+              <div role="presentation">
+                <button id="tab-9" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-9" aria-actions="tab-9-action-clipboard-copy tab-9-action-close">
+                  <span class="focus">Mangosteen</span>
+                </button>
+                <button type="button" id="tab-9-action-clipboard-copy" tabindex="-1" data-operation="clipboard-copy" aria-label="Copy Mangosteen tab content to clipboard">
+                  📋
+                </button>
+                <button type="button" id="tab-9-action-close" tabindex="-1" data-operation="close" aria-label="Close Mangosteen tab">
+                  ❌
+                </button>
+              </div>
+              <div role="presentation">
+                <button id="tab-10" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-10" tabindex="-1" aria-actions="tab-10-action-clipboard-copy tab-10-action-close">
+                  <span class="focus">Durian</span>
+                </button>
+                <button type="button" id="tab-10-action-clipboard-copy" tabindex="-1" data-operation="clipboard-copy" aria-label="Copy Durian tab content to clipboard">
+                  📋
+                </button>
+                <button type="button" id="tab-10-action-close" tabindex="-1" data-operation="close" aria-label="Close Durian tab">
+                  ❌
+                </button>
+              </div>
+              <div role="presentation">
+                <button id="tab-11" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-11" tabindex="-1" aria-actions="tab-11-action-clipboard-copy tab-11-action-close">
+                  <span class="focus">Guava</span>
+                </button>
+                <button type="button" id="tab-11-action-clipboard-copy" tabindex="-1" data-operation="clipboard-copy" aria-label="Copy Guava tab content to clipboard">
+                  📋
+                </button>
+                <button type="button" id="tab-11-action-close" tabindex="-1" data-operation="close" aria-label="Close Guava tab">
+                  ❌
+                </button>
+              </div>
+              <div role="presentation">
+                <button id="tab-12" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-12" tabindex="-1" aria-actions="tab-12-action-clipboard-copy tab-12-action-close">
+                  <span class="focus">Lychee</span>
+                </button>
+                <button type="button" id="tab-12-action-clipboard-copy" tabindex="-1" data-operation="clipboard-copy" aria-label="Copy Lychee tab content to clipboard">
+                  📋
+                </button>
+                <button type="button" id="tab-12-action-close" tabindex="-1" data-operation="close" aria-label="Close Lychee tab">
+                  ❌
+                </button>
+              </div>
+            </div>
+            <div id="tabpanel-9" role="tabpanel" aria-labelledby="tab-9">
+              <p>
+                <a href="https://en.wikipedia.org/wiki/Mangosteen">Mangosteen</a>,
+                also known as the purple mangosteen, is a tropical evergreen
+                tree with edible fruit native to Island Southeast Asia, from the
+                Malay Peninsula to Borneo. It has been cultivated extensively in
+                tropical Asia since ancient times.
+              </p>
+            </div>
+            <div id="tabpanel-10" role="tabpanel" aria-labelledby="tab-10" class="is-hidden">
+              <p>
+                The <a href="https://en.wikipedia.org/wiki/Durian">durian</a> is
+                the edible fruit of several tree species belonging to the genus
+                <span lang="la">Durio</span>. There are 30 recognized <span lang="la">Durio</span> species, at least nine of which produce
+                edible fruit. <span lang="la">Durio zibethinus</span>, native to
+                Borneo and Sumatra, is the only species available on the
+                international market.
+              </p>
+            </div>
+            <div id="tabpanel-11" role="tabpanel" aria-labelledby="tab-11" class="is-hidden">
+              <p>
+                <a href="https://en.wikipedia.org/wiki/Guava">Guava</a> is a
+                common tropical fruit cultivated in many tropical and
+                subtropical regions. The common guava <span lang="la">Psidium
+                guajava</span> is a small tree in the myrtle family, native to
+                Mexico, Central America, the Caribbean and northern South
+                America.
+              </p>
+            </div>
+            <div id="tabpanel-12" role="tabpanel" aria-labelledby="tab-12" class="is-hidden">
+              <p>
+                <a href="https://en.wikipedia.org/wiki/Lychee">Lychee</a> is a
+                monotypic taxon and the sole member in the genus <span lang="la">Litchi</span> in the soapberry family, <span lang="la">Sapindaceae</span>. There are three distinct
+                subspecies of lychee. The most common is the Indochinese lychee
+                found in South China, Malaysia, and northern Vietnam.
               </p>
             </div>
 
-            <p>
-              <label>Last Action: <input class="action" id="action_output" type="text" value=""></label>
-            </p>
+            <output for="tablist-3" class="action"></output>
           </div>
+
 
           <div class="tabs">
             <h3 id="tablist-2">Danish Composers</h3>
