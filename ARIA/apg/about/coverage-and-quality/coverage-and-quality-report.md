@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: August 20, 2024</p>
+    <p>Page last updated: September 2, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -2077,11 +2077,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
+            <td>5</td>
             <td>3</td>
             <td>7</td>
             <td>3</td>
-            <td>menu,menuitem,presentation,aria-expanded,aria-haspopup,aria-hidden,aria-label</td>
+            <td>menu,menuitem,aria-expanded,aria-haspopup,aria-hidden,aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
