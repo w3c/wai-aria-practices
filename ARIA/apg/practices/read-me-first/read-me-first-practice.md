@@ -101,8 +101,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 &lt;/table&gt;
 &lt;ul role=&quot;navigation&quot;&gt;
   &lt;!-- This is a navigation region, not a list. --&gt;
-  &lt;li&gt;&lt;a href=&quot;uri1&quot;&gt;nav link 1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;uri2&quot;&gt;nav link 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;uri1&quot;&gt;nav link 1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;uri2&quot;&gt;nav link 2&lt;/li&gt;
   &lt;!-- ERROR! Previous list items are not in a list! --&gt;
 &lt;/ul&gt;</code></pre>
       </section>
@@ -134,8 +134,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 
