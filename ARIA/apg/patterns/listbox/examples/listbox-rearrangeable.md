@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-rearrangeable/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 19 November 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -306,8 +306,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>
                 Action buttons have the following shortcuts:
                 <ul>
-                  <li>"Up": <kbd>Alt</kbd> + <kbd>Up Arrow</kbd></li>
-                  <li>"Down": <kbd>Alt</kbd> + <kbd>Down Arrow</kbd></li>
+                  <li>"Up": <kbd>Alt + Up Arrow</kbd></li>
+                  <li>"Down": <kbd>Alt + Down Arrow</kbd></li>
                   <li>"Add": <kbd>Enter</kbd></li>
                   <li>"Not Important", "Important", and "Remove": <kbd>Delete</kbd></li>
                 </ul>
@@ -319,7 +319,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </li>
               <li>
                 Using a shortcut key intentionally places focus to optimize both screen reader and keyboard usability.
-                For example, pressing <kbd>Alt</kbd> + <kbd>Up Arrow</kbd> in the "Important Features" list keeps focus on the option that is moved up, enabling all keyboard users to easily perform consecutive move operations for an option and screen reader users to hear the position of an option after it is moved.
+                For example, pressing <kbd>Alt + Up Arrow</kbd> in the "Important Features" list keeps focus on the option that is moved up, enabling all keyboard users to easily perform consecutive move operations for an option and screen reader users to hear the position of an option after it is moved.
                 Similarly, pressing <kbd>Enter</kbd> in the available options list leaves focus in the available options list.
                 If the option that had focus before the add operation is no longer present in the list, focus lands on the first of the subsequent options that is still present.
               </li>
@@ -439,24 +439,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>changes the selection state of the focused option .</td>
             </tr>
             <tr data-test-id="key-shift-down-arrow">
-              <th><kbd>Shift</kbd> + <kbd>Down Arrow</kbd></th>
+              <th><kbd>Shift + Down Arrow</kbd></th>
               <td>Moves focus to and selects the next option.</td>
             </tr>
             <tr data-test-id="key-shift-up-arrow">
-              <th><kbd>Shift</kbd> + <kbd>Up Arrow</kbd></th>
+              <th><kbd>Shift + Up Arrow</kbd></th>
               <td>Moves focus to and selects the previous option.</td>
             </tr>
             <tr data-test-id="key-control-shift-home">
-              <th><kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd></th>
+              <th><kbd>Control + Shift + Home</kbd></th>
               <td>Selects from the focused option to the beginning of the list.</td>
             </tr>
             <tr data-test-id="key-control-shift-end">
-              <th><kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd></th>
+              <th><kbd>Control + Shift + End</kbd></th>
               <td>Selects from the focused option to the end of the list.</td>
             </tr>
             <tr data-test-id="key-control-a">
               <th>
-                <kbd>Control</kbd> + <kbd>A</kbd> (All Platforms)<br>
+                <kbd>Control + A</kbd> (All Platforms)<br>
                 <kbd>Command-A</kbd> (macOS)
               </th>
               <td>
@@ -588,23 +588,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section class="example-code">
+      <section>
         <h2>HTML Source Code</h2>
         <h3 id="sc1_label">Example 1: Single-Select Listbox</h3>
-        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc1"></code></pre>
         <div id="sc1_end_sep" role="separator" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files', 'sc1_description');
+          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files');
         </script>
         <h3 id="sc2_label">Example 2: Multi-Select Listbox</h3>
-        <p id="sc2_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc2_start_sep" role="separator" aria-labelledby="sc2_start_sep sc2_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc2"></code></pre>
         <div id="sc2_end_sep" role="separator" aria-labelledby="sc2_end_sep sc2_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files', 'sc2_description');
+          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files');
         </script>
         
         <script>
@@ -614,8 +612,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 

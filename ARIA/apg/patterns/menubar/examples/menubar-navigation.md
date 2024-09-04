@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/menubar/examples/menubar-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/125'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -872,22 +872,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section class="example-code">
+      <section>
         <h2 id="sc_label">HTML Source Code</h2>
-        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc_label" aria-label="Start of "></div>
         <pre><code id="sc1"></code></pre>
         <div id="sc1_end_sep" role="separator" aria-labelledby="sc1_end_sep sc_label" aria-label="End of "></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_description');
+          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');
           sourceCode.make();
         </script>
       </section>
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 

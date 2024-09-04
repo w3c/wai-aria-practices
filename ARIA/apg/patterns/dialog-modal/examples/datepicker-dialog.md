@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/140'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/27'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -320,7 +320,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </td>
               </tr>
               <tr data-test-id="dialog-shift-tab">
-                <th><kbd>Shift</kbd> + <kbd>Tab</kbd></th>
+                <th><kbd>Shift + Tab</kbd></th>
                 <td>
                   <ul>
                     <li>Moves focus to previous element in the dialog <kbd>Tab</kbd> sequence.</li>
@@ -408,7 +408,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </td>
               </tr>
               <tr data-test-id="grid-shift-pageup">
-                <th><kbd>Shift</kbd> + <kbd>Page Up</kbd></th>
+                <th><kbd>Shift + Page Up</kbd></th>
                 <td>
                   <ul>
                     <li>Changes the grid of dates to the same month in the previous year.</li>
@@ -432,7 +432,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </td>
               </tr>
               <tr data-test-id="grid-shift-pagedown">
-                <th><kbd>Shift</kbd> + <kbd>Page Down</kbd></th>
+                <th><kbd>Shift + Page Down</kbd></th>
                 <td>
                   <ul>
                     <li>Changes the grid of dates to the same month in the next year.</li>
@@ -712,22 +712,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section class="example-code">
+      <section>
         <h2 id="sc1_label">HTML Source Code</h2>
-        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
         <script>
-          sourceCode.add('sc1', 'example', 'ex_label', 'css_js_files', 'sc1_description');
+          sourceCode.add('sc1', 'example', 'ex_label', 'css_js_files');
           sourceCode.make();
         </script>
       </section>
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 
