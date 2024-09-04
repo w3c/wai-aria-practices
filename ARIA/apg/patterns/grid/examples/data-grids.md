@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/grid/examples/data-grids/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/133'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/15'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -189,7 +189,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <div role="separator" id="ex1_end_sep" aria-labelledby="ex1_end_sep ex1_label" aria-label="End of"></div>
           <h4>Notes</h4>
           <ol>
-            <li>Data cells can be focused using standard navigation keys, including directional arrows, <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>Control</kbd> + <kbd>Home</kbd>, and <kbd>Control</kbd> + <kbd>End</kbd>.</li>
+            <li>Data cells can be focused using standard navigation keys, including directional arrows, <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>Control + Home</kbd>, and <kbd>Control + End</kbd>.</li>
             <li>The <kbd>Page Down</kbd> and <kbd>Page Up</kbd> keys are not supported since such scroll-like functions are not useful with so few rows.</li>
             <li>The links can be activated with the keyboard when focused.</li>
             <li>
@@ -660,13 +660,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr data-test-id="key-control-home">
             <th scope="row">
-              <kbd>Control</kbd> + <kbd>Home</kbd>
+              <kbd>Control + Home</kbd>
             </th>
             <td>moves focus to the first cell in the first row.</td>
           </tr>
           <tr data-test-id="key-control-end">
             <th scope="row">
-              <kbd>Control</kbd> + <kbd>End</kbd>
+              <kbd>Control + End</kbd>
             </th>
             <td>moves focus to the last cell in the last row.</td>
           </tr>
@@ -835,33 +835,30 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section class="example-code">
+      <section>
         <h2>HTML Source Code</h2>
         <h3 id="sc1_label">Example 1: Minimal Data Grid</h3>
-        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc1_start_sep" role="separator" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc1"></code></pre>
         <div id="sc1_end_sep" role="separator" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files', 'sc1_description');
+          sourceCode.add('sc1', 'ex1', 'ex1_label', 'css_js_files');
         </script>
 
         <h3 id="sc2_label">Example 2: Sortable Data Grid With Editable Cells</h3>
-        <p id="sc2_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc2_start_sep" role="separator" aria-labelledby="sc2_start_sep sc2_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc2"></code></pre>
         <div id="sc2_end_sep" role="separator" aria-labelledby="sc2_end_sep sc2_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files', 'sc2_description');
+          sourceCode.add('sc2', 'ex2', 'ex2_label', 'css_js_files');
         </script>
 
         <h3 id="sc3_label">Example 3: Scrollable Data Grid With Column Hiding</h3>
-        <p id="sc3_description">To copy the following HTML code, please open it in CodePen.</p>
         <div id="sc3_start_sep" role="separator" aria-labelledby="sc3_start_sep sc3_label" aria-label="Start of HTML for"></div>
         <pre><code id="sc3"></code></pre>
         <div id="sc3_end_sep" role="separator" aria-labelledby="sc3_end_sep sc3_label" aria-label="End of HTML for"></div>
         <script>
-          sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files', 'sc3_description');
+          sourceCode.add('sc3', 'ex3', 'ex3_label', 'css_js_files');
         </script>
         
         <script>
@@ -871,8 +868,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 

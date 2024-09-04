@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-datepicker/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 11 December 2023</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -101,7 +101,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-combobox.svg">
         <p>
           The below date picker demonstrates an implementation of the <a href="../../">Combobox Pattern</a> that opens a dialog.
-          The date picker dialog is opened by activating the choose date button or by moving keyboard focus to the combobox and pressing <kbd>Down Arrow</kbd> or <kbd>Alt</kbd> + <kbd>Down Arrow</kbd>.
+          The date picker dialog is opened by activating the choose date button or by moving keyboard focus to the combobox and pressing <kbd>Down Arrow</kbd> or <kbd>Alt + Down Arrow</kbd>.
           The dialog contains an implementation of the <a href="../../../grid/">grid pattern</a> for displaying a calendar and enabling selection of a date.
           Additional buttons in the dialog are available for changing the month and year shown in the grid.
         </p>
@@ -288,7 +288,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </thead>
             <tbody>
               <tr data-test-id="combobox-down-arrow">
-                <th><kbd>Down Arrow</kbd>,<br><kbd>ALT</kbd> + <kbd>Down Arrow</kbd></th>
+                <th><kbd>Down Arrow</kbd>,<br><kbd>ALT + Down Arrow</kbd></th>
                 <td>
                   <ul>
                     <li>Open the date picker dialog.</li>
@@ -328,7 +328,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </td>
               </tr>
               <tr data-test-id="dialog-shift-tab">
-                <th><kbd>Shift</kbd> + <kbd>TAB</kbd></th>
+                <th><kbd>Shift + TAB</kbd></th>
                 <td>
                   <ul>
                     <li>Moves focus to previous element in the dialog <kbd>Tab</kbd> sequence.</li>
@@ -778,22 +778,18 @@ Moves focus to the day of the month that has the same number.
         </ul>
       </section>
 
-      <section class="example-code">
+      <section>
         <h2 id="sc1_label">HTML Source Code</h2>
-        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
         <script>
-          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files', 'sc1_description');
+          sourceCode.add('sc1', 'ex1', 'ex_label', 'css_js_files');
           sourceCode.make();
         </script>
       </section>
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 

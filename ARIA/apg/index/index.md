@@ -67,7 +67,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
       <li><a href="#examples_by_role_label">Examples by Role</a></li>
       <li><a href="#examples_by_props_label">Examples by Properties and States</a></li>
-      <li><a href="#examples_experimental_label">Experimental Examples</a></li>
     </ul>
     <section id="examples_by_roles">
       <h2 id="examples_by_role_label">Examples by Role</h2>
@@ -95,7 +94,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>article</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
           </tr>
           <tr>
             <td><code>banner</code></td>
@@ -172,7 +171,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>feed</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
           </tr>
           <tr>
             <td><code>form</code></td>
@@ -530,7 +529,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>aria-busy</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
           </tr>
           <tr>
             <td><code>aria-checked</code></td>
@@ -603,7 +602,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
                 <li><a href="../patterns/table/examples/table/">Table</a></li>
               </ul>
             </td>
@@ -723,7 +722,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
                 <li><a href="../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
@@ -806,7 +805,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-posinset</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
@@ -876,7 +875,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-setsize</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
@@ -950,19 +949,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr></tbody>
       </table>
     </section>
-    <section id="examples_experimental">
-      <h2 id="examples_experimental_label">Experimental Examples</h2>
-      <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
-      <ul id="examples_experimental_ul">
-                <li><a href="../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li></ul>
-    </section>
   </div>
 
 
 
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 
