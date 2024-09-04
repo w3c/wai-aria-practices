@@ -108,7 +108,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <img alt src="../../../../content-images/wai-aria-practices/images/pattern-feed.svg">
         <h2>Example</h2>
         <p>
-          <a href="examples/feed/">Infinite Scrolling Feed Example</a>
+          <a href="examples/feed/">Example Implementation of Feed Pattern</a>
         </p>
       </section>
 
@@ -176,8 +176,5 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script
-  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
-></script>
+<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
 

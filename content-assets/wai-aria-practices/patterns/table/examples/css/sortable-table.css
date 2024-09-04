@@ -24,6 +24,7 @@ table.sortable th:nth-child(5) {
 }
 
 table.sortable th button {
+  position: absolute;
   padding: 4px;
   margin: 1px;
   font-size: 100%;
