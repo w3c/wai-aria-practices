@@ -252,7 +252,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr>
               <th>System Color</th>
               <th>Computed Sample</th>
-              <th>Computed Color</th>
+              <th style="min-width: 12em">Computed Color</th>
               <th>Description</th>
             </tr>
           </thead>

@@ -783,9 +783,9 @@ function rgb2Hex(rgb) {
     return 'transparent';
   }
 
-  let r = Math.round(parseInt(rgb[0]) * a).toString(16),
-    g = Math.round(parseInt(rgb[1]) * a).toString(16),
-    b = Math.round(parseInt(rgb[2]) * a).toString(16);
+  let r = Math.round((parseInt(rgb[0]) * a) + (255 * (1 - a))).toString(16),
+    g = Math.round((parseInt(rgb[1]) * a) + (255 * (1 - a))).toString(16),
+    b = Math.round((parseInt(rgb[2]) * a) + (255 * (1 - a))).toString(16);
 
   if (r.length == 1) {
     r = '0' + r;
@@ -797,7 +797,9 @@ function rgb2Hex(rgb) {
     b = '0' + b;
   }
 
-  return '#' + r + g + b;
+  const hex = '#' + r + g + b;
+
+  return hex;
 }
 
 // Fill in System color table
@@ -817,18 +819,25 @@ window.addEventListener('load', () => {
       div.classList.add('sample');
       div.style.backgroundColor = v.value;
       tds.appendChild(div);
+      const divHex = document.createElement('div');
+      divHex.style.fontFamily = 'monospace';
+      tds.appendChild(divHex);
       tr.appendChild(tds);
-      const tdc = document.createElement('td');
-      tdc.style.fontFamily = 'monospace';
-      tdc.textContent = '??';
-      tr.appendChild(tdc);
+      const tdRGB = document.createElement('td');
+      tdRGB.style.fontFamily = 'monospace';
+      tdRGB.textContent = '??';
+      tr.appendChild(tdRGB);
+      const tdHex = document.createElement('td');
+      tdHex.style.fontFamily = 'monospace';
+      tdHex.textContent = '??';
       const tdd = document.createElement('td');
       tdd.textContent = v.desc;
       tr.appendChild(tdd);
       tbodyNode.appendChild(tr);
       const cStyle = window.getComputedStyle(div);
+      tdRGB.textContent = cStyle.backgroundColor;
       const colorHex = rgb2Hex(cStyle.backgroundColor);
-      tdc.textContent = colorHex;
+      divHex.textContent = colorHex;
       div.ariaLabel = getHTMLColorName(v.name, colorHex);
     }
   });
