@@ -97,7 +97,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>Inverting colors, increase contrast and color themes are the three main ways users can adjust the rendered colors of web content.   These options are set through operating system accessibility features.  Not all of the options provide information for authors to adjust the rendering of content based on user settings.   The following table summarizes the features, operating systems and authors ability to detect the setting.</p>
 
         <h3 id="os-hc-features">Operating System Color Adjustment Features</h3>
-        <div class="table-wrap"><table aria-labelledby="os-media-query" class="data">
+        <div class="table-wrap"><table aria-labelledby="os-hc-features" class="data">
           <thead>
             <tr>
               <th>Feature</th>
