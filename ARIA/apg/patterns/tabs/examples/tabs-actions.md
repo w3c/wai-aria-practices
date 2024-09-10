@@ -335,7 +335,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 </ul>
               </td>
             </tr>
-            <tr data-test-id="key-shift-tab"></tr>
+            <tr data-test-id="key-shift-tab">
               <th><kbd>Shift + Tab</kbd></th>
               <td>
                 <ul>
@@ -349,7 +349,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   </li>
                 </ul>
               </td>
-            
+            </tr>
             <tr data-test-id="key-enter-or-space">
               <th><kbd>Enter</kbd><br><kbd>Space</kbd></th>
               <td>When a tab has focus, activates the tab, causing its associated panel to be displayed.</td>
@@ -384,7 +384,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
           </tbody>
         </table></div>
-        <h3 id="kbd1_label">Menu Button</h3>
+        <h3 id="kbd2_label">Menu Button</h3>
         <p>
           Keyboard support for each <code>tab</code>’s associated menu button is documented in <a href="../../../menu-button/examples/menu-button-actions/#kbd_label">Menu Button Pattern</a>.
         </p>
