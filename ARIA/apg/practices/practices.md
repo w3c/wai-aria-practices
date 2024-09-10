@@ -98,6 +98,17 @@ lang: en
       </li>
 
       <li class="tile">
+        <a href="live-regions/">
+          <h2 class="tile-name">
+            <span>Notifying Users with Live Regions (Automatic Screen Reader Announcements)</span>
+          </h2>
+        </a>
+        <div class="tile-introduction">
+          Live regions can be used to inform assistive technology users of important changes as they happen.
+        </div>
+      </li>
+      
+      <li class="tile">
         <a href="grid-and-table-properties/">
           <h2 class="tile-name">
             <span>Grid and Table Properties</span>
