@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-actions/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 2 September 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/11'>View issues related to this example</a></p>        <p>Page last updated: 10 September 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -32,7 +32,7 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-actions.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-actions.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/menu-button-actions.js"></script>
 
 
 <link 
