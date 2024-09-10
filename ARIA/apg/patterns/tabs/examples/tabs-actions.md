@@ -311,6 +311,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2 id="kbd_label">Keyboard Support</h2>
+        <h3 id="kbd1_label">Tabs</h3>
         <div class="table-wrap"><table aria-labelledby="kbd_label" class="def">
           <thead>
             <tr>
@@ -323,11 +324,32 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th><kbd>Tab</kbd></th>
               <td>
                 <ul>
-                  <li>When focus moves into the tab list, places focus on the active <code>tab</code> element.</li>
-                  <li>When the tab list contains the focus, moves focus to the next element in the tab sequence, which is the <code>a</code> element in <code>tabpanel</code>.</li>
+                  <li>When focus moves into the <code>tablist</code>, places focus on the active <code>tab</code>.</li>
+                  <li>When focus is on a <code>tab</code>, places focus on its associated menu <code>button</code>.</li>
+                  <li>When focus is on the menu <code>button</code> associated with a <code>tab</code>, moves focus to one of the following depending on which is nearest in the forward tab sequence:
+                    <ul>
+                      <li>The active <code>tab</code>.</li>
+                      <li>The first focusable element following the <code>tablist</code>. In this example, that is the <code>a</code> element in <code>tabpanel</code>.</li>
+                    </ul>
+                  </li>
                 </ul>
               </td>
             </tr>
+            <tr data-test-id="key-shift-tab"></tr>
+              <th><kbd>Shift + Tab</kbd></th>
+              <td>
+                <ul>
+                  <li>When focus moves into the <code>tablist</code>, places focus on the menu <code>button</code> associated with the active <code>tab</code>.</li>
+                  <li>When focus is on the menu <code>button</code> associated with a <code>tab</code>, places focus on that <code>tab</code>.</li>
+                  <li>When focus is on a <code>tab</code>, moves focus to one of the following depending on which is nearest in the backward tab sequence:
+                    <ul>
+                      <li>The active <code>tab</code>.</li>
+                      <li>The first focusable element preceding the <code>tablist</code>.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+            
             <tr data-test-id="key-enter-or-space">
               <th><kbd>Enter</kbd><br><kbd>Space</kbd></th>
               <td>When a tab has focus, activates the tab, causing its associated panel to be displayed.</td>
@@ -335,33 +357,37 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <tr data-test-id="key-right-arrow">
               <th><kbd>Right Arrow</kbd></th>
               <td>
-                When a tab has focus:
+                When a <code>tab</code> or its associated menu button have focus:
                 <ul>
-                  <li>Moves focus to the next tab.</li>
-                  <li>If focus is on the last tab, moves focus to the first tab.</li>
+                  <li>Moves focus to the next <code>tab</code>.</li>
+                  <li>If focus is on the last <code>tab</code>, moves focus to the first <code>tab</code>.</li>
                 </ul>
               </td>
             </tr>
             <tr data-test-id="key-left-arrow">
               <th><kbd>Left Arrow</kbd></th>
               <td>
-                When a tab has focus:
+                When a <code>tab</code> or its associated menu button have focus:
                 <ul>
-                  <li>Moves focus to the previous tab.</li>
-                  <li>If focus is on the first tab, moves focus to the last tab.</li>
+                  <li>Moves focus to the previous <code>tab</code>.</li>
+                  <li>If focus is on the first <code>tab</code>, moves focus to the last <code>tab</code>.</li>
                 </ul>
               </td>
             </tr>
             <tr data-test-id="key-home">
               <th><kbd>Home</kbd></th>
-              <td>When a tab has focus, moves focus to the first tab.</td>
+              <td>When a <code>tab</code> has focus, moves focus to the first <code>tab</code>.</td>
             </tr>
             <tr data-test-id="key-end">
               <th><kbd>End</kbd></th>
-              <td>When a tab has focus, moves focus to the last tab.</td>
+              <td>When a <code>tab</code> has focus, moves focus to the last <code>tab</code>.</td>
             </tr>
           </tbody>
         </table></div>
+        <h3 id="kbd1_label">Menu Button</h3>
+        <p>
+          Keyboard support for each <code>tab</code>’s associated menu button is documented in <a href="../../../menu-button/examples/menu-button-actions/#kbd_label">Menu Button Pattern</a>.
+        </p>
       </section>
 
       <section>
@@ -472,6 +498,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
               <td>Refers to the <code>tabpanel</code> element associated with the tab.</td>
             </tr>
+            <tr data-test-id="tab-aria-actions">
+              <td></td>
+              <th scope="row">
+                <code>aria-actions="ID_REFERENCE"</code>
+              </th>
+              <td>
+                <code>button</code>
+              </td>
+              <td>Refers to the context actions menu <code>button</code> element associated with the tab.</td>
+            </tr>
             <tr data-test-id="tabpanel-role">
               <th scope="row">
                 <code>tabpanel</code>
@@ -509,8 +545,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section>
         <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
-          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs.css" type="tex/css">tabs.css</a></li>
-          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-manual.js" type="text/javascript">tabs-manual.js</a></li>
+          <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs-actions.css" type="tex/css">tabs-actions.css</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-actions.js" type="text/javascript">tabs-actions.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-actions.js" type="text/javascript">menu-button-actions.js</a></li>
         </ul>
       </section>
 
