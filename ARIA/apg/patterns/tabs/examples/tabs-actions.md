@@ -32,7 +32,7 @@ lang: en
   rel="stylesheet"
 />
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-actions.js"></script>
-<script src="../../../../../../content-assets/wai-aria-practices/patterns/tabs/examples/js/menu-button-actions.js"></script>
+<script src="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-actions.js"></script>
 
 
 <link 
