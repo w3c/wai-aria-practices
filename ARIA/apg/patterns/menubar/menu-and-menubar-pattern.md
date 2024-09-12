@@ -64,7 +64,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           A <a href="https://w3c.github.io/aria/#menu" class="role-reference">menu</a> is a widget that offers a list of choices to the user, such as a set of actions or functions.
           Menu widgets behave like native operating system menus, such as the menus that pull down from the menubars commonly found at the top of many desktop application windows.
-          A menu is usually opened, or made visible, by activating a <a href="../menu-button/">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift + F10</kbd> in Windows, that opens a context specific menu.
+          A menu is usually opened, or made visible, by activating a <a href="../menu-button/">menu button</a>, choosing an item in a menu that opens a sub menu, or by invoking a command, such as <kbd>Shift</kbd> + <kbd>F10</kbd> in Windows, that opens a context specific menu.
           When a user activates a choice in a menu, the menu usually closes unless the choice opened a submenu.
         </p>
 
@@ -104,12 +104,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           When a <code>menu</code> opens, or when a <code>menubar</code> receives focus, keyboard focus is placed on the first item.
           Because <code>menubar</code> and <code>menu</code> elements are composite widgets as described in the practice for
           <a href="../../practices/keyboard-interface/#kbd_general_within">Keyboard Navigation Inside Components</a>,
-          <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus among the items in the menu.
+          <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> do not move focus among the items in the menu.
           Instead, the keyboard commands described in this section enable users to move focus among the elements in a <code>menubar</code> or <code>menu</code>.
         </p>
         <ul>
           <li>
-            <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd>:
+            <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd>:
             <ul>
               <li>
                 Move focus into a <code>menubar</code>:
@@ -123,7 +123,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </li>
               <li>When focus is on a <code>menuitem</code> in a <code>menu</code> or <code>menubar</code>, move focus out of the <code>menu</code> or <code>menubar</code>, and close all menus and submenus.</li>
               <li>
-                Note that <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus into a <code>menu</code>.
+                Note that <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> do not move focus into a <code>menu</code>.
                 Unlike a <code>menubar</code>, a <code>menu</code> is not visually persistent, and authors are responsible for ensuring focus moves to an item inside of a <code>menu</code> when the <code>menu</code> opens.
               </li>
             </ul>
@@ -201,7 +201,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li>A <a href="https://w3c.github.io/aria/#separator" class="role-reference">separator</a> in a menu is not focusable or interactive.</li>
             <li>
               If a menu is opened or a menubar receives focus as a result of a context action, <kbd>Escape</kbd> or <kbd>Enter</kbd> may return focus to the invoking context.
-              For example, a rich text editor may have a menubar that receives focus when a shortcut key, e.g., <kbd>alt + F10</kbd>, is pressed while editing.
+              For example, a rich text editor may have a menubar that receives focus when a shortcut key, e.g., <kbd>alt</kbd> + <kbd>F10</kbd>, is pressed while editing.
               In this case, pressing <kbd>Escape</kbd> or activating a command from the menu may return focus to the editor.
             </li>
             <li>
