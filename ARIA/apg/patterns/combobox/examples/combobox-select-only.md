@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-select-only/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/7'>View issues related to this example</a></p>        <p>Page last updated: 12 September 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -172,7 +172,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
             </tr>
             <tr data-test-id="combobox-key-alt-down-arrow">
-              <th><kbd>Alt + Down Arrow</kbd></th>
+              <th><kbd>Alt</kbd> + <kbd>Down Arrow</kbd></th>
               <td>Opens the listbox without moving focus or changing selection.</td>
             </tr>
             <tr data-test-id="combobox-key-up-arrow">
@@ -289,7 +289,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
             </tr>
             <tr data-test-id="listbox-key-alt-up-arrow">
-              <th><kbd>Alt + Up Arrow</kbd></th>
+              <th><kbd>Alt</kbd> + <kbd>Up Arrow</kbd></th>
               <td>
                 <ul>
                   <li>Sets the value to the content of the focused option in the listbox.</li>

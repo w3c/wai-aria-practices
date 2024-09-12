@@ -336,7 +336,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
             </tr>
             <tr data-test-id="key-shift-tab">
-              <th><kbd>Shift + Tab</kbd></th>
+              <th><kbd>Shift</kbd> + <kbd>Tab</kbd></th>
               <td>
                 <ul>
                   <li>When focus moves into the <code>tablist</code>, places focus on the menu <code>button</code> associated with the active <code>tab</code>.</li>

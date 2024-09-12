@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <p>
           Like non-modal dialogs, modal dialogs contain their tab sequence.
-          That is, <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> do not move focus outside the dialog.
+          That is, <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> do not move focus outside the dialog.
           However, unlike most non-modal dialogs, modal dialogs do not provide means for moving keyboard focus outside the dialog window without closing the dialog.
         </p>
         <p>
@@ -106,7 +106,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
           </li>
           <li>
-            <kbd>Shift + Tab</kbd>:
+            <kbd>Shift</kbd> + <kbd>Tab</kbd>:
             <ul>
               <li>Moves focus to the previous tabbable element inside the dialog.</li>
               <li>If focus is on the first tabbable element inside the dialog, moves focus to the last tabbable element inside the dialog.</li>
