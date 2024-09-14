@@ -140,19 +140,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           without having to move focus away from the search field.
         </p>
 
-        <pre><code>&lt;form role="search" aria-labelledby="search">
-&lt;h2 id="search">Search&lt;/h2>
-&lt;label>Search query: &lt;input type="search" name="q" oninput="updateSearch(event)">&lt;/label>
-&lt;div id="search-result-status" role="region" aria-live="polite">&lt;/div>
-&lt;/form>
-&lt;script>
+        <pre><code>&lt;form role="search" aria-labelledby="search"&gt;
+&lt;h2 id="search">Search&lt;/h2&gt;
+&lt;label>Search query: &lt;input type="search" name="q" oninput="updateSearch(event)"&gt;&lt;/label&gt;
+&lt;div id="search-result-status" role="region" aria-live="polite">&lt;/div&gt;
+&lt;/form&gt;
+&lt;script&gt;
 async function updateSearch(event) {
 const statusElement = document.getElementById(&#39;search-result-status&#39;);
 const results = await getSearchResults(event.target.value);
 statusElement.textContent = `${results.length} result(s) found.`;
 showResults(results);
 }
-&lt;/script>
+&lt;/script&gt;
 </code></pre>
       </section>
 
@@ -185,10 +185,10 @@ showResults(results);
           than the full time.
         </p>
 
-        <pre><code>&lt;div id="clock" role="region" aria-live="polite" aria-atomic="true">
+        <pre><code>&lt;div id="clock" role="region" aria-live="polite" aria-atomic="true"&gt;
 The time is
-&lt;span>16&lt;/span>:&lt;span>34&lt;/span>:&lt;span>05&lt;/span>
-&lt;/div>
+&lt;span&gt;16&lt;/span&gt;:&lt;span&gt;34&lt;/span&gt;:&lt;span>05&lt;/span&gt;
+&lt;/div&gt;
 </code></pre>
       </section>
 
@@ -234,12 +234,12 @@ The time is
           For example, a list of online contacts:
         </p>
 
-        <pre><code>&lt;div role="region" aria-live="polite" aria-labelledby="contacts">
-&lt;h1 id="contacts">Contacts&lt;/h1>
-&lt;ul>
-&lt;li aria-atomic="true">&lt;a href="/contacts/alice">Alice&lt;/a> is now online&lt;/li>
-&lt;/ul>
-&lt;/div>
+        <pre><code>&lt;div role="region" aria-live="polite" aria-labelledby="contacts"&gt;
+&lt;h1 id="contacts">Contacts&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li aria-atomic="true"&gt;&lt;a href="/contacts/alice"&gt;Alice&lt;/a&gt; is now online&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 </code></pre>
 
         <p>
@@ -331,11 +331,11 @@ The time is
           For example, a chat log would be an appropriate use case for the <code>log</code> role.
         </p>
 
-        <pre><code>&lt;h1 id="irc-log">IRC Log&lt;/h1>
-&lt;div role="log" aria-labelledby="irc-log">
-&lt;p>[10:26] &amp;lt;Charl> ok let&#39;s test it and see if it works&lt;/p>
-&lt;p>[10:59] &amp;lt;hsivonen> morning&lt;/p>
-&lt;/div>
+        <pre><code>&lt;h1 id="irc-log"&gt;IRC Log&lt;/h1&gt;
+&lt;div role="log" aria-labelledby="irc-log"&gt;
+&lt;p&gt;[10:26] &amp;lt;Charl&gt; ok let&#39;s test it and see if it works&lt;/p&gt;
+&lt;p&gt;[10:59] &amp;lt;hsivonen&gt; morning&lt;/p&gt;
+&lt;/div&gt;
 </code></pre>
       </section>
 
@@ -361,11 +361,11 @@ The time is
           <code>role="region"</code>:
         </p>
 
-        <pre><code>&lt;form role="search" aria-labelledby="search">
-&lt;h2 id="search">Search&lt;/h2>
-&lt;label>Search query: &lt;input type="search" name="q" oninput="updateSearch(event)">&lt;/label>
-&lt;div id="search-result-status" role="status">&lt;/div>
-&lt;/form>
+        <pre><code>&lt;form role="search" aria-labelledby="search"&gt;
+&lt;h2 id="search">Search&lt;/h2&gt;
+&lt;label&gt;Search query: &lt;input type="search" name="q" oninput="updateSearch(event)">&lt;/label&gt;
+&lt;div id="search-result-status" role="status">&lt;/div&gt;
+&lt;/form&gt;
 </code></pre>
 
         <p>
@@ -375,11 +375,11 @@ The time is
           The result of a user search is thus appropriate use of the <code>output</code> element:
         </p>
 
-        <pre><code>&lt;form role="search" aria-labelledby="search">
-&lt;h2 id="search">Search&lt;/h2>
-&lt;label>Search query: &lt;input type="search" name="q" oninput="updateSearch(event)">&lt;/label>
-&lt;output id="search-result-status">&lt;/output>
-&lt;/form>
+        <pre><code>&lt;form role="search" aria-labelledby="search"&gt;
+&lt;h2 id="search">Search&lt;/h2&gt;
+&lt;label&gt;Search query: &lt;input type="search" name="q" oninput="updateSearch(event)">&lt;/label&gt;
+&lt;output id="search-result-status"&gt;&lt;/output&gt;
+&lt;/form&gt;
 </code></pre>
       </section>
 
