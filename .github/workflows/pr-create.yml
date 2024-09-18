@@ -90,7 +90,7 @@ jobs:
           npm install -C scripts/create-pr
           node ./scripts/create-pr
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.W3CGRUNTBOT_TOKEN }}
           APG_SHA: ${{ github.event.inputs.apg_sha }}
           APG_BRANCH: ${{ github.event.inputs.apg_branch }}
           APG_PR_NUMBER: ${{ github.event.inputs.apg_pr_number }}
