@@ -11,6 +11,9 @@ is currently a [single static HTML file](https://w3c.github.io/aria-practices/) 
 post-processed with [ReSpec](https://pages.github.com/)) into a multi-page static website to be served as a standalone resource on the
 [wai-website](https://github.com/w3c/wai-website/).
 
+More details on how the pipeline between the aria-practices and this repository is described in
+the [wiki](https://github.com/w3c/wai-aria-practices/wiki/APG-to-WAI-Build-Pipeline-Workflows-Documentation).
+
 ## Local development
 
 - Ensure Ruby and Node (v14 or greater) are installed.
@@ -24,5 +27,5 @@ post-processed with [ReSpec](https://pages.github.com/)) into a multi-page stati
 
 ## Netlify CD status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2f0b3cea-856a-491f-9e98-0ff59fe6d599/deploy-status)](https://app.netlify.com/sites/aria-practices/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9dc61ee8-22b5-4e51-9169-8ffe934b50ff/deploy-status)](https://app.netlify.com/sites/aria-practices/deploys)
 
