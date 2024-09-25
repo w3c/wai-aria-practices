@@ -11,7 +11,7 @@ is currently a [single static HTML file](https://w3c.github.io/aria-practices/) 
 post-processed with [ReSpec](https://pages.github.com/)) into a multi-page static website to be served as a standalone resource on the
 [wai-website](https://github.com/w3c/wai-website/).
 
-More details on how the pipeline between the aria-practices and this repository is described in
+More details on how the workflows between the aria-practices and this repository communicate is described in
 the [wiki](https://github.com/w3c/wai-aria-practices/wiki/APG-to-WAI-Build-Pipeline-Workflows-Documentation).
 
 ## Local development
