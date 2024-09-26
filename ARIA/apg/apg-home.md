@@ -57,7 +57,7 @@ lang: en
           <div class="top-box">
             <div class="top-detail-1 detail-1"></div>
             <div class="detail-2"></div>
-            <h1>ARIA Authoring Practices Guide (APG) Home</h1>
+            <h1>ARIA Authoring Practices Guide (APG) Homee</h1>
             <p>
         Learn to use the accessibility semantics defined by the Accessible Rich Internet Application (ARIA) specification to create accessible web experiences.
         This guide describes how to apply accessibility semantics to common design patterns and widgets.
