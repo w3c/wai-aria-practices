@@ -55,14 +55,14 @@ lang: en
         <li>
           <h2><a href="introduction/">Introduction</a></h2>
           <p>
-            To learn  about the purpose of the APG, the prerequisite knowledge it  assumes, and how it is organized, read the
+            To learn about the purpose of the APG, the prerequisite knowledge it assumes, and how it is organized, read the
             <a href="introduction/">Introduction</a>.
           </p>
         </li>
         <li>
           <h2><a href="aria-basics/">ARIA Basics</a></h2>
           <p>
-            Facilitate success when applying APG guidance by developing a solid understanding of what ARIA is, what accessibility semantics are, and  their purpose and limitations with this section about
+            Facilitate success when applying APG guidance by developing a solid understanding of what ARIA is, what accessibility semantics are, and their purpose and limitations with this section about
             <a href="aria-basics/">ARIA Basics</a>.
           </p>
         </li>
@@ -75,9 +75,9 @@ lang: en
         </li>
         <li>
           <h2><a href="acknowledgements/">Acknowledgements</a></h2>
-            <p>
-              To learn about the people and organizations who contribute to the development of the APG, read the <a href="acknowledgements/">Acknowledgements</a>.
-            </p>
+          <p>
+            To learn about the people and organizations who contribute to the development of the APG, read the <a href="acknowledgements/">Acknowledgements</a>.
+          </p>
         </li>
         <li>
           <h2><a href="change-history/">Change History</a></h2>
@@ -97,7 +97,7 @@ lang: en
         <li>
           <h2><a href="at-support-tables/">Assistive Technology Support Tables</a></h2>
           <p>
-            Pages that provide example implementations of APG patterns also, when available,  provide a summary of assistive technology support of the ARIA used in those examples.
+            Pages that provide example implementations of APG patterns also, when available, provide a summary of assistive technology support of the ARIA used in those examples.
             Learn how to interpret and use data in the
             <a href="at-support-tables/">Assistive Technology Support Tables</a>.
           </p>
@@ -107,7 +107,7 @@ lang: en
           <h2><a href="coverage-and-quality/">Coverage and Quality Report</a></h2>
           <p>
             Objectives of the APG Task Force include providing guidance or examples for all ARIA attributes and doing so with code that implements practices documented in the APG code guide.
-            As the APG is revised, the build process updates our view of Progress toward these objectives in the
+            As the APG is revised, the build process updates our view of progress toward these objectives in the
             <a href="coverage-and-quality/">Coverage and Quality Report</a>.
           </p>
         </li>
