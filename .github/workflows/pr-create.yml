@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Get current job and log url
-        uses: Tiryoh/gha-jobid-action@v0
+        uses: Tiryoh/gha-jobid-action@v1
         id: jobs
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -45,25 +45,29 @@ jobs:
           ruby-version: 3.3
 
       - name: Update git submodules
-        if: github.event.inputs.fork_path == 'false'
         run: |
           git submodule update --recursive --remote
           cd _external/aria-practices
+          if [ -n "${{ github.event.inputs.fork_path }}" ] && [ "${{ github.event.inputs.fork_path }}" != 'false' ]; then
+            echo "Found fork: ${{ github.event.inputs.fork_path }}"
+            git remote add fork https://github.com/${{ github.event.inputs.fork_path }}.git
+            git fetch fork
+          fi
           git checkout ${{ github.event.inputs.apg_sha }}
 
-      - name: Update git submodules from fork
-        if: github.event.inputs.fork_path != 'false'
-        run: |
-          git submodule update --recursive --remote
-          cd _external/aria-practices
-          git remote add fork https://github.com/${{ github.event.inputs.fork_path }}.git
-          git fetch fork
-          git checkout ${{ github.event.inputs.apg_sha }}
-
-      - name: Switch to and create/update branch
+      - name: Switch to and create or update branch
         run: |
           # switch to branch if exists or create branch
           git switch apg/${{ github.event.inputs.apg_branch }} 2>/dev/null || git switch -c apg/${{ github.event.inputs.apg_branch }}
+
+      - name: Force rebase the switched branch onto main
+        run: |
+          git config --global user.name "w3cgruntbot"
+          git config --global user.email "w3cgruntbot@users.noreply.github.com"
+          git fetch origin main
+          git rebase --force-rebase origin/main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update site files
         id: update_site_files
@@ -76,17 +80,21 @@ jobs:
 
       - name: Commit changed files and submodule updates
         if: steps.update_site_files.outcome == 'success'
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Commit changed files and submodule updates
+          commit_user_name: w3cgruntbot
+          commit_user_email: w3cgruntbot@users.noreply.github.com
+          commit_author: w3cgruntbot <w3cgruntbot@users.noreply.github.com>
+          commit_message: "chore: Update branch with latest `${{ github.event.inputs.apg_branch }}` changes and submodule updates"
           branch: apg/${{ github.event.inputs.apg_branch }}
           push_options: '--force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create pull request
+      - name: Create or update pull request
         working-directory: ./
         run: |
+          set -e
           npm install -C scripts/create-pr
           node ./scripts/create-pr
         env:

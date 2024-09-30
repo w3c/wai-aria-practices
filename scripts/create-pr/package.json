@@ -1,5 +1,13 @@
 {
+  "type": "module",
+  "scripts": {
+    "lint": "npx prettier --single-quote --tab-width 2 --arrow-parens avoid --check .",
+    "lint:fix": "npx prettier --single-quote --tab-width 2 --arrow-parens avoid --write ."
+  },
   "dependencies": {
-    "@octokit/rest": "^18.12.0"
+    "@octokit/rest": "^21.0.2"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
