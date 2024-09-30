@@ -1,4 +1,4 @@
-const { Octokit } = require('@octokit/rest');
+import { Octokit } from '@octokit/rest';
 
 // octokit should be authenticated with GITHUB_TOKEN from GA
 const octokit = new Octokit({
