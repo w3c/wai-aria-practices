@@ -17,7 +17,7 @@ on:
         required: false
 
 jobs:
-  create-pr:
+  pr-create:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +26,7 @@ jobs:
         id: jobs
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          job_name: create-pr
+          job_name: pr-create
 
       - uses: actions/checkout@v4
         with:
@@ -95,8 +95,8 @@ jobs:
         working-directory: ./
         run: |
           set -e
-          npm install -C scripts/create-pr
-          node ./scripts/create-pr
+          npm install -C scripts/pr-create
+          node ./scripts/pr-create
         env:
           GH_TOKEN: ${{ secrets.W3CGRUNTBOT_TOKEN }}
           APG_SHA: ${{ github.event.inputs.apg_sha }}
