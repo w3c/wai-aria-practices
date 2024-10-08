@@ -89,7 +89,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <ol>
             <li>Focus stays on the triggering element while the tooltip is displayed.</li>
             <li>If the tooltip is invoked when the trigger element receives focus, then it is dismissed when it no longer has focus (onBlur).</li>
-            <li>If the tooltip is invoked when a pointing cursor moves over the trigger element, then it is dismissed when the cursor is neither over the trigger nor the tooltip.</li>
+            <li>If the tooltip is invoked when a pointing cursor moves over the trigger element, then it remains open as long as the cursor is over the trigger or the tooltip.</li>
           </ol>
         </div>
       </section>
