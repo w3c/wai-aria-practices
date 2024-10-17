@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: September 12, 2024</p>
+    <p>Page last updated: October 16, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -2696,6 +2696,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 </div>
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+  data-skipto="colorTheme:aria; highlightTarget: smooth; displayOption:popup; containerElement:div"
 ></script>
 

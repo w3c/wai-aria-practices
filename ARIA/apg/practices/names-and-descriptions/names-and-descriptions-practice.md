@@ -1842,6 +1842,6 @@ subscribe to our newsletter
 </div>
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
-  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+  data-skipto="colorTheme:aria; highlightTarget: smooth; displayOption:popup; containerElement:div"
 ></script>
 
