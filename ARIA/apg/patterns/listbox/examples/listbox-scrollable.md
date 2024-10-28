@@ -116,7 +116,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <div>
               <span id="ss_elem" class="listbox-label">Transuranium elements:</span>
               <ul id="ss_elem_list" tabindex="0" role="listbox" aria-labelledby="ss_elem">
-                <li id="ss_elem_Np" role="option">
+                <li id="ss_elem_None" role="option">
                   <span class="checkmark" aria-hidden="true"></span>
                   None
                 </li>
