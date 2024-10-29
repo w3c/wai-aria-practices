@@ -9,12 +9,33 @@ const wrapTablesWithResponsiveDiv = require("./wrapTablesWithResponsiveDiv");
 const removeConflictingCss = require("./removeConflictingCss");
 const getExampleLastModifiedDate = require("./getExampleLastModifiedDate");
 
-const loadNotice = async () => {
-  const relativePath = "content/shared/templates/example-usage-warning.html";
-  const templateSourcePath = path.resolve(sourceRoot, relativePath);
-  const noticeContent = await fs.readFile(templateSourcePath, {
-    encoding: "utf8",
-  });
+const loadNoticeCommon = async ({ isExperimental }) => {
+  let relativePath;
+  if (isExperimental) {
+    // Depends on https://github.com/w3c/aria-practices/pull/2977 being merged
+    relativePath =
+      "content/shared/templates/experimental-example-usage-warning.html";
+  } else {
+    relativePath = "content/shared/templates/example-usage-warning.html";
+  }
+
+  let templateSourcePath = path.resolve(sourceRoot, relativePath);
+
+  let noticeContent;
+  try {
+    noticeContent = await fs.readFile(templateSourcePath, {
+      encoding: "utf8",
+    });
+  } catch (e) {
+    console.warn(`${e.message}\nReverting to using default example-usage-warning.html ...\n`);
+
+    // Could happen if experimental-example-usage-warning.html doesn't exist
+    relativePath = "content/shared/templates/example-usage-warning.html";
+    templateSourcePath = path.resolve(sourceRoot, relativePath);
+    noticeContent = await fs.readFile(templateSourcePath, {
+      encoding: "utf8",
+    });
+  }
 
   return async (sourcePath) => {
     const html = parseHtml(noticeContent);
@@ -28,7 +49,8 @@ const loadNotice = async () => {
   };
 };
 
-const loadedNotice = loadNotice();
+const loadedNotice = loadNoticeCommon({ isExperimental: false });
+const loadedExperimentalNotice = loadNoticeCommon({ isExperimental: true });
 
 const transformExample = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
@@ -46,7 +68,16 @@ const transformExample = async (sourcePath, sourceContents) => {
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
-  const getNotice = await loadedNotice;
+  const isExperimental =
+    html.querySelector("main")?.getAttribute("data-content-phase") ===
+    "experimental";
+
+  let getNotice;
+  if (isExperimental) {
+    getNotice = await loadedExperimentalNotice;
+  } else {
+    getNotice = await loadedNotice;
+  }
   const notice = await getNotice(sourcePath);
   html.querySelector("body").insertAdjacentHTML("afterbegin", notice);
 

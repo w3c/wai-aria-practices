@@ -83,7 +83,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>Keyboard Interaction</h2>
         <ul>
           <li><kbd>Enter</kbd>: Executes the link and moves focus to the link target.</li>
-          <li><kbd>Shift + F10</kbd> (Optional): Opens a context menu for the link.</li>
+          <li><kbd>Shift</kbd> + <kbd>F10</kbd> (Optional): Opens a context menu for the link.</li>
         </ul>
       </section>
 

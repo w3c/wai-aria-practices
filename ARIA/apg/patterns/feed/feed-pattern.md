@@ -108,7 +108,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <img alt src="../../../../content-images/wai-aria-practices/images/pattern-feed.svg">
         <h2>Example</h2>
         <p>
-          <a href="examples/feed/">Example Implementation of Feed Pattern</a>
+          <a href="examples/feed/">Infinite Scrolling Feed Example</a>
         </p>
       </section>
 
@@ -122,8 +122,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul>
           <li><kbd>Page Down</kbd>: Move focus to next article.</li>
           <li><kbd>Page Up</kbd>: Move focus to previous article.</li>
-          <li><kbd>Control + End</kbd>: Move focus to the first focusable element after the feed.</li>
-          <li><kbd>Control + Home</kbd>: Move focus to the first focusable element before the feed.</li>
+          <li><kbd>Control</kbd> + <kbd>End</kbd>: Move focus to the first focusable element after the feed.</li>
+          <li><kbd>Control</kbd> + <kbd>Home</kbd>: Move focus to the first focusable element before the feed.</li>
         </ul>
         <div class="note">
           <h3>Note</h3>
@@ -139,8 +139,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   Users move focus into the nested feed from the content of the containing article with <kbd>Tab</kbd>.
                   This may be slow if the article contains a significant number of links, buttons, or other widgets.
                 </li>
-                <li>Provide a key for moving focus from the elements in the containing article to the first item in the nested feed, e.g., <kbd>Alt + Page Down</kbd>.</li>
-                <li>To continue reading the outer feed, <kbd>Control + End</kbd> moves focus to the next article in the outer feed.</li>
+                <li>Provide a key for moving focus from the elements in the containing article to the first item in the nested feed, e.g., <kbd>Alt</kbd> + <kbd>Page Down</kbd>.</li>
+                <li>To continue reading the outer feed, <kbd>Control</kbd> + <kbd>End</kbd> moves focus to the next article in the outer feed.</li>
               </ul>
             </li>
             <li>In the rare circumstance that a feed article contains a widget that uses the above suggested keys, the feed navigation key will operate the contained widget, and the user needs to move focus to an element that does not utilize the feed navigation keys in order to navigate the feed.</li>
