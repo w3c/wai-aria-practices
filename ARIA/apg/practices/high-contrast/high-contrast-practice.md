@@ -90,8 +90,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <div>
       
       
-      <p>Editor's note: After content is complete and near ready for merge, add a heading and abstract to practices.html</p>
-
       <section id="introduction">
         <h2>Introduction</h2>
         <p>
