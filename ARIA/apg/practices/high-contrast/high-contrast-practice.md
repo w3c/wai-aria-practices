@@ -133,7 +133,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th>Invert Colors</th>
               <td>
                 <ul>
-                  <Li>macOS</Li>
+                  <li>macOS</li>
                   <li>Windows</li>
                   <li>iOS</li>
                   <li>Android</li>
@@ -162,7 +162,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th>Increase contrast</th>
               <td>
                 <ul>
-                  <Li>macOS</Li>
+                  <li>macOS</li>
                   <li>Windows</li>
                   <li>iOS</li>
                   <li>Android</li>
@@ -187,7 +187,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </th>
               <td>
                 <ul>
-                  <Li>macOS</Li>
+                  <li>macOS</li>
                   <li>Windows</li>
                   <li>iOS</li>
                   <li>Android</li>
