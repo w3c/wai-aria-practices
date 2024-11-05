@@ -33,6 +33,14 @@ lang: en
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
 <style type="text/css">
+  table.data caption {
+    margin: 0;
+    padding: 0;
+    color: #005a9c;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.1em;
+  }
   table.data img {
     border: 1px solid gray;
   }
@@ -270,7 +278,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
        <h3 id="prefers-contrast-example">Increase Contrast Example</h3>
 
-        <p>The example shows how the color contrast was increased from 4.57 to 7 when the <code>prefers-contrast: more</code> is set.  The example simulates the change on colors when the increased option switch is set to "on".  If you enable operating system "increased contrast" feature the example will use be rendered in any state with the increased contrast values.</p>
+        <p>The example shows how the color contrast was increased from 12.8 to 18.1 for text and 4.6 to 12.2 for border and fill for the button when the <code>prefers-contrast: more</code> is set.  The example simulates the change on colors when the increased option switch is set to "on".  If you enable operating system "increased contrast" feature the example will use be rendered in any state with the increased contrast values.</p>
 
         <div class="example">
 
