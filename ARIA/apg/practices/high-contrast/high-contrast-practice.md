@@ -192,7 +192,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr>
               <th>
-                System Color Scheme<br>
+                Color Scheme<br>
                 (AKA Light Mode and Dark Mode)
               </th>
               <td>
@@ -432,11 +432,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section id="color-scheme">
-        <h2>System Color Scheme (Light or Dark)</h2>
+        <h2>Color Scheme (Light or Dark)</h2>
 
         <p>The light and dark color are not designed specifically for accessibility, but there are many people with visual impairments who prefer support for the dark color scheme.   Both the light and dark color scheme need to meet at least the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 1.4.3: Contrast (Minimum)</a> requirements to be beneficial to people with disabilities.  </p>
 
-       <h3 id="color-scheme-switch">System Color Scheme Example: Switch</h3>
+       <h3 id="color-scheme-switch">Color Scheme Example: Switch</h3>
 
         <p>The example shows how colors can change when users switch color schemes.  The example simulates the change of colors when the dark color theme is enabled when the switch is set to "on".  If you enable operating system "dark scheme" feature the example will be rendered in any state with the dark color scheme.</p>
 
@@ -588,9 +588,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </pre>
 
 
-        <h3 id="color-scheme-wikipedia">System Color Scheme Example: Wikipedia Page</h3>
+        <h3 id="color-scheme-wikipedia">Color Scheme Example: Wikipedia Page</h3>
 
-        <p>The following example illustrates how Wikipedia supports system color scheme media query.  The example includes showing the "Appearance" sidebar allowing the user to choose the light or dark scheme and other rendering options for text size and column width.</p>
+        <p>The following example illustrates how Wikipedia supports color scheme media query.  The example includes showing the "Appearance" sidebar allowing the user to choose the light or dark scheme and other rendering options for text size and column width.</p>
 
         <div class="table-wrap"><table aria-labelledby="color-scheme-example-screenshots" class="data">
           <thead>
