@@ -783,14 +783,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </thead>
           <tbody>
             <tr>
-              <th>Resizing and Screen Size</th>
-              <td>Distorted or small</td>
-              <td>Smooth scaling</td>
+              <th>Scale to Screen Size</th>
+              <td>No</td>
+              <td>Yes</td>
             </tr>
             <tr>
-              <th>Adapt to High Contrast</th>
-              <td>Colors are fixed</td>
-              <td>Responsive to media queries</td>
+              <th>Smooth Zooming</th>
+              <td>Distortion</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <th>Responsive Media Queries</th>
+              <td>No</td>
+              <td>Yes</td>
             </tr>
           </tbody>
         </table></div>
