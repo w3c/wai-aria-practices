@@ -522,35 +522,35 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #333333"
+                     style="background-color: #333"
                      aria-label="Accent color is light gray">
                 </div>
-                <span class="color">#333333</span>
+                <span class="color">#333</span>
               </td>
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #ffffff"
+                     style="background-color: #fff"
                      aria-label="Color is black">
                 </div>
-                <span class="color">#ffffff</span>
+                <span class="color">#fff</span>
               </td>
               <td>12.6</td>
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #3366cc"
+                     style="background-color: #36c"
                      aria-label="Color is dark blue">
                 </div>
-                <span class="color">#3366cc</span>
+                <span class="color">#36c</span>
               </td>
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #ffffff"
+                     style="background-color: #fff"
                      aria-label="Color is white">
                 </div>
-                <span class="color">#ffffff</span>
+                <span class="color">#fff</span>
               </td>
               <td>5.36</td>
             </tr>
@@ -563,23 +563,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <code>
 @media (prefers-color-scheme: dark) {
   button.color-scheme[role="switch"] {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #333;
+    color: #fff;
   }
 
   button.color-scheme[role="switch"] .label {
-    color: #ffffff;
+    color: #fff;
   }
 
   button.color-scheme[role="switch"] svg rect {
-    fill: #3366cc;
-    stroke: #3366cc;
+    fill: #36c;
+    stroke: #36c;
   }
 
   button.color-scheme[role="switch"] svg circle.off,
   button.color-scheme[role="switch"] svg circle.on {
-    fill: #ffffff;
-    stroke: #ffffff;
+    fill: #fff;
+    stroke: #fff;
   }
 
   button.color-scheme[role="switch"]:focus,
@@ -712,9 +712,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></li>
         </ul>
 
-      </section>
-
-
         <h3><code>currentcolor</code> Keyword</h3>
 
         <p>The <code>currentcolor</code> keyword provides a means for components to use the color value of ancestors to set the color properties of an element.   When the user chooses a high contrast setting the browser changes the <code>color</code> and <code>background-color</code> values of text content.   The <code>currentcolor</code> value is set to the text color for use in setting the color of other properties including: <code>border</code> and <code>outline</code> on HTML elements, and <code>stroke</code> and <code>fill</code> properties on SVG elements.  Note: There is no equivalent value for using the background color, so when using this technique it is important for the background of the element to be transparent to allow the background color of the page to be visible. </p>
@@ -755,7 +752,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a></li>
           <li><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></li>
         </ul>
-      
+      </section>
 
       <section id="svg">
         <h2>SVG Graphics versus Bit-Mapped Images for Components</h2>
