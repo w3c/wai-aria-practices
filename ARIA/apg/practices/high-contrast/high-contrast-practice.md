@@ -302,7 +302,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         </div>
 
-        <div class="table-wrap"><table aria-labelledby="increase-contrast-colors" class="data">
+        <div class="table-wrap"><table class="data">
           <caption>Increase Contrast Example Color Changes</caption>
           <thead>
             <tr>
@@ -594,7 +594,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <p>The following example illustrates how Wikipedia supports color scheme media query.  The example includes showing the "Appearance" sidebar allowing the user to choose the light or dark scheme and other rendering options for text size and column width.</p>
 
-        <div class="table-wrap"><table aria-labelledby="color-scheme-example-screenshots" class="data">
+        <div class="table-wrap"><table class="data">
           <thead>
             <tr>
               <th>Media Query</th>
@@ -658,7 +658,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>The <code>buttontext</code> system color value was chosen so the interactive slider elements would match the colors of other standard form controls on the page.  The <code>canvas</code> system color was chosen for the labels to match other static text on the page.
         </p>
 
-        <div class="table-wrap"><table aria-labelledby="forced-colors-example-screenshots" class="data">
+        <div class="table-wrap"><table class="data">
           <caption>Rating Slider Example with Selected High Contrast User Settings</caption>
           <thead>
             <tr>
@@ -720,7 +720,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <p>The <a href="../../patterns/switch/examples/switch-button/">Button Switch Example</a> uses <code>currentcolor</code> value to style the SVG <code>rect</code> elements used as the switch container and to indicate the on and off states.  Current color applied to the <code>stroke</code> and <code>fill</code> properties of the <code>rect</code> elements.   The following table shows how the graphical rendering changes for some high contrast options. </p>
 
-        <div class="table-wrap"><table aria-labelledby="currentcolor-example-screenshots" class="data">
+        <div class="table-wrap"><table class="data">
           <caption>Button Switch Example with Selected High Contrast User Settings in Windows 11</caption>
           <thead>
             <tr>
@@ -769,7 +769,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <p>Note: Be sure to include <code>forced-color-adjust=auto</code> CSS property on SVG elements, due to inconsistencies in browsers setting the default value to <code>auto</code>.</p>
 
-        <div class="table-wrap"><table aria-labelledby="graphics-summary" class="data">
+        <div class="table-wrap"><table class="data">
           <caption>Summary of SVG vs. Bit-Mapped Features</caption>
           <thead>
             <tr>
