@@ -350,10 +350,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #ffffff"
+                     style="background-color: #fff"
                      aria-label="Color is white">
                 </div>
-                <span class="color">#ffffff</span>
+                <span class="color">#fff</span>
               </td>
               <td>4.6</td>
             </tr>
@@ -389,10 +389,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #ffffff"
+                     style="background-color: #fff"
                      aria-label="Color is white">
                 </div>
-                <span class="color">#ffffff</span>
+                <span class="color">#fff</span>
               </td>
               <td>12.2</td>
             </tr>
@@ -407,11 +407,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
     button[role="switch"] {
       background-color: #eeeeee;
-      color: #000000;
+      color: #000;
     }
 
     button[role="switch"] .label {
-      color: #000000;
+      color: #000;
     }
 
     button[role="switch"] svg rect {
@@ -422,7 +422,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     button[role="switch"] svg circle.off,
     button[role="switch"] svg circle.on {
       stroke: #061d3a;
-      fill: #ffffff;
+      fill: #fff;
     }
   }
           </code>
@@ -508,10 +508,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>
                  <div role="img"
                      class="sample"
-                     style="background-color: #ffffff"
+                     style="background-color: #fff"
                      aria-label="Color is white">
                 </div>
-                <span class="color">#ffffff</span>
+                <span class="color">#fff</span>
               </td>
               <td>4.6</td>
             </tr>
