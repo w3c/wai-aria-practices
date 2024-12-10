@@ -636,7 +636,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <h3 id="system-colors">System Colors</h3>
 
-        <p>The following table identifies the current system colors defined in <a href="https://www.w3.org/TR/css-color-4/#css-system-colors">CSS Color Module Level 4</a>.  System colors are supported in all major browsers, but the actual colors they render may vary between browsers and operating systems based on default and user theme and contrast settings.</p>
+        <p>The following table identifies the current system colors defined in <a href="https://www.w3.org/TR/css-color-4/#css-system-colors">CSS Color Module Level 4</a>.  System colors are supported in all major browsers, but the <strong>actual colors</strong> they render may vary between browsers and operating systems based on default and user theme and contrast settings.</p>
 
         <div class="table-wrap"><table aria-labelledby="system-colors" class="data">
           <thead>
