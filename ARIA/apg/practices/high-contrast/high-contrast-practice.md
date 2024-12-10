@@ -441,7 +441,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
        <h3 id="color-scheme-switch">Color Scheme Example: Switch</h3>
 
-        <p>The example shows how colors can change when users switch color schemes.  The example simulates the change of colors when the dark color theme is enabled when the switch is set to "on".  If you enable operating system "dark scheme" feature the example will be rendered in any state with the dark color scheme.</p>
+        <p>The example shows how colors can change when users switch color schemes.  The example simulates the change of colors when the dark color theme is enabled when the switch is set to "on".  If you enable the operating system’s "dark scheme" feature the example will be rendered with the dark color scheme.</p>
 
         <div class="example">
 
@@ -592,7 +592,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <h3 id="color-scheme-wikipedia">Color Scheme Example: Wikipedia Page</h3>
 
-        <p>The following example illustrates how Wikipedia supports color scheme media query.  The example includes showing the "Appearance" sidebar allowing the user to choose the light or dark scheme and other rendering options for text size and column width.</p>
+        <p>The following example illustrates how Wikipedia supports the color scheme media query.  The example includes showing the "Appearance" sidebar allowing the user to choose the light or dark scheme and other rendering options for text size and column width.</p>
 
         <div class="table-wrap"><table class="data">
           <thead>
