@@ -790,8 +790,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>Yes</td>
             </tr>
             <tr>
-              <th>Responsive Media Queries</th>
-              <td>No</td>
+              <th>Color Changes using Media Queries</th>
+              <td>Image substitution or CSS filters</td>
               <td>Yes</td>
             </tr>
           </tbody>
