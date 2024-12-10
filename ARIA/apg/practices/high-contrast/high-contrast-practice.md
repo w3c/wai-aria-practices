@@ -290,7 +290,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div class="example">
 
             <button type="button" role="switch" aria-checked="false" class="increase-contrast">
-              <span class="label">Increase Contrast</span>
+              <span class="label">Living Room Lights</span>
               <svg xmlns="http://www.w3.org/2000/svg" height="20" width="36">
                 <rect class="container" x="1" y="1" width="34" height="18" rx="9" ></rect>
                 <circle class="off" cx="11"  cy="10" r="8" ></circle>
@@ -446,7 +446,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div class="example">
 
             <button type="button" role="switch" aria-checked="false" class="color-scheme">
-              <span class="label">Dark Color Scheme</span>
+              <span class="label">Dining Room Lights</span>
               <svg xmlns="http://www.w3.org/2000/svg" height="20" width="36">
                 <rect class="container" x="1" y="1" width="34" height="18" rx="9" ></rect>
                 <circle class="off" cx="11"  cy="10" r="8" ></circle>
