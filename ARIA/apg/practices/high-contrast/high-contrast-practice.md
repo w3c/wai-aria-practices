@@ -246,7 +246,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           User agents do not provide a media query that can determine whether invert colors is enabled in the operating system.
         </p>
         <p>
-          To support invert colors effectively, insure content meets
+          To support invert colors effectively, ensure content meets
           <a href="https://www.w3.org/TR/WCAG22/#contrast-minimum">WCAG 1.4.3: Contrast (Minimum)</a>.
         </p>
         <p>
@@ -275,7 +275,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section id="prefers-contrast">
         <h2>Increase Contrast</h2>
-        <p>When the increase contrast setting is is enabled the <code>prefers-contrast</code> media query changes from <code>no-preference</code> to <code>more</code>.
+        <p>When the increase contrast setting is enabled the <code>prefers-contrast</code> media query changes from <code>no-preference</code> to <code>more</code>.
           The author <em>should</em> update the rendering of text content and components to meet
           <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">WCAG 1.4.6: Contrast (Enhanced)</a>
           requirement. 
@@ -285,7 +285,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
        <h3 id="prefers-contrast-example">Increase Contrast Example</h3>
 
-        <p>The example shows how the color contrast was increased from 12.8 to 18.1 for text and 4.6 to 12.2 for border and fill for the button when the <code>prefers-contrast: more</code> is set.  The example simulates the change on colors when the increased option switch is set to "on".  If you enable operating system "increased contrast" feature the example will use be rendered in any state with the increased contrast values.</p>
+        <p>The example shows how the color contrast increases from 12.8 to 18.1 for text and 4.6 to 12.2 for border and fill for the button when the <code>prefers-contrast: more</code> is set.  The example simulates the change to colors when the Increase Contrast option switch is set to "on".  If you enable operating system "increased contrast" feature the example will be rendered with the increased contrast values.</p>
 
         <div class="example">
 
