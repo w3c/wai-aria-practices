@@ -454,7 +454,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </p>
         <h3 id="color-scheme-switch">Color Scheme Example: Switch</h3>
         <p>
-          The below example shows how colors can change when users switch color schemes.  
+          The below example of a switch shows how colors can change when users switch color schemes.  
           Enable "dark mode" on your device, and the example will be rendered with the dark color scheme.
         </p>
         <div class="example">
