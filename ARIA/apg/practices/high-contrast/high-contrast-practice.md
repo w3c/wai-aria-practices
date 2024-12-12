@@ -276,7 +276,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="prefers-contrast">
         <h2>Increase Contrast</h2>
         <p>
-          When the increase contrast setting is enabled the <code>prefers-contrast</code> media query changes from <code>no-preference</code> to <code>more</code>.
+          Increase contrast is an operating system feature, typically available in accessibility settings, that enables users to specify a preference for contrast that is higher than default minimum.
+          When the increase contrast setting is enabled, the <code>prefers-contrast</code> media query changes from <code>no-preference</code> to <code>more</code>.
           To support the increase contrast setting, change  the rendering of text content and components to use a color scheme that meets or exceeds the requirements specified in
           <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">WCAG 1.4.6: Contrast (Enhanced)</a>.
         </p>
@@ -428,33 +429,45 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </pre>
 
         <h3>Testing Increase Contrast</h3>
-
-        <p>Turn on the increase contrast feature for major operating systems and verify text and components color contrast ratios meet at least <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">WCAG 1.4.6: Contrast (Enhanced)</a> requirement.</p>
+        <p>In  each operating system used by the target audience:</p>
+        <ol>
+          <li>Turn on the increase contrast feature, which is typically located  in accessibility settings.</li>
+          <li>
+            Verify that the color contrast ratios of text and components meets or exceeds the requirements specified by
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">WCAG 1.4.6: Contrast (Enhanced)</a>.
+          </li>
+        </ol>
 
       </section>
 
       <section id="color-scheme">
         <h2>Color Scheme (Light or Dark)</h2>
-
-        <p>The light and dark color are not designed specifically for accessibility, but there are many people with visual impairments who prefer support for the dark color scheme.   Both the light and dark color scheme need to meet at least the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 1.4.3: Contrast (Minimum)</a> requirements to be beneficial to people with disabilities.  </p>
-
-       <h3 id="color-scheme-switch">Color Scheme Example: Switch</h3>
-
-        <p>The example shows how colors can change when users switch color schemes.  When you enable your device's "dark scheme" feature the example will be rendered with the dark color scheme.</p>
-
+        <p>
+          The color scheme known as dark mode is used by Many people in dark settings, e.g. at night, because it can make content easier to read or be less disruptive to other people.
+          While such use cases were primary drivers of its development, dark mode also significantly improves accessibility for many people with visual impairments.
+        </p>
+        <p>
+          To support dark mode, develop styles for dark text on a light background and light text on a dark background and use a media query to apply the appropriate style.
+          The CSS media query <code>prefers-color-scheme</code> identifies the current color scheme by returning <code>light</code> or <code>dark</code>.
+          Ensure the text content and components of both color schemes meet or exceed the color contrast ratios specified by
+          <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 1.4.3: Contrast (Minimum)</a>.
+        </p>
+        <h3 id="color-scheme-switch">Color Scheme Example: Switch</h3>
+        <p>
+          The below example shows how colors can change when users switch color schemes.  
+          Enable "dark mode" on your device, and the example will be rendered with the dark color scheme.
+        </p>
         <div class="example">
-
-            <button type="button" role="switch" aria-checked="false" class="color-scheme">
-              <span class="label">Dining Room Lights</span>
-              <svg xmlns="http://www.w3.org/2000/svg" height="20" width="36">
-                <rect class="container" x="1" y="1" width="34" height="18" rx="9" ></rect>
-                <circle class="off" cx="11"  cy="10" r="8" ></circle>
-                <circle class="on"  cx="25" cy="10" r="8" ></circle>
-              </svg>
-              <span class="on" aria-hidden="true">On</span>
-              <span class="off" aria-hidden="true">Off</span>
-            </button>
-
+          <button type="button" role="switch" aria-checked="false" class="color-scheme">
+            <span class="label">Dining Room Lights</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="36">
+              <rect class="container" x="1" y="1" width="34" height="18" rx="9" ></rect>
+              <circle class="off" cx="11"  cy="10" r="8" ></circle>
+              <circle class="on"  cx="25" cy="10" r="8" ></circle>
+            </svg>
+            <span class="on" aria-hidden="true">On</span>
+            <span class="off" aria-hidden="true">Off</span>
+          </button>
         </div>
 
         <div class="table-wrap"><table class="data">
@@ -621,12 +634,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </table></div>
 
         <h3>Testing Dark Color Scheme</h3>
-
-        <p>Turn on the dark color theme feature in major operating systems and verify text and components satisfy the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">WCAG 1.4.2: Contrast (Minimum)</a> success criterion.</p>
-
-
+        <p>In  each operating system used by the target audience:</p>
+        <ol>
+          <li>Turn on the dark color theme.</li>
+          <li>
+            Verify contrast for text and components meet or exceed the contrast ratios specified by
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">WCAG 1.4.2: Contrast (Minimum)</a>.
+          </li>
+        </ol>
       </section>
-
 
       <section id="forced-colors">
         <h2>Contrast Themes (Forced Colors)</h2>
