@@ -82,7 +82,7 @@ jobs:
             git add _external/aria-practices
 
             # Continue the rebase
-            git rebase --continue || true
+            GIT_EDITOR=true git rebase --continue || true
 
             # Resolve conflicts for all other conflicting files automatically using 'theirs' from project root
             git diff --name-only --diff-filter=U | while read -r file; do
@@ -91,7 +91,7 @@ jobs:
             done
 
             # Continue the rebase
-            git rebase --continue || true
+            GIT_EDITOR=true git rebase --continue || true
           else
             echo "No submodule conflicts detected or no rebase in progress."
           fi
