@@ -66,6 +66,35 @@ jobs:
           git config --global user.email "w3cgruntbot@users.noreply.github.com"
           git fetch origin main
           git rebase --force-rebase origin/main
+
+          # Handle cases where the aria-practices submodule has conflicts to be handled;
+          # _external/data shouldn't have conflicting changes
+          if [ -d "_external/aria-practices" ] && { [ -f ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]; }; then
+            echo "Handling submodule conflicts..."
+            cd _external/aria-practices
+
+            # Resolve the conflict
+            git fetch origin
+            git merge origin/main
+
+            # Add resolved submodule from project root
+            cd -
+            git add _external/aria-practices
+
+            # Continue the rebase
+            git rebase --continue
+
+            # Resolve conflicts for all other conflicting files automatically using 'theirs' from project root
+            git diff --name-only --diff-filter=U | while read -r file; do
+              git checkout --theirs "$file"
+              git add "$file"
+            done
+
+            # Continue the rebase
+            git rebase --continue
+          else
+            echo "No submodule conflicts detected or no rebase in progress."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -85,7 +114,7 @@ jobs:
           commit_user_name: w3cgruntbot
           commit_user_email: w3cgruntbot@users.noreply.github.com
           commit_author: w3cgruntbot <w3cgruntbot@users.noreply.github.com>
-          commit_message: "chore: Update branch with latest `${{ github.event.inputs.apg_branch }}` changes and submodule updates"
+          commit_message: 'chore: Update branch with latest `${{ github.event.inputs.apg_branch }}` changes and submodule updates'
           branch: apg/${{ github.event.inputs.apg_branch }}
           push_options: '--force'
         env:
