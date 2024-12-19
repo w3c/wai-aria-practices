@@ -91,7 +91,7 @@ jobs:
             done
 
             # Continue the rebase
-            git rebase --continue
+            git rebase --continue || true # Suppress the error with true if nothing additional
           else
             echo "No submodule conflicts detected or no rebase in progress."
           fi
