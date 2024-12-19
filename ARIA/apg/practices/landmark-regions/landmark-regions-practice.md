@@ -125,12 +125,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
               <td><code>region</code> when it has an accessible name using <code>aria-labelledby</code> or <code>aria-label</code></td>
             </tr>
-
-            <tr>
-              <td><code>search</code></td>
-
-              <td><code>search</code></td>
-            </tr>
           </tbody>
         </table></div>
       </section>
@@ -430,7 +424,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
             <li>If a page includes more than one <code>region</code> landmark, each should have a unique label (see <a href="#aria_lh_step3">Step 3</a> above).</li>
 
-            <li>The <code>region</code> landmark can be used identify content that named landmarks do not appropriately describe.</li>
+            <li>The <code>region</code> landmark can be used to identify content that named landmarks do not appropriately describe.</li>
           </ul>
 
           <section>
@@ -463,12 +457,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
           <section>
             <h4>HTML Technique</h4>
-
-            <p>Use the HTML <code>search</code> element to define a <code>search</code> landmark.</p>
+            <p>There is no HTML element that defines a <code>search</code> landmark.</p>
 
             <h4>ARIA Technique</h4>
 
-            <p>If the HTML <code>search</code> element technique is not being used, use a <code>role=&quot;search&quot;</code> attribute to define a <code>search</code> landmark.</p>
+            <p>The <code>role=&quot;search&quot;</code> attribute defines a <code>search</code> landmark.</p>
           </section>
 
           <section>
@@ -481,5 +474,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </div>
   
 </div>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+></script>
 

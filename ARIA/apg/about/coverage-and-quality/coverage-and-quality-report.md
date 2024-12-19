@@ -26,6 +26,7 @@ lang: en
 <script src="../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+
 <style>
   .sr-only {
     position: absolute;
@@ -68,6 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
+    <p>Page last updated: September 12, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -103,9 +105,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </p>
       <ul>
         <li><a href="#csv_files">CSV Files of Role, Properties and States Coverage</a></li>
-        <li><a href="#roles_with_no_examples">Roles with no Guidance or Examples (<span class="roles_with_no_examples_count">29</span>)</a></li>
+        <li><a href="#roles_with_no_examples">Roles with no Guidance or Examples (<span class="roles_with_no_examples_count">28</span>)</a></li>
         <li><a href="#roles_with_one_example">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">13</span>)</a></li>
-        <li><a href="#roles_with_more_than_one_example">Roles with More than One Guidance or Example  (<span class="roles_with_more_than_one_examples_count">36</span>)</a></li>
+        <li><a href="#roles_with_more_than_one_example">Roles with More than One Guidance or Example  (<span class="roles_with_more_than_one_examples_count">37</span>)</a></li>
         <li><a href="#props_with_no_examples">Properties and States with no Examples (<span class="props_with_no_examples_count">12</span>)</a></li>
         <li><a href="#props_with_one_example">Properties and States with One Examples (<span class="props_with_one_example_count">8</span>)</a></li>
         <li><a href="#props_with_more_than_one_example">Properties and States with More than One Example  (<span class="props_with_more_than_one_examples_count">28</span>)</a></li>
@@ -122,7 +124,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="roles_with_no_examples">
-      <h2 id="roles_with_no_examples_label">Roles with No Guidance or Examples (<span class="roles_with_no_examples_count">29</span>)</h2>
+      <h2 id="roles_with_no_examples_label">Roles with No Guidance or Examples (<span class="roles_with_no_examples_count">28</span>)</h2>
       <ul id="roles_with_no_examples_ul">
             <li><code>application</code></li>
             <li><code>caption</code></li>
@@ -143,7 +145,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <li><code>log</code></li>
             <li><code>marquee</code></li>
             <li><code>math</code></li>
-            <li><code>note</code></li>
             <li><code>paragraph</code></li>
             <li><code>progressbar</code></li>
             <li><code>rowheader</code></li>
@@ -176,7 +177,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><code>article</code></td>
             <td></td>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -196,7 +197,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>feed</code></td>
             <td><a href="../../patterns/feed/">Feed Pattern</a>
 </td>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -255,7 +256,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="roles_with_more_than_one_example">
-      <h2 id="roles_with_more_than_one_label">Roles with More than One Guidance or Example (<span class="roles_with_more_than_one_examples_count">36</span>)</h2>
+      <h2 id="roles_with_more_than_one_label">Roles with More than One Guidance or Example (<span class="roles_with_more_than_one_examples_count">37</span>)</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="roles_with_more_than_one_label" class="data attributes">
         <thead>
@@ -533,6 +534,50 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 </td>
           </tr>
           <tr>
+            <td><code>note</code></td>
+            <td><ul>
+                <li><a href="../../patterns/button/#about">Note</a></li>
+                <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/combobox/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/dialog-modal/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/dialog-modal/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/feed/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/grid/#dataGrid">Note</a></li>
+                <li><a href="../../patterns/grid/#dataGrid">Note</a></li>
+                <li><a href="../../patterns/grid/#layoutGrid">Note</a></li>
+                <li><a href="../../patterns/grid/#layoutGrid">Note</a></li>
+                <li><a href="../../patterns/grid/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/link/#about">note</a></li>
+                <li><a href="../../patterns/listbox/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/listbox/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/menubar/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/menubar/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/meter/#about">Note</a></li>
+                <li><a href="../../patterns/radio/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/radio/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/slider/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/spinbutton/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/table/#about">Note</a></li>
+                <li><a href="../../patterns/table/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/tabs/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/toolbar/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/tooltip/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/treegrid/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/treegrid/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/treegrid/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/treeview/#keyboard_interaction">Note</a></li>
+                <li><a href="../../patterns/treeview/#roles_states_properties">Note</a></li>
+                <li><a href="../../patterns/windowsplitter/#keyboard_interaction">Note</a></li>
+                <li><a href="../../practices/keyboard-interface/#kbd_shortcuts_assigning">Note</a></li>
+            </ul>
+</td>
+            <td></td>
+          </tr>
+          <tr>
             <td><code>option</code></td>
             <td></td>
             <td><ul>
@@ -654,6 +699,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 </td>
             <td><ul>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
@@ -674,6 +720,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td><ul>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
@@ -684,6 +731,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td><ul>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
@@ -766,7 +814,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><code>aria-busy</code></td>
             <td></td>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -900,6 +948,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
@@ -927,7 +976,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/table/examples/table/">Table</a></li>
             </ul>
 </td>
@@ -992,6 +1041,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td><ul>
                 <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1046,7 +1098,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
@@ -1067,6 +1119,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
                 <li><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
@@ -1117,7 +1170,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-posinset</code></td>
             <td></td>
             <td><ul>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
             </ul>
@@ -1178,6 +1231,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
@@ -1189,7 +1243,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-setsize</code></td>
             <td></td>
             <td><ul>
-                <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
             </ul>
@@ -1276,35 +1330,40 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">60</td>
+            <td id="example_summary_total">61</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
-            <td id="example_summary_hc">31</td>
+            <td id="example_summary_hc">32</td>
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">33</td>
+            <td id="example_summary_svg">35</td>
           </tr>
           <tr>
-            <th scope="row">Uses <code>forced-color-adjust</code> on SVG</th>
-            <td id="example_summary_force_color">13</td>
+            <th scope="row">Uses <code>forced-colors</code> media query</th>
+            <td id="example_summary_force_colors">2</td>
           </tr>
+          <tr>
+            <th scope="row">Uses <code>currentColor</code> value</th>
+            <td id="example_summary_current_color">28</td>
+          </tr>
+
           <tr>
             <th scope="row">Uses <code>event.KeyCode</code></th>
-            <td id="example_summary_keycode">20</td>
+            <td id="example_summary_keycode">16</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>event.which</code></th>
-            <td id="example_summary_which">12</td>
+            <td id="example_summary_which">8</td>
           </tr>
           <tr>
             <th scope="row">Use Class</th>
-            <td id="example_summary_class">31</td>
+            <td id="example_summary_class">37</td>
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
-            <td id="example_summary_prototype">23</td>
+            <td id="example_summary_prototype">22</td>
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
@@ -1312,7 +1371,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
-            <td id="example_summary_pointer">59</td>
+            <td id="example_summary_pointer">11</td>
           </tr>
         </tbody>
       </table></div>
@@ -1342,11 +1401,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
+            <td>5</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-haspopup,aria-hidden,aria-label,aria-required,aria-roledescription</td>
+            <td>aria-hidden,aria-required</td>
           </tr>
           <tr>
             <td><a href="../../patterns/alert/examples/alert/">Alert</a></td>
@@ -1355,11 +1414,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>7</td>
+            <td>1</td>
+            <td>0</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription,aria-live,aria-atomic</td>
+            <td>aria-live,aria-atomic</td>
           </tr>
           <tr>
             <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
@@ -1368,11 +1427,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex_alertdialog</td>
-            <td>5</td>
             <td>2</td>
-            <td>11</td>
+            <td>2</td>
+            <td>5</td>
             <td>4</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-hidden,aria-label,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/breadcrumb/examples/breadcrumb/">Breadcrumb</a></td>
@@ -1381,11 +1440,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
+            <td>1</td>
             <td>0</td>
-            <td>8</td>
             <td>2</td>
-            <td>heading,menu,menuitem,navigation,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td>navigation</td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
@@ -1394,11 +1453,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>example</td>
-            <td>4</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button/">Button</a></td>
@@ -1407,11 +1466,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>example</td>
-            <td>4</td>
             <td>1</td>
-            <td>9</td>
             <td>1</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-hidden,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td>1</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
@@ -1420,11 +1479,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>8</td>
+            <td>2</td>
             <td>4</td>
-            <td>heading,menu,menuitem,aria-busy,aria-expanded,aria-haspopup,aria-labelledby</td>
+            <td>4</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a></td>
@@ -1433,11 +1492,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>7</td>
             <td>4</td>
-            <td>9</td>
+            <td>4</td>
             <td>5</td>
-            <td>heading,menu,menuitem,aria-busy,aria-expanded,aria-haspopup,aria-labelledby</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a></td>
@@ -1446,11 +1505,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>8</td>
+            <td>1</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a></td>
@@ -1459,11 +1518,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>8</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>2</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a></td>
@@ -1472,11 +1531,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>11</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,menu,menuitem,aria-busy,aria-haspopup,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a></td>
@@ -1485,11 +1544,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>11</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,menu,menuitem,aria-busy,aria-haspopup,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a></td>
@@ -1498,11 +1557,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>11</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,menu,menuitem,aria-busy,aria-haspopup,aria-hidden,aria-labelledby,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
@@ -1511,11 +1570,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>7</td>
+            <td>4</td>
             <td>3</td>
-            <td>13</td>
+            <td>11</td>
             <td>10</td>
-            <td>gridcell,heading,menu,menuitem,aria-busy,aria-hidden,aria-roledescription</td>
+            <td>gridcell,aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></td>
@@ -1524,11 +1583,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>5</td>
+            <td>2</td>
             <td>3</td>
-            <td>9</td>
+            <td>6</td>
             <td>5</td>
-            <td>heading,menu,menuitem,option,aria-busy,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>option,aria-haspopup</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></td>
@@ -1537,24 +1596,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>5</td>
+            <td>2</td>
             <td>4</td>
-            <td>10</td>
             <td>7</td>
-            <td>heading,menu,menuitem,row,gridcell,aria-busy,aria-label,aria-roledescription</td>
+            <td>7</td>
+            <td>row,gridcell</td>
           </tr>
           <tr>
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
-            <td>prototype</td>
+            <td>class</td>
             <td></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>example</td>
-            <td>6</td>
+            <td>3</td>
             <td>2</td>
-            <td>11</td>
             <td>6</td>
-            <td>gridcell,heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-roledescription</td>
+            <td>6</td>
+            <td>gridcell</td>
           </tr>
           <tr>
             <td><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></td>
@@ -1563,11 +1622,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
@@ -1576,11 +1635,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>0</td>
-            <td>7</td>
+            <td>0</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a></td>
@@ -1589,11 +1648,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>0</td>
-            <td>7</td>
+            <td>0</td>
+            <td>3</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></td>
@@ -1602,11 +1661,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>7</td>
+            <td>4</td>
             <td>0</td>
-            <td>8</td>
+            <td>5</td>
             <td>3</td>
-            <td>banner,contentinfo,heading,menu,menuitem,navigation,region,aria-busy,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>banner,contentinfo,navigation,region,aria-label,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a></td>
@@ -1615,24 +1674,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
-            <td>0</td>
-            <td>8</td>
-            <td>3</td>
-            <td>heading,menu,menuitem,navigation,region,aria-busy,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>7</td>
-            <td>5</td>
-            <td>heading,menu,menuitem,feed,article,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription,aria-describedby,aria-posinset,aria-setsize</td>
+            <td>0</td>
+            <td>4</td>
+            <td>3</td>
+            <td>navigation,region,aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
@@ -1648,17 +1694,30 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>aria-busy,aria-describedby,aria-label,aria-labelledby,aria-posinset,aria-setsize</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>ex1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>5</td>
+            <td>feed,article,aria-labelledby,aria-busy,aria-describedby,aria-posinset,aria-setsize</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
             <td>prototype</td>
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>3</td>
             <td>0</td>
-            <td>10</td>
             <td>0</td>
-            <td>heading,menu,menuitem,aria-busy,aria-colindex,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription,aria-rowindex,aria-sort</td>
+            <td>5</td>
+            <td>0</td>
+            <td>aria-colindex,aria-controls,aria-haspopup,aria-rowindex,aria-sort</td>
           </tr>
           <tr>
             <td><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></td>
@@ -1667,11 +1726,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>5</td>
+            <td>4</td>
             <td>1</td>
-            <td>12</td>
+            <td>8</td>
             <td>6</td>
-            <td>button,heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>button,menu,menuitem,aria-controls,aria-haspopup</td>
           </tr>
           <tr>
             <td><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></td>
@@ -1680,11 +1739,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>ex1</td>
-            <td>8</td>
+            <td>5</td>
             <td>3</td>
-            <td>13</td>
+            <td>9</td>
             <td>3</td>
-            <td>button,heading,menu,menuitem,region,aria-busy,aria-colindex,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-live,aria-relevant,aria-roledescription,aria-sort</td>
+            <td>button,region,aria-colindex,aria-haspopup,aria-label,aria-live,aria-relevant,aria-sort</td>
           </tr>
           <tr>
             <td><a href="../../patterns/link/examples/link/">Link</a></td>
@@ -1693,63 +1752,63 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>not found</td>
-            <td>4</td>
             <td>1</td>
-            <td>7</td>
             <td>1</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-labelledby,aria-roledescription</td>
+            <td>1</td>
+            <td>1</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>class, prototype</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex</td>
-            <td>5</td>
             <td>2</td>
-            <td>12</td>
+            <td>2</td>
+            <td>8</td>
             <td>5</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-disabled,aria-keyshortcuts,aria-label,aria-multiselectable,aria-roledescription</td>
+            <td>aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>class, prototype</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex</td>
+            <td>4</td>
+            <td>3</td>
             <td>7</td>
-            <td>3</td>
-            <td>12</td>
-            <td>3</td>
-            <td>heading,menu,menuitem,presentation,aria-busy,aria-controls,aria-disabled,aria-expanded,aria-haspopup,aria-keyshortcuts,aria-label,aria-multiselectable,aria-roledescription</td>
+            <td>4</td>
+            <td>presentation,aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>class, prototype</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex1</td>
-            <td>6</td>
+            <td>3</td>
             <td>2</td>
-            <td>13</td>
-            <td>4</td>
-            <td>heading,menu,menuitem,toolbar,aria-busy,aria-controls,aria-disabled,aria-expanded,aria-haspopup,aria-keyshortcuts,aria-label,aria-live,aria-roledescription</td>
+            <td>9</td>
+            <td>5</td>
+            <td>toolbar,aria-disabled,aria-keyshortcuts,aria-label,aria-live</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
-            <td>prototype</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>class, prototype</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td>ex</td>
-            <td>5</td>
             <td>2</td>
-            <td>12</td>
-            <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-disabled,aria-expanded,aria-haspopup,aria-keyshortcuts,aria-label,aria-multiselectable,aria-roledescription</td>
+            <td>2</td>
+            <td>7</td>
+            <td>4</td>
+            <td>aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a></td>
@@ -1758,11 +1817,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>8</td>
+            <td>2</td>
             <td>5</td>
-            <td>heading,aria-busy,aria-label,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a></td>
@@ -1771,11 +1830,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>2</td>
-            <td>7</td>
+            <td>2</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-label,aria-roledescription</td>
+            <td>4</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a></td>
@@ -1784,11 +1843,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>3</td>
-            <td>7</td>
+            <td>3</td>
             <td>4</td>
-            <td>heading,aria-busy,aria-label,aria-roledescription</td>
+            <td>4</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
@@ -1797,11 +1856,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>9</td>
+            <td>8</td>
             <td>7</td>
-            <td>11</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,none,aria-busy,aria-controls,aria-labelledby,aria-orientation,aria-roledescription</td>
+            <td>none,aria-orientation</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a></td>
@@ -1810,11 +1869,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>10</td>
-            <td>8</td>
             <td>9</td>
+            <td>8</td>
+            <td>6</td>
             <td>5</td>
-            <td>heading,separator,aria-busy,aria-controls,aria-orientation,aria-roledescription</td>
+            <td>separator,aria-orientation</td>
           </tr>
           <tr>
             <td><a href="../../patterns/meter/examples/meter/">Meter</a></td>
@@ -1823,11 +1882,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>example</td>
-            <td>4</td>
             <td>1</td>
-            <td>11</td>
+            <td>1</td>
+            <td>5</td>
             <td>4</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-hidden,aria-label,aria-roledescription</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a></td>
@@ -1836,11 +1895,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>9</td>
+            <td>2</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></td>
@@ -1849,11 +1908,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>8</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-roledescription</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a></td>
@@ -1862,11 +1921,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>8</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>2</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a></td>
@@ -1875,11 +1934,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>11</td>
+            <td>2</td>
             <td>5</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-labelledby,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a></td>
@@ -1888,11 +1947,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>11</td>
+            <td>2</td>
             <td>5</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-rating/">Rating Slider</a></td>
@@ -1901,11 +1960,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>12</td>
+            <td>1</td>
             <td>6</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>6</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a></td>
@@ -1914,11 +1973,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>12</td>
+            <td>2</td>
             <td>6</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>6</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
@@ -1927,11 +1986,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>13</td>
+            <td>2</td>
             <td>7</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>7</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></td>
@@ -1940,11 +1999,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>example</td>
-            <td>5</td>
             <td>2</td>
-            <td>12</td>
+            <td>2</td>
             <td>7</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-roledescription</td>
+            <td>7</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a></td>
@@ -1953,11 +2012,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>5</td>
             <td>2</td>
-            <td>9</td>
+            <td>2</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a></td>
@@ -1966,11 +2025,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>8</td>
             <td>1</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>1</td>
+            <td>1</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/switch/examples/switch/">Switch</a></td>
@@ -1979,11 +2038,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>4</td>
             <td>1</td>
-            <td>9</td>
+            <td>1</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/table/examples/sortable-table/">Sortable Table</a></td>
@@ -1992,11 +2051,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>3</td>
             <td>0</td>
-            <td>9</td>
+            <td>0</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/table/examples/table/">Table</a></td>
@@ -2005,11 +2064,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>8</td>
             <td>5</td>
-            <td>8</td>
+            <td>5</td>
             <td>2</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-labelledby,aria-roledescription</td>
+            <td>2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>class</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td>ex1</td>
+            <td>5</td>
+            <td>3</td>
+            <td>7</td>
+            <td>3</td>
+            <td>menu,menuitem,aria-expanded,aria-haspopup,aria-hidden,aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
@@ -2018,11 +2090,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>8</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a></td>
@@ -2031,11 +2103,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>8</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-expanded,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>3</td>
+            <td>3</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/help.html">Toolbar</a></td>
@@ -2044,11 +2116,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>not found</td>
-            <td>3</td>
             <td>0</td>
-            <td>7</td>
             <td>0</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-expanded,aria-haspopup,aria-label,aria-labelledby,aria-roledescription</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
@@ -2057,11 +2129,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>8</td>
             <td>6</td>
-            <td>15</td>
+            <td>6</td>
             <td>12</td>
-            <td>heading,menuitem,aria-busy,aria-labelledby,aria-roledescription</td>
+            <td>12</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
@@ -2070,11 +2142,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>12</td>
+            <td>3</td>
+            <td>7</td>
             <td>5</td>
-            <td>heading,menu,menuitem,aria-activedescendant,aria-busy,aria-controls,aria-current,aria-haspopup,aria-labelledby,aria-roledescription</td>
+            <td>aria-activedescendant,aria-current</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></td>
@@ -2083,11 +2155,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>8</td>
             <td>3</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>4</td>
+            <td>3</td>
+            <td>aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
@@ -2096,11 +2168,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>6</td>
             <td>3</td>
-            <td>11</td>
+            <td>3</td>
+            <td>7</td>
             <td>6</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-haspopup,aria-label,aria-roledescription</td>
+            <td>aria-label</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
@@ -2109,15 +2181,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>11</td>
             <td>8</td>
-            <td>9</td>
+            <td>8</td>
             <td>5</td>
-            <td>heading,menu,menuitem,aria-busy,aria-controls,aria-haspopup,aria-roledescription</td>
+            <td>5</td>
+            <td></td>
           </tr></tbody>
       </table></div>
 
-      <h3 id="example_graphics_techniques">Graphics Techniques</h3>
+      <h3 id="example_graphics_techniques">SVG and High Contrast Techniques</h3>
       <div class="table-wrap"><table aria-labelledby="example_graphics_techniques" class="data attributes">
         <thead>
           <tr>
@@ -2125,19 +2197,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <th>SVG in HTML</th>
             <th>SVG in CSS</th>
             <th>SVG in JS</th>
-            <th><code>forced-color-adjust</code></th>
-            <th>CSS ::before</th>
-            <th>CSS ::after</th>
-            <th>CSS content</th>
+            <th><code>forced-colors</code> media query</th>
+            <th><code>currentColor</code> value</th>
           </tr>
         </thead>
         <tbody id="example_graphics_techniques_tbody">
           <tr>
+            <td><a href="../../patterns/accordion/examples/accordion/">Accordion</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2149,8 +2225,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
@@ -2158,9 +2232,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button/">Button</a></td>
@@ -2168,16 +2240,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2189,13 +2257,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a></td>
-            <td></td>
-            <td>Yes</td>
             <td></td>
             <td>Yes</td>
             <td></td>
@@ -2204,8 +2268,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a></td>
-            <td></td>
-            <td>Yes</td>
             <td></td>
             <td>Yes</td>
             <td></td>
@@ -2218,9 +2280,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a></td>
@@ -2228,9 +2288,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a></td>
@@ -2238,9 +2296,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
@@ -2249,33 +2305,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
-            <td></td>
-            <td>Yes</td>
             <td></td>
             <td>Yes</td>
             <td></td>
@@ -2287,67 +2319,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
             <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
@@ -2358,9 +2336,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
@@ -2368,8 +2344,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -2379,8 +2353,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
@@ -2388,8 +2360,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -2399,8 +2369,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a></td>
@@ -2408,9 +2376,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a></td>
@@ -2418,9 +2384,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a></td>
@@ -2428,9 +2392,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
@@ -2439,8 +2401,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a></td>
@@ -2448,15 +2408,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/meter/examples/meter/">Meter</a></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2467,50 +2423,40 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a></td>
             <td></td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-rating/">Rating Slider</a></td>
@@ -2518,36 +2464,28 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2557,10 +2495,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/table/examples/sortable-table/">Sortable Table</a></td>
@@ -2568,8 +2504,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -2578,9 +2520,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
@@ -2588,29 +2528,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
@@ -2618,9 +2536,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr></tbody>
       </table></div>
 
@@ -2635,54 +2551,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </thead>
         <tbody id="example_mouse_pointer_tbody">
           <tr>
-            <td><a href="../../patterns/accordion/examples/accordion/">Accordion</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/alert/examples/alert/">Alert</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/breadcrumb/examples/breadcrumb/">Breadcrumb</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/button/examples/button/">Button</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a></td>
             <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a></td>
             <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a></td>
@@ -2702,107 +2578,52 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/feed/examples/feed/">Feed</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/link/examples/link/">Link</a></td>
             <td></td>
             <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
@@ -2811,26 +2632,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/meter/examples/meter/">Meter</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a></td>
             <td></td>
             <td>Yes</td>
           </tr>
@@ -2860,74 +2661,29 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></td>
-            <td></td>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
             <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a></td>
             <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/switch/examples/switch/">Switch</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/table/examples/sortable-table/">Sortable Table</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/table/examples/table/">Table</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/toolbar/examples/help.html">Toolbar</a></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
             <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
             <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr></tbody>
       </table></div>
 
@@ -2938,5 +2694,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 
 </div>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+></script>
 

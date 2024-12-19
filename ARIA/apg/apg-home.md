@@ -182,5 +182,8 @@ lang: en
     <div class="bottom-off-white-section off-white-section"></div>
   
 </div>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+></script>
 

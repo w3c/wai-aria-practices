@@ -95,6 +95,15 @@ lang: en
           </p>
         </li>
         <li>
+          <h2><a href="at-support-tables/">Assistive Technology Support Tables</a></h2>
+          <p>
+            Pages that provide example implementations of APG patterns also, when available,  provide a summary of assistive technology support of the ARIA used in those examples.
+            Learn how to interpret and use data in the
+            <a href="at-support-tables/">Assistive Technology Support Tables</a>.
+          </p>
+        </li>
+
+        <li>
           <h2><a href="coverage-and-quality/">Coverage and Quality Report</a></h2>
           <p>
             Objectives of the APG Task Force include providing guidance or examples for all ARIA attributes and doing so with code that implements practices documented in the APG code guide.
@@ -106,5 +115,8 @@ lang: en
     </div>
   
 </div>
-<script src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
+  data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+></script>
 
