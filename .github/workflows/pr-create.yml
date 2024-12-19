@@ -65,7 +65,7 @@ jobs:
           git config --global user.name "w3cgruntbot"
           git config --global user.email "w3cgruntbot@users.noreply.github.com"
           git fetch origin main
-          git rebase --force-rebase origin/main
+          git rebase --force-rebase origin/main || true
 
           # Handle cases where the aria-practices submodule has conflicts to be handled;
           # _external/data shouldn't have conflicting changes
@@ -82,7 +82,7 @@ jobs:
             git add _external/aria-practices
 
             # Continue the rebase
-            git rebase --continue
+            git rebase --continue || true
 
             # Resolve conflicts for all other conflicting files automatically using 'theirs' from project root
             git diff --name-only --diff-filter=U | while read -r file; do
@@ -91,7 +91,7 @@ jobs:
             done
 
             # Continue the rebase
-            git rebase --continue || true # Suppress the error with true if nothing additional
+            git rebase --continue || true
           else
             echo "No submodule conflicts detected or no rebase in progress."
           fi
