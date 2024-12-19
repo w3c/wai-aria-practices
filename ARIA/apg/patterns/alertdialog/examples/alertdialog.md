@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/alertdialog/examples/alertdialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/20'>View issues related to this example</a></p>        <p>Page last updated: 1 May 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/138'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -197,7 +197,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </td>
             </tr>
             <tr>
-              <th><kbd>Shift + Tab</kbd></th>
+              <th><kbd>Shift</kbd> + <kbd>Tab</kbd></th>
               <td>
                 <ul>
                   <li>Moves focus to previous focusable element inside the dialog.</li>
@@ -210,11 +210,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td>Closes the dialog.</td>
             </tr>
             <tr>
-              <th><kbd>Command + S</kbd></th>
+              <th><kbd>Command</kbd> + <kbd>S</kbd></th>
               <td>(Mac only) Save the contents of the notes <code>textarea</code> when focused.</td>
             </tr>
             <tr data-test-id="key-control-s">
-              <th><kbd>Control + S</kbd></th>
+              <th><kbd>Control</kbd> + <kbd>S</kbd></th>
               <td>(Windows only) Save the contents of the notes <code>textarea</code> when focused.</td>
             </tr>
           </tbody>
@@ -296,13 +296,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section>
+      <section class="example-code">
         <h2 id="sc1_label">HTML Source Code</h2>
+        <p id="sc1_description">To copy the following HTML code, please open it in CodePen.</p>
         <div role="separator" id="sc1_start_sep" aria-labelledby="sc1_start_sep sc1_label" aria-label="Start of"></div>
         <pre><code id="sc1"></code></pre>
         <div role="separator" id="sc1_end_sep" aria-labelledby="sc1_end_sep sc1_label" aria-label="End of"></div>
         <script>
-          sourceCode.add('sc1', 'ex_alertdialog', 'ex_label', 'css_js_files');
+          sourceCode.add('sc1', 'ex_alertdialog', 'ex_label', 'css_js_files', 'sc1_description');
           sourceCode.make();
         </script>
       </section>

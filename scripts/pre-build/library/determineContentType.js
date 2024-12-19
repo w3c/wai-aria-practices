@@ -45,7 +45,10 @@ const determineContentType = (sourcePath) => {
   }
   if (
     sourcePath.endsWith("shared/templates/read-this-first.html") ||
-    sourcePath.endsWith("shared/templates/example-usage-warning.html")
+    sourcePath.endsWith("shared/templates/example-usage-warning.html") ||
+    sourcePath.endsWith(
+      "shared/templates/experimental-example-usage-warning.html"
+    )
   ) {
     return "template";
   }

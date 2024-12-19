@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: June 3, 2024</p>
+    <p>Page last updated: September 12, 2024</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -285,9 +285,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../practices/landmark-regions/#aria_lh_banner">Banner</a>
 </td>
             <td><ul>
-                <li><a href="../../patterns/landmarks/examples/banner.html">Banner Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/landmarks/examples/banner.html">Banner Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -299,8 +299,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </ul>
 </td>
             <td><ul>
-                <li><a href="../../patterns/button/examples/button/">Button</a></li>
                 <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../../patterns/button/examples/button/">Button</a></li>
             </ul>
 </td>
           </tr>
@@ -347,9 +347,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../practices/landmark-regions/#aria_lh_contentinfo">Contentinfo</a>
 </td>
             <td><ul>
-                <li><a href="../../patterns/landmarks/examples/contentinfo.html">Contentinfo Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/landmarks/examples/contentinfo.html">Contentinfo Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -505,17 +505,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <tr>
             <td><code>navigation</code></td>
             <td><ul>
+                <li><a href="../../practices/keyboard-interface/#kbd_generalnav">Fundamental Keyboard Navigation Conventions</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_general_between">Keyboard Navigation Between Components (The Tab Sequence)</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_general_within">Keyboard Navigation Inside Components</a></li>
-                <li><a href="../../practices/keyboard-interface/#kbd_generalnav">Fundamental Keyboard Navigation Conventions</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_shortcuts_design_basic">Ensure Basic Access Via Navigation</a></li>
                 <li><a href="../../practices/landmark-regions/#aria_lh_navigation">Navigation</a></li>
             </ul>
 </td>
             <td><ul>
-                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -596,10 +596,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>presentation</code></td>
             <td><ul>
                 <li><a href="../../practices/hiding-semantics/">Hiding Semantics with the presentation Role</a></li>
-                <li><a href="../../practices/hiding-semantics/#presentation_role_effects">Effects of Role presentation</a></li>
-                <li><a href="../../practices/hiding-semantics/#presentation_role_examples">Example Demonstrating Effects of the presentation Role</a></li>
-                <li><a href="../../practices/hiding-semantics/#presentation_role_ignored">Conditions That Cause Role presentation to be Ignored</a></li>
                 <li><a href="../../practices/hiding-semantics/#presentation_role_uses">Common Uses of Role presentation</a></li>
+                <li><a href="../../practices/hiding-semantics/#presentation_role_effects">Effects of Role presentation</a></li>
+                <li><a href="../../practices/hiding-semantics/#presentation_role_ignored">Conditions That Cause Role presentation to be Ignored</a></li>
+                <li><a href="../../practices/hiding-semantics/#presentation_role_examples">Example Demonstrating Effects of the presentation Role</a></li>
             </ul>
 </td>
             <td></td>
@@ -639,9 +639,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/accordion/examples/accordion/">Accordion</a></li>
                 <li><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -699,6 +699,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 </td>
             <td><ul>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
@@ -719,6 +720,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td><ul>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
@@ -729,6 +731,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td><ul>
                 <li><a href="../../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
             </ul>
@@ -945,6 +948,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
@@ -1097,12 +1101,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
-                <li><a href="../../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/form.html">Form Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/main.html">Main Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
-                <li><a href="../../patterns/landmarks/examples/search.html">Search Landmark</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -1121,11 +1119,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
                 <li><a href="../../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
                 <li><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/form.html">Form Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/main.html">Main Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/region.html">Region Landmark</a></li>
+                <li><a href="../../patterns/landmarks/examples/search.html">Search Landmark</a></li>
             </ul>
 </td>
           </tr>
@@ -1175,8 +1180,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-pressed</code></td>
             <td></td>
             <td><ul>
-                <li><a href="../../patterns/button/examples/button/">Button</a></li>
                 <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../../patterns/button/examples/button/">Button</a></li>
                 <li><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
             </ul>
 </td>
@@ -1226,6 +1231,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
+                <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
@@ -1324,20 +1330,25 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">60</td>
+            <td id="example_summary_total">61</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
-            <td id="example_summary_hc">31</td>
+            <td id="example_summary_hc">32</td>
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">34</td>
+            <td id="example_summary_svg">35</td>
           </tr>
           <tr>
-            <th scope="row">Uses <code>forced-color-adjust</code> on SVG</th>
-            <td id="example_summary_force_color">13</td>
+            <th scope="row">Uses <code>forced-colors</code> media query</th>
+            <td id="example_summary_force_colors">2</td>
           </tr>
+          <tr>
+            <th scope="row">Uses <code>currentColor</code> value</th>
+            <td id="example_summary_current_color">28</td>
+          </tr>
+
           <tr>
             <th scope="row">Uses <code>event.KeyCode</code></th>
             <td id="example_summary_keycode">16</td>
@@ -1348,7 +1359,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Use Class</th>
-            <td id="example_summary_class">36</td>
+            <td id="example_summary_class">37</td>
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
@@ -1356,7 +1367,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">15</td>
+            <td id="example_summary_mouse">16</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -1436,19 +1447,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>navigation</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/button/examples/button/">Button</a></td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td>example</td>
-            <td>1</td>
-            <td>1</td>
-            <td>2</td>
-            <td>1</td>
-            <td>aria-hidden</td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
             <td></td>
             <td>Yes</td>
@@ -1460,6 +1458,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>2</td>
             <td>2</td>
             <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/button/examples/button/">Button</a></td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+            <td></td>
+            <td>example</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+            <td>aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
@@ -2060,6 +2071,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
           </tr>
           <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>class</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td>ex1</td>
+            <td>5</td>
+            <td>3</td>
+            <td>7</td>
+            <td>3</td>
+            <td>menu,menuitem,aria-expanded,aria-haspopup,aria-hidden,aria-label</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a></td>
             <td>class</td>
             <td></td>
@@ -2165,7 +2189,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr></tbody>
       </table></div>
 
-      <h3 id="example_graphics_techniques">Graphics Techniques</h3>
+      <h3 id="example_graphics_techniques">SVG and High Contrast Techniques</h3>
       <div class="table-wrap"><table aria-labelledby="example_graphics_techniques" class="data attributes">
         <thead>
           <tr>
@@ -2173,19 +2197,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <th>SVG in HTML</th>
             <th>SVG in CSS</th>
             <th>SVG in JS</th>
-            <th><code>forced-color-adjust</code></th>
-            <th>CSS ::before</th>
-            <th>CSS ::after</th>
-            <th>CSS content</th>
+            <th><code>forced-colors</code> media query</th>
+            <th><code>currentColor</code> value</th>
           </tr>
         </thead>
         <tbody id="example_graphics_techniques_tbody">
           <tr>
+            <td><a href="../../patterns/accordion/examples/accordion/">Accordion</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2197,18 +2225,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/button/examples/button/">Button</a></td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></td>
@@ -2216,16 +2232,20 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/button/examples/button/">Button</a></td>
+            <td>Yes</td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2237,13 +2257,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a></td>
-            <td></td>
-            <td>Yes</td>
             <td></td>
             <td>Yes</td>
             <td></td>
@@ -2252,8 +2268,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a></td>
-            <td></td>
-            <td>Yes</td>
             <td></td>
             <td>Yes</td>
             <td></td>
@@ -2266,9 +2280,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a></td>
@@ -2276,9 +2288,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a></td>
@@ -2286,9 +2296,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a></td>
@@ -2297,33 +2305,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
-            <td></td>
-            <td>Yes</td>
             <td></td>
             <td>Yes</td>
             <td></td>
@@ -2335,67 +2319,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
             <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/advanced-data-grid/">Advanced Data Grid</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
@@ -2406,9 +2336,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
@@ -2416,8 +2344,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -2427,8 +2353,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
@@ -2436,8 +2360,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -2447,8 +2369,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a></td>
@@ -2456,9 +2376,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a></td>
@@ -2466,9 +2384,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a></td>
@@ -2476,9 +2392,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
@@ -2487,8 +2401,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a></td>
@@ -2496,15 +2408,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/meter/examples/meter/">Meter</a></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2515,50 +2423,40 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio-rating/">Rating Radio Group</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a></td>
             <td></td>
             <td>Yes</td>
             <td></td>
-            <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-rating/">Rating Slider</a></td>
@@ -2566,36 +2464,28 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></td>
             <td>Yes</td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2605,10 +2495,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
+            <td></td>
             <td>Yes</td>
-            <td></td>
-            <td></td>
-            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/table/examples/sortable-table/">Sortable Table</a></td>
@@ -2616,8 +2504,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td></td>
             <td>Yes</td>
           </tr>
           <tr>
@@ -2626,9 +2520,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
@@ -2636,29 +2528,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td>Yes</td>
             <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
@@ -2666,9 +2536,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Yes</td>
           </tr></tbody>
       </table></div>
 
@@ -2791,6 +2659,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
             <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a></td>
+            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
