@@ -1403,11 +1403,11 @@ subscribe to our newsletter
               <td>
                 <a href="https://w3c.github.io/aria/#tablist" class="role-reference"><code>tablist</code></a>
               </td>
-              <td>Recommended</td>
+              <td>Required **only if** a visible label is present</td>
               <td>
                 <ul>
                   <li>Helps screen reader users understand the context and purpose of the tablist.</li>
-                  <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise use <code>aria-label</code>.</li>
+                  <li>Use <code>aria-labelledby</code> if a visible label is present, otherwise optionally use <code>aria-label</code>.</li>
                   <li>See the <a href="../../patterns/carousel/">Carousel Pattern</a> and <a href="../../patterns/tabs/">Tabs Pattern</a>.</li>
                 </ul>
               </td>
