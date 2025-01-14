@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-1b/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/17'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -497,15 +497,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/css/tree.css" type="text/css">tree.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/tree.js" type="text/javascript">tree.js</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeitem.js" type="text/javascript">treeitem.js</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/treeview/examples/js/treeitemClick.js" type="text/javascript">treeitemClick.js</a>
           </li>
         </ul>

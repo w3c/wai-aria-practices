@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/toolbar/examples/toolbar/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/135'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/18'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -1013,12 +1013,12 @@ But, in a larger sense, we can not dedicate, we can not consecrate, we can not h
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/toolbar.css" type="text/css">toolbar.css</a></li>
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/css/menuButton.css" type="text/css">menuButton.css</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbar.js" type="text/javascript">FormatToolbar.js</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbarItem.js" type="text/javascript">FormatToolbarItem.js</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuButton.js" type="text/javascript">FontMenuButton.js</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenu.js" type="text/javascript">FontMenu.js</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuItem.js" type="text/javascript">FontMenuItem.js</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/SpinButton.js" type="text/javascript">SpinButton.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbar.js" type="text/javascript">FormatToolbar.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FormatToolbarItem.js" type="text/javascript">FormatToolbarItem.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuButton.js" type="text/javascript">FontMenuButton.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenu.js" type="text/javascript">FontMenu.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/FontMenuItem.js" type="text/javascript">FontMenuItem.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/toolbar/examples/js/SpinButton.js" type="text/javascript">SpinButton.js</a></li>
         </ul>
       </section>
 
