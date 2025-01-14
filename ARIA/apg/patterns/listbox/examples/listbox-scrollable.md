@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-scrollable/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/13'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -108,10 +108,6 @@ lang: en
             <div>
               <span id="ss_elem" class="listbox-label">Transuranium elements:</span>
               <ul id="ss_elem_list" tabindex="0" role="listbox" aria-labelledby="ss_elem">
-                <li id="ss_elem_None" role="option">
-                  <span class="checkmark" aria-hidden="true"></span>
-                  None
-                </li>
                 <li id="ss_elem_Np" role="option">
                   <span class="checkmark" aria-hidden="true"></span>
                   Neptunium
@@ -381,7 +377,7 @@ lang: en
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css" type="tex/css">listbox.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-scrollable.js" type="text/javascript">listbox-scrollable.js</a>
           </li>
         </ul>

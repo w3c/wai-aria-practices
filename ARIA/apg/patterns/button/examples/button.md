@@ -11,9 +11,8 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/button/examples/button/
 
 sidebar: true
-class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/14'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -44,6 +43,15 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
@@ -231,7 +239,7 @@ lang: en
         <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
         <h3>Command Button</h3>
         <iframe class="support-levels-command-button"
-          src="https://aria-at.w3.org/embed/reports/apg/command-button"
+          src="https://aria-at.w3.org/embed/reports/command-button"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -239,7 +247,7 @@ lang: en
 
         <h3>Toggle Button</h3>
         <iframe class="support-levels-toggle-button"
-          src="https://aria-at.w3.org/embed/reports/apg/toggle-button"
+          src="https://aria-at.w3.org/embed/reports/toggle-button"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -255,7 +263,7 @@ lang: en
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/css/button.css" type="text/css">button.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/button/examples/js/button.js" type="text/javascript">button.js</a>
           </li>
         </ul>

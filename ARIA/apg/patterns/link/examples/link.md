@@ -11,9 +11,8 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/link/examples/link/
 
 sidebar: true
-class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/137'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/21'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -44,6 +43,15 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
@@ -205,23 +213,8 @@ lang: en
       <section id="at-support">
         <h2>Assistive Technology Support</h2>
         <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
-        <h3>Example 1: Link on a <code>span</code> Element with Text Content</h3>
         <iframe class="support-levels-link-span-text"
-          src="https://aria-at.w3.org/embed/reports/apg/link-span-text"
-          height="100"
-          allow="clipboard-write"
-          style="border-style: none; width: 100%;">
-        </iframe>
-        <h3>Example 2: Link on an <code>img</code> Element with <code>alt</code> Attribute</h3>
-        <iframe class="support-levels-link-img-alt"
-          src="https://aria-at.w3.org/embed/reports/apg/link-img-alt"
-          height="100"
-          allow="clipboard-write"
-          style="border-style: none; width: 100%;">
-        </iframe>
-        <h3>Example 3: Link on a <code>span</code> Element with CSS <code>:before</code> Content Property</h3>
-        <iframe class="support-levels-link-span-css"
-          src="https://aria-at.w3.org/embed/reports/apg/link-span-css"
+          src="https://aria-at.w3.org/embed/reports/link-span-text"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -236,7 +229,7 @@ lang: en
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/css/link.css" type="tex/css">link.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/link/examples/js/link.js" type="text/javascript">link.js</a>
           </li>
         </ul>

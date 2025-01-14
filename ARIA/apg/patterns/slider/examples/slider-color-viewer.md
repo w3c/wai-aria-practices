@@ -11,9 +11,8 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/slider/examples/slider-color-viewer/
 
 sidebar: true
-class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/124'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -45,6 +44,15 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
@@ -351,7 +359,7 @@ lang: en
         <h2>Assistive Technology Support</h2>
         <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
         <iframe class="support-levels-horizontal-slider"
-          src="https://aria-at.w3.org/embed/reports/apg/horizontal-slider"
+          src="https://aria-at.w3.org/embed/reports/horizontal-slider"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -362,7 +370,7 @@ lang: en
         <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-color-viewer.css" type="text/css">slider-color-viewer.css</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-color-viewer.js" type="text/javascript">slider-color-viewer.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-color-viewer.js" type="text/javascript">slider-color-viewer.js</a></li>
         </ul>
       </section>
 
