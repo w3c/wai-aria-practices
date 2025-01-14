@@ -11,9 +11,8 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/dialog-modal/examples/dialog/
 
 sidebar: true
-class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/126'>View issues related to this example</a></p>        <p>Page last updated: 4 March 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/6'>View issues related to this example</a></p>        <p>Page last updated: 12 September 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -45,6 +44,15 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
@@ -107,7 +115,7 @@ lang: en
           <button type="button" onclick="openDialog('dialog1', this)">Add Delivery Address</button>
           <div id="dialog_layer" class="dialogs">
             <div role="dialog" id="dialog1" aria-labelledby="dialog1_label" aria-modal="true" class="hidden">
-              <h1 id="dialog1_label" class="dialog_label">Add Delivery Address</h1>
+              <h2 id="dialog1_label" class="dialog_label">Add Delivery Address</h2>
               <div class="dialog_form">
                 <div class="dialog_form_item">
                   <label>
@@ -151,7 +159,7 @@ lang: en
 
             
             <div id="dialog2" role="dialog" aria-labelledby="dialog2_label" aria-describedby="dialog2_desc" aria-modal="true" class="hidden">
-              <h1 id="dialog2_label" class="dialog_label">Verification Result</h1>
+              <h2 id="dialog2_label" class="dialog_label">Verification Result</h2>
               <div id="dialog2_desc" class="dialog_desc">
                 <p tabindex="-1" id="dialog2_para1">
                   This is just a demonstration.
@@ -203,7 +211,7 @@ lang: en
 
             
             <div id="dialog3" role="dialog" aria-labelledby="dialog3_label" aria-describedby="dialog3_desc" aria-modal="true" class="hidden">
-              <h1 id="dialog3_label" class="dialog_label">Address Added</h1>
+              <h2 id="dialog3_label" class="dialog_label">Address Added</h2>
               <p id="dialog3_desc" class="dialog_desc">
                 The address you provided has been added to your list of delivery addresses.
                 It is ready for immediate use.
@@ -215,7 +223,7 @@ lang: en
             </div>
 
             <div id="dialog4" role="dialog" aria-labelledby="dialog4_label" aria-describedby="dialog4_desc" class="hidden" aria-modal="true">
-              <h1 id="dialog4_label" class="dialog_label">End of the Road!</h1>
+              <h2 id="dialog4_label" class="dialog_label">End of the Road!</h2>
               <p id="dialog4_desc" class="dialog_desc">You activated a fake link or button that goes nowhere! The link or button is present for demonstration purposes only.</p>
               <div class="dialog_form_actions">
                 <button type="button" id="dialog4_close_btn" onclick="closeDialog(this)">Close</button>
@@ -388,7 +396,7 @@ lang: en
         <h2>Assistive Technology Support</h2>
         <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
         <iframe class="support-levels-modal-dialog"
-          src="https://aria-at.w3.org/embed/reports/apg/modal-dialog"
+          src="https://aria-at.w3.org/embed/reports/modal-dialog"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -403,7 +411,7 @@ lang: en
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/css/dialog.css" type="text/css">dialog.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js" type="text/javascript">dialog.js</a>,
             <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a>
           </li>

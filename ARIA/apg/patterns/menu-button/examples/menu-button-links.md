@@ -11,9 +11,8 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/menu-button/examples/menu-button-links/
 
 sidebar: true
-class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/125'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -44,6 +43,15 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
@@ -391,7 +399,7 @@ lang: en
         <h2>Assistive Technology Support</h2>
         <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
         <iframe class="support-levels-menu-button-navigation"
-          src="https://aria-at.w3.org/embed/reports/apg/menu-button-navigation"
+          src="https://aria-at.w3.org/embed/reports/menu-button-navigation"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
@@ -403,7 +411,7 @@ lang: en
 
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/css/menu-button-links.css" type="text/css">menu-button-links.css</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-links.js" type="text/javascript">menu-button-links.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menu-button/examples/js/menu-button-links.js" type="text/javascript">menu-button-links.js</a></li>
         </ul>
       </section>
 

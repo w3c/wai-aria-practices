@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/menubar/examples/menubar-editor/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/125'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/5'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -830,8 +830,8 @@ lang: en
             CSS:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/css/menubar-editor.css" type="tex/css">menubar-editor.css</a>
           </li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-editor.js" type="text/javascript">menubar-editor.js</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/style-manager.js" type="text/javascript">style-manager.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/menubar-editor.js" type="text/javascript">menubar-editor.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/menubar/examples/js/style-manager.js" type="text/javascript">style-manager.js</a></li>
         </ul>
       </section>
 

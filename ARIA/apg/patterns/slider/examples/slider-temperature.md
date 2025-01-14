@@ -11,9 +11,8 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/slider/examples/slider-temperature/
 
 sidebar: true
-class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/124'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/3'>View issues related to this example</a></p>        <p>Page last updated: 27 July 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -44,6 +43,15 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+    
+
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
@@ -117,9 +125,9 @@ lang: en
             <div id="id-temp-label" class="label">Temperature</div>
 
             <svg role="none" class="slider-group" width="145" height="360">
+              <text class="temp-value" x="28" y="35">25°C</text>
+              <rect class="rail" x="60" y="47" width="8" height="300" rx="5" aria-hidden="true" ></rect>
               <g role="slider" id="id-temp-slider" aria-orientation="vertical" tabindex="0" aria-valuemin="10.0" aria-valuenow="25.0" aria-valuetext="25.0 degrees Celsius" aria-valuemax="38.0" aria-labelledby="id-temp-label">
-                <text class="temp-value" x="28" y="35">25°C</text>
-                <rect class="rail" x="60" y="47" width="8" height="300" rx="5" aria-hidden="true" ></rect>
                 <text class="value" x="94" y="150">25°C</text>
                 <rect class="focus-ring" x="35" y="170" width="105" height="24" rx="12" ></rect>
                 <rect class="thumb" x="35" y="145" width="48" height="14" rx="5" ></rect>
@@ -334,22 +342,11 @@ lang: en
         </table></div>
       </section>
 
-      <section id="at-support">
-        <h2>Assistive Technology Support</h2>
-        <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
-        <iframe class="support-levels-vertical-temperature-slider"
-          src="https://aria-at.w3.org/embed/reports/apg/vertical-temperature-slider"
-          height="100"
-          allow="clipboard-write"
-          style="border-style: none; width: 100%;">
-        </iframe>
-      </section>
-      
       <section>
         <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-temperature.css" type="text/css">slider-temperature.css</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-temperature.js" type="text/javascript">slider-temperature.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-temperature.js" type="text/javascript">slider-temperature.js</a></li>
         </ul>
       </section>
 
