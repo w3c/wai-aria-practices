@@ -333,15 +333,10 @@ class MenuButtonActions {
 
 // Initialize menu buttons
 window.addEventListener('load', function () {
-  const output = document.getElementById('action_output');
-  if (output) {
-    output.value = 'none';
-  }
+  document.getElementById('action_output').value = 'none';
 
   function performMenuAction(node) {
-    if (output) {
-      output.value = node.textContent.trim();
-    }
+    document.getElementById('action_output').value = node.textContent.trim();
   }
 
   var menuButtons = document.querySelectorAll('.menu-button-actions');

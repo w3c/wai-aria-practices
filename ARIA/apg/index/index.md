@@ -67,7 +67,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     <ul>
       <li><a href="#examples_by_role_label">Examples by Role</a></li>
       <li><a href="#examples_by_props_label">Examples by Properties and States</a></li>
-      <li><a href="#examples_experimental_label">Experimental Examples</a></li>
+      
     </ul>
     <section id="examples_by_roles">
       <h2 id="examples_by_role_label">Examples by Role</h2>
@@ -950,12 +950,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr></tbody>
       </table>
     </section>
-    <section id="examples_experimental">
-      <h2 id="examples_experimental_label">Experimental Examples</h2>
-      <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
-      <ul id="examples_experimental_ul">
-                <li><a href="../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li></ul>
-    </section>
+    
   </div>
 
 
