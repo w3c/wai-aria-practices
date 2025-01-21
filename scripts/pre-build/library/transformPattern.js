@@ -26,11 +26,13 @@ const transformPattern = async (sourcePath, sourceContents) => {
         return sectionElement;
       }
     }
+
+    if (slug === 'landmarks') return null;
     throw new Error(`Expected pattern ${slug} to have an Example(s) section`);
   };
 
-  examplesSection = findExamplesSection();
-  examplesSection.classList.add("examples-section");
+  const examplesSection = findExamplesSection();
+  if (examplesSection) examplesSection.classList.add("examples-section");
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
