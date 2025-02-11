@@ -7,7 +7,7 @@ const octokit = new Octokit({
 
 const jobId = process.env.JOB_ID;
 // Outside of auth errors, the only other potential error is if the 'Update site files' step fails. Use this boolean.
-const isSiteFilesUpdateSuccess = process.env.OUTCOME === 'success';
+const isSiteFilesUpdateSuccess = process.env.OUTCOME !== 'success';
 const repositoryOwner = process.env.REPO_OWNER;
 const previewLink = 'aria-practices.netlify.app';
 const GENERATED_APG_WAI_BRANCH = 'apg/' + process.env.APG_BRANCH;
@@ -19,7 +19,7 @@ const ERROR_CREATE_PULL_REQUEST = 104;
 const ERROR_GET_PULL_REQUEST = 105;
 const ERROR_UPDATE_PULL_REQUEST = 106;
 // TODO: Uncomment when updated bot token is being used
-// const ERROR_CREATE_COMMIT_STATUS = 107;
+const ERROR_CREATE_COMMIT_STATUS = 107;
 
 const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
   // Update APG PR
@@ -83,7 +83,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
     console.error('error.site.files.update', additionalBodyContent);
 
     // TODO: Uncomment when updated bot token is being used
-    /*try {
+    try {
       // Display build error on triggering PR's commit
       await octokit.rest.repos.createCommitStatus({
         owner: repositoryOwner,
@@ -97,7 +97,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
     } catch (e) {
       console.error('error.create.commit.status', e);
       process.exit(ERROR_CREATE_COMMIT_STATUS);
-    }*/
+    }
 
     process.exit(ERROR_SITE_FILES_UPDATE);
   }
