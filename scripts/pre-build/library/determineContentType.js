@@ -1,3 +1,23 @@
+const fs = require("fs");
+const path = require("path");
+
+// Update .tracked-html-assets.json with the paths or regexes to new html assets which don't fall in line with the expected html file naming structures to consider them as valid 'htmlAsset's
+const trackedHtmlAssetsData = fs.readFileSync(path.join(__dirname, '.tracked-html-assets.json'), { encoding: "utf8" })
+const trackedHtmlAssets = JSON.parse(trackedHtmlAssetsData);
+
+const processTrackedHtmlAsset = (sourcePath) => {
+  return trackedHtmlAssets.some(trackedAsset => {
+    if (sourcePath.endsWith(trackedAsset)) return true;
+
+    try {
+      const regexp = new RegExp(trackedAsset);
+      return regexp.test(sourcePath);
+    } catch (e) {
+      return false;
+    }
+  });
+}
+
 const determineContentType = (sourcePath) => {
   if (sourcePath.endsWith("content/apg-home.html")) {
     return "homepage";
@@ -9,13 +29,8 @@ const determineContentType = (sourcePath) => {
   ) {
     return "imageAsset";
   }
-  if (
-    sourcePath.endsWith("feed/examples/feed-display.html") ||
-    sourcePath.match(/content\/patterns\/landmarks\/examples\/.+\.html/) ||
-    sourcePath.endsWith("toolbar/examples/help.html")
-  ) {
-    return "htmlAsset";
-  }
+
+  if (processTrackedHtmlAsset(sourcePath)) return "htmlAsset";
   if (!sourcePath.endsWith("html")) {
     return "otherAsset";
   }
@@ -54,7 +69,7 @@ const determineContentType = (sourcePath) => {
   }
   throw new Error(
     `Could not determine content type for file at ${sourcePath}\n` +
-      `This file may not follow established conventions.`
+    `This file may not follow established conventions.`
   );
 };
 
