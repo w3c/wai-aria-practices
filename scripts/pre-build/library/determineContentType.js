@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-// Update .tracked-html-assets.json with the paths or regexes to new html assets which don't fall in line with the expected html file naming structures to consider them as valid 'htmlAsset's
+// Update .tracked-html-assets.json with paths or regexes for html assets which don't fall in line with the expected html file naming structures to consider them as valid 'htmlAsset's
 const trackedHtmlAssetsData = fs.readFileSync(path.join(__dirname, '.tracked-html-assets.json'), { encoding: "utf8" })
 const trackedHtmlAssets = JSON.parse(trackedHtmlAssetsData);
 
@@ -69,7 +69,8 @@ const determineContentType = (sourcePath) => {
   }
   throw new Error(
     `Could not determine content type for file at ${sourcePath}\n` +
-    `This file may not follow established conventions.`
+    `This file may not follow established conventions.\n` +
+    `If this is a html file that should be included, please add it to .tracked-html-assets.json.`
   );
 };
 
