@@ -723,7 +723,7 @@ button.color-scheme[role="switch"] {
           Contrast themes are an operating system accessibility feature that automatically forces all native apps and web content to render using an alternative color theme chosen by the user.
           Some of the themes are designed to provide extra high contrast, and users can customize their chosen color theme.
           Browsers automatically replace each author specified color with one of a small set of colors specified by the user's chosen theme based on the type of HTML element.
-          The replacement color used by a browser for a specific element usually corresponds to one of the system colors described below.
+          The replacement color used by a browser for a specific element usually corresponds to one of the system colors described below.  In addition to forcing color changes the browser also ignores background images and gradients.
         </p>
         <p>
           Note that ARIA attributes do not inform replacement color selection, e.g., a <code>div</code> with role <code>button</code> renders with text colors, not button colors.
@@ -1322,7 +1322,23 @@ button.color-scheme[role="switch"] {
 
         <p>SVG graphics can respond to contrast related media queries including <code>prefers-contrast</code>, <code>prefers-color-scheme</code> and <code>forced-colors</code> to change the styling of components.  SVG provides smooth scaling of the graphics as the size of components are adjusted using browser zoom features. SVG elements can also adapt to a wide variety of screen sizes and load faster due to their smaller size than equivalent bit-mapped images.</p>
 
-        <p>Note: Include <code>forced-color-adjust=auto</code> CSS property on the SVG element to ancestor colors are applied to SVG elements, due to inconsistencies in browsers setting the default value to <code>auto</code>.</p>
+        <h4>Using Current Color to User Color Settings</h4>
+
+        <p>
+          When SVG elements are used in custom components the <code>currentcolor</code> value can be used on SVG <code>fill</code> and <code>stroke</code> properties to inherit color styling from ancestor elements to reduce the use media queries.  It is important that SVG components match the styling of other features of the custom component when user selects a color setting, for example applying a Contrast Theme in Microsoft Windows.
+        </p>
+
+        <p>Examples using current color:</p>
+
+        <ul>
+          <li><a href="../../../../content-assets/wai-aria-practices/patterns/checkbox/examples/checkbox-mixed">Checkbox (Mixed-State)</a></li>
+          <li><a href="../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/disclosure-faq">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></li>
+          <li><a href="../../../../content-assets/wai-aria-practices/patterns/radio/examples/radio-activedescendant">Radio Group  Using aria-activedescendant</a></li>
+          <li><a href="../../../../content-assets/wai-aria-practices/patterns/slider/examples/slider-seek">Media Seek Slider</a></li>
+          <li><a href="../../../../content-assets/wai-aria-practices/patterns/slider/examples/slider-temperature">Vertical Temperature Slider</a></li>
+        </ul>
+
+
 
         <div class="table-wrap"><table class="data">
           <caption>Summary of SVG vs. Bit-Mapped Features</caption>
@@ -1336,12 +1352,12 @@ button.color-scheme[role="switch"] {
           <tbody>
             <tr>
               <th>Scale to Screen Size</th>
-              <td>No</td>
+              <td>Distortion<sup>1</sup></td>
               <td>Yes</td>
             </tr>
             <tr>
               <th>Smooth Zooming</th>
-              <td>Distortion</td>
+              <td>Distortion<sup>1</sup></td>
               <td>Yes</td>
             </tr>
             <tr>
@@ -1351,6 +1367,8 @@ button.color-scheme[role="switch"] {
             </tr>
           </tbody>
         </table></div>
+
+        <p><sup>1</sup> Distortion dependent on image quality and rendering dimensions.</p>
 
       </section>
 
