@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: September 12, 2024</p>
+    <p>Page last updated: March 18, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -945,6 +945,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1330,7 +1331,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">61</td>
+            <td id="example_summary_total">62</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
@@ -1338,11 +1339,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">35</td>
+            <td id="example_summary_svg">36</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>forced-colors</code> media query</th>
-            <td id="example_summary_force_colors">2</td>
+            <td id="example_summary_force_colors">3</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
@@ -1367,7 +1368,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">16</td>
+            <td id="example_summary_mouse">17</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -1679,6 +1680,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>4</td>
             <td>3</td>
             <td>navigation,region,aria-label</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>ex1</td>
+            <td>2</td>
+            <td>0</td>
+            <td>4</td>
+            <td>1</td>
+            <td>banner,region,aria-expanded,aria-hidden,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
@@ -2323,6 +2337,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
             <td></td>
             <td>Yes</td>
@@ -2589,6 +2611,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
             <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></td>
+            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
