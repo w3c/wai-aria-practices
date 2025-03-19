@@ -945,7 +945,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></li>
+                <li><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1682,7 +1682,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>navigation,region,aria-label</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></td>
+            <td><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></td>
             <td></td>
             <td></td>
             <td></td>
@@ -2337,7 +2337,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></td>
+            <td><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></td>
             <td>Yes</td>
             <td>Yes</td>
             <td></td>
@@ -2613,7 +2613,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/expandable-region/examples/expandable-region.html">Expandable Region</a></td>
+            <td><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></td>
             <td>Yes</td>
             <td></td>
           </tr>
