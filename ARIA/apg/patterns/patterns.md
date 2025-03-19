@@ -236,7 +236,7 @@ lang: en
       </li>
 
       <li class="pattern">
-        <a href="expandable-region/expandable-region-pattern.html">
+        <a href="expandable-region/">
           <h2 class="pattern-name">
             <img alt="" src="https://placehold.co/84">
             <span>Expandable region</span>
