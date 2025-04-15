@@ -25,6 +25,7 @@ lang: en
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+<script src="../../../../content-assets/wai-aria-practices/practices/landmark-regions/js/image-resizing.js"></script>
 
 
 <link 
