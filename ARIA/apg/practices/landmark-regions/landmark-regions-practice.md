@@ -227,11 +227,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>If the HTML <code>header</code> element technique is not being used, a <code>role=&quot;banner&quot;</code> attribute should be used to define a <code>banner</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#banner">Banner Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_complementary">
@@ -259,11 +254,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>If the HTML <code>aside</code> element technique is not being used, use a <code>role=&quot;complementary&quot;</code> attribute to define a <code>complementary</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#complementary">Complementary Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_contentinfo">
@@ -304,10 +294,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>If the HTML <code>footer</code> element technique is not being used, a <code>role=&quot;contentinfo&quot;</code> attribute should be used to define a <code>contentinfo</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-            <p><a href="../../patterns/landmarks/#contentinfo">Contentinfo Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_form">
@@ -348,11 +334,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>Use the <code>role=&quot;form&quot;</code> to identify a region of the page; do not use it to identify every form field.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#form">Form Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_main">
@@ -380,11 +361,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>If the HTML <code>main</code> element technique is not being used, use a <code>role=&quot;main&quot;</code> attribute to define a <code>main</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#main">Main Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_navigation">
@@ -408,11 +384,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>If the HTML <code>nav</code> element technique is not being used, use a <code>role=&quot;navigation&quot;</code> attribute to define a <code>navigation</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#navigation">Navigation Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_region">
@@ -438,11 +409,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>If the HTML <code>section</code> element technique is not being used, use a <code>role=&quot;region&quot;</code> attribute to define a <code>region</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#region">Region Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_search">
@@ -465,11 +431,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <p>The <code>role=&quot;search&quot;</code> attribute defines a <code>search</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/#search">Search Landmark Example</a></p>
-          </section>
         </section>
       </section>
 
@@ -478,10 +439,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <section id="at">
           <h2>Assistive Technology Support</h2>
 
-          <p>Browsers do not provide any built-in support to users for the identification and navigation to landmark regions.   Assistive technolgues, including all major screen readers, do provide users with the ability to identify and navigate to landmark regions.  </p>
+          <p>Browsers do not provide any built-in support to users for the identification and navigation to landmark regions.   Assistive technolgues, including all major screen readers, do provide users with the ability to identify and navigate to landmark regions.  Assistive technologies provide access through shortcut keys to the next and previous landmarks and shortcuts to specific landmarks, for example <code>main</code> and <code>navigation</code> regions.   Another way assistive technologies provide access is using  popup list of landmark regions on the page.   Users can use cursor keys and letter keys to navigate to items in the list. </p>
+
+          <p>Note: When testing with assistive technologies, be aware landmark regions without an accessible name may not be included by some assistive technologies when multiple unlabelled regions of the same type are found on a page.</p>
 
 
-          <p>The following sections demonstrate how various
+          <p>The following sections demonstrat how
             assistive technologies support landmark region navigation.</p>
 
             <ul>
