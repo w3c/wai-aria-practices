@@ -21,6 +21,7 @@ const ERROR_GET_PULL_REQUEST = 105;
 const ERROR_UPDATE_PULL_REQUEST = 106;
 const ERROR_CREATE_COMMIT_STATUS = 107;
 
+const scriptStartTime = new Date();
 const ciLogLink = `https://github.com/${repositoryOwner}/wai-aria-practices/runs/${jobId}?check_suite_focus=true`;
 
 const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
@@ -90,7 +91,24 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
 };
 
 const exitAndReportFailIfNeeded = async exitCode => {
+  const formatDuration = seconds => {
+    if (seconds >= 3600) {
+      const hours = seconds / 3600;
+      const roundedHours = Math.round(hours * 10) / 10;
+
+      if (Number.isInteger(roundedHours)) return `${roundedHours}h`;
+      else return `${roundedHours.toFixed(1)}h`;
+    } else if (seconds >= 60) {
+      const minutes = Math.floor(seconds / 60);
+      return `${minutes}m`;
+    } else return `${seconds}s`;
+  };
+
   try {
+    const scriptEndTime = new Date();
+    const elapsedSeconds = Math.round((scriptEndTime - scriptStartTime) / 1000);
+    const formattedDuration = formatDuration(elapsedSeconds);
+
     // Display build error on triggering PR's commit
     if (exitCode > 0) {
       await octokit.rest.repos.createCommitStatus({
@@ -99,8 +117,8 @@ const exitAndReportFailIfNeeded = async exitCode => {
         sha: process.env.APG_SHA,
         state: 'failure',
         target_url: ciLogLink,
-        description: `WAI Preview Link failed to build (${exitCode})`,
-        context: 'wai_preview_link_build',
+        description: `Failing after ${formattedDuration} (${exitCode})`,
+        context: 'WAI Preview Link build',
       });
     } else {
       await octokit.rest.repos.createCommitStatus({
@@ -109,8 +127,8 @@ const exitAndReportFailIfNeeded = async exitCode => {
         sha: process.env.APG_SHA,
         state: 'success',
         target_url: ciLogLink,
-        description: 'WAI Preview Link built successfully',
-        context: 'wai_preview_link_build',
+        description: `Successful in ${formattedDuration}`,
+        context: 'WAI Preview Link build',
       });
     }
     process.exit(exitCode);
