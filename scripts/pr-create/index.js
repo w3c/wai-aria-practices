@@ -12,13 +12,13 @@ const repositoryOwner = process.env.REPO_OWNER;
 const previewLink = 'aria-practices.netlify.app';
 const GENERATED_APG_WAI_BRANCH = 'apg/' + process.env.APG_BRANCH;
 
+const EXIT_SUCCESS = 0;
 const ERROR_APG_BODY_UPDATE = 101;
 const ERROR_SITE_FILES_UPDATE = 102;
 const ERROR_LIST_PULL_REQUESTS = 103;
 const ERROR_CREATE_PULL_REQUEST = 104;
 const ERROR_GET_PULL_REQUEST = 105;
 const ERROR_UPDATE_PULL_REQUEST = 106;
-// TODO: Uncomment when updated bot token is being used
 const ERROR_CREATE_COMMIT_STATUS = 107;
 
 const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
@@ -34,7 +34,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
     console.info('pulls.get.success');
   } catch (e) {
     console.error('error.get.pull.request', e);
-    process.exit(ERROR_GET_PULL_REQUEST);
+    return ERROR_GET_PULL_REQUEST;
   }
 
   // Needed to append error to PR body
@@ -75,46 +75,49 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
     console.info('pulls.update.success', apgPrBody);
   } catch (e) {
     console.error('error.update.pull.request', e);
-    process.exit(ERROR_UPDATE_PULL_REQUEST);
+    return ERROR_UPDATE_PULL_REQUEST;
   }
 
   // Means there was still an error updating the WAI Preview Link
   if (!isSiteFilesUpdateSuccess) {
     console.error('error.site.files.update', additionalBodyContent);
+    return ERROR_SITE_FILES_UPDATE;
+  }
 
-    // TODO: Uncomment when updated bot token is being used
-    try {
-      // Display build error on triggering PR's commit
+  return EXIT_SUCCESS;
+};
+
+const exitProcess = async ({ exitCode }) => {
+  try {
+    // Display build error on triggering PR's commit
+    if (exitCode > 0) {
       await octokit.rest.repos.createCommitStatus({
         owner: repositoryOwner,
         repo: 'aria-practices',
         sha: process.env.APG_SHA,
         state: 'failure',
-        target_url: previewLinkUrl, // Populated by the failing CI job:step link
-        description: `WAI Preview Link failed to build in wai-aria-practices/pr-create (${ERROR_SITE_FILES_UPDATE})`,
+        description: `WAI Preview Link failed to build (${exitCode})`,
         context: 'WAI Preview Link failed to build',
       });
-    } catch (e) {
-      console.error('error.create.commit.status', e);
-      process.exit(ERROR_CREATE_COMMIT_STATUS);
     }
-
-    process.exit(ERROR_SITE_FILES_UPDATE);
+    process.exit(exitCode);
+  } catch (e) {
+    console.error('error.create.commit.status', e);
+    process.exit(ERROR_CREATE_COMMIT_STATUS);
   }
 };
 
 (async () => {
-  let waiPrNumber;
-  let createPullRequestResult;
+  let waiPrNumber, createPullRequestResult, exitCode;
 
   if (!isSiteFilesUpdateSuccess) {
     try {
-      await updateApgPrBody();
+      exitCode = await updateApgPrBody();
     } catch (e) {
       console.error('error.apg.body.update', e);
-      process.exit(ERROR_APG_BODY_UPDATE);
+      exitCode = ERROR_APG_BODY_UPDATE;
     }
-    return;
+    return exitProcess({ exitCode })
   }
 
   try {
@@ -135,7 +138,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
     }
   } catch (e) {
     console.error('error.list.pull.requests', e);
-    process.exit(ERROR_LIST_PULL_REQUESTS);
+    exitCode = ERROR_LIST_PULL_REQUESTS;
   }
 
   if (!waiPrNumber) {
@@ -154,14 +157,15 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
       console.info('pulls.create.success');
     } catch (e) {
       console.error('error.create.pull.request', e);
-      process.exit(ERROR_CREATE_PULL_REQUEST);
+      exitCode = ERROR_CREATE_PULL_REQUEST;
     }
   }
 
   try {
-    await updateApgPrBody(waiPrNumber, createPullRequestResult);
+    exitCode = await updateApgPrBody(waiPrNumber, createPullRequestResult);
   } catch (e) {
     console.error('error.apg.body.update', e);
-    process.exit(ERROR_APG_BODY_UPDATE);
+    exitCode = ERROR_APG_BODY_UPDATE;
   }
+  await exitProcess({ exitCode })
 })();
