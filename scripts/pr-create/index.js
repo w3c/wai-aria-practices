@@ -21,6 +21,8 @@ const ERROR_GET_PULL_REQUEST = 105;
 const ERROR_UPDATE_PULL_REQUEST = 106;
 const ERROR_CREATE_COMMIT_STATUS = 107;
 
+const ciLogLink = `https://github.com/${repositoryOwner}/wai-aria-practices/runs/${jobId}?check_suite_focus=true`;
+
 const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
   // Update APG PR
   let getApgPrResult;
@@ -52,7 +54,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
     ? `https://deploy-preview-${
         waiPrNumber || createPullRequestResult.data.number
       }--${previewLink}/ARIA/apg`
-    : `https://github.com/${repositoryOwner}/wai-aria-practices/runs/${jobId}?check_suite_focus=true`;
+    : ciLogLink;
   const additionalBodyContent = isSiteFilesUpdateSuccess
     ? `[WAI Preview Link](${previewLinkUrl}) _(Last built on ${new Date().toUTCString()})._`
     : `WAI Preview Link [failed to build](${previewLinkUrl}) on 'Update site files' step. _(Last tried on ${new Date().toUTCString()})._`;
@@ -96,6 +98,7 @@ const exitProcess = async ({ exitCode }) => {
         repo: 'aria-practices',
         sha: process.env.APG_SHA,
         state: 'failure',
+        target_url: ciLogLink,
         description: `WAI Preview Link failed to build (${exitCode})`,
         context: 'WAI Preview Link failed to build',
       });
@@ -117,7 +120,7 @@ const exitProcess = async ({ exitCode }) => {
       console.error('error.apg.body.update', e);
       exitCode = ERROR_APG_BODY_UPDATE;
     }
-    return exitProcess({ exitCode })
+    return exitProcess({ exitCode });
   }
 
   try {
@@ -167,5 +170,5 @@ const exitProcess = async ({ exitCode }) => {
     console.error('error.apg.body.update', e);
     exitCode = ERROR_APG_BODY_UPDATE;
   }
-  await exitProcess({ exitCode })
+  await exitProcess({ exitCode });
 })();
