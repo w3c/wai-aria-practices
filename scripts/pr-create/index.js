@@ -7,7 +7,7 @@ const octokit = new Octokit({
 
 const jobId = process.env.JOB_ID;
 // Outside of auth errors, the only other potential error is if the 'Update site files' step fails. Use this boolean.
-const isSiteFilesUpdateSuccess = process.env.OUTCOME !== 'success';
+const isSiteFilesUpdateSuccess = process.env.OUTCOME === 'success';
 const repositoryOwner = process.env.REPO_OWNER;
 const previewLink = 'aria-practices.netlify.app';
 const GENERATED_APG_WAI_BRANCH = 'apg/' + process.env.APG_BRANCH;
