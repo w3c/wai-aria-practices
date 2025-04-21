@@ -90,7 +90,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
   return EXIT_SUCCESS;
 };
 
-const exitAndReportFailIfNeeded = async exitCode => {
+const exitAndReportCommitStatus = async exitCode => {
   const formatDuration = seconds => {
     if (seconds >= 3600) {
       const hours = seconds / 3600;
@@ -148,7 +148,7 @@ const exitAndReportFailIfNeeded = async exitCode => {
       console.error('error.apg.body.update', e);
       exitCode = ERROR_APG_BODY_UPDATE;
     }
-    return exitAndReportFailIfNeeded(exitCode);
+    return exitAndReportCommitStatus(exitCode);
   }
 
   try {
@@ -198,5 +198,5 @@ const exitAndReportFailIfNeeded = async exitCode => {
     console.error('error.apg.body.update', e);
     exitCode = ERROR_APG_BODY_UPDATE;
   }
-  await exitAndReportFailIfNeeded(exitCode);
+  await exitAndReportCommitStatus(exitCode);
 })();
