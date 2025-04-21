@@ -7,7 +7,7 @@ const octokit = new Octokit({
 
 const jobId = process.env.JOB_ID;
 // Outside of auth errors, the only other potential error is if the 'Update site files' step fails. Use this boolean.
-const isSiteFilesUpdateSuccess = process.env.OUTCOME !== 'success';
+const isSiteFilesUpdateSuccess = process.env.OUTCOME === 'success';
 const repositoryOwner = process.env.REPO_OWNER;
 const previewLink = 'aria-practices.netlify.app';
 const GENERATED_APG_WAI_BRANCH = 'apg/' + process.env.APG_BRANCH;
@@ -89,7 +89,7 @@ const updateApgPrBody = async (waiPrNumber, createPullRequestResult) => {
   return EXIT_SUCCESS;
 };
 
-const exitProcess = async ({ exitCode }) => {
+const exitAndReportFailIfNeeded = async exitCode => {
   try {
     // Display build error on triggering PR's commit
     if (exitCode > 0) {
@@ -120,7 +120,7 @@ const exitProcess = async ({ exitCode }) => {
       console.error('error.apg.body.update', e);
       exitCode = ERROR_APG_BODY_UPDATE;
     }
-    return exitProcess({ exitCode });
+    return exitAndReportFailIfNeeded(exitCode);
   }
 
   try {
@@ -170,5 +170,5 @@ const exitProcess = async ({ exitCode }) => {
     console.error('error.apg.body.update', e);
     exitCode = ERROR_APG_BODY_UPDATE;
   }
-  await exitProcess({ exitCode });
+  await exitAndReportFailIfNeeded(exitCode);
 })();
