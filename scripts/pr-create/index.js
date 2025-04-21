@@ -100,7 +100,17 @@ const exitAndReportFailIfNeeded = async exitCode => {
         state: 'failure',
         target_url: ciLogLink,
         description: `WAI Preview Link failed to build (${exitCode})`,
-        context: 'WAI Preview Link failed to build',
+        context: 'wai_preview_link_build',
+      });
+    } else {
+      await octokit.rest.repos.createCommitStatus({
+        owner: repositoryOwner,
+        repo: 'aria-practices',
+        sha: process.env.APG_SHA,
+        state: 'success',
+        target_url: ciLogLink,
+        description: 'WAI Preview Link built successfully',
+        context: 'wai_preview_link_build',
       });
     }
     process.exit(exitCode);
