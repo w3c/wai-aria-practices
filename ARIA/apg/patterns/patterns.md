@@ -236,18 +236,6 @@ lang: en
       </li>
 
       <li class="pattern">
-        <a href="expandable-region/">
-          <h2 class="pattern-name">
-            <img alt="" src="https://placehold.co/84">
-            <span>Expandable region</span>
-          </h2>
-        </a>
-        <div class="pattern-introduction">
-          <mark>Content <abbr title="to be determined">TBD</abbr></mark>
-        </div>
-      </li>
-
-      <li class="pattern">
         <a href="feed/">
           <h2 class="pattern-name">
             <img alt src="../../../content-images/wai-aria-practices/images/pattern-feed.svg">
