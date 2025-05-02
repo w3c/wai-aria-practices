@@ -570,10 +570,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-card/">Disclosure Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
                 <li><a href="../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></li>
                 <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -629,6 +631,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-card/">Disclosure Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
