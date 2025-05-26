@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-faq/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 21 May 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 26 May 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -158,7 +158,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <ul>
           <li>
             The semantic structure of the FAQ is conveyed with native <code>ol</code> and <code> li</code> elements.
-            To ensure the list structure is communicated to assistive technologies, a <code>button</code> element and a <code>div</code> element containing answer content that can be shown or hidden by the button are both children of an <code>li</code> element.
+            To ensure the list structure is communicated to assistive technologies, a <code>button</code> element containing the question and a <code>div</code> element containing answer are children of an <code>li</code> element.  NOTE: The <code>button</code> element is used to hide and show the <code>div</code> element with the answer.
           </li>
           <li>To help people with visual impairments identify the disclosure as interactive and make it easier to perceive that clicking either the disclosure button or its label changes the expanded state, when a pointer hovers over the button or its label, the background color changes, a border appears, and the cursor changes to a pointer.</li>
           <li>
