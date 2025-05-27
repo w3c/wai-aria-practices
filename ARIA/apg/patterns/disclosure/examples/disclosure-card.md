@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-card/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 2 May 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 27 May 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -117,203 +117,100 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1" class="disclosure-cards">
-          <h3>Highwind Accessibility Conference</h3>
-          <ol class="days">
+          <h3>Musical Education Conference</h3>
+          <ol class="sessions">
             <li>
-              <h4>Monday</h4>
-              <ol class="sessions">
-                <li>
-                  <section class="disclosure-card session" aria-labelledby="from-fire-to-flare">
-                    <header>
-                      <hgroup>
-                        <h5 id="from-fire-to-flare">From Fire to Flare</h5>
-                        <p>Terra Branford</p>
-                      </hgroup>
-                      <p>
-                        <span class="location">7 AM in Narshe</span>
-                        <button id="toggle-from-fire-to-flare" aria-labelledby="from-fire-to-flare toggle-from-fire-to-flare" aria-expanded="false" aria-controls="details-from-fire-to-flare" type="button">
-                          <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-                          Details
-                        </button>
-                      </p>
-                    </header>
-                    <div id="details-from-fire-to-flare" class="details" inert>
-                      <div class="description">
-                        <p>Terra kicks off the conference by drawing parallels between her journey of self-discovery and the evolution of accessible design. Just as a simple Fire spell can grow into a powerful Flare, small accessibility improvements can build into transformative user experiences. She explains how <a href="#">progressive enhancement</a> — starting with a solid foundation and layering on more advanced functionality — mirrors the way magic strengthens over time, unlocking new potential without leaving anyone behind.</p>
-                        <p>With a mix of inspiration and technical insight, Terra dives into practical strategies for ensuring every user, regardless of ability or device, can experience a website’s full power. She reminds developers that accessibility isn’t a static checklist—it’s an ongoing progression, much like a hero’s growth. By embracing this mindset, designers and developers can craft experiences that don’t just function but truly <em>ignite</em>.</p>
-                      </div>
-                      <form>
-                        <h6>Session registration</h6>
-                        <label>
-                          <input type="checkbox">
-                          I’d like swag, please.
-                        </label>
-                        <button type="button">Book a seat</button>
-                      </form>
-                    </div>
-                  </section>
-                </li>
-                <li>
-                  <section class="disclosure-card session" aria-labelledby="impostor-syndrome">
-                    <header>
-                      <hgroup>
-                        <h5 id="impostor-syndrome">Impostor syndrome</h5>
-                        <p>Gogo</p>
-                      </hgroup>
-                      <p>
-                        <span class="location">8 AM in Zone Eater’s Belly</span>
-                        <button id="toggle-impostor-syndrome" aria-labelledby="impostor-syndrome toggle-impostor-syndrome" aria-expanded="false" aria-controls="details-impostor-syndrome" type="button">
-                          <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-                          Details
-                        </button>
-                      </p>
-                    </header>
-                    <div id="details-impostor-syndrome" class="details" inert>
-                      <div class="description">
-                        <p>Gogo takes the stage to explore the perilous and persnickety art of <a href="#">role hijacking</a> in web development. With his uncanny ability to imitate others, he explains how generic divs and spans can be repurposed to mimic native semantic elements. However, he warns that without careful consideration, essential functionality might be lost—much like an echo that never quite captures the original voice.</p>
-                        <p>Throughout his session, Gogo shares real-world examples where imitating components enhanced a design, but also instances where it led to confusion and usability issues. His playful yet insightful approach encourages developers to experiment boldly—but always with an eye on preserving accessibility and clarity.</p>
-                      </div>
-                      <form>
-                        <h6>Session registration</h6>
-                        <label>
-                          <input type="checkbox">
-                          I’d like swag, please.
-                        </label>
-                        <button type="button">Book a seat</button>
-                      </form>
-                    </div>
-                  </section>
-                </li>
-                <li>
-                  <section class="disclosure-card session" aria-labelledby="blitzing-through-barriers">
-                    <header>
-                      <hgroup>
-                        <h5 id="blitzing-through-barriers">Blitzing through barriers</h5>
-                        <p>Sabin Rene Figaro</p>
-                      </hgroup>
-                      <p>
-                        <span class="location">8 AM in Duncan’s Dojo</span>
-                        <button id="toggle-blitzing-through-barriers" aria-labelledby="blitzing-through-barriers toggle-blitzing-through-barriers" aria-expanded="false" aria-controls="details-blitzing-through-barriers" type="button">
-                          <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-                          Details
-                        </button>
-                      </p>
-                    </header>
-                    <div id="details-blitzing-through-barriers" class="details" inert>
-                      <div class="description">
-                        <p>Sabin’s session is a high-energy exploration of performance and <a href="#">responsive design</a>, delivered with the force of his signature blitz techniques. He compares the need for rapid load times and smooth interactions to his own lightning-fast martial arts moves. Every pixel and piece of code should strike decisively, overcoming obstacles in the blink of an eye.</p>
-                        <p>Through dynamic demonstrations and lively anecdotes, Sabin shows that speed and accessibility go hand in hand. His message is clear: just as a well-timed attack can change the tide of battle, a swift and accessible website can win over even the most demanding users.</p>
-                      </div>
-                      <form>
-                        <h6>Session registration</h6>
-                        <label>
-                          <input type="checkbox">
-                          I’d like swag, please.
-                        </label>
-                        <button type="button">Book a seat</button>
-                      </form>
-                    </div>
-                  </section>
-                </li>
-              </ol>
+              <article class="disclosure-card session" aria-labelledby="symphonic-structure">
+                <header>
+                  <hgroup>
+                    <h4 id="symphonic-structure">Symphonic Structure: Form, Function, and Feeling</h4>
+                    <p>Ludwig van Beethoven</p>
+                  </hgroup>
+                  <p>
+                    <span class="location">7 AM in Theater an der Wien</span>
+                    <button id="toggle-symphonic-structure" aria-labelledby="symphonic-structure toggle-symphonic-structure" aria-expanded="false" aria-controls="details-symphonic-structure" type="button">
+                      <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+                      Details
+                    </button>
+                  </p>
+                </header>
+                <div id="details-symphonic-structure" class="details" inert>
+                  <div class="description">
+                    <p>Beethoven invites you to uncover the architectural principles that make a composition — or a curriculum — sing. He compares <a href="#">symphonic form</a> to effective educational frameworks, emphasizing how recurring motifs and variations foster retention, engagement, and deep emotional resonance. He asserts that structure should never constrain passion; rather, it channels it into something truly enduring.</p>
+                    <p>Blending musical theory with pedagogical insight, Beethoven encourages educators to embrace contrast, conflict, and resolution in their lesson planning. Just as the second movement of a symphony can be a quiet reflection following a turbulent first, so too should pacing and emotional cadence be considered in designing impactful learning experiences.</p>
+                  </div>
+                  <form>
+                    <h5>Session registration</h5>
+                    <label>
+                      <input type="checkbox">
+                      I’d like swag, please.
+                    </label>
+                    <button type="button">Book a seat</button>
+                  </form>
+                </div>
+              </article>
             </li>
             <li>
-              <h4>Tuesday</h4>
-              <ol class="sessions">
-                <li>
-                  <section class="disclosure-card session" aria-labelledby="stealthy-techniques-with-aria-hidden">
-                    <header>
-                      <hgroup>
-                        <h5 id="stealthy-techniques-with-aria-hidden">Stealthy techniques with aria-hidden</h5>
-                        <p>Shadow</p>
-                      </hgroup>
-                      <p>
-                        <span class="location">7 AM in Cave on the Veldt</span>
-                        <button id="toggle-stealthy-techniques-with-aria-hidden" aria-labelledby="stealthy-techniques-with-aria-hidden toggle-stealthy-techniques-with-aria-hidden" aria-expanded="false" aria-controls="details-stealthy-techniques-with-aria-hidden" type="button">
-                          <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-                          Details
-                        </button>
-                      </p>
-                    </header>
-                    <div id="details-stealthy-techniques-with-aria-hidden" class="details" inert>
-                      <div class="description">
-                        <p>In a session as enigmatic as he is, Shadow unveils the secrets of <a href="#">ARIA’s aria-hidden attribute</a>. True to his nature as a stealthy ninja, he explains how selectively hiding decorative elements can create a smoother experience for screen reader users—keeping the focus on what truly matters. Like disappearing into the shadows, unnecessary clutter can vanish without a trace.</p>
-                        <p>Shadow mixes technical details with tales from his covert adventures, demonstrating how subtle adjustments can yield powerful results. His humorous insights make it clear that when used correctly, aria-hidden is the secret weapon every developer needs in their accessibility toolkit.</p>
-                      </div>
-                      <form>
-                        <h6>Session registration</h6>
-                        <label>
-                          <input type="checkbox">
-                          I’d like swag, please.
-                        </label>
-                        <button type="button">Book a seat</button>
-                      </form>
-                    </div>
-                  </section>
-                </li>
-                <li>
-                  <section class="disclosure-card session" aria-labelledby="vivid-visions-with-color-contrast">
-                    <header>
-                      <hgroup>
-                        <h5 id="vivid-visions-with-color-contrast">Vivid visions with color contrast</h5>
-                        <p>Relm Arrowny</p>
-                      </hgroup>
-                      <p>
-                        <span class="location">8 AM in Thamasa</span>
-                        <button id="toggle-vivid-visions-with-color-contrast" aria-labelledby="vivid-visions-with-color-contrast toggle-vivid-visions-with-color-contrast" aria-expanded="false" aria-controls="details-vivid-visions-with-color-contrast" type="button">
-                          <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-                          Details
-                        </button>
-                      </p>
-                    </header>
-                    <div id="details-vivid-visions-with-color-contrast" class="details" inert>
-                      <div class="description">
-                        <p>Relm, with her discerning eye as a painter, brings her passion for color to the realm of web accessibility. She explains that just as a masterful painting relies on the deliberate use of contrasting hues to evoke emotion and clarity, a website must employ thoughtful <a href="#">color contrast</a> to ensure legibility and engagement. For Relm, choosing the right palette isn’t just about aesthetics—it’s about creating an inclusive visual experience.</p>
-                        <p>In her session, Relm offers practical tips on selecting color schemes that meet accessibility guidelines without sacrificing artistic expression. She showcases examples of vibrant designs where contrast elevates both form and function, inspiring developers to view color not only as decoration but as a critical element of accessible design.</p>
-                      </div>
-                      <form>
-                        <h6>Session registration</h6>
-                        <label>
-                          <input type="checkbox">
-                          I’d like swag, please.
-                        </label>
-                        <button type="button">Book a seat</button>
-                      </form>
-                    </div>
-                  </section>
-                </li>
-                <li>
-                  <section class="disclosure-card session" aria-labelledby="embracing-chaos">
-                    <header>
-                      <hgroup>
-                        <h5 id="embracing-chaos">Embracing chaos</h5>
-                        <p>Kefka Palazzo</p>
-                      </hgroup>
-                      <p>
-                        <span class="location">9 AM in Kefka's Tower</span>
-                        <button id="toggle-embracing-chaos" aria-labelledby="embracing-chaos toggle-embracing-chaos" aria-expanded="false" aria-controls="details-embracing-chaos" type="button">
-                          <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-                          Details
-                        </button>
-                      </p>
-                    </header>
-                    <div id="details-embracing-chaos" class="details" inert>
-                      <div class="description">
-                        <p>Kefka rounds out the conference with a session that is as unpredictable as it is entertaining. With his trademark manic glee, he presents a tongue-in-cheek critique of what happens when <a href="#">accessibility guidelines</a> are tossed aside. His talk is a wild ride through the pitfalls of chaotic design—where confusion reigns and users are left to fend for themselves, much to his twisted delight.</p>
-                        <p>Yet, beneath the chaos, Kefka’s message is surprisingly clear: ignoring accessibility can lead to catastrophic outcomes that even a madman can’t laugh off. With a mix of dark humor and unexpected insight, he challenges developers to embrace structure and clarity, proving that even in a world of madness, order is the ultimate act of rebellion.</p>
-                      </div>
-                      <form>
-                        <h6>Session registration</h6>
-                        <label>
-                          <input type="checkbox">
-                          I’d like swag, please.
-                        </label>
-                        <button type="button">Book a seat</button>
-                      </form>
-                    </div>
-                  </section>
-                </li>
-              </ol>
+              <article class="disclosure-card session" aria-labelledby="folk-futures">
+                <header>
+                  <hgroup>
+                    <h4 id="folk-futures">Folk Futures: Tradition in the Classroom</h4>
+                    <p>Antonín Dvořák</p>
+                  </hgroup>
+                  <p>
+                    <span class="location">8 AM in Rudolfinum Hall</span>
+                    <button id="toggle-folk-futures" aria-labelledby="folk-futures toggle-folk-futures" aria-expanded="false" aria-controls="details-folk-futures" type="button">
+                      <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+                      Details
+                    </button>
+                  </p>
+                </header>
+                <div id="details-folk-futures" class="details" inert>
+                  <div class="description">
+                    <p>Dvořák explores the power of cultural roots in modern music education, drawing from his own deep connection to the folk melodies of Bohemia. He demonstrates how incorporating <a href="#">regional traditions</a> into teaching not only diversifies students’ musical vocabulary, but fosters a sense of identity and continuity across generations. Through examples from his own works, he illustrates how authenticity can coexist with innovation.</p>
+                    <p>Attendees will learn strategies to weave traditional forms into contemporary curricula, using rhythm, language, and storytelling as tools of engagement. Dvořák makes the case that honoring heritage doesn’t mean resisting progress—instead, it provides a vibrant foundation on which students can build their own musical voices.</p>
+                  </div>
+                  <form>
+                    <h5>Session registration</h5>
+                    <label>
+                      <input type="checkbox">
+                      I’d like swag, please.
+                    </label>
+                    <button type="button">Book a seat</button>
+                  </form>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="disclosure-card session" aria-labelledby="playful-dissonance">
+                <header>
+                  <hgroup>
+                    <h4 id="playful-dissonance">Playful Dissonance: Teaching with Wit and Wonder</h4>
+                    <p>Francis Poulenc</p>
+                  </hgroup>
+                  <p>
+                    <span class="location">9 AM in Église Saint-Roch</span>
+                    <button id="toggle-playful-dissonance" aria-labelledby="playful-dissonance toggle-playful-dissonance" aria-expanded="false" aria-controls="details-playful-dissonance" type="button">
+                      <svg role="image" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle><polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+                      Details
+                    </button>
+                  </p>
+                </header>
+                <div id="details-playful-dissonance" class="details" inert>
+                  <div class="description">
+                    <p>Poulenc brings charm and surprise to the spotlight, making a compelling case for <a href="#">humor as pedagogy</a>. Through anecdotes, musical excerpts, and sly asides, he reveals how wit and whimsy can disarm resistance and unlock creativity in learners of all ages. He shows that even dissonance, when playfully framed, becomes an invitation rather than a disruption.</p>
+                    <p>This session challenges the notion that music education must be rigid or overly serious. Poulenc encourages instructors to embrace imperfection, joy, and even contradiction in their teaching. The result? A classroom atmosphere that not only nurtures skill but sparks lifelong curiosity and delight.</p>
+                  </div>
+                  <form>
+                    <h5>Session registration</h5>
+                    <label>
+                      <input type="checkbox">
+                      I’d like swag, please.
+                    </label>
+                    <button type="button">Book a seat</button>
+                  </form>
+                </div>
+              </article>
             </li>
           </ol>
         </div>
