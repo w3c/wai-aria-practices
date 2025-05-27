@@ -143,7 +143,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     <h5>Session registration</h5>
                     <label>
                       <input type="checkbox">
-                      I’d like swag, please.
+                      I’d like a transcript of this session
                     </label>
                     <button type="button">Book a seat</button>
                   </form>
@@ -174,7 +174,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     <h5>Session registration</h5>
                     <label>
                       <input type="checkbox">
-                      I’d like swag, please.
+                      I’d like a transcript of this session
                     </label>
                     <button type="button">Book a seat</button>
                   </form>
@@ -205,7 +205,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     <h5>Session registration</h5>
                     <label>
                       <input type="checkbox">
-                      I’d like swag, please.
+                      I’d like a transcript of this session
                     </label>
                     <button type="button">Book a seat</button>
                   </form>
