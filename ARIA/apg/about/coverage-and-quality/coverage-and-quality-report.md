@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: September 12, 2024</p>
+    <p>Page last updated: May 27, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -941,6 +941,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
@@ -1002,6 +1003,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
@@ -1330,19 +1332,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">61</td>
+            <td id="example_summary_total">62</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
-            <td id="example_summary_hc">32</td>
+            <td id="example_summary_hc">33</td>
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">35</td>
+            <td id="example_summary_svg">36</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>forced-colors</code> media query</th>
-            <td id="example_summary_force_colors">2</td>
+            <td id="example_summary_force_colors">3</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
@@ -1367,7 +1369,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">16</td>
+            <td id="example_summary_mouse">17</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -1627,6 +1629,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>3</td>
             <td>3</td>
             <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td>ex1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>4</td>
+            <td>2</td>
+            <td>banner,aria-hidden,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
@@ -2307,6 +2322,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
           </tr>
           <tr>
+            <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
             <td></td>
             <td>Yes</td>
@@ -2589,6 +2612,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
             <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a></td>
+            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>

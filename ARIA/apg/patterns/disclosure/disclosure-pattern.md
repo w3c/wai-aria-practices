@@ -77,6 +77,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><a href="examples/disclosure-faq/">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
           <li><a href="examples/disclosure-navigation/">Disclosure (Show/Hide) Navigation Menu</a></li>
           <li><a href="examples/disclosure-navigation-hybrid/">Disclosure (Show/Hide) Navigation Menu with Top-Level Links</a></li>
+          <li><a href="examples/disclosure-card/">Disclosure (Show/Hide) Card</a></li>
         </ul>
       </section>
 
