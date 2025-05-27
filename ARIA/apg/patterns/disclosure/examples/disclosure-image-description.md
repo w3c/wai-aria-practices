@@ -105,7 +105,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../disclosure-navigation/">Example Disclosure Navigation Menu</a>
           </li>
           <li><a href="../disclosure-navigation-hybrid/">Example Disclosure Navigation Menu with Top-Level Links</a></li>
-          <li><a href="../disclosure-card/">Disclosure Card</a></li>
+          <li><a href="../disclosure-card/">Disclosure (Show/Hide) Card</a></li>
         </ul>
       </section>
 
