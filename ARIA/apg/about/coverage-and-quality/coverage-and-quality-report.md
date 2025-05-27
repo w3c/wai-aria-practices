@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: May 2, 2025</p>
+    <p>Page last updated: May 27, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -633,10 +633,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>region</code></td>
-            <td><ul>
-                <li><a href="../../patterns/expandable-region/">Expandable Region Pattern</a></li>
-                <li><a href="../../practices/landmark-regions/#aria_lh_region">Region</a></li>
-            </ul>
+            <td><a href="../../practices/landmark-regions/#aria_lh_region">Region</a>
 </td>
             <td><ul>
                 <li><a href="../../patterns/accordion/examples/accordion/">Accordion</a></li>
@@ -949,7 +946,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1336,7 +1332,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">63</td>
+            <td id="example_summary_total">62</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
@@ -1344,11 +1340,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">37</td>
+            <td id="example_summary_svg">36</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>forced-colors</code> media query</th>
-            <td id="example_summary_force_colors">4</td>
+            <td id="example_summary_force_colors">3</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
@@ -1373,7 +1369,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">18</td>
+            <td id="example_summary_mouse">17</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -1641,11 +1637,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td>Yes</td>
             <td>ex1</td>
-            <td>2</td>
+            <td>1</td>
             <td>0</td>
             <td>4</td>
             <td>2</td>
-            <td>banner,region,aria-hidden,aria-labelledby</td>
+            <td>banner,aria-hidden,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
@@ -1698,19 +1694,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>4</td>
             <td>3</td>
             <td>navigation,region,aria-label</td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>ex1</td>
-            <td>2</td>
-            <td>0</td>
-            <td>4</td>
-            <td>1</td>
-            <td>banner,region,aria-expanded,aria-hidden,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
@@ -2363,14 +2346,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
           </tr>
           <tr>
-            <td><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td></td>
-            <td>Yes</td>
-            <td></td>
-          </tr>
-          <tr>
             <td><a href="../../patterns/feed/examples/feed-display.html">Feed Display</a></td>
             <td></td>
             <td>Yes</td>
@@ -2640,11 +2615,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure Card</a></td>
-            <td>Yes</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a href="../../patterns/expandable-region/examples/expandable-region/">Expandable Region</a></td>
             <td>Yes</td>
             <td></td>
           </tr>
