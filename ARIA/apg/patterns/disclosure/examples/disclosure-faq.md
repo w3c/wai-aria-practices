@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-faq/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 26 May 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 4 June 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -117,7 +117,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
           <h3>Parking <abbr title="Frequently Asked Questions">FAQ</abbr>s</h3>
-          <ol class="faq">
+          <ul class="faq">
             <li>
               <button type="button" aria-expanded="false" aria-controls="faq1_desc">What do I do if I have a permit for an assigned lot, but can't find a space there?</button>
               <div id="faq1_desc" class="desc">
@@ -148,7 +148,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 Be sure to take note of the signs at each lot entrance.
               </div>
             </li>
-          </ol>
+          </ul>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
