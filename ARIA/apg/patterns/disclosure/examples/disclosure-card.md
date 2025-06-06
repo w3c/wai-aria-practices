@@ -481,7 +481,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>
             Each disclosure card is marked up as an <a href="https://w3c.github.io/aria/#article"><code>&lt;article&gt;</code></a>
             element to convey a useful semantic grouping without adding
-            superflous <a href="https://w3c.github.io/aria/#dfn-landmark">landmarks</a> to the
+            superfluous <a href="https://w3c.github.io/aria/#dfn-landmark">landmarks</a> to the
             document.
           </li>
         </ul>
