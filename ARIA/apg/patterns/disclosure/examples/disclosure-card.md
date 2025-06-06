@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-card/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 27 May 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 6 June 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -94,7 +94,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>About This Example</h2>
         <img alt class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-disclosure.svg">
         <p>
-          The following example demonstrates using the <a href="../../">Disclosure Pattern</a> to create an expandable card.
+          The following example demonstrates using the <a href="../../">Disclosure Pattern</a> to create an
+          expandable card.
+        </p>
+        <p>
+          Authors sometimes want to display a summary of rich or complex content
+          within a disclosure’s collapsed state, while also affording pointing
+          users the ability to toggle the expanded state by clicking anywhere
+          within the visible boundaries.
+        </p>
+        <p>
+          To achieve this, authors may be tempted to nest the entirety of the
+          rich summary within the disclosure button itself, but this can make
+          the button’s accessible label cumbersome, inaccurate, or disorienting.
+        </p>
+        <p>
+          By using a basic disclosure pattern with some light JavaScript event
+          handling, it’s possible to create the desired experience without
+          compromising the quality of the button label.
         </p>
         <p>Similar examples include:</p>
         <ul>
@@ -361,7 +378,113 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
       <section>
         <h2>Accessibility Features</h2>
-        <p><mark>Content <abbr title="to be determined">TBD</abbr></mark></p>
+        <ul>
+          <li>
+            Each disclosure card’s rich summary presents a heading, brief text,
+            and a “Details” button.
+          </li>
+          <li>
+            In the collapsed state, the “Details” button is marked up with an <a href="https://w3c.github.io/aria/#aria-expanded"><code>aria-expanded</code></a>
+            value of <code>false</code>. The button’s text label is accompanied
+            by an icon that visually conveys the same state: an encircled
+            chevron pointing downward, suggesting that more content can be
+            revealed.
+          </li>
+          <li>
+            The “Details” button uses <a href="https://w3c.github.io/aria/#aria-labelledby"><code>aria-labelledby</code></a>
+            to combine the card’s heading with the text “Details” to form an
+            accessible name that balances descriptiveness with brevity.
+          </li>
+          <li>
+            The card reinforces its clickability by visibly reacting to hover
+            events:
+            <ul>
+              <li>The card area gains a thin gray border.</li>
+              <li>The “Details” button gains an underline.</li>
+              <li>The chevron icon enlarges slightly.</li>
+              <li>
+                The text and icon color of the “Details” button change from gray
+                to black.
+              </li>
+            </ul>
+          </li>
+          <li>
+            When the “Details” button receives keyboard focus:
+            <ul>
+              <li>
+                The entire card gains a blue outline, giving the illusion that
+                the card itself is “focused”.
+              </li>
+              <li>The “Details” button gains an underline.</li>
+              <li>The chevron icon enlarges slightly.</li>
+              <li>
+                The text and icon color of the “Details” button change from gray
+                to blue.
+              </li>
+              <li>
+                The card continues to react to hover events by “stacking” the
+                thin gray border alongside the blue outline, reinforcing that
+                the entire card remains clickable in both its collapsed and
+                expanded states.
+              </li>
+            </ul>
+          </li>
+          <li>
+            When any location within the card is clicked:
+            <ul>
+              <li>
+                Focus is programmatically placed on the “Details” button, as if
+                the user had activated it explicitly.
+              </li>
+              <li>
+                The disclosure toggles to its opposite state, increasing or
+                decreasing the height of the card to reveal or conceal
+                additional content.
+              </li>
+              <li>
+                The “Details” button’s <a href="https://w3c.github.io/aria/#aria-expanded"><code>aria-expanded</code></a>
+                attribute is toggled to <code>true</code> or <code>false</code>
+                accordingly.
+              </li>
+              <li>
+                The chevron icon rotates 180 degrees, visually expressing the
+                ARIA state.
+              </li>
+            </ul>
+          </li>
+          <li>
+            If the user’s click operation triggers a text selection within the
+            card (i.e., highlight), the disclosure’s toggling behavior is
+            suppressed to avoid interfering with the user’s intentions.
+          </li>
+          <li>
+            If the user’s click operation targets a focusable element nested
+            within the card (e.g., a link, form control, or button) or a
+            clickable <code>&lt;label&gt;</code>, the disclosure’s toggling
+            behavior is suppressed to avoid interfering with the user’s
+            intentions.
+          </li>
+          <li>
+            When forced colors are enabled, <a href="https://www.w3.org/TR/css-color-4/#css-system-colors">system
+            color keywords</a> are used to ensure visibility and sufficient
+            contrast for the card’s content and interactive states.
+          </li>
+          <li>
+            Animation is suppressed for users who have indicated a preference
+            for reduced motion or high contrast.
+          </li>
+          <li>
+            Voice control users can toggle a disclosure card by speaking an
+            activation command such as <q>Click Folk Futures: Tradition in the
+            Classroom details</q>.
+          </li>
+          <li>
+            Each disclosure card is marked up as an <a href="https://w3c.github.io/aria/#article"><code>&lt;article&gt;</code></a>
+            element to convey a useful semantic grouping without adding
+            superflous <a href="https://w3c.github.io/aria/#dfn-landmark">landmarks</a> to the
+            document.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -387,8 +510,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <kbd>Space</kbd> or <br>
                 <kbd>Enter</kbd>
               </th>
-              <td>Activates the disclosure button, which toggles the visibility of the
-                answer to the question.</td>
+              <td>
+                Activates the disclosure button, which toggles the
+                expanded/collapsed state of the card.
+              </td>
             </tr>
           </tbody>
         </table></div>
@@ -434,10 +559,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     visual states with the value of the <code>aria-expanded</code>
                     attribute.
                   </li>
-                  <li>The visual indicator of the show/hide state is created using CSS
-                    <code>:before</code> pseudo element and <code>content</code>
-                    property so the image is reliably rendered in high contrast mode
-                    of operating systems and browsers.</li>
                 </ul>
               </td>
             </tr>
@@ -458,10 +579,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     are used to synchronize the visual states with the value of the
                     <code>aria-expanded</code> attribute.
                   </li>
-                  <li>The visual indicator of the show/hide state is created using CSS
-                    <code>:before</code> pseudo element and <code>content</code>
-                    property so the image is reliably rendered in high contrast mode
-                    of operating systems and browsers.</li>
                 </ul>
               </td>
             </tr>

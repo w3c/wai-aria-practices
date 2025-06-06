@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: May 27, 2025</p>
+    <p>Page last updated: June 6, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -1348,7 +1348,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
-            <td id="example_summary_current_color">28</td>
+            <td id="example_summary_current_color">29</td>
           </tr>
 
           <tr>
@@ -2327,7 +2327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td></td>
             <td>Yes</td>
-            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
