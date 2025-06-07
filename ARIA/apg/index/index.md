@@ -372,7 +372,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../patterns/table/examples/table/">Table</a></li>
-                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
               </ul>
             </td>
           </tr>

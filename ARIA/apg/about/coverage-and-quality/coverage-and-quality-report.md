@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: September 12, 2024</p>
+    <p>Page last updated: June 7, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -652,7 +652,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
                 <li><a href="../../patterns/table/examples/table/">Table</a></li>
-                <li><a href="../../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
             </ul>
 </td>
           </tr>
@@ -2142,8 +2141,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td>ex1</td>
-            <td>3</td>
-            <td>3</td>
+            <td>2</td>
+            <td>2</td>
             <td>7</td>
             <td>5</td>
             <td>aria-activedescendant,aria-current</td>
