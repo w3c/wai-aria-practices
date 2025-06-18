@@ -1,5 +1,6 @@
 [build]
-command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
+# NB rm -rf typically applies to UNIX environments which this Netlify deploy works; a temporary solution to while figuring why .gitmodule updates are causing deploy issues unless cache is reset
+command = "rm -rf .git/modules .git/modules/* .git/index .git/.gitmodules .netlify .cache node_modules build dist out && git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
 
 [build.environment]
