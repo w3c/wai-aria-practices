@@ -197,12 +197,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <p>
                         Beethoven invites you to uncover the architectural
                         principles that make a composition — or a curriculum —
-                        sing. He compares <a href="#">symphonic form</a> to
-                        effective educational frameworks, emphasizing how
-                        recurring motifs and variations foster retention,
-                        engagement, and deep emotional resonance. He asserts
-                        that structure should never constrain passion; rather,
-                        it channels it into something truly enduring.
+                        sing. He compares <a href="#"
+                        onclick="alert('This is just for demo purposes'); return false;"
+                        >symphonic form</a> to effective educational frameworks,
+                        emphasizing how recurring motifs and variations foster
+                        retention, engagement, and deep emotional resonance. He
+                        asserts that structure should never constrain passion;
+                        rather, it channels it into something truly enduring.
                       </p>
                       <p>
                         Blending musical theory with pedagogical insight,
@@ -220,7 +221,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         <input type="checkbox">
                         I’d like a transcript of this session
                       </label>
-                      <button type="button">Book a seat</button>
+                      <button type="button"
+                        onclick="alert('This is just for demo purposes'); return false;"
+                      >
+                        Book a seat
+                      </button>
                     </form>
                   </div>
                 </article>
@@ -276,12 +281,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         Dvořák explores the power of cultural roots in modern
                         music education, drawing from his own deep connection to
                         the folk melodies of Bohemia. He demonstrates how
-                        incorporating <a href="#">regional traditions</a> into
-                        teaching not only diversifies students’ musical
-                        vocabulary, but fosters a sense of identity and
-                        continuity across generations. Through examples from his
-                        own works, he illustrates how authenticity can coexist
-                        with innovation.
+                        incorporating <a href="#"
+                        onclick="alert('This is just for demo purposes'); return false;"
+                        >regional traditions</a> into teaching not only
+                        diversifies students’ musical vocabulary, but fosters a
+                        sense of identity and continuity across generations.
+                        Through examples from his own works, he illustrates how
+                        authenticity can coexist with innovation.
                       </p>
                       <p>
                         Attendees will learn strategies to weave traditional
@@ -299,7 +305,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         <input type="checkbox">
                         I’d like a transcript of this session
                       </label>
-                      <button type="button">Book a seat</button>
+                      <button type="button"
+                        onclick="alert('This is just for demo purposes'); return false;"
+                      >
+                        Book a seat
+                      </button>
                     </form>
                   </div>
                 </article>
@@ -353,12 +363,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     <div class="description">
                       <p>
                         Poulenc brings charm and surprise to the spotlight,
-                        making a compelling case for <a href="#">humor as
-                        pedagogy</a>. Through anecdotes, musical excerpts, and
-                        sly asides, he reveals how wit and whimsy can disarm
-                        resistance and unlock creativity in learners of all
-                        ages. He shows that even dissonance, when playfully
-                        framed, becomes an invitation rather than a disruption.
+                        making a compelling case for <a href="#"
+                        onclick="alert('This is just for demo purposes'); return false;"
+                        >humor as pedagogy</a>. Through anecdotes, musical
+                        excerpts, and sly asides, he reveals how wit and whimsy
+                        can disarm resistance and unlock creativity in learners
+                        of all ages. He shows that even dissonance, when
+                        playfully framed, becomes an invitation rather than a
+                        disruption.
                       </p>
                       <p>
                         This session challenges the notion that music education
@@ -375,7 +387,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                         <input type="checkbox">
                         I’d like a transcript of this session
                       </label>
-                      <button type="button">Book a seat</button>
+                      <button type="button"
+                        onclick="alert('This is just for demo purposes'); return false;"
+                      >
+                        Book a seat
+                      </button>
                     </form>
                   </div>
                 </article>
