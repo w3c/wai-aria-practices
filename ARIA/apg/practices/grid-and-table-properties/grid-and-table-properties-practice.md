@@ -158,7 +158,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   aria-rowcount tells assistive technologies the actual size of the grid
   is 463 rows even though only 4 rows are present in the markup.
 --&gt;
-&lt;table role=&quot;grid&quot; aria-rowcount=&quot;463&quot; aria-label=&quot;Student roster for history 101&quot;&gt;
+&lt;table role=&quot;grid&quot; aria-rowcount=&quot;463&quot;&gt;
+  aria-label=&quot;Student roster for history 101&quot;
   &lt;thead&gt;
     &lt;tr aria-rowindex=&quot;1&quot;&gt;
       &lt;th&gt;Last Name&lt;/th&gt;
@@ -279,8 +280,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             In this example, the first two columns with the student name are shown, but the score columns have been scrolled to show columns 10 through 13.
             Columns 3 through 9 are not visible so are not in the DOM.
           </p>
-          <pre><code>&lt;table role=&quot;grid&quot; aria-rowcount=&quot;463&quot; aria-colcount=&quot;13&quot;
-  aria-label=&quot;Student grades for history 101&quot;&gt;
+          <pre><code>&lt;table role=&quot;grid&quot; aria-rowcount=&quot;463&quot; aria-colcount=&quot;13&quot;&gt;
+  aria-label=&quot;Student grades for history 101&quot;
   &lt;!--
     aria-rowcount and aria-colcount tell assistive technologies
     the actual size of the grid is 463 rows by 13 columns,
