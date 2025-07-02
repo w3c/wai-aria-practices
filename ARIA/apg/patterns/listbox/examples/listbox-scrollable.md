@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-scrollable/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 19 November 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 2 July 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -389,7 +389,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css" type="tex/css">listbox.css</a>
           </li>
           <li>
-            Javascript:
+            JavaScript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-scrollable.js" type="text/javascript">listbox-scrollable.js</a>
           </li>
         </ul>

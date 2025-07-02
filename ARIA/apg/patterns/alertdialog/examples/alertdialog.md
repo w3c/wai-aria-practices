@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/alertdialog/examples/alertdialog/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/138'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/138'>View issues related to this example</a></p>        <p>Page last updated: 2 July 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -289,10 +289,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section>
-        <h2 id="src_label">Javascript and CSS Source Code</h2>
+        <h2 id="src_label">JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/alertdialog/examples/css/alertdialog.css" type="text/css">alertdialog.css</a></li>
-          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/alertdialog/examples/js/alertdialog.js" type="text/javascript">alertdialog.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
+          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/alertdialog/examples/js/alertdialog.js" type="text/javascript">alertdialog.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/shared/js/utils.js">utils.js</a></li>
         </ul>
       </section>
 
