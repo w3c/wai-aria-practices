@@ -5,8 +5,11 @@ const { parse: parseHtml } = require("node-html-parser");
 const rewriteElementPaths = require("./rewriteElementPaths");
 const removeDuplicateMainTag = require("./removeDuplicateMainTag");
 const removeConflictingCss = require("./removeConflictingCss");
+const { getReadThisFirst } = require("./transformPatternIndex");
 
 const transformPattern = async (sourcePath, sourceContents) => {
+  const readThisFirst = await getReadThisFirst(sourcePath, { includeImage: false });
+
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
 
@@ -36,11 +39,16 @@ const transformPattern = async (sourcePath, sourceContents) => {
 
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
+  const content = `
+    ${readThisFirst}
+    ${removeDuplicateMainTag(html.querySelector("body").innerHTML)}
+  `
+
   return formatForJekyll({
     title,
     sitePath,
     githubPath,
-    content: removeDuplicateMainTag(html.querySelector("body").innerHTML),
+    content,
     enableSidebar: true,
     head: html.querySelector("head"),
     footer: "",
