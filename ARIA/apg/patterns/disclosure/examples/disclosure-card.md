@@ -98,30 +98,22 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           expandable card.
         </p>
         <p>
-          Authors sometimes want to display a summary of rich or complex content
-          within a disclosure’s collapsed state, while also affording pointing
-          users the ability to toggle the expanded state by clicking anywhere
-          within the visible boundaries.
-        </p>
-        <p>
-          To achieve this, authors may be tempted to nest the entirety of the
-          rich summary within the disclosure button itself, but this can:
+          Authors sometimes want to display a summary of content in a collapsed disclosure that includes content that is more rich or complex than a plain text summary.
+          In addition, They may want to enable users of pointing devices to toggle the expanded state by clicking anywhere within the visible boundaries of the collapsed summary.
+          Authors may assume these goals can be achieved by nesting the entire rich summary within a disclosure button, however doing so can:
         </p>
         <ul>
           <li>
-            Make the button’s accessible label cumbersome, inaccurate, or
-            disorienting.
+            Make the accessible label of the disclosure button cumbersome, inaccurate, or disorienting.
           </li>
           <li>
-            Result in invalid HTML, since <a href="https://html.spec.whatwg.org/multipage/form-elements.html#:~:text=Content%20model%3A,tabindex%20attribute%20specified.">the
-            <code>&lt;button&gt;</code> element only permits phrasing
-            content</a>.
+            Result in invalid HTML, since 
+            <a href="https://html.spec.whatwg.org/multipage/form-elements.html#:~:text=Content%20model%3A,tabindex%20attribute%20specified.">the <code>&lt;button&gt;</code> element</a>
+            only permits phrasing content.
           </li>
         </ul>
         <p>
-          By using a basic disclosure pattern with some light JavaScript event
-          handling, it’s possible to create the desired experience in a valid,
-          accessible way.
+          Instead, by slightly modifying the structure of the basic disclosure pattern and adding some light JavaScript event handling, it’s possible to create the desired experience in a valid, accessible way.
         </p>
         <p>Similar examples include:</p>
         <ul>
