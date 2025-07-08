@@ -95,7 +95,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>article</code></td>
-            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
+            <td>
+              <ul>
+                <li><a href="../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td><code>banner</code></td>

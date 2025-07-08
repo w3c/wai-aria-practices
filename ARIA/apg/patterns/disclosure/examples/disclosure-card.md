@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-card/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 1 July 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 8 July 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -497,10 +497,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             Classroom details</q>.
           </li>
           <li>
-            Each disclosure card is marked up as an <a href="https://w3c.github.io/aria/#article"><code>&lt;article&gt;</code></a>
-            element to convey a useful semantic grouping without adding
-            superfluous <a href="https://w3c.github.io/aria/#dfn-landmark">landmarks</a> to the
-            document.
+            The content of each card is contained within an HTML <a href="https://w3c.github.io/aria/#article"><code>&lt;article&gt;</code></a>
+            element that is labeled by the heading element within the card. This
+            gives each card the <a href="https://w3c.github.io/aria/#article"><code>article</code></a>
+            role, which enables screen reader users to perceive the boundaries
+            of each card and easily move their reading cursor to the next or
+            previous card. The article element is preferable to the section
+            element because section elements would create ARIA <a href="https://w3c.github.io/aria/#dfn-landmark">landmark</a>
+            regions, and excessive use of landmark regions diminishes their
+            utility.
           </li>
         </ul>
       </section>
@@ -596,6 +601,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     CSS attribute selectors (e.g. <code>[aria-expanded="true"]</code>)
                     are used to synchronize the visual states with the value of the
                     <code>aria-expanded</code> attribute.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr data-test-id="test-not-required">
+              <th scope="row"><code>article</code></th>
+              <td></td>
+              <td><code>article</code></td>
+              <td>
+                <ul>
+                  <li>
+                    This does not have to be declared in the code because it is
+                    implicit in the HTML article element.
+                  </li>
+                  <li>
+                    Enables screen reader users to perceive the boundaries of
+                    each card and easily move a reading cursor from card to
+                    card.
                   </li>
                 </ul>
               </td>

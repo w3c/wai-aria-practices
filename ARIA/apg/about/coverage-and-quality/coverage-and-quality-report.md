@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: June 6, 2025</p>
+    <p>Page last updated: July 8, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -106,8 +106,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li><a href="#csv_files">CSV Files of Role, Properties and States Coverage</a></li>
         <li><a href="#roles_with_no_examples">Roles with no Guidance or Examples (<span class="roles_with_no_examples_count">28</span>)</a></li>
-        <li><a href="#roles_with_one_example">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">13</span>)</a></li>
-        <li><a href="#roles_with_more_than_one_example">Roles with More than One Guidance or Example  (<span class="roles_with_more_than_one_examples_count">37</span>)</a></li>
+        <li><a href="#roles_with_one_example">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">12</span>)</a></li>
+        <li><a href="#roles_with_more_than_one_example">Roles with More than One Guidance or Example  (<span class="roles_with_more_than_one_examples_count">38</span>)</a></li>
         <li><a href="#props_with_no_examples">Properties and States with no Examples (<span class="props_with_no_examples_count">12</span>)</a></li>
         <li><a href="#props_with_one_example">Properties and States with One Examples (<span class="props_with_one_example_count">8</span>)</a></li>
         <li><a href="#props_with_more_than_one_example">Properties and States with More than One Example  (<span class="props_with_more_than_one_examples_count">28</span>)</a></li>
@@ -157,7 +157,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="roles_with_one_example">
-      <h2 id="roles_with_one_example_label">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">13</span>)</h2>
+      <h2 id="roles_with_one_example_label">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">12</span>)</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="roles_with_one_example_label" class="data attributes">
         <thead>
@@ -172,12 +172,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>alertdialog</code></td>
             <td></td>
             <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a>
-</td>
-          </tr>
-          <tr>
-            <td><code>article</code></td>
-            <td></td>
-            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -256,7 +250,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="roles_with_more_than_one_example">
-      <h2 id="roles_with_more_than_one_label">Roles with More than One Guidance or Example (<span class="roles_with_more_than_one_examples_count">37</span>)</h2>
+      <h2 id="roles_with_more_than_one_label">Roles with More than One Guidance or Example (<span class="roles_with_more_than_one_examples_count">38</span>)</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="roles_with_more_than_one_label" class="data attributes">
         <thead>
@@ -277,6 +271,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><ul>
                 <li><a href="../../patterns/alert/examples/alert/">Alert</a></li>
                 <li><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
+            </ul>
+</td>
+          </tr>
+          <tr>
+            <td><code>article</code></td>
+            <td></td>
+            <td><ul>
+                <li><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
             </ul>
 </td>
           </tr>
@@ -1638,10 +1641,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>Yes</td>
             <td>ex1</td>
             <td>1</td>
-            <td>0</td>
+            <td>1</td>
             <td>4</td>
             <td>2</td>
-            <td>banner,aria-hidden,aria-labelledby</td>
+            <td>banner,article,aria-hidden,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
