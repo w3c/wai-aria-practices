@@ -117,7 +117,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
 
       <section id="roles_states_properties">
-        <h2>WAI-ARIA Roles, States, and Properties:</h2>
+        <h2>WAI-ARIA Roles, States, and Properties</h2>
         <ul>
           <li>The title of each accordion header is contained in an element with role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.</li>
           <li>
