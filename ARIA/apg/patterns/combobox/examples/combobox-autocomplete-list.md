@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-autocomplete-list/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 29 April 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -210,7 +210,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 Note: Because transparent borders are visible on some systems with operating system high contrast settings enabled, transparency cannot be used to create a visual difference between the element that is focused and other elements.
                 Instead of using transparency, the focused element has a thicker border and less padding.
                 When an element receives focus, its border changes from zero to two pixels and padding is reduced by two pixels.
-                When an element loses focus, its border changes from two pixels to two and padding is increased by two pixels.
+                When an element loses focus, its border changes from two pixels to zero and padding is increased by two pixels.
               </li>
             </ul>
           </li>
