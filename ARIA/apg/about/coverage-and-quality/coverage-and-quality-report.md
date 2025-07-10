@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: September 12, 2024</p>
+    <p>Page last updated: July 8, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -106,8 +106,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <ul>
         <li><a href="#csv_files">CSV Files of Role, Properties and States Coverage</a></li>
         <li><a href="#roles_with_no_examples">Roles with no Guidance or Examples (<span class="roles_with_no_examples_count">28</span>)</a></li>
-        <li><a href="#roles_with_one_example">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">13</span>)</a></li>
-        <li><a href="#roles_with_more_than_one_example">Roles with More than One Guidance or Example  (<span class="roles_with_more_than_one_examples_count">37</span>)</a></li>
+        <li><a href="#roles_with_one_example">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">12</span>)</a></li>
+        <li><a href="#roles_with_more_than_one_example">Roles with More than One Guidance or Example  (<span class="roles_with_more_than_one_examples_count">38</span>)</a></li>
         <li><a href="#props_with_no_examples">Properties and States with no Examples (<span class="props_with_no_examples_count">12</span>)</a></li>
         <li><a href="#props_with_one_example">Properties and States with One Examples (<span class="props_with_one_example_count">8</span>)</a></li>
         <li><a href="#props_with_more_than_one_example">Properties and States with More than One Example  (<span class="props_with_more_than_one_examples_count">28</span>)</a></li>
@@ -157,7 +157,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="roles_with_one_example">
-      <h2 id="roles_with_one_example_label">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">13</span>)</h2>
+      <h2 id="roles_with_one_example_label">Roles with at Least One Guidance or Example (<span class="roles_with_one_example_count">12</span>)</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="roles_with_one_example_label" class="data attributes">
         <thead>
@@ -172,12 +172,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>alertdialog</code></td>
             <td></td>
             <td><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a>
-</td>
-          </tr>
-          <tr>
-            <td><code>article</code></td>
-            <td></td>
-            <td><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a>
 </td>
           </tr>
           <tr>
@@ -256,7 +250,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </section>
 
     <section id="roles_with_more_than_one_example">
-      <h2 id="roles_with_more_than_one_label">Roles with More than One Guidance or Example (<span class="roles_with_more_than_one_examples_count">37</span>)</h2>
+      <h2 id="roles_with_more_than_one_label">Roles with More than One Guidance or Example (<span class="roles_with_more_than_one_examples_count">38</span>)</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <div class="table-wrap"><table aria-labelledby="roles_with_more_than_one_label" class="data attributes">
         <thead>
@@ -277,6 +271,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><ul>
                 <li><a href="../../patterns/alert/examples/alert/">Alert</a></li>
                 <li><a href="../../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
+            </ul>
+</td>
+          </tr>
+          <tr>
+            <td><code>article</code></td>
+            <td></td>
+            <td><ul>
+                <li><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
             </ul>
 </td>
           </tr>
@@ -941,6 +944,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
@@ -1002,6 +1006,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
@@ -1330,23 +1335,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">61</td>
+            <td id="example_summary_total">62</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
-            <td id="example_summary_hc">32</td>
+            <td id="example_summary_hc">33</td>
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">35</td>
+            <td id="example_summary_svg">36</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>forced-colors</code> media query</th>
-            <td id="example_summary_force_colors">2</td>
+            <td id="example_summary_force_colors">3</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
-            <td id="example_summary_current_color">28</td>
+            <td id="example_summary_current_color">29</td>
           </tr>
 
           <tr>
@@ -1367,7 +1372,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">16</td>
+            <td id="example_summary_mouse">17</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -1627,6 +1632,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>3</td>
             <td>3</td>
             <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td>ex1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>banner,article,aria-hidden,aria-labelledby</td>
           </tr>
           <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
@@ -2307,6 +2325,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
           </tr>
           <tr>
+            <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a></td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td></td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a></td>
             <td></td>
             <td>Yes</td>
@@ -2589,6 +2615,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a></td>
             <td></td>
             <td>Yes</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a></td>
+            <td>Yes</td>
+            <td></td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
