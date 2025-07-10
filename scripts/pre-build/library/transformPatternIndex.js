@@ -6,11 +6,14 @@ const { rewriteSourcePath, sourceRoot } = require("./rewritePath");
 const removeConflictingCss = require("./removeConflictingCss");
 const rewriteElementPaths = require("./rewriteElementPaths");
 
-const getReadThisFirst = async (sourcePath) => {
+const getReadThisFirst = async (sourcePath, { includeImage = true } = {}) => {
   const relativePath = "content/shared/templates/read-this-first.html";
   const filePath = path.resolve(sourceRoot, relativePath);
   const fileContent = await fs.readFile(filePath, { encoding: "utf8" });
   const html = parseHtml(fileContent);
+
+  if (!includeImage) html.querySelector("img")?.remove();
+
   await rewriteElementPaths(html, {
     onSourcePath: sourcePath,
     optionalTemplateSourcePath: path.join(sourceRoot, relativePath),

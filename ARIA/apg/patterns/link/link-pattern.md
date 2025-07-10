@@ -56,6 +56,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
+    
+    <div class="read-this-first">
+      <div class="text">
+        
+        <h2>Read This First</h2>
+        <p>
+          No ARIA is better than Bad ARIA. Before using any ARIA, <a href="../../practices/read-me-first/" aria-label="Read this to understand why no ARIA is better than bad ARIA">read this to understand why</a>.
+        </p>
+      </div>
+    </div>
+  
+    
     <div>
       
 
@@ -92,6 +104,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>The element containing the link text or graphic has role of <a href="https://w3c.github.io/aria/#link" class="role-reference">link</a>.</p>
       </section>
     </div>
+  
   
 </div>
 <script

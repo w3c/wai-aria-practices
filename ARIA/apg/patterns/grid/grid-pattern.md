@@ -56,6 +56,18 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
+    
+    <div class="read-this-first">
+      <div class="text">
+        
+        <h2>Read This First</h2>
+        <p>
+          No ARIA is better than Bad ARIA. Before using any ARIA, <a href="../../practices/read-me-first/" aria-label="Read this to understand why no ARIA is better than bad ARIA">read this to understand why</a>.
+        </p>
+      </div>
+    </div>
+  
+    
     <div>
       
 
@@ -462,6 +474,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
     </div>
+  
   
 </div>
 <script
