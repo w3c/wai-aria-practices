@@ -95,12 +95,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </tr>
           <tr>
             <td><code>article</code></td>
-            <td>
-              <ul>
-                <li><a href="../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
-              </ul>
-            </td>
+            <td><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></td>
           </tr>
           <tr>
             <td><code>banner</code></td>
@@ -575,7 +570,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
-                <li><a href="../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
@@ -635,7 +629,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
-                <li><a href="../patterns/disclosure/examples/disclosure-card/">Disclosure (Show/Hide) Card</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
