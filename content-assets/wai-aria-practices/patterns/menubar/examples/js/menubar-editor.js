@@ -514,8 +514,6 @@ class MenubarEditor {
       case ' ':
       case 'Enter':
         if (this.hasPopup(tgt)) {
-          // Need to update focus for the parent menu as well as the submenu
-          this.setFocusToMenuitem(menuId, tgt);
           popupMenuId = this.openPopup(tgt);
           this.setFocusToFirstMenuitem(popupMenuId);
         } else {
@@ -555,8 +553,6 @@ class MenubarEditor {
           flag = true;
         } else {
           if (this.hasPopup(tgt)) {
-            // Need to update focus for the parent menu as well as the submenu
-            this.setFocusToMenuitem(menuId, tgt);
             popupMenuId = this.openPopup(tgt);
             this.setFocusToFirstMenuitem(popupMenuId);
             flag = true;
@@ -603,8 +599,6 @@ class MenubarEditor {
           flag = true;
         } else {
           if (this.hasPopup(tgt)) {
-            // Need to update focus for the parent menu as well as the submenu
-            this.setFocusToMenuitem(menuId, tgt);
             popupMenuId = this.openPopup(tgt);
             this.setFocusToLastMenuitem(popupMenuId);
             flag = true;
@@ -650,9 +644,7 @@ class MenubarEditor {
       if (this.isOpen(tgt)) {
         this.closePopup(tgt);
       } else {
-        this.openPopup(tgt);
-        // Need to update focus for the parent menu, not the submenu
-        var menuId = this.getMenuId(tgt);
+        var menuId = this.openPopup(tgt);
         this.setFocusToMenuitem(menuId, tgt);
       }
     } else {
@@ -691,8 +683,7 @@ class MenubarEditor {
     var tgt = event.currentTarget;
 
     if (this.isAnyPopupOpen() && this.getMenu(tgt)) {
-      var menuId = this.getMenuId(tgt);
-      this.setFocusToMenuitem(menuId, tgt);
+      this.setFocusToMenuitem(this.getMenu(tgt), tgt);
     }
   }
 }
