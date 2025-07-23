@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/meter/examples/meter/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/141'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/141'>View issues related to this example</a></p>        <p>Page last updated: 23 July 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -192,7 +192,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/css/meter.css" type="text/css">meter.css</a>
           </li>
           <li>
-            Javascript:
+            JavaScript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/meter/examples/js/meter.js" type="text/javascript">meter.js</a>
           </li>
         </ul>
