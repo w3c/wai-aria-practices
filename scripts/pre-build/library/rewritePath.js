@@ -27,7 +27,12 @@ const rewriteSourcePath = (sourcePath) => {
 
   let buildRelative = githubPath.replace(/^content\//, "");
   if (contentType === "template") {
-    return { githubPath, buildPath: null, sitePath: null };
+    // Templates should be copied to content-assets for JavaScript to fetch
+    const templateBuildPath = path.resolve(
+      projectRoot,
+      `content-assets/wai-aria-practices/${buildRelative}`
+    );
+    return { githubPath, buildPath: templateBuildPath, sitePath: buildRelative };
   }
   if (contentType !== "htmlAsset") {
     buildRelative = buildRelative.replace(/\.html$/, ".md");
@@ -97,7 +102,7 @@ const getSitePath = (buildPath, contentType) => {
     case "otherAsset":
       return buildRelative;
     case "template":
-      return null;
+      return buildRelative;
     default:
       throw new Error(`Script did not recognize content type ${contentType}`);
   }
