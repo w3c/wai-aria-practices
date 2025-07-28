@@ -133,4 +133,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
   data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
 ></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/read-this-first.js' | relative_url }}"
+  data-read-this-first="showImage:false"
+></script>
 
