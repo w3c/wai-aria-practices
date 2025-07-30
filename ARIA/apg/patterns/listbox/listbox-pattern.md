@@ -56,7 +56,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-    
     <div>
       
 
@@ -311,7 +310,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </div>
       </section>
     </div>
-  
   
 </div>
 <script

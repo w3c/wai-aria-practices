@@ -56,7 +56,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
-    
     <div>
       
 
@@ -93,7 +92,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>The element containing the link text or graphic has role of <a href="https://w3c.github.io/aria/#link" class="role-reference">link</a>.</p>
       </section>
     </div>
-  
   
 </div>
 <script
