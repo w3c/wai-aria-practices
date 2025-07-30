@@ -27,12 +27,11 @@ const rewriteSourcePath = (sourcePath) => {
 
   let buildRelative = githubPath.replace(/^content\//, "");
   if (contentType === "template") {
-    // Templates should be copied to content-assets for JavaScript to fetch
-    const templateBuildPath = path.resolve(
+    const buildPath = path.resolve(
       projectRoot,
       `content-assets/wai-aria-practices/${buildRelative}`
     );
-    return { githubPath, buildPath: templateBuildPath, sitePath: buildRelative };
+    return { githubPath, buildPath, sitePath: buildRelative };
   }
   if (contentType !== "htmlAsset") {
     buildRelative = buildRelative.replace(/\.html$/, ".md");
