@@ -56,6 +56,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
+    
     <div>
       
 
@@ -96,6 +97,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>The widget has a role of <a class="role-reference" href="https://w3c.github.io/aria/#alert">alert</a>.</p>
       </section>
     </div>
+  
   
 </div>
 <script

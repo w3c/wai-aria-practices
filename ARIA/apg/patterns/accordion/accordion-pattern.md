@@ -150,6 +150,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 ></script>
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/read-this-first.js' | relative_url }}"
-  data-read-this-first="showImage:true"
+  data-read-this-first="showImage:false"
 ></script>
 
