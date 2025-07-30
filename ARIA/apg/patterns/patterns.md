@@ -28,6 +28,11 @@ lang: en
 <script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 <script src="../../../content-assets/wai-aria-practices/shared/js/filterBySearch.js"></script>
 
+<script
+  data-read-this-first="showImage:true"
+  src="../../../content-assets/wai-aria-practices/shared/js/read-this-first.js"
+></script>
+
 
 <link 
   rel="stylesheet"
