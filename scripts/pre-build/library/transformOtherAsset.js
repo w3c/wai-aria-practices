@@ -23,7 +23,9 @@ const transformAsset = async (sourcePath, sourceContents) => {
       "removeImageIfNeeded(bannerElement, config);",
       "removeImageIfNeeded(bannerElement, config);\n" +
       "      const img = bannerElement.querySelector('img'); // Line edited by pre-build script\n" +
-      "      if (img) img.setAttribute('src', `${basePath}../../content-images/wai-aria-practices/images/read-this-first.svg`); // Line edited by pre-build script"
+      "      if (img) img.setAttribute('src', `${basePath}../../content-images/wai-aria-practices/images/read-this-first.svg`); // Line edited by pre-build script\n" +
+      "      const a = bannerElement.querySelector('a'); // Line edited by pre-build script\n" +
+      "      if (a) a.setAttribute('href', `${basePath}../../ARIA/apg/practices/read-me-first/`); // Line edited by pre-build script"
     )
   }
   return sourceContents;

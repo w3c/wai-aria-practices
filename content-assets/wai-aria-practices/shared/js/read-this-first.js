@@ -140,6 +140,8 @@
       removeImageIfNeeded(bannerElement, config);
       const img = bannerElement.querySelector('img'); // Line edited by pre-build script
       if (img) img.setAttribute('src', `${basePath}../../content-images/wai-aria-practices/images/read-this-first.svg`); // Line edited by pre-build script
+      const a = bannerElement.querySelector('a'); // Line edited by pre-build script
+      if (a) a.setAttribute('href', `${basePath}../../ARIA/apg/practices/read-me-first/`); // Line edited by pre-build script
 
       // Insert the banner after h1
       h1.parentNode.insertBefore(bannerElement, h1.nextSibling);
