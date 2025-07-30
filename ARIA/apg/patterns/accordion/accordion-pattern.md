@@ -56,6 +56,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 <div>
 
+    
     <div>
       
 
@@ -141,6 +142,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       </section>
     </div>
   
+  
 </div>
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
@@ -148,6 +150,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 ></script>
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/read-this-first.js' | relative_url }}"
-  data-read-this-first="showImage:false"
+  data-read-this-first="showImage:true"
 ></script>
 
