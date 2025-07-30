@@ -22,8 +22,8 @@ const transformAsset = async (sourcePath, sourceContents) => {
     return sourceContents.replace(
       "removeImageIfNeeded(bannerElement, config);",
       "removeImageIfNeeded(bannerElement, config);\n" +
-      "\t\t\tconst img = bannerElement.querySelector('img'); // Line edited by pre-build script\n" +
-      "\t\t\tif (img) img.setAttribute('src', `${basePath}../../content-images/wai-aria-practices/images/read-this-first.svg`); // Line edited by pre-build script"
+      "      const img = bannerElement.querySelector('img'); // Line edited by pre-build script\n" +
+      "      if (img) img.setAttribute('src', `${basePath}../../content-images/wai-aria-practices/images/read-this-first.svg`); // Line edited by pre-build script"
     )
   }
   return sourceContents;
