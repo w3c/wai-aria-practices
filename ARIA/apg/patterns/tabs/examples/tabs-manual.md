@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-manual/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/130'>View issues related to this example</a></p>        <p>Page last updated: 11 July 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/130'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -176,7 +176,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <ul>
               <li>
                 The active tab has a 2 pixel border on its left and right sides and a 4 pixel border on top, while the names of inactive tabs have 1 pixel borders.
-                The active tab is also 4 pixels taller than the inactive tabs.
+                The active tab is also 4 pixels higher than the inactive tabs.
               </li>
               <li>
                 The focus ring is drawn with a CSS border on a child <code>span</code> element of the tab element.
