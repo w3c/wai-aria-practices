@@ -1,5 +1,9 @@
 # Called from netify.toml
 
+# Submodule initialization to handle stale references
+echo "Initializing submodules..."
+./scripts/update-submodules.sh
+
 #git submodule update --init --remote --recursive
 #if ! which respec; then npm install --global respec; fi
 #respec2html --src ./_external/aria-practices/aria-practices.html --out ./_html/aria-practices.html
