@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 4 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 5 August 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -136,11 +136,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       type="text"
                       size="4"
                       inputmode="numeric"
-                      autocorrect="off"
                       autocomplete="off"
                       spellcheck="false"
                       aria-valuemin="1"
                       aria-valuemax="8"
+                      aria-valuenow="1"
                       value="1"
                       >
                     <button type="button"
@@ -177,11 +177,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       type="text"
                       size="4"
                       inputmode="numeric"
-                      autocorrect="off"
                       autocomplete="off"
                       spellcheck="false"
                       aria-valuemin="0"
                       aria-valuemax="8"
+                      aria-valuenow="0"
                       value="0"
                       >
                     <button type="button"
@@ -213,11 +213,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       type="text"
                       size="4"
                       inputmode="numeric"
-                      autocorrect="off"
                       autocomplete="off"
                       spellcheck="false"
                       aria-valuemin="0"
                       aria-valuemax="12"
+                      aria-valuenow="0"
                       value="0"
                       >
                     <button type="button"
