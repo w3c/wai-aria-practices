@@ -117,8 +117,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <div class="spinners">
             <fieldset>
               <legend>Guests</legend>
-              <div class="fields">
-                <div class="field">
+              <div class="spinner-fields">
+                <div class="spinner-field">
                   <label for="adults">
                     Adults
                   </label>
@@ -159,7 +159,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                     class="visually-hidden">
                   </output>
                 </div>
-                <div class="field">
+                <div class="spinner-field">
                   <label for="kids">
                     Kids
                   </label>
@@ -195,7 +195,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   </div>
                   <output for="kids" role="log" aria-live="polite" aria-relevant="additions" class="visually-hidden"></output>
                 </div>
-                <div class="field">
+                <div class="spinner-field">
                   <label for="animals">
                     Animals
                   </label>
