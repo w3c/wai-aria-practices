@@ -46,6 +46,26 @@ jobs:
 
       - name: Update git submodules
         run: |
+          # Deinit and reinit submodules
+          echo "Deinitializing existing submodules..."
+          git submodule deinit -f "_external/aria-practices" || true
+          git submodule deinit -f "_external/data" || true
+          
+          # Remove stale directories
+          if [ -d "_external/aria-practices" ]; then
+            echo "Removing stale aria-practices directory..."
+            rm -rf "_external/aria-practices"
+          fi
+          if [ -d "_external/data" ]; then
+            echo "Removing stale data directory..."
+            rm -rf "_external/data"
+          fi
+          
+          # Reinitialize submodules
+          echo "Initializing submodules..."
+          git submodule update --init --recursive
+          
+          # Update from remote and handle fork if exists
           git submodule update --recursive --remote
           cd _external/aria-practices
           if [ -n "${{ github.event.inputs.fork_path }}" ] && [ "${{ github.event.inputs.fork_path }}" != 'false' ]; then
