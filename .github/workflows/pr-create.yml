@@ -93,9 +93,10 @@ jobs:
             echo "Handling submodule conflicts..."
             cd _external/aria-practices
 
-            # Resolve the conflict
-            git fetch origin
-            git merge origin/main
+            # Reset submodule to clean state and checkout the expected commit
+            git reset --hard HEAD
+            git clean -fd
+            git checkout ${{ github.event.inputs.apg_sha }}
 
             # Add resolved submodule from project root
             cd -
