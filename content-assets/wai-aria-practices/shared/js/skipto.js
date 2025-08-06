@@ -1,5 +1,5 @@
 /* ========================================================================
- * Version: 5.8.0
+ * Version: 5.8.2
  * Copyright (c) 2022, 2023, 2024, 2025 Jon Gunderson; Licensed BSD
  * Copyright (c) 2021 PayPal Accessibility Team and University of Illinois; Licensed BSD
  * All rights reserved.
@@ -43,6 +43,7 @@
       buttonTextDarkColor: '#ffffff',
       buttonBackgroundDarkColor: '#013c93',
       zIndex: '2000000',
+      z2Index: '20000002',
       zHighlight: '1999900',
       displayOption: 'fixed',
       highlightTarget: 'instant',
@@ -327,7 +328,7 @@
   border: none;
   margin-bottom: 4px;
   transition: left 1s ease;
-  z-index: $zIndex !important;
+  z-index: $z1Index !important;
   user-select: none;
   touch-action: none;
 }
@@ -345,7 +346,7 @@
   z-index: 100000 !important;
   font-family: $fontFamily;
   font-size: $fontSize;
-  z-index: $zIndex !important;
+  z-index: $z1Index !important;
   touch-action: none;
 }
 
@@ -413,7 +414,7 @@
   border-style: solid;
   border-color: light-dark($focusBorderColor, $focusBorderDarkColor);
   border-radius: 5px;
-  z-index: $zIndex !important;
+  z-index: $z1Index !important;
   touch-action: none;
 }
 
@@ -444,8 +445,14 @@
   grid-template-columns: repeat(6, 1.2rem) 1fr;
   grid-column-gap: 2px;
   font-size: 1em;
-  z-index: $zIndex !important;  
+  z-index: $z1Index;
 }
+
+#${SKIP_TO_ID} [role="menuitem"].shortcuts,
+#${SKIP_TO_ID} [role="menuitem"].about {
+  z-index: $z2Index;
+}
+
 
 #${SKIP_TO_ID} [role="menuitem"] .level,
 #${SKIP_TO_ID} [role="menuitem"] .label {
@@ -526,7 +533,7 @@
   border-bottom-color: light-dark($menuTextColor, $menuTextDarkColor);
   background-color: light-dark($menuBackgroundColor, $menuBackgroundColor);
   color: light-dark($menuTextColor, $menuTextDarkColor);
-  z-index: $zIndex !important;
+  z-index: $z1Index !important;
 }
 
 #${SKIP_TO_ID} [role="separator"] .mofn {
@@ -615,7 +622,7 @@
     border-bottom-color: ButtonBorder;
     background-color: ButtonFace;
     color: ButtonText;
-    z-index: $zIndex !important;
+    z-index: $z1Index !important;
   }
 
   #${SKIP_TO_ID} button:focus,
@@ -804,7 +811,13 @@
     cssMenu = updateStyle(cssMenu, '$buttonBackgroundColor', config.buttonBackgroundColor, theme.buttonBackgroundColor, defaultTheme.buttonBackgroundColor);
     cssMenu = updateStyle(cssMenu, '$buttonBackgroundDarkColor', config.buttonBackgroundDarkColor, theme.buttonBackgroundDarkColor, defaultTheme.buttonBackgroundDarkColor);
 
-    cssMenu = updateStyle(cssMenu, '$zIndex', config.zIndex, theme.zIndex, defaultTheme.zIndex);
+    cssMenu = updateStyle(cssMenu, '$z1Index', config.zIndex, theme.zIndex, defaultTheme.zIndex);
+
+    const z2Index = config.zIndex ?
+                    (parseInt(config.zIndex) + 1).toString() :
+                    '2000002';
+
+    cssMenu = updateStyle(cssMenu, '$z2Index', z2Index, '', defaultTheme.z2Index);
 
     // Special case for theme configuration used in Illinois theme
     if (typeof theme.highlightTarget === 'string') {
@@ -957,7 +970,7 @@ dialog#skip-to-info-dialog {
   border-color: light-dark($focusBorderColor, $focusBorderDarkColor);
   border-radius: 5px;
   z-index: 2000001;
-
+  max-width: 350px;
 }
 
 dialog#skip-to-info-dialog .header {
@@ -1001,16 +1014,27 @@ dialog#skip-to-info-dialog .content {
 }
 
 dialog#skip-to-info-dialog .content .desc {
-  max-width: 20em;
+  margin: 0.25em;
+  text-align: center;
 }
 
-dialog#skip-to-info-dialog .content .happy {
-  margin-top: 0.5em;
+dialog#skip-to-info-dialog .content .privacy-label {
+  margin: 0;
+  margin-top: 1em;
   text-align: center;
-  font-family: fantasy, cursive;
-  font-size: 1.25em;
   font-weight: bold;
-  font-style: italic;
+}
+
+dialog#skip-to-info-dialog .content .privacy {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+dialog#skip-to-info-dialog .content .happy {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 200%;
   letter-spacing: 0.05em;
 }
 
@@ -1019,8 +1043,6 @@ dialog#skip-to-info-dialog .content .version,
 dialog#skip-to-info-dialog .content .copyright {
   margin-top: 0.5em;
   text-align: center;
-  font-weight: bold;
-  font-size: 90%;
 }
 
 dialog#skip-to-info-dialog .content table {
@@ -1358,7 +1380,18 @@ button:hover {
 
       let divElem = document.createElement('div');
       divElem.className = 'desc';
+
       divElem.textContent = config.aboutDesc;
+      this.contentElem.appendChild(divElem);
+
+      divElem = document.createElement('div');
+      divElem.className = 'privacy-label';
+      divElem.textContent = config.aboutPrivacyLabel;
+      this.contentElem.appendChild(divElem);
+
+      divElem = document.createElement('div');
+      divElem.className = 'privacy';
+      divElem.textContent = config.aboutPrivacy;
       this.contentElem.appendChild(divElem);
 
       divElem = document.createElement('div');
@@ -4391,7 +4424,7 @@ button:hover {
         const menuitemNode = document.createElement('div');
         menuitemNode.setAttribute('role', 'menuitem');
         menuitemNode.setAttribute('data-about-info', '');
-        menuitemNode.className = 'skip-to-nav skip-to-nesting-level-0';
+        menuitemNode.className = 'about skip-to-nav skip-to-nesting-level-0';
         menuitemNode.tabIndex = -1;
 
         const labelNode = document.createElement('span');
@@ -4528,30 +4561,15 @@ button:hover {
         this.updateMenuitems();
 
         this.landmarkGroupLabelNode.textContent = this.addNumberToGroupLabel(config.landmarkGroupLabel, landmarkElements.length);
-        if (landmarkElements.length === 1) {
-          this.landmarkGroupLabelNode.setAttribute('aria-label', config.landmarkOneGroupLabel);
-        }
-        else {
-         this.landmarkGroupLabelNode.setAttribute('aria-label', `${landmarkElements.length} ${config.landmarkGroupLabel}`);
-        }
+        this.landmarkGroupLabelNode.setAttribute('aria-label', config.landmarkGroupLabel);
 
         if (config.headings.includes('main')) {
           this.headingGroupLabelNode.textContent = this.addNumberToGroupLabel(config.headingMainGroupLabel, headingElements.length);
-          if (headingElements.length === 1) {
-            this.headingGroupLabelNode.setAttribute('aria-label', config.headingOneMainGroupLabel);
-          }
-          else {
-           this.headingGroupLabelNode.setAttribute('aria-label', `${headingElements.length} ${config.headingMainGroupLabel}`);
-          }
+          this.headingGroupLabelNode.setAttribute('aria-label', config.headingMainGroupLabel);
         }
         else {
           this.headingGroupLabelNode.textContent = this.addNumberToGroupLabel(config.headingGroupLabel, headingElements.length);
-          if (headingElements.length === 1) {
-            this.headingGroupLabelNode.setAttribute('aria-label', config.headingOneGroupLabel);
-          }
-          else {
-           this.headingGroupLabelNode.setAttribute('aria-label', `${headingElements.length} ${config.headingGroupLabel}`);
-          }
+          this.headingGroupLabelNode.setAttribute('aria-label', config.headingGroupLabel);
         }
       }
 
@@ -4848,7 +4866,7 @@ button:hover {
        * @return {object}  see @desc
        */
       getMenuitem(x, y) {
-        for (let i = 0; i < this.menuitemNodes.length; i += 1) {
+        for (let i = (this.menuitemNodes.length - 1); i >= 0; i -= 1) {
           const node = this.menuitemNodes[i];
           const rect = node.getBoundingClientRect();
 
@@ -5256,6 +5274,7 @@ button:hover {
       }
 
       handleMenuitemClick(event) {
+        debug$2.log(`[handleMenuitemClick]: ${event.currentTarget.textContent}`);
         this.handleMenuitemAction(event.currentTarget);
         event.stopPropagation();
         event.preventDefault();
@@ -5291,7 +5310,6 @@ button:hover {
       }
 
       handleMenuitemPointerleave(event) {
-        debug$2.flag && debug$2.log(`[leave]`);
         let tgt = event.currentTarget;
         tgt.classList.remove('hover');
         event.stopPropagation();
@@ -5406,7 +5424,7 @@ button:hover {
       // Always call super first in constructor
       super();
       this.attachShadow({ mode: 'open' });
-      this.version = "5.8.0";
+      this.version = "5.8.2";
       this.buttonSkipTo = false;
       this.initialized = false;
 
@@ -5469,7 +5487,9 @@ button:hover {
         aboutHappy: `Happy Skipping!`,
         aboutVersion: `Version ${this.version}`,
         aboutCopyright: 'BSD License, Copyright 2021-2025',
-        aboutDesc: 'SkipTo.js is a free and open source utility to support authors in implementing the WCAG 4.2.1 Bypass Block requirement on their websites.',
+        aboutDesc: 'SkipTo.js is a free and open source utility to support the WCAG 2.4.1 Bypass Block requirement.  ',
+        aboutPrivacyLabel: 'Privacy',
+        aboutPrivacy: 'SkipTo.js does not collect or store any information about users or work with any other parties to collect or share user browsing information.',
 
         closeLabel: 'Close',
         moreInfoLabel: 'More Information',
@@ -5509,9 +5529,7 @@ button:hover {
         menuLabel: 'Landmarks and Headings',
         landmarkGroupLabel: 'Landmark Regions',
         headingGroupLabel: 'Headings',
-        headingOneGroupLabel: 'One Heading',
         headingMainGroupLabel: 'Headings in Main Region',
-        headingOneMainGroupLabel: 'One Heading in Main Region',
         headingLevelLabel: 'Heading level',
         mainLabel: 'main',
         searchLabel: 'search',
