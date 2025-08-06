@@ -89,33 +89,52 @@ jobs:
 
           # Handle cases where the aria-practices submodule has conflicts to be handled;
           # _external/data shouldn't have conflicting changes
-          if [ -d "_external/aria-practices" ] && { [ -f ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]; }; then
+          while { [ -f ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]; }; do
             echo "Handling submodule conflicts..."
-            cd _external/aria-practices
 
-            # Reset submodule to clean state and checkout the expected commit
-            git reset --hard HEAD
-            git clean -fd
-            git checkout ${{ github.event.inputs.apg_sha }}
+            # Handle submodule conflicts first if they exist
+            if [ -d "_external/aria-practices" ]; then
+              echo "Checking for submodule conflicts..."
+              cd _external/aria-practices
 
-            # Add resolved submodule from project root
-            cd -
-            git add _external/aria-practices
+              # If submodule has conflicts, resolve them
+              if [ -f ".git/MERGE_HEAD" ] || [ -d ".git/rebase-merge" ] || [ -f ".git/rebase-apply" ]; then
+                echo "Resolving submodule conflicts..."
+                git fetch origin
+                git merge origin/main
+              fi
 
-            # Continue the rebase
-            GIT_EDITOR=true git rebase --continue || true
+              # Add resolved submodule from project root
+              cd -
+              git add _external/aria-practices
+            fi
 
             # Resolve conflicts for all other conflicting files automatically using 'theirs' from project root
+            echo "Resolving file conflicts..."
             git diff --name-only --diff-filter=U | while read -r file; do
+              echo "Resolving conflict in: $file"
               git checkout --theirs "$file"
               git add "$file"
             done
 
             # Continue the rebase
-            GIT_EDITOR=true git rebase --continue || true
-          else
-            echo "No submodule conflicts detected or no rebase in progress."
-          fi
+            echo "Continuing rebase..."
+            GIT_EDITOR=true git rebase --continue || {
+              echo "Rebase continue failed, checking if more conflicts exist..."
+              # If rebase failed, check if due to more conflicts
+              if { [ -f ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]; }; then
+                echo "More conflicts detected, continuing to resolve..."
+                continue
+              else
+                echo "Rebase completed or failed for other reasons"
+                break
+              fi
+            }
+
+            echo "Submodule conflicts fix step completed successfully"
+          done
+
+          echo "No submodule conflicts detected or no rebase in progress"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
