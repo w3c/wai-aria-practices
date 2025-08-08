@@ -152,10 +152,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&plus;</span>
                     </button>
                   </div>
-                  <div role="status"
-                    for="adults"
+                  <output for="adults"
                     data-self-destruct="2000"
-                    class="visually-hidden"></div>
+                    class="visually-hidden"></output>
                 </div>
                 <div class="spinner-field">
                   <label for="kids">
@@ -191,10 +190,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&plus;</span>
                     </button>
                   </div>
-                  <div role="status"
-                    for="kids"
+                  <output for="kids"
                     data-self-destruct="2000"
-                    class="visually-hidden"></div>
+                    class="visually-hidden"></output>
                 </div>
                 <div class="spinner-field">
                   <label for="animals">
@@ -230,10 +228,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&plus;</span>
                     </button>
                   </div>
-                  <div role="status"
-                    for="animals"
+                  <output for="animals"
                     data-self-destruct="2000"
-                    class="visually-hidden"></div>
+                    class="visually-hidden"></output>
                 </div>
               </div>
             </fieldset>
@@ -424,15 +421,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td><code>span</code></td>
               <td>For assistive technology users, hides the visible minus and plus characters in the increment and decrement buttons since they are symbolic of the superior button labels provided by the <code>title</code> attribute.</td>
             </tr>
-            <tr data-test-id="status-role">
-              <th scope="row"><code>status</code></th>
+            <tr data-test-id="output">
               <td></td>
-              <td><code>div</code></td>
+              <td></td>
+              <td><code>output</code></td>
               <td>
                 <ul>
-                  <li>Identifies the invisible <code>div</code> as a <code>status</code> element with an implicit <code>aria-live</code> value of <code>polite</code>.</li>
-                  <li>Triggers a screen reader announcement of the <code>status</code> element’s updated content at the next graceful opportunity.</li>
-                  <li>When either the increment or decrement button is pressed, the current value of the spin button is injected into the <code>status</code> element.</li>
+                  <li>An element with an implicit role of <code>status</code> and an implicit <code>aria-live</code> value of <code>polite</code>.</li>
+                  <li>Triggers a screen reader announcement of the <code>output</code> element’s updated content at the next graceful opportunity.</li>
+                  <li>When either the increment or decrement button is pressed, the current value of the spin button is injected into the <code>output</code> element.</li>
                   <li>Its contents are emptied 2000 milliseconds after injection.</li>
                 </ul>
               </td>
