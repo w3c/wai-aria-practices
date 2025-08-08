@@ -416,10 +416,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </td>
           </tr>
           <tr>
-            <td><code>status</code></td>
-            <td><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></td>
-          </tr>
-          <tr>
             <td><code>switch</code></td>
             <td>
               <ul>
