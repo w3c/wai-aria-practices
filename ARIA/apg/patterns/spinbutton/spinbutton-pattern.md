@@ -79,7 +79,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <section id="examples" class="examples-section">
         <img alt src="../../../../content-images/wai-aria-practices/images/pattern-spinbutton.svg">
         <h2>Example</h2>
-        <p><a href="examples/datepicker-spinbuttons/">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
+        <p><a href="examples/quantity-spinbutton/">Quantity Spin Button Example:</a> A set of three spin buttons to collect the quantities of adults, children, and animals for a hotel reservation.</p>
       </section>
 
       <section id="keyboard_interaction">
