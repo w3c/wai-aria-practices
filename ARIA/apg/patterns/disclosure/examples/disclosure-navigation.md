@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 8 July 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -419,7 +419,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/css/disclosure-navigation.css">disclosure-navigation.css</a>
           </li>
           <li>
-            Javascript:
+            JavaScript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/disclosure/examples/js/disclosureMenu.js">disclosureMenu.js</a>
           </li>
         </ul>
