@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/datepicker-spinbuttons/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -382,7 +382,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/css/datepicker-spinbuttons.css" type="text/css">datepicker-spinbuttons.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <ul>
               <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/js/datepicker-spinbuttons.js" type="text/javascript">datepicker-spinbuttons.js</a></li>
               <li><a href="../../../../../../content-assets/wai-aria-practices/patterns/spinbutton/examples/js/spinbutton-date.js" type="text/javascript">spinbutton-date.js</a></li>
