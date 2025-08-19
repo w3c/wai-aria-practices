@@ -30,10 +30,6 @@ lang: en
   data-read-this-first="showImage:false"
   src="../../../../content-assets/wai-aria-practices/shared/js/read-this-first.js"
 ></script>
-<script
-  data-read-this-first="showImage:false"
-  src="../../../../content-assets/wai-aria-practices/shared/js/read-this-first.js"
-></script>
 
 
 <link 
