@@ -1,7 +1,7 @@
 [submodule "_external/aria-practices"]
 	path = _external/aria-practices
 	url = https://github.com/w3c/aria-practices.git
-    branch = read-this-first-at-source
+	branch = read-this-first-at-source
 [submodule "_external/data"]
 	path = _external/data
 	url = https://github.com/w3c/wai-website-data.git
