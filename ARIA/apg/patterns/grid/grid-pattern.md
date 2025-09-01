@@ -389,7 +389,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               Otherwise, passes the key event to the focused widget.
             </li>
             <li>
-              <kbd>Left Arrow</kbd> or <kbd>Up Arrow</kbd>: If the cell contains multiple widgets, moves focus to the previous widget inside the cell, optionally wrapping to the first widget if focus is on the last widget.
+              <kbd>Left Arrow</kbd> or <kbd>Up Arrow</kbd>: If the cell contains multiple widgets, moves focus to the previous widget inside the cell, optionally wrapping to the last widget if focus is on the first widget.
               Otherwise, passes the key event to the focused widget.
             </li>
             <li>
