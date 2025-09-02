@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: August 12, 2025</p>
+    <p>Page last updated: July 8, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -1391,9 +1391,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <th>Uses <code>event.which</code></th>
             <th>High Contrast Documentation</th>
             <th>Example Code ID</th>
-            <th>Roles in JavaScript and HTML</th>
+            <th>Roles in Javascript and HTML</th>
             <th>Roles in Documentation</th>
-            <th>aria-* Attributes in JavaScript and HTML</th>
+            <th>aria-* Attributes in Javascript and HTML</th>
             <th>aria-* Attributes in Documentation</th>
             <th>Differences between the documentation and the source code.</th>
           </tr>
