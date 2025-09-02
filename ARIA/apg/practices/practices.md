@@ -27,6 +27,11 @@ lang: en
 <script src="../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
+<script
+  data-read-this-first="showImage:true"
+  src="../../../content-assets/wai-aria-practices/shared/js/read-this-first.js"
+></script>
+
 
 <link 
   rel="stylesheet"
@@ -50,6 +55,7 @@ lang: en
   </script>
 <div>
 
+    
     
     <div class="read-this-first">
       <div class="text">
