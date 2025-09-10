@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 9 September 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 10 September 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -310,6 +310,26 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             When forced colors are enabled, <a href="https://www.w3.org/TR/css-color-4/#css-system-colors">system
             color keywords</a> are used to ensure visibility and sufficient
             contrast for the spin button’s content and interactive states.
+          </li>
+          <li>
+            Each spin button’s minimum and maximum values are conveyed in help
+            text that is associated with <code>aria-describedby</code>.
+          </li>
+          <li>
+            When a user inputs an invalid value:
+            <ul>
+              <li>
+                The spin button is visually styled to indicate an error state.
+              </li>
+              <li>
+                <code>aria-invalid="true"</code> is added to the input to inform
+                assistive technologies of the invalid state.
+              </li>
+              <li>
+                An error message is displayed and associated with
+                <code>aria-errormessage</code>.
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
