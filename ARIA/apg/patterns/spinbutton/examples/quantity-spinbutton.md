@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 9 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 9 September 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -132,6 +132,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&minus;</span>
                     </button>
                     <input id="adults"
+                      aria-describedby="help-adults"
+                      aria-errormessage="error-adults"
                       role="spinbutton"
                       type="text"
                       size="4"
@@ -152,6 +154,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&plus;</span>
                     </button>
                   </div>
+                  <small id="error-adults">Must be between 1 and 8</small>
+                  <small id="help-adults">1 to 8</small>
                   <output for="adults"
                     data-self-destruct="2000"
                     class="visually-hidden"></output>
@@ -170,6 +174,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&minus;</span>
                     </button>
                     <input id="kids"
+                      aria-describedby="help-kids"
+                      aria-errormessage="error-kids"
                       role="spinbutton"
                       type="text"
                       size="4"
@@ -190,6 +196,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&plus;</span>
                     </button>
                   </div>
+                  <small id="error-kids">Must be between 0 and 8</small>
+                  <small id="help-kids">0 to 8</small>
                   <output for="kids"
                     data-self-destruct="2000"
                     class="visually-hidden"></output>
@@ -208,6 +216,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&minus;</span>
                     </button>
                     <input id="animals"
+                      aria-describedby="help-animals"
+                      aria-errormessage="error-animals"
                       role="spinbutton"
                       type="text"
                       size="4"
@@ -228,6 +238,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&plus;</span>
                     </button>
                   </div>
+                  <small id="error-animals">Must be between 0 and 12</small>
+                  <small id="help-animals">0 to 12</small>
                   <output for="animals"
                     data-self-destruct="2000"
                     class="visually-hidden"></output>
@@ -383,6 +395,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <td><code>input[type="text"]</code></td>
               <td>Indicates the maximum allowed value for the spin button.</td>
             </tr>
+            <tr data-test-id="spinbutton-aria-describedby">
+              <td></td>
+              <th scope="row"><code>aria-describedby="ID_REF"</code></th>
+              <td><code>input[type="text"]</code></td>
+              <td>Identifies the element that provides help text for the spin button.</td>
+            </tr>
+            <tr data-test-id="spinbutton-aria-invalid">
+              <td></td>
+              <th scope="row"><code>aria-invalid="true"</code></th>
+              <td><code>input[type="text"]</code></td>
+              <td>Indicates that the current value is invalid.</td>
+            </tr>
+            <tr data-test-id="spinbutton-aria-errormessage">
+              <td></td>
+              <th scope="row"><code>aria-errormessage="ID_REF"</code></th>
+              <td><code>input[type="text"]</code></td>
+              <td>Identifies the element that provides an error message for the spin button.</td>
+            </tr>
             <tr data-test-id="button-title">
               <td></td>
               <th scope="row"><code>title="NAME_STRING"</code></th>
@@ -408,12 +438,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th scope="row"><code>aria-disabled="true"</code></th>
               <td><code>button</code></td>
               <td>Set when the minimum or maximum value has been reached to inform assistive technologies that the button has been disabled.</td>
-            </tr>
-            <tr>
-              <td></td>
-              <th scope="row"><code>aria-disabled="false"</code></th>
-              <td><code>button</code></td>
-              <td>Set when the value is greater than the minimum value or lesser than the maximum value.</td>
             </tr>
             <tr data-test-id="span-aria-hidden">
               <td></td>

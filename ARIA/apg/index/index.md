@@ -612,6 +612,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
                 <li><a href="../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/table/examples/table/">Table</a></li>
               </ul>
             </td>
@@ -626,6 +627,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
+          </tr>
+          <tr>
+            <td><code>aria-errormessage</code></td>
+            <td><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></td>
           </tr>
           <tr>
             <td><code>aria-expanded</code></td>
@@ -696,6 +701,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
+          </tr>
+          <tr>
+            <td><code>aria-invalid</code></td>
+            <td><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></td>
           </tr>
           <tr>
             <td><code>aria-label</code></td>
