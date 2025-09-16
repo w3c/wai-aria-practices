@@ -994,7 +994,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
                 <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
-                <li><a href="../../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../../patterns/table/examples/table/">Table</a></li>
             </ul>
 </td>
@@ -2051,8 +2050,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td>example</td>
             <td>1</td>
             <td>1</td>
-            <td>9</td>
-            <td>9</td>
+            <td>8</td>
+            <td>8</td>
             <td></td>
           </tr>
           <tr>

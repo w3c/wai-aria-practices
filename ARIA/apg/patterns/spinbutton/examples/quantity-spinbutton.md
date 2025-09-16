@@ -132,7 +132,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&minus;</span>
                     </button>
                     <input id="adults"
-                      aria-describedby="help-adults"
                       aria-errormessage="error-adults"
                       role="spinbutton"
                       type="text"
@@ -174,7 +173,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&minus;</span>
                     </button>
                     <input id="kids"
-                      aria-describedby="help-kids"
                       aria-errormessage="error-kids"
                       role="spinbutton"
                       type="text"
@@ -216,7 +214,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                       <span aria-hidden="true">&minus;</span>
                     </button>
                     <input id="animals"
-                      aria-describedby="help-animals"
                       aria-errormessage="error-animals"
                       role="spinbutton"
                       type="text"
@@ -312,8 +309,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             contrast for the spin button’s content and interactive states.
           </li>
           <li>
-            Each spin button’s minimum and maximum values are conveyed in help
-            text that is associated with <code>aria-describedby</code>.
+            Each spin button’s minimum and maximum values are programmatically
+            defined with <code>aria-valuemin</code> and
+            <code>aria-valuemax</code>, enabling assistive technologies to
+            convey that information to users in a predictable manner.
+          </li>
+          <li>
+            The minimum and maximum values are also visually expressed with
+            adjacent help text, but is purposefully <em>not</em> associated using
+            <code>aria-describedby</code> since the same information is already
+            programmatically defined.
           </li>
           <li>
             When a user inputs an invalid value:
@@ -414,12 +419,6 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <th scope="row"><code>aria-valuemax="NUMBER"</code></th>
               <td><code>input[type="text"]</code></td>
               <td>Indicates the maximum allowed value for the spin button.</td>
-            </tr>
-            <tr data-test-id="spinbutton-aria-describedby">
-              <td></td>
-              <th scope="row"><code>aria-describedby="ID_REF"</code></th>
-              <td><code>input[type="text"]</code></td>
-              <td>Identifies the element that provides help text for the spin button.</td>
             </tr>
             <tr data-test-id="spinbutton-aria-invalid">
               <td></td>
