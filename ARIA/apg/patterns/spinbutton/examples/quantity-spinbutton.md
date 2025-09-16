@@ -286,12 +286,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>
                 Are labeled with the <code>title</code> attribute, providing a
                 human-friendly representation of the plus and minus characters
-                for users of voice control and touch screen. The
+                for users of touch-based and voice-based assistive technologies. The
                 <code>title</code> attribute also presents a tooltip on hover,
                 clarifying the meaning of each button’s icon.
               </li>
               <li>
-                Use an invisible live region to announce the updated value to
+                Use an invisible live region to announce the updated value
                 when pressed. The live region empties its contents after 3
                 seconds to avoid leaving stale content in the document.
               </li>
