@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: September 9, 2025</p>
+    <p>Page last updated: September 16, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -575,6 +575,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../../patterns/treeview/#keyboard_interaction">Note</a></li>
                 <li><a href="../../patterns/treeview/#roles_states_properties">Note</a></li>
                 <li><a href="../../patterns/windowsplitter/#keyboard_interaction">Note</a></li>
+                <li><a href="../../practices/keyboard-interface/#kbd_general_within">Note</a></li>
                 <li><a href="../../practices/keyboard-interface/#kbd_shortcuts_assigning">Note</a></li>
             </ul>
 </td>
