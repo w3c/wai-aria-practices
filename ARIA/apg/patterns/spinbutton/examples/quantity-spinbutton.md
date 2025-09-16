@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 10 September 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 16 September 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -260,14 +260,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           </li>
           <li>
             The spin button input and its adjacent buttons are visually
-            presented as a singular form field containing an editable value, an
+            presented as a single form field containing an editable value, an
             <span data-test-id="increment-button">increment button</span>, and a
             <span data-test-id="decrement-button">decrement button</span>.
           </li>
           <li>
             When either the spin button input or its adjacent buttons have
             received focus, a single visual focus indicator encompasses all
-            three, reinforcing the relationship between then.
+            three, reinforcing the relationship between them.
           </li>
           <li>
             For users who have not set a preference for reduced motion, the
