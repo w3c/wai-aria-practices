@@ -327,7 +327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               </li>
               <li>
                 An error message is displayed and associated with
-                <code>aria-errormessage</code>.
+                the input using <code>aria-errormessage</code>.
               </li>
             </ul>
           </li>
