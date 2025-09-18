@@ -3,11 +3,8 @@ const formatForJekyll = require("./formatForJekyll");
 const { rewriteSourcePath } = require("./rewritePath");
 const removeConflictingCss = require("./removeConflictingCss");
 const rewriteElementPaths = require("./rewriteElementPaths");
-const { getReadThisFirst } = require("./transformPatternIndex");
 
-const transformPatternIndex = async (sourcePath, sourceContents) => {
-  const readThisFirst = await getReadThisFirst(sourcePath);
-  
+const transformPracticeIndex = async (sourcePath, sourceContents) => {
   const { sitePath, githubPath } = rewriteSourcePath(sourcePath);
   const html = parseHtml(sourceContents);
 
@@ -19,7 +16,6 @@ const transformPatternIndex = async (sourcePath, sourceContents) => {
   await rewriteElementPaths(html, { onSourcePath: sourcePath });
 
   const content = `
-    ${readThisFirst}
     ${html.querySelector("body").innerHTML}
   `
 
@@ -33,4 +29,4 @@ const transformPatternIndex = async (sourcePath, sourceContents) => {
   });
 };
 
-module.exports = transformPatternIndex;
+module.exports = transformPracticeIndex;

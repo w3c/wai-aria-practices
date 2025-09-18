@@ -12,6 +12,7 @@ const transformPracticeIndex = require("./library/transformPracticeIndex");
 const transformImageAsset = require("./library/transformImageAsset");
 const transformHtmlAsset = require("./library/transformHtmlAsset");
 const transformOtherAsset = require("./library/transformOtherAsset");
+const transformTemplate = require("./library/transformTemplate");
 
 const preBuild = async () => {
   await emptyBuildFolders();
@@ -46,7 +47,7 @@ const preBuild = async () => {
         case "otherAsset":
           return transformOtherAsset(sourcePath, sourceContents);
         case "template":
-          break;
+          return transformTemplate(sourcePath, sourceContents);
         default:
           throw new Error(
             `Script did not recognize content type ${contentType}`

@@ -1,7 +1,7 @@
 /* Global Styles */
 .page-practices .standalone-resource__main,
 .default-grid.with-gap.leftcol .standalone-resource__prevnext,
-body:not(.has-sidebar) .leftcol .standalone-resource__main { 
+body:not(.has-sidebar) .leftcol .standalone-resource__main {
   grid-column: 2/10;
 }
 
@@ -41,8 +41,8 @@ a.skip-main:focus, a.skip-main:active {
 
 @media (min-width: 60em) {
   .standalone-resource__sidebar {
-      position: sticky;
-      top: 16px;
+    position: sticky;
+    top: 16px;
   }
 }
 
@@ -473,7 +473,7 @@ table.def th {
   width: 3em;
 }
 
-table.def td, 
+table.def td,
 table.def th {
   padding: 0.5em;
   vertical-align: baseline;
@@ -483,13 +483,13 @@ table.def th {
   background: #def;
 }
 
-table.def > tbody > tr:last-child th, 
+table.def > tbody > tr:last-child th,
 table.def > tbody > tr:last-child td {
   border-bottom: 0;
 }
 
-table.data, 
-table.index, 
+table.data,
+table.index,
 table.widget-features {
   margin: 1em auto;
   border-collapse: collapse;
@@ -497,14 +497,14 @@ table.widget-features {
   width: 100%;
 }
 
-table.data thead, 
-table.index thead, 
-table.data tbody, 
+table.data thead,
+table.index thead,
+table.data tbody,
 table.index tbody {
   border-bottom: 2px solid;
 }
 
-table.data td, table.data th, 
+table.data td, table.data th,
 table.index td, table.index th,
 table.widget-features td, table.widget-features th {
   padding: 0.5em 1em;
@@ -516,17 +516,17 @@ table.widget-features td, table.widget-features th {
   color: inherit;
 }
 
-table.data thead, table.index thead, table.widget-features thead, 
+table.data thead, table.index thead, table.widget-features thead,
 table.data tbody, table.index tbody, table.widget-features tbody {
   border-bottom: 2px solid;
 }
 
-table.data.attributes tbody th, 
+table.data.attributes tbody th,
 table.data.attributes tbody td {
   border: 1px solid silver;
 }
 
-table.data tbody th:first-child, 
+table.data tbody th:first-child,
 table.index tbody th:first-child,
 table.widget-features tbody th:first-child {
   border-top: 1px solid silver;
@@ -632,33 +632,33 @@ table :not(.highlight) code {
   margin-left: 0;
 }
 
-.note::before, .note > 
+.note::before, .note >
 .marker, details.note > summary {
   color: hsl(120, 70%, 30%);
 }
 
-.note > p:last-child, 
-.issue > p:last-child, 
-blockquote > :last-child, 
-.amendment > p:last-child, 
-.correction > p:last-child, 
+.note > p:last-child,
+.issue > p:last-child,
+blockquote > :last-child,
+.amendment > p:last-child,
+.correction > p:last-child,
 .addition > p:last-child {
   margin-bottom: 0;
 }
 
-.issue::before, 
-.issue > .marker, 
-.example::before, 
-.example > .marker, 
-.note::before, 
-.note > .marker, 
-details.note > summary > .marker, 
-.amendment::before, .amendment > .marker, 
-details.amendment > summary > .marker, 
-.correction::before, 
-.correction > .marker, 
-details.correction > summary > .marker, 
-.addition::before, .addition > .marker, 
+.issue::before,
+.issue > .marker,
+.example::before,
+.example > .marker,
+.note::before,
+.note > .marker,
+details.note > summary > .marker,
+.amendment::before, .amendment > .marker,
+details.amendment > summary > .marker,
+.correction::before,
+.correction > .marker,
+details.correction > summary > .marker,
+.addition::before, .addition > .marker,
 details.addition > summary > .marker {
   text-transform: uppercase;
   padding-right: 1em;
@@ -989,13 +989,19 @@ table.sortable th button:focus {
   width: 50%;
 }
 
+.read-this-first:not(:has(img)) .text {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 23em) {
   .read-this-first img {
     width: 178px;
   }
 }
 
-@media screen and (min-width: 35em) { 
+@media screen and (min-width: 35em) {
   .read-this-first {
     overflow: visible;
   }
@@ -1007,21 +1013,33 @@ table.sortable th button:focus {
     margin-left: 14em;
     margin-bottom: 0;
   }
+  .read-this-first:not(:has(img)) .text {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: 35em) { 
+@media screen and (min-width: 35em) {
   .read-this-first {
     margin-top: 3em;
   }
-
+  .read-this-first:not(:has(img)) {
+    margin-top: 0;
+  }
 }
 
-@media screen and (min-width: 60em) { 
+@media screen and (min-width: 60em) {
   .read-this-first {
     margin-top: 4em;
     padding: 1em;
   }
   .read-this-first .text {
     margin-right: 2em;
+  }
+  .read-this-first:not(:has(img)) {
+    margin-top: 0;
+  }
+  .read-this-first:not(:has(img)) .text {
+    margin-left: 0;
   }
 }

@@ -51,17 +51,6 @@ lang: en
 <div>
 
     
-    <div class="read-this-first">
-      <div class="text">
-        <img src="../../../content-images/wai-aria-practices/images/read-this-first.svg" width="178" alt="Illustration of a brown-skinned woman with a slight smile gesturing towards the right with her hand">
-        <h2>Read This First</h2>
-        <p>
-          No ARIA is better than Bad ARIA. Before using any ARIA, <a href="read-me-first/" aria-label="Read this to understand why no ARIA is better than bad ARIA">read this to understand why</a>.
-        </p>
-      </div>
-    </div>
-  
-    
     
     <ul class="tiles">
       <li class="tile">
@@ -147,5 +136,9 @@ lang: en
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
   data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/read-this-first.js' | relative_url }}"
+  data-read-this-first="showImage:true"
 ></script>
 

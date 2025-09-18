@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-datepicker/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -772,7 +772,7 @@ Moves focus to the day of the month that has the same number.
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/css/combobox-datepicker.css" type="text/css">combobox-datepicker.css</a>
           </li>
           <li>
-            Javascript:
+            JavaScript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/combobox/examples/js/combobox-datepicker.js" type="text/javascript">combobox-datepicker.js</a>
           </li>
         </ul>
