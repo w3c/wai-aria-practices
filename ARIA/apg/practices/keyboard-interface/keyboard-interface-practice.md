@@ -422,7 +422,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
           <div class="note">
             <h4>Note</h4>
-            <p>This guidance focuses specifically on keyboard interaction. However, authors must of course also consider pointer interactions, such as mouse clicks
+            <p>This guidance focuses specifically on keyboard interaction. However, authors also need to consider pointer interactions, such as mouse clicks
               and touchscreen taps. When a component is clicked/tapped,
               authors should take the same steps to set the correct <code>tabindex</code> or <code>aria-activedescendant</code> for the element,
               in the same way that they would for keyboard navigation. Otherwise, this could lead to a confusing experience for users that switch between pointer
