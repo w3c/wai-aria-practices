@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/table/examples/sortable-table/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/134'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/134'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -256,7 +256,7 @@ lang: en
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/css/sortable-table.css" type="text/css">sortable-table.css</a>
           </li>
           <li>
-            Javascript:
+            JavaScript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/table/examples/js/sortable-table.js" type="text/javascript">sortable-table.js</a>
           </li>
         </ul>
