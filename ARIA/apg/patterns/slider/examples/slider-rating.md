@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/slider/examples/slider-rating/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/124'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/124'>View issues related to this example</a></p>        <p>Page last updated: 22 October 2024</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -373,7 +373,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2>JavaScript and CSS Source Code</h2>
         <ul id="css_js_files">
           <li>CSS: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/css/slider-rating.css" type="text/css">slider-rating.css</a></li>
-          <li>JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-rating.js" type="text/javascript">slider-rating.js</a></li>
+          <li>Javascript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/slider/examples/js/slider-rating.js" type="text/javascript">slider-rating.js</a></li>
         </ul>
       </section>
 
