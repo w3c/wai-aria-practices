@@ -298,7 +298,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>If an action button has focus, moves focus to the next action button for the current option.</li>
                   <li>If the last action button has focus, does nothing.</li>
                 </ul>
-            </td></tr>
+              </td>
+            </tr>
             <tr data-test-id="key-left-arrow">
               <th><kbd>Left Arrow</kbd></th>
               <td>
@@ -307,7 +308,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                   <li>If the first action button has focus, moves focus to the current option.</li>
                   <li>If an option has focus, does nothing.</li>
                 </ul>
-            </td></tr>
+              </td>
+            </tr>
             <tr data-test-id="key-home">
               <th><kbd>Home</kbd></th>
               <td>Moves focus to and selects the first option.</td>
