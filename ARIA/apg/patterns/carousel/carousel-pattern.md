@@ -70,7 +70,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <p>
           Ensuring all users can easily control and are not adversely affected by slide rotation is an essential aspect of making carousels accessible.
           For instance, the screen reader experience can be confusing and disorienting if slides that are not visible on screen are incorrectly hidden, e.g., displayed off-screen.
-          Similarly, if slides rotate automatically and a screen reader user is not aware of the rotation, the user may read an element on slide one, execute the screen reader command for next element, and, instead of hearing the next element on slide one, hear an element from slide 2 without any knowledge that the element just announced is from an entirely new context.
+          Similarly, if slides rotate automatically and a screen reader user is not aware of the rotation, the user may read an element on slide 1, execute the screen reader command for next element, and, instead of hearing the next element on slide 1, hear an element from slide 2 without any knowledge that the element just announced is from an entirely new context.
         </p>
         <p>Features needed to provide sufficient rotation control include:</p>
         <ul>
@@ -232,5 +232,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 <script
   src="{{ '/content-assets/wai-aria-practices/shared/js/skipto.js' | relative_url }}"
   data-skipto="colorTheme:aria; displayOption:popup; containerElement:div"
+></script>
+<script
+  src="{{ '/content-assets/wai-aria-practices/shared/js/read-this-first.js' | relative_url }}"
+  data-read-this-first="showImage:false"
 ></script>
 

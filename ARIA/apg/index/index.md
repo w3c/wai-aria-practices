@@ -214,7 +214,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
                 <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
                 <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
@@ -409,7 +409,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>spinbutton</code></td>
             <td>
               <ul>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
@@ -583,6 +584,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
@@ -620,9 +622,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <ul>
                 <li><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
                 <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
+          </tr>
+          <tr>
+            <td><code>aria-errormessage</code></td>
+            <td><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></td>
           </tr>
           <tr>
             <td><code>aria-expanded</code></td>
@@ -684,7 +691,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/switch/examples/switch/">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -692,6 +700,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
+          </tr>
+          <tr>
+            <td><code>aria-invalid</code></td>
+            <td><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></td>
           </tr>
           <tr>
             <td><code>aria-label</code></td>
@@ -710,7 +722,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
                 <li><a href="../patterns/table/examples/table/">Table</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
                 <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
@@ -749,7 +761,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
                 <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -908,7 +920,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
@@ -923,7 +936,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
@@ -938,7 +952,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
@@ -950,7 +965,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
                 <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
