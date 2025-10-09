@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 9 October 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -406,8 +406,16 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
               <li>When focus leaves the tree, if the item representing the current page is in a branch that has been collapsed, that branch is expanded to ensure the current page item is both visible and exposed as active to assistive technologies.</li>
             </ul>
           </li>
-        </ul>
-        <h3>Visual design and high contrast features</h3>
+        </ul>
+        <p>
+          In this navigation example, the
+          <a href="https://w3c.github.io/aria/https://www.w3.org/TR/wai-aria-1.2/#aria-current" class="property-reference"><code>aria-current</code></a>
+          attribute is used instead of
+          <a href="https://w3c.github.io/aria/https://www.w3.org/TR/wai-aria-1.2/#aria-selected" class="property-reference"><code>aria-selected</code></a>
+          because it more clearly communicates which page is currently displayed.
+          The ARIA Tree View pattern does not require that an item be selected.
+        </p>
+        <h3>Visual design and high contrast features</h3>
         <ul>
           <li>To help communicate that the arrow keys are available for navigation within the tree, a border is added to the tree container when focus is within the tree.</li>
           <li>
