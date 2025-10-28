@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/treegrid/examples/treegrid-1/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 18 March 2025</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -515,7 +515,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/treegrid/examples/css/treegrid-1.css" type="text/css">treegrid-1.css</a>
           </li>
           <li>
-            JavaScript:
+            Javascript:
             <a href="../../../../../../content-assets/wai-aria-practices/patterns/treegrid/examples/js/treegrid-1.js" type="text/javascript">treegrid-1.js</a>
           </li>
         </ul>
