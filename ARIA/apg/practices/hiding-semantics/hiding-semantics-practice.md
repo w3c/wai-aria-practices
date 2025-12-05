@@ -11,6 +11,7 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/practices/hiding-semantics/
 
 sidebar: true
+class: has-sidebar
 
 
 
@@ -36,15 +37,6 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
-
-<script>
-const addBodyClass = undefined;
-const enableSidebar = true;
-if (addBodyClass) document.body.classList.add(addBodyClass);
-if (enableSidebar) document.body.classList.add('has-sidebar');
-</script>
-    
-
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
