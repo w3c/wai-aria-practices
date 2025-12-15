@@ -69,7 +69,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
   <div>
     
-    <p>Page last updated: October 6, 2025</p>
+    <p>Page last updated: December 15, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -1845,12 +1845,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td></td>
             <td></td>
             <td></td>
-            <td>ex</td>
+            <td>not found</td>
+            <td>0</td>
             <td>2</td>
-            <td>2</td>
-            <td>7</td>
+            <td>6</td>
             <td>4</td>
-            <td>aria-disabled,aria-keyshortcuts,aria-multiselectable</td>
+            <td>listbox,option,aria-disabled,aria-keyshortcuts,aria-multiselectable,aria-pressed,aria-labelledby,aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
