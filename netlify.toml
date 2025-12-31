@@ -3,7 +3,7 @@ command = "git submodule update --init --remote && bundle exec jekyll build --co
 publish = "_site"
 
 [build.environment]
-RUBY_VERSION = "3.3.3"
+RUBY_VERSION = "3.4.8"
 
 [[redirects]]
   from = "/"
