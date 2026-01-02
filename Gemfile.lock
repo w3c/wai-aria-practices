@@ -1,3 +1,27 @@
+GIT
+  remote: https://github.com/w3c/wai-website-plugin
+  revision: 7cd3702a96d1b6a84c50fdfd3f6ceb62c72c69ae
+  branch: v2026
+  specs:
+    wai-website-plugin (0.3)
+      jekyll (~> 4.4.1)
+      nokogiri (~> 1.19.0)
+
+GIT
+  remote: https://github.com/w3c/wai-website-theme
+  revision: 3317bc4e222c1433600d8b61204c7d0f5b13e7b7
+  branch: main
+  specs:
+    wai-website-theme (1.10)
+      jekyll (~> 4.4.1)
+      jekyll-include-cache (~> 0.2.1)
+      jekyll-paginate (~> 1.1.0)
+      jekyll-redirect-from (~> 0.16.0)
+      jekyll-seo-tag (~> 2.8.0)
+      jekyll-sitemap (~> 1.4.0)
+      logger (~> 1.7.0)
+      wai-website-plugin (~> 0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -75,6 +99,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
     mini_portile2 (2.8.9)
     nokogiri (1.19.0)
@@ -95,7 +120,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.4.4)
-    rouge (4.6.1)
+    rouge (4.7.0)
     rubyzip (2.4.1)
     safe_yaml (1.0.5)
     sass-embedded (1.97.1)
@@ -110,16 +135,6 @@ GEM
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     unicode-display_width (2.6.0)
-    wai-website-plugin (0.2)
-      jekyll (>= 3.6, < 5.0)
-    wai-website-theme (1.10)
-      jekyll (>= 4.4.1, < 5.0)
-      jekyll-include-cache
-      jekyll-paginate
-      jekyll-redirect-from
-      jekyll-seo-tag
-      jekyll-sitemap
-      wai-website-plugin
     webrick (1.9.2)
 
 PLATFORMS
@@ -129,8 +144,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-remote-theme (~> 0.4.3)
-  nokogiri (~> 1.19.0)
-  wai-website-theme (~> 1.10)
+  wai-website-plugin!
+  wai-website-theme!
 
 CHECKSUMS
   addressable (2.8.8) sha256=7c13b8f9536cf6364c03b9d417c19986019e28f7c00ac8132da4eb0fe393b057
@@ -165,6 +180,7 @@ CHECKSUMS
   kramdown-parser-gfm (1.1.0) sha256=fb39745516427d2988543bf01fc4cf0ab1149476382393e0e9c48592f6581729
   liquid (4.0.4) sha256=4fcfebb1a045e47918388dbb7a0925e7c3893e58d2bd6c3b3c73ec17a2d8fdb3
   listen (3.9.0) sha256=db9e4424e0e5834480385197c139cb6b0ae0ef28cc13310cfd1ca78377d59c67
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mercenary (0.4.0) sha256=b25a1e4a59adca88665e08e24acf0af30da5b5d859f7d8f38fba52c28f405138
   mini_portile2 (2.8.9) sha256=0cd7c7f824e010c072e33f68bc02d85a00aeb6fce05bb4819c03dfd3c140c289
   nokogiri (1.19.0) sha256=e304d21865f62518e04f2bf59f93bd3a97ca7b07e7f03952946d8e1c05f45695
@@ -178,7 +194,7 @@ CHECKSUMS
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
-  rouge (4.6.1) sha256=5075346d5797d6864be93f7adc75a16047a7dbfa572c63c502419ffa582c77de
+  rouge (4.7.0) sha256=dba5896715c0325c362e895460a6d350803dbf6427454f49a47500f3193ea739
   rubyzip (2.4.1) sha256=8577c88edc1fde8935eb91064c5cb1aef9ad5494b940cf19c775ee833e075615
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
   sass-embedded (1.97.1) sha256=112ee8895854e7a8ea985937f7458f649fed8df255ed61e189f8a4b185e768d9
@@ -187,8 +203,8 @@ CHECKSUMS
   sass-embedded (1.97.1-x86_64-linux-gnu) sha256=9a294bb0acb1a539ed19f0e511098a9740b4aab4389e169585e8da1337fbd8b4
   terminal-table (3.0.2) sha256=f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91
   unicode-display_width (2.6.0) sha256=12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a
-  wai-website-plugin (0.2) sha256=c4941a49c0dbba4889ea9969cd68cc231ae21c359151003c3cc853285cb87c76
-  wai-website-theme (1.10) sha256=564040fcb8759238838508d07edccd51502836c7f1ea6edd494b8665a835eb13
+  wai-website-plugin (0.3)
+  wai-website-theme (1.10)
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
 
 BUNDLED WITH
