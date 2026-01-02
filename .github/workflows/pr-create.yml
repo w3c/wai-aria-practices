@@ -39,10 +39,10 @@ jobs:
           cache: npm
           cache-dependency-path: scripts/pre-build/package-lock.json
 
-      - name: Set up Ruby 3.3
+      - name: Set up Ruby 3.4.8
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.3'
+          ruby-version: '3.4.8'
 
       - name: Update git submodules
         run: |
