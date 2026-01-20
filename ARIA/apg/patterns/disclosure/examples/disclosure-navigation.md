@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-navigation/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -408,6 +408,17 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
           </tbody>
         </table></div>
+      </section>
+
+      <section id="at-support">
+        <h2>Assistive Technology Support</h2>
+        <p><a href="../../../../about/at-support-tables/">Learn how to interpret and use assistive technology support data</a></p>
+        <iframe class="support-levels-disclosure-navigation"
+          src="https://aria-at.w3.org/embed/reports/apg/disclosure-navigation"
+          height="100"
+          allow="clipboard-write"
+          style="border-style: none; width: 100%;">
+        </iframe>
       </section>
 
       <section>
