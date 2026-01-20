@@ -976,6 +976,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <h2 id="examples_experimental_label">Experimental Examples</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
       <ul id="examples_experimental_ul">
+                <li><a href="../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li></ul>
     </section>
   </div>
