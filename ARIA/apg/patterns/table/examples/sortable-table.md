@@ -11,6 +11,7 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/table/examples/sortable-table/
 
 sidebar: true
+class: has-sidebar
 
 footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/134'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
 
@@ -43,15 +44,6 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
-
-<script>
-const addBodyClass = undefined;
-const enableSidebar = true;
-if (addBodyClass) document.body.classList.add(addBodyClass);
-if (enableSidebar) document.body.classList.add('has-sidebar');
-</script>
-    
-
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
