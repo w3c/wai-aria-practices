@@ -1,4 +1,4 @@
-name: Deploy to netlify from APG trigger
+name: Deploy to Netlify from APG trigger
 
 on:
   workflow_dispatch:
@@ -19,10 +19,10 @@ jobs:
         cache: npm
         cache-dependency-path: scripts/pre-build/package-lock.json
 
-    - name: Set up Ruby 3.3
+    - name: Set up Ruby 3.4.8
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.3.3'
+        ruby-version: '3.4.8'
         bundler-cache: true
 
     - name: Update git submodules
