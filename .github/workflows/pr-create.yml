@@ -46,23 +46,18 @@ jobs:
 
       - name: Update git submodules
         run: |
-          # Deinit and reinit submodules
-          echo "Deinitializing existing submodules..."
+          # Deinit and reinit aria-practices submodule
+          echo "Deinitializing aria-practices submodule..."
           git submodule deinit -f "_external/aria-practices" || true
-          git submodule deinit -f "_external/data" || true
           
-          # Remove stale directories
+          # Remove stale directory
           if [ -d "_external/aria-practices" ]; then
             echo "Removing stale aria-practices directory..."
             rm -rf "_external/aria-practices"
           fi
-          if [ -d "_external/data" ]; then
-            echo "Removing stale data directory..."
-            rm -rf "_external/data"
-          fi
           
-          # Reinitialize submodules
-          echo "Initializing submodules..."
+          # Reinitialize aria-practices submodule
+          echo "Initializing submodule..."
           git submodule update --init --recursive
           
           # Update from remote and handle fork if exists
@@ -88,7 +83,6 @@ jobs:
           git rebase --force-rebase origin/main || true
 
           # Handle cases where the aria-practices submodule has conflicts to be handled;
-          # _external/data shouldn't have conflicting changes
           while { [ -f ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]; }; do
             echo "Handling submodule conflicts..."
 
