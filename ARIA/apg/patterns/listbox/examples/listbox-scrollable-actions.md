@@ -12,7 +12,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-scrollable-actions/
 
 sidebar: true
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 4 February 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -126,9 +126,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div class="offscreen">Last change: <span aria-live="polite" id="ss_live_region"></span></div>
         <div id="ex">
+          <p>
+            Plan your bucket list: Select an item to view or edit its details. Flag it for follow up if you need to do more research. You can also rank or delete items.
+          </p>
           <div class="listbox-area">
             <div>
-              <span id="ss_elem" class="listbox-label">Task List:</span>
+              <span id="ss_elem" class="listbox-label">Bucket List:</span>
               <ul id="ss_elem_list" tabindex="0" role="listbox" aria-labelledby="ss_elem">
                 <li id="ss_elem_None" role="option" aria-actions="">
                   <span class="checkmark" aria-hidden="true"></span>
