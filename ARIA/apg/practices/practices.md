@@ -14,6 +14,7 @@ sidebar: false
 
 
 
+
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
 
@@ -37,8 +38,6 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
-
-
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
