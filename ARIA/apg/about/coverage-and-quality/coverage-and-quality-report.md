@@ -61,7 +61,7 @@ lang: en
 
   <div>
     
-    <p>Page last updated: September 18, 2025</p>
+    <p>Page last updated: December 15, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -435,6 +435,7 @@ lang: en
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
             </ul>
 </td>
@@ -584,6 +585,7 @@ lang: en
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
             </ul>
 </td>
@@ -889,6 +891,7 @@ lang: en
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1054,6 +1057,7 @@ lang: en
                 <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1116,6 +1120,7 @@ lang: en
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1242,6 +1247,7 @@ lang: en
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
                 <li><a href="../../patterns/tabs/examples/tabs-actions/">Experimental  Tabs with Action Buttons</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
@@ -1345,7 +1351,7 @@ lang: en
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">63</td>
+            <td id="example_summary_total">64</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
@@ -1361,7 +1367,7 @@ lang: en
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
-            <td id="example_summary_current_color">29</td>
+            <td id="example_summary_current_color">30</td>
           </tr>
 
           <tr>
@@ -1374,15 +1380,15 @@ lang: en
           </tr>
           <tr>
             <th scope="row">Use Class</th>
-            <td id="example_summary_class">38</td>
+            <td id="example_summary_class">39</td>
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
-            <td id="example_summary_prototype">22</td>
+            <td id="example_summary_prototype">23</td>
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
-            <td id="example_summary_mouse">17</td>
+            <td id="example_summary_mouse">18</td>
           </tr>
           <tr>
             <th scope="row">Pointer Events</th>
@@ -1824,6 +1830,19 @@ lang: en
             <td>9</td>
             <td>5</td>
             <td>toolbar,aria-disabled,aria-keyshortcuts,aria-label,aria-live</td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></td>
+            <td>class, prototype</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>not found</td>
+            <td>0</td>
+            <td>2</td>
+            <td>6</td>
+            <td>4</td>
+            <td>listbox,option,aria-disabled,aria-keyshortcuts,aria-multiselectable,aria-pressed,aria-labelledby,aria-hidden</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
@@ -2412,6 +2431,14 @@ lang: en
             <td>Yes</td>
           </tr>
           <tr>
+            <td><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+          </tr>
+          <tr>
             <td><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></td>
             <td></td>
             <td></td>
@@ -2664,6 +2691,11 @@ lang: en
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
+            <td>Yes</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/listbox/examples/listbox-scrollable-actions/">Experimental  Scrollable Listbox with Actions on Options</a></td>
             <td>Yes</td>
             <td></td>
           </tr>
