@@ -77,7 +77,7 @@ lang: en
           </thead>
           <tbody>
             <tr>
-              <td><code>aside</code></td>
+              <td><code>aside</code> if it is in the context of a <code>body</code> or <code>main</code> element. Or if it has an accessible name provided by <code>aria-labelledby</code> or <code>aria-label</code></td>
               <td><code>complementary</code></td>
             </tr>
             <tr>
@@ -125,7 +125,7 @@ lang: en
 
         <ul>
           <li>Assign landmark roles based on the type of content in the area.</li>
-          <li><code>banner</code>, <code>main</code>, <code>complementary</code> and <code>contentinfo</code> landmarks should be top level landmarks.</li>
+          <li><code>banner</code>, <code>main</code> and <code>contentinfo</code> landmarks should be top level landmarks.</li>
           <li>Landmark roles can be nested to identify parent/child relationships of the information being presented.</li>
           <li>
             Note that wrapping  the content  of a modal dialog in a landmark region is unnecessary.
@@ -220,8 +220,6 @@ lang: en
           </p>
 
           <ul>
-            <li><code>complementary</code> landmarks should be top level landmarks (e.g. not contained within any other landmarks).</li>
-
             <li>If the complementary content is not related to the main content, a more general role should be assigned (e.g. <code>region</code>).</li>
 
             <li>If a page includes more than one <code>complementary</code> landmark, each should have a unique label (see <a href="#aria_lh_step3">Step 3</a> above).</li>
@@ -230,7 +228,7 @@ lang: en
           <section>
             <h4>HTML Technique</h4>
 
-            <p>Use the HTML <code>aside</code> element to define a <code>complementary</code> landmark.</p>
+            <p>The HTML <code>aside</code> element defines a <code>complementary</code> landmark when has an accessible name (e.g. <code>aria-labelledby</code>, <code>aria-label</code>).</p>
 
             <h4>ARIA Technique</h4>
 
