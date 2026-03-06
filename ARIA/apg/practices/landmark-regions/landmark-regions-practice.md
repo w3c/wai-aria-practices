@@ -228,11 +228,11 @@ lang: en
           <section>
             <h4>HTML Technique</h4>
 
-            <p>The HTML <code>aside</code> element defines a <code>complementary</code> landmark when has an accessible name (e.g. <code>aria-labelledby</code>, <code>aria-label</code>).
+            <p>The HTML <code>aside</code> element defines a <code>complementary</code> landmark when has an accessible name (e.g. <code>aria-labelledby</code>, <code>aria-label</code>).</p>
 
             <h4>ARIA Technique</h4>
 
-            </p><p>If the HTML <code>aside</code> element technique is not being used, use a <code>role=&quot;complementary&quot;</code> attribute to define a <code>complementary</code> landmark.</p>
+            <p>If the HTML <code>aside</code> element technique is not being used, use a <code>role=&quot;complementary&quot;</code> attribute to define a <code>complementary</code> landmark.</p>
           </section>
 
           <section>
