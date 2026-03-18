@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/link/examples/link/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/137'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/137'>View issues related to this example</a></p>        <p>Page last updated: 4 March 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -220,8 +220,8 @@ lang: en
           style="border-style: none; width: 100%;">
         </iframe>
         <h3>Example 3: Link on a <code>span</code> Element with CSS <code>:before</code> Content Property</h3>
-        <iframe class="support-levels-link-span-css"
-          src="https://aria-at.w3.org/embed/reports/apg/link-span-css"
+        <iframe class="support-levels-link-css"
+          src="https://aria-at.w3.org/embed/reports/apg/link-css"
           height="100"
           allow="clipboard-write"
           style="border-style: none; width: 100%;">
