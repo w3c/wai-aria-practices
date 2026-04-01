@@ -446,22 +446,26 @@ Authors are encouraged to adopt consistent pattern-based conventions for the foc
         </p>
         <ol>
           <li>
-            When a disabled element <em>does not</em> need to remain discoverable, we apply the native <code>disabled</code> attribute so that it will no longer be focusable.
-            For example:
-              <ul>
-                <li>
-                  The “Previous” and “Next” buttons in the <a href="../../patterns/grid/examples/layout-grids/#ex3_label">“Scrollable Search Results”</a> example of a <a href="../../patterns/grid/">Grid</a>, each of which will become respectively disabled when the user has navigated to the start or end of the grid.
-                </li>
-                <li>
-                  A toolbar with buttons for moving, removing, and adding items in a list includes buttons for &quot;Up&quot;, &quot;Down&quot;, &quot;Add&quot;, and &quot;Remove&quot;.
-                  The &quot;Up&quot; button is disabled and its focusability is removed when the first item in the list is selected.
-                  Given the presence of the &quot;Down&quot; button, discoverability of the &quot;Up&quot; button is not a concern.
-                </li>
-              </ul>
+            When users can reasonably infer a disabled element from nearby
+            focusable elements, it can be removed from the keyboard focus order
+            using the HTML <code>disabled</code> attribute. For example:
+            <ul>
+              <li>
+                In the <a href="../../patterns/grid/examples/layout-grids/#ex3_label">“Scrollable
+                Search Results” grid example</a>, when the grid is showing the
+                first page and the “Next” button receives focus, users can infer
+                that the “Previous” button is disabled.
+              </li>
+              <li>
+                A toolbar with buttons for moving, removing, and adding items in a list includes buttons for &quot;Up&quot;, &quot;Down&quot;, &quot;Add&quot;, and &quot;Remove&quot;.
+                The &quot;Up&quot; button is disabled and its focusability is removed when the first item in the list is selected.
+                Given the presence of the &quot;Down&quot; button, discoverability of the &quot;Up&quot; button is not a concern.
+              </li>
+            </ul>
           </li>
 
           <li>
-            When a disabled element <em>does</em> need to remain discoverable, we apply <code>aria-disabled="true"</code> so that it remains focusable. For example:
+            When a disabled element <em>does</em> need to remain discoverable, <code>aria-disabled="true"</code> is applied so that it will remain focusable. For example:
             <ul>
               <li>
                 The “Copy”, “Cut”, and “Paste” buttons in the <a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a>.
