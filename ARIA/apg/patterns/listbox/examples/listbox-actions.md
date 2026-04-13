@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-actions/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 10 April 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 13 April 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -142,7 +142,7 @@ lang: en
               <li>
                 Readonly edit like color picker and file tree view so it can be accessible and screen reader users could tab to it
               </li><li>
-                Don't have selection follow focus.  Require spacebar or enter key. Other listbox examples follow the implicit seleciton model so having it require an enter.
+                Don't have selection follow focus.  Require space bar or enter key. Other listbox examples follow the implicit selection model so having it require an enter.
               </li><li>
                 Make the star next to the checkbox the action and remove the button from the actions buttons
               </li>
