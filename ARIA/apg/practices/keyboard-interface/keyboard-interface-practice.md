@@ -446,8 +446,8 @@ Authors are encouraged to adopt consistent pattern-based conventions for the foc
         </p>
         <ol>
           <li>
-            When users can reasonably infer a disabled element from nearby
-            focusable elements, it can be removed from the keyboard focus order
+            When users can reasonably infer the presence of a disabled element from nearby
+            focusable elements, it is removed from the keyboard focus order
             using the HTML <code>disabled</code> attribute. For example:
             <ul>
               <li>
