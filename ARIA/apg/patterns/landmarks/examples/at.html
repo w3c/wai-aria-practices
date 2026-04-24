@@ -13,8 +13,8 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
     <link href="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/css/visua11y.css" rel="stylesheet" media="screen">
     <link href="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/css/common.css" rel="stylesheet" media="screen">
   </head>
-  
-    
+  <body>
+    <div class="container">
       <header class="row">
         <div id="skip-to-attach" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
           <img src="../../../../../content-images/wai-aria-practices/patterns/landmarks/examples/images/w3c.png" alt="W3C Logo" style="margin-top: 2em">
@@ -45,8 +45,8 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
             </ul>
           </nav>
         </div>
-        </div>
-          
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-7">
+          <main>
             <h1>Assistive Technology</h1>
 
             <p>The following sections demonstrate how various popular
@@ -170,7 +170,7 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
 
             </section>
 
-            
+            <section>
             <h2 id="orca">ORCA Screen Reader for Linux/GNOME</h2>
               <p>The following commands are available in ORCA Screen reader for navigating landmarks:</p>
 
@@ -199,13 +199,13 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
 
               </table>
 
-              
+              <figure>
                 <img src="../../../../../content-images/wai-aria-practices/patterns/landmarks/examples/images/landmarks-orca.png" alt>
-                Screen shot of list of landmarks in Orca
-              
-            
+                <figcaption>Screen shot of list of landmarks in Orca</figcaption>
+              </figure>
+            </section>
 
-            
+            <section>
               <h2 id="skipto">SkipTo.js Browser Extension</h2>
 
               <p>The <a href="https://skipto-landmarks-headings.github.io/page-script-5/extensions.html">SkipTo.js browser extensions</a> implement the <a href="https://www.w3.org/TR/UAAG/">User Agent Accessibility Guidelines 1.0</a> requirement <q><a href="https://www.w3.org/TR/UAAG/guidelines.html#tech-nav-structure">9.9 Allow Structured Navigation</a></q>. It does this by providing keyboard navigation to major landmarks and headings on any web page.  The keyboard shortcut to open the "Skip To Content" menu is <kbd>alt</kbd> + <kbd>0</kbd> on Windows/Linux and <kbd>option</kbd> + <kbd>0</kbd> on Mac keyboards. </p>
@@ -232,11 +232,11 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
                   </tr>
                   <tr>
                     <td>h</td>
-                    <td>Next landmark</td>
+                    <td>Next heading</td>
                   </tr>
                   <tr>
                     <td>shift+h</td>
-                    <td>Previous landmark</td>
+                    <td>Previous heading</td>
                   </tr>
                   <tr>
                     <td>m</td>
@@ -286,15 +286,15 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
                 <li><a href="https://addons.opera.com/en/extensions/details/skiptojs-for-opera/">SkipTo.js for Opera</a></li>
               </ul>
 
-              
+              <figure>
                 <img src="../../../../../content-images/wai-aria-practices/patterns/landmarks/examples/images/landmarks-skipto.png" alt>
-                Screen shot of SkipTo.js menu of major landmarks and Headings
-              
+                <figcaption>Screen shot of SkipTo.js menu of major landmarks and Headings</figcaption>
+              </figure>
 
-            
+            </section>
 
-          
-        
+          </main>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <aside aria-labelledby="id4">
             <h2 id="id4">Landmarks</h2>
@@ -323,7 +323,7 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
             </ul>
           </aside>
         </div>
-      
+      </div>
       <div class="well well-sm">
         <footer class="row">
           <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
@@ -334,7 +334,7 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
           </div>
         </footer>
       </div>
-    
+    </div>
     <script type="text/javascript" src="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/js/tabs.js"></script>
@@ -344,6 +344,5 @@ permalink: /ARIA/apg/patterns/landmarks/examples/at.html
     <script type="text/javascript" src="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/js/show.js"></script>
     
     <script data-skipto="attachElement: #skip-to-attach; colorTheme: aria" src="../../../../../content-assets/wai-aria-practices/patterns/landmarks/examples/js/skipto.min.js"></script>
-  
-
+  </body>
 </html>
