@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-actions/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 29 April 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 1 May 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -167,7 +167,8 @@ lang: en
                         id="ss_elem_IronMan_uparrow"></button>
                       <button aria-label="move down" tabindex="-1" class="downarrow actionButton"
                         id="ss_elem_IronMan_downarrow"></button>
-                      <button aria-label="delete" tabindex="-1"  class="delete actionButton"></button>
+                      <button aria-label="delete" tabindex="-1" class="delete actionButton"
+                        id="ss_elem_IronMan_delete"></button>
                     </span>
                   </li>
                   <li id="ss_elem_Everest" role="option" aria-controls="ss_elem_Everest_detail_panel" aria-actions="">
