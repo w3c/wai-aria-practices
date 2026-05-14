@@ -77,7 +77,7 @@ lang: en
           </thead>
           <tbody>
             <tr>
-              <td><code>aside</code> if it is in the context of a <code>body</code> or <code>main</code> element. Or if it has an accessible name provided by <code>aria-labelledby</code> or <code>aria-label</code></td>
+              <td><code>aside</code> if it is in the context of a <code>body</code> or <code>main</code> element, or if it is scoped to another sectioning content element and has an accessible name.</td>
               <td><code>complementary</code></td>
             </tr>
             <tr>
@@ -97,7 +97,7 @@ lang: en
               <td><code>navigation</code></td>
             </tr>
             <tr>
-              <td><code>section</code> if it has an accessible name provided by <code>aria-labelledby</code> or <code>aria-label</code></td>
+              <td><code>section</code> if it has an accessible name</td>
               <td><code>region</code></td>
             </tr>
             <tr>
