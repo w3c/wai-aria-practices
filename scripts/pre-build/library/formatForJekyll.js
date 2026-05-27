@@ -3,7 +3,6 @@ const prettier = require("prettier");
 const formatForJekyll = ({
   title,
   sitePath,
-  addBodyClass,
   content,
   enableSidebar = false,
   githubPath,
@@ -67,6 +66,7 @@ feedbackmail: public-aria-practices@w3.org
 permalink: ${permalink}
 
 sidebar: ${enableSidebar}
+${!enableSidebar ? "" : `class: has-sidebar` }
 
 ${!footer ? "" : `footer: "${footer.replace(/\n/g, "").replace(/"/g, "'")}"`}
 
@@ -86,19 +86,6 @@ ${/* ${prettier.format(` */ ""}
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
-${
-  !(addBodyClass || enableSidebar)
-    ? ""
-    : `
-<script>
-const addBodyClass = ${JSON.stringify(addBodyClass)};
-const enableSidebar = ${JSON.stringify(enableSidebar)};
-if (addBodyClass) document.body.classList.add(addBodyClass);
-if (enableSidebar) document.body.classList.add('has-sidebar');
-</script>
-    `
-}
-
 ${
   // Make nav items active when on children pages
   `<script>

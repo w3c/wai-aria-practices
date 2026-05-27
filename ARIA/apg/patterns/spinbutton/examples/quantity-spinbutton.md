@@ -11,6 +11,7 @@ feedbackmail: public-aria-practices@w3.org
 permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 
 sidebar: true
+class: has-sidebar
 
 footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 28 October 2025</p>      </div>    "
 
@@ -49,15 +50,6 @@ lang: en
   rel="stylesheet"
   href="{{ '/content-assets/wai-aria-practices/shared/css/github.css' | relative_url }}"
 >
-
-<script>
-const addBodyClass = undefined;
-const enableSidebar = true;
-if (addBodyClass) document.body.classList.add(addBodyClass);
-if (enableSidebar) document.body.classList.add('has-sidebar');
-</script>
-    
-
 <script>
     const parentPage = window.location.pathname.match(
       /\/(patterns|practices|about)\//
