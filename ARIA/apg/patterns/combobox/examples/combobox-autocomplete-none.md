@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/combobox/examples/combobox-autocomplete-none/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/118'>View issues related to this example</a></p>        <p>Page last updated: 15 June 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -304,6 +304,44 @@ lang: en
         </table></div>
         <h3 id="kbd_label_button">Button</h3>
         <p>The button has been removed from the tab sequence of the page, but is still important to assistive technologies for mobile devices that use touch events to open the list of options.</p>
+      </section>
+
+      <section>
+        <h2 id="ptr_label">Pointer Interaction</h2>
+        <h3 id="ptr_label_textbox">Textbox</h3>
+        <div class="table-wrap"><table aria-labelledby="ptr_label_textbox ptr_label" class="def">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-test-id="textbox-click">
+              <th>Click</th>
+              <td>Opens the listbox popup if it is not already visible. Clicking the textbox again does not close the popup.</td>
+            </tr>
+            <tr data-test-id="textbox-focus">
+              <th>Focus (without click)</th>
+              <td>Does not open the listbox popup. The popup only opens when the user clicks the textbox, presses a key, or activates the button.</td>
+            </tr>
+          </tbody>
+        </table></div>
+        <h3 id="ptr_label_button">Button</h3>
+        <div class="table-wrap"><table aria-labelledby="ptr_label_button ptr_label" class="def">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-test-id="button-click">
+              <th>Click</th>
+              <td>Toggles the listbox popup open or closed.</td>
+            </tr>
+          </tbody>
+        </table></div>
       </section>
 
       <section>
