@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/tabs/examples/tabs-actions/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/130'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/130'>View issues related to this example</a></p>        <p>Page last updated: 23 June 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -316,12 +316,12 @@ lang: en
               <th><kbd>Tab</kbd></th>
               <td>
                 <ul>
-                  <li>When focus moves into the <code>tablist</code>, places focus on the active <code>tab</code>.</li>
-                  <li>When focus is on a <code>tab</code>, places focus on its associated menu <code>button</code>.</li>
-                  <li>When focus is on the menu <code>button</code> associated with a <code>tab</code>, moves focus to one of the following depending on which is nearest in the forward tab sequence:
+                  <li>When focus moves into the <code>tablist</code>, moves focus to the active <code>tab</code>.</li>
+                  <li>When focus is on a <code>tab</code>, moves focus to its associated menu <code>button</code>.</li>
+                  <li>When focus is on a menu <code>button</code> associated with a <code>tab</code>:
                     <ul>
-                      <li>The active <code>tab</code>.</li>
-                      <li>The first focusable element following the <code>tablist</code>. In this example, that is the <code>a</code> element in <code>tabpanel</code>.</li>
+                      <li>If the current focus precedes the active <code>tab</code> (is to the left in left-to-right layouts), moves focus to the active <code>tab</code>.</li>
+                      <li>Otherwise, moves focus to the first <code>a</code> element in the active <code>tabpanel</code>.</li>
                     </ul>
                   </li>
                 </ul>
@@ -331,12 +331,12 @@ lang: en
               <th><kbd>Shift</kbd> + <kbd>Tab</kbd></th>
               <td>
                 <ul>
-                  <li>When focus moves into the <code>tablist</code>, places focus on the menu <code>button</code> associated with the active <code>tab</code>.</li>
-                  <li>When focus is on the menu <code>button</code> associated with a <code>tab</code>, places focus on that <code>tab</code>.</li>
-                  <li>When focus is on a <code>tab</code>, moves focus to one of the following depending on which is nearest in the backward tab sequence:
+                  <li>When focus moves from the active tab panel content into the <code>tablist</code>, moves focus to the menu <code>button</code> associated with the active <code>tab</code>.</li>
+                  <li>When focus is on a menu <code>button</code> associated with a <code>tab</code>, moves focus to the associated <code>tab</code>.</li>
+                  <li>When focus is on a <code>tab</code>:
                     <ul>
-                      <li>The active <code>tab</code>.</li>
-                      <li>The first focusable element preceding the <code>tablist</code>.</li>
+                      <li>If the current focus follows the active <code>tab</code> (is to the right in left-to-right layouts), moves focus to the menu <code>button</code> associated with the active <code>tab</code>.</li>
+                      <li>Otherwise, moves focus to the first focusable element preceding the <code>tablist</code>.</li>
                     </ul>
                   </li>
                 </ul>
