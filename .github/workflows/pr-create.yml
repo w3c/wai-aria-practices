@@ -28,13 +28,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           job_name: pr-create
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: npm
           cache-dependency-path: scripts/pre-build/package-lock.json
@@ -143,7 +143,7 @@ jobs:
 
       - name: Commit changed files and submodule updates
         if: steps.update_site_files.outcome == 'success'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_user_name: w3cgruntbot
           commit_user_email: w3cgruntbot@users.noreply.github.com
