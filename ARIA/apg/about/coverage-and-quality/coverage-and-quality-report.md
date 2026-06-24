@@ -61,7 +61,7 @@ lang: en
 
   <div>
     
-    <p>Page last updated: June 23, 2026</p>
+    <p>Page last updated: June 24, 2026</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -432,6 +432,7 @@ lang: en
                 <li><a href="../../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -582,6 +583,7 @@ lang: en
                 <li><a href="../../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -887,6 +889,7 @@ lang: en
                 <li><a href="../../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -1053,6 +1056,7 @@ lang: en
             <td></td>
             <td><ul>
                 <li><a href="../../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
@@ -1114,6 +1118,7 @@ lang: en
                 <li><a href="../../patterns/feed/examples/feed/">Infinite Scrolling Feed</a></li>
                 <li><a href="../../patterns/grid/examples/data-grids/">Data Grid</a></li>
                 <li><a href="../../patterns/grid/examples/layout-grids/">Layout Grid</a></li>
+                <li><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -1240,6 +1245,7 @@ lang: en
                 <li><a href="../../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
                 <li><a href="../../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
                 <li><a href="../../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
                 <li><a href="../../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
@@ -1346,7 +1352,7 @@ lang: en
         <tbody>
           <tr>
             <th scope="row">Total Examples</th>
-            <td id="example_summary_total">63</td>
+            <td id="example_summary_total">64</td>
           </tr>
           <tr>
             <th scope="row">High Contrast Documentation</th>
@@ -1354,7 +1360,7 @@ lang: en
           </tr>
           <tr>
             <th scope="row">Uses SVG</th>
-            <td id="example_summary_svg">36</td>
+            <td id="example_summary_svg">37</td>
           </tr>
           <tr>
             <th scope="row">Uses <code>forced-colors</code> media query</th>
@@ -1362,7 +1368,7 @@ lang: en
           </tr>
           <tr>
             <th scope="row">Uses <code>currentColor</code> value</th>
-            <td id="example_summary_current_color">29</td>
+            <td id="example_summary_current_color">30</td>
           </tr>
 
           <tr>
@@ -1375,11 +1381,11 @@ lang: en
           </tr>
           <tr>
             <th scope="row">Use Class</th>
-            <td id="example_summary_class">38</td>
+            <td id="example_summary_class">39</td>
           </tr>
           <tr>
             <th scope="row">Use Prototype</th>
-            <td id="example_summary_prototype">22</td>
+            <td id="example_summary_prototype">23</td>
           </tr>
           <tr>
             <th scope="row">Mouse Events</th>
@@ -1786,6 +1792,19 @@ lang: en
             <td>1</td>
             <td>1</td>
             <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></td>
+            <td>class, prototype</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>ex</td>
+            <td>2</td>
+            <td>2</td>
+            <td>9</td>
+            <td>4</td>
+            <td>aria-controls,aria-details,aria-label,aria-live,aria-pressed</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
@@ -2387,6 +2406,14 @@ lang: en
             <td></td>
             <td></td>
             <td></td>
+          </tr>
+          <tr>
+            <td><a href="../../patterns/listbox/examples/listbox-actions/">Experimental  Scrollable Listbox with Actions on Options</a></td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
           </tr>
           <tr>
             <td><a href="../../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></td>
