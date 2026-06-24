@@ -356,8 +356,8 @@ lang: en
       <h2 id="rps_label">Role, Property, State, and Tabindex Attributes</h2>
       <p>
         The example listbox on this page implements the following ARIA roles, states, and properties.
-        Information about other ways of applying ARIA roles, states, and properties is available in the <a href="../../#roles_states_properties">Roles, States, and Properties section of the Listbox
-          Pattern</a>.
+        Information about other ways of applying ARIA roles, states, and properties is available in the
+        <a href="../../#roles_states_properties">Roles, States, and Properties section of the Listbox Pattern</a>.
       </p>
       <div class="table-wrap"><table aria-labelledby="rps_label" class="data attributes">
         <thead>
@@ -393,16 +393,13 @@ lang: en
             <td><code>ul</code></td>
             <td>
               <ul>
-                <li>When an option in the listbox is visually indicated as having keyboard focus, refers to that option.
-                </li>
-                <li>Enables assistive technologies to know which element the application regards as focused while DOM
-                  focus remains on the listbox element.</li>
+                <li>When an option in the listbox is visually indicated as having keyboard focus, refers to that option.</li>
+                <li>Enables assistive technologies to know which element the application regards as focused while DOM focus remains on the listbox element.</li>
                 <li>When navigation keys, such as <kbd>Down Arrow</kbd>, are pressed, the JavaScript changes the value.
                 </li>
                 <li>
                   For more information about this focus management technique, see
-                  <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing
-                    Focus in Composites Using aria-activedescendant</a>.
+                  <a href="../../../../practices/keyboard-interface/#kbd_focus_activedescendant">Managing Focus in Composites Using aria-activedescendant</a>.
                 </li>
               </ul>
             </td>
@@ -421,8 +418,6 @@ lang: en
               <ul>
                 <li>Indicates that the option is selected.</li>
                 <li>Applied to the element with role option that is visually styled as selected.</li>
-                <li>The option with this attribute is always the same as the option that is referenced by
-                  aria-activedescendant because it is a single-select listbox where selection follows focus.</li>
               </ul>
             </td>
           </tr>
@@ -432,10 +427,11 @@ lang: en
             <td><code>li</code></td>
             <td>
               <ul>
-                <li>Indicates to assistive technologies that the option will have actions available on focus or hover,
-                  enabling the assistive technology to focus the element to gain access to the actions.</li>
-                <li>Applied to all elements with role option when they are not visually styled as selected and are not
-                  referenced by <code>aria-activedescendant</code>.</li>
+                <li>
+                  Indicates to assistive technologies that the option will have actions available on focus or hover,
+                  enabling the assistive technology to focus the element to gain access to the actions.
+                </li>
+                <li>Applied to elements with role option when they are not referenced by <code>aria-activedescendant</code>.</li>
               </ul>
             </td>
           </tr>
@@ -446,9 +442,7 @@ lang: en
             <td>
               <ul>
                 <li>Specifies the ID attributes of the action buttons that are associated with the option.</li>
-                <li>Applied to the element with role option that is visually styled as selected and is referenced by
-                  <code>aria-activedescendant</code>.
-                </li>
+                <li>Applied to the element with role option that is referenced by <code>aria-activedescendant</code>.</li>
               </ul>
             </td>
           </tr>
