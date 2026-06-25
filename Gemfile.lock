@@ -1,15 +1,15 @@
 GIT
   remote: https://github.com/w3c/wai-website-plugin
-  revision: e9f2c0e098caf80e010f1985ba942b6bf540e85e
+  revision: 9f884051344eff6eff0b7aaea86f5077b210377d
   branch: main
   specs:
-    wai-website-plugin (0.3)
+    wai-website-plugin (0.3.2)
       jekyll (~> 4.4.1)
-      nokogiri (~> 1.19.0)
+      nokogiri (~> 1.19.4)
 
 GIT
   remote: https://github.com/w3c/wai-website-theme
-  revision: f33b9fef553b59ef8ecf35c3bef264de8b1ad4a9
+  revision: 468c42cf13a29f4921df47caae7abc35269a77ff
   branch: main
   specs:
     wai-website-theme (1.10)
@@ -29,7 +29,7 @@ GEM
     base64 (0.3.0)
     bigdecimal (4.0.1)
     colorator (1.1.0)
-    concurrent-ruby (1.3.6)
+    concurrent-ruby (1.3.7)
     csv (3.3.5)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -96,14 +96,14 @@ GEM
     logger (1.7.0)
     mercenary (0.4.0)
     mini_portile2 (2.8.9)
-    nokogiri (1.19.0)
+    nokogiri (1.19.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.19.0-arm64-darwin)
+    nokogiri (1.19.4-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.0-x86_64-darwin)
+    nokogiri (1.19.4-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.0-x86_64-linux-gnu)
+    nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -144,7 +144,7 @@ CHECKSUMS
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bigdecimal (4.0.1) sha256=8b07d3d065a9f921c80ceaea7c9d4ae596697295b584c296fe599dd0ad01c4a7
   colorator (1.1.0) sha256=e2f85daf57af47d740db2a32191d1bdfb0f6503a0dfbc8327d0c9154d5ddfc38
-  concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
+  concurrent-ruby (1.3.7) sha256=4412caec3a5ea2e5fdc52076724c071a81f2c0593d83b2ac8cbb8ca63b3151b0
   csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
   eventmachine (1.2.7) sha256=994016e42aa041477ba9cff45cbe50de2047f25dd418eba003e84f0d16560972
@@ -174,10 +174,10 @@ CHECKSUMS
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mercenary (0.4.0) sha256=b25a1e4a59adca88665e08e24acf0af30da5b5d859f7d8f38fba52c28f405138
   mini_portile2 (2.8.9) sha256=0cd7c7f824e010c072e33f68bc02d85a00aeb6fce05bb4819c03dfd3c140c289
-  nokogiri (1.19.0) sha256=e304d21865f62518e04f2bf59f93bd3a97ca7b07e7f03952946d8e1c05f45695
-  nokogiri (1.19.0-arm64-darwin) sha256=0811dfd936d5f6dd3f6d32ef790568bf29b2b7bead9ba68866847b33c9cf5810
-  nokogiri (1.19.0-x86_64-darwin) sha256=1dad56220b603a8edb9750cd95798bffa2b8dd9dd9aa47f664009ee5b43e3067
-  nokogiri (1.19.0-x86_64-linux-gnu) sha256=f482b95c713d60031d48c44ce14562f8d2ce31e3a9e8dd0ccb131e9e5a68b58c
+  nokogiri (1.19.4) sha256=50c951611c92bca05c51411aef45f1cbc50f2821c4802758c5c6d34696533ab5
+  nokogiri (1.19.4-arm64-darwin) sha256=a46db9853286e6597b36ebc6953817d15acf3a299583eb3f89fdc6f91dd63527
+  nokogiri (1.19.4-x86_64-darwin) sha256=7fd17057d3e1f00e9954a74b3cd76595d3d4a5ef233b7ed9599047c204f70551
+  nokogiri (1.19.4-x86_64-linux-gnu) sha256=379fae440b28915e3f19d752ce2dcf8465ed2b2fbefd2a7ca0dd497bc981a06a
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
   public_suffix (7.0.0) sha256=f7090b5beb0e56f9f10d79eed4d5fbe551b3b425da65877e075dad47a6a1b095
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
@@ -193,7 +193,7 @@ CHECKSUMS
   sass-embedded (1.97.1-x86_64-linux-gnu) sha256=9a294bb0acb1a539ed19f0e511098a9740b4aab4389e169585e8da1337fbd8b4
   terminal-table (3.0.2) sha256=f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91
   unicode-display_width (2.6.0) sha256=12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a
-  wai-website-plugin (0.3)
+  wai-website-plugin (0.3.2)
   wai-website-theme (1.10)
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
 

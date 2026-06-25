@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         submodules: true
         fetch-depth: 0
 
     - name: Set up Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
         cache: npm
         cache-dependency-path: scripts/pre-build/package-lock.json
@@ -36,7 +36,7 @@ jobs:
         node ./scripts/pre-build
 
     - name: Commit changed files and submodule updates
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_user_name: w3cgruntbot
         commit_user_email: w3cgruntbot@users.noreply.github.com
