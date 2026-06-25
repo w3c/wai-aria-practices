@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/listbox/examples/listbox-actions/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 24 June 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/131'>View issues related to this example</a></p>        <p>Page last updated: 25 June 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -38,7 +38,6 @@ lang: en
   href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox-actions.css"
   rel="stylesheet"
 />
-
 <script src="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-actions.js"></script>
 
 
@@ -471,11 +470,11 @@ lang: en
       <ul id="css_js_files">
         <li>
           CSS:
-          <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css" type="tex/css">listbox.css</a>
+          <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox.css" type="tex/css">listbox.css</a>,
+          <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/css/listbox-actions.css" type="tex/css">listbox-actions.css</a>
         </li>
         <li>
-          JavaScript:
-          <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox.js" type="text/javascript">listbox.js</a>, <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-actions.js" type="text/javascript">listbox-actions.js</a>
+          JavaScript: <a href="../../../../../../content-assets/wai-aria-practices/patterns/listbox/examples/js/listbox-actions.js" type="text/javascript">listbox-actions.js</a>
         </li>
       </ul>
     </section>
