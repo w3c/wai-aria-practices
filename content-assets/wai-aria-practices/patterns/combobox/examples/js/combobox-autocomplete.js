@@ -189,23 +189,23 @@ class ComboboxAutocomplete {
   // ComboboxAutocomplete Events
 
   filterOptions() {
+    var normalizedFilter = this.filter.trim().toLowerCase();
+    var hasExactMatch =
+      normalizedFilter !== '' &&
+      this.allOptions.some(
+        (opt) => this.getLowercaseContent(opt).trim() === normalizedFilter
+      );
     // Do not filter options when:
     // 1. The autocomplete value is "none".
     // 2. The filter is empty.
     // 3. The filter exactly matches the content of an option (case-insensitive).
-    if (
-      this.isNone ||
-      this.filter.trim() === '' ||
-      this.allOptions.some(
-        (opt) => this.getLowercaseContent(opt) === this.filter.toLowerCase()
-      )
-    ) {
-      this.filter = '';
-    }
+    var optionsFilter =
+      this.none || normalizedFilter === '' || hasExactMatch
+        ? ''
+        : normalizedFilter;
 
     var option = null;
     var currentOption = this.option;
-    var filter = this.filter.toLowerCase();
 
     this.filteredOptions = [];
     this.listboxNode.innerHTML = '';
@@ -213,8 +213,8 @@ class ComboboxAutocomplete {
     for (var i = 0; i < this.allOptions.length; i++) {
       option = this.allOptions[i];
       if (
-        filter.length === 0 ||
-        this.getLowercaseContent(option).indexOf(filter) === 0
+        optionsFilter.length === 0 ||
+        this.getLowercaseContent(option).indexOf(optionsFilter) === 0
       ) {
         this.filteredOptions.push(option);
         this.listboxNode.appendChild(option);
@@ -523,7 +523,9 @@ class ComboboxAutocomplete {
   }
 
   onComboboxClick() {
-    if (!this.isOpen()) {
+    if (this.isOpen()) {
+      this.close(true);
+    } else {
       this.open();
     }
   }

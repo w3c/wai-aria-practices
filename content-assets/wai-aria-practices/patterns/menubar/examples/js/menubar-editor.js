@@ -502,7 +502,6 @@ class MenubarEditor {
     var tgt = event.currentTarget,
       key = event.key,
       flag = false,
-      preventClosePopup = false,
       menuId = this.getMenuId(tgt),
       id,
       popupMenuId,
@@ -514,10 +513,6 @@ class MenubarEditor {
     switch (key) {
       case ' ':
       case 'Enter':
-        if (key === ' ') {
-          preventClosePopup = true;
-        }
-
         if (this.hasPopup(tgt)) {
           // Need to update focus for the parent menu as well as the submenu
           this.setFocusToMenuitem(menuId, tgt);
@@ -529,7 +524,6 @@ class MenubarEditor {
           switch (role) {
             case 'menuitem':
               this.actionManager.setOption(option, tgt.textContent);
-              preventClosePopup = false;
               break;
 
             case 'menuitemcheckbox':
@@ -549,10 +543,7 @@ class MenubarEditor {
           if (this.getMenuId(tgt) === 'menu-size') {
             this.updateFontSizeMenu('menu-size');
           }
-
-          if (!preventClosePopup) {
-            this.closePopup(tgt);
-          }
+          this.closePopup(tgt);
         }
         flag = true;
         break;

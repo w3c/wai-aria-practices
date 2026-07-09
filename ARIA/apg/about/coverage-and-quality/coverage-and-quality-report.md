@@ -61,7 +61,7 @@ lang: en
 
   <div>
     
-    <p>Page last updated: June 15, 2026</p>
+    <p>Page last updated: September 18, 2025</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -531,7 +531,6 @@ lang: en
           <tr>
             <td><code>note</code></td>
             <td><ul>
-                <li><a href="../../patterns/alertdialog/#roles_states_properties">Note</a></li>
                 <li><a href="../../patterns/button/#about">Note</a></li>
                 <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
                 <li><a href="../../patterns/combobox/#keyboard_interaction">Note</a></li>
