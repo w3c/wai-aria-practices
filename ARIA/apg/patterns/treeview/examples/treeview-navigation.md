@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/treeview/examples/treeview-navigation/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/117'>View issues related to this example</a></p>        <p>Page last updated: 15 July 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -392,6 +392,10 @@ lang: en
             <ul>
               <li>The <code>aria-current="page"</code> attribute is applied to the item in the tree associated with the currently displayed page.</li>
               <li>
+                This example does not use <code>aria-selected</code> because it does not support selecting tree items independently of navigating to a page.
+                <code>aria-current</code> identifies the item associated with the currently displayed page rather than a selected item.
+              </li>
+              <li>
                 The tree item with <code>aria-current</code> is also the only item with <code>tabindex="0"</code>.
                 That is, when tabbing into the tree, focus always lands on the item representing the current page.
               </li>
@@ -659,6 +663,7 @@ lang: en
               <td>
                 <ul>
                   <li>Applied to the <code>treeitem</code> that is the link to the currently displayed page.</li>
+                  <li>This example does not use <code>aria-selected</code> because the tree does not support selection independently of page navigation.</li>
                   <li>The visual indication of the <code>treeitem</code> with <code>aria-current</code> is a vertical bar to the left of the treeitem label.</li>
                 </ul>
               </td>
