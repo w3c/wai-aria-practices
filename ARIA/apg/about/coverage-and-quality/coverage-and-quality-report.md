@@ -61,7 +61,7 @@ lang: en
 
   <div>
     
-    <p>Page last updated: June 25, 2026</p>
+    <p>Page last updated: July 22, 2026</p>
     <section>
       <h2>About These Reports</h2>
       <p>
@@ -1337,6 +1337,7 @@ lang: en
                 <li><a href="../../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
             </ul>
 </td>
@@ -2062,8 +2063,8 @@ lang: en
             <td>example</td>
             <td>1</td>
             <td>1</td>
-            <td>8</td>
-            <td>8</td>
+            <td>9</td>
+            <td>9</td>
             <td></td>
           </tr>
           <tr>

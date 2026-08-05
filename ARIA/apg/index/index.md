@@ -958,6 +958,7 @@ lang: en
                 <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
                 <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">(Deprecated) Date Picker Spin Button</a></li>
+                <li><a href="../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spin Button</a></li>
                 <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>

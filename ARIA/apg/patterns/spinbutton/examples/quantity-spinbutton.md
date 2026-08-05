@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 28 October 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 22 July 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -134,6 +134,7 @@ lang: en
                       aria-valuemin="1"
                       aria-valuemax="8"
                       aria-valuenow="1"
+                      aria-valuetext="1"
                       value="1"
                       >
                     <button type="button"
@@ -175,6 +176,7 @@ lang: en
                       aria-valuemin="0"
                       aria-valuemax="8"
                       aria-valuenow="0"
+                      aria-valuetext="0"
                       value="0"
                       >
                     <button type="button"
@@ -216,6 +218,7 @@ lang: en
                       aria-valuemin="0"
                       aria-valuemax="12"
                       aria-valuenow="0"
+                      aria-valuetext="0"
                       value="0"
                       >
                     <button type="button"
@@ -280,9 +283,22 @@ lang: en
                 clarifying the meaning of each button’s icon.
               </li>
               <li>
-                Use an invisible live region to announce the updated value
-                when pressed. The live region empties its contents after 3
-                seconds to avoid leaving stale content in the document.
+                Announce the updated spin button value using one of these two
+                techniques:
+                <ul>
+                  <li>
+                    By calling the JavaScript
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaNotify"><code>ariaNotify(announcement)</code></a>
+                    method. This technique is implemented as a progressive
+                    enhancement only after dynamically confirming that
+                    <code>ariaNotify</code> is supported by the user’s browser.
+                  </li>
+                  <li>
+                    Otherwise, by injecting the updated value into an invisible
+                    live region. The live region empties its contents after 3
+                    seconds to avoid leaving stale content in the document.
+                  </li>
+                </ul>
               </li>
               <li>
                 Are excluded from the page <kbd>Tab</kbd> sequence with
@@ -292,6 +308,28 @@ lang: en
               <li>
                 Can be activated with voice control by speaking a command such
                 as <q>Click add adult</q>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            When a spin button’s value is changed:
+            <ul>
+              <li>
+                Its <a href="https://www.w3.org/TR/wai-aria-1.3/#spinbutton:~:text=Authors%20SHOULD%20set%20the%20aria%2Dvaluenow%20attribute%20when%20the%20spinbutton%20has%20a%20value"><code>aria-valuenow</code>
+                attribute is updated to reflect the new integer value</a>.
+              </li>
+              <li>
+                Its <code>aria-valuetext</code> attribute is also updated to the
+                same integer value. In this case, <code>aria-valuetext</code> is
+                technically unnecessary because <code>aria-valuenow</code>
+                already provides <a href="https://www.w3.org/TR/wai-aria-1.3/#aria-valuetext">the
+                intended human-readable representation</a>: an integer. However,
+                when <code>aria-valuemin</code> and
+                <code>aria-valuemax</code> are present, some assistive
+                technologies may undesirably express the value as a percentage.
+                Providing <code>aria-valuetext</code> with the same integer
+                value unambiguously encourages all assistive technologies to
+                express the value as an integer instead.
               </li>
             </ul>
           </li>
@@ -396,6 +434,17 @@ lang: en
               <td>
                 <ul>
                   <li>Indicates the current numeric value of the spin button.</li>
+                  <li>Updated by JavaScript as users change the value of the spin button.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr data-test-id="spinbutton-aria-valuetext">
+              <td></td>
+              <th scope="row"><code>aria-valuetext="TEXT"</code></th>
+              <td><code>input[type="text"]</code></td>
+              <td>
+                <ul>
+                  <li>Indicates the current human-readable value of the spin button.</li>
                   <li>Updated by JavaScript as users change the value of the spin button.</li>
                 </ul>
               </td>
