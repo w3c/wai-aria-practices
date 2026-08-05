@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 22 July 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 5 August 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -315,7 +315,7 @@ lang: en
             When a spin button’s value is changed:
             <ul>
               <li>
-                Its <a href="https://www.w3.org/TR/wai-aria-1.3/#spinbutton:~:text=Authors%20SHOULD%20set%20the%20aria%2Dvaluenow%20attribute%20when%20the%20spinbutton%20has%20a%20value"><code>aria-valuenow</code>
+                Its <a href="https://www.w3.org/TR/wai-aria-1.3/#spinbutton"><code>aria-valuenow</code>
                 attribute is updated to reflect the new integer value</a>.
               </li>
               <li>
