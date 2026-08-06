@@ -253,7 +253,7 @@ lang: en
             </tr>
             <tr>
               <td>Invert Colors: on</td>
-              <td>rmdir  src="./images/currentcolor-macos-invert-on.png" alt="Screen shot of switch example with invert colors turned on" style="height: 85px"></td>
+              <td><img src="../../../../content-images/wai-aria-practices/practices/color-settings/images/currentcolor-macos-invert-on.png" alt="Screen shot of switch example with invert colors turned on" style="height: 85px"></td>
             </tr>
           </tbody>
         </table></div>
