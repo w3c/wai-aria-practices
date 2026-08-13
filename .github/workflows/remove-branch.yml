@@ -10,9 +10,12 @@ on:
 jobs:
   remove-branch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
 
       - name: Check if branch exists
         id: check_if_exists
@@ -24,8 +27,8 @@ jobs:
         if: ${{ steps.check_if_exists.outputs.BRANCH_EXISTS == '1' }}
         run: |
           BRANCH_NAME="apg/${{ github.event.inputs.apg_branch }}"
-          git config --global user.name "w3cgruntbot"
-          git config --global user.email "w3cgruntbot@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git push origin --delete $BRANCH_NAME
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
