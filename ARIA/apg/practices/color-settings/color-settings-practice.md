@@ -1024,9 +1024,9 @@ button.color-scheme[role="switch"] {
           <caption>System Colors Supported by Contrast Themes</caption>
           <thead>
             <tr>
-              <th>System Color</th>
-              <th>Contrast Theme Color</th>
-              <th>Computed Color (Chromium)</th>
+              <th>CSS System Color</th>
+              <th>Windows Theme Feature</th>
+              <th>Chromium Computed Color)</th>
               <th>Description</th>
             </tr>
           </thead>
