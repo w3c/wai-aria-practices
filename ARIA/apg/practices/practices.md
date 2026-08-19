@@ -86,6 +86,17 @@ lang: en
       </li>
 
       <li class="tile">
+        <a href="generating-notifications/">
+          <h2 class="tile-name">
+            <span>Using Live Regions and ARIA Notify to Generate Screen Reader Announcements</span>
+          </h2>
+        </a>
+        <div class="tile-introduction">
+          Live regions and the ARIA Notify API can be used to generate screen reader output (speech and braille) that informs users of important changes as they happen.
+        </div>
+      </li>
+      
+      <li class="tile">
         <a href="grid-and-table-properties/">
           <h2 class="tile-name">
             <span>Grid and Table Properties</span>
