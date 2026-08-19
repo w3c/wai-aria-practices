@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 5 August 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 19 August 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -134,7 +134,6 @@ lang: en
                       aria-valuemin="1"
                       aria-valuemax="8"
                       aria-valuenow="1"
-                      aria-valuetext="1"
                       value="1"
                       >
                     <button type="button"
@@ -176,7 +175,6 @@ lang: en
                       aria-valuemin="0"
                       aria-valuemax="8"
                       aria-valuenow="0"
-                      aria-valuetext="0"
                       value="0"
                       >
                     <button type="button"
@@ -218,7 +216,6 @@ lang: en
                       aria-valuemin="0"
                       aria-valuemax="12"
                       aria-valuenow="0"
-                      aria-valuetext="0"
                       value="0"
                       >
                     <button type="button"
@@ -317,19 +314,6 @@ lang: en
               <li>
                 Its <a href="https://www.w3.org/TR/wai-aria-1.3/#spinbutton"><code>aria-valuenow</code>
                 attribute is updated to reflect the new integer value</a>.
-              </li>
-              <li>
-                Its <code>aria-valuetext</code> attribute is also updated to the
-                same integer value. In this case, <code>aria-valuetext</code> is
-                technically unnecessary because <code>aria-valuenow</code>
-                already provides <a href="https://www.w3.org/TR/wai-aria-1.3/#aria-valuetext">the
-                intended human-readable representation</a>: an integer. However,
-                when <code>aria-valuemin</code> and
-                <code>aria-valuemax</code> are present, some assistive
-                technologies may undesirably express the value as a percentage.
-                Providing <code>aria-valuetext</code> with the same integer
-                value unambiguously encourages all assistive technologies to
-                express the value as an integer instead.
               </li>
             </ul>
           </li>
@@ -434,17 +418,6 @@ lang: en
               <td>
                 <ul>
                   <li>Indicates the current numeric value of the spin button.</li>
-                  <li>Updated by JavaScript as users change the value of the spin button.</li>
-                </ul>
-              </td>
-            </tr>
-            <tr data-test-id="spinbutton-aria-valuetext">
-              <td></td>
-              <th scope="row"><code>aria-valuetext="TEXT"</code></th>
-              <td><code>input[type="text"]</code></td>
-              <td>
-                <ul>
-                  <li>Indicates the current human-readable value of the spin button.</li>
                   <li>Updated by JavaScript as users change the value of the spin button.</li>
                 </ul>
               </td>
