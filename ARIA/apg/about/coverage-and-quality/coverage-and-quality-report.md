@@ -61,7 +61,7 @@ lang: en
 
   <div>
     
-    <p>Page last updated: June 25, 2026</p>
+    <p>Page last updated: August 19, 2026</p>
     <section>
       <h2>About These Reports</h2>
       <p>
