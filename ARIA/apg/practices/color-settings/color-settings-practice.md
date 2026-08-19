@@ -326,7 +326,7 @@ lang: en
         </div>
 
         <div class="table-wrap"><table class="data">
-          <caption>Increase Contrast Example Color Changes</caption>
+          <caption>Increase Contrast Example Color Changes and Color Contrast Ratios</caption>
           <thead>
             <tr>
               <th><code>prefers-contrast</code></th>
@@ -512,7 +512,7 @@ lang: en
         </div>
 
         <div class="table-wrap"><table class="data">
-          <caption>Color Scheme Changes</caption>
+          <caption>Color Scheme Changes and Color Contrast Ratios</caption>
           <thead>
             <tr>
               <th><code>prefers-color-scheme</code></th>
