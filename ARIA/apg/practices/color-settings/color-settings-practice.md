@@ -1144,8 +1144,9 @@ button.color-scheme[role="switch"] {
 
         <h3>Contrast Theme APG Examples</h3>
         <ul>
-          <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
           <li><a href="../../patterns/slider/examples/slider-rating/">Rating Slider</a></li>
+          <li><a href="../../patterns/spinbutton/examples/quantity-spinbutton/">Quantity Spinbutton Example</a></li>
+          <li><a href="../../patterns/feed/examples/feed/">Feed</a></li>
         </ul>
 
         <h3>Supporting Contrast Themes</h3>
