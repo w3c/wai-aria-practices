@@ -223,11 +223,6 @@ lang: en
             <p>If the HTML <code>header</code> element technique is not being used, a <code>role=&quot;banner&quot;</code> attribute should be used to define a <code>banner</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/examples/banner.html">Banner Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_complementary">
@@ -303,10 +298,6 @@ lang: en
             <p>If the HTML <code>footer</code> element technique is not being used, a <code>role=&quot;contentinfo&quot;</code> attribute should be used to define a <code>contentinfo</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-            <p><a href="../../patterns/landmarks/examples/contentinfo.html">Contentinfo Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_form">
@@ -348,11 +339,6 @@ lang: en
             <p>Use the <code>role=&quot;form&quot;</code> with a label (see <a href="#aria_lh_step3">Step 3</a> above) to identify a region of the page with a set of form controls; do not use it to identify every form field.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/examples/form.html">Form Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_main">
@@ -380,11 +366,6 @@ lang: en
             <p>If the HTML <code>main</code> element technique is not being used, use a <code>role=&quot;main&quot;</code> attribute to define a <code>main</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/examples/main.html">Main Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_navigation">
@@ -408,11 +389,6 @@ lang: en
             <p>If the HTML <code>nav</code> element technique is not being used, use a <code>role=&quot;navigation&quot;</code> attribute to define a <code>navigation</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/examples/navigation.html">Navigation Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_region">
@@ -438,11 +414,6 @@ lang: en
             <p>If the HTML <code>section</code> element technique is not being used, use a <code>role=&quot;region&quot;</code> attribute to define a <code>region</code> landmark with a label (see <a href="#aria_lh_step3">Step 3</a> above).</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/examples/region.html">Region Landmark Example</a></p>
-          </section>
         </section>
 
         <section id="aria_lh_search">
@@ -466,11 +437,6 @@ lang: en
             <p>If the HTML <code>search</code> element technique is not being used, use a <code>role=&quot;search&quot;</code> attribute to define a <code>search</code> landmark.</p>
           </section>
 
-          <section>
-            <h4>Examples</h4>
-
-            <p><a href="../../patterns/landmarks/examples/search.html">Search Landmark Example</a></p>
-          </section>
         </section>
       </section>
     </div>
