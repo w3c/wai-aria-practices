@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/menubar/examples/menubar-editor/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/125'>View issues related to this example</a></p>        <p>Page last updated: 12 August 2025</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/125'>View issues related to this example</a></p>        <p>Page last updated: 25 June 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -310,9 +310,13 @@ lang: en
             </tr>
           </thead>
           <tbody>
+            <tr data-test-id="submenu-space">
+              <th><kbd>Space</kbd></th>
+              <td>Activates menu item, causing its action to be executed. If the item is a checkbox or radio, toggles its state without closing the submenu. Otherwise, closes the submenu.</td>
+            </tr>
             <tr data-test-id="submenu-enter">
-              <th><kbd>Space</kbd><br><kbd>Enter</kbd></th>
-              <td>Activates menu item, causing action to be executed, e.g., bold text, change font.</td>
+              <th><kbd>Enter</kbd></th>
+              <td>Activates menu item, causing its action to be executed, and closes the submenu.</td>
             </tr>
             <tr data-test-id="submenu-escape">
               <th>

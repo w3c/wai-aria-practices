@@ -74,7 +74,7 @@ lang: en
       <section id="examples" class="examples-section">
         <img alt src="../../../../content-images/wai-aria-practices/images/pattern-accordion.svg">
         <h2>Example</h2>
-        <p><a href="examples/accordion/">Accordion Example</a>: demonstrates a form divided into three sections using an accordion to show one section at a time.</p>
+        <p><a href="examples/accordion/">Accordion Example</a>: demonstrates using an accordion to divide a form into three expandable sections.</p>
       </section>
 
       <section id="keyboard_interaction">
@@ -95,16 +95,6 @@ lang: en
           </li>
           <li><kbd>Tab</kbd>: Moves focus to the next focusable element; all focusable elements in the accordion are included in the page <kbd>Tab</kbd> sequence.</li>
           <li><kbd>Shift</kbd> + <kbd>Tab</kbd>: Moves focus to the previous focusable element; all focusable elements in the accordion are included in the page <kbd>Tab</kbd> sequence.</li>
-          <li>
-            <kbd>Down Arrow</kbd> (Optional): If focus is on an accordion header, moves focus to the next accordion header.
-            If focus is on the last accordion header, either does nothing or moves focus to the first accordion header.
-          </li>
-          <li>
-            <kbd>Up Arrow</kbd> (Optional): If focus is on an accordion header, moves focus to the previous accordion header.
-            If focus is on the first accordion header, either does nothing or moves focus to the last accordion header.
-          </li>
-          <li><kbd>Home</kbd> (Optional): When focus is on an accordion header, moves focus to the first accordion header.</li>
-          <li><kbd>End</kbd> (Optional): When focus is on an accordion header, moves focus to the last accordion header.</li>
         </ul>
       </section>
 
