@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/spinbutton/examples/quantity-spinbutton/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 19 August 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/143'>View issues related to this example</a></p>        <p>Page last updated: 17 September 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -312,8 +312,26 @@ lang: en
             When a spin button’s value is changed:
             <ul>
               <li>
-                Its <a href="https://www.w3.org/TR/wai-aria-1.3/#spinbutton"><code>aria-valuenow</code>
-                attribute is updated to reflect the new integer value</a>.
+                Its
+                <a href="https://w3c.github.io/aria/#aria-valuenow" class="property-reference"><code>aria-valuenow</code> attribute</a>
+                is updated to reflect the new integer value.
+              </li>
+              <li>
+                Screen reader announcement of the new value is triggered using one of these two techniques:
+                <ul>
+                  <li>
+                    By calling the JavaScript
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaNotify"><code>ariaNotify(announcement)</code></a>
+                    method. This technique is implemented as a progressive
+                    enhancement only after dynamically confirming that
+                    <code>ariaNotify</code> is supported by the user’s browser.
+                  </li>
+                  <li>
+                    Otherwise, by injecting the updated value into an invisible
+                    live region. The live region empties its contents after 3
+                    seconds to avoid leaving stale content in the document.
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
