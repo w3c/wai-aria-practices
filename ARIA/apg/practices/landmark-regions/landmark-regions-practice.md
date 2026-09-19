@@ -27,6 +27,30 @@ lang: en
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 <script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
+<style>
+  figure.image {
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    max-width: 98%;
+  }
+
+  figure.image img {
+    border: 2px solid light-dark(var(--imageBorder), var(--imageBorderDark));
+    width: 100%;
+  }
+
+  figure.image figcaption {
+    margin: 0;
+    padding: 0.25em;
+    font-weight: bold;
+    font-size: 110%;
+    background-color: light-dark(var(--imageBorder), var(--imageBorderDark));
+    width: 100%;
+    text-align: center;
+  }
+</style>
+
 
 <link 
   rel="stylesheet"
