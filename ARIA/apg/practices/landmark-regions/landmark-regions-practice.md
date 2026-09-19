@@ -208,7 +208,7 @@ lang: en
               <li>The HTML <code>header</code> element defines a <code>banner</code> landmark when its context is the <code>body</code> element.</li>
 
               <li>
-                The HTML <code>header</code> element is <em>not</em> considered a <code>banner</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/https://www.w3.org/TR/html-aria/#el-header" class="html-mapping">HTML Accessibility Mappings</a>):
+                The HTML <code>header</code> element is <em>not</em> considered a <code>banner</code> landmark when it is descendant of any of following elements:
                 <ul>
                   <li><code>article</code></li>
                   <li><code>aside</code></li>
@@ -246,7 +246,7 @@ lang: en
             <ul>
               <li>Use the HTML <code>aside</code> element to define a <code>complementary</code> landmark when its context is the <code>body</code> element.</li>
               <li>
-                The HTML <code>aside</code> element is <em>not</em> considered a <code>contentinfo</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/https://www.w3.org/TR/html-aria/#el-aside" class="html-mapping">HTML Accessibility Mappings</a>):
+                The HTML <code>aside</code> element is <em>not</em> considered a <code>contentinfo</code> landmark when it is descendant of any of following elements:
                 <ul>
                   <li><code>article</code></li>
                   <li><code>aside</code></li>
@@ -286,7 +286,7 @@ lang: en
               <li>The HTML <code>footer</code> element defines a <code>contentinfo</code> landmark when its context is the <code>body</code> element.</li>
 
               <li>
-                The HTML <code>footer</code> element is <em>not</em> considered a <code>contentinfo</code> landmark when it is descendant of any of following elements (see <a href="https://w3c.github.io/html-aam/https://www.w3.org/TR/html-aria/#el-footer" class="html-mapping">HTML Accessibility Mappings</a>):
+                The HTML <code>footer</code> element is <em>not</em> considered a <code>contentinfo</code> landmark when it is descendant of any of following elements:
                 <ul>
                   <li><code>article</code></li>
                   <li><code>aside</code></li>
