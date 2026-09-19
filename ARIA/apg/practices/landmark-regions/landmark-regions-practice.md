@@ -29,7 +29,6 @@ lang: en
 
 <style>
   figure.image {
-    border: 2px solid hsl(0, 0%, 87%);
     margin: 0;
     margin-top: 1.5em;
     margin-bottom: 3em;
@@ -40,13 +39,12 @@ lang: en
   figure.image img {
     margin: 0;
     padding: 0;
-    border-width: 0;
+    border: 2px solid hsl(0, 0%, 87%);
     width: 100%;
   }
 
   figure.image figcaption {
     margin: 0;
-    border-width: 0;
     padding: 0.25em;
     font-weight: bold;
     font-size: 110%;
