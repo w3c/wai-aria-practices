@@ -212,6 +212,7 @@ lang: en
                 <ul>
                   <li><code>article</code></li>
                   <li><code>aside</code></li>
+                  <li><code>main</code></li>
                   <li><code>nav</code></li>
                   <li><code>section</code></li>
                 </ul>
