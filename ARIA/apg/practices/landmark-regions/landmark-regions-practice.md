@@ -29,6 +29,7 @@ lang: en
 
 <style>
   figure.image {
+    border-width: 0;
     margin: 0;
     margin-top: 1.5em;
     margin-bottom: 3em;
