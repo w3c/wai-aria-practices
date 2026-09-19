@@ -45,7 +45,7 @@ lang: en
     padding: 0.25em;
     font-weight: bold;
     font-size: 110%;
-    background-color: hsl(0, 0%, 87%));
+    background-color: hsl(0, 0%, 87%);
     width: 100%;
     text-align: center;
   }
