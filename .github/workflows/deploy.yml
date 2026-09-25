@@ -6,21 +6,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
       with:
         submodules: true
         fetch-depth: 0
 
     - name: Set up Node.js
-      uses: actions/setup-node@v6
+      uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 #v7.0.0
       with:
         cache: npm
         cache-dependency-path: scripts/pre-build/package-lock.json
 
     - name: Set up Ruby 3.4.8
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b #v1.321.0
       with:
         ruby-version: '3.4.8'
         bundler-cache: true
@@ -36,11 +38,11 @@ jobs:
         node ./scripts/pre-build
 
     - name: Commit changed files and submodule updates
-      uses: stefanzweifel/git-auto-commit-action@v7
+      uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d #v7.2.0
       with:
-        commit_user_name: w3cgruntbot
-        commit_user_email: w3cgruntbot@users.noreply.github.com
-        commit_author: w3cgruntbot <w3cgruntbot@users.noreply.github.com>
+        commit_user_name: github-actions[bot]
+        commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+        commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
         commit_message: "chore: Update `main` with latest changes from `aria-practices`"
         branch: main
       env:
