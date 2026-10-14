@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/accordion/examples/accordion/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/127'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/127'>View issues related to this example</a></p>        <p>Page last updated: 9 October 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -204,6 +204,16 @@ lang: en
           </div>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
+      </section>
+
+      <section>
+        <h2>Accessibility Features</h2>
+        <ul>
+          <li>
+            Panels animate open and closed only for users who have not indicated a preference for reduced motion.
+            When a panel collapses, its content is hidden immediately, so it is removed from the accessibility tree and the tab sequence before the space it occupied finishes closing.
+          </li>
+        </ul>
       </section>
 
       <section>
