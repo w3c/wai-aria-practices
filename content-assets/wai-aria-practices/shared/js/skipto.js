@@ -1,6 +1,6 @@
 /* ========================================================================
- * Version: 5.11.2
- * Copyright (c) 2022, 2023, 2024, 2025, 2026 Jon Gunderson; Licensed BSD
+ * Version: 5.9.2
+ * Copyright (c) 2022, 2023, 2024, 2025 Jon Gunderson; Licensed BSD
  * Copyright (c) 2021 PayPal Accessibility Team and University of Illinois; Licensed BSD
  * All rights reserved.
  * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -23,31 +23,36 @@
   const colorThemes = {
     'default': {
 
-      fontFamily: 'Arial, Helvetica, sans-serif',
-      fontSize: '16px',
+      fontFamily: 'inherit',
+      fontSize: 'inherit',
       positionLeft: '46%',
-      focusBorderColor: 'hsl(216, 60%, 18%)',
-      focusBorderDarkColor: 'hsl(216, 60%, 72%)',
-      buttonTextColor: ' hsl(216, 60%, 18%)',
-      buttonTextDarkColor: ' hsl(216, 60%, 72%)',
-      buttonBackgroundColor: 'hsl(0, 0%, 96%)',
-      buttonBackgroundDarkColor: 'hsl(0, 0%, 4%)',
-      menuTextColor: ' hsl(216, 60%, 18%)',
+      smallBreakPoint: '580',
+      mediumBreakPoint: '992',
+      buttonTextColor: 'hsl(216, 60%, 18%)',
+      buttonTextDarkColor: 'hsl(216, 60%, 72%)',
+      buttonBackgroundColor: 'hsl(0, 0%, 87%)',
+      buttonBackgroundDarkColor: 'hsl(0, 0%, 13%)',
+      focusBorderColor: 'hsl(358, 95%, 40%)',
+      focusBorderDarkColor: 'hsl(358, 95%, 60%)',
+      menuTextColor: 'hsl(216, 60%, 18%)',
       menuTextDarkColor: 'hsl(216, 60%, 72%)',
-      menuBackgroundColor: 'hsl(0, 0%, 96%)',
-      menuBackgroundDarkColor: 'hsl(0, 0%, 4%)',
-      menuitemFocusTextColor: 'hsl(0, 0%, 100%)',
-      menuitemFocusTextDarkColor: 'hsl(0, 0%, 0%)',
+      menuBackgroundColor: 'hsl(0, 0%, 87%)',
+      menuBackgroundDarkColor: 'hsl(0, 0%, 13%)',
+      menuitemFocusTextColor: 'hsl(0, 0%, 87%)',
+      menuitemFocusTextDarkColor: 'hsl(0, 0%, 13%)',
       menuitemFocusBackgroundColor: 'hsl(216, 60%, 18%)',
       menuitemFocusBackgroundDarkColor: 'hsl(216, 60%, 72%)',
-
       zIndex: '2000000',
       displayOption: 'fixed',
+      highlightTarget: 'instant',
+      highlightBorderSize: 'small',
+      highlightBorderStyle: 'solid'
     },
     'aria': {
       hostnameSelector: 'w3.org',
       pathnameSelector: 'ARIA/apg',
       fontFamily: 'sans-serif',
+      fontSize: '10pt',
       positionLeft: '7%',
       menuTextColor: 'hsl(0, 0%, 0%)',
       menuTextDarkColor: 'hsl(0, 0%, 100%)',
@@ -65,22 +70,22 @@
       buttonBackgroundDarkColor: 'hsl(0, 0%, 13%)'
     },
     'illinois': {
-       hostnameSelector: 'illinois.edu',
-       focusBorderColor: 'hsl(216, 60%, 18%)',
-       focusBorderDarkColor: 'hsl(216, 60%, 72%)',
-       buttonTextColor: ' hsl(216, 60%, 18%)',
-       buttonTextDarkColor: ' hsl(216, 60%, 72%)',
-       buttonBackgroundColor: 'hsl(0, 0%, 96%)',
-       buttonBackgroundDarkColor: 'hsl(0, 0%, 4%)',
-       menuTextColor: ' hsl(216, 60%, 18%)',
-       menuTextDarkColor: ' hsl(216, 60%, 72%)',
-       menuBackgroundColor: 'hsl(0, 0%, 96%)',
-       menuBackgroundDarkColor: 'hsl(0, 0%, 4%)',
-       menuitemFocusTextColor: 'hsl(0, 0%, 100%)',
-       menuitemFocusTextDarkColor: 'hsl(0, 0%, 0%)',
-       menuitemFocusBackgroundColor: 'hsl(216, 60%, 18%)',
-       menuitemFocusBackgroundDarkColor: 'hsl(216, 60%, 72%)',
-       highlightTarget: 'disabled'
+      hostnameSelector: 'illinois.edu',
+      menuTextColor: 'hsl(214, 100%, 9%)',
+      menuTextDarkColor: 'hsl(214, 100%, 91%)',
+      menuBackgroundColor: 'hsl(216, 54%, 86%)',
+      menuBackgroundDarkColor: 'hsl(216, 54%, 14%)',
+      menuitemFocusTextColor: 'hsl(0, 0%, 93%)',
+      menuitemFocusTextDarkColor: 'hsl(0, 0%, 7%)',
+      menuitemFocusBackgroundColor: 'hsl(214, 100%, 9%)',
+      menuitemFocusBackgroundDarkColor: 'hsl(214, 100%, 91%)',
+      focusBorderColor: 'hsl(11, 100%, 59%)',
+      focusBorderDarkColor: 'hsl(11, 100%, 41%)',
+      buttonTextColor: 'hsl(0, 0%, 27%)',
+      buttonTextDarkColor: 'hsl(0, 0%, 73%)',
+      buttonBackgroundColor: 'hsl(180, 1%, 87%)',
+      buttonBackgroundDarkColor: 'hsl(180, 1%, 13%)',
+      highlightTarget: 'disabled'
     },
     'openweba11y': {
       hostnameSelector: 'openweba11y.com',
@@ -103,10 +108,11 @@
     'skipto': {
       hostnameSelector: 'skipto-landmarks-headings.github.io',
       positionLeft: '25%',
+      fontSize: '14px',
       menuTextColor: 'hsl(214, 100%, 9%)',
       menuTextDarkColor: 'hsl(214, 100%, 91%)',
-      menuBackgroundColor: 'hsl(180, 1%, 87%)',
-      menuBackgroundDarkColor: 'hsl(180, 1%, 13%)',
+      menuBackgroundColor: 'hsl(216, 54%, 86%)',
+      menuBackgroundDarkColor: 'hsl(216, 54%, 14%)',
       menuitemFocusTextColor: 'hsl(0, 0%, 93%)',
       menuitemFocusTextDarkColor: 'hsl(0, 0%, 7%)',
       menuitemFocusBackgroundColor: 'hsl(214, 100%, 9%)',
@@ -186,23 +192,6 @@
       menuitemFocusTextDarkColor: 'hsl(215, 100%, 70%)',
       menuitemFocusBackgroundColor: 'hsl(0, 0%, 100%)',
       menuitemFocusBackgroundDarkColor: 'hsl(0, 0%, 0%)',
-    },
-    'wisc': {
-      hostnameSelector: 'wisc.edu',
-      buttonTextColor: 'hsl(0, 0%, 0%)',
-      buttonTextDarkColor: 'hsl(0, 0%, 100%)',
-      buttonBackgroundColor: 'hsl(200, 11.11%, 89.41%)',
-      buttonBackgroundDarkColor: 'hsl(200, 11.11%, 10.59%)',
-      focusBorderColor: 'hsl(0, 100%, 30.39%)',
-      focusBorderDarkColor: 'hsl(0, 100%, 69.61%)',
-      menuTextColor: 'hsl(0, 0%, 0%)',
-      menuTextDarkColor: 'hsl(0, 0%, 100%)',
-      menuBackgroundColor: 'hsl(200, 11.11%, 89.41%)',
-      menuBackgroundDarkColor: 'hsl(200, 11.11%, 10.59%)',
-      menuitemFocusTextColor: 'hsl(0, 0%, 100%)',
-      menuitemFocusTextDarkColor: 'hsl(0, 0%, 0%)',
-      menuitemFocusBackgroundColor: 'hsl(0, 100%, 30.39%)',
-      menuitemFocusBackgroundDarkColor: 'hsl(0, 100%, 69.61%)',
     }
   };
 
@@ -299,7 +288,7 @@
   /* constants.js */
 
   // Version
-  const VERSION = '5.11.2';
+  const VERSION = '5.9.2';
 
   // Numbers
 
@@ -324,13 +313,12 @@
 
   const MENU_ABOUT_ID     = 'id-skip-to-about';
 
-  const BUTTON_ID           = 'id-skip-to-button';
-  const MENU_ID             = 'id-skip-to-menu';
-  const SHORTCUTS_DIALOG_ID = 'id-skip-to-dialog-shortcuts';
-  const ABOUT_DIALOG_ID     = 'id-skip-to-dialog-about';
-  const MESSAGE_ID          = 'id-skip-to-message';
-  const HIGHLIGHT_ID        = 'id-skip-to-highlight-overlay';
-  const HIDDEN_ELEMENT_ID   = 'id-skip-to-hidden-element';
+  const BUTTON_ID         = 'id-skip-to-button';
+  const MENU_ID           = 'id-skip-to-menu';
+  const DIALOG_ID         = 'id-skip-to-dialog';
+  const MESSAGE_ID        = 'id-skip-to-message';
+  const HIGHLIGHT_ID      = 'id-skip-to-highlight-overlay';
+  const HIDDEN_ELEMENT_ID = 'id-skip-to-hidden-element';
 
 
   // Custom element names
@@ -345,13 +333,8 @@
 
   // URLs to more information
 
-  const SVG_NS = 'http://www.w3.org/2000/svg';
   const MORE_ABOUT_INFO_URL    ='https://skipto-landmarks-headings.github.io/page-script-5/';
   const MORE_SHORTCUT_INFO_URL ='https://skipto-landmarks-headings.github.io/page-script-5/shortcuts.html';
-
-  //  Force popup cookie
-
-  const FORCE_POPUP ='forceSkipToPopupBehavior';
 
   /* utils.js */
 
@@ -526,6 +509,8 @@
   --skipto-font-family: 'inherit';
   --skipto-font-size: 'inherit';
   --skipto-position-left: '46%';
+  --skipto-small-break-point: '580px';
+  --skipto-medium-break-point: '992px';
 
   --skipto-button-text-color: '#13294b';
   --skipto-button-text-dark-color: '#ffffff';
@@ -580,7 +565,6 @@
 }
 
 .menu-button.popup {
-  top: 0;
   transform: translateY(var(--skipto-popup-offset));
   transition: top 0.35s ease;
 }
@@ -595,16 +579,31 @@
   display: none;
 }
 
+.menu-button button .skipto-text {
+  padding: 6px 8px 6px 8px;
+  display: inline-block;
+}
+
+.menu-button button .skipto-small {
+  padding: 6px 8px 6px 8px;
+  display: none;
+}
+
+.menu-button button .skipto-medium {
+  padding: 6px 8px 6px 8px;
+  display: none;
+}
+
 .menu-button {
   position: fixed;
   left: var(--skipto-position-left);
   z-index: var(--skipto-z-index-1) !important;
 }
 
-.menu-button button.open {
+.menu-button button {
   margin: 0;
-  padding: 2px 4px 4px 4px;
-  border-width: 0px 2px 2px 2px;
+  padding: 0;
+  border-width: 0px 1px 1px 1px;
   border-style: solid;
   border-radius: 0px 0px 6px 6px;
   border-color: light-dark(var(--skipto-button-background-color), var(--skipto-button-background-dark-color));
@@ -614,91 +613,19 @@
   font-family: var(--skipto-font-family);
 }
 
-.menu-button button.open:focus,
-.menu-button button.open:hover {
-  background-color: light-dark(var(--skipto-menu-background-color), var(--skipto-menu-background-dark-color));
-  color: light-dark(var(--skipto-menu-text-color), var(--skipto-menu-text-dark-color));
-  border-color: light-dark(var(--skipto-focus-border-color), var(--skipto-focus-border-dark-color));
-  outline: none;
-}
-
-
-.menu-button button.open .skipto-large,
-.menu-button button.open .skipto-medium,
-.menu-button button.open .skipto-small {
-  display: inline-block;
-  margin: 0;
-  padding: 4px;
-}
-
-.menu-button button.open .skipto-medium {
-  display: none;
-}
-
-.menu-button button.open .skipto-small {
-  display: none;
-}
-
-.menu-button button.hide {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  background-color: light-dark(var(--skipto-button-background-color), var(--skipto-button-background-dark-color));
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-radius: 0px 6px 6px 0px;
-  border-color: light-dark(var(--skipto-button-background-color), var(--skipto-button-background-dark-color));
-  outline: none;
-}
-
-.menu-button button.hide svg {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 0px;
-  left: -2px;
-}
-
-.menu-button button.hide line {
-  stroke: light-dark(var(--skipto-button-background-color), var(--skipto-button-background-dark-color));
-}
-
-.menu-button button.hide circle.background {
-  fill: light-dark(var(--skipto-button-text-color), var(--skipto-button-text-dark-color));
-  stroke: light-dark(var(--skipto-button-text-color), var(--skipto-button-text-dark-color));
-}
-
-.menu-button button.hide circle.background {
-  stroke: none;
-  fill: light-dark(var(--skipto-button-text-color), var(--skipto-button-text-dark-color));
-}
-
-.menu-button button.hide circle.focus {
-  stroke: none;
-}
-
-.menu-button button.hide:focus circle.focus,
-.menu-button button.hide:hover circle.focus {
-  stroke: light-dark(var(--skipto-focus-border-color), var(--skipto-focus-border-dark-color));
-}
-
-.menu-button.popup button.hide {
-  display: none;
-}
-
-@media only screen and (max-width: 588px) {
+@media screen and (max-width: var(--skipto-small-break-point)) {
   .menu-button:not(.popup) button .skipto-small {
     transition: top 0.35s ease;
     display: inline-block;
   }
 
-  .menu-button:not(.popup) button .skipto-large,
+  .menu-button:not(.popup) button .skipto-text,
   .menu-button:not(.popup) button .skipto-medium {
     transition: top 0.35s ease;
     display: none;
   }
 
-  .menu-button:not(.popup) button:focus .skipto-large {
+  .menu-button:not(.popup) button:focus .skipto-text {
     transition: top 0.35s ease;
     display: inline-block;
   }
@@ -710,19 +637,19 @@
   }
 }
 
-@media only screen and (min-width: 588px) and (max-width: 992px) {
+@media screen and (min-width: var(--skipto-small-break-point)) and (max-width: var(--skipto-medium-break-point)) {
   .menu-button:not(.popup) button .skipto-medium {
     transition: top 0.35s ease;
     display: inline-block;
   }
 
-  .menu-button:not(.popup) button .skipto-large,
+  .menu-button:not(.popup) button .skipto-text,
   .menu-button:not(.popup) button .skipto-small {
     transition: top 0.35s ease;
     display: none;
   }
 
-  .menu-button:not(.popup) button:focus .skipto-large {
+  .menu-button:not(.popup) button:focus .skipto-text {
     transition: top 0.35s ease;
     display: inline-block;
   }
@@ -732,6 +659,10 @@
     transition: top 0.35s ease;
     display: none;
   }
+}
+
+.menu-button.static {
+  position: absolute !important;
 }
 
 .menu-button [role="menu"] {
@@ -742,7 +673,7 @@
   background-color: light-dark(var(--skipto-menu-background-color), var(--skipto-menu-background-dark-color));
   border-width: 2px;
   border-style: solid;
-  border-color: light-dark(var(--skipto-menu-text-color), var(--skipto-menu-text-dark-color));
+  border-color: light-dark(var(--skipto-focus-border-color), var(--skipto-focus-border-dark-color));
   border-radius: 5px;
   z-index: var(--skipto-z-index-1) !important;
   touch-action: none;
@@ -882,6 +813,15 @@
 
 /* focus styling */
 
+.menu-button button:focus,
+.menu-button button:hover {
+  background-color: light-dark(var(--skipto-menu-background-color), var(--skipto-menu-background-dark-color));
+  color: light-dark(var(--skipto-menu-text-color), var(--skipto-menu-text-dark-color));
+  outline: none;
+  border-width: 0px 2px 2px 2px;
+  border-color: light-dark(var(--skipto-focus-border-color), var(--skipto-focus-border-dark-color));
+}
+
 .menu-button.popup.focus,
 .menu-button.popup.menu,
 .menu-button.popup:hover {
@@ -893,6 +833,15 @@
 
 .menu-button.popup.mobile.focus button {
   display: block;
+}
+
+.menu-button button:focus .skipto-text,
+.menu-button button:hover .skipto-text,
+.menu-button button:focus .skipto-small,
+.menu-button button:hover .skipto-small,
+.menu-button button:focus .skipto-medium,
+.menu-button button:hover .skipto-medium {
+  padding: 6px 7px 5px 7px;
 }
 
 .menu-button [role="menuitem"]:focus {
@@ -915,6 +864,59 @@
   display: none;
 }
 
+
+@media (forced-colors: active) {
+
+  .menu-button button {
+    border-color: ButtonBorder;
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+
+  .menu-button [role="menu"] {
+    background-color: ButtonFace;
+    border-color: ButtonText;
+  }
+
+  .menu-button [role="menuitem"] {
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+
+  .menu-button [role="menuitem"] .level,
+  .menu-button [role="menuitem"] .label {
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+
+  .menu-button [role="separator"] {
+    border-bottom-color: ButtonBorder;
+    background-color: ButtonFace;
+    color: ButtonText;
+    z-index: var(--skipto-z-index-1) !important;
+  }
+
+  .menu-button button:focus,
+  .menu-button button:hover {
+    background-color: ButtonFace;
+    color: ButtonText;
+    border-color: ButtonBorder;
+  }
+
+  .menu-button [role="menuitem"]:focus {
+    background-color: ButtonText;
+    color: ButtonFace;
+    border-color: ButtonBorder;
+  }
+
+  .menu-button [role="menuitem"].hover,
+  .menu-button [role="menuitem"].hover .level,
+  .menu-button [role="menuitem"].hover .label {
+    background-color: ButtonText;
+    color: ButtonFace;
+  }
+}
+
 /* Dialog Styling */
 
 dialog {
@@ -923,7 +925,7 @@ dialog {
   left: 50%;
   transform: translate(-50%,-50%);
   font-family: var(--skipto-font-family);
-  font-size: 12pt;
+  font-size: var(--skipto-font-size);
   max-width: 70%;
   margin: 0;
   padding: 0;
@@ -950,14 +952,25 @@ dialog .header {
   background-color: light-dark(var(--skipto-dialog-background-title-color), var(--skipto-dialog-background-title-dark-color));
   color: light-dark(var(--skipto-dialog-text-color), var(--skipto-dialog-text-dark-color));
   position: relative;
+  font-size: 100%;
 }
 
-dialog .header h2,
-dialog button {
+dialog .header h2 {
   margin: 0;
   padding: 0;
+  font-size: 1em;
+}
+
+dialog .header button {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  border: none;
+  background: transparent;
   font-weight: bold;
-  font-size: 12pt;
+  color: light-dark(var(--skipto-dialog-text-color), var(--skipto-dialog-text-dark-color));
+  font-family: var(--skipto-font-family);
+  font-size: var(--skipto-font-size);
 }
 
 dialog .content {
@@ -972,7 +985,6 @@ dialog .content .desc {
   text-align: center;
 }
 
-dialog .shortcut-label,
 dialog .content .privacy-label {
   margin: 0;
   margin-top: 1em;
@@ -980,7 +992,6 @@ dialog .content .privacy-label {
   font-weight: bold;
 }
 
-dialog .shortcut,
 dialog .content .privacy {
   text-align: center;
   margin-bottom: 1em;
@@ -989,7 +1000,7 @@ dialog .content .privacy {
 dialog .content .happy {
   text-align: center;
   font-family: 'Brush Script MT', cursive;
-  font-size: 24pt;
+  font-size: 200%;
   letter-spacing: 0.05em;
 }
 
@@ -1000,9 +1011,6 @@ dialog .content .copyright {
 }
 
 dialog .content table {
-  margin: 0;
-  margin-top: 1em;
-  padding: 0.25em;
   width: auto;
   border-collapse: collapse;
 }
@@ -1010,20 +1018,23 @@ dialog .content table {
 dialog .content caption {
   margin: 0;
   padding: 0;
-  padding-left: 0.25em;
+  margin-top: 1em;
   text-align: left;
   font-weight: bold;
+  font-size: 110%;
 }
 
 dialog .content th {
   margin: 0;
   padding: 0;
-  padding-left: 0.25em;
   padding-top: 0.125em;
   padding-bottom: 0.125em;
   text-align: left;
   font-weight: bold;
-  font-size: 11pt;
+  font-size: 100%;
+}
+
+dialog .content th {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: light-dark(#999999, #777777);
@@ -1037,6 +1048,7 @@ dialog .content td.desc {
   padding-top: 0.125em;
   padding-bottom: 0.125em;
   text-align: left;
+  font-size: 100%;
 }
 
 dialog .content th.shortcut {
@@ -1061,13 +1073,9 @@ dialog .buttons {
 
 dialog .buttons button {
   margin: 6px;
-  padding-top: .25em;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-bottom: .25em;
   min-width: 5em;
   font-family: var(--skipto-font-family);
-  font-size: 12pt;
+  font-size: var(--skipto-font-size);
 }
 
 dialog button:focus {
@@ -1387,10 +1395,12 @@ dialog button:hover {
     updateStyle(containerNode, '--skipto-font-size',   config.fontSize,   theme.fontSize,   d.fontSize);
 
     updateStyle(containerNode, '--skipto-position-left',      config.positionLeft,     theme.positionLeft,     d.positionLeft);
+    updateStyle(containerNode, '--skipto-small-break-point',  config.smallBreakPoint,  theme.smallBreakPoint,  d.smallBreakPoint);
+    updateStyle(containerNode, '--skipto-medium-break-point', config.mediumBreakPoint, theme.mediumBreakPoint, d.mediumBreakPoint);
 
     updateStyle(containerNode, '--skipto-menu-text-color',            config.menuTextColor,           theme.menuTextColor,           d.menuTextColor);
     updateStyle(containerNode, '--skipto-menu-text-dark-color',       config.menuTextDarkColor,       theme.menuTextDarkColor,       d.menuTextDarkColor);
-    updateStyle(containerNode, '--skipto-menu-background-color',      config.menuBackgroundColor,     theme.menuBackgroundColor,     d.menuBackgroundColor);
+    updateStyle(containerNode, '--skipto-menu-background-color',      config.menuBackgroundColor,     theme.menuBackgroundColor,     d.menuTextDarkColor);
     updateStyle(containerNode, '--skipto-menu-background-dark-color', config.menuBackgroundDarkColor, theme.menuBackgroundDarkColor, d.menuBackgroundDarkColor);
 
     updateStyle(containerNode, '--skipto-menuitem-focus-text-color',            config.menuitemFocusTextColor,           theme.menuitemFocusTextColor,           d.menuitemFocusTextColor);
@@ -1496,227 +1506,179 @@ dialog button:hover {
   const debug$a = new DebugLogging('[shortcutsInfoDialog]', false);
   debug$a.flag = false;
 
-  /*
-   * @function createElem
-   *
-   * @desc Helper function in create dialog box content
-   */
+  const templateInfoDialog = document.createElement('template');
+  templateInfoDialog.innerHTML = `
+  <dialog id="${DIALOG_ID}">
 
-  function createElem(tag, textContent='', className='', id='') {
-    const elem = document.createElement(tag);
-    elem.textContent = textContent;
-    if (className) {
-      elem.className = className;
-    }
-    if (id) {
-      elem.id = id;
-    }
-    return elem;
-  }
+    <div>
+      <div class="header">
+        <h2 class="title"></h2>
+        <button aria-label="Close">✕</button>
+      </div>
+      <div class="shortcuts content">
+         <table>
+            <caption>Landmark Regions</caption>
+            <thead>
+               <tr>
+                  <th class="shortcut">Key</th>
+                  <th class="desc">Description</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td class="shortcut">r</td>
+                  <td class="desc">Next region</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">R</td>
+                  <td class="desc">Previous region</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">m</td>
+                  <td class="desc">Main regions</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">n</td>
+                  <td class="desc">Navigation regions</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">c</td>
+                  <td class="desc">Complementary regions</td>
+               </tr>
+            </tbody>
+         </table>
+         <table>
+            <caption>Headings</caption>
+            <thead>
+               <tr>
+                  <th class="shortcut">Key</th>
+                  <th class="desc">Description</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td class="shortcut">h</td>
+                  <td class="desc">Next heading</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">H</td>
+                  <td class="desc">Previous heading</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">1</td>
+                  <td class="desc">Level 1 headings</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">2</td>
+                  <td class="desc">Level 2 headings</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">3</td>
+                  <td class="desc">Level 3 headings</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">4</td>
+                  <td class="desc">Level 4 headings</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">5</td>
+                  <td class="desc">Level 5 headings</td>
+               </tr>
+               <tr>
+                  <td class="shortcut">6</td>
+                  <td class="desc">Level 6 headings</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+    </div>
 
-  /*
-   * @function getInfoDialogElems
-   *
-   * @desc Returns common elements needed in a dialog box
-   */
+    <div>
+      <div class="about content">
+        <div class="desc">
+          SkipTo.js is a free and open source utility to support the WCAG 2.4.1 Bypass Block requirement.
+        </div>
+        <div class="privacy-label">
+          Privacy
+        </div>
+        <div class="privacy">
+          SkipTo.js does not collect or store any information about users or work with any other parties to collect or share user browsing information.
+        </div>
+        <div class="happy">
+          Happy Skipping!
+        </div>
+        <div class="version">
+          Version ${VERSION}
+        </div>
+        <div class="copyright">
+          BSD License, Copyright 2021-2025
+        </div>
+      </div>
+    </div>
 
-  function getInfoDialogElems (id, title, config) {
+    <div class="buttons">
+      <button class="more">
+        More Information
+      </button>
+      <button class="close">
+        Close
+      </button>
+    </div>
 
-    const dialogElem = createElem('dialog', '', '', id);
-    dialogElem.tabIndex = -1;
-
-    const divContainerElem = createElem('div');
-    dialogElem.appendChild(divContainerElem);
-
-    // Dialog Header
-
-    const divHeaderElem = createElem('div', '', 'header');
-    divContainerElem.appendChild(divHeaderElem);
-
-    const divTitleElem = createElem('h2', title, 'title');
-    divHeaderElem.appendChild(divTitleElem);
-
-    // Dialog content container
-
-    const divContentElem = createElem('div', '', 'content');
-    divContainerElem.appendChild(divContentElem);
-
-    // Dialog buttons
-
-    const divButtonsElem = createElem('div', '', 'buttons');
-    divContainerElem.appendChild(divButtonsElem);
-
-    const divButtonMoreElem = createElem('button', config.moreInfoLabel, 'more');
-    divButtonsElem.appendChild(divButtonMoreElem);
-
-    const divButton2CloseElem = createElem('button', config.closeLabel, 'close');
-    divButtonsElem.appendChild(divButton2CloseElem);
-
-    return dialogElem;
-  }
-
-  /*
-   * @function addShortcutsContentElems
-   *
-   * @desc Add shortcut information to content element
-   *
-   * @param  {Object}  config  - SkipTo.js configuration object used for i18n
-   */
-
-  function addShortcutsContentElems (contentElem, config) {
-
-    const buttonShortcuts = [
-      {shortcut: config.osShortcut, desc: config.aboutShortcut},
-    ];
-
-    const landmarkShortcuts = [
-      {shortcut: config.shortcutRegionNext,          desc: config.msgNextRegion},
-      {shortcut: config.shortcutRegionPrevious,      desc: config.msgPreviousRegion},
-      {shortcut: config.shortcutRegionMain,          desc: config.msgMainRegions},
-      {shortcut: config.shortcutRegionNavigation,    desc: config.msgNavigationRegions},
-      {shortcut: config.shortcutRegionComplementary, desc: config.msgComplementaryRegions},
-    ];
-
-    const headingShortcuts = [
-      {shortcut: config.shortcutHeadingNext,     desc: config.msgNextHeading},
-      {shortcut: config.shortcutHeadingPrevious, desc: config.msgPreviousHeading},
-      {shortcut: config.shortcutHeadingH1,       desc: config.msgH1Headings},
-      {shortcut: config.shortcutHeadingH2,       desc: config.msgH2Headings},
-      {shortcut: config.shortcutHeadingH3,       desc: config.msgH3Headings},
-      {shortcut: config.shortcutHeadingH4,       desc: config.msgH4Headings},
-      {shortcut: config.shortcutHeadingH5,       desc: config.msgH5Headings},
-      {shortcut: config.shortcutHeadingH6,       desc: config.msgH6Headings},
-    ];
-
-    function getShortcutTable(caption, shortcuts, initFocus=false) {
-
-      let trElem, thElem, tdElem, kbdElem;
-
-      const tableElem = createElem('table');
-      if (initFocus) {
-        tableElem.id = 'focus';
-      }
-
-      const captionElem = createElem('caption', caption);
-      tableElem.appendChild(captionElem);
-
-      const theadElem = createElem('thead');
-      tableElem.appendChild(theadElem);
-
-      trElem = createElem('tr');
-      theadElem.appendChild(trElem);
-
-      thElem = createElem('th', config.msgKey, 'shortcut');
-      trElem.appendChild(thElem);
-
-      thElem = createElem('th', config.msgDescription, 'desc');
-      trElem.appendChild(thElem);
-
-      const tbodyElem = createElem('tbody');
-      tableElem.appendChild(tbodyElem);
-
-      shortcuts.forEach( (item) => {
-        trElem = createElem('tr');
-        tbodyElem.appendChild(trElem);
-
-        tdElem = createElem('td', '', 'shortcut');
-        trElem.appendChild(tdElem);
-
-        kbdElem = createElem('kbd', item.shortcut);
-        tdElem.appendChild(kbdElem);
-
-        if (item.kbdClass) {
-          kbdElem.className = item.kbdClass;
-        }
-
-        tdElem = createElem('td', item.desc, 'desc');
-        trElem.appendChild(tdElem);
-      });
-
-      return tableElem;
-    }
-
-    contentElem.appendChild(getShortcutTable(config.landmarkGroupLabel, landmarkShortcuts, true));
-    contentElem.appendChild(getShortcutTable(config.headingGroupLabel, headingShortcuts));
-    contentElem.appendChild(getShortcutTable(config.menuButtonLabel, buttonShortcuts));
-
-  }
+  </dialog>
+`;
 
   /*
-   * @function addAboutContentElems
    *
-   * @desc Add about information to content element
    *
-   * @param  {Object}  config  - SkipTo.js configuration object used for i18n
    */
 
-  function addAboutContentElems (contentElem, config) {
-
-    const divDescLabelElem = createElem('div', config.aboutDescLabel, 'privacy-label');
-    contentElem.appendChild(divDescLabelElem);
-
-    const divDescElem = createElem('div', config.aboutDesc, 'desc');
-    divDescElem.id = 'focus';
-    contentElem.appendChild(divDescElem);
-
-    // Button menu shortcut key
-
-    const divShortcutLabelElem = createElem('div', config.aboutShortcutLabel, 'shortcut-label');
-    contentElem.appendChild(divShortcutLabelElem);
-
-    const divShortcutElem = createElem('div', '', 'shortcut');
-    contentElem.appendChild(divShortcutElem);
-    const kbdElem = createElem('kbd', config.osShortcut);
-    divShortcutElem.appendChild(kbdElem);
-    divShortcutElem.appendChild(document.createTextNode(': '));
-    divShortcutElem.appendChild(document.createTextNode(config.aboutShortcut));
-
-    const divPrivacyLabelElem = createElem('div', config.aboutPrivacyLabel, 'privacy-label');
-    contentElem.appendChild(divPrivacyLabelElem);
-
-    const divPrivacyElem = createElem('div', config.aboutPrivacy, 'privacy');
-    contentElem.appendChild(divPrivacyElem);
-
-    const divHappyElem = createElem('div', config.happySkipping, 'happy');
-    contentElem.appendChild(divHappyElem);
-
-    const divVersionElem = createElem('div', config.aboutVersion, 'version');
-    contentElem.appendChild(divVersionElem);
-
-    const divCopyrightElem = createElem('div', config.aboutCopyright, 'copyright');
-    contentElem.appendChild(divCopyrightElem);
-
-  }
-
-  /*
-
-
-   * @class InfoDialog
-   *
-   * @desc Base class for SkipTo.js dialogs
-   */
-
-  class InfoDialog {
-    constructor (skipToElem, attachElem, id, title, config) {
+  class SkipToContentInfoDialog {
+    constructor (attachElem) {
 
       // Get references
 
-      this.skipToElem = skipToElem;
+      attachElem.appendChild(templateInfoDialog.content.cloneNode(true));
 
-      this.dialogElem = getInfoDialogElems(id, title, config);
-      attachElem.appendChild(this.dialogElem);
-      this.dialogElem.addEventListener('keydown', this.onKeyDown.bind(this));
+      this.dialogElem = attachElem.querySelector('dialog');
 
-      this.closeButtonElem  = attachElem.querySelector(`#${id} .buttons button.close`);
-      this.closeButtonElem.addEventListener('click', this.onCloseButtonClick.bind(this));
-      this.closeButtonElem.addEventListener('keydown', this.onKeyDown.bind(this));
+      this.closeButtonElem1  = attachElem.querySelector(`#${DIALOG_ID} .header button`);
+      this.closeButtonElem1.addEventListener('click', this.onCloseButtonClick.bind(this));
+      this.closeButtonElem1.addEventListener('keydown', this.onKeyDown.bind(this));
 
-      this.moreInfoButtonElem = attachElem.querySelector(`#${id} .buttons button.more`);
-      this.moreInfoButtonElem.addEventListener('click', this.onMoreInfoClick.bind(this));
+      this.titleElem           = attachElem.querySelector(`#${DIALOG_ID} .title`);
+      this.shortcutContentElem = attachElem.querySelector(`#${DIALOG_ID} .shortcuts`);
+      this.aboutContentElem    = attachElem.querySelector(`#${DIALOG_ID} .about`);
 
-      this.titleElem = this.dialogElem.querySelector('.header h2');
+      const moreInfoButtonElem = attachElem.querySelector(`#${DIALOG_ID} .buttons button.more`);
+      moreInfoButtonElem.addEventListener('click', this.onMoreInfoClick.bind(this));
+
+      this.closeButtonElem2  = attachElem.querySelector(`#${DIALOG_ID} .buttons button.close`);
+      this.closeButtonElem2.addEventListener('click', this.onCloseButtonClick.bind(this));
+      this.closeButtonElem2.addEventListener('keydown', this.onKeyDown.bind(this));
 
       return this;
+    }
+
+    onCloseButtonClick () {
+      this.dialogElem.close();
+    }
+
+    openDialog (content, title) {
+      this.content = content;
+
+      if (content === 'shortcuts') {
+        this.shortcutContentElem.style.display = 'block';
+        this.aboutContentElem.style.display = 'none';
+        this.titleElem.textContent = title;
+      }
+      else {
+        this.shortcutContentElem.style.display = 'none';
+        this.aboutContentElem.style.display = 'block';
+        this.titleElem.textContent = title;
+      }
+      this.dialogElem.showModal();
+      this.closeButtonElem2.focus();
     }
 
     onMoreInfoClick () {
@@ -1728,28 +1690,6 @@ dialog button:hover {
       }
     }
 
-    onCloseButtonClick () {
-      this.dialogElem.close();
-      this.skipToElem.setFocusToButton();
-    }
-
-    openDialog () {
-      this.dialogElem.showModal();
-
-      const focusElem = this.dialogElem.querySelector('#focus');
-
-      if (focusElem) {
-        focusElem.tabIndex = -1;
-        focusElem.focus();
-        focusElem.addEventListener('keydown', this.onKeyDown.bind(this));
-      }
-      else {
-        this.titleElem.tabIndex = -1;
-        this.titleElem.focus();
-        this.titleElem.addEventListener('keydown', this.onKeyDown.bind(this));
-      }
-    }
-
     onKeyDown (event) {
 
       if ((event.key === "Tab") &&
@@ -1757,53 +1697,22 @@ dialog button:hover {
           !event.ctlKey &&
           !event.metaKey) {
 
+        debug$a.log(`shift: ${event.shiftKey} ${event.currentTarget === this.closeButtonElem1} ${event.currentTarget === this.closeButtonElem2}`);
+
         if (event.shiftKey &&
-            (event.target !== this.closeButtonElem)) {
-          this.closeButtonElem.focus();
+            (event.currentTarget === this.closeButtonElem1)) {
+          this.closeButtonElem2.focus();
           event.preventDefault();
           event.stopPropagation();
         }
 
         if (!event.shiftKey &&
-            (event.target === this.closeButtonElem)) {
-          this.moreInfoButtonElem.focus();
+            (event.currentTarget === this.closeButtonElem2)) {
+          this.closeButtonElem1.focus();
           event.preventDefault();
           event.stopPropagation();
         }
       }
-    }
-  }
-
-  /*
-   * @class ShortcutsDialog
-   *
-   * @desc Class for SkipTo.js shortcuts dialogs
-   */
-
-  class ShortcutsDialog extends InfoDialog {
-
-    constructor (skipToElem, attachElem, config) {
-
-      super(skipToElem, attachElem, SHORTCUTS_DIALOG_ID, config.shortcutsInfoLabel, config);
-
-      const contentElem = attachElem.querySelector(`#${SHORTCUTS_DIALOG_ID} .content`);
-      addShortcutsContentElems(contentElem, config);
-
-      return this;
-    }
-
-  }
-
-  class AboutDialog extends InfoDialog {
-
-    constructor (skipToElem, attachElem, config) {
-
-      super(skipToElem, attachElem, ABOUT_DIALOG_ID, config.aboutInfoLabel, config);
-
-      const contentElem = attachElem.querySelector(`#${ABOUT_DIALOG_ID} .content`);
-      addAboutContentElems(contentElem, config);
-
-      return this;
     }
   }
 
@@ -1813,41 +1722,22 @@ dialog button:hover {
   const debug$9 = new DebugLogging('[shortcutsMessage]', false);
   debug$9.flag = false;
 
-  /*
-    Code for message
-    <div id="${MESSAGE_ID}" class="hidden">
-      <div class="header">
-        SkipTo.js Message
-      </div>
-      <div class="content">
-      </div>
+  const templateMessage = document.createElement('template');
+  templateMessage.innerHTML = `
+  <div id="${MESSAGE_ID}" class="hidden">
+    <div class="header">
+      SkipTo.js Message
     </div>
-  */
+    <div class="content">
+    </div>
+  </div>
+`;
 
-  // Creates a elements for shortcuts message
-
-  function getMessageElements(messageLabel) {
-
-    const divElem     = document.createElement('div');
-    divElem.id        = MESSAGE_ID;
-    divElem.className = 'hidden';
-
-    const divHeaderElem     = document.createElement('div');
-    divHeaderElem.className = 'header';
-    divHeaderElem.textContent = messageLabel;
-    divElem.appendChild(divHeaderElem);
-
-    const divContentElem     = document.createElement('div');
-    divContentElem.className = 'content';
-    divElem.appendChild(divContentElem);
-
-    return divElem;
-  }
 
   class ShortcutsMessage {
-    constructor (attachElem, messageLabel) {
+    constructor (attachElem) {
 
-      attachElem.appendChild(getMessageElements(messageLabel));
+      attachElem.appendChild(templateMessage.content.cloneNode(true));
 
       // Get references
 
@@ -1978,7 +1868,7 @@ dialog button:hover {
      *   @param {Boolean} force           : If true override isRduced
      */
 
-    highlight(elem, highlightTarget, info='', force=false) {
+    highlight(elem, highlightTarget='instant', info='', force=false) {
       let scrollElement;
       const mediaQuery = window.matchMedia(`(prefers-reduced-motion: reduce)`);
       const isReduced = !mediaQuery || mediaQuery.matches;
@@ -2606,12 +2496,7 @@ dialog button:hover {
   function getAccessibleName (doc, element, fromContent=false) {
     let accName = '';
 
-    accName = nameFromRefs(element);
-
-    // This condition is for compatibility with older browsers
-    if (accName === '' && element.hasAttribute('aria-labelledby')) {
-      accName = nameFromAttributeIdRefs(doc, element);
-    }
+    accName = nameFromAttributeIdRefs(doc, element, 'aria-labelledby');
 
     if (accName === '' && element.hasAttribute('aria-label')) {
       accName =  element.getAttribute('aria-label').trim();
@@ -2629,38 +2514,6 @@ dialog button:hover {
   }
 
   /*
-  *   @function nameFromRefs
-  *
-  *   @desc Get the value of attrName on element an array of referenced element nodes,
-  *         visit each referenced element in the order it
-  *         appears in the list and obtain its accessible name
-  *
-  *   @param {Object}  element   -  DOM element node
-  *
-  *   @returns {String} see @desc
-  */
-  function nameFromRefs (element) {
-    const arr = [];
-    const property = 'ariaLabelledByElements';
-
-    if (element[property] && element[property].length) {
-
-      element[property].forEach ((refElement) => {
-        if (typeof refElement === 'object') {
-          const accName = getNodeContents(refElement);
-          if (accName && accName.length) arr.push(accName);
-        }
-      });
-    }
-
-    if (arr.length) {
-      return arr.join(' ');
-    }
-
-    return '';
-  }
-
-  /*
   *   @function nameFromAttributeIdRefs
   *
   *   @desc Get the value of attrName on element (a space-
@@ -2672,11 +2525,13 @@ dialog button:hover {
   *
   *   @param {Object}  doc       -  Browser document object
   *   @param {Object}  element   -  DOM element node
+  *   @param {String}  attribute -  Attribute name (e.g. "aria-labelledby", "aria-describedby",
+  *                                 or "aria-errormessage")
   *
-  *   @returns {String} see @desc
+  *   @returns {String} see @desc 
   */
-  function nameFromAttributeIdRefs (doc, element) {
-    const value = getAttributeValue(element, 'aria-labelledby');
+  function nameFromAttributeIdRefs (doc, element, attribute) {
+    const value = getAttributeValue(element, attribute);
     const arr = [];
 
     if (value.length) {
@@ -2755,23 +2610,6 @@ dialog button:hover {
     'h6'
   ];
 
-  const asideNotAllowedContextElements = [
-    'article',
-    'aside',
-    'form',
-    'nav',
-    'section'
-    ];
-
-  const asideNotAllowedContextRoles = [
-    'article',
-    'complementary',
-    'form',
-    'navigation',
-    'region',
-    ];
-
-
   let idIndex = 0;
 
   /*
@@ -2848,7 +2686,7 @@ dialog button:hover {
   *         elements with default landmark roles or is the descendant
   *         of an element with a defined landmark role
   *
-  *   @param  {Object}  node  - Element node from a browser DOM
+  *   @param  {Object}  node  - Element node from a berowser DOM
   * 
   *   @reutrn {Boolean} Returns true if top level landmark, otherwise false
   */
@@ -2871,34 +2709,6 @@ dialog button:hover {
     return true;
   }  
 
-
-  /**
-  * @function isInContextForComplementary
-  *
-  * @desc Tests the node to see if it is in the context of any other
-  *       elements with default landmark roles or is the descendant
-  *       of an element with a main landmark role
-  *
-  * @param  {Object}  node        - Element node from a browser DOM
-  */
-
-  function isInContextForComplementary (node) {
-    node = node && node.parentNode;
-    while (node && (node.nodeType === Node.ELEMENT_NODE)) {
-      const tagName = node.tagName.toLowerCase();
-      const role = node.role ? node.role.toLowerCase().trim() : '';
-      if (asideNotAllowedContextRoles.includes(role)) {
-        return false;
-      }
-
-      if (asideNotAllowedContextElements.includes(tagName)) {
-        return false;
-      }
-      node = node.parentNode;
-    }
-    return true;
-  }
-
   /*
    *   @function checkForLandmarkRole
    *
@@ -2920,10 +2730,7 @@ dialog button:hover {
 
       switch (tagName) {
         case 'aside':
-          if (isInContextForComplementary(element)) {
-            return 'complementary';
-          }
-          break;
+          return 'complementary';
 
         case 'main':
           return 'main';
@@ -3774,7 +3581,7 @@ dialog button:hover {
 
       const skipToContentElem = document.querySelector(EXTENSION_ELEMENT_NAME) || document.querySelector(BOOKMARKLET_ELEMENT_NAME);
       if (skipToContentElem) {
-        skipToContentElem.buttonSkipTo.highlight(elem, info, true);  // force highlight
+        skipToContentElem.buttonSkipTo.highlight(elem, 'instant', info, true);  // force highlight
       }
 
     }
@@ -4070,271 +3877,62 @@ dialog button:hover {
   const debug$2 = new DebugLogging('SkipToButton', false);
   debug$2.flag = false;
 
-  /*  Menu button HTML template
-      <button id="${BUTTON_ID}"
-              aria-haspopup="menu"
-              aria-expanded= "false"
-              aria-label="Skip To Content"
-              aria-controls="id-skip-to-menu"
-              class="open">
-        <span class="skipto-large">
-          <span class="skipto-text">Skip To Content</span>
-          (<kbd class="skipto-shortcut">Alt+0</kbd>)
-        </span>
-        <span class="skipto-medium">Skip To Content</span>
-        <span class="skipto-small">SkipTo</span>
-      </button>
-      <button class="hide">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             width="24"
-             height="24"
-             viewBox="0 0 28 28"
-             role="none">
-
-
-          <!-- Circle outline -->
-          <circle cx="14" cy="14" r="12" class="focus" stroke-width="2" fill="none"/>
-
-          <circle cx="14" cy="14" r="9" class="background" stroke-width="0"/>
-
-          <!-- X lines -->
-          <line x1="10" y1="10" x2="18" y2="18" stroke-width="2" stroke-linecap="round" />
-          <line x1="18" y1="10" x2="10" y2="18" stroke-width="2" stroke-linecap="round" />
-        </svg>
-      </button>
-      <div id="${MENU_ID}"
-           role="menu"
-           aria-label="Skip to Content"
-           style="display: none;">
-        <div id="${MENU_LANDMARK_GROUP_LABEL_ID}"
-             role="separator"
-             aria-label="Landmark Regions">
-          Landmark Regions (nn)
-        </div>
-        <div id="${MENU_LANDMARK_GROUP_ID}"
-             role="group"
-             class="overflow"
-             aria-labelledby="${MENU_LANDMARK_GROUP_LABEL_ID}" >
-        </div>
-        <div id="${MENU_HEADINGS_GROUP_LABEL_ID}"
-             role="separator"
-             aria-label="Headings">
-          Headings (nn)
-        </div>
-        <div id="${MENU_HEADINGS_GROUP_ID}"
-             role="group"
-             class="overflow"
-             aria-labelledby="${MENU_HEADINGS_GROUP_LABEL_ID}">
-        </div>
-        <div id="${MENU_SHORTCUTS_GROUP_LABEL_ID}"
-             role="separator"
-             class="shortcuts-disabled">
-          Shortcuts: Disabled
-        </div>
-        <div id="${MENU_SHORTCUTS_GROUP_ID}"
-             role="group"
-             aria-labelledby="${MENU_SHORTCUTS_GROUP_LABEL_ID}"
-             class="shortcuts-disabled">
-        </div>
-        <div role="separator"></div>
-        <div id="${MENU_ABOUT_ID}"
-             role="menuitem"
-             data-about-info=""
-             class="about skip-to-nav skip-to-nesting-level-0 last">
-          <span class="label">About SkipTo.js</span>
-        </div>
+  const templateMenuButton = document.createElement('template');
+  templateMenuButton.innerHTML = `
+    <button id="${BUTTON_ID}"
+            aria-haspopup="menu"
+            aria-expanded= "false"
+            aria-label="Skip To Content"
+            aria-controls="id-skip-to-menu">
+      <span class="skipto-text">Skip To Content (Alt+0)</span>
+      <span class="skipto-medium">Skip To Content</span>
+      <span class="skipto-small">SkipTo</span>
+    </button>
+    <div id="${MENU_ID}"
+         role="menu"
+         aria-label="Skip to Content"
+         style="display: none;">
+      <div id="${MENU_LANDMARK_GROUP_LABEL_ID}"
+           role="separator"
+           aria-label="Landmark Regions">
+        Landmark Regions (nn)
       </div>
-  `;
-  */
+      <div id="${MENU_LANDMARK_GROUP_ID}"
+           role="group"
+           class="overflow"
+           aria-labelledby="${MENU_LANDMARK_GROUP_LABEL_ID}" >
+      </div>
+      <div id="${MENU_HEADINGS_GROUP_LABEL_ID}"
+           role="separator"
+           aria-label="Headings">
+        Headings (nn)
+      </div>
+      <div id="${MENU_HEADINGS_GROUP_ID}"
+           role="group"
+           class="overflow"
+           aria-labelledby="${MENU_HEADINGS_GROUP_LABEL_ID}">
+      </div>
+      <div id="${MENU_SHORTCUTS_GROUP_LABEL_ID}"
+           role="separator"
+           class="shortcuts-disabled">
+        Shortcuts: Disabled
+      </div>
+      <div id="${MENU_SHORTCUTS_GROUP_ID}"
+           role="group"
+           aria-labelledby="${MENU_SHORTCUTS_GROUP_LABEL_ID}"
+           class="shortcuts-disabled">
+      </div>
+      <div role="separator"></div>
+      <div id="${MENU_ABOUT_ID}"
+           role="menuitem"
+           data-about-info=""
+           class="about skip-to-nav skip-to-nesting-level-0 last"
+           tabindex="-1">
+        <span class="label">About SkipTo.js</span>
+      </div>
+    </div>
+`;
 
-  /*
-   * @function getMenuButtonElements
-   *
-   * @desc  Returns the elements for the basic menu button structure
-   *
-   * @returns {Object}  DOM node
-   */
-
-  function getMenuButtonElements (containerElement, buttonLabel, customClass) {
-
-    // svgCircle Helper function
-
-    function svgCircle(cx, cy, r, strokeWidth, fill, className) {
-      const circleElem = document.createElementNS(SVG_NS, "circle");
-      circleElem.setAttribute('cx', cx);
-      circleElem.setAttribute('cy', cy);
-      circleElem.setAttribute('r', r);
-      circleElem.setAttribute('stroke-width', strokeWidth);
-      if (fill) {
-        circleElem.setAttribute('fill', fill);
-      }
-      if (className) {
-        circleElem.setAttribute('class', className);
-      }
-      return circleElem;
-    }
-
-    // svgLine Helper function
-
-    function svgLine(x1, y1, x2, y2, strokeWidth, strokeLinecap) {
-      const lineElem = document.createElementNS(SVG_NS, "line");
-      lineElem.setAttribute('x1', x1);
-      lineElem.setAttribute('y1', y1);
-      lineElem.setAttribute('x2', x2);
-      lineElem.setAttribute('y2', y2);
-
-      if (strokeWidth) {
-        lineElem.setAttribute('stroke-width', strokeWidth);
-      }
-      if (strokeLinecap) {
-        lineElem.setAttribute('stroke-linecap', strokeLinecap);
-      }
-      return lineElem;
-    }
-
-    // createDiv Helper function
-
-    function createDiv(id, role, textContent='', ariaLabel='', ariaLabelledby='', className='') {
-      const divElem = document.createElement('div');
-      if (id) {
-        divElem.id = id;
-      }
-      if (role) {
-        divElem.role = role;
-      }
-      if (textContent) {
-        divElem.textContent = textContent;
-      }
-      if (ariaLabel) {
-        divElem.arialLabel = ariaLabel;
-      }
-      if (ariaLabelledby) {
-        divElem.arialLabelledby = ariaLabelledby;
-      }
-      if (className) {
-        divElem.className = className;
-      }
-
-      return divElem;
-    }
-
-    // Start main function code
-
-    // check for 'nav' element, if not use 'div' element
-    const ce = containerElement.toLowerCase().trim() === 'nav' ? 'nav' : 'div';
-
-    const menuButtonElem = document.createElement(ce);
-    menuButtonElem.className = 'menu-button';
-    menuButtonElem.id = SKIP_TO_ID;
-
-    if (ce === 'nav') {
-      menuButtonElem.setAttribute('aria-label', buttonLabel);
-    }
-
-    if (isNotEmptyString(customClass)) {
-      menuButtonElem.classList.add(customClass);
-    }
-
-    // Skip To Content Button and its children
-    const buttonElem = document.createElement('button');
-    buttonElem.id = BUTTON_ID;
-    buttonElem.ariaHasPopup = 'menu';
-    buttonElem.ariaExpanded = 'false';
-    buttonElem.ariaLabel    = 'Skip To Content';
-    buttonElem.setAttribute('aria-controls', MENU_ID);
-    buttonElem.className    = 'open';
-
-    const spanLargeElem = document.createElement('span');
-    spanLargeElem.className = 'skipto-large';
-    buttonElem.appendChild(spanLargeElem);
-
-    const spanTextElem = document.createElement('span');
-    spanTextElem.className = 'skipto-text';
-    spanLargeElem.appendChild(spanTextElem);
-
-    spanLargeElem.appendChild(document.createTextNode('('));
-
-    const kbdElem = document.createElement('kbd');
-    kbdElem.className = 'skipto-shortcut';
-    spanLargeElem.appendChild(kbdElem);
-
-    spanLargeElem.appendChild(document.createTextNode(')'));
-
-    const spanMediumElem = document.createElement('span');
-    spanMediumElem.className = 'skipto-medium';
-    buttonElem.appendChild(spanMediumElem);
-
-    const spanSmallElem = document.createElement('span');
-    spanSmallElem.className = 'skipto-small';
-    buttonElem.appendChild(spanSmallElem);
-
-    menuButtonElem.appendChild(buttonElem);
-
-    // Hide menu button
-
-    const buttonHideElem = document.createElement('button');
-    buttonHideElem.className = 'hide';
-
-    const svgElem = document.createElementNS(SVG_NS, 'svg');
-    svgElem.setAttribute('width', '25');
-    svgElem.setAttribute('height', '25');
-    svgElem.setAttribute('viewbox', '0 0 28 28');
-    svgElem.setAttribute('role', 'none');
-
-    svgElem.appendChild(svgCircle(14, 14, 11, 2, 'none', 'focus'));
-    svgElem.appendChild(svgCircle(14, 14, 8, 0, '', 'background'));
-
-    svgElem.appendChild(svgLine(11, 11, 17, 17, 2, 'round'));
-    svgElem.appendChild(svgLine(17, 11, 11, 17, 2, 'round'));
-
-    buttonHideElem.appendChild(svgElem);
-
-    menuButtonElem.appendChild(buttonHideElem);
-
-    // Menu Structure
-
-    const divMenuElem = createDiv(MENU_ID, 'menu', '', 'Skip to Content', '', '');
-    divMenuElem.setAttribute('style', 'display: none');
-
-    // Landmarks
-    const divSeparatorElem1 = createDiv(MENU_LANDMARK_GROUP_LABEL_ID, 'separator', 'Landmark Regions (nn)', 'Landmark Regions', '', '');
-    divMenuElem.appendChild(divSeparatorElem1);
-
-    const divGroupElem1 = createDiv(MENU_LANDMARK_GROUP_ID, 'group', '', '', 'MENU_LANDMARK_GROUP_LABEL_ID', 'overflow');
-    divMenuElem.appendChild(divGroupElem1);
-
-    // Headings
-    const divSeparatorElem2 = createDiv(MENU_HEADINGS_GROUP_LABEL_ID, 'separator', 'Headings (nn)', 'Headings');
-    divMenuElem.appendChild(divSeparatorElem2);
-
-    const divGroupElem2 = createDiv(MENU_HEADINGS_GROUP_ID, 'group', '', '', MENU_HEADINGS_GROUP_LABEL_ID, 'overflow');
-    divMenuElem.appendChild(divGroupElem2);
-
-    // Shortcuts
-    const divSeparatorElem3 = createDiv(MENU_SHORTCUTS_GROUP_LABEL_ID, 'separator', 'Shortcuts: Disabled', 'Landmark Regions', '', 'shortcuts-disabled');
-    divMenuElem.appendChild(divSeparatorElem3);
-
-    const divGroupElem3 = createDiv(MENU_SHORTCUTS_GROUP_ID, 'group', '', '', MENU_SHORTCUTS_GROUP_LABEL_ID, 'shortcuts-disabled');
-    divMenuElem.appendChild(divGroupElem3);
-
-    // About
-    const divSeparatorElem4 = createDiv('', 'separator');
-    divMenuElem.appendChild(divSeparatorElem4);
-
-    const divMenuitemElem = createDiv(MENU_ABOUT_ID, 'menuitem', '', '', MENU_SHORTCUTS_GROUP_LABEL_ID, 'about skip-to-nav skip-to-nesting-level-0 last');
-    divMenuitemElem.setAttribute('data-about-info', '');
-    divMenuitemElem.tabIndex = -1;
-    divMenuElem.appendChild(divMenuitemElem);
-
-    const spanElem = document.createElement('span');
-    spanElem.className = 'label';
-    spanElem.textContent = 'About Skipto.js';
-    divMenuitemElem.appendChild(spanElem);
-
-    menuButtonElem.appendChild(divMenuElem);
-
-    return menuButtonElem;
-  }
 
   /**
    * @class SkiptoMenuButton
@@ -4342,7 +3940,7 @@ dialog button:hover {
    * @desc Constructor for creating a button to open a menu of headings and landmarks on 
    *       a web page
    *
-   * @param {Object}  skipToContentElem  -  The skip-to-content object
+   * @param {Object}  skipToContentElem  -  The skip-to-content objecy
    * 
    * @returns {Object}  DOM element node that is the container for the button and the menu
    */
@@ -4356,9 +3954,24 @@ dialog button:hover {
         this.containerNode.className = 'container';
         skipToContentElem.shadowRoot.appendChild(this.containerNode);
 
-        this.menuButtonNode = getMenuButtonElements(this.config.containerElement, this.config.buttonLabel, this.config.customClass);
-        this.setDisplayOption(this.menuButtonNode, this.config.displayOption);
+        // check for 'nav' element, if not use 'div' element
+        const ce = this.config.containerElement.toLowerCase().trim() === 'nav' ? 'nav' : 'div';
+
+        this.menuButtonNode = document.createElement(ce);
+        this.menuButtonNode.className = 'menu-button';
+        this.menuButtonNode.id = SKIP_TO_ID;
         this.containerNode.appendChild(this.menuButtonNode);
+
+        if (ce === 'nav') {
+          this.menuButtonNode.setAttribute('aria-label', this.config.buttonLabel);
+        }
+
+        if (isNotEmptyString(this.config.customClass)) {
+          this.menuButtonNode.classList.add(this.config.customClass);
+        }
+        this.setDisplayOption(this.menuButtonNode, this.config.displayOption);
+
+        this.menuButtonNode.appendChild(templateMenuButton.content.cloneNode(true));
 
         this.linkNode = false;
         // If Mobile add a link to open menu when clicked and hide button
@@ -4377,21 +3990,15 @@ dialog button:hover {
 
         // Setup button
 
-        let [buttonAriaLabel, osShortcut] = this.getBrowserSpecificShortcut(this.config);
-        this.config.osShortcut = osShortcut;
+        const [buttonVisibleLabel, buttonAriaLabel] = this.getBrowserSpecificShortcut(this.config);
 
-        this.buttonNode = this.containerNode.querySelector('button.open');
+        this.buttonNode = this.containerNode.querySelector('button');
         this.buttonNode.setAttribute('aria-label', buttonAriaLabel);
         this.buttonNode.addEventListener('keydown', this.handleButtonKeydown.bind(this));
         this.buttonNode.addEventListener('click', this.handleButtonClick.bind(this));
-        this.buttonNode.addEventListener('focus', this.handleButtonFocus.bind(this));
-        this.buttonNode.addEventListener('blur', this.handleButtonBlur.bind(this));
 
         this.textButtonNode = this.buttonNode.querySelector('span.skipto-text');
-        this.textButtonNode.textContent = this.config.buttonLabel;
-
-        this.shortcutButtonNode = this.buttonNode.querySelector('kbd.skipto-shortcut');
-        this.shortcutButtonNode.textContent = osShortcut;
+        this.textButtonNode.textContent = buttonVisibleLabel;
 
         this.smallButtonNode = this.buttonNode.querySelector('span.skipto-small');
         this.smallButtonNode.textContent = this.config.smallButtonLabel;
@@ -4399,13 +4006,6 @@ dialog button:hover {
         this.mediumButtonNode = this.buttonNode.querySelector('span.skipto-medium');
         this.mediumButtonNode.textContent = this.config.buttonLabel;
 
-        this.hideButtonNode = this.containerNode.querySelector('button.hide');
-        this.hideButtonNode.title = this.config.hideButtonLabel;
-        this.hideButtonNode.addEventListener('click', this.handleHideButtonClick.bind(this));
-
-        addEventListener("resize", () => {
-          this.positionHideButton();
-        });
 
         // Create menu container
         this.menuitemNodes = [];
@@ -4443,11 +4043,10 @@ dialog button:hover {
         }
 
         // Information dialog
-        this.shortcutsDialog = new ShortcutsDialog(this, this.containerNode, this.config);
-        this.aboutDialog     = new AboutDialog(this, this.containerNode, this.config);
+        this.infoDialog = new SkipToContentInfoDialog(this.containerNode);
 
         // Shortcut messages
-        this.shortcutsMessage = new ShortcutsMessage(this.containerNode, this.config.msgMessageLabel);
+        this.shortcutsMessage = new ShortcutsMessage(this.containerNode);
 
         // Highlight element
 
@@ -4470,57 +4069,19 @@ dialog button:hover {
       }
 
       /*
-       * @method setPopup
-       *
-       * @desc Sets button to have popup behavior
-       */
-      setPopup() {
-        this.menuButtonNode.classList.add('popup');
-      }
-
-      /*
-       * @method positionHideButton
-       *
-       * @desc Sets position of hide button to right of open button
-       *       and centers it vertically
-       */
-       positionHideButton() {
-          const openRect = this.buttonNode.getBoundingClientRect();
-          const hideRect = this.hideButtonNode.getBoundingClientRect();
-
-          const left = openRect.width;
-          const top  = (openRect.height - hideRect.height) / 2;
-
-          this.hideButtonNode.style.left = left + 'px';
-          this.hideButtonNode.style.top  = top + 'px';
-       }
-
-      /*
-       * @method setFocusToButton
-       *
-       * @desc Shows button if hidden and gives it focus
-       */
-      setFocusToButton () {
-        this.menuButtonNode.classList.add('focus');
-        this.buttonNode.focus();
-      }
-
-
-      /*
-       * @method scrollBehavior
+       * @get scrollBehavior
        *
        * @desc Returns normalized value for the highlightTarget option
        */
       scrollBehavior () {
+        let value = this.config.highlightTarget.trim().toLowerCase();
 
-        const value = this.config.highlightTarget.trim().toLowerCase();
-
-        if ('enabled instant'.includes(value)) {
-          return 'instant';
+        if ('enabled smooth'.includes(value)) {
+          return 'smooth';
         }
 
-        if (value === 'smooth') {
-          return 'smooth';
+        if (value === 'instant') {
+          return 'instant';
         }
 
         return '';
@@ -4534,13 +4095,13 @@ dialog button:hover {
        *          is enabled (NOTE: Highlight is enabled by default)
        *
        *   @param {Object}  elem            : DOM node of element to highlight
+       *   @param {String}  scrollBehavior  : value of highlight target
        *   @param {String}  info            : Information about target
        *   @param {Boolean} force           : If true override isRduced
        */
 
-      highlight(elem, info='', force=false) {
-
-        this.highlightElement.highlight(elem, this.scrollBehavior(), info, force);
+      highlight(elem, scrollBehavior='instant', info='', force=false) {
+        this.highlightElement.highlight(elem, scrollBehavior, info, force);
       }
 
       /*
@@ -4582,16 +4143,12 @@ dialog button:hover {
           this.containerNode.setAttribute('aria-label', config.buttonLabel);
         }
 
-        let [buttonAriaLabel, osShortcut] = this.getBrowserSpecificShortcut(config);
-
-        config.osShortcut = osShortcut;
-
+        const [buttonVisibleLabel, buttonAriaLabel] = this.getBrowserSpecificShortcut(config);
         this.buttonNode.setAttribute('aria-label', buttonAriaLabel);
 
-        this.textButtonNode.textContent     = config.buttonLabel;
-        this.shortcutButtonNode.textContent = osShortcut;
-        this.smallButtonNode.textContent    = config.smallButtonLabel;
-        this.mediumButtonNode.textContent   = config.buttonLabel;
+        this.textButtonNode.textContent = buttonVisibleLabel;
+        this.smallButtonNode.textContent = config.smallButtonLabel;
+        this.mediumButtonNode.textContent = config.buttonLabel;
 
         this.menuNode.setAttribute('aria-label', config.menuLabel);
         this.landmarkGroupLabelNode.textContent = this.addNumberToGroupLabel(config.landmarkGroupLabel);
@@ -4625,29 +4182,43 @@ dialog button:hover {
         this.usesAltKey = hasWin || (hasLinux && !hasAndroid);
         this.usesOptionKey = hasMac;
 
+        let label = config.buttonLabel;
         let ariaLabel = config.buttonLabel;
-        let osShortcut;
+        let buttonShortcut;
 
         // Check to make sure a shortcut key is defined
         if (config.altShortcut && config.optionShortcut) {
+          if (this.usesAltKey || this.usesOptionKey) {
+            buttonShortcut = config.buttonShortcut.replace(
+              '$key',
+              config.altShortcut
+            );
+          }
           if (this.usesAltKey) {
+            buttonShortcut = buttonShortcut.replace(
+              '$modifier',
+              config.altLabel
+            );
+            label = label + buttonShortcut;
             ariaLabel = config.buttonAriaLabel.replace('$key', config.altShortcut);
             ariaLabel = ariaLabel.replace('$buttonLabel', config.buttonLabel);
             ariaLabel = ariaLabel.replace('$modifierLabel', config.altLabel);
             ariaLabel = ariaLabel.replace('$shortcutLabel', config.shortcutLabel);
-            osShortcut = `${config.altLabel}+0`;
-
           }
 
           if (this.usesOptionKey) {
+            buttonShortcut = buttonShortcut.replace(
+              '$modifier',
+              config.optionLabel
+            );
+            label = label + buttonShortcut;
             ariaLabel = config.buttonAriaLabel.replace('$key', config.altShortcut);
             ariaLabel = ariaLabel.replace('$buttonLabel', config.buttonLabel);
             ariaLabel = ariaLabel.replace('$modifierLabel', config.optionLabel);
             ariaLabel = ariaLabel.replace('$shortcutLabel', config.shortcutLabel);
-            osShortcut = `${config.optionLabel}+0`;
           }
         }
-        return [ariaLabel, osShortcut];
+        return [label, ariaLabel];
       }
 
       /*
@@ -5199,26 +4770,6 @@ dialog button:hover {
       }
 
       /*
-       * @method isOverHideButton
-       *
-       * @desc Returns true if pointer over hide button
-       *
-       * @param {Number}   x: client x coordinator of pointer
-       * @param {Number}   y: client y coordinator of pointer
-       *
-       * @return {object}  see @desc
-       */
-      isOverHideButton(x, y) {
-        const node = this.hideButtonNode;
-        const rect = node.getBoundingClientRect();
-
-        return (rect.left <= x) &&
-               (rect.right >= x) &&
-               (rect.top <= y) &&
-               (rect.bottom >= y);
-      }
-
-      /*
        * @method isOverMenu
        *
        * @desc Returns true if pointer over the menu
@@ -5274,13 +4825,6 @@ dialog button:hover {
             }
           }
         }
-
-        // Check if a cookie has been set to force popup behavior
-
-        if (document.cookie.split(";").some((item) => item.trim().startsWith(`${FORCE_POPUP}=`))) {
-          this.setPopup();
-        }
-
       }
 
       // Menu event handlers
@@ -5339,21 +4883,6 @@ dialog button:hover {
           this.openPopup();
           this.setFocusToFirstMenuitem();
         }
-        event.stopPropagation();
-        event.preventDefault();
-      }
-
-      handleButtonFocus() {
-        this.positionHideButton();
-      }
-
-      handleButtonBlur() {
-        this.positionHideButton();
-      }
-
-      handleHideButtonClick(event) {
-        this.setPopup();
-        document.cookie = `${FORCE_POPUP}=1; SameSite=None; Secure;`;
         event.stopPropagation();
         event.preventDefault();
       }
@@ -5518,7 +5047,6 @@ dialog button:hover {
         }
 
         if (tgt.hasAttribute('data-shortcuts-toggle')) {
-          this.closePopup();
           if (tgt.getAttribute('data-shortcuts-toggle') === 'enable') {
             this.config.shortcuts = 'enabled';
             this.skipToContentElem.setAttribute('shortcuts', 'enable');
@@ -5527,16 +5055,17 @@ dialog button:hover {
             this.config.shortcuts = 'disabled';
             this.skipToContentElem.setAttribute('shortcuts', 'disable');
           }
+          this.closePopup();
         }
 
         if (tgt.hasAttribute('data-shortcuts-info')) {
+          this.infoDialog.openDialog('shortcuts', this.config.shortcutsInfoLabel);
           this.closePopup();
-          this.shortcutsDialog.openDialog();
         }
 
         if (tgt.hasAttribute('data-about-info')) {
+          this.infoDialog.openDialog('about', this.config.aboutInfoLabel);
           this.closePopup();
-          this.aboutDialog.openDialog();
         }
 
       }
@@ -5655,8 +5184,7 @@ dialog button:hover {
       }
 
       handleContainerPointerdown(event) {
-        if (this.isOverButton(event.clientX, event.clientY) ||
-            this.isOverHideButton(event.clientX, event.clientY)) {
+        if (this.isOverButton(event.clientX, event.clientY)) {
           this.containerNode.releasePointerCapture(event.pointerId);
         }
         else {
@@ -5707,8 +5235,7 @@ dialog button:hover {
         this.containerNode.removeEventListener('pointerup', this.handleContainerPointerup);
 
         const mi = this.getMenuitem(event.clientX, event.clientY);
-        const omb = this.isOverButton(event.clientX, event.clientY) ||
-                    this.isOverHideButton(event.clientX, event.clientY);
+        const omb = this.isOverButton(event.clientX, event.clientY);
 
         if (mi) {
           this.handleMenuitemAction(mi);          
@@ -5733,7 +5260,6 @@ dialog button:hover {
 
       handleBodyPointerdown(event) {
         if (!this.isOverButton(event.clientX, event.clientY) &&
-            !this.isOverHideButton(event.clientX, event.clientY) &&
             !this.isOverMenu(event.clientX, event.clientY)) {
           this.closePopup();
         }
@@ -5746,11 +5272,13 @@ dialog button:hover {
   const debug$1 = new DebugLogging('skiptoContent', false);
   debug$1.flag = false;
 
-  /* @class SkipToContent5112
+  const defaultStyleOptions = colorThemes['default'];
+
+  /* @class SkipToContent592
    *
    */
 
-  class SkipToContent5112 extends HTMLElement {
+  class SkipToContent592 extends HTMLElement {
 
     constructor() {
       // Always call super first in constructor
@@ -5775,7 +5303,7 @@ dialog button:hover {
         // Customization of button and menu
         altShortcut: '0', // default shortcut key is the number zero
         optionShortcut: 'º', // default shortcut key character associated with option+0 on mac
-        displayOption: 'static', // options: static, popup, fixed (default)
+        displayOption: '', // options: static, popup, fixed (default)
         // container element, use containerClass for custom styling
         containerElement: 'nav',
         containerRole: '',
@@ -5789,8 +5317,6 @@ dialog button:hover {
         shortcutLabel: 'shortcut',
         buttonShortcut: ' ($modifier+$key)',
         buttonAriaLabel: '$buttonLabel, $shortcutLabel $modifierLabel + $key',
-        osShortcut: '',  // Computed based on OS
-        hideButtonLabel: 'Hide Skip To Content',
 
         // Page navigation flag and keys
         shortcutsSupported: 'true', // options: true or false
@@ -5819,31 +5345,30 @@ dialog button:hover {
         aboutSupported: 'true',
         aboutInfoLabel: `About SkipTo.js`,
         aboutHappy: `Happy Skipping!`,
-        aboutVersion: `Version ${VERSION}`,
-        aboutCopyright: 'BSD License, Copyright 2021-2026',
-        aboutDescLabel: 'Purpose',
+        aboutVersion: `Version ${this.version}`,
+        aboutCopyright: 'BSD License, Copyright 2021-2025',
         aboutDesc: 'SkipTo.js is a free and open source utility to support the WCAG 2.4.1 Bypass Block requirement.  ',
         aboutPrivacyLabel: 'Privacy',
         aboutPrivacy: 'SkipTo.js does not collect or store any information about users or work with any other parties to collect or share user browsing information.',
-        aboutShortcutLabel : 'Keyboard Shortcut',
-        aboutShortcut :'Opens the SkipTo.js menu and focuses the first menu item.',
-
 
         closeLabel: 'Close',
         moreInfoLabel: 'More Information',
         msgKey: 'Key',
         msgDescription: 'Description',
 
-        msgNextRegion:           'Next region',
-        msgPreviousRegion:       'Previous region',
-        msgRegionIsHidden:       'Region is hidden',
-        msgMainRegions:          'Main regions',
-        msgNavigationRegions:    'Navigation regions',
-        msgComplementaryRegions: 'Complementary regions',
+        msgElementHidden: 'Element is hidden',
+
+        msgNextRegion:     'Next region',
+        msgPreviousRegion: 'Previous region',
+        msgRegionIsHidden: 'Region is hidden',
 
         msgNextHeading:     'Next heading',
         msgPreviousHeading: 'Previous heading',
         msgHeadingIsHidden: 'Heading is hidden',
+
+        msgMainRegions: 'Main regions',
+        msgNavigationRegions: 'Navigation regions',
+        msgComplementaryRegions: 'Complementary regions',
 
         msgHeadingLevel: 'Level #',
         msgH1Headings: 'Level 1 headings',
@@ -5855,16 +5380,12 @@ dialog button:hover {
 
         // Messages for navigation
 
-        msgElementHidden: 'Element is hidden',
-        msgMessageLabel: 'SkipTo.js Message',
-
         msgNoMoreRegions: 'No more regions',
         msgNoRegionsFound: 'No %r regions found',
         msgNoMoreHeadings: 'No more headings',
         msgNoHeadingsLevelFound: 'No level %h headings found',
 
         // Menu labels and messages
-        menuButtonLabel: 'Menu Button',
         menuLabel: 'Landmarks and Headings',
         landmarkGroupLabel: 'Landmark Regions',
         headingGroupLabel: 'Headings',
@@ -5886,9 +5407,12 @@ dialog button:hover {
         headings: 'h1 h2',
 
         // Highlight options
-        highlightTarget:      'instant', // options: 'instant' (default), 'smooth' and 'auto'
-        highlightBorderSize:  'small', // options: 'small' (default), 'medium', 'large', 'x-large'
-        highlightBorderStyle: 'solid', // options: 'solid' (default), 'dotted', 'dashed'
+        highlightTarget:      defaultStyleOptions.highlightTarget,
+                              // options: 'instant' (default), 'smooth' and 'auto'
+        highlightBorderSize:  defaultStyleOptions.highlightBorderSize,
+                              // options: 'small' (default), 'medium', 'large', 'x-large'
+        highlightBorderStyle: defaultStyleOptions.highlightBorderStyle,
+                              // options: 'solid' (default), 'dotted', 'dashed'
 
         // Hidden heading when highlighting
         hiddenTextColor: '#000000',
@@ -5909,6 +5433,8 @@ dialog button:hover {
         fontFamily: '',
         fontSize: '',
         positionLeft: '',
+        smallBreakPoint: '',
+        mediumBreakPoint: '',
         menuTextColor: '',
         menuBackgroundColor: '',
         menuitemFocusTextColor: '',
@@ -6006,7 +5532,6 @@ dialog button:hover {
     init(globalConfig=false) {
       if (!this.initialized) {
         this.initialized = true;
-
         if (globalConfig) {
           this.config = this.setupConfigFromGlobal(this.config, globalConfig);
         }
@@ -6029,9 +5554,8 @@ dialog button:hover {
           monitorKeyboardFocus();
         }
 
-        // Position hide button after all styling updates
-        this.buttonSkipTo.positionHideButton();
       }
+  //    this.setAttribute('focus', 'none');
     }
 
    /*
@@ -6153,12 +5677,13 @@ dialog button:hover {
      *          is enabled (NOTE: Highlight is enabled by default)
      *
      *   @param {Object}  elem            : DOM node of element to highlight
+     *   @param {String}  highlightTarget : value of highlight target
      *   @param {String}  info            : Information about target
      *   @param {Boolean} force           : If true override isRduced
      */
 
-    highlight(elem, info='', force=false) {
-      this.buttonSkipto.highlight(elem, info, force);
+    highlight(elem, highlightTarget='instant', info='', force=false) {
+      this.buttonSkipto.highlight(elem, highlightTarget, info, force);
     }
 
     /*
@@ -6274,7 +5799,7 @@ dialog button:hover {
           if (!isExtensionLoaded) {
             if (!isBookmarkletLoaded) {
               removePageSkipTo();
-              window.customElements.define(BOOKMARKLET_ELEMENT_NAME, SkipToContent5112);
+              window.customElements.define(BOOKMARKLET_ELEMENT_NAME, SkipToContent592);
               skipToContentElem = document.createElement(BOOKMARKLET_ELEMENT_NAME);
               skipToContentElem.setAttribute('version', skipToContentElem.version);
               skipToContentElem.setAttribute('type', type);
@@ -6290,7 +5815,7 @@ dialog button:hover {
           if (!isExtensionLoaded) {
             removePageSkipTo();
             removeBookmarkletSkipTo();
-            window.customElements.define(EXTENSION_ELEMENT_NAME, SkipToContent5112);
+            window.customElements.define(EXTENSION_ELEMENT_NAME, SkipToContent592);
             skipToContentElem = document.createElement(EXTENSION_ELEMENT_NAME);
             skipToContentElem.setAttribute('version', skipToContentElem.version);
             skipToContentElem.setAttribute('type', type);
@@ -6303,7 +5828,7 @@ dialog button:hover {
 
         default:
           if (!isPageLoaded && !isBookmarkletLoaded && !isExtensionLoaded) {
-            window.customElements.define(PAGE_SCRIPT_ELEMENT_NAME, SkipToContent5112);
+            window.customElements.define(PAGE_SCRIPT_ELEMENT_NAME, SkipToContent592);
             skipToContentElem = document.createElement(PAGE_SCRIPT_ELEMENT_NAME);
             skipToContentElem.setAttribute('version', skipToContentElem.version);
             skipToContentElem.setAttribute('type', type);
