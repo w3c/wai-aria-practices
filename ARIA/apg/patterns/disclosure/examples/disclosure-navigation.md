@@ -13,7 +13,7 @@ permalink: /ARIA/apg/patterns/disclosure/examples/disclosure-navigation/
 sidebar: true
 class: has-sidebar
 
-footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 20 January 2026</p>      </div>    "
+footer: "      <div class='example-page-footer'>        <p><a href='https://github.com/orgs/w3c/projects/132'>View issues related to this example</a></p>        <p>Page last updated: 19 October 2026</p>      </div>    "
 
 # Context here: https://github.com/w3c/wai-aria-practices/issues/31
 type_of_guidance: APG
@@ -285,15 +285,23 @@ lang: en
             </tr>
             <tr data-test-id="key-arrows">
               <th>
-                <kbd>Down Arrow</kbd> or <br>
-                <kbd>Right Arrow</kbd><br>
-                (Optional)
+                <kbd>Down Arrow</kbd> (Optional)
               </th>
               <td>
                 <ul>
-                  <li>If focus is on a button and its dropdown is collapsed, and it is not the last button, moves focus to the next button.</li>
-                  <li>if focus is on a button and its dropdown is expanded, moves focus to the first link in the dropdown.</li>
-                  <li>If focus is on a link, and it is not the last link, moves focus to the next link.</li>
+                  <li>If focus is on a button and its dropdown is collapsed, and it is not the last item, moves focus to the next link or button.</li>
+                  <li>If focus is on a button and its dropdown is expanded, moves focus to the first link in the dropdown.</li>
+                  <li>If focus is on a link, and it is not the last item, moves focus to the next link or button.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr data-test-id="key-arrows">
+              <th>
+                <kbd>Right Arrow</kbd> (Optional)
+              </th>
+              <td>
+                <ul>
+                  <li>If focus is on a link or button, and it is not the last item, moves focus to the next link or button.</li>
                 </ul>
               </td>
             </tr>
@@ -305,8 +313,7 @@ lang: en
               </th>
               <td>
                 <ul>
-                  <li>If focus is on a button, and it is not the first button, moves focus to the previous button.</li>
-                  <li>If focus is on a link, and it is not the first link, moves focus to the previous link.</li>
+                  <li>If focus is on a link or button, and it is not the first item, moves focus to the previous link or button.</li>
                 </ul>
               </td>
             </tr>
@@ -314,8 +321,7 @@ lang: en
               <th><kbd>Home</kbd> (Optional)</th>
               <td>
                 <ul>
-                  <li>If focus is on a button, and it is not the first button, moves focus to the first button.</li>
-                  <li>If focus is on a link, and it is not the first link, moves focus to the first link.</li>
+                  <li>If focus is on a link or button, and it is not the first item, moves focus to the first link or button.</li>
                 </ul>
               </td>
             </tr>
@@ -323,8 +329,7 @@ lang: en
               <th><kbd>End</kbd> (Optional)</th>
               <td>
                 <ul>
-                  <li>If focus is on a button, and it is not the last button, moves focus to the last button.</li>
-                  <li>If focus is on a link, and it is not the last link, moves focus to the last link.</li>
+                  <li>If focus is on a link or button, and it is not the last item, moves focus to the last link or button.</li>
                 </ul>
               </td>
             </tr>
