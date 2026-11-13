@@ -28,7 +28,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           job_name: pr-create
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
           fetch-depth: 0
